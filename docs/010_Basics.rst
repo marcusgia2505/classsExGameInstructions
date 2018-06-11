@@ -50,6 +50,29 @@ Round and Loop
 Player, Type and Group Internal & external ID
 ---------------------------------------------
 
+Identification of subjects in the system
+Internal ID
+
+By default, subjects are completely anonymous in classEx. classEx creates a unique internal ID for each subject that logs in. This ID is generated randomly and does not allow any inference about the identity of the subject. It serves as a mean to be able to analyse the data and compare behaviour of subjects across different games if you play several in one session.
+External ID
+
+Should it be required, you also have several possibilities to identify subjects in the system.
+
+Ticket: You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game.
+
+Ask for data during the game: At a certain stage, or after the end of the game, you can ask participants to enter their personal data or an ID you provide them with.
+
+During login: You can change the settings so that participants are asked for certain data before they log-in. For this, go to "course data" and click on additional settings. You can then enter what you would like participants to enter before logging in.
+
+Here is an example:
+
+Data1.PNG
+
+And this is what it looks like for participants before login:
+
+Data2.PNG 
+
+
 Global and subjects variables and parameters
 --------------------------------------------
 
