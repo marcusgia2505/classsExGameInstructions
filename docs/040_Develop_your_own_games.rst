@@ -102,6 +102,50 @@ Define your stages
 Add elements (display condition,…, mit Bsp…, general input)
 ===========================================================
 
+General Information
+
+Elements are the modules of each stage. A stage has two areas in which you can add modules: participants and lecturer.
+
+You can chose from text elements, input elements (numerical input, likert scales, …), programme elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
+
+
+Tip: Input and output elements should be located in different stages in order to collect all input in the first stage. Then, the lecturer can synchronise the game and turn to the output elements in the next stage.
+
+
+Element Number 	The elements are numbered (E1, E2, …). This also defines the order of display in a stage. Elements can be moved within a stage by pressing on the arrows Updown.JPG.
+Element Type and Help 	Beside the number of the element, you can see the element type. Clicking on the info button next to the element type leads you to the respective description in this wiki.
+Groups, Treatments and Roles 	If you have defined groups, treatments or roles, you can also choose whether the element shall be displayed for all groups, treatments or roles.
+Delete Element 	You can delete the element by pressing Rubbish.JPG.
+Copy Element 	You can copy an element by pressing Copyelement.JPG.
+Cut and Paste 	You can cut and paste an element by pressing Cut.JPG.
+Display Conditions 	You can specify the display conditions for an element by pressing Brille.JPG.
+
+
+Elements for participants can be inserted by clicking on Addnewel.JPG. In the following, the elements are described in detail.
+Elements for participants
+Screenshot 	Name 	Brief description
+Tbnewnew.JPG 	Text Box 	Element to display text (including variables)
+Inputfield.PNG 	Input Element 	In this element you can insert several input fields.
+Codenew.JPG 	Program Code 	Program snippets can be implemented to calculate results for each subjects.
+Winner.PNG 	Winner's Notification 	If a game is played with real payoffs, this element displays the payoff code to participants. (only works together with winners' draw)
+Matrixpay.JPG 	Payoff Matrix Game 	This is a special element for matrix games.
+Contract participant.JPG 	Contract 	This element allows participants to make contracts
+Camera.png 	Camera 	This element allows participants to make a photo of themselves.
+Refer.JPG 	Element Reference 	A reference can be used to reuse elements and thereby avoid redundant elements.
+	Javascript 	Program javascript snippets to implement more flexibly
+Elements for lectureres
+
+Elements for the lecturer are generally only displayed on the lecturer’s screen which is usually projected to a wall for all participants to see. The start button, text boxes, elements for payoff calculations and output displays are typical elements for the lecturer.
+Screenshot 	Name 	Brief description
+Tblec.JPG 	Text Box 	Element to display text (including varibales) on the lecturers' screen.
+Startt.JPG 	Start Button 	A Start Button is needed to start a stage. You can also set an automatic start here.
+Draw.JPG 	Winners' Draw 	If a game is played with real payoffs, this element draws the winners (only works togehter with winner's notification).
+Codenew.JPG 	Global Program 	Progam snippets can be implemented to calculate results on the global level for all participants.
+Randomdraw.PNG 	Lecturer Discrete Choice 	Lecturer Discrete Choice allows the lecturer to input data in the course of the game
+Contracttable.JPG 	Contract table 	Contract tables give you an overview of contracts concluded by the participants.
+Refer.JPG 	Element Reference 	An reference can be used to reuse elements and thereby avoid redudant elements.
+Ress.JPG 	Result Element 	Different Result Elements like Pie Chars, Line Charts, Histograms... are available. 
+
 Player
 ------
 
