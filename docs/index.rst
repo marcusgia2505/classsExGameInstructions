@@ -12,7 +12,7 @@ With classEx you can conduct interactive surveys and classroom experiments. Stud
    :maxdepth: 3
    :glob:
 
-   010_basic
+   010_Basics
    020_Run_a_ready-made_game
    030_Organize_games
    040_Develop_your_own_game
