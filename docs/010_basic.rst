@@ -7,7 +7,7 @@ Basic
 Registration and Login
 ======================
 
-Lecturers are required to register in order to use classEx. Please fill in the registation form you can find `here <https://classex.de/get-login-credentials/>`. Registered users receive a password via e-mail and hereby obtain the right of unlimited and cost-free use of classEx for teaching, further education and research (for details please see `terms of use <https://classex.de/wp-content/uploads/2018/04/TermsOfUse.pdf>`). Students do not need to register but are involved anonymously as participants in lectures and presentations. 
+Lecturers are required to register in order to use classEx. Please fill in the registation form you can find `here <https://classex.de/get-login-credentials/>`_. Registered users receive a password via e-mail and hereby obtain the right of unlimited and cost-free use of classEx for teaching, further education and research (for details please see `terms of use <https://classex.de/wp-content/uploads/2018/04/TermsOfUse.pdf>`_). Students do not need to register but are involved anonymously as participants in lectures and presentations.
 
 Get access to LIONESS Lab
 =========================
