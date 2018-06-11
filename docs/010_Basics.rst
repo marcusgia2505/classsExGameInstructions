@@ -41,6 +41,32 @@ Bild1.png
 
 The mode you are currently in, is always marked by a darker shade of grey, currently the symbol for the starting screen W.JPG. The symbol on the left Q.JPG takes you to the Lecture Mode. Clicking on F.JPG takes you to the Editing Mode. The little arrow S.JPG provides you with a drop-down menu. Here, you can access your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your class, for more information see Participants. 
 
+Top bar
+
+The top bar of the lecture mode looks like this:
+
+TBnew.PNG
+
+Here, you can find the following symbols:
+
+- select game: By clicking on this, you can choose from all of your games. The selected game opens up as soon as you click on it.
+
+- QR code symbol: Clicking on this symbol enlarges the QR code and provides an instruction for participants to enter without using the QR code.
+
+- Testpart.JPG: Clicking on this opens a participant screen in a new tab. This can be very useful to test classEx games.
+
+- Steto.PNG: This starts the Diagnosis mode. Here, you can see all variables for the lecturer and the players, which makes detecting programming errors much easier.
+
+- data: drop down menu. By selecting show data, you can access a clients' table by clicking on , which shows you how many participants are logged in and what decision stage they are at. Clicking on "back to Lecture mode" takes you back to the current game. 
+Showdata.JPG
+
+- Download results: In the drop-down menu of data you can also download excel files containing the decisions made in the game you just played or, if available, old results of this same game. You can also download excel files containing an overview of roles, treatments & groups that existed in this game as well as participants’ IDs and their log-in time.
+
+Excel.JPG
+
+
+- previous results: this function lets you access results of the same game from previous lectures. This way you can directly compare current outcomes with previous ones. 
+
 Terminology
 ===========
 
