@@ -1,6 +1,8 @@
 =========================
-Conceptual overview
+Run a ready-made game
 =========================
+
+AB HIER LIONESS
 
 .. _architecture:
 
