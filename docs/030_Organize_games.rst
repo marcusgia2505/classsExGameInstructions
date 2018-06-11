@@ -18,6 +18,37 @@ The button repository in the top bar gives you access to the repository which co
 Copy and delete games
 =====================
 
+General Features in the Editing Mode
+
+You will find several features at the top of the page in the editing mode which are displayed here.
+
+Leiste.JPG
+
+These provide you with several options which are described below.
+Tip: If you make any input in the editing mode and leave the input field the value is stored automatically.
+Select game
+
+Aa.JPG
+
+Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
+
+If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
+
+Bb.JPG
+Game
+
+By clicking on the button game a drop down menu opens.
+
+Cc.JPG
+
+Game settings: Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+
+Copy game: The currently selected game is copied and can then be edited and adapted.
+
+Delete game: By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
+
+New game: Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here. 
+
 Public and private games
 ========================
 
