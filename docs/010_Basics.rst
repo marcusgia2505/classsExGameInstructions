@@ -140,223 +140,176 @@ Interaction types (sequential interaction, simulatenous,…)
 
 Ready-made games
 ================
+This page provides an overview of the possible applications of classEx on the basis of diverse types of games. These are only some example. Many more games can be found in the repository in classEx.
+Contents
 
+    1 Game Description
+    2 Alphabetical List of Games
+    3 Standard Games
+    4 Categorization of Game Structure
+    5 Individual Choice
+        5.1 Single Choice
+            5.1.1 Single Choice with Random Events
+            5.1.2 Single Choice with Treatments
+        5.2 Multiple Choice
+        5.3 Numeric Data
+            5.3.1 With Treatments
+    6 Strategic Interaction
+        6.1 Simultaneous | 1 Role
+            6.1.1 Discrete
+            6.1.2 Numeric
+        6.2 Simultaneous | 2 Roles
+            6.2.1 Discrete
+            6.2.2 Numeric
+        6.3 Sequential | 2 Roles
+            6.3.1 Discrete
+            6.3.2 Numeric
+        6.4 Continuous | 2 Roles
 
-AB HIER LIONESS!!!
+Game Description
 
-Get access to LIONESS Lab
-=========================
+In order to store and search for games the following information provides a definition of a game.
+Name 	A short name which describes the game
+Game Structure 	Individual vs. Strategic Choice (sim, seq or cont)
+Roles 	Number of Roles
+Alphabetical List of Games
 
-`Register for a LIONESS Lab account <https://lioness-lab.org/get-login-credentials/>`__ to receive an email with your credentials. On the `login page <http://classex.uni-passau.de/classEx34/lioness.php>`__ you find your institution and your account.
+Find an alphabetical listing of all games featured in this Wiki here.
+Standard Games
 
-.. image:: _static/Login_page.png
-   :alt:  300px
+classEx provides users with a set of ready-made games that come with a classEx account. You can find these in the Overview on the Starting Screen. This provides examples of different applications of classEx and also gives you ready-made games for some of the standard experiments such as the Public Goods Game or the Trust Game.
+Categorization of Game Structure
 
-Once you have logged in, the landing page allows for basic actions such as creating new LIONESS experiments, edit your existing experiments or change your user settings.
+classEx builds on a simple categorization of games. The categorization builds on the structure of the games. It first distinguished between individual and strategic choice. The latter then can be classified into simultaneous, sequential or continous games.
+Individual Choice 	Strategic Choice
+	Simulataneous 	Sequential 	Continuous
+Individual Choice
 
-.. image:: _static/Picture1.png
-   :alt:  600px
+Individual Choice means decisions of individuals which are made alone. No strategic interaction with other participants takes place. In the following, you can see a few examples of Individual Choice games that can be implemented with classEx.
+Single Choice
 
-Run a demo Experiment
-=====================
+The easiest type of questions are Quiz Questions as they can be also in found in standard Audience Response System. Participants choose among a set of options.
+Single Choice with Random Events
 
-TBA
+Simple questions combined with a random event are a different type of application for Individual Choice games. This way, participants can be animated to think about decisions with unsure outcomes and payoffs. Lecturers can use this to show relevant applications in, for example, statistics, stochastics, finance or the insurance industry. For instance, participants can place a bet on a coin toss. You can also test to which extent participants are willing to take a risk. In the following, you can find a few examples of how random events can be implemented in classEx:
 
-Develop your first experiment
-=============================
+Ellsberg Paradoxon
 
-The steps below show you the basics of LIONESS Lab by taking you through the development a simple 3-player repeated `public goods game <https://en.wikipedia.org/wiki/Public_goods_game>`__. Box 1 shows the general setup of this experiment. Following the steps below will make you familiar with using the basic features of LIONESS Lab. For your reference, a finished version of the experiment we will develop here can also be directly imported from the :ref:`repository` . Expected time to complete this tutorial: 30-40 minutes.
+Lottery and Risk Preference
 
-.. topic:: Box 1: Public goods game
+Search Costs
+Single Choice with Treatments
 
-   In each period of this game, each of the three
-   participants in a group receives 10 points. Each group member
-   simultaneously decides how many of these points to contribute to a
-   *group project* (and how many to keep for themselves). The contributed
-   points of all three group members will be multiplied by 1.5 and equally
-   divided among the group members, irrespective of their contributions.
-   This setup reflects a social dilemma: average payoff in a group is
-   optimal when all group members contribute all 10 points, but it is
-   individually optimal to contribute nothing and benefit from any
-   contributions from the other group members. After making all group
-   members have made their contribution decisions, they will be informed of
-   the outcome of that period and a new period will start.
+Treatments are a great possibility to expand Individual Choice questions. With these, two (or more) variations of the same game can be played. Participants are divided into two groups of the same size and, for example, see different scenarios for the same game. Each group then plays a different treatment and differences between the two treatments allow for conclusions regarding the impact of different scenarios. To implement this, you need to choose the option “Treatment” in list “Treatments, roles & groups” and specify the number of treatments. It is possible to display different information, so-called private information, on the mobile devices of the two groups. A well-known example for the use of treatments is the “Asian disease” presented by Tversky and Kahnemann (Science 1981) which exemplifies a cognitive bias. Similarly, framing and priming effects can be determined with a game. In the following, you can find a few examples of how treatments can be used in classEx:
 
+Ethical Dilemma
 
-Create a new experiment
------------------------
+Nudge
 
-.. image:: _static/New_game.png
-   :alt:  300px
+Wage Increase
+Multiple Choice
 
-On the landing page, choose *New experiment* to define a LIONESS experiment starting from scratch. In the Experiment Settings, you can give the experiment a name, say *Public goods game*. For now, you can set the *availability* of your experiment to *private* but you can choose to share it with others by setting the availability to *public* later. For now we can ignore the fields on the right hand side. Click *Save* to start defining your screens.
+Opinion polls differ from quiz questions in the sense that you cannot classify one answer as correct. Further, it may be possible to choose more than one answer (Multiple Choice).
 
-Define screens (stages)
------------------------
+Effects of inflation
+Numeric Data
 
-.. image:: _static/New_experiment.png
-   :alt:  600px
+Decisions of participants can also require an input of numbers. For this, simply choose “Numeric input field” as the type of input field in the Editing Mode. A game that uses this form of input is shown below:
 
-Below the name of your experiment you can now start defining your stages as they will be displayed to participants. Two stages are pre-loaded (see screenshot above). Make sure that you select the tab named *stage 1*. The area under the tabs shows three sections, each with a blue background. First, in the broad horizontal bar you can specify basic settings of that stage, e.g. its name, the :ref:`stage_type` of the stage, and an optional :ref:`stage_and_element__countdown_timer`. Second, in the left hand side section you can specify the :ref:`defining_your_screens__active_screen`. In active screens you can display information to participants and record their responses. Third, in the right hand side option you can specify the :ref:`defining_your_screens__waiting_screen` of that stage. In case participants need to wait for others before continuing, this will come in handy - we will get to that shortly.
+Estimation Task.
+With Treatments
 
-Screens consist of :ref:`elements`. These can be text boxes, input fields to record numerical responses, or pieces of :ref:`javascript` to interact with the server or to do calculations. You can add elements to your screen by clicking *add new element* and select the type of element you want to add. As you will have noticed, the first stage already includes three pre-loaded (empty) elements: a :ref:`javascript` field, a :ref:`elements__text_box`, and a :ref:`elements__button`.
+You can also implement several treatments in games with numeric input. For example:
 
-Stage 1: Instructions
-~~~~~~~~~~~~~~~~~~~~~
+Distribution of Income
+Strategic Interaction
 
-In this basic public goods game, we want the participants to read instructions first. Name this stage *instructions* in the broad horizontal blue bar. In the active screen you can add instruction text by double-clicking the :ref:`elements__text_box` (second element). You can write instructions in the rich-text editor by yourself or but for now just copy in the template text from the Box 2.
+With classEx, strategic interaction in the lecture can be modelled, too. It offers games which can be conducted simultaneously, sequentially or continously (not yet implemented). Furthermore, the type of the game is determined by the number of roles. Participants can be assigned to different roles Role1.PNG Role2.PNG. Every role is related to a seperate task and interaction.
+Simultaneous | 1 Role
 
-Finalise your instructions stage by specifying the :ref:`elements__button` at the bottom of the screen. Make sure that the next stage is Stage 2 and retain the default options for the button (so that participants can proceed if possible). Your changes to the experiment will be automatically saved upon every mouse click.
+In a simple variation with strategic interaction, all participants have the same role and only interact with each other in one big group. Contrary to individual choice games, the result is influenced by the decisions of all other participants in the lecture.
+Discrete
 
-At any time during development of your game, you can view the experimental pages as the participants will see them. To do this, simply :ref:`compile_and_test` your experiment and start a *test player*.
+Workplaces in the Library^
 
-.. code-block:: html
-      :caption: Box 2: Instructions for the public goods game
+Schelling Salience (Faces Beauty Contest)
+Numeric
 
-      Your task <br>
-      At the beginning of each round, each participant receives 20 Points. You have to decide how
-      many of the 20 Points you want to contribute to a group project. The other three members of
-      your group make this decision at the same time. The Points you do not contribute, you keep
-      for yourself. These Points are added to your total.<br>
-      After all group members have made their decision, all Points contributed to the group
-      project are added up, and this number of Points is multiplied by $multiplier$. The
-      resulting number of Points is then divided equally among the group members (irrespective
-      of how much they individually contributed to the group project). <br><br>
-      <u>In summary</u><br> Your income in a round = <br>
-          The Points you keep for yourself <br>
-      <i>plus</i>
-      <br> The Points you receive from the group project </p>
+Common Value Auction
 
-Stage 2: Control questions
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Private Value English Auction
 
-In the next stage, we will define a set of control questions to ensure that participants have understood the instructions. Click on the tab *Stage 2* and name this stage *Control questions*. In the broad horizontal bar, set the :ref:`stage_type` to *quiz*. In quiz stages, the experimental software automatically records the number of attempts by each participant to answer the control questions.
+Beauty Contest
 
-Announce the control questions in the pre-loaded text box. To add your
-first control question, click :ref:`adding_an_element` and choose :ref:`numeric_input` from the drop-down list. Small *paste* icons will appear between each of the elements in the screen. Click on the icon right under the text box to add the numeric input element. Once this element is added to the screen you can write the question in the *text* field of the element. In this case, write ``Suppose that in a round, each group member (including yourself) contributes 10 points to the group project. How many points will each of you earn in that round?``.
+Tragedy of the Commons
 
-Add a variable name, say *control_question1*. Specify the range of numbers that participants may enter. In this case you can set the
-*minimum* to 0 and the *maximum* to 100. Set the *decimal place* to *0* such that the participants' screen will only accept integers as a response to this question. By clicking the *required** switch you can make sure that participants require to give a response to an element. Set the field *correct value* to 15.
+Public Goods Game, Common-Pool Resource Game or Minimum-Effort Game
+Simultaneous | 2 Roles
+Discrete
 
-.. image:: _static/controlquestion.png
-   :alt:  600px
+This sort of game entails standard Matrix Games:
 
-Finally, add a button to the screen by clicking *add new element* and select the *button*. Add it to the bottom of the screen by clicking the paste icon right below the *numeric input* field you just created. Keep the defaults for now.
+Battle of the Sexes
 
-Stage 3: Lobby
-~~~~~~~~~~~~~~
+Chicken Game
 
-The next stage will be a *lobby* in which participants wait to be grouped with others. In this case we will form a group as soon as three participants have completed the control questions and are ready to start the interaction phase of the experiment. Add a new stage to your experiment by clicking the *+* sign in the tab next to Stage 2 [add screenshot]. A new Stage tab will appear. In the horizontal blue bar, set its stage type to *lobby* and name the stage *Lobby*.
+Hawk-Dove Game
 
-Set the timer to 300 seconds and delete the *button* (we do not need a button in the lobby). When participants are still waiting to be matched with others after this time has passed, they will automatically get the choice to either return to the lobby and wait for two more minutes, or to proceed to another stage (defined in the *leave to* field, we will get to that later). In the active screen, the default text in the lobby reads "Wait for the other members of your group to complete the control questions." For now we do not need to define anything here. We do not need any buttons in this screen. The software will forward the participants as soon as a group has been formed.
+Stag Hunt
 
-Stage 4: Decision
-~~~~~~~~~~~~~~~~~
+Prisonners Dilemma
 
-Once three participants are in the lobby, they will be matched and will be directed to the decision screen. In the Decision stage, participants will be asked to choose their contribution to the group project. First, add a new stage to your experiment with the *+* sign. In the new stage, set the name to *decision*. To indicate in which period participants currently are, we require the variables *period* and *numberPeriods*. These two are among the :ref:`standard_variables` that are automatically loaded in the JavaScript of each stage. In the text box you can display JavaScript variables by using dollar signs around their names. Here you can write: Round $period$ of $numberPeriods$.
+Coordination Game
 
-To add the field in which the participants can enter their contributions, click *add new element*, choose *numeric input* and paste this element below the text box you just defined. In the *text* field of this element, you can write:
-``You received 10 points to start with.``
-``How many points (0-10) do you want to contribute to the group project?``.
-Set the variable name to *contribution*, set the minimum to 0, the maximum to 10 and the decimals to 0. Switch on the *required* option to ensure that all participants make a decision, which will be stored in the *decisions table* of this experiment's :ref:`database <experiment_tables__decisions>`. Finally, in the button at the bottom of the screen, specify *proceed* as *wait for others*. This will ensure that the participants will only be able to continue to the next stage when all group members are ready. Participants will wait for others in the *waiting screen* on the right hand side section. When nothing is defined in the waiting screen, a default waiting text will be shown. For now we can leave the waiting screen undefined.
+All of these might be carried out with multiple treatments.
+Numeric
 
-Stage 5: Results
-~~~~~~~~~~~~~~~~
+Dictator Game
 
-Once all participants in a group have made their decisions, they will be shown the outcome of that period. First, again, add a new stage to your experiment with the *+* sign. Name this new stage "results". To calculate the outcome of this period of the public goods game, we need to get the decisions of the others from the database. LIONESS Lab provides a set of :ref:`javascript_functions` to do this in a simple way. In the Javascript element, you can copy the code from Box 3.
+Ultimatum Game with MAO°
+Sequential | 2 Roles
 
-Note that JavaScript code will be executed in the browsers of the participants, so any JavaScript code should be written from the perspective of the participant.
+Sequential games can be modelled with two or more stages.
+Discrete
 
-The key functions we use here are ``getInt()`` and ``getInts()``. In this case, ``getInt('contribution')`` will return the value of *contribution* in the :ref:`database <experiment_tables__decisions>` from the current participant from the current period. Likewise, ``getInts('contribution')`` will return an array with the contributions of all group members in the current period. With ``record()`` you can write a variable from Javascript to the database. In this case we will store for each round the total earnings of each player.
+Principal-Agent
 
-To display the calculated variables, again use the dollar signs around the variables names in the text box.
+Centipede Game
 
-The Results stage is the second and last stage of a period. To define the correct *routing* of the participants through your experiment, you should specify which of the stages comprise a period which will be repeated. Technically, this means that the program will *loop* through these periods for a number of times. You can do this in the :ref:`parameters table <parameters>`. You can find this at the horizontal grey bar at the top of your screen. Here you can specify the basic parameters underlying your experiment. To specify the beginning and end of the periods in your experiment, set loopStart to *Decision* and loopEnd to *Results*. Now you are editing the parameters table, you can also set the number of periods (numberPeriods) to 5. By clicking the *Back* button at the top you return to the page in which you define your experiment. You are almost done specifying your experiment.
 
-For now you can leave the *next stage* field of the button empty.
+Numeric
 
-</div>
+Labor Contract
 
-.. code-block:: javascript
-   :caption: Box 3: JS code for public goods logic
-   :linenos:
+Trust Game
 
-   // specify the initial endowment
-   endowment = 10; <br>
-   // retrieve data
-   myContribution = getInt('contribution');
-   keptForSelf = endowment - myContribution;
-   allContributions = getInts('contribution');
-   // apply public goods logic
-   sum = 0;
-   for (var i=0; i<allContributions.length; i++){
-        sum += allContributions[i];
-   }
-   averageContribution = sum / currentGroupSize;
-   product = 1.5 * sum;
-   share = product / currentGroupSize;
-   earningsThisPeriod = keptForSelf + share;
-   record('payoff', earningsThisPeriod);
+Ultimatum Game
 
-.. code-block:: html
-   :caption: Box 4: Results text
-   :linenos:
+Alternating Offer Bargaining
 
-   Round $period$ of $numberPeriods$: Results
 
-   Your contribution to the group project: $myContribution$.
-   Average contribution in your group: $averageContribution$.
-   Sum of contributions in your group: $sum$.
-   This amount is multiplied by 1.5, yielding $product$.
-   Each group member receives an equal share: $share$.
+Continuous | 2 Roles
 
-   Your earnings
+Continuous games are not yet implemented in classEx. This will be done in the near future.
 
-   Points kept for yourself: $keptForSelf$.
-   Your share from the group project: $share$.
-   Your total earnings in this round: $earningsThisPeriod$.
+Unstructured Bargaining
 
-Stage 6: Questionnaire
-~~~~~~~~~~~~~~~~~~~~~~
+Dutch Auction
 
-Once the decision making part of the experiment is over, you might want to add a questionnaire stage. Add a new stage, again by clicking the *+* sign in the rightmost tab. Add a new :ref:`numeric_input` for the question ``What is your age?``. For these numeric inputs you need to define a range of allowed values. Then, add a :ref:`discrete_choice` for the question ``What is your gender?``. For the numeric element for the age you should now be able to define it. For the discrete choice, you can specify the question in the *text* field. At the bottom of this element you can define the text inside each of the choice options that the participants will choose from. In the *value* field of each choice option you have to specify the value as it will be recorded in the database (which, for this element type, stores the responses as numbers). Ensure that the :ref:`elements__button` allows participants to proceed if possible.
+Double Auction 
 
-.. image:: _static/Questionnaire.png
-   :alt:  600px
 
-Stage 7: Final earnings
-~~~~~~~~~~~~~~~~~~~~~~~
 
-You have arrived at defining the final stage of the experiment. Add a new stage with the *+* sign. On this page you will sum the earnings of each participant and display it on their screen. To do this, we will sum the participant's earnings across all rounds. In the text box you can write the total earnings (in experimental points and real currency) to the participants' screen. Note the variable *exchangeRate*, which is defined in the
-:ref:`parameters <parameters>`.
 
-.. code-block:: javascript
-      :caption: Box 5: JS code for calculating total earnings
-      :linenos:
 
-      totalPoints = 0;
-      for (var i = 1;i <= numberPeriods; i++){
-         payThisPeriod = 
-            getFloat('decisions', 'playerNr='+playerNr+' and period='+i, 'payoff'); 
-         totalPoints += payThisPeriod; 
-      }
-      valuePoints = totalPoints * exchangeRate;
 
-.. code-block:: html
-      :caption: Box 6: Final earnings text
-      :linenos:
 
-      Your final earnings are: $totalPoints$.
-      These points are worth: $valuePoints$.
 
-Set parameters
---------------
 
-Before we start testing, we need to set the parameters. You can do so by clicking *parameters* in the top horizontal menu. In the :ref:`parameter table <parameters>` we will define where a period starts, and where it ends. In the *predefined parameters* tab you can set the parameters *loopStart* to *Decision* and *loopEnd* to *Results* by using the drop-down menus. This means that at the end of a period, and when a new period starts, groups will move from the Results stage to Decision stage. Once the period number reaches *numberPeriods*, participants will proceed to Questionnaire (the stage defined right after Results).
 
-Compile and test
-----------------
 
-Your experiment is now ready for testing. In the horizontal bar on the top of your screen, click *compile and test* and :ref:`compile_and_test`. LIONESS Lab will compile your experiment and will open the :ref:`control_panel` of your experiment in a new tab.
 
-In the control panel, you can start testing your experiment by switching on the :ref:`control_panel__test_mode` and start a :ref:`test player <control_panel__test_mode>`. A new tab will open with the experimental pages you defined. If needed, you can start a second test player (e.g. to play in a group after being matched in the :ref:`lobby`).
+
+
+
+
