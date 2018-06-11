@@ -13,10 +13,9 @@ With classEx you can conduct interactive surveys and classroom experiments. Stud
    :glob:
 
    010_basic
-   020_conceptual_overview
-   030_detailed_instructions
-   040_reference_manual
-   050_further_details
+   020_Run_a_ready-made_game
+   030_Organize_games
+   040_Develop_your_own_game
 
 
 
