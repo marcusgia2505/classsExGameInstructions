@@ -70,6 +70,30 @@ Excel.JPG
 Terminology
 ===========
 
+Session
+
+A session is a sequence of experiments or games in a lecture, meeting or presentation. Participants should not shut their browser during a session, as each participant receives an ID-number for a session. This allocation would be lost if participants close their browsers.
+Tip: After the end of a session, you can use statistical tests to analyse whether there is a relationship between the different games of a session. For example, you can examine whether participants with higher mathematical abilities are more risk averse. For this purpose, participants' ID-numbers are stored in an Excel sheet.
+Game
+
+Games consist of a sequence of stages. A game is typically characterised by a joint evaluation of the decisions and results at the end.
+Tip: If you want to conduct a quiz consisting of several questions with unrelated results, it is advisable to create a separate game for each question.
+Stages
+
+Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized.
+
+Stages can be configured with several options. You can find more information here.
+Assignment and Matching
+
+You can define the basic settings of your game by choosing to assign participants to roles, treatments, groups etc. Further, you can choose how you want to rematch participants if you play several rounds.
+Elements
+
+Elements are the modules of each stage. A stage has two areas in which you can add modules: participants and lecturer.
+
+You can chose from text elements, input elements (numerical input, likert scales, …), programme elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
+
+More information on Elements. 
+
 Game and Session
 ----------------
 
