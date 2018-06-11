@@ -13,15 +13,26 @@ Lecturers are required to register in order to use classEx. Please fill in the r
     :alt:  300px
 
 The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the university needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers, students or individuals entrusted with the payoff chose their corresponding mode, enter the password and log in. Following features are available:
+
 Students and Particpants
+------------------------
 
 Students can participate interactively in a lecture or a presentation by logging in as a “participant”. They do not need to register and remain anonymous. The lecturer choses the password and provides this to the students. More information can be found here.
+
 Lecturers
+---------
 
 Lecturers (users) who want to actively involve their students, log in as “lecturer”. They receive their password via e-mail upon registration. Lecturers can either enter the Lecture Mode and start games and quizzes or enter the Editing Mode and adapt games or create new ones.
+
 Administrative staff
+--------------------
 
 Individuals entrusted with the payoff can enter the Administration Mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. 
+
+Essentials
+==========
+
+AB HIER LIONESS!!!
 
 Get access to LIONESS Lab
 =========================
