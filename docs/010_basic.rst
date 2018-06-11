@@ -32,6 +32,34 @@ Individuals entrusted with the payoff can enter the Administration Mode in order
 Essentials
 ==========
 
+Terminology
+===========
+
+Game and Session
+----------------
+
+Stage and Element
+-----------------
+
+Player and Lecturer
+-------------------
+
+Round and Loop
+--------------
+
+Player, Type and Group Internal & external ID
+---------------------------------------------
+
+Global and subjects variables and parameters
+--------------------------------------------
+
+Interaction types (sequential interaction, simulatenous,…)
+----------------------------------------------------------
+
+Ready-made games
+================
+
+
 AB HIER LIONESS!!!
 
 Get access to LIONESS Lab
