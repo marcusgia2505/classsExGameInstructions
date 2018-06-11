@@ -4,9 +4,33 @@ Run a ready-made game
 
 Prerequisites (students devices, lecturer device, data volume)
 ==============================================================
+Data volume
+
+classEx only requires a small amount of data volume. When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. 
 
 Login of participants and test participants (+logout)
 =====================================================
+
+Login
+
+Loginnnn.JPG
+
+In order to login, participants go to the website http://classex.uni-passau.de and choose their university and then their course or lecture. They enter the password provided by the lecturer and click on "Login".
+
+
+Noopenvotings.JPG
+
+If participants are logged in before the lecturer has started the game, participants see a waiting screen. The lecturer can edit the text on the waiting screen in the Editing Mode in “own data”.
+Login with QR-Code
+
+All experiments can be accessed by participants via a QR-Code. This QR-Code is provided automatically in the Lecture Mode on top of the page. Enlarge the QR code by clicking on the symbol.
+
+QRnew2.JPG
+
+Lecturers can either copy the QR-Code and print it on flyers, for example, or display it on the screen. When clicking on the QR code symbol instructions how to log in without using the QR code also appear on the screen.
+Personalised login with ticket
+
+You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game. 
 
 Check list (practical tips, demo powerpoint)
 ============================================
@@ -58,8 +82,25 @@ Password forgotton
 
 • If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered. 
 
+Refresh Page
+
+Participants’ screens are updated automatically when their partner has made a decision or when the lecturer has started a new stage. Therefore, it is not necessary to press a refresh button to proceed. This way, participants can simply wait until the next stage appears on their mobile devices and do not have to keep refreshing their screens. 
+
 Run a game (mit 2 Bsp., parameters, neu starten)
 ================================================
+Binary Decisions
+
+Binarydecision.JPG
+
+When a game has been started, the first decision is shown along with the role of the particpant Role1.PNG. By clicking on one of the options, the decision is submitted and saved.
+Numeric Decisions
+
+Workinghours.JPG
+
+Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. See Elements.
+Other Decision Types
+
+There are other input types such as radio buttons or sliders which are explained in the section Elements. 
 
 Simple quiz question
 --------------------
@@ -72,6 +113,12 @@ Trading game
 
 Payoffs and Administration Mode
 ===============================
+Payoffs
+
+Payoffff.JPG
+
+In some games participants will receive a monetary payoff. The payoff is managed by providing the participant with a payoff code. The lecturer reserves the right of withholding the payoff in the event of error. The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff.
+Participants should not show their payoff code to others, as others could then claim the payoff. Therefore, it is advisable for participants not to let any other participant see the screen of their mobile device during the experiment.
 
 Data
 ====
@@ -81,3 +128,8 @@ Previous results
 
 Dealing with problems (logout button, playerNr)
 ===============================================
+Logout
+
+Currently, there is no logout button for participants. Participants can log out by entering ?logout behind the web address.
+
+You as a lecturer can log out all participants that are currently logged in to your class by going into your course data and clicking on this button: Bigredbutton.PNG 
