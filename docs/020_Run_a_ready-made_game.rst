@@ -155,6 +155,17 @@ Payoffff.JPG
 In some games participants will receive a monetary payoff. The payoff is managed by providing the participant with a payoff code. The lecturer reserves the right of withholding the payoff in the event of error. The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff.
 Participants should not show their payoff code to others, as others could then claim the payoff. Therefore, it is advisable for participants not to let any other participant see the screen of their mobile device during the experiment.
 
+Administration Mode
+
+The person entrusted with disbursing the payoff can log-in into the adiministration mode by selecting it in the drop down menu.
+
+[[File: adminmode.JPG]]
+
+The administrator then sees a screen indicating the date, the payoff code and the amount of money to be paid out to the participant. Further, clicking on the red icons opens up pdf of a receipt that must be printed out and then signed by the participant. Also, the administrator must tick the box on the right indicating that the participant has picked up his or her payoff.
+
+[[File: payout.JPG]]
+
+
 Data
 ====
 
