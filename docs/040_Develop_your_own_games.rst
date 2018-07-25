@@ -195,3 +195,225 @@ Gereng.PNG
 To switch the languages on and off, you can click on the flag Flags.PNG symbols above the elements.
 
 For other elements, this function has not been implemented yet. In this case, you need to enter both languages in one text box, separated by $$, for more information see Text Box. 
+
+Tool Comparison 
+===============
+Tool Comparison 
+
+Here you find an overview how classEx compares to other tools. It was last updated in September 2015 and is based on available information on the respective websites (see references below).
+
+==Participation==
+{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
+|- class="hintergrundfarbe8"
+
+! style="width:15%;font-size:103%;" | 
+! style="width:15%;font-size:103%;" | classEx
+<span style="font-size: x-small;">Giamattei & Lamsbdorff 2015</span>
+! style="width:15%;font-size:103%;" | Econ Port 
+<span style="font-size: x-small;">Cox and Swarthout 2006</span>
+! style="width:15%;font-size:103%;" | VeconLab
+<span style="font-size: x-small;">Holt 2015</span>
+! style="width:15%;font-size:103%;" | MobLab
+<span style="font-size: x-small;">MobLab 2015</span>
+! style="width:15%;font-size:103%;" | oTree
+<span style="font-size: x-small;">Chen et al. 2015</span>
+! style="width:15%;font-size:103%;" | z-Tree
+<span style="font-size: x-small;">Fischbacher 2007</span>
+|- 
+! Device for participation
+! Platform-independent
+! Computer
+! Computer
+! Platform-independent
+! Platform-independent
+! Computer
+<span style="font-size: x-small;">Windows only</span>
+|-
+! Optimized for mobile use
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;">Plugin not compatible</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;">Not Optimized</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+|-
+! Free Use
+! [[file:Yes2.png | 20px]]
+! [[file:Yes2.png | 20px]]
+! [[file:Yes2.png | 20px]]
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;">Research: $500 + session fee 
+Teaching:$18 per student/class
+</span>
+! [[file:Yes2.png | 20px]]
+! [[file:Yes2.png | 20px]]
+|-
+! Easy Access
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;">no download and registration</span>
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;">no download, but registration</span>
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;">no download, but registration</span>
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;">download optional, but registration</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;">no download and registration</span>
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;">download and registration</span>
+|}
+
+==Games==
+{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
+|- class="hintergrundfarbe8"
+  
+! style="width:15%;font-size:103%;" | 
+! style="width:15%;font-size:103%;" | classEx
+<span style="font-size: x-small;">Giamattei & Lamsbdorff 2015</span>
+! style="width:15%;font-size:103%;" | Econ Port 
+<span style="font-size: x-small;">Cox and Swarthout 2006</span>
+! style="width:15%;font-size:103%;" | VeconLab
+<span style="font-size: x-small;">Holt 2015</span>
+! style="width:15%;font-size:103%;" | MobLab
+<span style="font-size: x-small;">MobLab 2015</span>
+! style="width:15%;font-size:103%;" | oTree
+<span style="font-size: x-small;">Chen et al. 2015</span>
+! style="width:15%;font-size:103%;" | z-Tree
+<span style="font-size: x-small;">Fischbacher 2007</span>
+|-
+! Asynchronous Games
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;">To be implemented
+</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+|-
+! Between-subject design within a session
+! [[file:Yes2.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:Yes2.png | 20px]]
+! [[file:Yes2.png | 20px]]
+
+|}
+
+==Results==
+{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
+|- class="hintergrundfarbe8"
+
+! style="width:15%;font-size:103%;" | 
+! style="width:15%;font-size:103%;" | classEx
+<span style="font-size: x-small;">Giamattei & Lamsbdorff 2015</span>
+! style="width:15%;font-size:103%;" | Econ Port 
+<span style="font-size: x-small;">Cox and Swarthout 2006</span>
+! style="width:15%;font-size:103%;" | VeconLab
+<span style="font-size: x-small;">Holt 2015</span>
+! style="width:15%;font-size:103%;" | MobLab
+<span style="font-size: x-small;">MobLab 2015</span>
+! style="width:15%;font-size:103%;" | oTree
+<span style="font-size: x-small;">Chen et al. 2015</span>
+! style="width:15%;font-size:103%;" | z-Tree
+<span style="font-size: x-small;">Fischbacher 2007</span>
+|-
+! Immediate graphical results at the end of the experiment
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;">Limited
+</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:Yes2.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+! [[file:No.png | 20px]]
+<span style="font-size: x-small;"> &nbsp;</span>
+|-
+! Data Output
+! XLS
+! XML
+! Unformated
+! PDF
+! CSV
+! XLS
+
+|}
+
+==Own Experiments==
+
+{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
+|- class="hintergrundfarbe8"
+  
+! style="width:15%;font-size:103%;" | 
+! style="width:15%;font-size:103%;" | classEx
+<span style="font-size: x-small;">Giamattei & Lamsbdorff 2015</span>
+! style="width:15%;font-size:103%;" | Econ Port 
+<span style="font-size: x-small;">Cox and Swarthout 2006</span>
+! style="width:15%;font-size:103%;" | VeconLab
+<span style="font-size: x-small;">Holt 2015</span>
+! style="width:15%;font-size:103%;" | MobLab
+<span style="font-size: x-small;">MobLab 2015</span>
+! style="width:15%;font-size:103%;" | oTree
+<span style="font-size: x-small;">Chen et al. 2015</span>
+! style="width:15%;font-size:103%;" | z-Tree
+<span style="font-size: x-small;">Fischbacher 2007</span>
+|-
+! Development of own games
+! [[file:Yes2.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:Yes2.png | 20px]]
+! [[file:Yes2.png | 20px]]
+|-
+! Backend system
+<span style="font-size: x-small;">A backend system means that like in z-Tree experiments can be set by building together predefined elements so that only little programming is required.</span>
+! [[file:Yes2.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:No.png | 20px]]
+! [[file:Yes2.png | 20px]]
+|- 
+! Programming Language
+! PHP, AJAX
+! JAVA
+! PHP
+! No info
+! Phyton, Django
+! C++
+|}
+
+==References==
+
+Chen, D. L., Schonger, M., & Wickens, C. (2015). oTree-An Open-Source Platform for Laboratory, Online, and Field Experiments. https://mpra.ub.uni-muenchen.de/62730/1/MPRA_paper_62730.pdf. Accessed 23 August 2015.
+
+Cox, J. C., & Swarthout, J. T. (2011). EconPort: Creating and Maintaining a Knowledge Common. In C. Hess & E. Ostrom (Eds.), Understanding knowledge as a commons: From theory to practice (pp. 333–348). Cambridge, Mass.: MIT Press.
+
+Fischbacher, U. (2007). z-Tree: Zurich toolbox for ready-made economic experiments. Experimental Economics, 10(2), 171–178.
+
+Giamattei, M.,& Lambsdorff, J. G. (2015). classex - an online software for classroom experiments. Working Paper. https://www.researchgate.net/publication/280153877_classEx_-_an_online_software_for_classroom_experiments
+
+Holt, C. (2015). University of Virgina Veconlab. http://veconlab.econ.virginia.edu. . Accessed 23 August 2015.
+
+Moblab. (2015). Moblab: A playground for decisions. https://www.moblab.com/. Accessed 23 August 2015.
