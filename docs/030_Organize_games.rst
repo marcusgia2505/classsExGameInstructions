@@ -57,3 +57,18 @@ Information on the game (meta data)
 
 Repository 
 ==========
+
+The Repository gives you an overview of yours and other users' public games and allows you to import these to your account.
+[[File:Repository.PNG||thumb|600px|The repository]]
+
+== List of all games ==
+
+The repository lists all games which were set public by their owners. These games can be imported to one's own account by clicking on the + symbol. Clicking on the info button shows some more information (if set by the owner) and a sample screenshot. 
+
+== Search games ==
+
+The list can be searched by the different criteria on the left hand side. The switch button disables viewing a certain criterion in the list. You can also make a free text search by typing in the search box in the top right corner. 
+
+== Unlist own games ==
+
+By clicking on the box symbol you can unlist your own games. They are set private and not listed in the repository anymore.
