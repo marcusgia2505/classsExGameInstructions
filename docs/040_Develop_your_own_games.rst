@@ -96,8 +96,76 @@ Create a new game
 Assignment and Matching
 =======================
 
+----------
+[[File:Matching.PNG]]
+
+==Assignment at the beginning of a game==
+
+Right before the first stage there is the button 'Assignment and Matching'. Here, you can specify whether you want to assign participants to treatments, groups, roles or a combination of all (complex assigment). classEx allows you to flexibly adapt to an unknown number of participants, meaning that you choose the number of different roles, the number of treatments and the size of groups. ClassEx then assigns participants automatically. Specifically, have following available options:
+
+'''No assigment:''' Participants all are assigned to role 0, treatment 0 and group 0.
+
+'''treatments:''' Allows you to assign participants to treatments. A division into treatments will distribute participants evenly over treatments. You can select any number of treatments between 1 and 10. Treatments will be distributed according to arrival in the experiment (e.g. with two treatments the first will be treatment 1, the second treatment 2, the third again treatment 1,...)
+
+'''role and group:''' Allows you to assign participants to a number of different roles in the game. Participants will be allocated to role 1, role 2, role 3... alternately. Participants will also be assigned to a group. E.g. if you have defined 3 roles, a group will consists of role 1, role 2 and role3. If you want to have groups with asymmetric combination of roles please use complex assignment.
+
+'''group''' Allows you to assign participants to groups (all participants will have the same role). Groups are filled one after each other. You are free to select any group size. 
+
+'''treatment + role and group''' Allows you to assign both role+group and treatments. If combines the two above options.
+
+'''complex assignment''' Allows you to assign participants to a different number of roles, treatments and groups.
+
+<div class="quote">Tip: The so-called between-subject design examines how a controlled variation of the game influences the behaviour of different participants. This can be implemented using treatments. The groups in one treatment only interact with participants in their own treatment and never with participants of the other treatment. The game can be adapted for every treatment, for example by providing different information, altered probabilities of random events or diverse strategic interactions.</div>
+
+==Matching==
+
+If you have assigned participants, you can specify how you want them to be rematched if your game consists of several rounds. You can choose from the following options:
+
+'''partner''' Participants stay in the same groups and keep their roles throughout the entire game.
+
+'''random''' Participants are randomly assigned to a new role, group and treatment (if specified).
+
+Absolute stranger matching, ensuring that participants never interact with players they have interacted with before, is not available. 
+
+[[Random matching with constant roles]] is not provided as an option but can be implemented manually in classEx.
+
+==Further settings==
+
+On the page assignment and matching you can further choose if the role should be displayed in the header of the participants page and if the player id should be displayed there as well.
+
+==Available roles==
+
+Up to 13 roles are available (and an additional gray role 0 for no role assignment). Role 2 is distinguishable by a different figure to allow distinction for person who have red–green color blindness.
+
+[[File:Allroles.png]]
+
+This roles are standardized items and are shown in the header of the participant's page.
+
 Define your stages
 ==================
+
+[[Games]] consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized.
+
+==Configuration of Stages==
+
+Stages are points of synchronisation in a [[Games|game]]. Generally, the input phase is one stage and the results or output phase is a different stage, as the output can only be displayed after all [[Participants|participants]] have entered their input. Each stage consists of one or more [[Elements|elements]] (e.g. input, results, small programmes) that require the input of at least one participant. In the [[Editing Mode]], you can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
+
+[[File:blub.JPG]]
+
+===Rounds===
+If you want to run one or more stages more than once, you can define rounds and determine how often you would like to return to a certain stage. If you determine the return value as 0 or if the stage has been run for the predetermined number of times, classEx will redirect you to the next stage right underneath. You can also determine which stage you want to return to if you play several rounds.
+
+===Late arrival===
+You can specify whether participants can arrive late, i.e. if they only just logged in. You can choose for this to be possible, not possible, or only possible in the first round.
+
+===Move stages===
+When you create a new stage, this stage will automatically be defined as the next stage. You can move stages by pressing [[File:ll.JPG]] or [[File:rr.JPG]]. The order in which stages are run is always from left to right.
+
+===Add stage===
+You can add a new stage by clicking on [[File:plus.JPG]] beside the tabs displaying the different stages or on the top right of the current stage. To change the order of stages see "move stages".
+
+===Delete stage===
+You can delete a stage by pressing [[File:rubbish.JPG]].
 
 Add elements (display condition,…, mit Bsp…, general input)
 ===========================================================
@@ -163,6 +231,15 @@ Functions
 
 Testing (Diagnose mode)
 =======================
+
+You can access the diagnosis mode by clicking on the [[File:Steto.PNG]] symbol in the top bar of the [[Lecture Mode]].
+
+Clicking on the symbol opens up a space beside the usual display on the lecturer's screen, which shows you all variables.
+
+[[File:Stetot.PNG]]
+
+The different tabs allow you to access the globals or the variables for each player. This makes it much programming and error finding much easier than having to jump back and forth between the lecture mode and the editing mode.
+
 
 Test a Game
 
