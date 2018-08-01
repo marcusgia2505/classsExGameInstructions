@@ -49,8 +49,7 @@ classEx is constantly being improved. Users are being added and are delivering r
 
 <span class="quote">If you have any questions, support issues or want to report bugs, please mail to [mailto:classEx@uni-passau.de classEx@uni-passau.de].</span>
 
-[http://classex.de/en/terms-of-use  Terms of Use]
-
+`Terms of Use <http://classex.de/en/terms-of-use>`_
 
 
 
