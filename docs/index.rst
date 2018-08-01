@@ -3,8 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+=====================================
 Welcome to the classEx documentation!
-==================================================
+=====================================
 
  .. image:: _static/Cover.jpg 
     :alt:  300px
@@ -20,7 +21,8 @@ With classEx you can conduct interactive surveys and classroom experiments. Stud
    030_Organize_games
    040_Develop_your_own_games
 
-==New Features==
+New Features
+============
 
 * Jan 18th 2018: A new version is realeased '''version 3.4.5.'''. New features include a [[Camera|camera input]], a [[Lecturer_Discrete_Choice|discrete choice element for lecturers]] and a [[Contract|new contract element]]. 
 
@@ -36,7 +38,8 @@ With classEx you can conduct interactive surveys and classroom experiments. Stud
 
 * February 20th 2017: classEx was updated to '''version 3.4.3'''. [[What is new in version 3.4.3?]]
 
-==Version and Terms of Use==
+Version and Terms of Use
+========================
 
 Current Version: 3.4.4 beta
 
@@ -46,7 +49,7 @@ classEx is constantly being improved. Users are being added and are delivering r
 
 <span class="quote">If you have any questions, support issues or want to report bugs, please mail to [mailto:classEx@uni-passau.de classEx@uni-passau.de].</span>
 
-===[http://classex.de/en/terms-of-use  Terms of Use]===
+[http://classex.de/en/terms-of-use  Terms of Use]
 
 
 
