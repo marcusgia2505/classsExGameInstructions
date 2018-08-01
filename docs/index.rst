@@ -47,7 +47,7 @@ Please notice that classEx is still a beta version.
 
 classEx is constantly being improved. Users are being added and are delivering results to existing experiments. Further experiments are being designed and made available. Likewise, the functionality is continuously being revised and updated.
 
-If you have any questions, support issues or want to report bugs, please mail to classEx@uni-passau.de classEx@uni-passau.de.
+If you have any questions, support issues or want to report bugs, please mail to classEx@uni-passau.de.
 
 `Terms of Use <http://classex.de/en/terms-of-use>`_
 
