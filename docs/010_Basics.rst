@@ -1,13 +1,16 @@
 .. _basic:
 
-=====
-Basic
-=====
+======
+Basics
+======
 
-Registration and Login
-======================
+Registration
+============
 
 Lecturers are required to register in order to use classEx. Please fill in the registation form you can find `here <https://classex.de/get-login-credentials/>`_. Registered users receive a password via e-mail and hereby obtain the right of unlimited and cost-free use of classEx for teaching, further education and research (for details please see `terms of use <https://classex.de/wp-content/uploads/2018/04/TermsOfUse.pdf>`_). Students do not need to register but are involved anonymously as participants in lectures and presentations.
+
+Login
+=====
 
  .. image:: _static/Loginnew.png 
     :alt:  300px
@@ -15,17 +18,17 @@ Lecturers are required to register in order to use classEx. Please fill in the r
 The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the university needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers, students or individuals entrusted with the payoff chose their corresponding mode, enter the password and log in. Following features are available:
 
 Students and Particpants
-------------------------
+========================
 
 Students can participate interactively in a lecture or a presentation by logging in as a “participant”. They do not need to register and remain anonymous. The lecturer choses the password and provides this to the students. More information can be found here.
 
 Lecturers
----------
+=========
 
 Lecturers (users) who want to actively involve their students, log in as “lecturer”. They receive their password via e-mail upon registration. Lecturers can either enter the Lecture Mode and start games and quizzes or enter the Editing Mode and adapt games or create new ones.
 
 Administrative staff
---------------------
+====================
 
 Individuals entrusted with the payoff can enter the Administration Mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. 
 
