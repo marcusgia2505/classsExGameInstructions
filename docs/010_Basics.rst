@@ -45,8 +45,9 @@ Top bar
 
 The top bar of the lecture mode looks like this:
 
-TBnew.PNG
-
+.. image:: _static/TBnew.PNG
+    :alt:  300px
+    
 Here, you can find the following symbols:
 
 - select game: By clicking on this, you can choose from all of your games. The selected game opens up as soon as you click on it.
