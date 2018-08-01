@@ -12,7 +12,7 @@ Lecturers are required to register in order to use classEx. Please fill in the r
 Login
 =====
 
- .. image:: _static/Loginnew.png 
+ .. image:: _static/Loginnew.jpg 
     :alt:  300px
 
 The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the university needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers, students or individuals entrusted with the payoff chose their corresponding mode, enter the password and log in. Following features are available:
