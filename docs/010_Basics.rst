@@ -44,7 +44,7 @@ This screen appears when you enter classEx. It provides you with an overview of 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
 
 .. image:: _static/Bild1.PNG
-    :alt:  300px
+    :alt:  100px
     
 The mode you are currently in, is always marked by a darker shade of grey, currently the symbol for the starting screen W.JPG. The symbol on the left Q.JPG takes you to the Lecture Mode. Clicking on F.JPG takes you to the Editing Mode. The little arrow S.JPG provides you with a drop-down menu. Here, you can access your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your class, for more information see Participants. 
 
