@@ -70,53 +70,84 @@ Here, you can
 
 - click on **Previous results** and choose which results from previous lectures you want to display. This way you can directly compare current outcomes with previous ones. 
 
-Terminology
+See chaper (?) for an explantion of the submenu for the editing mode.
+
+1.4 Terminology
 ===========
 
-Session
+This chapter clarifies the usage of some terms in this documentary. 
 
-A session is a sequence of experiments or games in a lecture, meeting or presentation. Participants should not shut their browser during a session, as each participant receives an ID-number for a session. This allocation would be lost if participants close their browsers.
-Tip: After the end of a session, you can use statistical tests to analyse whether there is a relationship between the different games of a session. For example, you can examine whether participants with higher mathematical abilities are more risk averse. For this purpose, participants' ID-numbers are stored in an Excel sheet.
+Lecturer
+--------
+
+The person conducting a game is the lecturer. The lecturer starts games, starts new rounds, ends games and shows results. The lecturer controls the lecture screen that is visible for all players (typically via a projector in the lecture hall). 
+
+Player
+------
+
+Every person participating in a game is a player. All a player needs for participation is a mobile device with internet access. No download is required.
+
+Session
+----------------
+
+A session is a sequence of games in a lecture, meeting or presentation. Players should not shut their browser during a session, as each player receives an ID-number for a session. This allocation would be lost if player close their browsers.
+Tip: After the end of a session, you can use statistical tests to analyse whether there is a relationship between the different games of a session. For example, you can examine whether players with higher mathematical abilities are more risk averse. For this purpose, players' ID-numbers are stored in an Excel sheet.
+
 Game
+----
 
 Games consist of a sequence of stages. A game is typically characterised by a joint evaluation of the decisions and results at the end.
 Tip: If you want to conduct a quiz consisting of several questions with unrelated results, it is advisable to create a separate game for each question.
-Stages
+
+Stage
+-----------------
 
 Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized.
 
 Stages can be configured with several options. You can find more information here.
-Assignment and Matching
 
-You can define the basic settings of your game by choosing to assign participants to roles, treatments, groups etc. Further, you can choose how you want to rematch participants if you play several rounds.
-Elements
+Element
+--------
 
-Elements are the modules of each stage. A stage has two areas in which you can add modules: participants and lecturer.
+Elements are the modules of each stage. A stage has two areas in which you can add modules: player and lecturer.
 
 You can chose from text elements, input elements (numerical input, likert scales, …), programme elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
 
-More information on Elements. 
+Treatment
+---------
 
-Game and Session
-----------------
+Treatments allow you to treat players differently throughout a game. You can assign players to treatments and customize stages and elements for treatments.
 
-Stage and Element
------------------
+Role
+----
 
-Player and Lecturer
--------------------
+Many games require different roles of players, e.g. producers and consumers. Stages and elements of a game can be customized according to the role of a player.
+
+Group
+-----
+
+Participating players of a game can be sorted into groups, e.g. according to their role, internal ID, randomly or a combination of these.
+
+Assignment and Matching
+-------------------------
+
+Assignement and matching refers to the procedure of how players are assigned into treatments, roles and groups at the start of a game. Further, you can choose how you want to rematch players at the beginning of each round if you play more then one round.
 
 Round and Loop
 --------------
 
-Player, Type and Group Internal & external ID
----------------------------------------------
+The number of rounds a game should be played can be defined. The loop referes to the stages of a game that should be repeated in every round. The loop is defined by selecting two stages and the number of rounds. Starting in the first round the game will then jump back from the end of the later stage to the beginning of the earlier stage until the number of rounds is reached. 
 
-Identification of subjects in the system
+1.5 Identification of subjects in the system
+========================================
+
 Internal ID
+-----------
 
 By default, subjects are completely anonymous in classEx. classEx creates a unique internal ID for each subject that logs in. This ID is generated randomly and does not allow any inference about the identity of the subject. It serves as a mean to be able to analyse the data and compare behaviour of subjects across different games if you play several in one session.
+
 External ID
+------------
 
 Should it be required, you also have several possibilities to identify subjects in the system.
 
@@ -128,11 +159,13 @@ During login: You can change the settings so that participants are asked for cer
 
 Here is an example:
 
-Data1.PNG
-
+.. image:: _static/Data1.PNG
+    :alt:  300px
+    
 And this is what it looks like for participants before login:
 
-Data2.PNG 
+.. image:: _static/Data2.PNG
+    :alt:  300px
 
 
 Global and subjects variables and parameters
