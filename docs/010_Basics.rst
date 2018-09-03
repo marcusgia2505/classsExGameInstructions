@@ -47,32 +47,21 @@ Submode menu
 
 The submode menu is located in the top left corner. It is different in each submode.
 
-You can see the submode menu for **Overview** in the picture above. Here, you can create **new folders** to organize your games and create **new games** that you can then design in the editing submode. Also, the **repository** provides access to previous results from your private games or from public games conducted by you or other classEx lecturers.
+You can see the submode menu for **Overview** in the picture above. Here, you can
+- create **new folders** to organize your games
+- create **new games** that you can then design in the editing submode
+- enter the **repository** which provides access to previous results from your private games or from public games conducted by you or other classEx lecturers
 
 The top bar of the **Lecture mode** looks like this:
-
-.. image:: _static/TBnew.PNG
+.. image:: _static/MenuLecture.PNG
     :alt:  300px
-    
-Here, you can find the following symbols:
-
-- select game: By clicking on this, you can choose from all of your games. The selected game opens up as soon as you click on it.
-
-- QR code symbol: Clicking on this symbol enlarges the QR code and provides an instruction for participants to enter without using the QR code.
-
-- Testpart.JPG: Clicking on this opens a participant screen in a new tab. This can be very useful to test classEx games.
-
-- Steto.PNG: This starts the Diagnosis mode. Here, you can see all variables for the lecturer and the players, which makes detecting programming errors much easier.
-
-- data: drop down menu. By selecting show data, you can access a clients' table by clicking on , which shows you how many participants are logged in and what decision stage they are at. Clicking on "back to Lecture mode" takes you back to the current game. 
-Showdata.JPG
-
-- Download results: In the drop-down menu of data you can also download excel files containing the decisions made in the game you just played or, if available, old results of this same game. You can also download excel files containing an overview of roles, treatments & groups that existed in this game as well as participants’ IDs and their log-in time.
-
-Excel.JPG
-
-
-- previous results: this function lets you access results of the same game from previous lectures. This way you can directly compare current outcomes with previous ones. 
+Here, you can    
+- **select games** from all public and your private games. The selected game opens up as soon as you click on it.
+- click on **Login QR code** to enlarge the QR code and also provide an instruction for players to enter without using the QR code
+- **Add test players** in a new tab. This can be very useful to test classEx games.
+- start the **Diagnosis mode**. Here, you can see all variables for the lecturer and the players, which makes detecting programming errors much easier.
+- open the drop down menu **data** where you can access an overview over players who are currently taking part in your game or who took part in the game of which the results are on display. The overview shows the number of participating players and which decision stage they are at. You can show this overiew on the screen via **show data**. Clicking on "back to Lecture mode" takes you back to the current game. You can also download the results via **download as excel file**. The excel files contain the decisions made in the game you just played or, if available, old results of the same game. You can also download excel files containing an overview of types, treatments & groups that existed in this game as well as players’ IDs and their log-in time.
+- click on **Previous results** and choose which results from previous lectures you want to display. This way you can directly compare current outcomes with previous ones. 
 
 Terminology
 ===========
