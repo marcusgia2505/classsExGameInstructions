@@ -12,7 +12,7 @@ Lecturers who want to actively involve their students are required to register i
 Login
 =====
 
-.. image:: _static/Login.PNG
+.. image:: _static/Login.PN
     :alt:  300px
 
 
