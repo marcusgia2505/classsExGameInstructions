@@ -1,16 +1,16 @@
 .. _basic:
 
 ======
-Basics
+1 Basics
 ======
 
-Registration
+1.1 Registration
 ============
 
 Lecturers who want to actively involve their students are required to register in order to use classEx. Please fill in the registation form you can find `here <https://classex.de/get-login-credentials/>`_. Registered users receive a password via e-mail and hereby obtain the right of unlimited and cost-free use of classEx for teaching, further education and research (for details please see `terms of use <https://classex.de/wp-content/uploads/2018/04/TermsOfUse.pdf>`_). Students do not need to register but are involved anonymously in lectures and presentations.
 
-Login
-=====
+1.2 Login
+=========
 
 .. image:: _static/Login.PNG
     :alt:  300px
@@ -27,8 +27,8 @@ User modes
 
 - Administration mode: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#payoffs-and-administration-mode>`_. 
 
-Essentials
-==========
+1.3 Essentials
+==============
 
 This screen appears when you enter classEx. It provides you with an overview of all your games and gives you quick access to all important features of classEx.
 
