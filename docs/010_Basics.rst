@@ -12,7 +12,7 @@ Lecturers are required to register in order to use classEx. Please fill in the r
 Login
 =====
 
-.. image:: _static/Login.JPG
+.. image:: _static/Login.PNG
     :alt:  300px
 
 
