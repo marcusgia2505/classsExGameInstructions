@@ -27,10 +27,10 @@ User modes
 
 - Administration mode: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#payoffs-and-administration-mode>`_. 
 
-1.3 Essentials
-==============
+1.3 Lecturer main screen
+========================
 
-This screen appears when you enter classEx. It provides you with an overview of all your games and gives you quick access to all important features of classEx.
+This screen appears when you enter classEx as lecturer. It provides an overview of all your games and gives you quick access to all important features of classEx.
 
 .. image:: _static/Startscreen.PNG
     :alt:  300px
