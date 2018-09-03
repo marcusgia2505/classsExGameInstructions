@@ -27,10 +27,10 @@ User modes
 
 - Administration mode: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#payoffs-and-administration-mode>`_. 
 
-1.3 Lecturer main screen
-========================
+1.3 Essentials of user mode "Lecturer"
+==================================
 
-This screen appears when you enter classEx as lecturer. It provides an overview of all your games and gives you quick access to all important features of classEx.
+Entering classEx as a lecturer provides three submodes: Overview, Lecture mode and Editing mode. The starting screen after login is the submode Overview. Here you can organize your games and access all important features of classEx.
 
 .. image:: _static/Overview.PNG
     :alt:  300px
@@ -40,12 +40,16 @@ Navigation bar
 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every submode. This allows you to switch from one submode to another and access your personal data.
     
-The submode you are currently in, is always marked by a darker shade of grey, here the symbol for the submode overview. The symbol on the left takes you to the lecture mode. The right symbol takes you to the editing mode. The drop down menu provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your course. 
+The currently active submode is marked by a darker shade around its symbol, here the submode overview. The left symbol takes you to the lecture mode. The right symbol takes you to the editing mode. The drop down menu provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your course. 
 
-Top bar
--------
+Submode menu
+------------
 
-The top bar of the lecture mode looks like this:
+The submode menu is located in the top left corner. It is different in each submode.
+
+You can see the submode menu for _Overview_ in the picture above. You can create _new folders_ to organize your games and create _new games_ that you can then design in the editing submode. Also, the _repository_ provides access to previous results from your private games or from public games conducted by you or other classEx lecturers.
+
+The top bar of the _Lecture mode_ looks like this:
 
 .. image:: _static/TBnew.PNG
     :alt:  300px
