@@ -7,7 +7,7 @@ Basics
 Registration
 ============
 
-Lecturers are required to register in order to use classEx. Please fill in the registation form you can find `here <https://classex.de/get-login-credentials/>`_. Registered users receive a password via e-mail and hereby obtain the right of unlimited and cost-free use of classEx for teaching, further education and research (for details please see `terms of use <https://classex.de/wp-content/uploads/2018/04/TermsOfUse.pdf>`_). Students do not need to register but are involved anonymously as participants in lectures and presentations.
+Lecturers who want to actively involve their students are required to register in order to use classEx. Please fill in the registation form you can find `here <https://classex.de/get-login-credentials/>`_. Registered users receive a password via e-mail and hereby obtain the right of unlimited and cost-free use of classEx for teaching, further education and research (for details please see `terms of use <https://classex.de/wp-content/uploads/2018/04/TermsOfUse.pdf>`_). Students do not need to register but are involved anonymously in lectures and presentations.
 
 Login
 =====
@@ -16,17 +16,18 @@ Login
     :alt:  300px
 
 
-The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the university needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers, students or individuals entrusted with the payoff chose their corresponding mode, enter the password and log in. Following features are available:
+The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the university needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff (administration mode) chose their corresponding user mode, enter the password and log in. Following features are available:
 
-Students and Particpants
-========================
+User modes
+----------
 
-Students can participate interactively in a lecture or a presentation by logging in as a “participant”. They do not need to register and remain anonymous. The lecturer choses the password and provides this to the students. More information can be found here.
+- Player: Students can participate interactively in a lecture or a presentation by logging in as a “player”. They do not need to register and remain anonymous. They select the university and the course from the lecturer's registration. The lecturer provides the password he has chosen for players in his course. Participation after logging in is self-explanatory and does not require any previous knowledge.
 
-Lecturers
-=========
 
-Lecturers (users) who want to actively involve their students, log in as “lecturer”. They receive their password via e-mail upon registration. Lecturers can either enter the Lecture Mode and start games and quizzes or enter the Editing Mode and adapt games or create new ones.
+- Lecturer: Registered lecturers who have received a password can 
+
+
+
 
 Administrative staff
 ====================
