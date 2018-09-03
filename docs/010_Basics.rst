@@ -37,7 +37,9 @@ Essentials
 ==========
 
 This screen appears when you enter classEx. It provides you with an overview of all your games and gives you quick access to all important features of classEx.
-Main classEx screens
+
+.. image:: _static/Startscreen.PNG
+    :alt:  300px
 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
 
