@@ -231,7 +231,7 @@ A different example concerns the influence of a default on human behaviour. This
 .. image:: _static/Wageincrease.PNG
     :alt:  300px
 
-The number of treatments is not limited to two. For example, different wage scenarios and their influence on participants’ motivation to work can be analysed. In their book ` Animal Spirits <http://press.princeton.edu/titles/8967.html>`_ (2009), Akerlof and Shiller suggest that people’s motivation to work is guided by nominal wages and that inflation rates are not considered sufficiently. In classEx, you can find a game called “Wage Increase” that covers this topic. Three different treatments are implemented in this game. Participants are asked how their motivation to work changes in reaction to different wage increases and inflation rates. This game enables an analysis of whether participants react to nominal or real wage increases.
+The number of treatments is not limited to two. For example, different wage scenarios and their influence on participants’ motivation to work can be analysed. In their book `Animal Spirits <http://press.princeton.edu/titles/8967.html>`_ (2009), Akerlof and Shiller suggest that people’s motivation to work is guided by nominal wages and that inflation rates are not considered sufficiently. In classEx, you can find a game called “Wage Increase” that covers this topic. Three different treatments are implemented in this game. Participants are asked how their motivation to work changes in reaction to different wage increases and inflation rates. This game enables an analysis of whether participants react to nominal or real wage increases.
 
 Multiple Choice
 ---------------
