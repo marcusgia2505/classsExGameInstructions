@@ -183,7 +183,7 @@ The special thing about this game is that you can actually implement random draw
 A test to determine subjects‘ risk preferences was presented by Holt and Laury (American Economic Review 2002). The following experiment shows how this works. 10 situations are presented to the participants, who then choose between a low-risk option A and a high-risk option B for each situation.
 
 ============= ========================================== ===========================================
-              Option A                                   Option B 
+Situation     Option A                                   Option B 
 ============= ========================================== ===========================================
 Situation 1   €2 with p = 1/10 and €1.60 with p = 9/10   €3,85 with p = 1/10 und €0.1 with p = 9/10
 Situation 2   €2 with p = 2/10 und €1.60 with p = 8/10   €3,85 with p = 2/10 und €0.1 with p = 8/10
