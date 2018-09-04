@@ -1,15 +1,15 @@
 .. _basic:
 
 ======
-1 Basics
+Basics
 ======
 
-1.1 Registration
+Registration
 ============
 
 Lecturers who want to actively involve their students are required to register in order to use classEx. Please fill in the registation form you can find `here <https://classex.de/get-login-credentials/>`_. Registered users receive a password via e-mail and hereby obtain the right of unlimited and cost-free use of classEx for teaching, further education and research (for details please see `terms of use <https://classex.de/wp-content/uploads/2018/04/TermsOfUse.pdf>`_). Students do not need to register but are involved anonymously in lectures and presentations.
 
-1.2 Login
+Login
 =========
 
 .. image:: _static/Login.PNG
@@ -27,7 +27,7 @@ User modes
 
 - Administration mode: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#payoffs-and-administration-mode>`_. 
 
-1.3 Essentials of user mode "Lecturer"
+Essentials of user mode "Lecturer"
 ==================================
 
 Entering classEx as a lecturer provides three submodes: Overview, Lecture mode and Editing mode. The starting screen after login is the submode Overview. Here you can organize your games and access all important features of classEx.
@@ -72,7 +72,7 @@ Here, you can
 
 See chaper (?) for an explantion of the submenu for the editing mode.
 
-1.4 Terminology
+Terminology
 ===========
 
 This chapter clarifies the usage of some terms in this documentary. 
@@ -102,16 +102,12 @@ Tip: If you want to conduct a quiz consisting of several questions with unrelate
 Stage
 -----------------
 
-Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized.
-
-Stages can be configured with several options. You can find more information here.
+Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Stages can be configured with several options. You can find more information here.
 
 Element
 --------
 
-Elements are the modules of each stage. A stage has two areas in which you can add modules: player and lecturer.
-
-You can chose from text elements, input elements (numerical input, likert scales, …), programme elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
+Elements are the modules of each stage. A stage has two areas in which you can add modules: player and lecturer. You can chose from text elements, input elements (numerical input, likert scales, …), programme elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
 
 Treatment
 ---------
