@@ -1,8 +1,8 @@
 .. _basic:
 
-======
-Basics
-======
+
+# Basics
+
 
 Registration
 ============
@@ -107,7 +107,7 @@ Games consist of several stages. There are at least 2 stages, one for the decisi
 Element
 --------
 
-Elements are the modules of each stage. A stage has two areas in which you can add modules: player and lecturer. You can chose from text elements, input elements (numerical input, likert scales, …), programme elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
+Elements are the modules of each stage. A stage has two areas in which you can add modules: player and lecturer. You can chose from text elements, input elements (numerical input, likert scales, …), program code elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
 
 Treatment
 ---------
@@ -134,90 +134,31 @@ Round and Loop
 
 The number of rounds a game should be played can be defined. The loop referes to the stages of a game that should be repeated in every round. The loop is defined by selecting two stages and the number of rounds. Starting in the first round the game will then jump back from the end of the later stage to the beginning of the earlier stage until the number of rounds is reached. 
 
-1.5 Identification of subjects in the system
-========================================
-
 Internal ID
 -----------
 
-By default, subjects are completely anonymous in classEx. classEx creates a unique internal ID for each subject that logs in. This ID is generated randomly and does not allow any inference about the identity of the subject. It serves as a mean to be able to analyse the data and compare behaviour of subjects across different games if you play several in one session.
-
-External ID
-------------
-
-Should it be required, you also have several possibilities to identify subjects in the system.
-
-Ticket: You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game.
-
-Ask for data during the game: At a certain stage, or after the end of the game, you can ask participants to enter their personal data or an ID you provide them with.
-
-During login: You can change the settings so that participants are asked for certain data before they log-in. For this, go to "course data" and click on additional settings. You can then enter what you would like participants to enter before logging in.
-
-Here is an example:
-
-.. image:: _static/Data1.PNG
-    :alt:  300px
-    
-And this is what it looks like for participants before login:
-
-.. image:: _static/Data2.PNG
-    :alt:  300px
-
+ClassEx creates a unique internal ID for each subject that logs in. This ID is generated randomly and does not allow any inference about the identity of the subject. Therefore, subjects are completely anonymous in classEx by default. The internal ID serves as a mean to be able to analyse the data and compare behaviour of subjects across different games if you play several in one session.
 
 Global and subjects variables and parameters
 --------------------------------------------
 
-Interaction types (sequential interaction, simulatenous,…)
-----------------------------------------------------------
+Global variables are variables on the game level. They have the same value for all players (e.g. current round). Subject variables are variables on the subject level. The value of a subject variable is calculated separately for every player (e.g. individual payoff). Parameters are variables that are adjustable before running a game (e.g. total number of rounds). Changing parameters does not require knowledge about how to edit games.
+
+Global and subject program code elements
+----------------------------------------
+
+Many games require calculations or algorithms. These are created in program code elements. The programming language used in these elements is PHP. Global program code is utilized for calculations on the game level. Subject program code is utilized for calculations on the subject level (for every player).
 
 Ready-made games
 ================
-This page provides an overview of the possible applications of classEx on the basis of diverse types of games. These are only some example. Many more games can be found in the repository in classEx.
-Contents
 
-    1 Game Description
-    2 Alphabetical List of Games
-    3 Standard Games
-    4 Categorization of Game Structure
-    5 Individual Choice
-        5.1 Single Choice
-            5.1.1 Single Choice with Random Events
-            5.1.2 Single Choice with Treatments
-        5.2 Multiple Choice
-        5.3 Numeric Data
-            5.3.1 With Treatments
-    6 Strategic Interaction
-        6.1 Simultaneous | 1 Role
-            6.1.1 Discrete
-            6.1.2 Numeric
-        6.2 Simultaneous | 2 Roles
-            6.2.1 Discrete
-            6.2.2 Numeric
-        6.3 Sequential | 2 Roles
-            6.3.1 Discrete
-            6.3.2 Numeric
-        6.4 Continuous | 2 Roles
+classEx provides users with a set of ready-made games that come with a classEx account. You can find these on the Starting Screen after logging in as a lecturer. In this section we provide an introduction to the possible applications of classEx on the basis of a categorized overview of some ready-made games. These are only examples. Many more games can be found in the repository in classEx.
 
-Game Description
+Individual choice
+-----------------
 
-In order to store and search for games the following information provides a definition of a game.
-Name 	A short name which describes the game
-Game Structure 	Individual vs. Strategic Choice (sim, seq or cont)
-Roles 	Number of Roles
-Alphabetical List of Games
+Individual choice means that the decisions of players are do not interfere with the decisions of other players. No strategic interaction with other players takes place. In the following, you can see a few examples of Individual choice games that can be implemented with classEx.
 
-Find an alphabetical listing of all games featured in this Wiki here.
-Standard Games
-
-classEx provides users with a set of ready-made games that come with a classEx account. You can find these in the Overview on the Starting Screen. This provides examples of different applications of classEx and also gives you ready-made games for some of the standard experiments such as the Public Goods Game or the Trust Game.
-Categorization of Game Structure
-
-classEx builds on a simple categorization of games. The categorization builds on the structure of the games. It first distinguished between individual and strategic choice. The latter then can be classified into simultaneous, sequential or continous games.
-Individual Choice 	Strategic Choice
-	Simulataneous 	Sequential 	Continuous
-Individual Choice
-
-Individual Choice means decisions of individuals which are made alone. No strategic interaction with other participants takes place. In the following, you can see a few examples of Individual Choice games that can be implemented with classEx.
 Single Choice
 
 The easiest type of questions are Quiz Questions as they can be also in found in standard Audience Response System. Participants choose among a set of options.
