@@ -231,7 +231,7 @@ A different example concerns the influence of a default on human behaviour. This
 .. image:: _static/Wageincrease.PNG
     :alt:  300px
 
-The number of treatments is not limited to two. For example, different wage scenarios and their influence on participants’ motivation to work can be analysed. In their book `Animal Spirits <http://press.princeton.edu/titles/8967.html>`_ (2009), Akerlof and Shiller suggest that people’s motivation to work is guided by nominal wages and that inflation rates are not considered sufficiently. In classEx, you can find a game called “Wage Increase” that covers this topic. Three different treatments are implemented in this game. Participants are asked how their motivation to work changes in reaction to different wage increases and inflation rates. This game enables an analysis of whether participants react to nominal or real wage increases.
+The number of treatments is not limited to two. For example, different wage scenarios and their influence on participants’ motivation to work can be analysed. In their book `Animal Spirits (2009) <http://press.princeton.edu/titles/8967.html>`_, Akerlof and Shiller suggest that people’s motivation to work is guided by nominal wages and that inflation rates are not considered sufficiently. In classEx, you can find a game called “Wage Increase” that covers this topic. Three different treatments are implemented in this game. Participants are asked how their motivation to work changes in reaction to different wage increases and inflation rates. This game enables an analysis of whether participants react to nominal or real wage increases.
 
 Multiple Choice
 ---------------
@@ -288,7 +288,7 @@ Discrete
 
 - Schelling Salience (Faces Beauty Contest)
 
-The Faces Beauty Contest goes back to ` John Maynard Keynes <http://de.wikipedia.org/wiki/John_Maynard_Keynes>`_ (1936). Here, the participants choose the two most beautiful faces. Precisely, the instructions go as follows: 
+The Faces Beauty Contest goes back to `John Maynard Keynes (1936) <http://de.wikipedia.org/wiki/John_Maynard_Keynes>`_. Here, the participants choose the two most beautiful faces. Precisely, the instructions go as follows: 
 
 "Please choose the two prettiest faces among the following eight faces. The two faces which are chosen most often gain the title "man of the year". Of those participants who opted for that pair of faces, one participant is drawn randomly and will earn 20 €."
 
@@ -367,21 +367,21 @@ The battle of the sexes game is an example for a strategic interaction game with
 .. image:: _static/Staghunt.PNG
     :alt:  300px
 
-Standard matrix games can be implemented in classEx. Like the famous ` Stag-Hunt Game <https://en.wikipedia.org/wiki/Stag_hunt>`_. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
+Standard matrix games can be implemented in classEx. Like the famous `Stag-Hunt Game <https://en.wikipedia.org/wiki/Stag_hunt>`_. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
 
 - Prisonners Dilemma
 
 .. image:: _static/Pd.PNG
     :alt:  300px
 
-Standard matrix games can be implemented in classEx. Like the famous ` Prisoner's dilemma <https://en.wikipedia.org/wiki/Prisoner%27s_dilemma>`_. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
+Standard matrix games can be implemented in classEx. Like the famous `Prisoner's dilemma <https://en.wikipedia.org/wiki/Prisoner%27s_dilemma>`_. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
 
 - Coordination Game
 
 .. image:: _static/Investment.PNG
     :alt:  300px
 
-Treatments can also be implemented for games with two roles in order to study, for instance, effects of differences in the environment of the decision or different incentives. The macroeconomic book of Akerlof and Shiller ` Animal Spirits 2009 <http://press.princeton.edu/titles/8967.html>`_ presents the idea that investments are only made if other investors simultaneously decide to do so, too. This relationship is investigated in the game “Coordinated Investment”, by providing private information to participants of the otherwise identical ` Coordination Game <https://en.wikipedia.org/wiki/Coordination_game>`_. In one treatment, this information reads that the investment is made in Germany. In another treatment, the country of destination of the investment is Greece, which was suffering an ` economic crisis <https://en.wikipedia.org/wiki/European_debt_crisis>`_ at the time of conducting the experiment.
+Treatments can also be implemented for games with two roles in order to study, for instance, effects of differences in the environment of the decision or different incentives. The macroeconomic book of Akerlof and Shiller `Animal Spirits (2009) <http://press.princeton.edu/titles/8967.html>`_ presents the idea that investments are only made if other investors simultaneously decide to do so, too. This relationship is investigated in the game “Coordinated Investment”, by providing private information to participants of the otherwise identical `Coordination Game <https://en.wikipedia.org/wiki/Coordination_game>`_. In one treatment, this information reads that the investment is made in Germany. In another treatment, the country of destination of the investment is Greece, which was suffering an `economic crisis <https://en.wikipedia.org/wiki/European_debt_crisis>`_ at the time of conducting the experiment.
 
 All of these might be carried out with multiple treatments.
 
@@ -409,7 +409,7 @@ Discrete
 
 - Principal-Agent
 
-A sequential game consists of at least three stages. In the first stage, player 1 http://classex.uni-passau.de/classex3/pic/role1.png makes a decision. In the second stage, player 2 http://classex.uni-passau.de/classex3/pic/role2.png makes a decision. In the third stage, the results are displayed.
+A sequential game consists of at least three stages. In the first stage, player 1 makes a decision. In the second stage, player 2 makes a decision. In the third stage, the results are displayed.
 
 The pricipal agent game is an example for sequential games that can be implemented with classEx:
 
@@ -417,75 +417,38 @@ A principal agent situation can be found in many economic interactions like, for
 The level of effort chosen by the agent determines the revenue of the principal. The principal can choose between three different payment systems:
 a fixed wage without a share of the revenue, a share of the revenue without a fixed wage and a mixture of the two, labelled Bonus. The systems in which the agent receives a share of the revenue involve organisational costs. Therefore, following table results:
 
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:20%;font-size:103%;" | 
-! style="width:20%;font-size:103%;" | Fixed wage
-! style="width:25%;font-size:103%;" | Share of revenue http://classex.uni-passau.de/classex3/pic/role1.png
-! style="width:25%;font-size:103%;" | Share of revenue http://classex.uni-passau.de/classex3/pic/role2.png
-! style="width:100%;font-size:103%;" | Revenue loss
-|- 
-! Fixed wage system
-! 3.20 €
-! 100%
-! 0%
-! 0%
-|- 
-! Bonus system
-! 1.60 €
-! 60%
-! 25%
-! 15%
-|- 
-! Share of revenue system
-! 0 €
-! 20%
-! 50%
-! 50%
-|}
+======================== =========== ========================== ========================== ============
+Renumeration system      Fixed wage  Share of revenue player 1  Share of revenue player 2  Revenue loss
+======================== =========== ========================== ========================== ============
+Fixed wage system        3.20 €      100%                       0%                         0% 
+Bonus system             1.60 €      60%                        25%                        15%
+Share of revenue system  0 €         20%                        50%                        50%
+======================== =========== ========================== ========================== ============
 
-In the table, Share of revenue http://classex.uni-passau.de/classex3/pic/role1.png denotes the principal and Share of revenue http://classex.uni-passau.de/classex3/pic/role2.png the agent.
+In the table, player 1 denotes the principal and player 2 the agent.
 The agent then chooses his level of effort and consequently the revenue and his disutility from working denoted in €:
 
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:16%;font-size:103%;" | Level of effort
-! style="width:16%;font-size:103%;" | Very little
-! style="width:16%;font-size:103%;" | Little
-! style="width:16%;font-size:103%;" | Medium
-! style="width:16%;font-size:103%;" | Hardworking
-! style="width:100%;font-size:103%;" | Very hardworking
-|- 
-! Revenue
-! 1.60 €
-! 3.20 €
-! 4.80 €
-! 6.40 €
-! 8.00 €
-|- 
-! Disutility
-! 1.00 €
-! 1.20 €
-! 1.60 €
-! 2.20 €
-! 3.00 €
-|}
+================ ============ ======= ======= ============ ================
+Level of effort  Very little  Little  Medium  Hardworking  Very hardworking
+================ ============ ======= ======= ============ ================
+Revenue          1.60 €       3.20 €  4.80 €  6.40 €       8.00 €
+Disutility       1.00 €       1.20 €  1.60 €  2.20 €       3.00 €
+================ ============ ======= ======= ============ ================
 
 This game shows that revenue losses are accepted and that systems allowing the agent to participate in the revenues are chosen despite the revenue losses, because the agent only has an incentive to work hard if he participates substantially in the revenues. Some principals also choose the system with a fixed wage and no participation of the agent. However, the game is not played repeatedly and agents hence do not have to fear for their reputation. Therefore, the level of positive reciprocity is small and results in little effort in the system with a fixed wage.
 
+- Centipede Game
 
-Centipede Game
-
-Sequential games can be run over more than two rounds. A well-known example for this is the centipede game. In the centipede game, the sum of payoffs for both players increases over a finite and known number of rounds. First of all, player 1 [[File: role1.PNG]] makes a decision. In the next stage, player 2 [[File: role2.PNG]] does so. In each stage, participants choose between two options, either to '''take''', which ends the game and ensures the payoff of that round, or to '''pass''' which delegates the decision to player 2 and increases the payoff.
+Sequential games can be run over more than two rounds. A well-known example for this is the centipede game. In the centipede game, the sum of payoffs for both players increases over a finite and known number of rounds. First of all, player 1 makes a decision. In the next stage, player 2 does so. In each stage, participants choose between two options, either to **take**, which ends the game and ensures the payoff of that round, or to **pass** which delegates the decision to player 2 and increases the payoff.
 
 Concretely, this game is implemented as followes in classEx:
 
-The game starts with a total payoff of 5€. In this stage, player 1 [[File: role1.PNG]] decides whether to '''take''' or '''pass'''. If he '''takes''', [[File: role1.PNG]] receives 4€ and [[File: role2.PNG]] receives 1€. If he chooses to '''pass''' the total payoff increases to 10€ and [[File: role2.PNG]] now has to decide whether to '''take''' or '''pass'''. In this stage, [[File: role2.PNG]] has an advantage. '''Take''' renders a payoff of 8€ for [[File: role2.PNG]] and 2€ for [[File: role1.PNG]]. However, if [[File: role2.PNG]] '''passes''', the total payoff increases to 20€. Now, [[File: role1.PNG]] has the choice again. He can either '''take''' and receive 16€, leaving 4€ for [[File: role2.PNG]]. Or, if he chooses to '''pass''', the game ends with another increase of the total payoff to 40€, giving player 2 [[File: role2.PNG]] 32€ and [[File: role1.PNG]] 8€. Two pairs are randomly drawn and receive a winners' notification with which they can collect their payoff. The lecturer is provided with a graphical illustration of how often the game was terminated with the choice of '''take''' in the respective stages.
+The game starts with a total payoff of 5€. In this stage, player 1 decides whether to **take** or **pass**. If he **takes**, receives 4€ and receives 1€. If he chooses to **pass** the total payoff increases to 10€ and now has to decide whether to **take** or **pass**. In this stage, has an advantage. **Take** renders a payoff of 8€ for and 2€ for. However, if **passes**, the total payoff increases to 20€. Now, has the choice again. He can either **take** and receive 16€, leaving 4€ for . Or, if he chooses to **pass**, the game ends with another increase of the total payoff to 40€, giving player 2 32€ and 8€. Two pairs are randomly drawn and receive a winners' notification with which they can collect their payoff. The lecturer is provided with a graphical illustration of how often the game was terminated with the choice of **take** in the respective stages.
 
 Numeric
 ~~~~~~~
 
-Labor Contract
+- Labor Contract
 
 Trust Game
 In the trust game, player 1 (trustor) can can decide whether to transfer none, some or all of her endowment to player 2 (trustee). Transferring the entire endowment is socially optimal because the transferred amount is multiplied by the experimentor. Player 2 can then decide whether to transfer none, some or all of his endowment back to player 1. Therefore, transferring is only worthwile for the trustor, if the trustee repays the trust and transfers back at least the sent amount.
