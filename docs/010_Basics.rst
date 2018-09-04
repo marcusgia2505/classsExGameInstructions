@@ -149,26 +149,33 @@ Global and subject program code elements
 
 Many games require calculations or algorithms. These are created in program code elements. The programming language used in these elements is PHP. Global program code is utilized for calculations on the game level. Subject program code is utilized for calculations on the subject level (for every player).
 
+================
 Ready-made games
 ================
 
 classEx provides users with a set of ready-made games that come with a classEx account. You can find these on the Starting Screen after logging in as a lecturer. In this section we provide an introduction to the possible applications of classEx on the basis of a categorized overview of some ready-made games. These are only examples. Many more games can be found in the repository in classEx.
 
 Individual choice
------------------
+=================
 
 Individual choice means that the decisions of players are do not interfere with the decisions of other players. No strategic interaction with other players takes place. In the following, you can see a few examples of Individual choice games that can be implemented with classEx.
 
 Single Choice
+-------------
+
+- Quiz questions
 
 The easiest type of questions are Quiz Questions as they can be also in found in standard Audience Response System. Participants choose among a set of options.
 
-Quiz questions
+.. image:: _static/Singlechoice.PNG
+    :alt:  300px
+
 Quiz questions, such as the one above, are the easiest type of application in classEx. The lecturer can set any number of options. These can be labelled randomly, e.g. as Option 1, Option 2, etc., but can also include short answers. Quiz questions are mostly built up in the way that only one answer can be selected (Single Choice) and one or more of them can be classified as correct. For presentation purposes the lecturer has the opportunity to highlight the correct answer in colour. This occurs by marking the relevant option in the [[Editing Mode]]. 
 <div class="quote">
 Tip: Since most of the mobile devices have small screen sizes, not more than 4-5 briefly described options should be set.</div>
 
 Single Choice with Random Events
+--------------------------------
 
 Simple questions combined with a random event are a different type of application for Individual Choice games. This way, participants can be animated to think about decisions with unsure outcomes and payoffs. Lecturers can use this to show relevant applications in, for example, statistics, stochastics, finance or the insurance industry. For instance, participants can place a bet on a coin toss. You can also test to which extent participants are willing to take a risk. In the following, you can find a few examples of how random events can be implemented in classEx:
 
