@@ -167,7 +167,7 @@ Single Choice
 
 The easiest type of questions are Quiz Questions as they can be also in found in standard Audience Response System. Participants choose among a set of options.
 
-.. image:: _static/Singlechoice.PNG
+.. image:: _static/Quiz.PNG
     :alt:  300px
 
 Quiz questions, such as the one above, are the easiest type of application in classEx. The lecturer can set any number of options. These can be labelled randomly, e.g. as Option 1, Option 2, etc., but can also include short answers. Quiz questions are mostly built up in the way that only one answer can be selected (Single Choice) and one or more of them can be classified as correct. For presentation purposes the lecturer has the opportunity to highlight the correct answer in colour. This occurs by marking the relevant option in the [[Editing Mode]]. 
