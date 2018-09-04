@@ -258,27 +258,35 @@ Opinion polls differ from quiz questions in the sense that you cannot classify o
     :alt:  300px
 
 An example for an opinion poll with multiple choice answers is the question of the effects on inflation, where more than one answer may be correct. You can implement such an opinion poll in classEx, by selecting “Check boxes (Multiple Choice)” in the Editing mode. None of the options should be marked as correct. Furthermore, you need to select “Multiple Choice” for the evaluation of results.
-Tip: You can easily change the order of answer options by drag & drop. Simply click onto the number of the option you would like to change and drag it to the new position.</div>
+Tip: You can easily change the order of answer options by drag & drop. Simply click onto the number of the option you would like to change and drag it to the new position.
 
-- Numeric Data
+Numeric Data
+------------
 
-Decisions of participants can also require an input of numbers. For this, simply choose “Numeric input field” as the type of input field in the Editing Mode. A game that uses this form of input is shown below:
+Decisions of participants can require an input of numbers. For this, simply choose “Numeric input field” as the type of input field in the Editing Mode. A game that uses this form of input is shown below:
 
-Estimation Task
-[[File: numberindic.PNG|right]]
+- Estimation Task
 
-Decisions of participants can also require an input of numbers. For this, simply choose “Numeric input field” as the type of input field in the [[Editing Mode]]. Participants are asked to estimate the number of lines of a famous German poem. The right answer is marked by the red line.
+.. image:: _static/Numberindic.PNG
+    :alt:  300px
 
-With Treatments
+Participants are asked to estimate the number of lines of a famous German poem. The right answer is marked by the red line.
 
-You can also implement several treatments in games with numeric input. For example:
+Numeric data with treatments
+----------------------------
 
-Distribution of Income
-The distribution of income into consumption and savings is another example for the implementation of treatments with numerical input. Here, participants specify which percentage of a payment they want to use for certain purposes. This allows an analysis of the well-known macroeconomic theory of Ricardian Equivalence, i.e. the question whether households take future tax payments into account while determining their current consumption behaviour. In classEx, you find such a game called '''“Consumption and Government Spending”'''. In this game, participants are told that each citizen receives a large amount of money from the government. They then have to decide how much of this money they want to spend for non-durable consumer goods, how much they want to spend for durable consumer goods and how much they want to save. Two treatments are implemented which differ in regard to the way in which the government finances these payments. In the one treatment, the government has found new natural resources which finance the payments. In the second treatment, the government finances the payments via credits, i.e. the emission of new government bonds (which would then lead to higher future tax rates). Results show that the treatment only has a small influence on the level of savings. Therefore, evidence for the theory of Ricardian Equivalence is rather small.
+You can also implement several treatments in games with numeric input.
+
+- Distribution of Income
+
+The distribution of income into consumption and savings is another example for the implementation of treatments with numerical input. Here, participants specify which percentage of a payment they want to use for certain purposes. This allows an analysis of the well-known macroeconomic theory of Ricardian Equivalence, i.e. the question whether households take future tax payments into account while determining their current consumption behaviour. In classEx, you find such a game called “Consumption and Government Spending”. In this game, participants are told that each citizen receives a large amount of money from the government. They then have to decide how much of this money they want to spend for non-durable consumer goods, how much they want to spend for durable consumer goods and how much they want to save. Two treatments are implemented which differ in regard to the way in which the government finances these payments. In the one treatment, the government has found new natural resources which finance the payments. In the second treatment, the government finances the payments via credits, i.e. the emission of new government bonds (which would then lead to higher future tax rates). Results show that the treatment only has a small influence on the level of savings. Therefore, evidence for the theory of Ricardian Equivalence is rather small.
 
 Strategic Interaction
+======================
 
-With classEx, strategic interaction in the lecture can be modelled, too. It offers games which can be conducted simultaneously, sequentially or continously (not yet implemented). Furthermore, the type of the game is determined by the number of roles. Participants can be assigned to different roles Role1.PNG Role2.PNG. Every role is related to a seperate task and interaction.
+With classEx, strategic interaction in the lecture can be modelled, too. It offers games which can be conducted simultaneously, sequentially or continously (not yet implemented). Furthermore, the type of the game is determined by the number of roles. Participants can be assigned to different roles. Every role is related to a seperate task and interaction. In game instructions roles are usually referred to as coloured human shape icons: .. image:: _static/Role1.PNG
+
+
 Simultaneous | 1 Role
 
 In a simple variation with strategic interaction, all participants have the same role and only interact with each other in one big group. Contrary to individual choice games, the result is influenced by the decisions of all other participants in the lecture.
