@@ -276,24 +276,33 @@ With classEx, strategic interaction in the lecture can be modelled, too. It offe
 
 .. image:: _static/Role2.PNG
 
-Simultaneous | 1 Role
+Simultaneous with one Role
+--------------------------
 
 In a simple variation with strategic interaction, all participants have the same role and only interact with each other in one big group. Contrary to individual choice games, the result is influenced by the decisions of all other participants in the lecture.
 
 Discrete
+~~~~~~~~
 
-Workplaces in the Library^
+- Workplaces in the Library
 
-Schelling Salience (Faces Beauty Contest)
-The Faces Beauty Contest goes back to [http://de.wikipedia.org/wiki/John_Maynard_Keynes John Maynard Keynes] (1936). Here, the participants choose the two most beautiful faces. Precisely, the instructions go as follows: 
+- Schelling Salience (Faces Beauty Contest)
 
-<blockquote style="background-color: lightgrey; border: solid thin grey;">"''Please choose the two prettiest faces among the following eight faces. The two faces which are chosen most often gain the title "man of the year". Of those participants who opted for that pair of faces, one participant is drawn randomly and will earn 20 €.''"</blockquote>
+The Faces Beauty Contest goes back to ` John Maynard Keynes <http://de.wikipedia.org/wiki/John_Maynard_Keynes>`_ (1936). Here, the participants choose the two most beautiful faces. Precisely, the instructions go as follows: 
+
+.. topic::
+
+   "Please choose the two prettiest faces among the following eight faces.
+   The two faces which are chosen most often gain the title "man of the year".
+   Of those participants who opted for that pair of faces, one participant is drawn randomly and will earn 20 €."
+
 
 [[File:SchellingSalience.jpg | right]]
 The eight faces are shown in the figure in the right corner in which you can find the faces of the two lecturers themselves. For the participants, these stand out prominently. This prominence is called [[Schelling Salience]]. With this, participants are able to agree on the selection of the two lecturers as a pair. Everybody who does that maintains his / her opportunity to win. As in the case of Keynes, people are not selected with regard to their beauty, but dependent on the achievable profit. For Keynes, this was an example for the fact that investors don’t buy the best asset but those which they can sell to others most successfully.
 
 
 Numeric
+~~~~~~~
 
 Common Value Auction
 
@@ -331,7 +340,10 @@ Public Goods Game, Common-Pool Resource Game or Minimum-Effort Game
 A Public Goods Game is mostly conducted in smaller groups, thus, the participants of the lecture do not all play in one big group. In the Public Goods Game depicted below, five persons interact in a group and decide individually how much of their initial endowment they want to pay into a public account. The game is played over 10 rounds and the groups are identical over all these rounds (partner protocol). For one deposited Euro, every participant receives 0.50€, so that, individually, a payment is not worthwhile. But a participant hopes for high payments of other participant since returns accrue from this. The figure shows a typical result: The willingness to pay decreases over time.
 
 Simultaneous | 2 Roles
+----------------------
+
 Discrete
+~~~~~~~~
 
 This sort of game entails standard Matrix Games:
 
@@ -361,7 +373,9 @@ Coordination Game
 Treatments can also be implemented for games with two roles in order to study, for instance, effects of differences in the environment of the decision or different incentives. The macroeconomic book of Akerlof and Shiller ([http://press.princeton.edu/titles/8967.html | Animal Spirits 2009]) presents the idea that investments are only made if other investors simultaneously decide to do so, too. This relationship is investigated in the game “Coordinated Investment”, by providing private information to participants of the otherwise identical [[wikipedia:Coordination game|Coordination Game]]. In one treatment, this information reads that the investment is made in Germany. In another treatment, the country of destination of the investment is Greece, which was suffering an [[wikipedia::European debt crisis|economic crisis]] at the time of conducting the experiment.
 
 All of these might be carried out with multiple treatments.
+
 Numeric
+~~~~~~~
 
 Dictator Game
 A dictator game can be easily implemented in classEx. Here, you will require a numeric input field. Player 1 receives an endowment and can then decide how much of this endowment to transfer to player 2. Player 2 is passive in this game and can make no decision.
@@ -373,9 +387,12 @@ In the ultimatum game, player 2 then decides whether to accept or reject the pro
 This strategy method is usually implemented to extract players' minimum acceptable offer (MAO).
 
 Sequential | 2 Roles
+--------------------
 
 Sequential games can be modelled with two or more stages.
+
 Discrete
+~~~~~~~~
 
 Principal-Agent
 
@@ -453,6 +470,7 @@ Concretely, this game is implemented as followes in classEx:
 The game starts with a total payoff of 5€. In this stage, player 1 [[File: role1.PNG]] decides whether to '''take''' or '''pass'''. If he '''takes''', [[File: role1.PNG]] receives 4€ and [[File: role2.PNG]] receives 1€. If he chooses to '''pass''' the total payoff increases to 10€ and [[File: role2.PNG]] now has to decide whether to '''take''' or '''pass'''. In this stage, [[File: role2.PNG]] has an advantage. '''Take''' renders a payoff of 8€ for [[File: role2.PNG]] and 2€ for [[File: role1.PNG]]. However, if [[File: role2.PNG]] '''passes''', the total payoff increases to 20€. Now, [[File: role1.PNG]] has the choice again. He can either '''take''' and receive 16€, leaving 4€ for [[File: role2.PNG]]. Or, if he chooses to '''pass''', the game ends with another increase of the total payoff to 40€, giving player 2 [[File: role2.PNG]] 32€ and [[File: role1.PNG]] 8€. Two pairs are randomly drawn and receive a winners' notification with which they can collect their payoff. The lecturer is provided with a graphical illustration of how often the game was terminated with the choice of '''take''' in the respective stages.
 
 Numeric
+~~~~~~~
 
 Labor Contract
 
@@ -508,6 +526,7 @@ A bubble chart allows lecturer to gain an overview of how high the offers were i
 
 
 Continuous | 2 Roles
+--------------------
 
 Continuous games are not yet implemented in classEx. This will be done in the near future.
 
