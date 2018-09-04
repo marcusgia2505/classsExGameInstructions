@@ -441,7 +441,7 @@ This game shows that revenue losses are accepted and that systems allowing the a
 
 Sequential games can be run over more than two rounds. A well-known example for this is the centipede game. In the centipede game, the sum of payoffs for both players increases over a finite and known number of rounds. First of all, player 1 makes a decision. In the next stage, player 2 does so. In each stage, participants choose between two options, either to **take**, which ends the game and ensures the payoff of that round, or to **pass** which delegates the decision to player 2 and increases the payoff.
 
-Concretely, this game is implemented as followes in classEx:
+**Implementation in classEx:**
 
 The game starts with a total payoff of 5€. In this stage, player 1 decides whether to **take** or **pass**. If he **takes**, receives 4€ and receives 1€. If he chooses to **pass** the total payoff increases to 10€ and now has to decide whether to **take** or **pass**. In this stage, has an advantage. **Take** renders a payoff of 8€ for and 2€ for. However, if **passes**, the total payoff increases to 20€. Now, has the choice again. He can either **take** and receive 16€, leaving 4€ for . Or, if he chooses to **pass**, the game ends with another increase of the total payoff to 40€, giving player 2 32€ and 8€. Two pairs are randomly drawn and receive a winners' notification with which they can collect their payoff. The lecturer is provided with a graphical illustration of how often the game was terminated with the choice of **take** in the respective stages.
 
@@ -450,51 +450,63 @@ Numeric
 
 - Labor Contract
 
-Trust Game
+- Trust Game
+
 In the trust game, player 1 (trustor) can can decide whether to transfer none, some or all of her endowment to player 2 (trustee). Transferring the entire endowment is socially optimal because the transferred amount is multiplied by the experimentor. Player 2 can then decide whether to transfer none, some or all of his endowment back to player 1. Therefore, transferring is only worthwile for the trustor, if the trustee repays the trust and transfers back at least the sent amount.
 
+.. image:: _staticTrustred.JPG
+    :alt:  300px
+    
+.. image:: _static/Trustgreen.JPG
+    :alt:  300px
 
+**Implementation in classEx:**
 
-[[File: Trustred.JPG]]   [[File: trustgreen.JPG]]
+The input for participants can be implemented by defining the variables:
 
+$max=10; $endow=10; and $multi=3;
 
+Here, the endowment equals 10, the maximum transfer by the trustor equals 10 and the multiplier equals 3. The input decision of player 1 is stored by the variable $send;. In the second stage, you need to write following code in a programme field:
 
-'''Implementation in classEx:'''
+$send=$getPartnerDecision("692#1"); $max=$endow+$send*$multi;
 
-The input for participants can be implemented by defining the variables <div class="quote">$max=10;, $endow=10; and $multi=3;</div>. Here, the endowment equals 10, the maximum transfer by the trustor equals 10 and the multiplier equals 3. The input decision of [[File: role1.PNG]] is stored by the variable $send;. In the second stage, you need to write following code in a programme field:
-<div class="quote">$send=$getPartnerDecision("692#1"); $max=$endow+$send*$multi;</div>
-Make sure that you make reference to the correct stage and the correct input field. In this example, the code refers to stage number 692 and input field number 1. The following input by [[File: role2.PNG]] is stored as variable <div class="quote">$sendback.</div> Hence, the amount sent back can be calculated by: <div class="quote">$received=$getPartnerDecision("693#1"); $payoff=$endow-$send+$received.;</div> With this, you can write the following in the text field that is displayed to the trustor:
-Of your endow; €, you sent $send; € to [[File: role2.PNG]]. This amount was trippled. [[File: role2.PNG]] sent back $received; € to you."
+Make sure that you make reference to the correct stage and the correct input field. In this example, the code refers to stage number 692 and input field number 1. The following input by player 2 is stored as variable $sendback. Hence, the amount sent back can be calculated by:
 
+$received=$getPartnerDecision("693#1"); $payoff=$endow-$send+$received;
 
-'''Display of results'''
+With this, you can write the following in the text field that is displayed to the trustor:
 
-The results are displayed as a bubble chart on the lecturer's screen
+Of your endow; €, you sent $send; € to player 2. This amount was trippled. Player 2 sent back $received; € to you."
 
-[[File: trustlecturer.JPG]]
+**Display of results**
 
+The results are displayed as a bubble chart on the lecturer's screen:
 
-Ultimatum Game
+.. image:: _static/Trustlecturer.JPG
+    :alt:  300px
+    
+- Ultimatum Game
 
 In the ultimatum game, player 1 takes the role of the proposer and is endowed with a certain amount. He may then transfer all, some or none of this endowment to player 2.
 In the next stage, player 2 then decides whether to accept or reject the proposed division of the pie. If player 2 rejects, both players receive a payoff of zero.
 
-Alternating Offer Bargaining
-In contrast to the [[Centipede Game|centipede game]], the total pie shrinks over time in the alternating offer bargaining game. Also, input is numeric.
+- Alternating Offer Bargaining
+
+In contrast to the centipede game, the total pie shrinks over time in the alternating offer bargaining game. Also, input is numeric.
 
 The game starts with a pie of, for example, 20€.
 
-In stage 1 [[File: role1.PNG]] makes a suggestion on how to divide the pie between both players.
+In stage 1 player 1 makes a suggestion on how to divide the pie between both players.
 
-In stage 2, [[File: role2.PNG]] can decide whether to accept the division or not. If [[File: role2.PNG]] does not accept the division, the pie shrinks to 16€ and [[File: role2.PNG]] is then required to make a suggestion on how to divide the remaining pie.
+In stage 2, player 2 can decide whether to accept the division or not. If player 2 does not accept the division, the pie shrinks to 16€ and player 2 is then required to make a suggestion on how to divide the remaining pie.
 
-In stage 3, [[File: role1.PNG]] then decides whether to accept or reject the division and, in case of a rejection, makes a new suggestion on how to divide the pie which has now shrunk to 12€.
+In stage 3, player 1 then decides whether to accept or reject the division and, in case of a rejection, makes a new suggestion on how to divide the pie which has now shrunk to 12€.
 
-In stage 4, [[File: role2.PNG]] can decide and if she rejects, the pie shrinks to 8€. She then makes a new suggestion on how to divide this pie.
+In stage 4, player 2 can decide and if she rejects, the pie shrinks to 8€. She then makes a new suggestion on how to divide this pie.
 
-In stage 5, [[File: role1.PNG]] decides and if he rejects the proposed division, he can make a final suggestion on how to divide the pie which has now shrunk to 4€.
+In stage 5, player 1 decides and if he rejects the proposed division, he can make a final suggestion on how to divide the pie which has now shrunk to 4€.
 
-If [[File: role2.PNG]] rejects this final suggestion, both players end up with a payoff of 0€.
+If player 2 rejects this final suggestion, both players end up with a payoff of 0€.
 
 Two pairs of players are randomly drawn and receive a winner's notification and a real payoff.
 
@@ -506,26 +518,26 @@ Continuous | 2 Roles
 
 Continuous games are not yet implemented in classEx. This will be done in the near future.
 
-Unstructured Bargaining
-Continuous games are games in which the sequence of decisions is not determined. Participants are allocated to different roles and matched into pairs. However, there are no rules as to who may make an offer in which stage. In contrast to [[Alternating Offer Bargaining]], bargaining is unstructured here. Both participants can make offers at all times. Participants can always accept an offer or make a different offer.
+- Unstructured Bargaining
 
-A buyer [[File: role1.PNG]] is willing to pay a certain amount for a good, ranging between 0€ and 100€. The number is determined randomly and is only known to the buyer [[File: role1.PNG]] but not the seller [[File: role2.PNG]]. The seller [[File: role2.PNG]] faces costs for the production of the good which also lie between 0€ and 100€, are determined randomly and are only known to the seller.
-Buyers and sellers are matched to one another randomly. The buyer [[File: role1.PNG]] can make an offer to buy the good for a price that must not be above his willingness to pay. At the same time, the seller [[File: role2.PNG]] can make an offer that cannot be lower than his production costs. If an offer is accepted, the game ends. An offer is updated by issuing a new offer. If players have not reached an agreement after two minutes, the game ends and both receive 0€. In case of an agreement, the buyer [[File: role1.PNG]] receives the difference between his willingness to pay and the price. The seller [[File: role2.PNG]], analogously, receives the difference between his production costs and the price.
+Continuous games are games in which the sequence of decisions is not determined. Participants are allocated to different roles and matched into pairs. However, there are no rules as to who may make an offer in which stage. In contrast to Alternating Offer Bargaining, bargaining is unstructured here. Both participants can make offers at all times. Participants can always accept an offer or make a different offer.
 
-The lecturer is provided with graphical results in a scatter plot. The abscissa depicts the buyers' willingness to pay and the ordinate displays the costs of the sellers. An '''x''' indicates that an agreement was reached. An '''o''' shows that no agreement was reached. Here, one can see efficiency losses that result from strategic offers.
+A buyer is willing to pay a certain amount for a good, ranging between 0€ and 100€. The number is determined randomly and is only known to the buyer but not the seller. The seller faces costs for the production of the good which also lie between 0€ and 100€, are determined randomly and are only known to the seller.
+Buyers and sellers are matched to one another randomly. The buyer can make an offer to buy the good for a price that must not be above his willingness to pay. At the same time, the seller can make an offer that cannot be lower than his production costs. If an offer is accepted, the game ends. An offer is updated by issuing a new offer. If players have not reached an agreement after two minutes, the game ends and both receive 0€. In case of an agreement, the buyer receives the difference between his willingness to pay and the price. The seller, analogously, receives the difference between his production costs and the price.
 
+The lecturer is provided with graphical results in a scatter plot. The abscissa depicts the buyer's willingness to pay and the ordinate displays the costs of the sellers. An **x** indicates that an agreement was reached. An **o** shows that no agreement was reached. Here, one can see efficiency losses that result from strategic offers.
 
-Dutch Auction
-The dutch auction is a variation of the [[Common Value Auction]]. For the description of the game, please see [[Common Value Auction]].
+- Dutch Auction
+
+The dutch auction is a variation of the Common Value Auction. For the description of the game, please see Common Value Auction.
 
 The difference between the American and the Dutch auction is that in the case of a Dutch auction, the bank pays an equilibrium interest rate for all bids and not the interest rate it offered for each bid.
 
-Double Auction 
-
+- Double Auction 
 
 Often, markets are characterised by the fact that sellers and buyers can make public offers instead of negotiating bilaterally. In one of the first experimental studies on this, Vernon Smith (Journal of Political Economy 1962) showed that prices quickly converge to a level that is predicted for competition and income maximisation. Further studies have exhibited that competition crowds out other factors such as the desire to obtain a monopoly rent or the aim to achieve an equal split of the revenue between buyers and sellers.
 
-A double auction is marked by an environment in which buyers and sellers can make public offers. Hence, a buyer [[File: role1.PNG]] can offer to buy a product for a certain price and this offer is then displayed in a list to all participants. Sellers [[File: role2.PNG]] can either accept the offer or also make an offer which is displayed in the list.
+A double auction is marked by an environment in which buyers and sellers can make public offers. Hence, a buyer can offer to buy a product for a certain price and this offer is then displayed in a list to all participants. Sellers can either accept the offer or also make an offer which is displayed in the list.
 
 
 
