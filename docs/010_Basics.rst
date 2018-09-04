@@ -1,8 +1,8 @@
 .. _basic:
 
-
-# Basics
-
+======
+Basics
+======
 
 Registration
 ============
@@ -20,6 +20,8 @@ The website https://classex.uni-passau.de displays an input screen to lecturers 
 
 User modes
 ----------
+
+#### Player
 
 - Player: Students can participate interactively in a lecture or a presentation by logging in as a “player”. They do not need to register and remain anonymous. They select the university and the course from the lecturer's registration. The lecturer provides the password he has chosen for players in his course. Participation after logging in is self-explanatory and does not require any previous knowledge.
 
