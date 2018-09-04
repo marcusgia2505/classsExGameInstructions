@@ -170,8 +170,7 @@ The easiest type of questions are Quiz Questions as they can be also in found in
 .. image:: _static/Quiz.PNG
     :alt:  300px
 
-Quiz questions, such as the one above, are the easiest type of application in classEx. The lecturer can set any number of options. These can be labelled randomly, e.g. as Option 1, Option 2, etc., but can also include short answers. Quiz questions are mostly built up in the way that only one answer can be selected (Single Choice) and one or more of them can be classified as correct. For presentation purposes the lecturer has the opportunity to highlight the correct answer in colour. This occurs by marking the relevant option in the [[Editing Mode]]. 
-<div class="quote">
+Quiz questions, such as the one above, are the easiest type of application in classEx. The lecturer can set any number of options. These can be labelled randomly, e.g. as Option 1, Option 2, etc., but can also include short answers. Quiz questions are mostly built up in the way that only one answer can be selected (Single Choice) and one or more of them can be classified as correct. For presentation purposes the lecturer has the opportunity to highlight the correct answer in colour. This occurs by marking the relevant option in the Editing mode.
 Tip: Since most of the mobile devices have small screen sizes, not more than 4-5 briefly described options should be set.</div>
 
 Single Choice with Random Events
@@ -179,88 +178,89 @@ Single Choice with Random Events
 
 Simple questions combined with a random event are a different type of application for Individual Choice games. This way, participants can be animated to think about decisions with unsure outcomes and payoffs. Lecturers can use this to show relevant applications in, for example, statistics, stochastics, finance or the insurance industry. For instance, participants can place a bet on a coin toss. You can also test to which extent participants are willing to take a risk. In the following, you can find a few examples of how random events can be implemented in classEx:
 
-Ellsberg Paradoxon
+- Ellsberg Paradoxon
 
-[[File: Ellsberg.PNG | right]]
+.. image:: _static/Ellsberg.PNG
+    :alt:  300px
 
-One possible application for games with random events is the so-called Ellsberg paradox. You can find games concerning this paradox under the titles “Ambiguity 1” and “Ambiguity 2”. 
+One possible application for games with random events is the so-called Ellsberg paradox. You can find games concerning this paradox under the titles “Ambiguity 1” and “Ambiguity 2”. In these games, an urn contains 90 balls, 30 of which are red and 60 of which are either black or yellow. The proportion of black and yellow balls is unknown. Now, one ball is drawn from the urn. Participants can bet on a red or a black ball. If a yellow ball is drawn, participants win nothing. Results show that participants rather bet on red balls, hence, they try to avoid the uncertainty connected with betting on a black ball. 
 
-In these games, an urn contains 90 balls, 30 of which are red and 60 of which are either black or yellow. The proportion of black and yellow balls is unknown. Now, one ball is drawn from the urn. Participants can bet on a red or a black ball. If a yellow ball is drawn, participants win nothing. Results show that participants rather bet on red balls, hence, they try to avoid the uncertainty connected with betting on a black ball. 
+Special feature: Random Draw
 
-
-== Special feature: Random Draw ==
-
-[[File: Ellsberg_code.PNG | right]]
+.. image:: _static/Ellsberg_code.PNG
+    :alt:  300px
+    
 The special thing about this game is that you can actually implement random draws. Participants, therefore, can be informed about whether they would have won or not. For this, you need to implement a random draw in the second stage in classEx. You simply write a small program with PHP-function rand(); in order to draw a ball. The outcome is displayed in a text field. You can find a detailed description of programmes in [[Elements]].
 
-Lottery and Risk Preference
+- Lottery and Risk Preference
 
 A test to determine subjects‘ risk preferences was presented by Holt and Laury (American Economic Review 2002). The following experiment shows how this works. 10 situations are presented to the participants, who then choose between a low-risk option A and a high-risk option B for each situation.
 
-                               '''Option A'''                                       '''Option B'''
- '''Situation 1'''    €2 with p = 1/10 and €1.60 with p = 9/10	   €3,85 with p = 1/10 und €0.1 with p = 9/10 
- '''Situation 2'''    €2 with p = 2/10 und €1.60 with p = 8/10	   €3,85 with p = 2/10 und €0.1 with p = 8/10 
- '''Situation 3'''    €2 with p = 3/10 und €1.60 with p = 7/10	   €3,85 with p = 3/10 und €0.1 with p = 7/10
- '''Situation 4'''    €2 with p = 4/10 and €1.60 with p = 6/10    €3,85 with p = 4/10 and €0.1 with p = 6/10
- '''Situation 5'''    €2 with p = 5/10 und €1.60 with p = 5/10	   €3,85 with p = 5/10 und €0.1 with p = 5/10 
- '''Situation 6'''    €2 with p = 6/10 und €1.60 with p = 4/10	   €3,85 with p = 6/10 und €0.1 with p = 4/10 
- '''Situation 7'''    €2 with p = 7/10 und €1.60 with p = 3/10	   €3,85 with p = 7/10 und €0.1 with p = 3/10 
- '''Situation 8'''    €2 with p = 8/10 und €1.60 with p = 2/10	   €3,85 with p = 8/10 und €0.1 with p = 2/10
- '''Situation 9'''    €2 with p = 9/10 und €1.60 with p = 1/10	   €3,85 with p = 9/10 und €0.1 with p = 1/10 
- '''Situation 10'''   €2 with p = 10/10 und €1.60 with p = 0/10   €3,85 with p = 10/10 und €0.1 with p = 0/10           
+| Option A | Option B |
+| --- | --- |
+| Situation 1 | €2 with p = 1/10 and €1.60 with p = 9/10 | €3,85 with p = 1/10 und €0.1 with p = 9/10 |
+| Situation 2 | €2 with p = 2/10 und €1.60 with p = 8/10 | €3,85 with p = 2/10 und €0.1 with p = 8/10 |
+| Situation 3 | €2 with p = 3/10 und €1.60 with p = 7/10 | €3,85 with p = 3/10 und €0.1 with p = 7/10 |
+| Situation 4 | €2 with p = 4/10 and €1.60 with p = 6/10 | €3,85 with p = 4/10 and €0.1 with p = 6/10 |
+| Situation 5 | €2 with p = 5/10 und €1.60 with p = 5/10 | €3,85 with p = 5/10 und €0.1 with p = 5/10 |
+| Situation 6 | €2 with p = 6/10 und €1.60 with p = 4/10 | €3,85 with p = 6/10 und €0.1 with p = 4/10 |
+| Situation 7 | €2 with p = 7/10 und €1.60 with p = 3/10 | €3,85 with p = 7/10 und €0.1 with p = 3/10 |
+| Situation 8 | €2 with p = 8/10 und €1.60 with p = 2/10 | €3,85 with p = 8/10 und €0.1 with p = 2/10 |
+| Situation 9 | €2 with p = 9/10 und €1.60 with p = 1/10 | €3,85 with p = 9/10 und €0.1 with p = 1/10 |
+| Situation 10 | €2 with p = 10/10 und €1.60 with p = 0/10 | €3,85 with p = 10/10 und €0.1 with p = 0/10 |
                
 Lecturers should explain that a few randomly drawn participants will receive a payoff. One of the ten situations will be drawn for the randomly chosen participants and another random draw will determine whether the first or second value will be paid out.
 You need to create a separate input (Single Choice input options) for each of the ten situations, which means that participants will make ten decisions altogether. 
 
-<div class="error">This game is not yet implemented in classEx.</div>
+**This game is not yet implemented in classEx.**
 
-Search Costs
+- Search Costs
 
 Decisions and random draws can also be implemented over several rounds. As an example, classEx provides a game in which the advantages and disadvantages of a continued search are demonstrated. While searching for a suitable craftsman, participants need to invite several offers that are determined randomly and, therefore, cause subjects to weigh up the costs of searching and the improvement of offers through a continued search.
 
 The costs of searching are 1.20€ per offer. Participants can invite up to five offers with the value of the craftsman’s service varying between 0 and 20 euros. The participants’ payoff is determined by the craftsman with the highest value among the invited offers, minus the costs of searching.
-This game was played during the lecture Economics of Institutions in the summer semester 2012. A video (in German) can be found [http://www.wiwi.uni-passau.de/wirtschaftstheorie/classex-interaktive-hoersaalexperimente/anwendungsbeispiele/  here].
+This game was played during the lecture Economics of Institutions in the summer semester 2012. A video (in German) can be found `here <http://www.wiwi.uni-passau.de/wirtschaftstheorie/classex-interaktive-hoersaalexperimente/anwendungsbeispiele/>`_.
 
 Single Choice with Treatments
+------------------------------
 
 Treatments are a great possibility to expand Individual Choice questions. With these, two (or more) variations of the same game can be played. Participants are divided into two groups of the same size and, for example, see different scenarios for the same game. Each group then plays a different treatment and differences between the two treatments allow for conclusions regarding the impact of different scenarios. To implement this, you need to choose the option “Treatment” in list “Treatments, roles & groups” and specify the number of treatments. It is possible to display different information, so-called private information, on the mobile devices of the two groups. A well-known example for the use of treatments is the “Asian disease” presented by Tversky and Kahnemann (Science 1981) which exemplifies a cognitive bias. Similarly, framing and priming effects can be determined with a game. In the following, you can find a few examples of how treatments can be used in classEx:
 
-Ethical Dilemma
+- Ethical Dilemma
 
-[[File: Dilemma.PNG | right]]
+.. image:: _static/Dilemma.PNG
+    :alt:  300px
 
 A different application of treatments can be found in experimental ethics. Here, a growing strand of literature is dealing with the diffusion of responsibility. Participants need to weigh up self-serving options, which promise money or convenience, or altruistic options that benefit other people or fulfil social norms or laws. Results show that the self-serving option is chosen more often if participants can shirk their responsibility for other goals. classEx provides a game that covers this topic called “Ethical Dilemma”. In this game, a scenario is described (see figure). Two different treatments are implemented. Half of the participants get the description marked with an orange color. The other half get the description marked with a blue color. The treatment effect can be directly observed.
 
+- Nudge
 
-Nudge
-
-
-[[File: Nudge.PNG | right]]
+.. image:: _static/Nudge.PNG
+    :alt:  300px
 
 A different example concerns the influence of a default on human behaviour. This is discussed thoroughly in Thaler and Sunstein’s book Nudge (2009). A nudge is a small push that directs participants to one decision or another. [[wikipedia:Nudge|Nudges]] can often be found when filling in surveys or questionnaires if one option is marked as default. Marking another option then requires an explicit decision. This can be illustrated by an experiment in which participants are asked whether or not they would like to participate in a company retirement plan. Two groups are asked to decide for or against a retirement plan, however, in the first group, the pro-option is marked as default and the other group has the contra-option marked. Results show that this treatment strongly influences participants‘ decisions. Those who have the contra-option set as default opt against the insurance scheme more often than those with the other option marked. This can be implemented in the [[Editing Mode]] by indicating the relevant variable in the “Default” field.
 
+- Wage Increase
 
-Wage Increase
+.. image:: _static/Wageincrease.PNG
+    :alt:  300px
 
-[[File: Wageincrease.PNG |right]]
-
-The number of treatments is not limited to two. For example, different wage scenarios and their influence on participants’ motivation to work can be analysed. In their [http://press.princeton.edu/titles/8967.html| book Animal Spirits] (2009), Akerlof and Shiller suggest that people’s motivation to work is guided by nominal wages and that inflation rates are not considered sufficiently. In classEx, you can find a game called “Wage Increase” that covers this topic. Three different treatments are implemented in this game. Participants are asked how their motivation to work changes in reaction to different wage increases and inflation rates. This game enables an analysis of whether participants react to nominal or real wage increases.
+The number of treatments is not limited to two. For example, different wage scenarios and their influence on participants’ motivation to work can be analysed. In their book ` Animal Spirits <http://press.princeton.edu/titles/8967.html>`_ (2009), Akerlof and Shiller suggest that people’s motivation to work is guided by nominal wages and that inflation rates are not considered sufficiently. In classEx, you can find a game called “Wage Increase” that covers this topic. Three different treatments are implemented in this game. Participants are asked how their motivation to work changes in reaction to different wage increases and inflation rates. This game enables an analysis of whether participants react to nominal or real wage increases.
 
 Multiple Choice
+---------------
 
 Opinion polls differ from quiz questions in the sense that you cannot classify one answer as correct. Further, it may be possible to choose more than one answer (Multiple Choice).
 
-Effects of inflation
-[[File: Mc.PNG | right]]
+- Effects of inflation
 
-An example for an opinion poll with multiple choice answers is the question of the effects on inflation, where more than one answer may be correct.
+.. image:: _static/Inflation.PNG
+    :alt:  300px
 
+An example for an opinion poll with multiple choice answers is the question of the effects on inflation, where more than one answer may be correct. You can implement such an opinion poll in classEx, by selecting “Check boxes (Multiple Choice)” in the Editing mode. None of the options should be marked as correct. Furthermore, you need to select “Multiple Choice” for the evaluation of results.
+Tip: You can easily change the order of answer options by drag & drop. Simply click onto the number of the option you would like to change and drag it to the new position.</div>
 
-You can implement such an opinion poll in classEx, by selecting “Check boxes (Multiple Choice)” in the [[Editing Mode]]. None of the options should be marked as correct. Furthermore, you need to select “Multiple Choice” for the evaluation of results.
-
-<div class="quote">Tip: You can easily change the order of answer options by drag & drop. Simply click onto the number of the option you would like to change and drag it to the new position.</div>
-
-Numeric Data
+- Numeric Data
 
 Decisions of participants can also require an input of numbers. For this, simply choose “Numeric input field” as the type of input field in the Editing Mode. A game that uses this form of input is shown below:
 
