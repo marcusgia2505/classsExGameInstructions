@@ -290,53 +290,58 @@ Discrete
 
 The Faces Beauty Contest goes back to ` John Maynard Keynes <http://de.wikipedia.org/wiki/John_Maynard_Keynes>`_ (1936). Here, the participants choose the two most beautiful faces. Precisely, the instructions go as follows: 
 
-.. topic::
+"Please choose the two prettiest faces among the following eight faces. The two faces which are chosen most often gain the title "man of the year". Of those participants who opted for that pair of faces, one participant is drawn randomly and will earn 20 €."
 
-   "Please choose the two prettiest faces among the following eight faces.
-   The two faces which are chosen most often gain the title "man of the year".
-   Of those participants who opted for that pair of faces, one participant is drawn randomly and will earn 20 €."
+.. image:: _static/SchellingSalience.JPG
+    :alt:  300px
 
-
-[[File:SchellingSalience.jpg | right]]
 The eight faces are shown in the figure in the right corner in which you can find the faces of the two lecturers themselves. For the participants, these stand out prominently. This prominence is called [[Schelling Salience]]. With this, participants are able to agree on the selection of the two lecturers as a pair. Everybody who does that maintains his / her opportunity to win. As in the case of Keynes, people are not selected with regard to their beauty, but dependent on the achievable profit. For Keynes, this was an example for the fact that investors don’t buy the best asset but those which they can sell to others most successfully.
 
 
 Numeric
 ~~~~~~~
 
-Common Value Auction
+- Common Value Auction
 
-[[File:Zinstender.jpg | right ]]
-For all participants, a purchased product has the same value ('''Common Value'''). Still, participants differ in their bidding behaviour as well as in their expectations with regard to other participants. An example for this is the auction of '''Central Bank Credits''' with a loan period of one year. Every participant plays the role of a bank. Every bank submits a tender for credits of the Central Bank to the maximum amount of 5000€. Doing this, any interest rate with two decimal places can be chosen. Every bank can split up their bid into up to three interest rates. For instance, Bank A bids 1000€ for 2.4%, 2000€ for 2.5% and 2000€ for 2.7%. The bank lends the obtained resources to others at a rate of 3%. That is why 3% is the maximum interest rate of the bids.
+.. image:: _static/Zinstender.JPG
+    :alt:  300px
+    
+For all participants, a purchased product has the same value (**Common Value**). Still, participants differ in their bidding behaviour as well as in their expectations with regard to other participants. An example for this is the auction of '''Central Bank Credits''' with a loan period of one year. Every participant plays the role of a bank. Every bank submits a tender for credits of the Central Bank to the maximum amount of 5000€. Doing this, any interest rate with two decimal places can be chosen. Every bank can split up their bid into up to three interest rates. For instance, Bank A bids 1000€ for 2.4%, 2000€ for 2.5% and 2000€ for 2.7%. The bank lends the obtained resources to others at a rate of 3%. That is why 3% is the maximum interest rate of the bids.
 
 The lecturer can set the total volume of Central Bank Credits, which are put up for auction, in advance. Consequently, the equilibrium interest rate is determined at the value at which the demanded volume of the participants just equals the provided volume of the Central Bank, e.g. 2.2% as depicted in the figure. Participants win a tender for those bids which at least equal this equilibrium interest rate. Bank A would receive the full amount of 5000€, since every bid is higher than 2.2%. If the equilibrium interest rate was higher, e.g. at 2.5%, Bank A would receive 2000€ for 2.7% for sure. If the volume of the bids at the equilibrium interest rate is higher than the allocated Central Bank Credits, it is down-scaled. Here, the allotment interest rate may be 25%. Bank A would now be allocated 500€ (2000€*0.25) at an interest rate of 2.5%.
 
-This procedure is equivalent to an American auction. The lecturer determines in advance, which rate of interest the participant has to pay, either the interest rate offered for each individual bid ('''American auction'''; multiple rate auction) or the equilibrium interest rate ('''[[Dutch Auction]]'''; single rate auction). One participant is chosen randomly for who the payoff is carried out for the selected amount by calculating the interest rate difference from 3% each and multiplying it with the allocation amount. Thus, on the screen of the lecturer, the corresponding demand curve is displayed.
+This procedure is equivalent to an American auction. The lecturer determines in advance, which rate of interest the participant has to pay, either the interest rate offered for each individual bid (**American auction**; multiple rate auction) or the equilibrium interest rate (**Dutch Auction**; single rate auction). One participant is chosen randomly for who the payoff is carried out for the selected amount by calculating the interest rate difference from 3% each and multiplying it with the allocation amount. Thus, on the screen of the lecturer, the corresponding demand curve is displayed.
 
-Private Value English Auction
+- Private Value English Auction
 
-Beauty Contest
+- Beauty Contest
 
+.. image:: _static/BeautyContest.JPG
+    :alt:  300px
 
-[[File:BeautyContest.jpg | right]]
-A frequently used game is the so called [[Beauty Contest]]. All participants choose a natural number between 0 and 200. From all numbers picked, the mean is calculated. The participant who comes closest to this mean wins and gets a payoff. A tie is solved by drawing a lot. 
+A frequently used game is the so called Beauty Contest. All participants choose a natural number between 0 and 200. From all numbers picked, the mean is calculated. The participant who comes closest to this mean wins and gets a payoff. A tie is solved by drawing a lot. 
 
 In this game, no Nash Equilibrium exists, because every number presents a possible solution. This game demonstrates the dependence of human behaviour on historical experiences. The figure to the right shows a second round of a Beauty Contest, after reporting an average of 107 in the first round. Obviously, a convergence to the previous number occurred, although it does not describe any equilibrium.
 
 Often, variants of the Beauty Contest are implemented, in which the person who comes closest to the mean does not win. Rather, the average is first multiplied by a number p. If, for example, the number p=2/3 is selected, the participants should choose a number which is lower than the average of the other participants' chosen numbers. These results allow for a conclusion to be drawn on how accurately the participants think through strategic interaction, how expectations with regard to the behaviour of others are formed and whether they commit an error themselves.
 
+- Tragedy of the Commons
 
-Tragedy of the Commons
+.. image:: _static/Commons.PNG
+    :alt:  300px
 
-[[File:Commons.PNG | right]]
+The Tragedy of the Commons describes how a common good can be used excessively. This becomes clear in the following description of the game: All participants in the lecture want to send their cows to graze the meadow in the mountains. At the beginning, the quality (Q) of the meadow is 1 (100%). Depending on the average punching of the cattle, a, the quality of the following period is defined as:
 
-The Tragedy of the Commons describes how a common good can be used excessively. This becomes clear in the following description of the game: All participants in the lecture want to send their cows to graze the meadow in the mountains. At the beginning, the quality (Q) of the meadow is 1 (100%). Depending on the average punching of the cattle, a, the quality of the following period is defined as:[[File:AllmendeFormula.jpg | 150px]]
+.. image:: _static/AllmendeFormula.JPG
+    :alt:  300px
 
 You play a game with a duration of 5 years (rounds). For your payoff, the quantity of the punching of the cattle is multiplied by the quality and summed up over all five rounds. The amount will be disbursed in euros and assigned to a player randomly determined by a lottery ticket. In the figure below, the initial situation is shown. Over five rounds, the tragedy can be observed: A constant reduction of quality of the alpine meadow, causing damage to the group.
 
-Public Goods Game, Common-Pool Resource Game or Minimum-Effort Game
+- Public Goods Game, Common-Pool Resource Game or Minimum-Effort Game
 
-[[File:PublicGoodsGame.jpg | right]]
+.. image:: _static/PublicGoodsGame.JPG
+    :alt:  300px
+    
 A Public Goods Game is mostly conducted in smaller groups, thus, the participants of the lecture do not all play in one big group. In the Public Goods Game depicted below, five persons interact in a group and decide individually how much of their initial endowment they want to pay into a public account. The game is played over 10 rounds and the groups are identical over all these rounds (partner protocol). For one deposited Euro, every participant receives 0.50€, so that, individually, a payment is not worthwhile. But a participant hopes for high payments of other participant since returns accrue from this. The figure shows a typical result: The willingness to pay decreases over time.
 
 Simultaneous | 2 Roles
@@ -345,42 +350,50 @@ Simultaneous | 2 Roles
 Discrete
 ~~~~~~~~
 
-This sort of game entails standard Matrix Games:
+This sort of game entails standard Matrix Games.
 
-Battle of the Sexes
+- Battle of the Sexes
+
 Strategic interaction games often entail two players who interact and play in different roles. In the easiest case, each player can choose between to options, so that the payoff can be displayed in a 2x2 matrix. This form of display is supported by classEx.
 
 The battle of the sexes game is an example for a strategic interaction game with two roles. Two players would like to see each other again but each prefer a different place. They must decide simultaneously which option they choose. Player 1 has a higher payoff for option A, whereas player 2 to has a higher payoff for option B. However, if players do not coordinate on the same choice, both receive a payoff of zero because. Depending on the setting, one of the two options can emerge as point of coordination.
 
-Chicken Game
+- Chicken Game
 
-Hawk-Dove Game
+- Hawk-Dove Game
 
-Stag Hunt
-[[File:staghunt.PNG | right]]
+- Stag Hunt
 
-Standard matrix games can be implemented in classEx. Like the famous [[wikipedia:Stag hunt|Stag-Hunt Game]]. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
+.. image:: _static/Staghunt.PNG
+    :alt:  300px
 
-Prisonners Dilemma
-[[File:Pd.PNG| right]]
+Standard matrix games can be implemented in classEx. Like the famous ` Stag-Hunt Game <https://en.wikipedia.org/wiki/Stag_hunt>`_. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
 
-Standard matrix games can be implemented in classEx. Like the famous [[wikipedia:Prisoner's dilemma|Prisoner's dilemma]]. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
+- Prisonners Dilemma
 
-Coordination Game
+.. image:: _static/Pd.PNG
+    :alt:  300px
 
-[[File:Investment.PNG | right]]
+Standard matrix games can be implemented in classEx. Like the famous ` Prisoner's dilemma <https://en.wikipedia.org/wiki/Prisoner%27s_dilemma>`_. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
 
-Treatments can also be implemented for games with two roles in order to study, for instance, effects of differences in the environment of the decision or different incentives. The macroeconomic book of Akerlof and Shiller ([http://press.princeton.edu/titles/8967.html | Animal Spirits 2009]) presents the idea that investments are only made if other investors simultaneously decide to do so, too. This relationship is investigated in the game “Coordinated Investment”, by providing private information to participants of the otherwise identical [[wikipedia:Coordination game|Coordination Game]]. In one treatment, this information reads that the investment is made in Germany. In another treatment, the country of destination of the investment is Greece, which was suffering an [[wikipedia::European debt crisis|economic crisis]] at the time of conducting the experiment.
+- Coordination Game
+
+.. image:: _static/Investment.PNG
+    :alt:  300px
+
+Treatments can also be implemented for games with two roles in order to study, for instance, effects of differences in the environment of the decision or different incentives. The macroeconomic book of Akerlof and Shiller ` Animal Spirits 2009 <http://press.princeton.edu/titles/8967.html>`_ presents the idea that investments are only made if other investors simultaneously decide to do so, too. This relationship is investigated in the game “Coordinated Investment”, by providing private information to participants of the otherwise identical ` Coordination Game <https://en.wikipedia.org/wiki/Coordination_game>`_. In one treatment, this information reads that the investment is made in Germany. In another treatment, the country of destination of the investment is Greece, which was suffering an ` economic crisis <https://en.wikipedia.org/wiki/European_debt_crisis>`_ at the time of conducting the experiment.
 
 All of these might be carried out with multiple treatments.
 
 Numeric
 ~~~~~~~
 
-Dictator Game
+- Dictator Game
+
 A dictator game can be easily implemented in classEx. Here, you will require a numeric input field. Player 1 receives an endowment and can then decide how much of this endowment to transfer to player 2. Player 2 is passive in this game and can make no decision.
 
-Ultimatum Game with MAO°
+- Ultimatum Game with MAO°
+
 In the ultimatiom game in the strategy method, both players make a decision simultaneously.
 Player 1 takes the role of the proposer and is endowed with a certain amount. He may then transfer all, some or none of this endowment to player 2.
 In the ultimatum game, player 2 then decides whether to accept or reject the proposed division of the pie. If player 2 rejects, both players receive a payoff of zero. When the ultimatum game is implemented in the strategy method, player 2 is presented with all possible divisions. She then decides which offers she would reject and which she would accept. At this point, player 2 is not yet informed about the actual decision of player 1.
@@ -394,7 +407,7 @@ Sequential games can be modelled with two or more stages.
 Discrete
 ~~~~~~~~
 
-Principal-Agent
+- Principal-Agent
 
 A sequential game consists of at least three stages. In the first stage, player 1 http://classex.uni-passau.de/classex3/pic/role1.png makes a decision. In the second stage, player 2 http://classex.uni-passau.de/classex3/pic/role2.png makes a decision. In the third stage, the results are displayed.
 
