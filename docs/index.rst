@@ -24,13 +24,13 @@ With classEx you can conduct interactive surveys and classroom experiments. Stud
 New Features
 ============
 
-* Jan 18th 2018: A new version is realeased version 3.4.5. New features include a camera input, a discrete choice element for lecturers and a new contract element.
-* February 20th 2017: classEx was updated to version 3.4.3.
-* May 14th 2016: classEx was updated to version 3.4.
-* Sept 20th 2015: A login with a QR-Code is provided automatically for all experiments.
-* Sept 15th 2015: The login page was restructured. Prior to selecting the course, the respective institution has to be selected.
-* April 8th 2015: All elements in the editing mode are directly linked to the wikipage which provides explanation of the different features.
-* November 20th 2015: classEx was updated to version 3.3.
+:Jan 18th 2018: A new version is realeased version 3.4.5. New features include a camera input, a discrete choice element for lecturers and a new contract element.
+:February 20th 2017: classEx was updated to version 3.4.3.
+:May 14th 2016: classEx was updated to version 3.4.
+:Sept 20th 2015: A login with a QR-Code is provided automatically for all experiments.
+:Sept 15th 2015: The login page was restructured. Prior to selecting the course, the respective institution has to be selected.
+:April 8th 2015: All elements in the editing mode are directly linked to the wikipage which provides explanation of the different features.
+:November 20th 2015: classEx was updated to version 3.3.
 
 Version and Terms of Use
 ========================
