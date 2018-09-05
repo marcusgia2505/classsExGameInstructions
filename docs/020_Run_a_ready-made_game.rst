@@ -45,7 +45,13 @@ Lecturers can either copy the QR-Code and print it on flyers, for example, or di
 
 - Personalised login with ticket
 
-You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game. 
+You can provide players with a personalised ticket to log-in to classEx. This way you can ensure that players only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game. 
+
+- Add/login test player
+
+As lecturer you can run a game with fictional test players. To add a test player click on the button in the lecture submode menu:
+
+
 
 - Logout
 
