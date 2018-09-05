@@ -2,6 +2,8 @@
 Run a ready-made game
 =====================
 
+.. youtube:: https://youtu.be/zmAn0ZzTQPk
+
 Prerequisites (students devices, lecturer device, data volume)
 ==============================================================
 
