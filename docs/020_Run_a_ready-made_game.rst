@@ -72,7 +72,7 @@ The following hints should give you some advice to avoid problems when using cla
 
 - Password forgotton
 
-  - If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered. 
+If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered. 
 
 Login of participants and test participants (+logout)
 =====================================================
@@ -125,6 +125,48 @@ Participants’ screens are updated automatically when their partner has made a 
 Run a game (mit 2 Bsp., parameters, neu starten)
 ================================================
 
+- Start a Game
+
+During a lecture, the interaction between the lecturer and the players takes place in the lecture mode. The lecturer’s browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode. The lecturer can start this game or select a different one.
+
+The lecturer can select a new game by choosing it from the drop down list. The drop down list shows all available games. A selected game can be started by pressing:
+
+.. image:: _static/Startblue.JPG
+    :alt:  300px
+
+By pressing start, the lecturer initiates the first stage of the game. If a game consists of several stages, the start button for the next stage appears after pressing the start button for the first stage.
+
+The counter over the start button shows how many participants are currently logged in. There is no minimum number of players required to start a game.
+
+If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of players is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no players are excluded from the game.
+During the Game
+
+During the course of a stage, a display shows how many participants are logged in and how many of them have already made their decision in the current stage.
+
+.. image:: _static/Displres.JPG
+    :alt:  300px
+
+Here, 3 participants are logged in and 1 has already made their decision.
+
+    Tip: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
+
+End the Game
+
+When the participants have made their decisions, the lecturer can end the game by clicking on „display results“.
+
+
+.. image:: _static/Dispay.JPG
+    :alt:  300px
+
+If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button. 
+
+Change parameters
+
+You can now change the parameters of a game by clicking on |Para|. For example, in a public goods game, you can change the MPCR, the endowment and the amount of rounds and restart the game with the new settings. You can restart the game by clicking on |Rere|. 
+
+.. |Para| image:: _static/Para.JPG
+.. |Rere| image:: _static/Rere.JPG
+
 - Binary Decisions
 
 Binarydecision.JPG
@@ -139,40 +181,7 @@ Other Decision Types
 
 There are other input types such as radio buttons or sliders which are explained in the section Elements. 
 
-Start a Game
 
-During a lecture, the interaction between the lecturer and the participants takes place in the lecture mode. The lecturer’s browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode. The lecturer can start this game or select a different one.
-
-The lecturer can select a new game by choosing it from the drop down list. The drop down list shows all available games. A selected game can be started by pressing:
-
-Startblue.JPG
-
-By pressing start, the lecturer initiates the first stage of the game. If a game consists of several stages, the start button for the next stage appears after pressing the start button for the first stage.
-
-The counter over the start button shows how many participants are currently logged in. There is no minimum number of players required to start a game.
-
-If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of players is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no players are excluded from the game.
-During the Game
-
-During the course of a stage, a display shows how many participants are logged in and how many of them have already made their decision in the current stage.
-
-Displres.JPG
-
-Here, 3 participants are logged in and 1 has already made their decision.
-
-    Tip: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
-
-End the Game
-
-When the participants have made their decisions, the lecturer can end the game by clicking on „display results“.
-
-Dispay.JPG
-
-If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button. 
-
-Change parameters
-
-You can now change the parameters of a game by clicking on Para.JPG. For example, in a public goods game, you can change the MPCR, the endowment and the amount of rounds and restart the game with the new settings. You can restart the game by clicking on Rere.JPG. 
 
 Simple quiz question
 --------------------
