@@ -139,7 +139,8 @@ By pressing start, the lecturer initiates the first stage of the game. If a game
 The counter over the start button shows how many participants are currently logged in. There is no minimum number of players required to start a game.
 
 If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of players is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no players are excluded from the game.
-During the Game
+
+- During the Game
 
 During the course of a stage, a display shows how many participants are logged in and how many of them have already made their decision in the current stage.
 
@@ -150,38 +151,45 @@ Here, 3 participants are logged in and 1 has already made their decision.
 
     Tip: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
 
-End the Game
+- End the Game
 
 When the participants have made their decisions, the lecturer can end the game by clicking on „display results“.
-
 
 .. image:: _static/Dispay.JPG
     :alt:  300px
 
 If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button. 
 
-Change parameters
+- Change parameters
 
 You can now change the parameters of a game by clicking on |Para|. For example, in a public goods game, you can change the MPCR, the endowment and the amount of rounds and restart the game with the new settings. You can restart the game by clicking on |Rere|. 
 
 .. |Para| image:: _static/Para.JPG
 .. |Rere| image:: _static/Rere.JPG
 
+Players interface
+=====================
+
+The players interface should be self-explanatory. The most common actions players are asked to carry out are binary decisions and numeric decisions.
+
 - Binary Decisions
 
-Binarydecision.JPG
+.. image:: _static/Binarydecision.JPG
+    :alt:  300px
 
-When a game has been started, the first decision is shown along with the role of the particpant Role1.PNG. By clicking on one of the options, the decision is submitted and saved.
-Numeric Decisions
+When a game has been started, the first decision is shown along with the role of the particpant |Role1|. By clicking on one of the options, the decision is submitted and saved.
 
-Workinghours.JPG
+.. |Role1| image:: _static/Role1.PNG
+
+- Numeric Decisions
+
+.. image:: _static/Workinghours.JPG
+    :alt:  300px
 
 Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. See Elements.
 Other Decision Types
 
-There are other input types such as radio buttons or sliders which are explained in the section Elements. 
-
-
+There are other input types such as radio buttons or sliders which are explained in the section Elements_. 
 
 Simple quiz question
 --------------------
