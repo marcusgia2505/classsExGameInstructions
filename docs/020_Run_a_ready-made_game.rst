@@ -3,6 +3,9 @@ Run a ready-made game
 =====================
 
 .. youtube:: zmAn0ZzTQPk
+   :height: 315
+   :width: 500
+   :align: center
 
 Prerequisites (students devices, lecturer device, data volume)
 ==============================================================
