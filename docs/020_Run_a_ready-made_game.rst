@@ -2,6 +2,8 @@
 Run a ready-made game
 =====================
 
+`here <https://classex.de/get-login-credentials/>`_
+
 Prerequisites (students devices, lecturer device, data volume)
 ==============================================================
 
@@ -22,29 +24,46 @@ Login of participants and test participants (+logout)
 
 - Login
 
-Loginnnn.JPG
+.. image:: _static/Loginnnn.JPG
+    :alt:  300px
 
 In order to login, participants go to the website http://classex.uni-passau.de and choose their university and then their course or lecture. They enter the password provided by the lecturer and click on "Login".
 
-
-Noopenvotings.JPG
+.. image:: _static/Noopenvotings.JPG
+    :alt:  300px
 
 If participants are logged in before the lecturer has started the game, participants see a waiting screen. The lecturer can edit the text on the waiting screen in the Editing Mode in “own data”.
-Login with QR-Code
+
+- Login with QR-Code
 
 All experiments can be accessed by participants via a QR-Code. This QR-Code is provided automatically in the Lecture Mode on top of the page. Enlarge the QR code by clicking on the symbol.
 
-QRnew2.JPG
+.. image:: _static/QRlogin.JPG
+    :alt:  300px
 
 Lecturers can either copy the QR-Code and print it on flyers, for example, or display it on the screen. When clicking on the QR code symbol instructions how to log in without using the QR code also appear on the screen.
-Personalised login with ticket
+
+- Personalised login with ticket
 
 You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game. 
+
+- Logout
+
+Currently, there is no logout button for participants. Participants can log out by adding *?logout* at the end of the web address.
+
+As a lecturer you can log out all participants that are currently logged in to your class by going into your course data and clicking on this button: 
+
+.. image:: _static/Bigredbutton.PNG
+    :alt:  300px
+
+- Refresh Page
+
+Participants’ screens are updated automatically when their partner has made a decision or when the lecturer has started a new stage. Therefore, it is not necessary to press a refresh button to proceed. This way, participants can simply wait until the next stage appears on their mobile devices and do not have to keep refreshing their screens. 
 
 Check list (practical tips, demo powerpoint)
 ============================================
 
-Practical tips
+- Practical tips
 
 The following hints should give you some advice to avoid problems when using classEx especially the first time.
 Information upfront for students (e.g. via email)
@@ -91,13 +110,10 @@ Password forgotton
 
 • If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered. 
 
-Refresh Page
-
-Participants’ screens are updated automatically when their partner has made a decision or when the lecturer has started a new stage. Therefore, it is not necessary to press a refresh button to proceed. This way, participants can simply wait until the next stage appears on their mobile devices and do not have to keep refreshing their screens. 
-
 Run a game (mit 2 Bsp., parameters, neu starten)
 ================================================
-Binary Decisions
+
+- Binary Decisions
 
 Binarydecision.JPG
 
