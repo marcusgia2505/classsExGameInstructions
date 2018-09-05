@@ -2,8 +2,6 @@
 Run a ready-made game
 =====================
 
-`here <https://classex.de/get-login-credentials/>`_
-
 Prerequisites (students devices, lecturer device, data volume)
 ==============================================================
 
