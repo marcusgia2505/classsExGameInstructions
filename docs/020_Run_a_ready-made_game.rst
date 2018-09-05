@@ -11,7 +11,7 @@ Prerequisites (students devices, lecturer device, data volume)
 
 Every student who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection.
 
-- lecturer device
+- Lecturer device
 
 The lecturer conducting a session needs a device (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all players (e.g. via a classroom projector).
 
@@ -49,9 +49,7 @@ You can provide participants with a personalised ticket to log-in to classEx. Th
 
 - Logout
 
-Currently, there is no logout button for participants. Participants can log out by adding *?logout* at the end of the web address.
-
-As a lecturer you can log out all participants that are currently logged in to your class by going into your course data and clicking on this button: 
+Currently, there is no logout button for participants. Participants can log out by adding *?logout* at the end of the web address. As a lecturer you can log out all participants that are currently logged in to your class by going into your course data and clicking on this button: 
 
 .. image:: _static/Bigredbutton.PNG
     :alt:  300px
