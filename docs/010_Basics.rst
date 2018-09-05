@@ -494,21 +494,7 @@ In the next stage, player 2 then decides whether to accept or reject the propose
 
 In contrast to the centipede game, the total pie shrinks over time in the alternating offer bargaining game. Also, input is numeric.
 
-The game starts with a pie of, for example, 20€.
-
-In stage 1 player 1 makes a suggestion on how to divide the pie between both players.
-
-In stage 2, player 2 can decide whether to accept the division or not. If player 2 does not accept the division, the pie shrinks to 16€ and player 2 is then required to make a suggestion on how to divide the remaining pie.
-
-In stage 3, player 1 then decides whether to accept or reject the division and, in case of a rejection, makes a new suggestion on how to divide the pie which has now shrunk to 12€.
-
-In stage 4, player 2 can decide and if she rejects, the pie shrinks to 8€. She then makes a new suggestion on how to divide this pie.
-
-In stage 5, player 1 decides and if he rejects the proposed division, he can make a final suggestion on how to divide the pie which has now shrunk to 4€.
-
-If player 2 rejects this final suggestion, both players end up with a payoff of 0€.
-
-Two pairs of players are randomly drawn and receive a winner's notification and a real payoff.
+The game starts with a pie of, for example, 20€. In stage 1 player 1 makes a suggestion on how to divide the pie between both players. In stage 2, player 2 can decide whether to accept the division or not. If player 2 does not accept the division, the pie shrinks to 16€ and player 2 is then required to make a suggestion on how to divide the remaining pie. In stage 3, player 1 then decides whether to accept or reject the division and, in case of a rejection, makes a new suggestion on how to divide the pie which has now shrunk to 12€. In stage 4, player 2 can decide and if she rejects, the pie shrinks to 8€. She then makes a new suggestion on how to divide this pie. In stage 5, player 1 decides and if he rejects the proposed division, he can make a final suggestion on how to divide the pie which has now shrunk to 4€. If player 2 rejects this final suggestion, both players end up with a payoff of 0€. Two pairs of players are randomly drawn and receive a winner's notification and a real payoff.
 
 A bubble chart allows lecturer to gain an overview of how high the offers were in the respective stages and to compare the results with theoretic values that would result via backwards induction presuming income maximising behaviour.
 
