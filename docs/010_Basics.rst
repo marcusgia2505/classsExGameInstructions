@@ -464,15 +464,15 @@ In the trust game, player 1 (trustor) can can decide whether to transfer none, s
 
 The input for participants can be implemented by defining the variables:
 
-$max=10; $endow=10; and $multi=3;
+    $max=10; $endow=10; and $multi=3;
 
 Here, the endowment equals 10, the maximum transfer by the trustor equals 10 and the multiplier equals 3. The input decision of player 1 is stored by the variable $send;. In the second stage, you need to write following code in a programme field:
 
-$send=$getPartnerDecision("692#1"); $max=$endow+$send*$multi;
+    $send=$getPartnerDecision("692#1"); $max=$endow+$send*$multi;
 
 Make sure that you make reference to the correct stage and the correct input field. In this example, the code refers to stage number 692 and input field number 1. The following input by player 2 is stored as variable $sendback. Hence, the amount sent back can be calculated by:
 
-$received=$getPartnerDecision("693#1"); $payoff=$endow-$send+$received;
+    $received=$getPartnerDecision("693#1"); $payoff=$endow-$send+$received;
 
 With this, you can write the following in the text field that is displayed to the trustor:
 
