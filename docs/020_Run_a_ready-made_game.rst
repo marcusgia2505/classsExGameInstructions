@@ -4,14 +4,23 @@ Run a ready-made game
 
 Prerequisites (students devices, lecturer device, data volume)
 ==============================================================
-Data volume
 
-classEx only requires a small amount of data volume. When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. 
+- Students devices
+
+Every student who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection.
+
+- lecturer device
+
+The lecturer conducting a session needs a device (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all players (e.g. via a classroom projector).
+
+- Data volume
+
+classEx only requires a small amount of data volume. When using classEx as a player for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. 
 
 Login of participants and test participants (+logout)
 =====================================================
 
-Login
+- Login
 
 Loginnnn.JPG
 
