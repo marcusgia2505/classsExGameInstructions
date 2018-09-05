@@ -168,7 +168,7 @@ You can now change the parameters of a game by clicking on |Para|. For example, 
 .. |Rere| image:: _static/Rere.JPG
 
 Players interface
-=====================
+=================
 
 The players interface should be self-explanatory. The most common actions players are asked to carry out are binary decisions and numeric decisions.
 
@@ -186,10 +186,11 @@ When a game has been started, the first decision is shown along with the role of
 .. image:: _static/Workinghours.JPG
     :alt:  300px
 
-Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. See Elements.
-Other Decision Types
+Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. For further information see Elements.
 
-There are other input types such as radio buttons or sliders which are explained in the section Elements_. 
+- Other Decision Types
+
+There are other input types such as radio buttons or sliders which are explained in the section Elements. 
 
 Simple quiz question
 --------------------
@@ -200,32 +201,29 @@ Two player game
 Trading game
 ------------
 
-Payoffs and Administration Mode
-===============================
-Payoffs
+Disbursal of payoffs
+====================
 
-Payoffff.JPG
+In some games participants will receive a monetary payoff. The payoff is managed by providing the participant with a payoff code. Participants should not show their payoff code to others, as others could then claim the payoff. Therefore, it is advisable for participants not to let any other participant see the screen of their mobile device during the experiment.
 
-In some games participants will receive a monetary payoff. The payoff is managed by providing the participant with a payoff code. The lecturer reserves the right of withholding the payoff in the event of error. The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff.
-Participants should not show their payoff code to others, as others could then claim the payoff. Therefore, it is advisable for participants not to let any other participant see the screen of their mobile device during the experiment.
+.. image:: _static/Payoffff.JPG
+    :alt:  300px
 
-Administration Mode
+The lecturer reserves the right of withholding the payoff in the event of error. The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff. The person entrusted with disbursing the payoff can log-in into the adiministration mode by selecting it in the drop down menu.
 
-The person entrusted with disbursing the payoff can log-in into the adiministration mode by selecting it in the drop down menu.
-
-[[File: adminmode.JPG]]
+.. image:: _static/Adminmode.JPG
+    :alt:  300px
 
 The administrator then sees a screen indicating the date, the payoff code and the amount of money to be paid out to the participant. Further, clicking on the red icons opens up pdf of a receipt that must be printed out and then signed by the participant. Also, the administrator must tick the box on the right indicating that the participant has picked up his or her payoff.
 
-[[File: payout.JPG]]
-
-
-Data
-====
+.. image:: _static/Payout.JPG
+    :alt:  300px
 
 Graphical results
+=================
 
-Beautymacro.JPG
+.. image:: _static/Beautymacro.JPG
+    :alt:  300px
 
 Some of the displayed figures and graphs can be adapted. All figures that are labelled with Highcharts.com (see bottom right corner of the figure above) have a zoom function. You can zoom in by simply clicking and pulling the mouse over the section you want to zoom in on. The button “Reset zoom” resets the display back to the original size.
 
@@ -233,15 +231,10 @@ For histograms, you can also change the settings for the bins and the maximum by
 
 In the top right corner of the graph, you can see a symbol with three lines. Clicking on this symbol allows you to download the graph in different formats (jpeg, png, pdf, svg). You can also print the graph.
 
-For the different result graphs see here. 
+Via the button "previous results" in the lecture submode menu you can also access and display results of previous sessions.
 
-Previous results
-================
+For the different result graphs see Result elements in Elements. 
 
-Dealing with problems (logout button, playerNr)
+Dealing with problems (logout, playerNr)
 ===============================================
-Logout
 
-Currently, there is no logout button for participants. Participants can log out by entering ?logout behind the web address.
-
-You as a lecturer can log out all participants that are currently logged in to your class by going into your course data and clicking on this button: Bigredbutton.PNG 
