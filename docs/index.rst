@@ -7,7 +7,7 @@
 Welcome to the classEx documentation!
 =====================================
 
- .. image:: _static/Cover.jpg 
+ .. image:: _static/Cover.JPG
     :alt:  300px
 
 With classEx you can conduct interactive surveys and classroom experiments. Students log in with their mobile device (smartphone or notebook) and can participate interactively in the lecture. Results are shown instantly on the presentation screen of the lecturer with intuitive graphs. Quizzes and spontaneous tests can be integrated into lectures or presentations of all academic disciplines. classEx can be used in political science to simulate polls or elections, psychologists can test the effect of roles and scenarios and economists can assess the strategic interaction in markets and the whole world of behavioral economics. 
