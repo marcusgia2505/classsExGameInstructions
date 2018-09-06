@@ -380,10 +380,9 @@ This type of input is used for discrete decisions. Besides the text that is show
 
 You can implement single choice questions using buttons, simple lists or drop lists. This is what they look like in the participants' display.
 
-============================================ ============================================ 
-.. image:: _static/ButtonsAndSelection1.JPG  .. image:: _static/ButtonsAndSelection2.JPG 
-    :alt:  300px                                 :alt:  300px                             
-============================================ ============================================ 
+============================================ ============================================  ============================================ 
+.. image:: _static/ButtonsAndSelection1.JPG  .. image:: _static/ButtonsAndSelection1.JPG  .. image:: _static/ButtonsAndSelection1.JPG 
+============================================ ============================================  ============================================ 
 
 Choosing one of the options when using buttons submits the data, therefore, this type of input can only be used once in a stage. Multiple input fields (e.g. a single choice question and a numeric input field) should not be inserted as this leads to input errors. For simple lists and drop lists the choice needs to be submitted by pressing the submit button.
 
