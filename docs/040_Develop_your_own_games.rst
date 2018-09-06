@@ -294,8 +294,11 @@ Cut and Paste
 Display Condition
 	If showing the element should be contitional (e.g. not for every role or dependent on other variables) you can specify the display condition for an element in the code line that appears when you click on *show display condition*.
 
+Element types
+--------------
+
 Text Box
---------
+~~~~~~~~~
 
 .. image:: _static/Textbox.JPG
     :alt:  300px
@@ -303,8 +306,7 @@ Text Box
 The text box is the simplest element. The entered text will be displayed to the players.
 The text box is equipped with a text editor which allows you to insert tables, symbols etc. If you double-click into the text element, you see the text as it will be displayed to participants.
 
-Special Characters
-~~~~~~~~~~~~~~~~~~~~~
+- Special Characters
 
 =========== ============== ===============
 Special     Characters     Function Example
@@ -318,15 +320,13 @@ $variable;  Variables      Beside normal text, you can also insert variables int
 .. |role1| image:: Role1.JPG
 .. |role2| image:: Role1.JPG
 
-Configuration for Participants
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Configuration for Participants
 
 For participants you can chose to display the text box only for certain roles, treatments or groups (if defined). You can simply choose who the box shall be displayed for in the drop down menu above the text.
 
 Further, you can determine where the text shall be aligned (left, center or right).
 
-Conditional text
-~~~~~~~~~~~~~~~~
+- Conditional text
 
 So far we have only tackled how to read the php variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a bool variable that tells whether a participant is buyer or seller. We can achieve this task by the use of javascript code embedded in our text element:
 
@@ -335,7 +335,22 @@ So far we have only tackled how to read the php variables and display them in he
 
 since ClassEx supports JQuery, it is very easy. We create a span (an html tag to which we can easily add text) and than using the javascript syntax we add text to this tag with the id "isbuyer". We could also have used another id. Its only important that this id is unique in resulting html document. The Jquery text function gets the text we want to add as an argument. In this example we used the ternary Operator since it produces shorter code, but we could also have used a if else statement or more elaborate conditions. 
 
-Input element
+Element Reference
+~~~~~~~~~~~~~~~~~
+
+.. image:: _static/Refer.JPG
+    :alt:  300p
+
+In order to avoid redundancies, you can copy elements and add them in a different place in the game. For this, you need a reference, i.e. the element that shall be copied. If the original element is altered, the copy is adapted automatically. The reference is created by entering the stage number and the element number you are referring to. If you require the same text in to stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically.
+
+Please notice that the display condition is not references but taken from the element which calls the reference.
+
+Program code
+~~~~~~~~~~~~
+
+Program snippets can be implemented to calculate results for each subjects. For further information see Program code.
+
+Input element (only for players)
 ~~~~~~~~~~~~~
 
 In this element you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on “add new input field”. The input fields are displayed one after each other.
@@ -380,159 +395,184 @@ This type of input is used for discrete decisions. Besides the text that is show
 
 You can implement single choice questions using buttons, simple lists or drop lists. This is what they look like in the participants' display.
 
-============================================ ============================================  ============================================ 
-.. image:: _static/ButtonsAndSelection2.JPG  .. image:: _static/ButtonsAndSelection3.JPG  .. image:: _static/ButtonsAndSelection4.JPG 
-============================================ ============================================  ============================================ 
+.. image:: _static/ButtonsAndSelection2.JPG
+    :alt:  300px
+    
+.. image:: _static/ButtonsAndSelection3.JPG
+    :alt:  300px
+    
+.. image:: _static/ButtonsAndSelection4.JPG
+    :alt:  300px
 
 Choosing one of the options when using buttons submits the data, therefore, this type of input can only be used once in a stage. Multiple input fields (e.g. a single choice question and a numeric input field) should not be inserted as this leads to input errors. For simple lists and drop lists the choice needs to be submitted by pressing the submit button.
 
 Choosing multiple options is possible by using [[Check Boxes]]. Checkboxes work in exactly the same way as single choice options. Only the form of display is slightly different, as these are displayed as a list from which participants can pick several options. This way, multiple inputs can occur in one stage.
 
+- Radiolines and Sliders
 
-Radiolines and Sliders
 Radiolines, like Likert scales, offer stepwise input. For this, you need to specify the minimum and maximum as well as the number of steps (e.g. Min1, Max 7 and Steps 6 would lead to integers and Steps 12 would lead to steps of the size 0.5). Furthermore, you need to enter a description for the left and right hand side.
 
 Sliders are a similar concept. In this form of input, the participant moves a slider along a bar of predetermined positions.
 
 Defaults can be set for radiolines and sliders. If no default is set, the radioline is empty and the slider is positioned in the middle of the bar.
 
-
-Checkboxes
+- Checkboxes
 
 Check boxes allow for choosing multiple answers. Options can be set just as described for selection lists ([[Buttons and Selection Lists (single choice)|single choice]]). Further, the minimum and maximum number of answers must be specified. It is possible to set a default. You can also select if the options should be displayed in order or randomly (different for each participant).
 
-Other Input Fields
-'''Average over all input fields:''' This option saves the average over all input fields which is not displayed to the user. The average is created automatically by calculating the mean over several numeric inpu fields (e.g. radiolines, numeric input fields, sliders).
+- Other Input Fields
 
-'''Filled in input field''': This element allows you to display the filled in input field of the last stage.
+Average over all input fields
+	This option saves the average over all input fields which is not displayed to the user. The average is created automatically by calculating the mean over several numeric inpu fields (e.g. radiolines, numeric input fields, sliders).
+
+Filled in input field
+	This element allows you to display the filled in input field of the last stage.
 
 Up to date, small programmes for manipulating the input (e.g. input in field 1 determines input in field 2) cannot yet be configurated in the backend.
 
-Winner's Notification
-[[File:winner.PNG]]
+Winner's Notification (only for players)
+~~~~~~~~~~~~~~~~~~~~~
+
+If a game is played with real payoffs, this element displays the payoff code to participants. (only works together with winners' draw) 
+
+.. image:: _static/Winner.PNG
+    :alt:  300p
 
 A winning notification is necessary for games with monetary payoff. The players who are randomly drawn receive a winning notification as well as a code to cash in their earnings. You can adapt the message that is displayed in the winning notification. The amount of earnings can be determined in the field “Payoff(variable) in €”. Besides a fix amount, you can also enter a variable that is calculated beforehand. If, for example, the variable “$payoff;” is calculated in a programme during the game, you can enter this variable in the earnings field.
 
- Tip: The winning notification can only be displayed if you also define a [[Winners'_Draw|winner's draw]] on the lecturer side. Otherwise no winner can be determined.
+	Tip: The winning notification can only be displayed if you also define a [[Winners'_Draw|winner's draw]] on the lecturer side. Otherwise no winner can be determined.
 
 Clicking on the little info circles above the boxes will show you what will be displayed if you leave the boxes blank.
 
- Important: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. $maxWin=1000;).
+	Important: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. $maxWin=1000;).
 
-Payoff Matrix Game
+Payoff Matrix Game (only for players)
+~~~~~~~~~~~~~~~~~~
 
-[[File:matrixpay.JPG]]
+.. image:: _static/Matrixpay.JPG
+    :alt:  300p
 
 This element helps display the payoff for a two role game easily with a matrix. Alternatively, you can also do this through a program. In this element, you need to specify which input field contains the decision of the respective player for the row player and for the column player. The labels of the matrix are determined by the specified input fields. In the table, you enter the payoff for the row player first followed by the payoff for the column player. The payoff is stored as variable $payoff; which can then be used for the winning notification or further calculations.
 
 Contract
 
-[[File:Contract participant.JPG]]
+.. image:: _static/Contractparticipant.JPG
+    :alt:  300p
 
 With this element, you can enable participants to form contracts. By adjusting the settings, you can customise the contract to your needs.
 
-'''Please note that you need to set seperate contract elements for buyers and sellers.'''
+**Please note that you need to set seperate contract elements for buyers and sellers.**
 
-==Functionality==
+- Functionality
 
-[[File:seller.png|300px|thumb|left|seller screen]]
-[[File:buyer.png|300px|thumb|left|buyer screen]]
+.. image:: _static/Seller.PNG
+    :alt:  300p
 
+.. image:: _static/Buyer.PNG
+    :alt:  300p
 
 Contracts can be used to trade a commodity between subjects in real time. Subjects move around in the classroom and talk to each other. When they agreed on a price they enter it into the input mask together with the signature of the counterparty (see seller screen). The counterparty has to accept the trade (or reject it, see buyer screen).
 
-Camera
+- Settings
 
-[[File:Camera.png]]
+sell offers/buy offers
+	If you turn this on, you allow for sell or buy offers made by the respective subject.
+
+set quantities
+	allows to set quantities (otherwise quantity is always 1). Prices are set as price/unit.
+
+no signature
+	allows to disable the signature. The signature is needed for sell and buy offers to be send to a specific person. E.g. if the buyer can make buy offers, she needs the signature of the seller to send the offer to.
+
+max # contracts
+	maximum number of (accepted) contracts
+
+currency/min price/max price/decimal place
+	Currency of the prices and minimum, maximum and decimal places.
+
+maximum quantity
+	maximum quanity a subject is allowed to possess
+
+products
+	at the moment only one typoe of product can be traded. You can specify a name (or a small image) and the initial amount of the good (e.g. the seller has 1 unit, the buyer 0 units).
+
+- Output
+
+The contracts made can be shown at the lecturer's screen with the contract table. In addition, there are special functions in globals and subjects programs to retrieve contracts. All contracts are also stored in the standard excel file which can be retrieved in the data menu. 
+
+Camera (only for players)
+~~~~~~~~
+
+.. image:: _static/Camera1.PNG
+    :alt:  300p
 
 With this element, you can enable participants take a picture of themselves.
 
-==Settings==
+- Settings
 
 The filename, under which the picture is stored, has to be defined. Additionally, you can define if participants are allowed to retake a picture. Then only the last picture taken is saved.
 
-[[File:Camera.PNG|thumb]]
+.. image:: _static/Camera2.PNG
+    :alt:  300p
 
-==Informed Consent==
+- Informed Consent
 
 Participants are asked by the browser if the browser can access the webcam or not. Please make participants aware that they do not have to take a picture and ask them for their consent.
 
-==Retrieving Pictures==
+- Retrieving Pictures
 
-Pictures can be retrieved in the following ways.
+Pictures can be retrieved in the following ways:
 
-===At another participant' screen===
+At another participant' screen
+	You can use the normal variable notation ($image;) to display pictures in textboxes.
 
-You can use the normal variable notation ($image;) to display pictures in textboxes.
+At the lecturer screen
+	You can use $getValues(...) to retrieve the pictures of all participants and display them.
 
-===At the lecturer screen===
+From the stored data
+	In the downloaded data you find stored images in the subjects table. They can are base64 decoded and can be encoded with free online tools. Just take away "data:image/jpeg;base64," from the string, so that it starts e.g. with "/9j/....".
 
-You can use [[Program Code|$getValues(...)]] to retrieve the pictures of all participants and display them.
+Javascript (only for players)
+~~~~~~~~~~
 
-===From the stored data===
+- Reading php variables
 
-In the downloaded data you find stored images in the subjects table. They can are base64 decoded and can be encoded with free online tools. Just take away "data:image/jpeg;base64," from the string, so that it starts e.g. with "/9j/....".
-
-Element Reference
-
-[[File:refer.JPG]]
-
-In order to avoid redundancies, you can copy elements and add them in a different place in the game. For this, you need a reference, i.e. the element that shall be copied. If the original element is altered, the copy is adapted automatically. The reference is created by entering the stage number and the element number you are referring to. If you require the same text in to stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically.
-
-Please notice that the display condition is not references but taken from the element which calls the reference.
-
-== Javascript Element ==
-
-=== Reading php variables ===
 To read php variables one currently neads a two step approach:
-* write php variable in the text field
-* parse textfield content in javascript using jquery
-* [optional] hide textfield
+	* write php variable in the text field
+	* parse textfield content in javascript using jquery
+	* [optional] hide textfield
 
 Assume we have a php variable <code>$foo</code> that containing an array we want to use as an javascript array.
 
-==== Textfield content: ====
-<pre><div id="php_var_foo" hidden>$foo;</div></pre>
-The id does not need to have this format, but it must be unique and match the variable used in the Javascript field
+- Textfield content:
 
-==== Javascript-field content: ====
- var foo = JSON.parse($('#php_var_foo').html());
- $('#php_var_foo').parent().hide(); // optional
+	| <pre><div id="php_var_foo" hidden>$foo;</div></pre>
+	| The id does not need to have this format, but it must be unique and match the variable used in the Javascript field
+
+- Javascript-field content:
+
+	| var foo = JSON.parse($('#php_var_foo').html());
+	| $('#php_var_foo').parent().hide(); // optional
 
 This finds the html element with the id of the div containing the variable content. It's inner html (the content) is taken and than parsed. Now the variable foo in javascript contains the content of the php variable foo.
 
 [Optional] Hide the parent of the div containing the variable.
 
-=== Writing php variables ===
+- Writing php variables
+
 This can be achieved via hidden input fields that are triggered via JQuery calls
 
-
-
-Elements for lectureres
-
-Elements for the lecturer are generally only displayed on the lecturer’s screen which is usually projected to a wall for all participants to see. The start button, text boxes, elements for payoff calculations and output displays are typical elements for the lecturer.
-Screenshot 	Name 	Brief description
-Tblec.JPG 	Text Box 	Element to display text (including varibales) on the lecturers' screen.
-Startt.JPG 	Start Button 	A Start Button is needed to start a stage. You can also set an automatic start here.
-Draw.JPG 	Winners' Draw 	If a game is played with real payoffs, this element draws the winners (only works togehter with winner's notification).
-Codenew.JPG 	Global Program 	Progam snippets can be implemented to calculate results on the global level for all participants.
-Randomdraw.PNG 	Lecturer Discrete Choice 	Lecturer Discrete Choice allows the lecturer to input data in the course of the game
-Contracttable.JPG 	Contract table 	Contract tables give you an overview of contracts concluded by the participants.
-Refer.JPG 	Element Reference 	An reference can be used to reuse elements and thereby avoid redudant elements.
-Ress.JPG 	Result Element 	Different Result Elements like Pie Chars, Line Charts, Histograms... are available. 
-
-Text Box -- view under Player, Text Box
-
-Start Button
-
+Start Button (only for lecturers)
+~~~~~~~~~~~~~~
 
 The start button is used to initiate a stage. Each stage '''requires a start button''' apart from stages that has a result element. Result elements have their own buttons. 
 
 There are two options. A start button which has to be clicked by the experimenter or a automatic start.
 
-== Start Button ==
+- Start Button
 
-[[File:Startbutton.PNG]]
+.. image:: _static/Startbutton.PNG
+    :alt:  300p
 
 The start button can be configured according to the needs. 
 
@@ -541,56 +581,77 @@ The start button can be configured according to the needs.
 * Confirmation message: you can set if a pop-up should appear after clicking to confirm the action. 
 * Count: You can set the counter which appears after the start button is clicked. It can count decisions (also by role, treatment or group if set). 
 
-== Automatic Start ==
+- Automatic Start
 
-[[File:Automaticstart.PNG]]
+.. image:: _static/Automaticstart.PNG
+    :alt:  300p
 
 The automatic start button allows you to start stages when subjects finished the previous stage.
 
-* Mode: The mode can be set to 
-** "start if possible", which means if a subjects finishes the previous stage, it is forwarded to the next stage.
-** "wait for all", which means that subjects are only forwared if everyone in the group is done with the previous stage.
-** "no forwarding", subjects are not forwarded (This feature is only used if subjects forward themself by clicking on a button. This can be set in additional settings of the input element).
-* Count: You can set the counter which appears after the start button of the previous stage is clicked. It can count decisions (also by role, treatment or group if set).
-* Counter: Setting this additionally allows you to deactivate the counter completly.
+The mode can be set to:
 
-Winner's Draw
+start if possible
+	if a subjects finishes the previous stage, it is forwarded to the next stage.
 
-[[File:draw.JPG]]
+wait for all
+	subjects are only forwared if everyone in the group is done with the previous stage.
+
+no forwarding
+	subjects are not forwarded (This feature is only used if subjects forward themself by clicking on a button. This can be set in additional settings of the input element).
+
+Count
+	You can set the counter which appears after the start button of the previous stage is clicked. It can count decisions (also by role, treatment or group if set).
+Counter
+	Setting this additionally allows you to deactivate the counter completly.
+
+Winner's Draw  (only for lecturers)
+~~~~~~~~~~~~~
+
+.. image:: _static/Draw.JPG
+    :alt:  300p
 
 This element should be implemented in the last stage and draws a winner from among all participants. The earnings should be calculated individually on the participant side (see [[Winner's_Notification|winning notification]] for participants). You can determine whether single players or coupled players shall be drawn. Drawing coupled players only makes sense if you have defined roles. You can also decide how many winners you want to draw.
 
  Important: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. $maxWin=1000;).
 
-<div class="quote">Tip: For games with two roles it is advisable to draw coupled players as winners because the possibility that only one of the two players could be drawn might overshadow considerations of fairness or reciprocity. Experience has shown that earnings of less than 5€ are usually not cashed in. Therefore, games should be calibrated in a way that ensures that earnings are at least 10€.</div>
+	Tip: For games with two roles it is advisable to draw coupled players as winners because the possibility that only one of the two players could be drawn might overshadow considerations of fairness or reciprocity. Experience has shown that earnings of less than 5€ are usually not cashed in. Therefore, games should be calibrated in a way that ensures that earnings are at least 10€.
 
- Important: Winners are only drawn from players who made a decision to avoid inactive players to be drawn. Therefore it does not make any sense to put the winners' draw in the first stage.
+**Important: Winners are only drawn from players who made a decision to avoid inactive players to be drawn. Therefore it does not make any sense to put the winners' draw in the first stage.**
 
 You should draw winners only once in a game as the payoffs codes do not distinguish between rounds.
 
 Lecturer Discrete Choice
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[[File:Randomdraw.PNG]]
+.. image:: _static/Randomdraw.PNG
+    :alt:  300p
 
-==Usage==
+- Usage
 
 With this element the lecturer/experimenter can make decisions for all players during the game, e.g. tossing a coin in front of the class and entering the value in classEx so that payoffs can be calculated based on the coin toss.
 
-==Settings==
+- Settings
 
-'''name''' This name will be displayed on the screen to identify the input button.
+name
+	This name will be displayed on the screen to identify the input button.
 
-'''variable name''' The value will be saved under this name as a global variable and can be retrieved by that name.
+variable name
+	The value will be saved under this name as a global variable and can be retrieved by that name.
 
-'''for each player''' If you switch this on, you can set the value for each player separatly. The value will be stored as a global variable in an array with the player ID as index.
+for each player
+	If you switch this on, you can set the value for each player separatly. The value will be stored as a global variable in an array with the player ID as index.
 
-'''default''' You can set a default.
+default
+	You can set a default.
 
-'''options''' You can specify options with different values.
+options
+	You can specify options with different values.
 
-'''update''' If you switch on the update, the element will check every two second if new players arrived (only necessary when you switched on "for each player").
+update
+	If you switch on the update, the element will check every two second if new players arrived (only necessary when you switched on "for each player").
 
 Contract table
+~~~~~~~~~~~~~~~~~
 
 [[File:Contracttable.JPG]]
 
@@ -1343,3 +1404,17 @@ Contract participant.JPG 	Contract 	This element allows participants to make con
 Camera.png 	Camera 	This element allows participants to make a photo of themselves.
 Refer.JPG 	Element Reference 	A reference can be used to reuse elements and thereby avoid redundant elements.
 Javascript 	Program javascript snippets to implement more flexibly
+
+Elements for the lecturer are generally only displayed on the lecturer’s screen which is usually projected to a wall for all participants to see. The start button, text boxes, elements for payoff calculations and output displays are typical elements for the lecturer.
+Screenshot 	Name 	Brief description
+Tblec.JPG 	Text Box 	Element to display text (including varibales) on the lecturers' screen.
+Startt.JPG 	Start Button 	A Start Button is needed to start a stage. You can also set an automatic start here.
+Draw.JPG 	Winners' Draw 	If a game is played with real payoffs, this element draws the winners (only works togehter with winner's notification).
+Codenew.JPG 	Global Program 	Progam snippets can be implemented to calculate results on the global level for all participants.
+Randomdraw.PNG 	Lecturer Discrete Choice 	Lecturer Discrete Choice allows the lecturer to input data in the course of the game
+Contracttable.JPG 	Contract table 	Contract tables give you an overview of contracts concluded by the participants.
+Refer.JPG 	Element Reference 	An reference can be used to reuse elements and thereby avoid redudant elements.
+Ress.JPG 	Result Element 	Different Result Elements like Pie Chars, Line Charts, Histograms... are available. 
+
+Text Box -- view under Player, Text Box
+
