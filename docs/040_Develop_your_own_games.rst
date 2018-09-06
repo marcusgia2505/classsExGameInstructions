@@ -294,19 +294,6 @@ Cut and Paste
 Display Condition
 	If showing the element should be contitional (e.g. not for every role or dependent on other variables) you can specify the display condition for an element in the code line that appears when you click on *show display condition*.
 
-
-
-Screenshot 	Name 	Brief description
-Tbnewnew.JPG 	Text Box 	Element to display text (including variables)
-Inputfield.PNG 	Input Element 	In this element you can insert several input fields.
-Codenew.JPG 	Program Code 	Program snippets can be implemented to calculate results for each subjects.
-Winner.PNG 	Winner's Notification 	If a game is played with real payoffs, this element displays the payoff code to participants. (only works together with winners' draw)
-Matrixpay.JPG 	Payoff Matrix Game 	This is a special element for matrix games.
-Contract participant.JPG 	Contract 	This element allows participants to make contracts
-Camera.png 	Camera 	This element allows participants to make a photo of themselves.
-Refer.JPG 	Element Reference 	A reference can be used to reuse elements and thereby avoid redundant elements.
-	Javascript 	Program javascript snippets to implement more flexibly
-
 Text Box
 --------
 
@@ -331,65 +318,51 @@ $variable;  Variables      Beside normal text, you can also insert variables int
 .. |role1| image:: Role1.JPG
 .. |role2| image:: Role1.JPG
 
-==Configuration for Participants==
+Configuration for Participants
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For participants you can chose to display the text box only for certain roles, treatments or groups (if defined). You can simply choose who the box shall be displayed for in the drop down menu above the text.
 
 Further, you can determine where the text shall be aligned (left, center or right).
 
+Conditional text
+~~~~~~~~~~~~~~~~
+
+So far we have only tackled how to read the php variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a bool variable that tells whether a participant is buyer or seller. We can achieve this task by the use of javascript code embedded in our text element:
+
+	| Endowment: $endowment;. <span id="isbuyer"></span>
+	| <script>$("#isbuyer").text("$isBuyer;" === "1" ? "You are Buyer" : "You are Seller")</script>
+
+since ClassEx supports JQuery, it is very easy. We create a span (an html tag to which we can easily add text) and than using the javascript syntax we add text to this tag with the id "isbuyer". We could also have used another id. Its only important that this id is unique in resulting html document. The Jquery text function gets the text we want to add as an argument. In this example we used the ternary Operator since it produces shorter code, but we could also have used a if else statement or more elaborate conditions. 
+
+Input element
+~~~~~~~~~~~~~
+
 In this element you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on “add new input field”. The input fields are displayed one after each other.
 
-The following settings are available for every input field. You can determine the type of input field and define a name. The name can then be used in programmes and will give out the value of the variable. For example, if your variable is called “e”, you can access it by writing “$e;”. For more details see [[Program]]. Furthermore, you can delete an input field by clicking on http://classex.uni-passau.de/classex3/pic/reject.png. You cannot delete the first input field (#1).
+The following settings are available for every input field. You can determine the type of input field and define a name. The name can then be used in programmes and will give out the value of the variable. For example, if your variable is called “e”, you can access it by writing “$e;”. For more details see program. Furthermore, you can delete an input field by clicking on http://classex.uni-passau.de/classex3/pic/reject.png. You cannot delete the first input field (#1).
 
-'''Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.'''
+	**Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.**
 
 In the following, the different sorts of input fields are described in more detail.
 
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:30%;font-size:103%;" | What it looks like in the editing mode
-! style="width:30%;font-size:103%;" | Name
-! style="width:70%;font-size:103%;" | How it is displayed to participants
-|- 
-! [[File:numm.JPG | 400px]]
-! [[Numeric Input Fields]] 
-! [[File:Inputnum.png | 400px]]
-|- 
-! [[File:texx.JPG|400px]]
-! [[Text Input]]
-! [[File:tex.JPG|400px]]
-|-
-! [[File:ww.JPG| 400px]]
-! [[Buttons and Selection Lists (single choice)]] 
-! [[File:buttonn.JPG | 400px]]
-|- 
-! [[File:sliderr.JPG | 400px]]
-! [[Radiolines and Sliders]] 
-! [[File:Slider.png | 400px]]
-|- 
-! [[File:checkboxx.JPG | 400px]]
-! [[Check Boxes]] 
-! [[File:Checkbox.png | 400px]]
-|- 
-! 
-! [[Other input fields]] 
-! 
-|}
+- Numeric Input Fields
 
-Numeric Input Fields
 Numbers can be inserted into this input field. 
 
-[[File: numm.JPG | numm.JPG ]]
+.. image:: _static/NummericInput1.JPG
+    :alt:  300px
 
 The name of the input field is used as the label and is displayed on the left hand side of the input field when it is displayed to participants. In the [[Editing Mode]], you can specify the minimum and the maximum and the number of decimal places allowed. If entries are different from these specifications, participants will see an error notification and will be requested to correct their entry.
 
-[[File: checkk.JPG | ]]
+.. image:: _static/NummericInput2.JPG
+    :alt:  300px
 
 In addition, a unit (e.g. %, €, mm, …) can be specified that will be displayed on the right of the input field (here "years"). You can also set a default value that is displayed to participants at the start. Further, you can determine whether input is compulsory which is not the case for voluntary information for example.
 
 "Output only" can be used, if an input field shall only display output. This can be necessary for calculations. For example, if participants are required to allocate different parts of income to different purposes, an "Output only" field can be used to display how much income is still left after filling in the input fields.
 
-<blockquote style="background-color: lightgrey; border: solid thin grey;">Tip: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard. </blockquote>
+	Tip: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
 
 Text Input
 
@@ -1364,3 +1337,15 @@ New game: Creates a new game. A standard new game is always a single-choice ques
 
 Information on the game (meta data)
 ===================================
+
+Participants elements
+Screenshot 	Name 	Brief description
+Tbnewnew.JPG 	Text Box 	Element to display text (including variables)
+Inputfield.PNG 	Input Element 	In this element you can insert several input fields.
+Codenew.JPG 	Program Code 	Program snippets can be implemented to calculate results for each subjects.
+Winner.PNG 	Winner's Notification 	If a game is played with real payoffs, this element displays the payoff code to participants. (only works together with winners' draw)
+Matrixpay.JPG 	Payoff Matrix Game 	This is a special element for matrix games.
+Contract participant.JPG 	Contract 	This element allows participants to make contracts
+Camera.png 	Camera 	This element allows participants to make a photo of themselves.
+Refer.JPG 	Element Reference 	A reference can be used to reuse elements and thereby avoid redundant elements.
+Javascript 	Program javascript snippets to implement more flexibly
