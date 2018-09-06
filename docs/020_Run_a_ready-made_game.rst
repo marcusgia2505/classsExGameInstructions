@@ -2,10 +2,7 @@
 Run a ready-made game
 =====================
 
-.. youtube:: zmAn0ZzTQPk
-   :height: 315
-   :width: 500
-   :align: center
+A short introductory turtorial on how to play a game in classEx can be found under https://youtu.be/zmAn0ZzTQPk
 
 Prerequisites (students devices, lecturer device, data volume)
 ==============================================================
