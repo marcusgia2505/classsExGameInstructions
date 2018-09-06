@@ -125,6 +125,15 @@ Participants’ screens are updated automatically when their partner has made a 
 Run a game (mit 2 Bsp., parameters, neu starten)
 ================================================
 
+- Change parameters
+
+Parameters offer a possibility to adjusted games without knowledge of the editing mode. I a game includes changable parameters the *parameters* button appears in the lecture mode before you start the game.
+
+.. image:: _static/Parameters.PNG
+    :alt:  300px
+
+You can change the parameters of a game by clicking on *parameters*. For example, in a public goods game, you can change the MPCR, the endowment and the amount of rounds and restart the game with the new settings. You can restart the game by clicking on *restart game*. 
+
 - Start a Game
 
 During a lecture, the interaction between the lecturer and the players takes place in the lecture mode. The lecturer’s browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode. The lecturer can start this game or select a different one.
@@ -159,13 +168,6 @@ When the participants have made their decisions, the lecturer can end the game b
     :alt:  300px
 
 If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button. 
-
-- Change parameters
-
-You can now change the parameters of a game by clicking on |Para|. For example, in a public goods game, you can change the MPCR, the endowment and the amount of rounds and restart the game with the new settings. You can restart the game by clicking on |Rere|. 
-
-.. |Para| image:: _static/Para.JPG
-.. |Rere| image:: _static/Rere.JPG
 
 Players interface
 =================
