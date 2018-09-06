@@ -653,41 +653,57 @@ update
 Contract table
 ~~~~~~~~~~~~~~~~~
 
-[[File:Contracttable.JPG]]
+
+.. image:: _static/Contracttable.JPG
+    :alt:  300p
 
 With this element, all contracts that were entered into by participants as well as a chart and the average are displayed on the lecturer's screen.
 
-[[File:ctable4.PNG|400px|thumb|Contracts]]
-[[File:ctable2.PNG|400px|thumb|Averages]]
-[[File:ctable3.PNG|400px|thumb|Chart]]
-[[File:ctable1.PNG|400px|thumb|Prediction]]
 
+.. image:: _static/Ctable4.PNG
+    :alt:  300p
 
-==Functionality==
+.. image:: _static/Ctable2.PNG
+    :alt:  300p
+
+.. image:: _static/Ctable3.PNG
+    :alt:  300p
+
+.. image:: _static/Ctable1.PNG
+    :alt:  300p
+
+- Functionality
 
 In the contract table you have several tabs where you can jump between. You can see them in the pictures on the right hand side.
 
-'''Contracts''' lists all contracts made.
+Contracts
+	lists all contracts made.
 
-'''Averages''' yields overview statistics for each round (mean, median, min, max, std dev)
+Averages
+	yields overview statistics for each round (mean, median, min, max, std dev)
 
-'''Chart''' show contracts made over time. In case of different quantities it also shows a bubble chart for the combination of quantities and prices.
+Chart
+	show contracts made over time. In case of different quantities it also shows a bubble chart for the combination of quantities and prices.
 
-'''Predicition''' shows a predicition (if set). To create a prediction the variables $demand and $supply have to be filled in a global program. $supply and $demand should be arrays which contain prices as index and the resulting quantity as a value.
+Predicition
+	shows a predicition (if set). To create a prediction the variables $demand and $supply have to be filled in a global program. $supply and $demand should be arrays which contain prices as index and the resulting quantity as a value.
 
-==Settings==
+- Settings
 
-'''value array''' gives the name of a (pre-filled) array which contains the role of the player as index and the respective buyer or seller value as value. This is shown in the table as buyer/seller value. 
+value array
+	gives the name of a (pre-filled) array which contains the role of the player as index and the respective buyer or seller value as value. This is shown in the table as buyer/seller value. 
 
-'''label''' all labels in the table can be changed according to needs (seller/buyer/seller value/buyer value/price).
+label
+	all labels in the table can be changed according to needs (seller/buyer/seller value/buyer value/price).
 
-'''profit variables''' can be left empty.
+profit variables
+	can be left empty.
 
-'''show quantities''' additionally shows quantities in the contract table and a bubble chart with quantities and prices.
-
-Element Reference --- view under player, element reference
+show quantities
+	additionally shows quantities in the contract table and a bubble chart with quantities and prices.
 
 Result Element
+~~~~~~~~~~~~~~~
 
 ==General Remarks==
 
