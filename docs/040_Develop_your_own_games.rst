@@ -2,30 +2,30 @@
 Develop you own games
 =====================
 
+Read this section to learn how to create and edit games.
+
 Tutorial: Exemplified instructions to program an ultimatum game
 ===============================================================
 
-To help you getting started with creating your own games you find instructions for how to implement an Ultimatum Game in classEx here.
-Contents
-
-    1 The Ultimatum Game
-    2 Building the game
-        2.1 Matching
-        2.2 Stage 1: Proposer’s decision
-        2.3 Stage 2: Responder’s decision
-        2.4 Stage 3: Results
-    3 Testing the game
+To help you getting started with creating your own games this section gives step by step instructions for how to implement an Ultimatum Game.
 
 The Ultimatum Game
+------------------
 
 In an Ultimatum Game the participants play in groups of two. One of them takes the role of the proposer. He decides upon how to divide an initial endowment between him and the other player – the responder. The responder then decides whether he accepts the proposal. If he does so, the final payoffs of the players are according to the proposal. If the responder does not accept the proposal both players receive nothing as final payoff.
+
 Building the game
+-----------------
 
 To create a new game click on "new game" in your overview screen. Type in a game name of your choice and change the availability to “private”. Thus other users cannot see “your” Ultimatum Game. Click “save”. ClassEx will automatically switch into editing mode and you can start building the game.
+
 Matching
+~~~~~~~~
 
 Go to the tab “matching”. Select “role” in the drop-down menu “matching” and select “2” in the drop-down menu “roles”. This means the participants in this game are selected into groups of two with every group consisting of one participant of each role.
+
 Stage 1: Proposer’s decision
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Go on to the tab "stage 1". In this first stage of the game the instructions for all participants should be on the lecturer’s screen (all participants can see it) and the proposers should decide how much they want to transfer to the responder. The stage should be started by the lecturer pressing a start button.
 
@@ -38,18 +38,20 @@ Than you have to edit the participant’s field on the left side. An input eleme
 To make sure the proposer fully understands his decision the value left for the responder should be calculated and displayed. Therefore click on Insert.png to add a new input field in the input element. Change the field “for all roles” to “only role 1” again and name the variable (e. g. “send”). Isert the description for the variable in the text box, e. g. “Player 2 gets:”. You don’t need minimum and maximum values because the value should be calculated automatically from the variables "keep" and "endow". Set decimal place and unit the same as in the first input field. Because this field is actually not an input field in which the participant can insert a value check the box “output only”. To calculate the updated amount for the respondent every time the proposer changes the value he wants to keep you need to insert a third input field in your input element. This time it the “Type of input field” is “calculation field”. Again change the field “for all roles” to “only role 1”. Type “send=endow-keep;” into the program field.
 
 For clarification you should add a more general explanation of the stage for the proposers that is displayed above the input element. Click on “add new element” in the participants field and select “text box”. Click on Insert.png between the “program code (subject)” and the input element. Again change the field “for all roles” to “only role 1”. Then insert the instructions, e. g. “You decide how to divide $endow; € between you and player 2 . Player 2 decides, if he accepts or rejects. If he rejects, you both get nothing.”
+
 Stage 2: Responder’s decision
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the second stage the responders are informed about the proposals and they decide whether to accept or to reject.
 
 To create a new stage click on Plus.JPG on the right side of the tab of stage 1 (now bearing the name you chose). Type in a name for stage 2 (e. g. "UltimatumResponder"). “Late arrival” should be “not possible” in this stage, because the matching is already done and newcomers cannot be integrated once the first stage has been played. The new stage has by default implemented a textbox in the participant’s field. Use this textbox to inform the responder about the proposal. You need to display for every responder the values of the proposal made by the proposer who was matched to them. To do so you need a "program code (subjects)" field again. Insert it above the text box and change “for all roles” to “only role 2”. Type in the following code:
 
-$keep = $findVariablePartner(“keep”;$round);
-$send=$endow-$keep;
+	$keep = $findVariablePartner(“keep”;$round);
+	$send=$endow-$keep;
 
 The first line defines a variable “keep” and assigns to it the value of the player’s matching partner’s “keep”-variable. The second line calculates how much the proposer kept for himself and assigns the value to a variable “send”. Now you can use both new variables to inform the responder about the proposal made to him. Change “for all roles” to “only role 2” in the text box and type in the following instructions:
 
-"Player 1 has decided to split $endow; as follows: $keep; for player 1 and $send; for you. You can accept the proposal or reject it. If you reject it, both get nothing."
+	"Player 1 has decided to split $endow; as follows: $keep; for player 1 and $send; for you. You can accept the proposal 		or reject it. If you reject it, both get nothing."
 
 Now you need an input element via which the responder can accept or reject the proposal. Insert an input element beneath the text box and insert a “new input field” within the input element. Change the type to “Buttons (Single Choice)”. Set the variable name to e. g. “accepted” and define the Input field as visible for “only role 2”. Write a text into the text box that should appear above the “accept” and “reject” button (e. g. “Your decision”). To insert these buttons type “2” into the text field next to “add new possible answer” and click on Plus.JPG. Insert “Accept” and “Reject” into the text fields. The values assigned to the decision buttons are very important. Choose the value “1” for the accept button and the value “0” for the reject button.
 
