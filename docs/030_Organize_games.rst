@@ -2,72 +2,45 @@
 Organize games
 ==============
 
-Organize games in folders
-=========================
+You can organize your games in the Overview. Here, you can find all your games as well as the standard games that are in your overview by default. 
 
 .. image:: _static/Overview.PNG
     :alt:  300px
 
-Here, you can find an overview of all your games as well as the standard games that are in your overview by default. You can create a new game by clicking on *new game* in the top bar. Games are sorted into folders, for example different chapters of lectures, which can be found on the left. You can create a new folder by clicking on *new folder* in the top bar. Folders can be renamed by typing in the box above the list of games in a folder. You can move games by clicking on the little icon on the *move game* icon and dragging the game to another folder or just change its poition in the current folder.
+Folders
+=======
 
-You can directly enter the Lecture Mode to play a game by pressing the *play game* icon and directly enter the Editing Mode to edit a game by clicking on the *edit game* icon. Games marked with the *created by someone else* icon cannot be edited but only played or viewed. The *delete game* icon deletes a game. The *public game* icon means that other users can see and copy this game. The *private game* icon means your game is private and cannot be seen by other users. You can change the game status private or public by clicking on the symbol. 
+Games are sorted into folders, for example different chapters of lectures, which can be found on the left. You can create a new folder by clicking on *new folder* in the top bar. Folders can be renamed by typing in the box above the list of games in a folder. It is not possible to change the order of folders. 
 
-The button repository in the top bar gives you access to the repository which contains all public games created by you and other lecturers. 
+Handle games
+============
 
-Copy and delete games
-=====================
+You can move games by clicking on the little icon on the *move game* icon and dragging the game to another folder or just change its poition in the current folder. You can directly enter the Lecture Mode to play a game by pressing the *play game* icon and directly enter the Editing Mode to edit a game by clicking on the *edit game* icon. Games marked with the *created by someone else* icon cannot be edited but only played or viewed. The *delete game* icon deletes a game.
 
-General Features in the Editing Mode
+Public, private and imported games
+==================================
 
-You will find several features at the top of the page in the editing mode which are displayed here.
+All games are marked be either the *public game*,  *private game* or *created by someone else* icon. The *public game* icon means that you created the game but other users can see and copy this game. The *private game* icon means your game is private and cannot be seen by other users. You can change the game status between private or public by clicking on the symbol. The *created by someone else* markes the ready-made games and all games you imprted from the repository. You cannot edit them but only view and play them. If you want to make your own version of such a game you have to copy it.
 
-Leiste.JPG
-
-These provide you with several options which are described below.
-Tip: If you make any input in the editing mode and leave the input field the value is stored automatically.
-Select game
-
-Aa.JPG
-
-Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
-
-If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
-
-Bb.JPG
-Game
-
-By clicking on the button game a drop down menu opens.
-
-Cc.JPG
-
-Game settings: Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
-
-Copy game: The currently selected game is copied and can then be edited and adapted.
-
-Delete game: By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
-
-New game: Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here. 
-
-Public and private games
-========================
-
-Information on the game (meta data)
-===================================
-
-Repository 
+Copy games
 ==========
 
-The Repository gives you an overview of yours and other users' public games and allows you to import these to your account.
-[[File:Repository.PNG||thumb|600px|The repository]]
+If you want to make a copy of a game (e.g. to create your own version of a ready-made game) click on the *view* or *edit* button. This takes you the Editing mode. In the top bar you can now click on the drop down menu *game* and then select *copy game*. This will create a coy of the game in your *general folder*. You can edit this copy and thus make your own version of any public game on classEx.
 
-== List of all games ==
+Repository
+==========
 
-The repository lists all games which were set public by their owners. These games can be imported to one's own account by clicking on the + symbol. Clicking on the info button shows some more information (if set by the owner) and a sample screenshot. 
+The repository gives you an overview and access to the all public games created by you and other lecturers and allows you to import these games to your account. If you do not want your game to be listed in the repository you have to change its status from public to private. You can enter it by clicking on the *repository* button in the top bar of the overview.
 
-== Search games ==
+.. image:: _static/Repository.PNG
+    :alt:  300px
+    
+Search games
+------------
 
-The list can be searched by the different criteria on the left hand side. The switch button disables viewing a certain criterion in the list. You can also make a free text search by typing in the search box in the top right corner. 
+The repository lists all games which were set public by their owners. The list can be searched by the different criteria on the left hand side. The switch button disables viewing a certain criterion in the list. You can also make a free text search by typing in the search box in the top right corner. Clicking on the *Game information* button shows some more information (if set by the owner) and a sample screenshot. 
 
-== Unlist own games ==
+Import games
+-----------------
 
-By clicking on the box symbol you can unlist your own games. They are set private and not listed in the repository anymore.
+All games from the repository can be imported to one's own account by clicking on the *Import game* button. You can then find the game in the general folder of your own games.
