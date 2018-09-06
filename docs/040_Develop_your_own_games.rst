@@ -350,12 +350,12 @@ In the following, the different sorts of input fields are described in more deta
 
 Numbers can be inserted into this input field. 
 
-.. image:: _static/NummericInput1.JPG
+.. image:: _static/NumericInput1.JPG
     :alt:  300px
 
 The name of the input field is used as the label and is displayed on the left hand side of the input field when it is displayed to participants. In the [[Editing Mode]], you can specify the minimum and the maximum and the number of decimal places allowed. If entries are different from these specifications, participants will see an error notification and will be requested to correct their entry.
 
-.. image:: _static/NummericInput2.JPG
+.. image:: _static/NumericInput2.JPG
     :alt:  300px
 
 In addition, a unit (e.g. %, €, mm, …) can be specified that will be displayed on the right of the input field (here "years"). You can also set a default value that is displayed to participants at the start. Further, you can determine whether input is compulsory which is not the case for voluntary information for example.
@@ -381,7 +381,7 @@ This type of input is used for discrete decisions. Besides the text that is show
 You can implement single choice questions using buttons, simple lists or drop lists. This is what they look like in the participants' display.
 
 ============================================ ============================================  ============================================ 
-.. image:: _static/ButtonsAndSelection1.JPG  .. image:: _static/ButtonsAndSelection1.JPG  .. image:: _static/ButtonsAndSelection1.JPG 
+.. image:: _static/ButtonsAndSelection2.JPG  .. image:: _static/ButtonsAndSelection3.JPG  .. image:: _static/ButtonsAndSelection4.JPG 
 ============================================ ============================================  ============================================ 
 
 Choosing one of the options when using buttons submits the data, therefore, this type of input can only be used once in a stage. Multiple input fields (e.g. a single choice question and a numeric input field) should not be inserted as this leads to input errors. For simple lists and drop lists the choice needs to be submitted by pressing the submit button.
