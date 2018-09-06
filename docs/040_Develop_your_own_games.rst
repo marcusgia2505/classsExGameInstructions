@@ -328,8 +328,8 @@ role2.png   Symbol Role 2  Green player symbol |role2| is displayed.
 $variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see element [[Program Code|Program]]), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
 =========== ============== ===============
 
-.. |role1| image:: Role1.jpg
-.. |role2| image:: Role1.jpg
+.. |role1| image:: Role1.JPG
+.. |role2| image:: Role1.JPG
 
 ==Configuration for Participants==
 
