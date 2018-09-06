@@ -56,45 +56,50 @@ The first line defines a variable “keep” and assigns to it the value of the 
 Now you need an input element via which the responder can accept or reject the proposal. Insert an input element beneath the text box and insert a “new input field” within the input element. Change the type to “Buttons (Single Choice)”. Set the variable name to e. g. “accepted” and define the Input field as visible for “only role 2”. Write a text into the text box that should appear above the “accept” and “reject” button (e. g. “Your decision”). To insert these buttons type “2” into the text field next to “add new possible answer” and click on Plus.JPG. Insert “Accept” and “Reject” into the text fields. The values assigned to the decision buttons are very important. Choose the value “1” for the accept button and the value “0” for the reject button.
 
 The second stage should start for a responder automatically as soon as “his” proposer has sent a proposal. Therefore delete the “start button” field in the lecturer field by clicking on Rubbish.JPG. Then insert an “automatic start” via “add new element”. Change the mode to “wait for others”. To display how many proposers and responders have already made their decisions on the lecturer’s screen, set the counter to “display” and the count to “by role”.
+
 Stage 3: Results
+~~~~~~~~~~~~~~~~~
 
 When the responders have accepted or rejected the proposals you can display the results in a third stage. Add a new stage and name it e. g. “Results”. “Late arrival” again is “Not possible”. The two fields next to the “late arrival” field define how often and where to jump after finishing this stage. You can define the number of rounds you want to play. Choose “back to stage 1” and e. g. “2x” (for playing two rounds).
 
 For both players the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use a program code (subjects) field again. You need one for “only role 1” and one for “only role 2”. The program for role 1 is:
 
-$accepted=$findVariablePartner(“accepted);
-$payoff=$keep*$accepted;
-if($accepted==0) {
-  $text=”Player 2 has rejected your proposal.”
-} else {
-  $text=”Player 2 has accepted your proposal.”
-}
+	$accepted=$findVariablePartner(“accepted);
+	$payoff=$keep*$accepted;
+	if($accepted==0) {
+	  $text=”Player 2 has rejected your proposal.”
+	} else {
+	  $text=”Player 2 has accepted your proposal.”
+	}
 
 The program for role 2 is:
 
-$payoff=$send*$accepted;
-if($accepted==0) {
-  $text=”You have rejected the proposal.”
-} else {
-  $text=”You have accepted the proposal.”
-}
+	$payoff=$send*$accepted;
+	if($accepted==0) {
+	  $text=”You have rejected the proposal.”
+	} else {
+	  $text=”You have accepted the proposal.”
+	}
 
 Then insert two text boxes in the participants field. Again one for role 1 and one for role 2. In these text boxes you inform the players about their final payoff. For role 1 the text could be:
 
-You have proposed to split $endow; as follows: $keep; € for you and $send; € for player 2. $text; Your payoff is $payoff; €.
+	You have proposed to split $endow; as follows: $keep; € for you and $send; € for player 2. $text; Your payoff is $payoff; €.
 
 For role 2 the text could be:
 
-Player 1 has proposed to split $endow; as follows: $keep; € for him and $send; € for you. $text; Your payoff is $payoff; €.
+	Player 1 has proposed to split $endow; as follows: $keep; € for him and $send; € for you. $text; Your payoff is $payoff; €.
 
 In the lecturer field you can show the results. Delete the start button that is implemented in a new stage by default. Then add a results bubble element. Select the variable “accept” for the x-axis with 0 as minimum and 2 as maximum value. Choose a label for the x-axis, e. g. “acceptance." Select the variable “keep” for the y-axis with 0 as minimum and $endow as maximum value. Choose a label for the y-axis, e. g. “proposal (amount kept)”. Select “display if stage is activated and after” and select “by role” in the field “count”.
+
 Testing the game
+----------------
 
 To test the game, change into lecture mode. You can test the game on your own PC by clicking on Testpart.JPG in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, where each screen represents a participant. After opening enough test participant screens click "Start" in the lecturer screen. Then you can go through the game with all test participants. 
 
 Create a new game
 =================
 
+To create a new game you can either click on *new game* in you Overview or go to Editing mode and select *game - new game*.
 
 Leiste.JPG
 
