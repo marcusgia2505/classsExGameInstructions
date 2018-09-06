@@ -63,23 +63,23 @@ Stage 3: Results
 When the responders have accepted or rejected the proposals you can display the results in a third stage. Add a new stage and name it e. g. “Results”. “Late arrival” again is “Not possible”. The two fields next to the “late arrival” field define how often and where to jump after finishing this stage. You can define the number of rounds you want to play. Choose “back to stage 1” and e. g. “2x” (for playing two rounds).
 
 For both players the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use a program code (subjects) field again. You need one for “only role 1” and one for “only role 2”. The program for role 1 is:
-
-	$accepted=$findVariablePartner(“accepted);
-	$payoff=$keep*$accepted;
-	if($accepted==0) {
-	$text=”Player 2 has rejected your proposal.”
-	} else {
-	$text=”Player 2 has accepted your proposal.”
-	}
+	
+	| $accepted=$findVariablePartner(“accepted);
+	| $payoff=$keep*$accepted;
+	| if($accepted==0) {
+	| $text=”Player 2 has rejected your proposal.”
+	| } else {
+	| $text=”Player 2 has accepted your proposal.”
+	| }
 
 The program for role 2 is:
 
-	$payoff=$send*$accepted;
-	if($accepted==0) {
-	$text=”You have rejected the proposal.”
-	} else {
-	$text=”You have accepted the proposal.”
-	}
+	| $payoff=$send*$accepted;
+	| if($accepted==0) {
+	| $text=”You have rejected the proposal.”
+	| } else {
+	| $text=”You have accepted the proposal.”
+	| }
 
 Then insert two text boxes in the participants field. Again one for role 1 and one for role 2. In these text boxes you inform the players about their final payoff. For role 1 the text could be:
 
@@ -165,34 +165,25 @@ Random matching with constant roles means randomly matching the subjects into ne
 
 3. Insert the following code in the globals program:
 
-	$rolesarray = $getRoles();
-	
-	# Shuffle rolesarray
-	
-	$keys = array_keys($rolesarray);
-	
-	shuffle($keys);
-	
-	foreach($keys as $key) { #Note that $key are the values!!!
-  	
-	$new[$key] = $rolesarray[$key];
-	
-	}
-	
-	$rolesarray = $new; #$rolesarray is now shuffled but with the initial key-value pairs
-	
-	# Create new groups
-	
-	$numberofroles = max($rolesarray);
-	for ($i = 1; $i <= $numberofroles; $i++) {
-  	$count[$i] = 1; #Initializing group count per role array
-	}
-	foreach ($rolesarray as $key => $values){ #Looks at every subject in new (shuffled) order
-  	for ($i = 1; $i <= $numberofroles; $i++) { #Tries every role
-    	if ($values == $i) { #If role fits
-    	${"group_$key"} = $count[$i]; #Group assignment to group count
-    	$count[$i] = $count[$i]+1; #Increase group count for the role
-	}}}
+	| $rolesarray = $getRoles();
+	| # Shuffle rolesarray
+	| $keys = array_keys($rolesarray);
+	| shuffle($keys);
+	| foreach($keys as $key) { #Note that $key are the values!!!
+	| $new[$key] = $rolesarray[$key];
+	| }
+	| $rolesarray = $new; #$rolesarray is now shuffled but with the initial key-value pairs
+	| # Create new groups
+	| $numberofroles = max($rolesarray);
+	| for ($i = 1; $i <= $numberofroles; $i++) {
+  	| $count[$i] = 1; #Initializing group count per role array
+	| }
+	| foreach ($rolesarray as $key => $values){ #Looks at every subject in new (shuffled) order
+  	| for ($i = 1; $i <= $numberofroles; $i++) { #Tries every role
+    	| if ($values == $i) { #If role fits
+    	| ${"group_$key"} = $count[$i]; #Group assignment to group count
+    	| $count[$i] = $count[$i]+1; #Increase group count for the role
+	| }}}
 
 4. Insert the following code in the subjects program:
 
