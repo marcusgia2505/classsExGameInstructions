@@ -322,11 +322,14 @@ Special Characters
 =========== ============== ===============
 Special     Characters     Function Example
 =========== ============== ===============
-$$          Multilange     Support If you want to provide German and English support, you can write both texts in the same textbox and seperate them by <code>$$</code>. E.g. "Das ist Deutsch$$This is English" displays the German text if the selected language is German and English if it is English.
-role1.png   Symbol Role 1  Red participant symbol [[File:red.JPG]] is displayed.
-role2.png   Symbol Role 2  Green participant symbol [[File:green.JPG]]is displayed.
+$$          Multilanguage  Support If you want to provide German and English support, you can write both texts in the same textbox and seperate them by "$$". E.g. "Das ist Deutsch$$This is English" displays the German text if the selected language is German and English if it is English.
+role1.png   Symbol Role 1  Red player symbol |role1| is displayed.
+role2.png   Symbol Role 2  Green player symbol |role2| is displayed.
 $variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see element [[Program Code|Program]]), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
 =========== ============== ===============
+
+.. |role1| image:: Role1.jpg
+.. |role2| image:: Role1.jpg
 
 ==Configuration for Participants==
 
