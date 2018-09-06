@@ -30,6 +30,8 @@ User modes
 Essentials of user mode "Lecturer"
 ==================================
 
+A short introductory tutorial can be found under: https://youtu.be/Zm0DpUzhOGg.
+
 Entering classEx as a lecturer provides three submodes: Overview, Lecture mode and Editing mode. The starting screen after login is the submode Overview. Here you can organize your games and access all important features of classEx.
 
 .. image:: _static/Overview.PNG
