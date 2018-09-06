@@ -170,19 +170,19 @@ Random matching with constant roles means randomly matching the subjects into ne
 	$keys = array_keys($rolesarray);
 	shuffle($keys);
 	foreach($keys as $key) { #Note that $key are the values!!!
-  		$new[$key] = $rolesarray[$key];
+  	$new[$key] = $rolesarray[$key];
 	}
 	$rolesarray = $new; #$rolesarray is now shuffled but with the initial key-value pairs
 	# Create new groups
 	$numberofroles = max($rolesarray);
 	for ($i = 1; $i <= $numberofroles; $i++) {
-  		$count[$i] = 1; #Initializing group count per role array
+  	$count[$i] = 1; #Initializing group count per role array
 	}
 	foreach ($rolesarray as $key => $values){ #Looks at every subject in new (shuffled) order
-  		for ($i = 1; $i <= $numberofroles; $i++) { #Tries every role
-    			if ($values == $i) { #If role fits
-    				${"group_$key"} = $count[$i]; #Group assignment to group count
-    				$count[$i] = $count[$i]+1; #Increase group count for the role
+  	for ($i = 1; $i <= $numberofroles; $i++) { #Tries every role
+    	if ($values == $i) { #If role fits
+    	${"group_$key"} = $count[$i]; #Group assignment to group count
+    	$count[$i] = $count[$i]+1; #Increase group count for the role
 	}}}
 
 4. Insert the following code in the subjects program:
@@ -209,59 +209,37 @@ Define your stages
 
 Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized.
 
-==Configuration of Stages==
+Configuration of Stages
+-------------------------
 
 Stages are points of synchronisation in a [[Games|game]]. Generally, the input phase is one stage and the results or output phase is a different stage, as the output can only be displayed after all [[Participants|participants]] have entered their input. Each stage consists of one or more [[Elements|elements]] (e.g. input, results, small programmes) that require the input of at least one participant. In the [[Editing Mode]], you can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
 
-[[File:blub.JPG]]
+.. image:: _static/Stage.PNG
+    :alt:  300px
 
-===Rounds===
+Rounds
+~~~~~~
+
 If you want to run one or more stages more than once, you can define rounds and determine how often you would like to return to a certain stage. If you determine the return value as 0 or if the stage has been run for the predetermined number of times, classEx will redirect you to the next stage right underneath. You can also determine which stage you want to return to if you play several rounds.
 
-===Late arrival===
+Late arrival
+~~~~~~~~~~~~
+
 You can specify whether participants can arrive late, i.e. if they only just logged in. You can choose for this to be possible, not possible, or only possible in the first round.
 
-===Move stages===
-When you create a new stage, this stage will automatically be defined as the next stage. You can move stages by pressing [[File:ll.JPG]] or [[File:rr.JPG]]. The order in which stages are run is always from left to right.
+Move stages
+~~~~~~~~~~~
 
-===Add stage===
-You can add a new stage by clicking on [[File:plus.JPG]] beside the tabs displaying the different stages or on the top right of the current stage. To change the order of stages see "move stages".
+When you create a new stage, this stage will automatically be defined as the next stage. You can move stages by pressing *Move stage upwards* or *Move stage downwards*. The order in which stages are run is always from left to right.
 
-===Delete stage===
-You can delete a stage by pressing [[File:rubbish.JPG]].
+Add stage
+~~~~~~~~
 
-Leiste.JPG
+You can add a new stage by clicking on *Add new stage* beside the tabs displaying the different stages or on the top right of the current stage.
 
-These provide you with several options which are described below.
-Tip: If you make any input in the editing mode and leave the input field the value is stored automatically.
-Select game
-
-Aa.JPG
-
-Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
-
-If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
-
-Bb.JPG
-Game
-
-By clicking on the button game a drop down menu opens.
-
-Cc.JPG
-
-Game settings: Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
-
-Copy game: The currently selected game is copied and can then be edited and adapted.
-
-Delete game: By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
-
-New game: Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here. 
-
-Information on the game (meta data)
-===================================
-
-
-
+Delete stage
+~~~~~~~~~~
+You can delete a stage by pressing *Delete stage*.
 
 Add elements (display condition,…, mit Bsp…, general input)
 ===========================================================
@@ -1326,3 +1304,39 @@ Giamattei, M.,& Lambsdorff, J. G. (2015). classex - an online software for class
 Holt, C. (2015). University of Virgina Veconlab. http://veconlab.econ.virginia.edu. . Accessed 23 August 2015.
 
 Moblab. (2015). Moblab: A playground for decisions. https://www.moblab.com/. Accessed 23 August 2015.
+
+
+
+
+
+
+
+Leiste.JPG
+
+These provide you with several options which are described below.
+Tip: If you make any input in the editing mode and leave the input field the value is stored automatically.
+Select game
+
+Aa.JPG
+
+Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
+
+If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
+
+Bb.JPG
+Game
+
+By clicking on the button game a drop down menu opens.
+
+Cc.JPG
+
+Game settings: Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+
+Copy game: The currently selected game is copied and can then be edited and adapted.
+
+Delete game: By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
+
+New game: Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here. 
+
+Information on the game (meta data)
+===================================
