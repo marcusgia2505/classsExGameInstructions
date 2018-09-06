@@ -67,18 +67,18 @@ For both players the payoff depends on whether the responder accepted the propos
 	$accepted=$findVariablePartner(“accepted);
 	$payoff=$keep*$accepted;
 	if($accepted==0) {
-	  $text=”Player 2 has rejected your proposal.”
+	$text=”Player 2 has rejected your proposal.”
 	} else {
-	  $text=”Player 2 has accepted your proposal.”
+	$text=”Player 2 has accepted your proposal.”
 	}
 
 The program for role 2 is:
 
 	$payoff=$send*$accepted;
 	if($accepted==0) {
-	  $text=”You have rejected the proposal.”
+	$text=”You have rejected the proposal.”
 	} else {
-	  $text=”You have accepted the proposal.”
+	$text=”You have accepted the proposal.”
 	}
 
 Then insert two text boxes in the participants field. Again one for role 1 and one for role 2. In these text boxes you inform the players about their final payoff. For role 1 the text could be:
