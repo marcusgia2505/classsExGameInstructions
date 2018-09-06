@@ -364,31 +364,26 @@ In addition, a unit (e.g. %, €, mm, …) can be specified that will be display
 
 	Tip: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
 
-Text Input
+- Text Input
 
-[[File:texx.JPG|texx.JPG]]
+.. image:: _static/TextInput.JPG
+    :alt:  300px
 
 Text input fields enable you to let participants enter a text. You can specify the minimum and maximum amount of characters if required.
 
-Editing Buttons and Selection Lists (single choice)
+- Editing Buttons and Selection Lists (single choice)
 
-[[File:singlecho.JPG|400px]]
+.. image:: _static/ButtonsAndSelection1.JPG
+    :alt:  300px
 
 This type of input is used for discrete decisions. Besides the text that is shown above the buttons, you can specify the different answer options. Participants make a decision by choosing one of the options. The order of options can be altered by clickingon the arrow [[File:up.JPG]]. The correct answer can be specified and you can also delete or add options. You can also select if the options should be displayed in order or randomly (different for each participant).
 
 You can implement single choice questions using buttons, simple lists or drop lists. This is what they look like in the participants' display.
 
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:30%;font-size:103%;" | buttons
-! style="width:30%;font-size:103%;" | simple lists
-! style="width:70%;font-size:103%;" | drop lists
-|- 
-! [[File:listt.JPG| 400px]]
-! [[File:buttonn.JPG| 400px]] 
-! [[File:dropp.JPG | 400px]]
-
-|}
+============================================ ============================================ 
+.. image:: _static/ButtonsAndSelection1.JPG  .. image:: _static/ButtonsAndSelection2.JPG 
+    :alt:  300px                                 :alt:  300px                             
+============================================ ============================================ 
 
 Choosing one of the options when using buttons submits the data, therefore, this type of input can only be used once in a stage. Multiple input fields (e.g. a single choice question and a numeric input field) should not be inserted as this leads to input errors. For simple lists and drop lists the choice needs to be submitted by pressing the submit button.
 
