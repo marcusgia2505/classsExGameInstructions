@@ -79,63 +79,49 @@ Terminology
 
 This chapter clarifies the usage of some terms in this documentary. 
 
-- Lecturer
+Lecturer
+    The person conducting a game is the lecturer. The lecturer starts games, starts new rounds, ends games and shows results. The lecturer controls the lecture screen that is visible for all players (typically via a projector in the lecture hall). 
 
-The person conducting a game is the lecturer. The lecturer starts games, starts new rounds, ends games and shows results. The lecturer controls the lecture screen that is visible for all players (typically via a projector in the lecture hall). 
+Player
+    Every person participating in a game is a player. All a player needs for participation is a mobile device with internet access. No download is required.
 
-- Player
-
-Every person participating in a game is a player. All a player needs for participation is a mobile device with internet access. No download is required.
-
-- Session
-
-A session is a sequence of games in a lecture, meeting or presentation. Players should not shut their browser during a session, as each player receives an ID-number for a session. This allocation would be lost if player close their browsers.
+Session
+    A session is a sequence of games in a lecture, meeting or presentation. Players should not shut their browser during a session, as each player receives an ID-number for a session. This allocation would be lost if player close their browsers.
 Tip: After the end of a session, you can use statistical tests to analyse whether there is a relationship between the different games of a session. For example, you can examine whether players with higher mathematical abilities are more risk averse. For this purpose, players' ID-numbers are stored in an Excel sheet.
 
-- Game
+Game
+    Games consist of a sequence of stages. A game is typically characterised by a joint evaluation of the decisions and results at the end.
+    Tip: If you want to conduct a quiz consisting of several questions with unrelated results, it is advisable to create a separate game for each question.
 
-Games consist of a sequence of stages. A game is typically characterised by a joint evaluation of the decisions and results at the end.
-Tip: If you want to conduct a quiz consisting of several questions with unrelated results, it is advisable to create a separate game for each question.
+Stage
+    Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Stages can be configured with several options. You can find more information here.
 
-- Stage
+Element
+    Elements are the modules of each stage. A stage has two areas in which you can add modules: player and lecturer. You can chose from text elements, input elements (numerical input, likert scales, …), program code elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
 
-Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Stages can be configured with several options. You can find more information here.
+Treatment
+    Treatments allow you to treat players differently throughout a game. You can assign players to treatments and customize stages and elements for treatments.
 
-- Element
+Role
+    Many games require different roles of players, e.g. producers and consumers. Stages and elements of a game can be customized according to the role of a player.
 
-Elements are the modules of each stage. A stage has two areas in which you can add modules: player and lecturer. You can chose from text elements, input elements (numerical input, likert scales, …), program code elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
+Group
+    Participating players of a game can be sorted into groups, e.g. according to their role, internal ID, randomly or a combination of these.
 
-- Treatment
+Assignment and Matching
+    Assignement and matching refers to the procedure of how players are assigned into treatments, roles and groups at the start of a game. Further, you can choose how you want to rematch players at the beginning of each round if you play more then one round.
 
-Treatments allow you to treat players differently throughout a game. You can assign players to treatments and customize stages and elements for treatments.
+Round and Loop
+    The number of rounds a game should be played can be defined. The loop referes to the stages of a game that should be repeated in every round. The loop is defined by selecting two stages and the number of rounds. Starting in the first round the game will then jump back from the end of the later stage to the beginning of the earlier stage until the number of rounds is reached. 
 
-- Role
+Internal ID
+    ClassEx creates a unique internal ID for each subject that logs in. This ID is generated randomly and does not allow any inference about the identity of the subject. Therefore, subjects are completely anonymous in classEx by default. The internal ID serves as a mean to be able to analyse the data and compare behaviour of subjects across different games if you play several in one session.
 
-Many games require different roles of players, e.g. producers and consumers. Stages and elements of a game can be customized according to the role of a player.
+Global and subjects variables and parameters
+    Global variables are variables on the game level. They have the same value for all players (e.g. current round). Subject variables are variables on the subject level. The value of a subject variable is calculated separately for every player (e.g. individual payoff). Parameters are variables that are adjustable before running a game (e.g. total number of rounds). Changing parameters does not require knowledge about how to edit games.
 
-- Group
-
-Participating players of a game can be sorted into groups, e.g. according to their role, internal ID, randomly or a combination of these.
-
-- Assignment and Matching
-
-Assignement and matching refers to the procedure of how players are assigned into treatments, roles and groups at the start of a game. Further, you can choose how you want to rematch players at the beginning of each round if you play more then one round.
-
-- Round and Loop
-
-The number of rounds a game should be played can be defined. The loop referes to the stages of a game that should be repeated in every round. The loop is defined by selecting two stages and the number of rounds. Starting in the first round the game will then jump back from the end of the later stage to the beginning of the earlier stage until the number of rounds is reached. 
-
-- Internal ID
-
-ClassEx creates a unique internal ID for each subject that logs in. This ID is generated randomly and does not allow any inference about the identity of the subject. Therefore, subjects are completely anonymous in classEx by default. The internal ID serves as a mean to be able to analyse the data and compare behaviour of subjects across different games if you play several in one session.
-
-- Global and subjects variables and parameters
-
-Global variables are variables on the game level. They have the same value for all players (e.g. current round). Subject variables are variables on the subject level. The value of a subject variable is calculated separately for every player (e.g. individual payoff). Parameters are variables that are adjustable before running a game (e.g. total number of rounds). Changing parameters does not require knowledge about how to edit games.
-
-- Global and subject program code elements
-
-Many games require calculations or algorithms. These are created in program code elements. The programming language used in these elements is PHP. Global program code is utilized for calculations on the game level. Subject program code is utilized for calculations on the subject level (for every player).
+Global and subject program code elements
+    Many games require calculations or algorithms. These are created in program code elements. The programming language used in these elements is PHP. Global program code is utilized for calculations on the game level. Subject program code is utilized for calculations on the subject level (for every player).
 
 ================
 Ready-made games
