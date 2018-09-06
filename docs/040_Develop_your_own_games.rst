@@ -242,27 +242,60 @@ Delete stage
 ~~~~~~~~~~
 You can delete a stage by pressing *Delete stage*.
 
-Add elements (display condition,…, mit Bsp…, general input)
+Elements (display condition,…, mit Bsp…, general input)
 ===========================================================
 
-General Information
+Elements are the modules of a stage. A stage has two areas in which you can add modules: participants and lecturer.
 
-Elements are the modules of each stage. A stage has two areas in which you can add modules: participants and lecturer.
+.. image:: _static/Stage.PNG
+    :alt:  300px
+    
+The left side represents the player level (subject level). Visual elements added here are displayed on the players' devices. Program code (subjects) added here is run for every single player.
+The right side represents the lecturer level (global level). Visual elements added here are displayed on the lecturer's screen. Program code (globals) added here is run once for all players.
 
 You can chose from text elements, input elements (numerical input, likert scales, …), programme elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
 
+	Tip: Input and output elements should be located in different stages in order to collect all input in the first stage. Then, the lecturer can synchronise the game and turn to the output elements in the next stage.
 
-Tip: Input and output elements should be located in different stages in order to collect all input in the first stage. Then, the lecturer can synchronise the game and turn to the output elements in the next stage.
+Adding elements
+---------------
 
+You can add an element via clicking on *add element* and selecting the type of element you want to add. After that you have to choose where you want to place the element. If you do so the following two icons will appear for every possible location of the element.
 
-Element Number 	The elements are numbered (E1, E2, …). This also defines the order of display in a stage. Elements can be moved within a stage by pressing on the arrows Updown.JPG.
-Element Type and Help 	Beside the number of the element, you can see the element type. Clicking on the info button next to the element type leads you to the respective description in this wiki.
-Groups, Treatments and Roles 	If you have defined groups, treatments or roles, you can also choose whether the element shall be displayed for all groups, treatments or roles.
-Delete Element 	You can delete the element by pressing Rubbish.JPG.
-Copy Element 	You can copy an element by pressing Copyelement.JPG.
-Cut and Paste 	You can cut and paste an element by pressing Cut.JPG.
-Display Conditions 	You can specify the display conditions for an element by pressing Brille.JPG.
+.. image:: _static/Pasteelement.PNG
+    :alt:  300px
 
+Choose a location for your element by clicking on the corresponding *paste element* icon or cancel placing the icon by clicking on any *do not paste* icon. Keep in mind that the order of emlements defines how the elements are displayed on the players' devices.
+
+Handling elements
+-----------------
+
+.. image:: _static/Elements.PNG
+    :alt:  300px
+
+Element Number
+	The elements are numbered (E1, E2, …). This also defines the order of display in a stage. Elements can be moved within a stage with the *move element* arrows.
+
+Element Type and Help
+	Beside the number of the element, you can see the element type. Clicking on the info button next to the element type leads you to the respective description in this documentation.
+
+Groups, Treatments and Roles
+	If you have defined groups, treatments or roles, you can also choose whether the element shall be displayed for all groups, treatments or roles.
+
+Delete Element
+	You can delete the element by pressing *delete element*.
+
+Copy Element
+	You can copy an element by pressing *copy element*
+
+Cut and Paste
+	You can cut and paste an element by pressing *cut element*.
+
+Display Condition
+	If showing the element should be contitional (e.g. not for every role or dependent on other variables) you can specify the display condition for an element in the code line that appears when you click on *show display condition*.
+
+Element for participants
+-------------------------
 
 Elements for participants can be inserted by clicking on Addnewel.JPG. In the following, the elements are described in detail.
 Elements for participants
