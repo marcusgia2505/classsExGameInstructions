@@ -294,11 +294,8 @@ Cut and Paste
 Display Condition
 	If showing the element should be contitional (e.g. not for every role or dependent on other variables) you can specify the display condition for an element in the code line that appears when you click on *show display condition*.
 
-Element for participants
--------------------------
 
-Elements for participants can be inserted by clicking on Addnewel.JPG. In the following, the elements are described in detail.
-Elements for participants
+
 Screenshot 	Name 	Brief description
 Tbnewnew.JPG 	Text Box 	Element to display text (including variables)
 Inputfield.PNG 	Input Element 	In this element you can insert several input fields.
@@ -311,35 +308,25 @@ Refer.JPG 	Element Reference 	A reference can be used to reuse elements and ther
 	Javascript 	Program javascript snippets to implement more flexibly
 
 Text Box
-[[File:tbnewnew.JPG]]
+--------
 
-The text box is the simplest element. The entered text will be displayed to the [[Participants|participants]].
+.. image:: _static/Textbox.JPG
+    :alt:  300px
+
+The text box is the simplest element. The entered text will be displayed to the players.
 The text box is equipped with a text editor which allows you to insert tables, symbols etc. If you double-click into the text element, you see the text as it will be displayed to participants.
 
-== Special Characters ==
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:30%;font-size:103%;" | Special Characters
-! style="width:30%;font-size:103%;" | Function
-! style="width:70%;font-size:103%;" | Example
-|- 
-! <code>$$</code>
-! Multilange Support
-! If you want to provide German and English support, you can write both texts in the same textbox and seperate them by <code>$$</code>. E.g. "Das ist Deutsch$$This is English" displays the German text if the selected language is German and English if it is English.
-|- 
-! <code>role1.png</code>
-! Symbol Role 1
-! Red participant symbol [[File:red.JPG]] is displayed.
-|- 
-! <code>role2.png</code>
-! Symbol Role 2
-! Green participant symbol [[File:green.JPG]]is displayed.
-|- 
-! <code>$variable;</code>
-! Variables
-! Beside normal text, you can also insert variables into the text box. If you have defined variables (see element [[Program Code|Program]]), you can have these displayed by inserting the character <code>$</code>, the variable name followed by <code>;</code>. Make sure not to forget the <code>;</code> at the end! Variables and normal text can be combined
+Special Characters
+~~~~~~~~~~~~~~~~~~~~~
 
-|}
+=========== ============== ===============
+Special     Characters     Function Example
+=========== ============== ===============
+$$          Multilange     Support If you want to provide German and English support, you can write both texts in the same textbox and seperate them by <code>$$</code>. E.g. "Das ist Deutsch$$This is English" displays the German text if the selected language is German and English if it is English.
+role1.png   Symbol Role 1  Red participant symbol [[File:red.JPG]] is displayed.
+role2.png   Symbol Role 2  Green participant symbol [[File:green.JPG]]is displayed.
+$variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see element [[Program Code|Program]]), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
+=========== ============== ===============
 
 ==Configuration for Participants==
 
