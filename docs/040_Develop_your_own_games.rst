@@ -995,36 +995,23 @@ round = currentRound
 
 ======================================================== ====================================================================================================================================== ====================
 Function name                                            Calculates                                                                                                                             Returns
-
 ======================================================== ====================================================================================================================================== ====================
-$getAverage('varname',round=currentRound);
-               Average of a variable
-                                                                                                                  Average as number, 0 otherwise
+$getAverage('varname',round=currentRound);               Average of a variable                                                                                                                  Average as number, 0 otherwise
 $getAveragePerRole('varname',round=currentRound);        Average of a variable per role                                                                                                         Array with role number as index
-$getAveragePerTreatment('varname',round=currentRound);
-   Average of a variable per treatment                                                                                                    Array with treatment number as index
-
+$getAveragePerTreatment('varname',round=currentRound);   Average of a variable per treatment                                                                                                    Array with treatment number as index
 $getAveragePerGroup('varname',round=currentRound);       Average of a variable per group                                                                                                        Array with groupnumber as index
 $getVarSum('varname',round=currentRound);                Sum of a variable (also available getVarSumPerGroup, getVarSumTreatment, getVarSumPerRole)                                             Sum as number, 0 otherwise
 $getMin('varname',round=currentRound);                   Minimum of a variable (also available getMinPerGroup, getMinPerTreatment, getMinPerRole)                                               Minimum as number, 0 otherwise
 $getMax('varname',round=currentRound);                   Maximum of a variable (also available getMaxPerGroup, getMaxPerTreatment, getMaxPerRole)                                               Maximum as number, 0 otherwise
 $getFreq('varname',round=currentRound, multiple=false);  Frequency of a variable value (if multiple is set to true, answers from multiple choice questions are decomposed into single answers)  Array with the variable value as index
-
-$getValues('varname',round=currentRound);                
-Single values for each player
-                                                                                                          Array with the player number as index and the corresponding value
+$getValues('varname',round=currentRound);                Single values for each player                                                                                                          Array with the player number as index and the corresponding value
 $getRoles();                                             Role for each player                                                                                                                   Array with the player number as index and the corresponding role
-$getTreatments();
-                                        Treatment for each player                                                                                                              Array with the player number as index and the corresponding treatment
-$getNumRoles();
-                                          Number of roles                                                                                                                        Array with role as index and the number of players who have this role
-$getNumPlayer();
-                                         Number of players
-                                                                                                                      Number
+$getTreatments();                                        Treatment for each player                                                                                                              Array with the player number as index and the corresponding treatment
+$getNumRoles();                                          Number of roles                                                                                                                        Array with role as index and the number of players who have this role
+$getNumPlayer();                                         Number of players                                                                                                                      Number
 $getSubjectIDs();                                        Get Corresponding Subject IDs to player IDs                                                                                            Array with player ID as index and subject ID as value
 $getNumDecisions('varname',round=currentRound);          Number of decisions made                                                                                                               Number
 $getNumDecisionsPerGroup('varname',round=currentRound);  Number of decisions made                                                                                                               Array with Group Number as an index
-
 ======================================================== ====================================================================================================================================== ====================
 
 Here are examples of all mentioned funtions:
