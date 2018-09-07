@@ -933,19 +933,14 @@ $no_decision = null
 
 	IMPORTANT NOTICE: If you want to add an element that, for example, is placed at the third position in the function, you have to specify the elements before that, too. Otherwise, the element is used at the wrong position for the wrong expression.
 
-=========================================================================================== ================================================== ==============
-Function name                                                                               Calculates                                       Returns
-=========================================================================================== ================================================== ==============
-$findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decision=null);  Returns the decision of the partner  Variable value
-$findGroupAverage('varname',round=currentRound,includingOwn=false);                         Average of a variable per group      Array with group number as index
-$findGroupSum('varname',round=currentRound,includingOwn=false);                             Sum of a variable                    Sum as number, 0 otherwise
-$findGroupFreq('varname',round=currentRound,includingOwn=false);                            Frequency of specific decisions by group members Array with frequency of each decision
-
-
-
-=========================================================================================== ================================================== ==============
-
-
+=========================================================================================== ================================================= ==============
+Function name                                                                               Calculates                                        Returns
+=========================================================================================== ================================================= ==============
+$findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decision=null);  Returns the decision of the partner               Variable value
+$findGroupAverage('varname',round=currentRound,includingOwn=false);                         Average of a variable per group                   Array with group number as index
+$findGroupSum('varname',round=currentRound,includingOwn=false);                             Sum of a variable                                 Sum as number, 0 otherwise
+$findGroupFreq('varname',round=currentRound,includingOwn=false);                            Frequency of specific decisions by group members  Array with frequency of each decision
+=========================================================================================== ================================================= ==============
 
 !| $findOldVariable('varname', round = currentRound);
 !| Find old variables from previous rounds
