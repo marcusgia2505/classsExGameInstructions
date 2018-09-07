@@ -838,7 +838,7 @@ If a game is played with two different roles, the results can be displayed as a 
 
 If you have several rounds, the matrix calculates the results overall rounds. If you want to show temporal structures (e.g. learning), please use the time line diagram.
 
-	Tip: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a programme).
+	Tip: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a program).
 
 - Other result elements
 
@@ -847,7 +847,10 @@ Other result elements include likert scales and pie charts.
 Programs and PHP functions
 ==========================
 
-[[File: codenew.JPG]]
+Programmes are a very useful tool to design dynamic games. Programs are elements of stages and therefore created like any other element (see _`Adding elements`). 
+
+.. image:: _static/Code.JPG
+    :alt:  300p
 
 You can define for which roles, groups or treatments (if defined) the code shall apply by choosing the corresponding option from the drop down menu above the code.
 
@@ -855,7 +858,7 @@ You can define for which roles, groups or treatments (if defined) the code shall
 
 ===Programming language and editor===
 
-Programmes are a very useful tool to design dynamic games. Variables and programmes are specified via [[wikipedia:PHP|PHP]]. This is a well-documented standard which enables easy programming. Details can be found in the internet, for example [http://php.net/docs.php here]. You can utilise the normal PHP features (e.g. round, rand, number_format(),…).
+Variables and programmes are specified via `PHP<https://en.wikipedia.org/wiki/PHP>`_. This is a well-documented standard which enables easy programming. Details can be found in the internet, for example `here<http://php.net/docs.php>`_. You can utilise the normal PHP features (e.g. round, rand, number_format(),…).
 
 Programmes are entered in an editor that comprises syntax-highlighting as well as a simple error check of the entered codes.
 
@@ -980,7 +983,8 @@ The following functions can be used to retrieve variables. Here is some addition
 
 Here are examples of all mentioned funtions:
 
-[[File:Code1.PNG]]
+.. image:: _static/Code1.PNG
+    :alt:  300p
 
 ==Function to save variables==
 
@@ -996,7 +1000,8 @@ The elements of the function mean the following:
 
 Here is an example:
 
-[[File:Code2.PNG]]
+.. image:: _static/Code2.PNG
+    :alt:  300p
 
 =Variables for Lecturers (globals)=
 
@@ -1097,7 +1102,17 @@ The following functions can be used to retrieve global variables. Here is some a
 
 Here are examples of all mentioned funtions:
 
-[[File:Code3.PNG]]
+.. image:: _static/Code3.PNG
+    :alt:  300p
+
+
+
+
+
+
+
+
+
 
 Pre-Defined Variables
 ---------------------
