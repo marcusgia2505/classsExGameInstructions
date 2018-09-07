@@ -1089,13 +1089,11 @@ Here you find an overview how classEx compares to other tools. It was last updat
 Participation
 -------------
 
-
-|No.PNG|
-
-
 .. |Yes.PNG| image:: _static/Yes.PNG
+    :alt:  20p
 
 .. |No.PNG| image:: _static/No.PNG
+    :alt:  20p
 
 ========================= ======================================= ======================================== ======================================== ===================================================================== ======================================= =======================
 Attribute                 classEx                                 Econ Port                                VeconLab                                 MobLab                                                                oTree                                   z-Tree
