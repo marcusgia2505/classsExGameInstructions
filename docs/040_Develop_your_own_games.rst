@@ -892,6 +892,7 @@ Variables for Participants (subjects)
 -------------------------------------
 
 Standard Variables for Participants (Subjects)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ============== =========
 Variable Name  Value
@@ -910,7 +911,7 @@ $tic           External ID (if set at login)
 The variables $group, $role and $treatment can be overwritten in a subjects program.
 
 Functions for participants (subjects) to retrieve variables
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following functions can be used to retrieve variables. Here is some additional information on the structure. If you want to access the name of a variable, you put the name in quotation marks. If you want to access the value of a varible, you add a $ infront of the variable name. The elements of the functions mean the following:
 
@@ -932,11 +933,11 @@ $no_decision = null
 
 	IMPORTANT NOTICE: If you want to add an element that, for example, is placed at the third position in the function, you have to specify the elements before that, too. Otherwise, the element is used at the wrong position for the wrong expression.
 
-
-Function name Calculates Returns
-
-$findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decision=null);  Returns the decision of the partner Variable value
-
+=========================================================================================== ==================================== ==============
+Function name                                                                               Calculates                           Returns
+=========================================================================================== ==================================== ==============
+$findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decision=null);  Returns the decision of the partner  Variable value
+=========================================================================================== ==================================== ==============
 
 !| $findGroupAverage('varname',round=currentRound,includingOwn=false);
 !| Average of a variable per group
@@ -969,7 +970,7 @@ Here are examples of all mentioned funtions:
     :alt:  300p
 
 Function to save variables
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To save calculated variables you must use the following function:
 
