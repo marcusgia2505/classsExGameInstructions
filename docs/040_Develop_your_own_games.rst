@@ -892,7 +892,6 @@ Variables for Participants (subjects)
 -------------------------------------
 
 Standard Variables for Participants (Subjects)
-..............................................
 
 ============== =========
 Variable Name  Value
@@ -911,7 +910,7 @@ $tic           External ID (if set at login)
 The variables $group, $role and $treatment can be overwritten in a subjects program.
 
 Functions for participants (subjects) to retrieve variables
-...........................................................
+
 
 The following functions can be used to retrieve variables. Here is some additional information on the structure. If you want to access the name of a variable, you put the name in quotation marks. If you want to access the value of a varible, you add a $ infront of the variable name. The elements of the functions mean the following:
 
