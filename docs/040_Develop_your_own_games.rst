@@ -2,7 +2,45 @@
 Develop you own games
 =====================
 
-Read this section to learn how to create and edit games.
+To develope your own games change to the editing mode. The top bar in this mode looks like this:
+
+.. image:: _static/Leiste.JPG
+    :alt:  300px
+
+It provide you with several options which are described below.
+
+	Tip: If you make any input in the editing mode and leave the input field the value is stored automatically.
+Select game
+
+.. image:: _static/Selectgame.JPG
+    :alt:  300px
+
+Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
+
+If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
+
+.. image:: _static/Alreadyplayed.JPG
+    :alt:  300px
+
+By clicking on the button game a drop down menu opens.
+
+.. image:: _static/Game.JPG
+    :alt:  300px
+
+Game settings
+	Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+
+Copy game
+	The currently selected game is copied and can then be edited and adapted.
+
+Delete game
+	By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
+
+New game
+	Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
+	
+
+
 
 Tutorial: Exemplified instructions to program an ultimatum game
 ===============================================================
@@ -1081,6 +1119,27 @@ To switch the languages on and off, you can click on the flag symbols next to th
 
 For other elements, this function has not been implemented yet. In this case, you need to enter both languages in one text box, separated by $$, for more information see `Text Box`_. 
 
+Identification of subjects in the system
+========================================
+
+By default, subjects are completely anonymous in classEx. Should it be required, you also have several possibilities to identify subjects in the system.
+
+Ticket: You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game.
+
+Ask for data during the game: At a certain stage, or after the end of the game, you can ask participants to enter their personal data or an ID you provide them with.
+
+During login: You can change the settings so that participants are asked for certain data before they log-in. For this, go to "course data" and click on additional settings. You can then enter what you would like participants to enter before logging in.
+
+Here is an example:
+
+.. image:: _static/Data1.PNG
+    :alt:  300px
+    
+And this is what it looks like for participants before login:
+
+.. image:: _static/Data2.PNG
+    :alt:  300px
+
 Tool Comparison 
 ===============
 
@@ -1125,8 +1184,7 @@ Results
 ========================================================= ============================ ======================= ========== ============ ================= ==========
 Attrubte                                                  classEx                      Econ Port               VeconLab   MobLab       oTree             z-Tree
 --------------------------------------------------------- ---------------------------- ----------------------- ---------- ------------ ----------------- ----------
-i                                                         Giamattei & Lamsbdorff 2015  Cox and Swarthout 2006  Holt 2015 
- MobLab 2015  Chen et al. 2015  Fischbacher 2007
+i                                                         Giamattei & Lamsbdorff 2015  Cox and Swarthout 2006  Holt 2015  MobLab 2015  Chen et al. 2015  Fischbacher 2007
 ========================================================= ============================ ======================= ========== ============ ================= ==========
 Immediate graphical results at the end of the experiment  |Yes.PNG|                    |Yes.PNG| Limited       |Yes.PNG|  |Yes.PNG|    |Yes.PNG|         |No.PNG|
 Data Output                                               XLS                          XML                     Unformated PDF
@@ -1137,8 +1195,7 @@ Own Experiments
 --------------
 
 ======================================================================================================================================================================== ============================ ======================= ========== ============ ================= ==========
-Attrubte                                                                                                                                                                 classEx
-                      Econ Port               VeconLab   MobLab       oTree             z-Tree
+Attrubte                                                                                                                                                                 classEx                      Econ Port               VeconLab   MobLab       oTree             z-Tree
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ---------------------------- ----------------------- ---------- ------------ ----------------- ----------
 i                                                                                                                                                                        Giamattei & Lamsbdorff 2015  Cox and Swarthout 2006  Holt 2015  MobLab 2015  Chen et al. 2015  Fischbacher 2007
 ======================================================================================================================================================================== ============================ ======================= ========== ============ ================= ==========
@@ -1147,7 +1204,8 @@ Backend system: A backend system means that like in z-Tree experiments can be se
 Programming Language                                                                                                                                                     PHP, AJAX                    JAVA                    PHP        No info      Phyton, Django    C++
 ======================================================================================================================================================================== ============================ ======================= ========== ============ ================= ==========
 
-==References==
+References
+----------
 
 Chen, D. L., Schonger, M., & Wickens, C. (2015). oTree-An Open-Source Platform for Laboratory, Online, and Field Experiments. https://mpra.ub.uni-muenchen.de/62730/1/MPRA_paper_62730.pdf. Accessed 23 August 2015.
 
@@ -1160,68 +1218,3 @@ Giamattei, M.,& Lambsdorff, J. G. (2015). classex - an online software for class
 Holt, C. (2015). University of Virgina Veconlab. http://veconlab.econ.virginia.edu. . Accessed 23 August 2015.
 
 Moblab. (2015). Moblab: A playground for decisions. https://www.moblab.com/. Accessed 23 August 2015.
-
-
-
-
-
-
-
-Leiste.JPG
-
-These provide you with several options which are described below.
-Tip: If you make any input in the editing mode and leave the input field the value is stored automatically.
-Select game
-
-Aa.JPG
-
-Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
-
-If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
-
-Bb.JPG
-Game
-
-By clicking on the button game a drop down menu opens.
-
-Cc.JPG
-
-Game settings: Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
-
-Copy game: The currently selected game is copied and can then be edited and adapted.
-
-Delete game: By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
-
-New game: Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here. 
-
-
-
-
-Player
-------
-
-
-Lecturer
---------
-
-Identification of subjects in the system
-========================================
-
-By default, subjects are completely anonymous in classEx. Should it be required, you also have several possibilities to identify subjects in the system.
-
-Ticket: You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game.
-
-Ask for data during the game: At a certain stage, or after the end of the game, you can ask participants to enter their personal data or an ID you provide them with.
-
-During login: You can change the settings so that participants are asked for certain data before they log-in. For this, go to "course data" and click on additional settings. You can then enter what you would like participants to enter before logging in.
-
-Here is an example:
-
-.. image:: _static/Data1.PNG
-    :alt:  300px
-    
-And this is what it looks like for participants before login:
-
-.. image:: _static/Data2.PNG
-    :alt:  300px
-
