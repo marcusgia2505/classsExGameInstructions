@@ -1120,48 +1120,18 @@ Between-subject design within a session  |Yes.PNG|                    |No.PNG|  
 ======================================== ============================ ======================= ========== ============ ================= ==========
 
 Results
+-------
 
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-
-! style="width:15%;font-size:103%;" | 
-! style="width:15%;font-size:103%;" | classEx
-<span style="font-size: x-small;">Giamattei & Lamsbdorff 2015</span>
-! style="width:15%;font-size:103%;" | Econ Port 
-<span style="font-size: x-small;">Cox and Swarthout 2006</span>
-! style="width:15%;font-size:103%;" | VeconLab
-<span style="font-size: x-small;">Holt 2015</span>
-! style="width:15%;font-size:103%;" | MobLab
-<span style="font-size: x-small;">MobLab 2015</span>
-! style="width:15%;font-size:103%;" | oTree
-<span style="font-size: x-small;">Chen et al. 2015</span>
-! style="width:15%;font-size:103%;" | z-Tree
-<span style="font-size: x-small;">Fischbacher 2007</span>
-|-
-! Immediate graphical results at the end of the experiment
-! [[file:Yes2.png | 20px]]
-<span style="font-size: x-small;"> &nbsp;</span>
-! [[file:Yes2.png | 20px]]
-<span style="font-size: x-small;">Limited
-</span>
-! [[file:Yes2.png | 20px]]
-<span style="font-size: x-small;"> &nbsp;</span>
-! [[file:Yes2.png | 20px]]
-<span style="font-size: x-small;"> &nbsp;</span>
-! [[file:Yes2.png | 20px]]
-<span style="font-size: x-small;"> &nbsp;</span>
-! [[file:No.png | 20px]]
-<span style="font-size: x-small;"> &nbsp;</span>
-|-
-! Data Output
-! XLS
-! XML
-! Unformated
-! PDF
-! CSV
-! XLS
-
-|}
+========================================================= ============================ ======================= ========== ============ ================= ==========
+Attrubte                                                  classEx                      Econ Port               VeconLab   MobLab       oTree             z-Tree
+--------------------------------------------------------- ---------------------------- ----------------------- ---------- ------------ ----------------- ----------
+i                                                         Giamattei & Lamsbdorff 2015  Cox and Swarthout 2006  Holt 2015 
+ MobLab 2015  Chen et al. 2015  Fischbacher 2007
+========================================================= ============================ ======================= ========== ============ ================= ==========
+Immediate graphical results at the end of the experiment  |Yes.PNG|                    |Yes.PNG| Limited       |Yes.PNG|  |Yes.PNG|    |Yes.PNG|         |No.PNG|
+Data Output                                               XLS                          XML                     Unformated PDF
+          CSV               XLS
+========================================================= ============================ ======================= ========== ============ ================= ==========
 
 ==Own Experiments==
 
