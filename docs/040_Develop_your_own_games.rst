@@ -1113,13 +1113,10 @@ Games
 Attrubte                                 classEx                      Econ Port               VeconLab   MobLab       oTree
              z-Tree
 ---------------------------------------- ---------------------------- ----------------------- ---------- ------------ ----------------- ----------
-i                                        Giamattei & Lamsbdorff 2015  Cox and Swarthout 2006  Holt 2015 
- MobLab 2015  Chen et al. 2015  Fischbacher 2007
+i                                        Giamattei & Lamsbdorff 2015  Cox and Swarthout 2006  Holt 2015  MobLab 2015  Chen et al. 2015  Fischbacher 2007
 ======================================== ============================ ======================= ========== ============ ================= ==========
-Asynchronous Games                       |No.PNG| To be implemented
-   |No.PNG|                |No.PNG|   |Yes.PNG|    |No.PNG|          |No.PNG|
-Between-subject design within a session  
-|Yes.PNG|                    |No.PNG|                |No.PNG|   |No.PNG|     |Yes.PNG|         |Yes.PNG|
+Asynchronous Games                       |No.PNG| To be implemented   |No.PNG|                |No.PNG|   |Yes.PNG|    |No.PNG|          |No.PNG|
+Between-subject design within a session  |Yes.PNG|                    |No.PNG|                |No.PNG|   |No.PNG|     |Yes.PNG|         |Yes.PNG|
 ======================================== ============================ ======================= ========== ============ ================= ==========
 
 Results
