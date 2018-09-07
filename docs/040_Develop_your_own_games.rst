@@ -888,75 +888,57 @@ Subject variables are
 * saved by default if they are decision variables (set via input elements).
 * not saved by default if you create or calculate them in subject programs; to do so use the `Function to save variables`_
 
+Variables for Participants (subjects)
+-------------------------------------
 
-=Variables for Participants (subjects)=
+Standard Variables for Participants (Subjects)
+..............................................
 
-
-
-==Standard Variables for Participants (Subjects)==
-
-
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:30%;" | Variable Name
-!| Value
-|- 
-!| $lang
-!| Actual Language (0: German, 1: English, 2: Spanish)
-|- 
-!| $round
-!| Current Round
-|- 
-!| $id
-!| Player ID (unique in all games, decisions are stored with the playerid)
-|- 
-!| $subject
-!| Subject ID (unique in game, starts from 1,...)
-|- 
-!| $role
-!| Role ID (if set)
-|- 
-!| $treatment
-!| Treatment ID (if set)
-|- 
-!| $group
-!| Group ID (if set)
-|- 
-!| $signID
-!| Private Signature (for contracts)
-|- 
-!| $tic
-!| External ID (if set at login)
-|}
+============== =========
+Variable Name  Value
+============== =========
+$lang          Actual Language (0: German, 1: English, 2: Spanish)
+$round         Current Round
+$id            Player ID (unique in all games, decisions are stored with the playerid)
+$subject       Subject ID (unique in game, starts from 1,...)
+$role          Role ID (if set)
+$treatment     Treatment ID (if set)
+$group         Group ID (if set)
+$signID        Private Signature (for contracts)
+$tic           External ID (if set at login)
+============== =========
 
 The variables $group, $role and $treatment can be overwritten in a subjects program.
 
-==Functions for participants (subjects) to retrieve variables==
+Functions for participants (subjects) to retrieve variables
+...........................................................
 
 The following functions can be used to retrieve variables. Here is some additional information on the structure. If you want to access the name of a variable, you put the name in quotation marks. If you want to access the value of a varible, you add a $ infront of the variable name. The elements of the functions mean the following:
 
-''' 'varname' ''': here, you need to enter the name of the variable you want to retrieve, for example 'price'
+varname
+	here, you need to enter the name of the variable you want to retrieve, for example 'price'
 
-''' round = currentRound ''': this means that the default is set to the current round. If you want to access the variable of a different round, you must enter the round in the function. If you want to set the round to the current round (you need to do this if you add another parameter behind the round), you simply write $round in the expression.
+round = currentRound
+	this means that the default is set to the current round. If you want to access the variable of a different round, you must enter the round in the function. If you want to set the round to the current round (you need to do this if you add another parameter behind the round), you simply write $round in the expression.
 
-''' includingOwn = false''': for averages, sums and frequencies, you can decide whether you want to include the own value or not. The default is set to ''false'' which means that values are calculated over all other subjects, excluding the own value. If you want to include the own value, you need to enter ''true'' in the function
+includingOwn = false
+	for averages, sums and frequencies, you can decide whether you want to include the own value or not. The default is set to *false* which means that values are calculated over all other subjects, excluding the own value. If you want to include the own value, you need to enter *true* in the function
 
-''' $partnerRole = null''': if you only have two players in a group, the other player is automatically the partner. However, you can specify which partner is meant if you have more than two players in one group. To specify a player, just write the role number in the expression.
+$partnerRole = null
+	if you only have two players in a group, the other player is automatically the partner. However, you can specify which partner is meant if you have more than two players in one group. To specify a player, just write the role number in the expression.
 
-''' $no_decision = null''': this means that the default is set that if the partner has not made a decision and you try to access it, the function gives you null.
+$no_decision = null
+	this means that the default is set that if the partner has not made a decision and you try to access it, the function gives you null.
 
-'''IMPORTANT NOTICE''': If you want to add an element that, for example, is placed at the third position in the function, you have to specify the elements before that, too. Otherwise, the element is used at the wrong position for the wrong expression.
 
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:30%;" | Function name
-!| Calculates
-!| Returns
-|- 
-!| $findVariablePartner('varname',round=currentRound, $partnerRole=null, $no_decision=null);
-!| Returns the decision of the partner
-!| Variable value
-|- 
+	IMPORTANT NOTICE: If you want to add an element that, for example, is placed at the third position in the function, you have to specify the elements before that, too. Otherwise, the element is used at the wrong position for the wrong expression.
+
+============== =========== =================
+Function name  Calculates  Returns
+============== =========== =================
+$findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decision=null);  Returns the decision of the partner  Variable value
+============== =========== =================
+
 !| $findGroupAverage('varname',round=currentRound,includingOwn=false);
 !| Average of a variable per group
 !| Array with group number as index
