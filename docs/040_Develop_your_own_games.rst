@@ -847,7 +847,7 @@ Other result elements include likert scales and pie charts.
 Programs and PHP functions
 ==========================
 
-Programmes are a very useful tool to design dynamic games. Programs are elements of stages and therefore created like any other element (see _`Adding elements`). 
+Programmes are a very useful tool to design dynamic games. Programs are elements of stages and therefore created like any other element (see _`Matching`). 
 
 .. image:: _static/Code.JPG
     :alt:  300p
