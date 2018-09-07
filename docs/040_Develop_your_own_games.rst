@@ -954,115 +954,75 @@ Function to save variables
 
 To save calculated variables you must use the following function:
 
-'''$save('varname', value);'''
+**$save('varname', value);**
 
 The elements of the function mean the following:
 
-'' 'varname' '': enter the name as which you want to save the calculated variable
+varname
+	enter the name as which you want to save the calculated variable
 
-'' value '': enter the value which should be saved for it. Here, you can insert a variable such as $price; or a calculation such as 10-$price
+value
+	enter the value which should be saved for it. Here, you can insert a variable such as $price; or a calculation such as 10-$price
 
 Here is an example:
 
 .. image:: _static/Code2.PNG
     :alt:  300p
 
-=Variables for Lecturers (globals)=
+Variables for Lecturers (globals)
+-----------------------------------
 
-==Standard variables for lecturers (globals)==
+Standard variables for lecturers (globals)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:30%;" | Variable Name
-!| Value
-|- 
-!| $lang
-!| Actual Language (0: German, 1: English, 2: Spanish)
-|-
-!| $currentRound
-!| Current Round
-|}
+============== ============
+Variable       Name Value
+============== ============
+$lang          Actual Language (0: German, 1: English, 2: Spanish)
+$currentRound  Current Round
+============== ============
 
-==Functions for lecturer (globals)==
+Functions for lecturer (globals)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following functions can be used to retrieve global variables. Here is some additional information on the structure. If you want to access the name of a variable, you put the name in quotation marks. If you want to access the value of a varible, you add a $ infront of the variable name. The elements of the functions mean the following:
 
-''' 'varname' ''': here, you need to enter the name of the variable you want to retrieve, for example 'price'
+varname
+	here, you need to enter the name of the variable you want to retrieve, for example 'price'
 
-''' round = currentRound ''': this means that the default is set to the current round. If you want to access the variable of a different round, you must enter the round in the function
+round = currentRound
+	this means that the default is set to the current round. If you want to access the variable of a different round, you must enter the round in the function
 
-{| class="wikitable" style="border:solid 2px #999999;font-size:96%;"
-|- class="hintergrundfarbe8"
-! style="width:30%;" | Function name
-!| Calculates
-!| Returns
-|- 
-!| $getAverage('varname',round=currentRound);
-!| Average of a variable
-!| Average as number, 0 otherwise
-|- 
-!| $getAveragePerRole('varname',round=currentRound);
-!| Average of a variable per role
-!| Array with role number as index
-|- 
-!| $getAveragePerTreatment('varname',round=currentRound);
-!| Average of a variable per treatment
-!| Array with treatment number as index
-|- 
-!| $getAveragePerGroup('varname',round=currentRound);
-!| Average of a variable per group
-!| Array with groupnumber as index
-|- 
-!| $getVarSum('varname',round=currentRound);
-!| Sum of a variable (also available getVarSumPerGroup, getVarSumTreatment, getVarSumPerRole)
-!| Sum as number, 0 otherwise
-|-
-|- 
-!| $getMin('varname',round=currentRound);
-!| Minimum of a variable (also available getMinPerGroup, getMinPerTreatment, getMinPerRole)
-!| Minimum as number, 0 otherwise
-|- 
-|- 
-!| $getMax('varname',round=currentRound);
-!| Maximum of a variable (also available getMaxPerGroup, getMaxPerTreatment, getMaxPerRole)
-!| Maximum as number, 0 otherwise
-|- 
-!| $getFreq('varname',round=currentRound, multiple=false);
-!| Frequency of a variable value (if multiple is set to true, answers from multiple choice questions are decomposed into single answers)
-!| Array with the variable value as index
-|- 
-!| $getValues('varname',round=currentRound);
-!| Single values for each player
-!| Array with the player number as index and the corresponding value
-|- 
-!| $getRoles();
-!| Role for each player
-!| Array with the player number as index and the corresponding role
-|- 
-!| $getTreatments();
-!| Treatment for each player
-!| Array with the player number as index and the corresponding treatment
-|- 
-!| $getNumRoles();
-!| Number of roles
-!| Array with role as index and the number of players who have this role
-|- 
-!| $getNumPlayer();
-!| Number of players
-!| Number
-|- 
-!| $getSubjectIDs();
-!| Get Corresponding Subject IDs to player IDs
-!| Array with player ID as index and subject ID as value.
-|- 
-!| $getNumDecisions('varname',round=currentRound);
-!| Number of decisions made
-!| Number
-|- 
-!| $getNumDecisionsPerGroup('varname',round=currentRound);
-!| Number of decisions made
-!| Array with Group Number as an index
-|}
+======================================================== ====================================================================================================================================== ====================
+Function name                                            Calculates                                                                                                                             Returns
+
+======================================================== ====================================================================================================================================== ====================
+$getAverage('varname',round=currentRound);
+               Average of a variable
+                                                                                                                  Average as number, 0 otherwise
+$getAveragePerRole('varname',round=currentRound);        Average of a variable per role                                                                                                         Array with role number as index
+$getAveragePerTreatment('varname',round=currentRound);
+   Average of a variable per treatment                                                                                                    Array with treatment number as index
+$getAveragePerGroup('varname',round=currentRound);       Average of a variable per group                                                                                                        Array with groupnumber as index
+$getVarSum('varname',round=currentRound);                Sum of a variable (also available getVarSumPerGroup, getVarSumTreatment, getVarSumPerRole)                                             Sum as number, 0 otherwise
+$getMin('varname',round=currentRound);                   Minimum of a variable (also available getMinPerGroup, getMinPerTreatment, getMinPerRole)                                               Minimum as number, 0 otherwise
+$getMax('varname',round=currentRound);                   Maximum of a variable (also available getMaxPerGroup, getMaxPerTreatment, getMaxPerRole)                                               Maximum as number, 0 otherwise
+$getFreq('varname',round=currentRound, multiple=false);  Frequency of a variable value (if multiple is set to true, answers from multiple choice questions are decomposed into single answers)  Array with the variable value as index
+$getValues('varname',round=currentRound);                
+Single values for each player
+                                                                                                          Array with the player number as index and the corresponding value
+$getRoles();                                             Role for each player                                                                                                                   Array with the player number as index and the corresponding role
+$getTreatments();
+                                        Treatment for each player                                                                                                              Array with the player number as index and the corresponding treatment
+$getNumRoles();
+                                          Number of roles                                                                                                                        Array with role as index and the number of players who have this role
+$getNumPlayer();
+                                         Number of players
+                                                                                                                      Number
+$getSubjectIDs();                                        Get Corresponding Subject IDs to player IDs                                                                                            Array with player ID as index and subject ID as value
+$getNumDecisions('varname',round=currentRound);          Number of decisions made                                                                                                               Number
+$getNumDecisionsPerGroup('varname',round=currentRound);  Number of decisions made                                                                                                               Array with Group Number as an index
+======================================================== ====================================================================================================================================== ====================
 
 Here are examples of all mentioned funtions:
 
