@@ -940,20 +940,9 @@ $findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decis
 $findGroupAverage('varname',round=currentRound,includingOwn=false);                         Average of a variable per group                   Array with group number as index
 $findGroupSum('varname',round=currentRound,includingOwn=false);                             Sum of a variable                                 Sum as number, 0 otherwise
 $findGroupFreq('varname',round=currentRound,includingOwn=false);                            Frequency of specific decisions by group members  Array with frequency of each decision
+$findSold(round = currentRound)                                                             For a contract table: finds sell                  Array with number of unit (1,2,...) and corresponding price
+$findBought(round = currentRound)                                                           For a contract table: finds buy                   Array with number of unit (1,2,...) and corresponding price
 =========================================================================================== ================================================= ==============
-
-!| $findOldVariable('varname', round = currentRound);
-!| Find old variables from previous rounds
-!| Variable or 0 if not found
-|- 
-!| $findSold(round = currentRound)
-!| For a contract table: finds sell
-!| Array with number of unit (1,2,...) and corresponding price
-|- 
-!| $findBought(round = currentRound)
-!| For a contract table: finds buy
-!| Array with number of unit (1,2,...) and corresponding price
-|}
 
 Here are examples of all mentioned funtions:
 
