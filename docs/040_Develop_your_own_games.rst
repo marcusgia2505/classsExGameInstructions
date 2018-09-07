@@ -1025,8 +1025,22 @@ Pre-Defined Variables
 Functions
 ---------
 
-Testing (Diagnose mode)
-=======================
+Test a game
+=======
+
+Before playing a game in your lecture, you can test the game. To do so switch to the lecture mode and select your game. Selecting your game is not necessary if it is the active game in the lecture mode already. Next, open as many test player as you need for testing your game by clicking on the *add test player* icon. 
+
+.. image:: _static/Addplayer.PNG
+    :alt:  300p
+
+This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, which enables you to also test interaction between participants in games with several roles.
+
+Then start your game. You can perform the interaction required in the browser tabs for each player.
+
+If something is not working or an error occurs you can use the diagnosis mode for error spotting.
+
+Diagnosis mode
+--------------
 
 The diagnosis mode is very useful for trouble shooting and testing your game. You can access the diagnosis mode by clicking on the stetoscope icon in the top bar of the Lecture mode.
 
@@ -1040,41 +1054,35 @@ Clicking on the symbol opens up a space beside the usual display on the lecturer
 
 The different tabs allow you to access the globals or the variables for each player. This makes it much programming and error finding much easier than having to jump back and forth between the lecture mode and the editing mode.
 
-Test a Game
-
-Before playing a game in your lecture, you can test the game on your own PC by clicking on Testpart.JPG in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, which enables you to also test interaction between participants in games with several roles. 
-
-Error spotting
-
-If you try out the game you just programmed and find that something doesn't work, you can use the new Diagnosis mode for error spotting. This shows you all variables during the game in the lecture mode. 
-
-Parameter
+Parameters
 =========
-parameter
 
-By clicking on this button, you can set different parameters of a game that can be changed easily in the lecture mode if you want to play the same game several times with different parameters.
+Parameters are global variables that can be adjusted in the lecture mode. You can define parameters to enable adaptation of the game for lecturers without any knowledge of how to edit games. You can then play the same game several times with different parameters.
+
+You can define parameters by clicking on the *parameter* button in the top bar of the editing mode. Here you can see all defined parameters for the active game, edit them and add new ones. After adding a parameter you can use it as global variable in elements., you can set different parameters of a game that can be changed easily in the lecture mode 
 
 Here is an example for a public goods game:
 
-Param.JPG
-
+.. image:: _static/Parameter.JPG
+    :alt:  300p
 
 Languages 
 =========
-Languages
 
 For some elements, you can enter the text in two different languages, English and German.
 
-Gereng.PNG
+.. image:: _static/Language.PNG
+    :alt:  300p
 
+To switch the languages on and off, you can click on the flag symbols next to the game name.
 
-To switch the languages on and off, you can click on the flag Flags.PNG symbols above the elements.
+.. image:: _static/Languageonoff.PNG
+    :alt:  300p
 
-For other elements, this function has not been implemented yet. In this case, you need to enter both languages in one text box, separated by $$, for more information see Text Box. 
+For other elements, this function has not been implemented yet. In this case, you need to enter both languages in one text box, separated by $$, for more information see `Text Box`_. 
 
 Tool Comparison 
 ===============
-Tool Comparison 
 
 Here you find an overview how classEx compares to other tools. It was last updated in September 2015 and is based on available information on the respective websites (see references below).
 
@@ -1327,33 +1335,7 @@ Delete game: By pressing "delete game", the currently selected game is deleted. 
 
 New game: Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here. 
 
-Information on the game (meta data)
-===================================
 
-Participants elements
-Screenshot 	Name 	Brief description
-Tbnewnew.JPG 	Text Box 	Element to display text (including variables)
-Inputfield.PNG 	Input Element 	In this element you can insert several input fields.
-Codenew.JPG 	Program Code 	Program snippets can be implemented to calculate results for each subjects.
-Winner.PNG 	Winner's Notification 	If a game is played with real payoffs, this element displays the payoff code to participants. (only works together with winners' draw)
-Matrixpay.JPG 	Payoff Matrix Game 	This is a special element for matrix games.
-Contract participant.JPG 	Contract 	This element allows participants to make contracts
-Camera.png 	Camera 	This element allows participants to make a photo of themselves.
-Refer.JPG 	Element Reference 	A reference can be used to reuse elements and thereby avoid redundant elements.
-Javascript 	Program javascript snippets to implement more flexibly
-
-Elements for the lecturer are generally only displayed on the lecturer’s screen which is usually projected to a wall for all participants to see. The start button, text boxes, elements for payoff calculations and output displays are typical elements for the lecturer.
-Screenshot 	Name 	Brief description
-Tblec.JPG 	Text Box 	Element to display text (including varibales) on the lecturers' screen.
-Startt.JPG 	Start Button 	A Start Button is needed to start a stage. You can also set an automatic start here.
-Draw.JPG 	Winners' Draw 	If a game is played with real payoffs, this element draws the winners (only works togehter with winner's notification).
-Codenew.JPG 	Global Program 	Progam snippets can be implemented to calculate results on the global level for all participants.
-Randomdraw.PNG 	Lecturer Discrete Choice 	Lecturer Discrete Choice allows the lecturer to input data in the course of the game
-Contracttable.JPG 	Contract table 	Contract tables give you an overview of contracts concluded by the participants.
-Refer.JPG 	Element Reference 	An reference can be used to reuse elements and thereby avoid redudant elements.
-Ress.JPG 	Result Element 	Different Result Elements like Pie Chars, Line Charts, Histograms... are available. 
-
-Text Box -- view under Player, Text Box
 
 
 Player
