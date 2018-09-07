@@ -852,11 +852,10 @@ Programmes are a very useful tool to design dynamic games. Programs are elements
 .. image:: _static/Code.JPG
     :alt:  300p
 
-You can define for which roles, groups or treatments (if defined) the code shall apply by choosing the corresponding option from the drop down menu above the code.
+You can define for which roles, groups or treatments (if defined) the code shall apply to by choosing the corresponding option from the drop down menu above the code.
 
-=General remarks=
-
-===Programming language and editor===
+Programming language and editor
+-------------------------------
 
 Variables and programmes are specified via `PHP<https://en.wikipedia.org/wiki/PHP>`_. This is a well-documented standard which enables easy programming. Details can be found in the internet, for example `here<http://php.net/docs.php>`_. You can utilise the normal PHP features (e.g. round, rand, number_format(),…).
 
@@ -864,15 +863,17 @@ Programmes are entered in an editor that comprises syntax-highlighting as well a
 
 Furthermore, the editor contains a completion system which will show you all available variables. If you start entering the beginning of a variable ($...) and then press Ctrl+space the automatic completion system will show you all corresponding variables and features.
 
-===Declaration of Variables===
+Declaration of Variables
+------------------------
 
 Variables are defined by starting with "$". It does not matter whether the variable is a number or text. Variable names are case sensitive.
 
-'''ATTENTION!! Do not use single quotes within double quotes as this may produce errors (e.g. $text="don't"), instead of ' you should use &apos; (e.g. $text="don&apos;t") in texts.'''
+**ATTENTION! Do not use single quotes within double quotes as this may produce errors (e.g. $text="don't"), instead of ' you should use &apos; (e.g. $text="don&apos;t") in texts.**
 
-==Scope of Variables==
+Scope of Variables
+--------------------
 
-There are two different scopes - globals and subjects variables. 
+There are two different scopes: globals and subjects variables. 
 
 Global variables are 
 * available for all participants (can be accessed by subjects program), 
@@ -885,7 +886,7 @@ Please notice that globals and subjects variables share the same namespace. Usin
 Subject variables are
 * only available for a certain participant
 * saved by default if they are decision variables (set via input elements).
-* not saved by default if you create or calculate them in subject programs; to do so use the [[Program_Code#Function_to_save_variables|$save-function]]
+* not saved by default if you create or calculate them in subject programs; to do so use the `$save-function<Function to save variables>`_
 
 
 =Variables for Participants (subjects)=
@@ -986,7 +987,8 @@ Here are examples of all mentioned funtions:
 .. image:: _static/Code1.PNG
     :alt:  300p
 
-==Function to save variables==
+Function to save variables
+----------------------------
 
 To save calculated variables you must use the following function:
 
