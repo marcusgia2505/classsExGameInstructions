@@ -886,7 +886,7 @@ Please notice that globals and subjects variables share the same namespace. Usin
 Subject variables are
 * only available for a certain participant
 * saved by default if they are decision variables (set via input elements).
-* not saved by default if you create or calculate them in subject programs; to do so use the `$save-function<Function to save variables>`_
+* not saved by default if you create or calculate them in subject programs; to do so use the `Function to save variables`_
 
 
 =Variables for Participants (subjects)=
