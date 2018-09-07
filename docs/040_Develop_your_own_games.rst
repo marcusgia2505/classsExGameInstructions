@@ -705,92 +705,120 @@ show quantities
 Result Element
 ~~~~~~~~~~~~~~~
 
-==General Remarks==
-
-For displaying the results of a game various types of charts are available. Note that you can only display [[Program_Code#Scope_of_Variables|saved]] [[Program_Code#Variables_for_Participants_.28subjects.29|subject variables]].
+For displaying the results of a game various types of charts are available. Note that you can only display saved subject variables.
 
 Whenever you can select variables in a field you only need to insert the variable name (e.g. "payoff"). Ordinary input fields require the usual php notation (e.g. "$payoff;").
 
 The program code does not distingiush between binary 0 and numeric 0. Some result elements, however, cannot display binary 0. Make sure to convert binary 0 in numeric 0 in the program code (e.g. "if($accept == 0) {$accept = 0;}") in case you want to display it in a result element.
 
-Under the header “count”, you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). Further, you can determine for some result elements whether you want the button “show results” to be displayed or not. Not displaying the button can be useful, if you want to display several diagrams underneath each other. You do, however, need at least one button per stage. You can use a normal [[Start_Button|start button]] element as well.
+Under the header “count”, you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). Further, you can determine for some result elements whether you want the button “show results” to be displayed or not. Not displaying the button can be useful, if you want to display several diagrams underneath each other. You do, however, need at least one button per stage. You can use a normal start button element as well.
 
-==Results Single / Multiple Choice Questions==
+- Results Single / Multiple Choice Questions
 
-[[File:Singlechoice.PNG | right | 400px]]
+.. image:: _static/Smc.JPG
+    :alt:  300p
 
 The results are displayed with percentage bars.
 
-[[File:smc.JPG]]
+.. image:: _static/Singlechoice.PNG
+    :alt:  300p
 
 The following options can be changed:
 
-* '''Count''': Participants are counted all together (or per treatment / role).
-* '''Show element''': Always display element or only if stage is activated.
-* '''Input''': The variable which should be displayed (here: stage #1 input field #1). 
+Count
+	Participants are counted all together (or per treatment / role).
+Show element
+	Always display element or only if stage is activated.
+Input
+	The variable which should be displayed (here: stage #1 input field #1). 
 
 The element automatically detects if the input is multiple choice or single choice. Hovering over the bars gives the absolute frequency of participants who opted for that option. The element should only be used with input fields with predefined options (otherwise you should use the counter result element).
 
-<br clear=all>
+- Results Histogram
 
-==Results Histogram==
-[[File:Numberindic.PNG | right | 400px]]
+.. image:: _static/Numericindic.PNG
+    :alt:  300p
 
-[[File:histneu.PNG]]
-
+.. image:: _static/Hist.PNG
+    :alt:  300p
 
 The following options can be changed:
 
-* '''Variable''': Choose which variable you want to display
-* '''Show element''': Element is always displayed or only if stage is activated.
-* '''Min''': Minimum of the histogram (Default 0)
-* '''Max''': Maximum of the histogram 
-* '''Bin''': How the values shall be pooled into “bins”. For example, if you define the bin width: 10, the data will be pooled in brackets of ten.
-* '''X-Line''': Vertical Line is drawn at this x-value (e.g. to specify a correct or true value)
-* '''Count''': Participants are counted all together or per treatment / role. This can be changed in drop down menu at the bottom.
+Variable
+	Choose which variable you want to display
+
+Show element
+	Element is always displayed or only if stage is activated.
+
+Min
+	Minimum of the histogram (Default 0)
+
+Max
+	Maximum of the histogram 
+
+Bin
+	How the values shall be pooled into “bins”. For example, if you define the bin width: 10, the data will be pooled in brackets of ten.
+
+X-Line
+	Vertical Line is drawn at this x-value (e.g. to specify a correct or true value)
+
+Count
+	Participants are counted all together or per treatment / role. This can be changed in drop down menu at the bottom.
 
 
-<div class="quote">Tip: All values that are larger than the displayed maximum value are automatically pooled into the last bin.</div>
+	Tip: All values that are larger than the displayed maximum value are automatically pooled into the last bin.</div>
 
+- Results Line Chart
 
-<br clear=all>
+.. image:: _static/Result_linechart.PNG
+    :alt:  300p
 
-==Results Line Chart==
-[[File:Commons.PNG | right | 400px]]
-
-[[File:Result_linechart.PNG]]
+.. image:: _static/Commons.PNG
+    :alt:  300p
 
 
 A line chart enables the display of the results of several rounds. The following options can be changed:
 
-* '''Count''': Participants are counted all together (or per treatment / role).
-* '''Button''': A button to start the result stage is displayed (or not).
-* '''Input''': The variable which should be displayed (here: stage #496 input field #1 (variable name "beitrag")). 
-* '''Max x-Axis''': Maximum of x-Axis
-* '''Max y-Axis''': Maximum of y-Axis
-* '''Label x-Axis''': Label of x-Axis
-* '''Label y-Axis''': Label of y-Axis
+Count
+Participants are counted all together (or per treatment / role).
 
-
+Button
+	A button to start the result stage is displayed (or not).
+Input
+	The variable which should be displayed (here: stage #496 input field #1 (variable name "beitrag")). 
+Max x-Axis
+	Maximum of x-Axis
+Max y-Axis
+	Maximum of y-Axis
+Label x-Axis
+	Label of x-Axis
+Label y-Axis
+	Label of y-Axis
 
 If no maximum is determined, the programme will automatically use the maximum of the input field. You can label both axes.
 
 The line chart automatically calculates the average of the input variable over all subjects, per group or per treatment.
 If the input variable is a binary variable the result is diaplayed in percent.
 
-==Results Bubble==
-[[File:bubble2.JPG | right | 400px]]
+- Results Bubble
 
-[[File:bubble.JPG]]
+.. image:: _static/Bubble.JPG
+    :alt:  300p
+
+.. image:: _static/Bubble2.JPG
+    :alt:  300p
 
 Displays a bubble chart, which can be useful for trust games, for example.
 
 You can define the variables to be displayed on the x-axis and the y-axis as well as a minimum and a label for each axis.
  
-==Results Counter==
-[[File:Bc.png| right | 250px]]
+- Results Counter
 
-[[File:counter.JPG]]
+.. image:: _static/Counter.JPG
+    :alt:  300p
+
+.. image:: _static/Bc.PNG
+    :alt:  300p
 
 The counter enables you to display the relative frequency with which a specific answer was chosen. If participants are required to choose a pair of answers, like in the faces beauty contest for example, you can also display how often a specific pair of answers was chosen.
 
@@ -798,58 +826,28 @@ Hovering over the bars gives the absolute frequency of participants who opted fo
 
 Using a multiple choice input field will result in the listing of combined answers. E.g. You can select A, B, C (multiple choice). Then the counter elemnet will display who many percent chose A, A&B, A&C,... If you want to have the items analysed seperately (only A, B, C) you should use the Results Single / Multiple Choice Questions (see above). 
 
-==Results Game Matrix==
-[[File:qq.JPG| right | 400px ]]
+- Results Game Matrix
 
-[[File:qqq.JPG]]
+.. image:: _static/Qqq.JPG
+    :alt:  300p
+
+.. image:: _static/Qq.JPG
+    :alt:  300p
 
 If a game is played with two different roles, the results can be displayed as a matrix. The settings are the same as for the participant screen. If you have defined treatments, you can decide whether the results shall be displayed per treatment or altogether.
 
 If you have several rounds, the matrix calculates the results overall rounds. If you want to show temporal structures (e.g. learning), please use the time line diagram.
 
-<div class="quote">Tip: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a programme).</div>
+	Tip: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a programme).
 
-==Other result elements==
+- Other result elements
 
 Other result elements include likert scales and pie charts.
-
-
-Player
-------
-
-
-Lecturer
---------
-
-Identification of subjects in the system
-========================================
-
-By default, subjects are completely anonymous in classEx. Should it be required, you also have several possibilities to identify subjects in the system.
-
-Ticket: You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game.
-
-Ask for data during the game: At a certain stage, or after the end of the game, you can ask participants to enter their personal data or an ID you provide them with.
-
-During login: You can change the settings so that participants are asked for certain data before they log-in. For this, go to "course data" and click on additional settings. You can then enter what you would like participants to enter before logging in.
-
-Here is an example:
-
-.. image:: _static/Data1.PNG
-    :alt:  300px
-    
-And this is what it looks like for participants before login:
-
-.. image:: _static/Data2.PNG
-    :alt:  300px
-
-
 
 Programs and PHP functions
 ==========================
 
-
 [[File: codenew.JPG]]
-
 
 You can define for which roles, groups or treatments (if defined) the code shall apply by choosing the corresponding option from the drop down menu above the code.
 
@@ -1433,4 +1431,33 @@ Refer.JPG 	Element Reference 	An reference can be used to reuse elements and the
 Ress.JPG 	Result Element 	Different Result Elements like Pie Chars, Line Charts, Histograms... are available. 
 
 Text Box -- view under Player, Text Box
+
+
+Player
+------
+
+
+Lecturer
+--------
+
+Identification of subjects in the system
+========================================
+
+By default, subjects are completely anonymous in classEx. Should it be required, you also have several possibilities to identify subjects in the system.
+
+Ticket: You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game.
+
+Ask for data during the game: At a certain stage, or after the end of the game, you can ask participants to enter their personal data or an ID you provide them with.
+
+During login: You can change the settings so that participants are asked for certain data before they log-in. For this, go to "course data" and click on additional settings. You can then enter what you would like participants to enter before logging in.
+
+Here is an example:
+
+.. image:: _static/Data1.PNG
+    :alt:  300px
+    
+And this is what it looks like for participants before login:
+
+.. image:: _static/Data2.PNG
+    :alt:  300px
 
