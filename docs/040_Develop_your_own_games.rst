@@ -1019,15 +1019,6 @@ Here are examples of all mentioned funtions:
 .. image:: _static/Code3.PNG
     :alt:  300p
 
-
-
-
-
-
-
-
-
-
 Pre-Defined Variables
 ---------------------
 
@@ -1037,14 +1028,17 @@ Functions
 Testing (Diagnose mode)
 =======================
 
-You can access the diagnosis mode by clicking on the [[File:Steto.PNG]] symbol in the top bar of the [[Lecture Mode]].
+The diagnosis mode is very useful for trouble shooting and testing your game. You can access the diagnosis mode by clicking on the stetoscope icon in the top bar of the Lecture mode.
 
-Clicking on the symbol opens up a space beside the usual display on the lecturer's screen, which shows you all variables.
+.. image:: _static/Diagnosissteto.PNG
+    :alt:  300p
 
-[[File:Stetot.PNG]]
+Clicking on the symbol opens up a space beside the usual display on the lecturer's screen, which shows you all variables and their current values.
+
+.. image:: _static/Diagnosis.PNG
+    :alt:  300p
 
 The different tabs allow you to access the globals or the variables for each player. This makes it much programming and error finding much easier than having to jump back and forth between the lecture mode and the editing mode.
-
 
 Test a Game
 
