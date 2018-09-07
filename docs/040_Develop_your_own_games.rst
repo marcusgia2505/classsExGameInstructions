@@ -934,13 +934,9 @@ $no_decision = null
 	IMPORTANT NOTICE: If you want to add an element that, for example, is placed at the third position in the function, you have to specify the elements before that, too. Otherwise, the element is used at the wrong position for the wrong expression.
 
 
-Function name                                                                               Calculates                          
+Function name Calculates Returns
 
-Returns
-
-$findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decision=null);  Returns the decision of the partner  
-
-Variable value
+$findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decision=null);  Returns the decision of the partner Variable value
 
 
 !| $findGroupAverage('varname',round=currentRound,includingOwn=false);
