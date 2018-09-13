@@ -37,7 +37,7 @@ Password
 Essentials for lecturers
 =========================
 
-A short introductory tutorial can be found under https://youtu.be/Zm0DpUzhOGg
+A short introductory tutorial can be found under `here <https://youtu.be/Zm0DpUzhOGg>`_.
 
 Entering classEx as a lecturer offers three modes: Overview mode, Lecture mode and Editing mode. The after login the screen shows the Overview mode. Here you can organize your games and access all important features of classEx.
 
@@ -52,12 +52,12 @@ In the top right-hand corner, you find the main navigation bar which is always d
 The currently active mode is marked by a darker shade around its symbol, here the **Overview mode**. The left symbol takes you to the **Lecture mode**. The right symbol takes you to the **Editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your course. 
 
 Top bar
-------------
+-------
 
 The top bar is located in the top left corner. It is different in each submode.
 
 Top bar - Overview mode
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 You can see the top bar for the **Overview mode** in the picture above. It offers folowing funcionality:
 
