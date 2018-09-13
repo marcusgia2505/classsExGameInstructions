@@ -311,7 +311,7 @@ The Faces Beauty Contest goes back to `John Maynard Keynes (1936) <http://de.wik
 "Please choose the two prettiest faces among the following eight faces. The two faces which are chosen most often gain the title "man of the year". Of those participants who opted for that pair of faces, one participant is drawn randomly and will earn 20 €."
 
 .. image:: _static/SchellingSalience.JPG
-    :alt:  300px
+    :alt:  200px
 
 The eight faces are shown in the figure in the right corner in which you can find the faces of the two lecturers themselves. For the participants, these stand out prominently. This prominence is called [[Schelling Salience]]. With this, participants are able to agree on the selection of the two lecturers as a pair. Everybody who does that maintains his / her opportunity to win. As in the case of Keynes, people are not selected with regard to their beauty, but dependent on the achievable profit. For Keynes, this was an example for the fact that investors don’t buy the best asset but those which they can sell to others most successfully.
 
@@ -322,7 +322,7 @@ Numeric
 - Common Value Auction
 
 .. image:: _static/Zinstender.JPG
-    :alt:  300px
+    :alt:  200px
     
 For all participants, a purchased product has the same value (**Common Value**). Still, participants differ in their bidding behaviour as well as in their expectations with regard to other participants. An example for this is the auction of '''Central Bank Credits''' with a loan period of one year. Every participant plays the role of a bank. Every bank submits a tender for credits of the Central Bank to the maximum amount of 5000€. Doing this, any interest rate with two decimal places can be chosen. Every bank can split up their bid into up to three interest rates. For instance, Bank A bids 1000€ for 2.4%, 2000€ for 2.5% and 2000€ for 2.7%. The bank lends the obtained resources to others at a rate of 3%. That is why 3% is the maximum interest rate of the bids.
 
@@ -346,12 +346,12 @@ Often, variants of the Beauty Contest are implemented, in which the person who c
 - Tragedy of the Commons
 
 .. image:: _static/Commons.PNG
-    :alt:  300px
+    :alt:  200px
 
 The Tragedy of the Commons describes how a common good can be used excessively. This becomes clear in the following description of the game: All participants in the lecture want to send their cows to graze the meadow in the mountains. At the beginning, the quality (Q) of the meadow is 1 (100%). Depending on the average punching of the cattle, a, the quality of the following period is defined as:
 
 .. image:: _static/AllmendeFormula.JPG
-    :alt:  300px
+    :alt:  100px
 
 You play a game with a duration of 5 years (rounds). For your payoff, the quantity of the punching of the cattle is multiplied by the quality and summed up over all five rounds. The amount will be disbursed in euros and assigned to a player randomly determined by a lottery ticket. In the figure below, the initial situation is shown. Over five rounds, the tragedy can be observed: A constant reduction of quality of the alpine meadow, causing damage to the group.
 
@@ -472,11 +472,11 @@ Numeric
 
 In the trust game, player 1 (trustor) can can decide whether to transfer none, some or all of her endowment to player 2 (trustee). Transferring the entire endowment is socially optimal because the transferred amount is multiplied by the experimentor. Player 2 can then decide whether to transfer none, some or all of his endowment back to player 1. Therefore, transferring is only worthwile for the trustor, if the trustee repays the trust and transfers back at least the sent amount.
 
-.. image:: _staticTrustred.JPG
-    :alt:  300px
+.. image:: _static/Trustred.JPG
+    :alt:  200px
     
 .. image:: _static/Trustgreen.JPG
-    :alt:  300px
+    :alt:  200px
 
 **Implementation in classEx:**
 
