@@ -71,7 +71,7 @@ repository
     The repository which provides access to previous results from your private games or from public games conducted by you or other classEx lecturers
     
 Top bar - Lecture mode
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 The top bar of the **Lecture mode** looks like this:
 
@@ -99,7 +99,7 @@ previous results
     You can access previous results via the previous results dropdown menu. Simply choose which results from previous lectures you want to display. This way you can directly compare current outcomes with previous ones. 
 
 Top bar - Lecture mode
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 See `Develope your own games <https://classex-doc.readthedocs.io/en/latest/040_Develop_your_own_games.html>`_.
 
