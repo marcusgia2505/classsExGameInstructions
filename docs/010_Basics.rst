@@ -16,7 +16,7 @@ Login
     :alt:  300px
 
 
-The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the institution needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff (administration mode) chose their corresponding user mode, enter the password and log in. Following features are available:
+The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the institution needs to be selected. Next, the course needs to be chosen. Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff (administration mode) chose their corresponding user type, enter the password and log in.
 
 Institution
     Select the institution you named during your registration, typically your university.
@@ -31,12 +31,15 @@ User modes
 
     - Administration mode: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#payoffs-and-administration-mode>`_. 
 
-Essentials of user mode "Lecturer"
-==================================
+Password
+    A registered lecturer receives has received a password upon registration. Players are provided with their password by the lecturer. Administrative staff ???
+
+Essentials for lecturers
+=========================
 
 A short introductory tutorial can be found under https://youtu.be/Zm0DpUzhOGg
 
-Entering classEx as a lecturer provides three submodes: Overview, Lecture mode and Editing mode. The starting screen after login is the submode Overview. Here you can organize your games and access all important features of classEx.
+Entering classEx as a lecturer offers three modes: Overview mode, Lecture mode and Editing mode. The after login the screen shows the Overview mode. Here you can organize your games and access all important features of classEx.
 
 .. image:: _static/Overview.PNG
     :alt:  300px
@@ -44,16 +47,16 @@ Entering classEx as a lecturer provides three submodes: Overview, Lecture mode a
 Navigation bar
 --------------
 
-In the top right-hand corner, you find the main navigation bar which is always displayed in every submode. This allows you to switch from one submode to another and access your personal data.
+In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
     
-The currently active submode is marked by a darker shade around its symbol, here the submode **Overview**. The left symbol takes you to the **Lecture mode**. The right symbol takes you to the **Editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your course. 
+The currently active mode is marked by a darker shade around its symbol, here the **Overview mode**. The left symbol takes you to the **Lecture mode**. The right symbol takes you to the **Editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your course. 
 
-Submode menu
+Top bar
 ------------
 
-The submode menu is located in the top left corner. It is different in each submode.
+The top bar is located in the top left corner. It is different in each submode.
 
-You can see the submode menu for **Overview** in the picture above. Here, you can
+You can see the mode menu for **Overview** in the picture above. Here, you can
 - create **new folders** to organize your games
 - create **new games** that you can then design in the editing submode
 - enter the **repository** which provides access to previous results from your private games or from public games conducted by you or other classEx lecturers
