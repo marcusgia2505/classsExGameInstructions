@@ -4,9 +4,8 @@
 Basics
 ======
 
--------------
 Registration
--------------
+============
 
 Lecturers who want to actively involve their students are required to register in order to use classEx. Please fill in the registation form you can find `here <https://classex.de/get-login-credentials/>`_. Registered users receive a password via e-mail and hereby obtain the right of unlimited and cost-free use of classEx for teaching, further education and research (for details please see `terms of use <https://classex.de/wp-content/uploads/2018/04/TermsOfUse.pdf>`_). Students do not need to register but are involved anonymously in lectures and presentations.
 
@@ -79,7 +78,7 @@ The top bar of the **Lecture mode** looks like this:
 .. image:: _static/MenuLecture.PNG
     :alt:  300px
     
-It offers following functionality 
+It offers following functionality:
 
 select games
     Select games from all public and your private games. The selected game opens up as soon as you click on it.
