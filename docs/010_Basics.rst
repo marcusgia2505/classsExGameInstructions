@@ -116,6 +116,7 @@ Player
 
 Session
     A session is a sequence of games in a lecture, meeting or presentation. Players should not shut their browser during a session, as each player receives an ID-number for a session. This allocation would be lost if player close their browsers.
+    
     |Tip: After the end of a session, you can use statistical tests to analyse whether there is a relationship between the different games of a session. For example, you can examine whether players with higher mathematical abilities are more risk averse. For this purpose, players' ID-numbers are stored in an Excel sheet.
 
 Game
