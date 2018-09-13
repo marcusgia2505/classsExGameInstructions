@@ -43,8 +43,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'LIONESS Lab documentation'
-copyright = u'2018, LIONESS Lab'
+project = u'classEx documentation'
+copyright = u'2018, classEx'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -176,7 +176,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'LIONESSLabdoc'
+htmlhelp_basename = 'classexdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
