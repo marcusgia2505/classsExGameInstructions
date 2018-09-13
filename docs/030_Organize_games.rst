@@ -3,9 +3,9 @@ Title
 ***************
 
 
-==============
+
 Organize games
-==============
+**************
 
 You can organize your games in the Overview. Here, you can find all your games as well as the standard games that are in your overview by default. 
 
