@@ -99,7 +99,7 @@ previous results
     You can access previous results via the previous results dropdown menu. Simply choose which results from previous lectures you want to display. This way you can directly compare current outcomes with previous ones. 
 
 Top bar - Lecture mode
-~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 See `Develope your own games`_.
 
