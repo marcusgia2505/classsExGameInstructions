@@ -290,9 +290,9 @@ Strategic Interaction
 
 With classEx, strategic interaction in the lecture can be modelled, too. It offers games which can be conducted simultaneously, sequentially or continously (not yet implemented). Furthermore, the type of the game is determined by the number of roles. Participants can be assigned to different roles. Every role is related to a seperate task and interaction. In game instructions roles are usually referred to as coloured human shape icons:
 
-.. image:: _static/Role1.PNG
+.. image:: _static/Role1.JPG
 
-.. image:: _static/Role2.PNG
+.. image:: _static/Role2.JPG
 
 Simultaneous with one Role
 --------------------------
