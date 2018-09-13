@@ -16,16 +16,16 @@ Login
     :alt:  300px
 
 
-The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the university needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff (administration mode) chose their corresponding user mode, enter the password and log in. Following features are available:
+The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the institution needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff (administration mode) chose their corresponding user mode, enter the password and log in. Following features are available:
+
+
 
 User modes
-----------
+    - Player: Students can participate interactively in a lecture or a presentation by logging in as a “player”. They do not need to register and remain anonymous. They select the university and the course from the lecturer's registration. The lecturer provides the password he has chosen for players in his course. Participation after logging in is self-explanatory and does not require any previous knowledge.
 
-- Player: Students can participate interactively in a lecture or a presentation by logging in as a “player”. They do not need to register and remain anonymous. They select the university and the course from the lecturer's registration. The lecturer provides the password he has chosen for players in his course. Participation after logging in is self-explanatory and does not require any previous knowledge.
+    - Lecturer: Registered lecturers who have received a password can login as "lecturer". As lecturer you can organize your account, start ready-made games and quizzes, adapt them to your liking or create new ones. This documentation mainly explains the possibilities and options classEx offers for lecturers.
 
-- Lecturer: Registered lecturers who have received a password can login as "lecturer". As lecturer you can organize your account, start ready-made games and quizzes, adapt them to your liking or create new ones. This documentation mainly explains the possibilities and options classEx offers for lecturers.
-
-- Administration mode: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#payoffs-and-administration-mode>`_. 
+    - Administration mode: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#payoffs-and-administration-mode>`_. 
 
 Essentials of user mode "Lecturer"
 ==================================
