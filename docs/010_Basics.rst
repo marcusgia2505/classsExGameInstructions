@@ -4,8 +4,6 @@
 Basics
 ======
 
-This documentation is written for lecturers who want to use classEx for conducting games in the classroom. The first chapter explains the first steps for new classEx users. The second chapter gives an overview of what you can do with classEx by introducing a broad range of ready-made games available on classEx. In the third chapter you find a step by step guide through conducting an already existing game. The last chapter is a manual for users who want to edit existing games or develope their own games.
-
 Registration
 ============
 
