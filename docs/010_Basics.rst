@@ -18,7 +18,11 @@ Login
 
 The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the institution needs to be selected. Next, the class or teaching unit needs to be chosen. Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff (administration mode) chose their corresponding user mode, enter the password and log in. Following features are available:
 
+Institution
+    Select the institution you named during your registration, typically your university.
 
+Course
+    Select the course you named in your registration or another course you have access to.
 
 User modes
     - Player: Students can participate interactively in a lecture or a presentation by logging in as a “player”. They do not need to register and remain anonymous. They select the university and the course from the lecturer's registration. The lecturer provides the password he has chosen for players in his course. Participation after logging in is self-explanatory and does not require any previous knowledge.
