@@ -101,7 +101,7 @@ previous results
 Top bar - Lecture mode
 ~~~~~~~~~~~~~~~~~~~~~
 
-See `Develope your own games`_.
+See `Develope your own games <https://classex-doc.readthedocs.io/en/latest/040_Develop_your_own_games.html>`_.
 
 Terminology
 ===========
