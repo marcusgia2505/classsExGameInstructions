@@ -13,7 +13,7 @@ Login
 =========
 
 .. image:: _static/Login.PNG
-    :alt:  300px
+    :alt:  200px
 
 
 The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the institution needs to be selected. Next, the course needs to be chosen. Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff (administration mode) chose their corresponding user type, enter the password and log in.
@@ -76,7 +76,7 @@ Top bar - Lecture mode
 The top bar of the **Lecture mode** looks like this:
 
 .. image:: _static/MenuLecture.PNG
-    :alt:  300px
+    :alt:  150px
     
 It offers following functionality:
 
@@ -192,7 +192,7 @@ One possible application for games with random events is the so-called Ellsberg 
 Special feature: Random Draw
 
 .. image:: _static/Ellsberg_code.PNG
-    :alt:  300px
+    :alt:  200px
     
 The special thing about this game is that you can actually implement random draws. Participants, therefore, can be informed about whether they would have won or not. For this, you need to implement a random draw in the second stage in classEx. You simply write a small program with PHP-function rand(); in order to draw a ball. The outcome is displayed in a text field. You can find a detailed description of programmes in [[Elements]].
 
