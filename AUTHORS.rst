@@ -1,8 +1,8 @@
 Authors
 -------
 
-* Lucas Molleman
+* Stefan Grundner
 * Marcus Giamattei
-* Kyanoush Seyed Yahosseini
+* Stefan Heid
 
 
