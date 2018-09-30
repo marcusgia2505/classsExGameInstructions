@@ -4,7 +4,7 @@ Run a ready-made game
 
 A short introductory turtorial on how to play a game in classEx can be found under https://youtu.be/zmAn0ZzTQPk
 
-Prerequisites (students devices, lecturer device, data volume)
+Prerequisites
 ==============================================================
 
 - Students devices
@@ -74,7 +74,7 @@ The following hints should give you some advice to avoid problems when using cla
 
 If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered. 
 
-Login of participants and test participants (+logout)
+Login of participants and test participants
 =====================================================
 
 - Login
@@ -122,7 +122,7 @@ Currently, there is no logout button for participants. Participants can log out 
 
 Participants’ screens are updated automatically when their partner has made a decision or when the lecturer has started a new stage. Therefore, it is not necessary to press a refresh button to proceed. This way, participants can simply wait until the next stage appears on their mobile devices and do not have to keep refreshing their screens. 
 
-Run a game (mit 2 Bsp., parameters, neu starten)
+Run a game
 ================================================
 
 - Change parameters
