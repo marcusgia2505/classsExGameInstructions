@@ -1,8 +1,8 @@
 =====================
-Run a ready-made game
+Run ready-made games
 =====================
 
-A short introductory turtorial on how to play a game in classEx can be found under https://youtu.be/zmAn0ZzTQPk
+A short introductory tutorial on how to play a game in classEx can be found under https://youtu.be/zmAn0ZzTQPk
 
 Prerequisites
 ==============================================================

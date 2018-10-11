@@ -36,7 +36,7 @@ The chapter "Elements" provides an overview of all elements which can be used to
 
 The chapter "References" provides a list of variables and functions for advanced programmers.
 
-Version and new Features
+Version and new features
 ========================
 
 classEx can be used free of charge for academic and non-academic purposes. Read more in the `terms of use`_. It is provided free of any warranty. classEx is constantly being improved. Users are being added and are delivering results to existing experiments. Further experiments are being designed and made available. Likewise, the functionality is continuously being revised and updated. If you have any questions, support issues or want to report bugs, please mail to classEx@uni-passau.de.
@@ -55,14 +55,18 @@ Below you find a list of the last updates:
 :April 8th 2015: All elements in the editing mode are directly linked to the wikipage which provides explanation of the different features.
 :November 20th 2015: classEx was updated to version 3.3.
 
+Table of content
+================
+
 .. toctree::
    :maxdepth: 3
    :glob:
 
-   index
    010_Basics
    020_Run_a_ready-made_game
    030_Organize_games
    040_Develop_your_own_games
+   042_elements
+   043_programming
 
 
