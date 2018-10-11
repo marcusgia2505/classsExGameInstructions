@@ -1,5 +1,5 @@
 =====================
-Develop you own games
+Develop your own games
 =====================
 
 To develope your own games change to the editing mode. The top bar in this mode looks like this:
