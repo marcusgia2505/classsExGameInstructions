@@ -4,21 +4,26 @@
    contain the root `toctree` directive.
 
 =====================================
-Welcome to the classEx documentation!
+classEx documentation
 =====================================
 
- .. figure:: _static/Cover.JPG
+ .. figure:: _static/introductionb/overview.png
     :alt:  300px
 
 What is classEx?
 ================
 
-With classEx you can conduct interactive surveys and classroom experiments. Students log in with their mobile device (smartphone or notebook) and can participate interactively in the lecture. Results are shown instantly on the presentation screen of the lecturer with intuitive graphs. Quizzes and spontaneous tests can be integrated into lectures or presentations of all academic disciplines. classEx can be used in political science to simulate polls or elections, psychologists can test the effect of roles and scenarios and economists can assess the strategic interaction in markets and the whole world of behavioral economics. 
+With classEx you can conduct interactive surveys and classroom experiments. Students log in with their mobile device (smartphone or notebook) and can participate interactively in the lecture. Results are shown instantly on the presentation screen of the lecturer with intuitive graphs. Quizzes and spontaneous tests can be integrated into lectures or presentations of all academic disciplines. classEx can be used in political science to simulate
+polls or elections, psychologists can test the effect of roles and scenarios and economists can assess the strategic interaction in markets and the whole of behavioral economics.
 
 About this documentation
 ========================
 
-This documentation is written for lecturers who want to use classEx for conducting games in the classroom. The first chapter explains the first steps for new classEx users. The second chapter gives an overview of what you can do with classEx by introducing a broad range of ready-made games available on classEx. In the third chapter you find a step by step guide through conducting an already existing game. The last chapter is a manual for users who want to edit existing games or develope their own games.
+This documentation is written for lecturers who want to use classEx for conducting games
+in the classroom. The first chapter explains the first steps for new classEx users.
+The second chapter gives an overview of what you can do with classEx by introducing a road range of ready-made games available on classEx.
+In the third chapter you find a step by step guide through conducting an already existing game. The last chapter is a manual for users who want to edit existing
+games or develope their own games.
 
 .. toctree::
    :maxdepth: 3
@@ -48,7 +53,8 @@ Current Version: 3.4.4 beta
 
 Please notice that classEx is still a beta version.
 
-classEx is constantly being improved. Users are being added and are delivering results to existing experiments. Further experiments are being designed and made available. Likewise, the functionality is continuously being revised and updated.
+classEx is constantly being improved. Users are being added and are delivering results to existing experiments. Further experiments are being designed and made available.
+Likewise, the functionality is continuously being revised and updated.
 
 If you have any questions, support issues or want to report bugs, please mail to classEx@uni-passau.de.
 
