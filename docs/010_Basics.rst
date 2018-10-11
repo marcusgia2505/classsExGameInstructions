@@ -15,8 +15,10 @@ Login
 .. image:: _static/Login.PNG
     :alt:  200px
 
-
-The website https://classex.uni-passau.de displays an input screen to lecturers and students. First of all, the institution needs to be selected. Next, the course needs to be chosen. Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff (administration mode) chose their corresponding user type, enter the password and log in.
+The website https://classex.uni-passau.de displays an input screen to lecturers and students.
+First of all, the institution needs to be selected. Next, the course needs to be chosen.
+Lecturers (experimenter/lecturer), students (player) or individuals entrusted with the payoff
+(administration mode) chose their corresponding user type, enter the password and log in.
 
 Institution
     Select the institution you named during your registration, typically your university.
