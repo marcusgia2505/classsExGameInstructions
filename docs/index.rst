@@ -60,7 +60,6 @@ Below you find a list of the last updates:
 
 .. toctree::
    :maxdepth: 10
-   :glob:
    :caption: classEx documentation
 
    010_Basics
