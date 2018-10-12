@@ -7,7 +7,7 @@ classEx provides users with a set of ready-made games that come with a classEx a
 Individual choice
 =================
 
-Individual choice means that the decisions of players are do not interfere with the decisions of other players. No strategic interaction with other players takes place. In the following, you can see a few examples of Individual choice games that can be implemented with classEx.
+Individual choice means that the decisions of participants are do not interfere with the decisions of other participants. No strategic interaction with other participants takes place. In the following, you can see a few examples of Individual choice games that can be implemented with classEx.
 
 Single Choice
 -------------
@@ -20,7 +20,7 @@ The easiest type of questions are Quiz Questions as they can be also in found in
     :alt:  300px
 
 Quiz questions, such as the one above, are the easiest type of application in classEx. The lecturer can set any number of options. These can be labelled randomly, e.g. as Option 1, Option 2, etc., but can also include short answers. Quiz questions are mostly built up in the way that only one answer can be selected (Single Choice) and one or more of them can be classified as correct. For presentation purposes the lecturer has the opportunity to highlight the correct answer in colour. This occurs by marking the relevant option in the Editing mode.
-Tip: Since most of the mobile devices have small screen sizes, not more than 4-5 briefly described options should be set.</div>
+Hint: Since most of the mobile devices have small screen sizes, not more than 4-5 briefly described options should be set.</div>
 
 Single Choice with Random Events
 --------------------------------
@@ -107,7 +107,7 @@ Opinion polls differ from quiz questions in the sense that you cannot classify o
     :alt:  300px
 
 An example for an opinion poll with multiple choice answers is the question of the effects on inflation, where more than one answer may be correct. You can implement such an opinion poll in classEx, by selecting “Check boxes (Multiple Choice)” in the Editing mode. None of the options should be marked as correct. Furthermore, you need to select “Multiple Choice” for the evaluation of results.
-Tip: You can easily change the order of answer options by drag & drop. Simply click onto the number of the option you would like to change and drag it to the new position.
+Hint: You can easily change the order of answer options by drag & drop. Simply click onto the number of the option you would like to change and drag it to the new position.
 
 Numeric Data
 ------------
@@ -198,7 +198,7 @@ The Tragedy of the Commons describes how a common good can be used excessively. 
 .. image:: _static/AllmendeFormula.JPG
     :alt:  100px
 
-You play a game with a duration of 5 years (rounds). For your payoff, the quantity of the punching of the cattle is multiplied by the quality and summed up over all five rounds. The amount will be disbursed in euros and assigned to a player randomly determined by a lottery ticket. In the figure below, the initial situation is shown. Over five rounds, the tragedy can be observed: A constant reduction of quality of the alpine meadow, causing damage to the group.
+You play a game with a duration of 5 years (rounds). For your payoff, the quantity of the punching of the cattle is multiplied by the quality and summed up over all five rounds. The amount will be disbursed in euros and assigned to a participant randomly determined by a lottery ticket. In the figure below, the initial situation is shown. Over five rounds, the tragedy can be observed: A constant reduction of quality of the alpine meadow, causing damage to the group.
 
 - Public Goods Game, Common-Pool Resource Game or Minimum-Effort Game
 
@@ -217,9 +217,9 @@ This sort of game entails standard Matrix Games.
 
 - Battle of the Sexes
 
-Strategic interaction games often entail two players who interact and play in different roles. In the easiest case, each player can choose between to options, so that the payoff can be displayed in a 2x2 matrix. This form of display is supported by classEx.
+Strategic interaction games often entail two participants who interact and play in different roles. In the easiest case, each participant can choose between to options, so that the payoff can be displayed in a 2x2 matrix. This form of display is supported by classEx.
 
-The battle of the sexes game is an example for a strategic interaction game with two roles. Two players would like to see each other again but each prefer a different place. They must decide simultaneously which option they choose. Player 1 has a higher payoff for option A, whereas player 2 to has a higher payoff for option B. However, if players do not coordinate on the same choice, both receive a payoff of zero because. Depending on the setting, one of the two options can emerge as point of coordination.
+The battle of the sexes game is an example for a strategic interaction game with two roles. Two participants would like to see each other again but each prefer a different place. They must decide simultaneously which option they choose. participant 1 has a higher payoff for option A, whereas participant 2 to has a higher payoff for option B. However, if participants do not coordinate on the same choice, both receive a payoff of zero because. Depending on the setting, one of the two options can emerge as point of coordination.
 
 - Chicken Game
 
@@ -230,14 +230,14 @@ The battle of the sexes game is an example for a strategic interaction game with
 .. image:: _static/Staghunt.PNG
     :alt:  300px
 
-Standard matrix games can be implemented in classEx. Like the famous `Stag-Hunt Game <https://en.wikipedia.org/wiki/Stag_hunt>`_. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
+Standard matrix games can be implemented in classEx. Like the famous `Stag-Hunt Game <https://en.wikipedia.org/wiki/Stag_hunt>`_. participants are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
 
 - Prisonners Dilemma
 
 .. image:: _static/Pd.PNG
     :alt:  300px
 
-Standard matrix games can be implemented in classEx. Like the famous `Prisoner's dilemma <https://en.wikipedia.org/wiki/Prisoner%27s_dilemma>`_. Players are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
+Standard matrix games can be implemented in classEx. Like the famous `Prisoner's dilemma <https://en.wikipedia.org/wiki/Prisoner%27s_dilemma>`_. participants are matched with a partner in the lecture room and have to decide. After all made their decisions, the game is closed and the result is displayed.
 
 - Coordination Game
 
@@ -253,14 +253,14 @@ Numeric
 
 - Dictator Game
 
-A dictator game can be easily implemented in classEx. Here, you will require a numeric input field. Player 1 receives an endowment and can then decide how much of this endowment to transfer to player 2. Player 2 is passive in this game and can make no decision.
+A dictator game can be easily implemented in classEx. Here, you will require a numeric input field. participant 1 receives an endowment and can then decide how much of this endowment to transfer to participant 2. participant 2 is passive in this game and can make no decision.
 
 - Ultimatum Game with MAO°
 
-In the ultimatiom game in the strategy method, both players make a decision simultaneously.
-Player 1 takes the role of the proposer and is endowed with a certain amount. He may then transfer all, some or none of this endowment to player 2.
-In the ultimatum game, player 2 then decides whether to accept or reject the proposed division of the pie. If player 2 rejects, both players receive a payoff of zero. When the ultimatum game is implemented in the strategy method, player 2 is presented with all possible divisions. She then decides which offers she would reject and which she would accept. At this point, player 2 is not yet informed about the actual decision of player 1.
-This strategy method is usually implemented to extract players' minimum acceptable offer (MAO).
+In the ultimatiom game in the strategy method, both participants make a decision simultaneously.
+participant 1 takes the role of the proposer and is endowed with a certain amount. He may then transfer all, some or none of this endowment to participant 2.
+In the ultimatum game, participant 2 then decides whether to accept or reject the proposed division of the pie. If participant 2 rejects, both participants receive a payoff of zero. When the ultimatum game is implemented in the strategy method, participant 2 is presented with all possible divisions. She then decides which offers she would reject and which she would accept. At this point, participant 2 is not yet informed about the actual decision of participant 1.
+This strategy method is usually implemented to extract participants' minimum acceptable offer (MAO).
 
 Sequential | 2 Roles
 --------------------
@@ -272,7 +272,7 @@ Discrete
 
 - Principal-Agent
 
-A sequential game consists of at least three stages. In the first stage, player 1 makes a decision. In the second stage, player 2 makes a decision. In the third stage, the results are displayed.
+A sequential game consists of at least three stages. In the first stage, participant 1 makes a decision. In the second stage, participant 2 makes a decision. In the third stage, the results are displayed.
 
 The pricipal agent game is an example for sequential games that can be implemented with classEx:
 
@@ -281,14 +281,14 @@ The level of effort chosen by the agent determines the revenue of the principal.
 a fixed wage without a share of the revenue, a share of the revenue without a fixed wage and a mixture of the two, labelled Bonus. The systems in which the agent receives a share of the revenue involve organisational costs. Therefore, following table results:
 
 ======================== =========== ========================== ========================== ============
-Renumeration system      Fixed wage  Share of revenue player 1  Share of revenue player 2  Revenue loss
+Renumeration system      Fixed wage  Share of revenue participant 1  Share of revenue participant 2  Revenue loss
 ======================== =========== ========================== ========================== ============
 Fixed wage system        3.20 €      100%                       0%                         0%
 Bonus system             1.60 €      60%                        25%                        15%
 Share of revenue system  0 €         20%                        50%                        50%
 ======================== =========== ========================== ========================== ============
 
-In the table, player 1 denotes the principal and player 2 the agent.
+In the table, participant 1 denotes the principal and participant 2 the agent.
 The agent then chooses his level of effort and consequently the revenue and his disutility from working denoted in €:
 
 ================ ============ ======= ======= ============ ================
@@ -302,11 +302,11 @@ This game shows that revenue losses are accepted and that systems allowing the a
 
 - Centipede Game
 
-Sequential games can be run over more than two rounds. A well-known example for this is the centipede game. In the centipede game, the sum of payoffs for both players increases over a finite and known number of rounds. First of all, player 1 makes a decision. In the next stage, player 2 does so. In each stage, participants choose between two options, either to **take**, which ends the game and ensures the payoff of that round, or to **pass** which delegates the decision to player 2 and increases the payoff.
+Sequential games can be run over more than two rounds. A well-known example for this is the centipede game. In the centipede game, the sum of payoffs for both participants increases over a finite and known number of rounds. First of all, participant 1 makes a decision. In the next stage, participant 2 does so. In each stage, participants choose between two options, either to **take**, which ends the game and ensures the payoff of that round, or to **pass** which delegates the decision to participant 2 and increases the payoff.
 
 **Implementation in classEx:**
 
-The game starts with a total payoff of 5€. In this stage, player 1 decides whether to **take** or **pass**. If he **takes**, receives 4€ and receives 1€. If he chooses to **pass** the total payoff increases to 10€ and now has to decide whether to **take** or **pass**. In this stage, has an advantage. **Take** renders a payoff of 8€ for and 2€ for. However, if **passes**, the total payoff increases to 20€. Now, has the choice again. He can either **take** and receive 16€, leaving 4€ for . Or, if he chooses to **pass**, the game ends with another increase of the total payoff to 40€, giving player 2 32€ and 8€. Two pairs are randomly drawn and receive a winners' notification with which they can collect their payoff. The lecturer is provided with a graphical illustration of how often the game was terminated with the choice of **take** in the respective stages.
+The game starts with a total payoff of 5€. In this stage, participant 1 decides whether to **take** or **pass**. If he **takes**, receives 4€ and receives 1€. If he chooses to **pass** the total payoff increases to 10€ and now has to decide whether to **take** or **pass**. In this stage, has an advantage. **Take** renders a payoff of 8€ for and 2€ for. However, if **passes**, the total payoff increases to 20€. Now, has the choice again. He can either **take** and receive 16€, leaving 4€ for . Or, if he chooses to **pass**, the game ends with another increase of the total payoff to 40€, giving participant 2 32€ and 8€. Two pairs are randomly drawn and receive a winners' notification with which they can collect their payoff. The lecturer is provided with a graphical illustration of how often the game was terminated with the choice of **take** in the respective stages.
 
 Numeric
 ~~~~~~~
@@ -315,7 +315,7 @@ Numeric
 
 - Trust Game
 
-In the trust game, player 1 (trustor) can can decide whether to transfer none, some or all of her endowment to player 2 (trustee). Transferring the entire endowment is socially optimal because the transferred amount is multiplied by the experimentor. Player 2 can then decide whether to transfer none, some or all of his endowment back to player 1. Therefore, transferring is only worthwile for the trustor, if the trustee repays the trust and transfers back at least the sent amount.
+In the trust game, participant 1 (trustor) can can decide whether to transfer none, some or all of her endowment to participant 2 (trustee). Transferring the entire endowment is socially optimal because the transferred amount is multiplied by the experimentor. participant 2 can then decide whether to transfer none, some or all of his endowment back to participant 1. Therefore, transferring is only worthwile for the trustor, if the trustee repays the trust and transfers back at least the sent amount.
 
 .. image:: _static/Trustred.JPG
     :alt:  200px
@@ -329,17 +329,17 @@ The input for participants can be implemented by defining the variables:
 
     $max=10; $endow=10; and $multi=3;
 
-Here, the endowment equals 10, the maximum transfer by the trustor equals 10 and the multiplier equals 3. The input decision of player 1 is stored by the variable $send;. In the second stage, you need to write following code in a programme field:
+Here, the endowment equals 10, the maximum transfer by the trustor equals 10 and the multiplier equals 3. The input decision of participant 1 is stored by the variable $send;. In the second stage, you need to write following code in a programme field:
 
     $send=$getPartnerDecision("692#1"); $max=$endow+$send*$multi;
 
-Make sure that you make reference to the correct stage and the correct input field. In this example, the code refers to stage number 692 and input field number 1. The following input by player 2 is stored as variable $sendback. Hence, the amount sent back can be calculated by:
+Make sure that you make reference to the correct stage and the correct input field. In this example, the code refers to stage number 692 and input field number 1. The following input by participant 2 is stored as variable $sendback. Hence, the amount sent back can be calculated by:
 
     $received=$getPartnerDecision("693#1"); $payoff=$endow-$send+$received;
 
 With this, you can write the following in the text field that is displayed to the trustor:
 
-Of your endow; €, you sent $send; € to player 2. This amount was trippled. Player 2 sent back $received; € to you."
+Of your endow; €, you sent $send; € to participant 2. This amount was trippled. participant 2 sent back $received; € to you."
 
 **Display of results**
 
@@ -350,14 +350,14 @@ The results are displayed as a bubble chart on the lecturer's screen:
 
 - Ultimatum Game
 
-In the ultimatum game, player 1 takes the role of the proposer and is endowed with a certain amount. He may then transfer all, some or none of this endowment to player 2.
-In the next stage, player 2 then decides whether to accept or reject the proposed division of the pie. If player 2 rejects, both players receive a payoff of zero.
+In the ultimatum game, participant 1 takes the role of the proposer and is endowed with a certain amount. He may then transfer all, some or none of this endowment to participant 2.
+In the next stage, participant 2 then decides whether to accept or reject the proposed division of the pie. If participant 2 rejects, both participants receive a payoff of zero.
 
 - Alternating Offer Bargaining
 
 In contrast to the centipede game, the total pie shrinks over time in the alternating offer bargaining game. Also, input is numeric.
 
-The game starts with a pie of, for example, 20€. In stage 1 player 1 makes a suggestion on how to divide the pie between both players. In stage 2, player 2 can decide whether to accept the division or not. If player 2 does not accept the division, the pie shrinks to 16€ and player 2 is then required to make a suggestion on how to divide the remaining pie. In stage 3, player 1 then decides whether to accept or reject the division and, in case of a rejection, makes a new suggestion on how to divide the pie which has now shrunk to 12€. In stage 4, player 2 can decide and if she rejects, the pie shrinks to 8€. She then makes a new suggestion on how to divide this pie. In stage 5, player 1 decides and if he rejects the proposed division, he can make a final suggestion on how to divide the pie which has now shrunk to 4€. If player 2 rejects this final suggestion, both players end up with a payoff of 0€. Two pairs of players are randomly drawn and receive a winner's notification and a real payoff.
+The game starts with a pie of, for example, 20€. In stage 1 participant 1 makes a suggestion on how to divide the pie between both participants. In stage 2, participant 2 can decide whether to accept the division or not. If participant 2 does not accept the division, the pie shrinks to 16€ and participant 2 is then required to make a suggestion on how to divide the remaining pie. In stage 3, participant 1 then decides whether to accept or reject the division and, in case of a rejection, makes a new suggestion on how to divide the pie which has now shrunk to 12€. In stage 4, participant 2 can decide and if she rejects, the pie shrinks to 8€. She then makes a new suggestion on how to divide this pie. In stage 5, participant 1 decides and if he rejects the proposed division, he can make a final suggestion on how to divide the pie which has now shrunk to 4€. If participant 2 rejects this final suggestion, both participants end up with a payoff of 0€. Two pairs of participants are randomly drawn and receive a winner's notification and a real payoff.
 
 A bubble chart allows lecturer to gain an overview of how high the offers were in the respective stages and to compare the results with theoretic values that would result via backwards induction presuming income maximising behaviour.
 
@@ -372,7 +372,7 @@ Continuous games are not yet implemented in classEx. This will be done in the ne
 Continuous games are games in which the sequence of decisions is not determined. Participants are allocated to different roles and matched into pairs. However, there are no rules as to who may make an offer in which stage. In contrast to Alternating Offer Bargaining, bargaining is unstructured here. Both participants can make offers at all times. Participants can always accept an offer or make a different offer.
 
 A buyer is willing to pay a certain amount for a good, ranging between 0€ and 100€. The number is determined randomly and is only known to the buyer but not the seller. The seller faces costs for the production of the good which also lie between 0€ and 100€, are determined randomly and are only known to the seller.
-Buyers and sellers are matched to one another randomly. The buyer can make an offer to buy the good for a price that must not be above his willingness to pay. At the same time, the seller can make an offer that cannot be lower than his production costs. If an offer is accepted, the game ends. An offer is updated by issuing a new offer. If players have not reached an agreement after two minutes, the game ends and both receive 0€. In case of an agreement, the buyer receives the difference between his willingness to pay and the price. The seller, analogously, receives the difference between his production costs and the price.
+Buyers and sellers are matched to one another randomly. The buyer can make an offer to buy the good for a price that must not be above his willingness to pay. At the same time, the seller can make an offer that cannot be lower than his production costs. If an offer is accepted, the game ends. An offer is updated by issuing a new offer. If participants have not reached an agreement after two minutes, the game ends and both receive 0€. In case of an agreement, the buyer receives the difference between his willingness to pay and the price. The seller, analogously, receives the difference between his production costs and the price.
 
 The lecturer is provided with graphical results in a scatter plot. The abscissa depicts the buyer's willingness to pay and the ordinate displays the costs of the sellers. An **x** indicates that an agreement was reached. An **o** shows that no agreement was reached. Here, one can see efficiency losses that result from strategic offers.
 

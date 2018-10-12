@@ -2,13 +2,16 @@
 Elements
 =====================
 
+Elements for lecturers and participants
+=======================================
+
 Text Box
 ~~~~~~~~~
 
 .. image:: _static/Textbox.JPG
     :alt:  300px
 
-The text box is the simplest element. The entered text will be displayed to the players.
+The text box is the simplest element. The entered text will be displayed to the participants.
 The text box is equipped with a text editor which allows you to insert tables, symbols etc. If you double-click into the text element, you see the text as it will be displayed to participants.
 
 - Special Characters
@@ -17,8 +20,8 @@ The text box is equipped with a text editor which allows you to insert tables, s
 Special     Characters     Function Example
 =========== ============== ===============
 $$          Multilanguage  Support If you want to provide German and English support, you can write both texts in the same textbox and seperate them by "$$". E.g. "Das ist Deutsch$$This is English" displays the German text if the selected language is German and English if it is English.
-role1.png   Symbol Role 1  Red player symbol |role1| is displayed.
-role2.png   Symbol Role 2  Green player symbol |role2| is displayed.
+role1.png   Symbol Role 1  Red participant symbol |role1| is displayed.
+role2.png   Symbol Role 2  Green participant symbol |role2| is displayed.
 $variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see element [[Program Code|Program]]), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
 =========== ============== ===============
 
@@ -55,7 +58,7 @@ Program code
 
 Program snippets can be implemented to calculate results for each subjects. For further information see Program code.
 
-Input element (only for players)
+Input element (only for participants)
 ~~~~~~~~~~~~~
 
 In this element you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on “add new input field”. The input fields are displayed one after each other.
@@ -82,7 +85,7 @@ In addition, a unit (e.g. %, €, mm, …) can be specified that will be display
 
 "Output only" can be used, if an input field shall only display output. This can be necessary for calculations. For example, if participants are required to allocate different parts of income to different purposes, an "Output only" field can be used to display how much income is still left after filling in the input fields.
 
-	Tip: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
+	Hint: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
 
 - Text Input
 
@@ -135,7 +138,7 @@ Filled in input field
 
 Up to date, small programmes for manipulating the input (e.g. input in field 1 determines input in field 2) cannot yet be configurated in the backend.
 
-Winner's Notification (only for players)
+Winner's Notification (only for participants)
 ~~~~~~~~~~~~~~~~~~~~~
 
 If a game is played with real payoffs, this element displays the payoff code to participants. (only works together with winners' draw) 
@@ -143,21 +146,21 @@ If a game is played with real payoffs, this element displays the payoff code to 
 .. image:: _static/Winner.PNG
     :alt:  300p
 
-A winning notification is necessary for games with monetary payoff. The players who are randomly drawn receive a winning notification as well as a code to cash in their earnings. You can adapt the message that is displayed in the winning notification. The amount of earnings can be determined in the field “Payoff(variable) in €”. Besides a fix amount, you can also enter a variable that is calculated beforehand. If, for example, the variable “$payoff;” is calculated in a programme during the game, you can enter this variable in the earnings field.
+A winning notification is necessary for games with monetary payoff. The participants who are randomly drawn receive a winning notification as well as a code to cash in their earnings. You can adapt the message that is displayed in the winning notification. The amount of earnings can be determined in the field “Payoff(variable) in €”. Besides a fix amount, you can also enter a variable that is calculated beforehand. If, for example, the variable “$payoff;” is calculated in a programme during the game, you can enter this variable in the earnings field.
 
-	Tip: The winning notification can only be displayed if you also define a [[Winners'_Draw|winner's draw]] on the lecturer side. Otherwise no winner can be determined.
+	Hint: The winning notification can only be displayed if you also define a [[Winners'_Draw|winner's draw]] on the lecturer side. Otherwise no winner can be determined.
 
 Clicking on the little info circles above the boxes will show you what will be displayed if you leave the boxes blank.
 
 	Important: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. $maxWin=1000;).
 
-Payoff Matrix Game (only for players)
+Payoff Matrix Game (only for participants)
 ~~~~~~~~~~~~~~~~~~
 
 .. image:: _static/Matrixpay.JPG
     :alt:  300p
 
-This element helps display the payoff for a two role game easily with a matrix. Alternatively, you can also do this through a program. In this element, you need to specify which input field contains the decision of the respective player for the row player and for the column player. The labels of the matrix are determined by the specified input fields. In the table, you enter the payoff for the row player first followed by the payoff for the column player. The payoff is stored as variable $payoff; which can then be used for the winning notification or further calculations.
+This element helps display the payoff for a two role game easily with a matrix. Alternatively, you can also do this through a program. In this element, you need to specify which input field contains the decision of the respective participant for the row participant and for the column participant. The labels of the matrix are determined by the specified input fields. In the table, you enter the payoff for the row participant first followed by the payoff for the column participant. The payoff is stored as variable $payoff; which can then be used for the winning notification or further calculations.
 
 Contract
 
@@ -205,7 +208,7 @@ products
 
 The contracts made can be shown at the lecturer's screen with the contract table. In addition, there are special functions in globals and subjects programs to retrieve contracts. All contracts are also stored in the standard excel file which can be retrieved in the data menu. 
 
-Camera (only for players)
+Camera (only for participants)
 ~~~~~~~~
 
 .. image:: _static/Camera1.PNG
@@ -237,7 +240,7 @@ At the lecturer screen
 From the stored data
 	In the downloaded data you find stored images in the subjects table. They can are base64 decoded and can be encoded with free online tools. Just take away "data:image/jpeg;base64," from the string, so that it starts e.g. with "/9j/....".
 
-Javascript (only for players)
+Javascript (only for participants)
 ~~~~~~~~~~
 
 - Reading php variables
@@ -315,13 +318,13 @@ Winner's Draw  (only for lecturers)
 .. image:: _static/Draw.JPG
     :alt:  300p
 
-This element should be implemented in the last stage and draws a winner from among all participants. The earnings should be calculated individually on the participant side (see [[Winner's_Notification|winning notification]] for participants). You can determine whether single players or coupled players shall be drawn. Drawing coupled players only makes sense if you have defined roles. You can also decide how many winners you want to draw.
+This element should be implemented in the last stage and draws a winner from among all participants. The earnings should be calculated individually on the participant side (see [[Winner's_Notification|winning notification]] for participants). You can determine whether single participants or coupled participants shall be drawn. Drawing coupled participants only makes sense if you have defined roles. You can also decide how many winners you want to draw.
 
  Important: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. $maxWin=1000;).
 
-	Tip: For games with two roles it is advisable to draw coupled players as winners because the possibility that only one of the two players could be drawn might overshadow considerations of fairness or reciprocity. Experience has shown that earnings of less than 5€ are usually not cashed in. Therefore, games should be calibrated in a way that ensures that earnings are at least 10€.
+	Hint: For games with two roles it is advisable to draw coupled participants as winners because the possibility that only one of the two participants could be drawn might overshadow considerations of fairness or reciprocity. Experience has shown that earnings of less than 5€ are usually not cashed in. Therefore, games should be calibrated in a way that ensures that earnings are at least 10€.
 
-**Important: Winners are only drawn from players who made a decision to avoid inactive players to be drawn. Therefore it does not make any sense to put the winners' draw in the first stage.**
+**Important: Winners are only drawn from participants who made a decision to avoid inactive participants to be drawn. Therefore it does not make any sense to put the winners' draw in the first stage.**
 
 You should draw winners only once in a game as the payoffs codes do not distinguish between rounds.
 
@@ -333,7 +336,7 @@ Lecturer Discrete Choice
 
 - Usage
 
-With this element the lecturer/experimenter can make decisions for all players during the game, e.g. tossing a coin in front of the class and entering the value in classEx so that payoffs can be calculated based on the coin toss.
+With this element the lecturer/experimenter can make decisions for all participants during the game, e.g. tossing a coin in front of the class and entering the value in classEx so that payoffs can be calculated based on the coin toss.
 
 - Settings
 
@@ -343,8 +346,8 @@ name
 variable name
 	The value will be saved under this name as a global variable and can be retrieved by that name.
 
-for each player
-	If you switch this on, you can set the value for each player separatly. The value will be stored as a global variable in an array with the player ID as index.
+for each participant
+	If you switch this on, you can set the value for each participant separatly. The value will be stored as a global variable in an array with the participant ID as index.
 
 default
 	You can set a default.
@@ -353,7 +356,7 @@ options
 	You can specify options with different values.
 
 update
-	If you switch on the update, the element will check every two second if new players arrived (only necessary when you switched on "for each player").
+	If you switch on the update, the element will check every two second if new participants arrived (only necessary when you switched on "for each participant").
 
 Contract table
 ~~~~~~~~~~~~~~~~~
@@ -396,7 +399,7 @@ Predicition
 - Settings
 
 value array
-	gives the name of a (pre-filled) array which contains the role of the player as index and the respective buyer or seller value as value. This is shown in the table as buyer/seller value. 
+	gives the name of a (pre-filled) array which contains the role of the participant as index and the respective buyer or seller value as value. This is shown in the table as buyer/seller value.
 
 label
 	all labels in the table can be changed according to needs (seller/buyer/seller value/buyer value/price).
@@ -471,7 +474,7 @@ Count
 	Participants are counted all together or per treatment / role. This can be changed in drop down menu at the bottom.
 
 
-	Tip: All values that are larger than the displayed maximum value are automatically pooled into the last bin.</div>
+	Hint: All values that are larger than the displayed maximum value are automatically pooled into the last bin.</div>
 
 - Results Line Chart
 
@@ -543,7 +546,7 @@ If a game is played with two different roles, the results can be displayed as a 
 
 If you have several rounds, the matrix calculates the results overall rounds. If you want to show temporal structures (e.g. learning), please use the time line diagram.
 
-	Tip: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a program).
+	Hint: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a program).
 
 - Other result elements
 

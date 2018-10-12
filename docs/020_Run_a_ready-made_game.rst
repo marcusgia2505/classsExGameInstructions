@@ -13,11 +13,11 @@ Every student who wants to participate in a session needs a mobile device (e.g. 
 
 - Lecturer device
 
-The lecturer conducting a session needs a device (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all players (e.g. via a classroom projector).
+The lecturer conducting a session needs a device (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all participants (e.g. via a classroom projector).
 
 - Data volume
 
-classEx only requires a small amount of data volume. When using classEx as a player for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. 
+classEx only requires a small amount of data volume. When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB.
 
 Practical tips
 ==============
@@ -100,16 +100,16 @@ Lecturers can either copy the QR-Code and print it on flyers, for example, or di
 
 - Personalised login with ticket
 
-You can provide players with a personalised ticket to log-in to classEx. This way you can ensure that players only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the player data and can be retrieved as $tic; in the game. 
+You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved as $tic; in the game.
 
-- Add/login test player
+- Add/login test participant
 
-As lecturer you can run a game with fictional test players. To add a test player click on the button in the lecture submode menu:
+As lecturer you can run a game with fictional test participants. To add a test participant click on the button in the lecture submode menu:
 
-.. image:: _static/Addplayer.PNG
+.. image:: _static/Addparticipant.PNG
     :alt:  300px
 
-For every added test pa new tab in your browser will open. The tab for a test player replicates the fully functional interface for a real player. This enable you to make test runs which is especially useful when you develope your own games.
+For every added test pa new tab in your browser will open. The tab for a test participant replicates the fully functional interface for a real participant. This enable you to make test runs which is especially useful when you develope your own games.
 
 - Logout
 
@@ -136,7 +136,7 @@ You can change the parameters of a game by clicking on *parameters*. For example
 
 - Start a Game
 
-During a lecture, the interaction between the lecturer and the players takes place in the lecture mode. The lecturer’s browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode. The lecturer can start this game or select a different one.
+During a lecture, the interaction between the lecturer and the participants takes place in the lecture mode. The lecturer’s browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode. The lecturer can start this game or select a different one.
 
 The lecturer can select a new game by choosing it from the drop down list. The drop down list shows all available games. A selected game can be started by pressing:
 
@@ -145,9 +145,9 @@ The lecturer can select a new game by choosing it from the drop down list. The d
 
 By pressing start, the lecturer initiates the first stage of the game. If a game consists of several stages, the start button for the next stage appears after pressing the start button for the first stage.
 
-The counter over the start button shows how many participants are currently logged in. There is no minimum number of players required to start a game.
+The counter over the start button shows how many participants are currently logged in. There is no minimum number of participants required to start a game.
 
-If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of players is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no players are excluded from the game.
+If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of participants is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no participants are excluded from the game.
 
 - During the Game
 
@@ -158,7 +158,7 @@ During the course of a stage, a display shows how many participants are logged i
 
 Here, 3 participants are logged in and 1 has already made their decision.
 
-    Tip: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
+    Hint: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
 
 - End the Game
 
@@ -169,10 +169,10 @@ When the participants have made their decisions, the lecturer can end the game b
 
 If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button. 
 
-Players interface
+participants interface
 =================
 
-The players interface should be self-explanatory. The most common actions players are asked to carry out are binary decisions and numeric decisions.
+The participants interface should be self-explanatory. The most common actions participants are asked to carry out are binary decisions and numeric decisions.
 
 - Binary Decisions
 
@@ -197,7 +197,7 @@ There are other input types such as radio buttons or sliders which are explained
 Simple quiz question
 --------------------
 
-Two player game
+Two participant game
 ---------------
 
 Trading game
@@ -237,6 +237,6 @@ Via the button "previous results" in the lecture submode menu you can also acces
 
 For the different result graphs see Result elements in Elements. 
 
-Dealing with problems (logout, playerNr)
+Dealing with problems (logout, participantNr)
 ===============================================
 

@@ -54,7 +54,7 @@ Variable Name  Value
 ============== =========
 $lang          Actual Language (0: German, 1: English, 2: Spanish)
 $round         Current Round
-$id            Player ID (unique in all games, decisions are stored with the playerid)
+$id            participant ID (unique in all games, decisions are stored with the participantid)
 $subject       Subject ID (unique in game, starts from 1,...)
 $role          Role ID (if set)
 $treatment     Treatment ID (if set)
@@ -80,7 +80,7 @@ includingOwn = false
 	for averages, sums and frequencies, you can decide whether you want to include the own value or not. The default is set to *false* which means that values are calculated over all other subjects, excluding the own value. If you want to include the own value, you need to enter *true* in the function
 
 $partnerRole = null
-	if you only have two players in a group, the other player is automatically the partner. However, you can specify which partner is meant if you have more than two players in one group. To specify a player, just write the role number in the expression.
+	if you only have two participants in a group, the other participant is automatically the partner. However, you can specify which partner is meant if you have more than two participants in one group. To specify a participant, just write the role number in the expression.
 
 $no_decision = null
 	this means that the default is set that if the partner has not made a decision and you try to access it, the function gives you null.
@@ -159,12 +159,12 @@ $getVarSum('varname',round=currentRound);                Sum of a variable (also
 $getMin('varname',round=currentRound);                   Minimum of a variable (also available getMinPerGroup, getMinPerTreatment, getMinPerRole)                                               Minimum as number, 0 otherwise
 $getMax('varname',round=currentRound);                   Maximum of a variable (also available getMaxPerGroup, getMaxPerTreatment, getMaxPerRole)                                               Maximum as number, 0 otherwise
 $getFreq('varname',round=currentRound, multiple=false);  Frequency of a variable value (if multiple is set to true, answers from multiple choice questions are decomposed into single answers)  Array with the variable value as index
-$getValues('varname',round=currentRound);                Single values for each player                                                                                                          Array with the player number as index and the corresponding value
-$getRoles();                                             Role for each player                                                                                                                   Array with the player number as index and the corresponding role
-$getTreatments();                                        Treatment for each player                                                                                                              Array with the player number as index and the corresponding treatment
-$getNumRoles();                                          Number of roles                                                                                                                        Array with role as index and the number of players who have this role
-$getNumPlayer();                                         Number of players                                                                                                                      Number
-$getSubjectIDs();                                        Get Corresponding Subject IDs to player IDs                                                                                            Array with player ID as index and subject ID as value
+$getValues('varname',round=currentRound);                Single values for each participant                                                                                                          Array with the participant number as index and the corresponding value
+$getRoles();                                             Role for each participant                                                                                                                   Array with the participant number as index and the corresponding role
+$getTreatments();                                        Treatment for each participant                                                                                                              Array with the participant number as index and the corresponding treatment
+$getNumRoles();                                          Number of roles                                                                                                                        Array with role as index and the number of participants who have this role
+$getNumPlayer();                                         Number of participants                                                                                                                      Number
+$getSubjectIDs();                                        Get Corresponding Subject IDs to participant IDs                                                                                            Array with participant ID as index and subject ID as value
 $getNumDecisions('varname',round=currentRound);          Number of decisions made                                                                                                               Number
 $getNumDecisionsPerGroup('varname',round=currentRound);  Number of decisions made                                                                                                               Array with Group Number as an index
 ======================================================== ====================================================================================================================================== ====================
@@ -183,14 +183,14 @@ Functions
 Test a game
 -----------
 
-Before playing a game in your lecture, you can test the game. To do so switch to the lecture mode and select your game. Selecting your game is not necessary if it is the active game in the lecture mode already. Next, open as many test player as you need for testing your game by clicking on the *add test player* icon. 
+Before playing a game in your lecture, you can test the game. To do so switch to the lecture mode and select your game. Selecting your game is not necessary if it is the active game in the lecture mode already. Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon.
 
-.. image:: _static/Addplayer.PNG
+.. image:: _static/Addparticipant.PNG
     :alt:  300p
 
 This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, which enables you to also test interaction between participants in games with several roles.
 
-Then start your game. You can perform the interaction required in the browser tabs for each player.
+Then start your game. You can perform the interaction required in the browser tabs for each participant.
 
 If something is not working or an error occurs you can use the diagnosis mode for error spotting.
 
@@ -207,5 +207,5 @@ Clicking on the symbol opens up a space beside the usual display on the lecturer
 .. image:: _static/Diagnosis.PNG
     :alt:  300p
 
-The different tabs allow you to access the globals or the variables for each player. This makes it much programming and error finding much easier than having to jump back and forth between the lecture mode and the editing mode.
+The different tabs allow you to access the globals or the variables for each participant. This makes it much programming and error finding much easier than having to jump back and forth between the lecture mode and the editing mode.
 
