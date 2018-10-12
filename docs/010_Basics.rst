@@ -51,8 +51,6 @@ Password
 Essentials for lecturers
 =========================
 
-.. only:: html
-
 .. raw:: html
 
     <div style="text-align: center; margin-bottom: 2em;">
@@ -61,7 +59,7 @@ Essentials for lecturers
 
 .. raw:: latex
 
-    You can find a short video on how to use classEx on https://www.youtube.com/embed/Zm0DpUzhOGg
+    You can find a short video on how to use classEx on \url{https://www.youtube.com/embed/Zm0DpUzhOGg}.
 
 
 Entering classEx as a lecturer offers three modes: overview mode, lecture mode and editing mode. After login, the screen shows the overview mode. Here you can organize your games and access all important features of classEx. In the lecture mode you can run games, in the Editing mode you can develop your own games.
