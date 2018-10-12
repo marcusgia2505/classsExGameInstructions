@@ -22,7 +22,7 @@ About this documentation
 ========================
 
 This documentation is written for lecturers and experimenters who want to use classEx for conducting games
-in the classroom or in the field. **Participants do not need to read this documentation.**.
+in the classroom or in the field. In the following, we will talk about lecturers as the one running the game. All information hold true for as experimenters as well. **Participants do not need to read this documentation.**. Participants are informed by the lecturer on how to login.
 
 The chapter "Basics" explains the first steps for new classEx users.
 
