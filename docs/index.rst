@@ -30,6 +30,8 @@ In the chapter "Run ready-made games" you find a step-by-step guide how to run r
 
 The  chapter "Organize games" tells you how to structure your games in your account and how to find games from other users.
 
+The chapter "Tutorial: Develop a simple game" shows a step-by-step introduction for how to develop an ultimatum game.
+
 The chapter "Develop your own games" is a manual for users who want to develop their own games.
 
 The chapter "Elements" provides an overview of all elements which can be used to develop own games.
@@ -59,11 +61,12 @@ Below you find a list of the last updates:
 .. toctree::
    :maxdepth: 10
    :glob:
-   :caption: User Documentation
+   :caption: classEx documentation
 
    010_Basics
    020_Run_a_ready-made_game
    030_Organize_games
+   039_Tutorial
    040_Develop_your_own_games
    042_elements
    043_programming

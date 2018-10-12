@@ -1,6 +1,6 @@
-==========================
-Programs and PHP functions
-==========================
+===========
+Programming
+===========
 
 Programs are a very useful to design dynamic games. Programs are elements of stages and therefore created like any other element (see `Adding elements`_).
 
