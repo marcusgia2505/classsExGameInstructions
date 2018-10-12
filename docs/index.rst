@@ -14,12 +14,10 @@ Welcome to the documentation of classEx. In this documentation you can find all 
 
 
 What is classEx?
-================
 
 classEx is an online tool to run interactive experiments and surveys. It is directed both towards usage in classroom and lectures as well as for running in experiments with a group of people located in one place (cinema, public viewing event,...). Participants log in with their mobile device (smartphone or notebook) and can participate interactively in the lecture. They only need a standard browser and an internet connection. Results are shown instantly on the presentation screen of the lecturer with intuitive graphs. Quizzes and spontaneous tests can be integrated into lectures or presentations of all academic disciplines. classEx can be used in political science to simulate polls or elections, psychologists can test the effect of roles and scenarios and economists can assess the strategic interaction in markets and the whole of behavioral economics.
 
 About this documentation
-========================
 
 This documentation is written for lecturers and experimenters who want to use classEx for conducting games
 in the classroom or in the field. In the following, we will talk about lecturers as the one running the game. All information hold true for as experimenters as well. **Participants do not need to read this documentation.** Participants are informed by the lecturer on how to login.
@@ -39,7 +37,6 @@ The chapter "Elements" provides an overview of all elements which can be used to
 The chapter "Programming" provides a list of variables and functions for advanced programmers.
 
 Version and new features
-========================
 
 classEx can be used free of charge for academic and non-academic purposes. Read more in the `terms of use`_. It is provided free of any warranty. classEx is constantly being improved. Users are being added and are delivering results to existing experiments. Further experiments are being designed and made available. Likewise, the functionality is continuously being revised and updated. If you have any questions, support issues or want to report bugs, please mail to classEx@uni-passau.de.
 
