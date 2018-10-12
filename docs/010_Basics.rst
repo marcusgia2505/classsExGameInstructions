@@ -140,11 +140,11 @@ Participant
 Session
     A session is a sequence of games in a lecture, meeting or presentation. participants should not shut their browser during a session.
     
-    Hint: After the end of a session, you can use statistical tests to analyse whether there is a relationship between the different games of a session. For example, you can examine whether participants with higher mathematical abilities are more risk averse. For this purpose, participants' ID-numbers are stored in an Excel sheet.
+    .. note::  After the end of a session, you can use statistical tests to analyse whether there is a relationship between the different games of a session. For example, you can examine whether participants with higher mathematical abilities are more risk averse. For this purpose, participants' ID-numbers are stored in an Excel sheet.
 
 Game
     Games consist of a sequence of stages. A game is typically characterised by a joint evaluation of the decisions and results at the end.
-    Hint: If you want to conduct a quiz consisting of several questions with unrelated results, it is advisable to create a separate game for each question.
+    .. note:: If you want to conduct a quiz consisting of several questions with unrelated results, it is advisable to create a separate game for each question.
 
 Stage
     Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Stages can be configured with several options. You can find more information here.
