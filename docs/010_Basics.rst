@@ -57,7 +57,7 @@ Essentials for lecturers
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/Zm0DpUzhOGg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
-Entering classEx as a lecturer offers three modes: Overview mode, Lecture mode and Editing mode. After login, the screen shows the Overview mode. Here you can organize your games and access all important features of classEx. In the Lecture mode you can run games, in the Editing mode you can develop your own games.
+Entering classEx as a lecturer offers three modes: overview mode, lecture mode and editing mode. After login, the screen shows the overview mode. Here you can organize your games and access all important features of classEx. In the lecture mode you can run games, in the Editing mode you can develop your own games.
 
 .. image:: _static/Overview.PNG
     :alt:  300px
@@ -67,17 +67,17 @@ Navigation bar
 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
     
-The currently active mode is marked by a darker shade around its symbol, here the **Overview mode**. The left symbol takes you to the **Lecture mode**. The right symbol takes you to the **Editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your course.
+The currently active mode is marked by a darker shade around its symbol, here the **overview mode**. The left symbol takes you to the **lecture mode**. The right symbol takes you to the **editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your course.
 
 Top bar
 -------
 
 The top bar is located in the top left corner. It is different in each mode.
 
-Top bar - Overview mode
+Top bar - overview mode
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-You can see the top bar for the **Overview mode** in the picture above. It offers folowing funcionality:
+You can see the top bar for the **overview mode** in the picture above. It offers folowing funcionality:
 
 new folders
     Create new folders to organize your games
@@ -88,10 +88,10 @@ new games
 repository
     The repository which provides access to previous results from your private games or from public games conducted by you or other classEx lecturers
     
-Top bar - Lecture mode
+Top bar - lecture mode
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The top bar of the **Lecture mode** looks like this:
+The top bar of the **lecture mode** looks like this:
 
 .. image:: _static/MenuLecture.PNG
     :alt:  150px
@@ -111,12 +111,12 @@ Diagnosis mode
     In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier.
 
 data
-    Via the dropdown menu data you can access an overview over participants who are currently taking part in your game or who took part in the game of which the results are on display. The overview shows the number of participating participants and which decision stage they are at. You can show this overiew on the screen via **show data**. Clicking on "back to Lecture mode" takes you back to the current game. You can also download the results via **download as excel file**. The excel files contain the decisions made in the game you just played or, if available, old results of the same game. You can also download excel files containing an overview of types, treatments & groups that existed in this game as well as participants’ IDs and their log-in time.
+    Via the dropdown menu data you can access an overview over participants who are currently taking part in your game or who took part in the game of which the results are on display. The overview shows the number of participating participants and which decision stage they are at. You can show this overiew on the screen via **show data**. Clicking on "back to lecture mode" takes you back to the current game. You can also download the results via **download as excel file**. The excel files contain the decisions made in the game you just played or, if available, old results of the same game. You can also download excel files containing an overview of types, treatments & groups that existed in this game as well as participants’ IDs and their log-in time.
 
 previous results
     You can access previous results via the previous results dropdown menu. Simply choose which results from previous lectures you want to display. This way you can directly compare current outcomes with previous ones. 
 
-Top bar - Lecture mode
+Top bar - lecture mode
 ~~~~~~~~~~~~~~~~~~~~~~
 
 See `Develope your own games <https://classex-doc.readthedocs.io/en/latest/040_Develop_your_own_games.html>`_.
@@ -180,7 +180,7 @@ Global and subjects variables
     Global variables are variables on the game level. They have the same value for all participants (e.g. an exchange rate). Subjects variables are variables on the subject level. The value of a subject variable is calculated separately for every participant (e.g. individual payoff).
 
 Parameters
-    Parameters are global variables that are adjustable before running a game (e.g. the endowment). Parameters can be changed directly in the Lecture mode. They have the same value for all participants.
+    Parameters are global variables that are adjustable before running a game (e.g. the endowment). Parameters can be changed directly in the lecture mode. They have the same value for all participants.
 
 Global and subject program code elements
     Many games require calculations or algorithms. These are created in program code elements. The programming language used in these elements is PHP. Global program code is utilized for calculations on the game level. Subject program code is utilized for calculations on the subject level (for every participant).

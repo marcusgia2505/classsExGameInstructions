@@ -19,7 +19,7 @@ The easiest type of questions are Quiz Questions as they can be also in found in
 .. image:: _static/Quiz.PNG
     :alt:  300px
 
-Quiz questions, such as the one above, are the easiest type of application in classEx. The lecturer can set any number of options. These can be labelled randomly, e.g. as Option 1, Option 2, etc., but can also include short answers. Quiz questions are mostly built up in the way that only one answer can be selected (Single Choice) and one or more of them can be classified as correct. For presentation purposes the lecturer has the opportunity to highlight the correct answer in colour. This occurs by marking the relevant option in the Editing mode.
+Quiz questions, such as the one above, are the easiest type of application in classEx. The lecturer can set any number of options. These can be labelled randomly, e.g. as Option 1, Option 2, etc., but can also include short answers. Quiz questions are mostly built up in the way that only one answer can be selected (Single Choice) and one or more of them can be classified as correct. For presentation purposes the lecturer has the opportunity to highlight the correct answer in colour. This occurs by marking the relevant option in the editing mode.
 Hint: Since most of the mobile devices have small screen sizes, not more than 4-5 briefly described options should be set.</div>
 
 Single Choice with Random Events
@@ -87,7 +87,7 @@ A different application of treatments can be found in experimental ethics. Here,
 .. image:: _static/Nudge.PNG
     :alt:  300px
 
-A different example concerns the influence of a default on human behaviour. This is discussed thoroughly in Thaler and Sunstein’s book Nudge (2009). A nudge is a small push that directs participants to one decision or another. [[wikipedia:Nudge|Nudges]] can often be found when filling in surveys or questionnaires if one option is marked as default. Marking another option then requires an explicit decision. This can be illustrated by an experiment in which participants are asked whether or not they would like to participate in a company retirement plan. Two groups are asked to decide for or against a retirement plan, however, in the first group, the pro-option is marked as default and the other group has the contra-option marked. Results show that this treatment strongly influences participants‘ decisions. Those who have the contra-option set as default opt against the insurance scheme more often than those with the other option marked. This can be implemented in the [[Editing Mode]] by indicating the relevant variable in the “Default” field.
+A different example concerns the influence of a default on human behaviour. This is discussed thoroughly in Thaler and Sunstein’s book Nudge (2009). A nudge is a small push that directs participants to one decision or another. [[wikipedia:Nudge|Nudges]] can often be found when filling in surveys or questionnaires if one option is marked as default. Marking another option then requires an explicit decision. This can be illustrated by an experiment in which participants are asked whether or not they would like to participate in a company retirement plan. Two groups are asked to decide for or against a retirement plan, however, in the first group, the pro-option is marked as default and the other group has the contra-option marked. Results show that this treatment strongly influences participants‘ decisions. Those who have the contra-option set as default opt against the insurance scheme more often than those with the other option marked. This can be implemented in the [[editing Mode]] by indicating the relevant variable in the “Default” field.
 
 - Wage Increase
 
@@ -106,13 +106,13 @@ Opinion polls differ from quiz questions in the sense that you cannot classify o
 .. image:: _static/Inflation.PNG
     :alt:  300px
 
-An example for an opinion poll with multiple choice answers is the question of the effects on inflation, where more than one answer may be correct. You can implement such an opinion poll in classEx, by selecting “Check boxes (Multiple Choice)” in the Editing mode. None of the options should be marked as correct. Furthermore, you need to select “Multiple Choice” for the evaluation of results.
+An example for an opinion poll with multiple choice answers is the question of the effects on inflation, where more than one answer may be correct. You can implement such an opinion poll in classEx, by selecting “Check boxes (Multiple Choice)” in the editing mode. None of the options should be marked as correct. Furthermore, you need to select “Multiple Choice” for the evaluation of results.
 Hint: You can easily change the order of answer options by drag & drop. Simply click onto the number of the option you would like to change and drag it to the new position.
 
 Numeric Data
 ------------
 
-Decisions of participants can require an input of numbers. For this, simply choose “Numeric input field” as the type of input field in the Editing Mode. A game that uses this form of input is shown below:
+Decisions of participants can require an input of numbers. For this, simply choose “Numeric input field” as the type of input field in the editing Mode. A game that uses this form of input is shown below:
 
 - Estimation Task
 

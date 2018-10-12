@@ -2,52 +2,54 @@
 Programs and PHP functions
 ==========================
 
-Programmes are a very useful tool to design dynamic games. Programs are elements of stages and therefore created like any other element (see `Adding elements`_). 
+Programs are a very useful to design dynamic games. Programs are elements of stages and therefore created like any other element (see `Adding elements`_).
 
 .. image:: _static/Code.JPG
     :alt:  300p
 
-You can define for which roles, groups or treatments (if defined) the code shall apply to by choosing the corresponding option from the drop down menu above the code.
+You can define for which roles, groups or treatments (if defined) the code shall apply to by choosing the corresponding option from the drop down menu above the code. Or you define a display condition which determines if the program is executed.
 
 Programming language and editor
--------------------------------
+================================
 
-Variables and programmes are specified via `PHP<https://en.wikipedia.org/wiki/PHP>`_. This is a well-documented standard which enables easy programming. Details can be found in the internet, for example `here<http://php.net/docs.php>`_. You can utilise the normal PHP features (e.g. round, rand, number_format(),…).
+Variables and programmes are specified via `PHP <https://en.wikipedia.org/wiki/PHP>`_. This is a well-documented standard which enables easy programming. Details can be found in the internet, for example `here <http://php.net/docs.php>`_. You can utilise the normal PHP functions (e.g. round(), rand(...), number_format(),…).
 
 Programmes are entered in an editor that comprises syntax-highlighting as well as a simple error check of the entered codes.
 
-Furthermore, the editor contains a completion system which will show you all available variables. If you start entering the beginning of a variable ($...) and then press Ctrl+space the automatic completion system will show you all corresponding variables and features.
+Furthermore, the editor contains a completion system which will show you all available variables. If you start entering the beginning of a variable ($...) and then press Ctrl+space the automatic completion system will show you all corresponding variables and functions.
 
 Declaration of Variables
-------------------------
+========================
 
 Variables are defined by starting with "$". It does not matter whether the variable is a number or text. Variable names are case sensitive.
 
 **ATTENTION! Do not use single quotes within double quotes as this may produce errors (e.g. $text="don't"), instead of ' you should use &apos; (e.g. $text="don&apos;t") in texts.**
 
 Scope of Variables
---------------------
+~~~~~~~~~~~~~~~~~~~
 
 There are two different scopes: globals and subjects variables. 
 
-Global variables are 
-* available for all participants (can be accessed by subjects program), 
-* are calculated at the lecturer side, 
-* are the same for every participant,
-* are calculated first (i.e. before subjects variables).
+Global variables are
+
+- available for all participants (can be accessed by subjects program),
+- are calculated at the lecturer side,
+- are the same for every participant,
+- are calculated first (i.e. before subjects variables).
 
 Please notice that globals and subjects variables share the same namespace. Using the same variablename may overwrite variables.
 
 Subject variables are
-* only available for a certain participant
-* saved by default if they are decision variables (set via input elements).
-* not saved by default if you create or calculate them in subject programs; to do so use the `Function to save variables`_
+
+- only available for a certain participant
+- saved by default if they are decision variables (set via input elements).
+- not saved by default if you create or calculate them in subject programs; to do so use the `Function to save variables`_
 
 Variables for Participants (subjects)
--------------------------------------
+======================================
 
-Standard Variables for Participants (Subjects)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pre-Defined Variables
+~~~~~~~~~~~~~~~~~~~~~~
 
 ============== =========
 Variable Name  Value
@@ -65,8 +67,8 @@ $tic           External ID (if set at login)
 
 The variables $group, $role and $treatment can be overwritten in a subjects program.
 
-Functions for participants (subjects) to retrieve variables
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Functions to retrieve variables
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following functions can be used to retrieve variables. Here is some additional information on the structure. If you want to access the name of a variable, you put the name in quotation marks. If you want to access the value of a varible, you add a $ infront of the variable name. The elements of the functions mean the following:
 
@@ -124,11 +126,11 @@ Here is an example:
 .. image:: _static/Code2.PNG
     :alt:  300p
 
-Variables for Lecturers (globals)
------------------------------------
+Variables for lecturers (globals)
+=================================
 
-Standard variables for lecturers (globals)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pre-defined variables
+~~~~~~~~~~~~~~~~~~~~~~
 
 ============== ============
 Variable       Name Value
@@ -137,8 +139,8 @@ $lang          Actual Language (0: German, 1: English, 2: Spanish)
 $currentRound  Current Round
 ============== ============
 
-Functions for lecturer (globals)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Functions
+~~~~~~~~~~
 
 The following functions can be used to retrieve global variables. Here is some additional information on the structure. If you want to access the name of a variable, you put the name in quotation marks. If you want to access the value of a varible, you add a $ infront of the variable name. The elements of the functions mean the following:
 
@@ -174,30 +176,17 @@ Here are examples of all mentioned funtions:
 .. image:: _static/Code3.PNG
     :alt:  300p
 
-Pre-Defined Variables
----------------------
+Debugging
+~~~~~~~~~
 
-Functions
----------
+Small errors can cause the programs not to run. Therefore, error detection is an important issue. First, have a look in the editor which provides a basic syntax checking. Errors are marked by red crosses. If the program is running but not performing in the expected way, you may use the diagnosis mode to find the error.
 
-Test a game
------------
-
-Before playing a game in your lecture, you can test the game. To do so switch to the lecture mode and select your game. Selecting your game is not necessary if it is the active game in the lecture mode already. Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon.
-
-.. image:: _static/Addparticipant.PNG
-    :alt:  300p
-
-This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, which enables you to also test interaction between participants in games with several roles.
-
-Then start your game. You can perform the interaction required in the browser tabs for each participant.
-
-If something is not working or an error occurs you can use the diagnosis mode for error spotting.
+With severe errors the lecture mode can not be started. In order to find the error go through the code and look for errors. Check if the function names are correctly spelled.
 
 Diagnosis mode
 --------------
 
-The diagnosis mode is very useful for trouble shooting and testing your game. You can access the diagnosis mode by clicking on the stetoscope icon in the top bar of the Lecture mode.
+The diagnosis mode is very useful for trouble shooting and testing your game. You can access the diagnosis mode by clicking on the stetoscope icon in the top bar of the lecture mode.
 
 .. image:: _static/Diagnosissteto.PNG
     :alt:  300p

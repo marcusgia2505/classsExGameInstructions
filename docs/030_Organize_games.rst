@@ -15,7 +15,7 @@ Games are sorted into folders, for example different chapters of lectures, which
 Handle games
 ============
 
-You can move games by clicking on the little icon on the *move game* icon and dragging the game to another folder or just change its poition in the current folder. You can directly enter the Lecture Mode to play a game by pressing the *play game* icon and directly enter the Editing Mode to edit a game by clicking on the *edit game* icon. Games marked with the *created by someone else* icon cannot be edited but only played or viewed. The *delete game* icon deletes a game.
+You can move games by clicking on the little icon on the *move game* icon and dragging the game to another folder or just change its poition in the current folder. You can directly enter the Lecture Mode to play a game by pressing the *play game* icon and directly enter the editing Mode to edit a game by clicking on the *edit game* icon. Games marked with the *created by someone else* icon cannot be edited but only played or viewed. The *delete game* icon deletes a game.
 
 Public, private and imported games
 ==================================
@@ -25,7 +25,7 @@ All games are marked be either the *public game*,  *private game* or *created by
 Copy games
 ==========
 
-If you want to make a copy of a game (e.g. to create your own version of a ready-made game) click on the *view* or *edit* button. This takes you the Editing mode. In the top bar you can now click on the drop down menu *game* and then select *copy game*. This will create a coy of the game in your *general folder*. You can edit this copy and thus make your own version of any public game on classEx.
+If you want to make a copy of a game (e.g. to create your own version of a ready-made game) click on the *view* or *edit* button. This takes you the editing mode. In the top bar you can now click on the drop down menu *game* and then select *copy game*. This will create a coy of the game in your *general folder*. You can edit this copy and thus make your own version of any public game on classEx.
 
 Repository
 ==========

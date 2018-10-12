@@ -40,9 +40,22 @@ New game
 	Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
 	
 
+Test a game
+-----------
+
+Before playing a game in your lecture, you can test the game. To do so switch to the lecture mode and select your game. Selecting your game is not necessary if it is the active game in the lecture mode already. Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon.
+
+.. image:: _static/Addparticipant.PNG
+    :alt:  300p
+
+This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, which enables you to also test interaction between participants in games with several roles.
+
+Then start your game. You can perform the interaction required in the browser tabs for each participant.
+
+If something is not working or an error occurs you can use the diagnosis mode for error spotting.
 
 
-Tutorial: Exemplified instructions to program an ultimatum game
+Tutorial: How to program an ultimatum game
 ===============================================================
 
 To help you getting started with creating your own games this section gives step by step instructions for how to implement an Ultimatum Game.
@@ -137,7 +150,7 @@ To test the game, change into lecture mode. You can test the game on your own PC
 Create a new game
 =================
 
-To create a new game you can either click on *new game* in you Overview or go to Editing mode and select *game - new game*. 
+To create a new game you can either click on *new game* in you Overview or go to editing mode and select *game - new game*.
 
 .. image:: _static/Settings.PNG
     :alt:  300px
@@ -251,7 +264,7 @@ Games consist of several stages. There are at least 2 stages, one for the decisi
 Configuration of Stages
 -------------------------
 
-Stages are points of synchronisation in a [[Games|game]]. Generally, the input phase is one stage and the results or output phase is a different stage, as the output can only be displayed after all [[Participants|participants]] have entered their input. Each stage consists of one or more [[Elements|elements]] (e.g. input, results, small programmes) that require the input of at least one participant. In the [[Editing Mode]], you can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
+Stages are points of synchronisation in a [[Games|game]]. Generally, the input phase is one stage and the results or output phase is a different stage, as the output can only be displayed after all [[Participants|participants]] have entered their input. Each stage consists of one or more [[Elements|elements]] (e.g. input, results, small programmes) that require the input of at least one participant. In the [[editing Mode]], you can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
 
 .. image:: _static/Stage.PNG
     :alt:  300px

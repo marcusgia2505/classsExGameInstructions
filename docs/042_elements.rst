@@ -5,8 +5,11 @@ Elements
 Elements for lecturers and participants
 =======================================
 
+
 Text Box
 ~~~~~~~~~
+
+
 
 .. image:: _static/Textbox.JPG
     :alt:  300px
@@ -58,7 +61,10 @@ Program code
 
 Program snippets can be implemented to calculate results for each subjects. For further information see Program code.
 
-Input element (only for participants)
+Elements for participants
+==========================
+
+Input element
 ~~~~~~~~~~~~~
 
 In this element you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on “add new input field”. The input fields are displayed one after each other.
@@ -69,14 +75,15 @@ The following settings are available for every input field. You can determine th
 
 In the following, the different sorts of input fields are described in more detail.
 
-- Numeric Input Fields
+Numeric Input Fields
+--------------------
 
 Numbers can be inserted into this input field. 
 
 .. image:: _static/NumericInput1.JPG
     :alt:  300px
 
-The name of the input field is used as the label and is displayed on the left hand side of the input field when it is displayed to participants. In the [[Editing Mode]], you can specify the minimum and the maximum and the number of decimal places allowed. If entries are different from these specifications, participants will see an error notification and will be requested to correct their entry.
+The name of the input field is used as the label and is displayed on the left hand side of the input field when it is displayed to participants. In the [[editing Mode]], you can specify the minimum and the maximum and the number of decimal places allowed. If entries are different from these specifications, participants will see an error notification and will be requested to correct their entry.
 
 .. image:: _static/NumericInput2.JPG
     :alt:  300px
@@ -87,7 +94,8 @@ In addition, a unit (e.g. %, €, mm, …) can be specified that will be display
 
 	Hint: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
 
-- Text Input
+Text Input
+----------
 
 .. image:: _static/TextInput.JPG
     :alt:  300px
@@ -116,7 +124,8 @@ Choosing one of the options when using buttons submits the data, therefore, this
 
 Choosing multiple options is possible by using [[Check Boxes]]. Checkboxes work in exactly the same way as single choice options. Only the form of display is slightly different, as these are displayed as a list from which participants can pick several options. This way, multiple inputs can occur in one stage.
 
-- Radiolines and Sliders
+Radiolines and Sliders
+----------------------
 
 Radiolines, like Likert scales, offer stepwise input. For this, you need to specify the minimum and maximum as well as the number of steps (e.g. Min1, Max 7 and Steps 6 would lead to integers and Steps 12 would lead to steps of the size 0.5). Furthermore, you need to enter a description for the left and right hand side.
 
@@ -124,21 +133,23 @@ Sliders are a similar concept. In this form of input, the participant moves a sl
 
 Defaults can be set for radiolines and sliders. If no default is set, the radioline is empty and the slider is positioned in the middle of the bar.
 
-- Checkboxes
+Checkboxes
+----------
 
 Check boxes allow for choosing multiple answers. Options can be set just as described for selection lists ([[Buttons and Selection Lists (single choice)|single choice]]). Further, the minimum and maximum number of answers must be specified. It is possible to set a default. You can also select if the options should be displayed in order or randomly (different for each participant).
 
-- Other Input Fields
+Other Input Fields
+------------------
 
 Average over all input fields
 	This option saves the average over all input fields which is not displayed to the user. The average is created automatically by calculating the mean over several numeric inpu fields (e.g. radiolines, numeric input fields, sliders).
 
-Filled in input field
-	This element allows you to display the filled in input field of the last stage.
+Filled in input
+~~~~~~~~~~~~~~~
 
-Up to date, small programmes for manipulating the input (e.g. input in field 1 determines input in field 2) cannot yet be configurated in the backend.
+This element allows you to display the filled in input field of the last stage.
 
-Winner's Notification (only for participants)
+Winner's Notification
 ~~~~~~~~~~~~~~~~~~~~~
 
 If a game is played with real payoffs, this element displays the payoff code to participants. (only works together with winners' draw) 
@@ -154,7 +165,7 @@ Clicking on the little info circles above the boxes will show you what will be d
 
 	Important: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. $maxWin=1000;).
 
-Payoff Matrix Game (only for participants)
+Payoff Matrix Game
 ~~~~~~~~~~~~~~~~~~
 
 .. image:: _static/Matrixpay.JPG
@@ -163,6 +174,7 @@ Payoff Matrix Game (only for participants)
 This element helps display the payoff for a two role game easily with a matrix. Alternatively, you can also do this through a program. In this element, you need to specify which input field contains the decision of the respective participant for the row participant and for the column participant. The labels of the matrix are determined by the specified input fields. In the table, you enter the payoff for the row participant first followed by the payoff for the column participant. The payoff is stored as variable $payoff; which can then be used for the winning notification or further calculations.
 
 Contract
+~~~~~~~~
 
 .. image:: _static/Contractparticipant.JPG
     :alt:  300p
@@ -208,8 +220,8 @@ products
 
 The contracts made can be shown at the lecturer's screen with the contract table. In addition, there are special functions in globals and subjects programs to retrieve contracts. All contracts are also stored in the standard excel file which can be retrieved in the data menu. 
 
-Camera (only for participants)
-~~~~~~~~
+Camera
+~~~~~~
 
 .. image:: _static/Camera1.PNG
     :alt:  300p
@@ -240,7 +252,7 @@ At the lecturer screen
 From the stored data
 	In the downloaded data you find stored images in the subjects table. They can are base64 decoded and can be encoded with free online tools. Just take away "data:image/jpeg;base64," from the string, so that it starts e.g. with "/9j/....".
 
-Javascript (only for participants)
+Javascript
 ~~~~~~~~~~
 
 - Reading php variables
@@ -270,14 +282,19 @@ This finds the html element with the id of the div containing the variable conte
 
 This can be achieved via hidden input fields that are triggered via JQuery calls
 
-Start Button (only for lecturers)
-~~~~~~~~~~~~~~
+
+Elements for Lecturers
+======================
+
+Start Button and Automatic Start
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The start button is used to initiate a stage. Each stage '''requires a start button''' apart from stages that has a result element. Result elements have their own buttons. 
 
 There are two options. A start button which has to be clicked by the experimenter or a automatic start.
 
-- Start Button
+Start Button
+------------
 
 .. image:: _static/Startbutton.PNG
     :alt:  300p
@@ -289,7 +306,8 @@ The start button can be configured according to the needs.
 * Confirmation message: you can set if a pop-up should appear after clicking to confirm the action. 
 * Count: You can set the counter which appears after the start button is clicked. It can count decisions (also by role, treatment or group if set). 
 
-- Automatic Start
+Automatic Start
+---------------
 
 .. image:: _static/Automaticstart.PNG
     :alt:  300p
@@ -312,7 +330,9 @@ Count
 Counter
 	Setting this additionally allows you to deactivate the counter completly.
 
-Winner's Draw  (only for lecturers)
+
+
+Winner's Draw
 ~~~~~~~~~~~~~
 
 .. image:: _static/Draw.JPG
@@ -421,7 +441,8 @@ The program code does not distingiush between binary 0 and numeric 0. Some resul
 
 Under the header “count”, you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). Further, you can determine for some result elements whether you want the button “show results” to be displayed or not. Not displaying the button can be useful, if you want to display several diagrams underneath each other. You do, however, need at least one button per stage. You can use a normal start button element as well.
 
-- Results Single / Multiple Choice Questions
+Results Single / Multiple Choice Questions
+------------------------------------------
 
 .. image:: _static/Smc.JPG
     :alt:  300p
@@ -442,7 +463,8 @@ Input
 
 The element automatically detects if the input is multiple choice or single choice. Hovering over the bars gives the absolute frequency of participants who opted for that option. The element should only be used with input fields with predefined options (otherwise you should use the counter result element).
 
-- Results Histogram
+Results Histogram
+------------------
 
 .. image:: _static/Numericindic.PNG
     :alt:  300p
@@ -476,7 +498,8 @@ Count
 
 	Hint: All values that are larger than the displayed maximum value are automatically pooled into the last bin.</div>
 
-- Results Line Chart
+Results Line Chart
+-------------------
 
 .. image:: _static/Result_linechart.PNG
     :alt:  300p
@@ -508,7 +531,8 @@ If no maximum is determined, the programme will automatically use the maximum of
 The line chart automatically calculates the average of the input variable over all subjects, per group or per treatment.
 If the input variable is a binary variable the result is diaplayed in percent.
 
-- Results Bubble
+Results Bubble
+---------------
 
 .. image:: _static/Bubble.JPG
     :alt:  300p
@@ -520,7 +544,8 @@ Displays a bubble chart, which can be useful for trust games, for example.
 
 You can define the variables to be displayed on the x-axis and the y-axis as well as a minimum and a label for each axis.
  
-- Results Counter
+Results Counter
+----------------
 
 .. image:: _static/Counter.JPG
     :alt:  300p
@@ -534,7 +559,8 @@ Hovering over the bars gives the absolute frequency of participants who opted fo
 
 Using a multiple choice input field will result in the listing of combined answers. E.g. You can select A, B, C (multiple choice). Then the counter elemnet will display who many percent chose A, A&B, A&C,... If you want to have the items analysed seperately (only A, B, C) you should use the Results Single / Multiple Choice Questions (see above). 
 
-- Results Game Matrix
+Results Game Matrix
+--------------------
 
 .. image:: _static/Qqq.JPG
     :alt:  300p
@@ -548,7 +574,8 @@ If you have several rounds, the matrix calculates the results overall rounds. If
 
 	Hint: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a program).
 
-- Other result elements
+Other result elements
+----------------------
 
 Other result elements include likert scales and pie charts.
 
