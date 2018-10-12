@@ -40,8 +40,10 @@ In the second stage the responders are informed about the proposals and they dec
 
 To create a new stage click on Plus.JPG on the right side of the tab of stage 1 (now bearing the name you chose). Type in a name for stage 2 (e. g. "UltimatumResponder"). “Late arrival” should be “not possible” in this stage, because the matching is already done and newcomers cannot be integrated once the first stage has been played. The new stage has by default implemented a textbox in the participant’s field. Use this textbox to inform the responder about the proposal. You need to display for every responder the values of the proposal made by the proposer who was matched to them. To do so you need a "program code (subjects)" field again. Insert it above the text box and change “for all roles” to “only role 2”. Type in the following code:
 
-	| $keep = $findVariablePartner(“keep”;$round);
-	| $send=$endow-$keep;
+.. code-block:: php
+
+	$keep = $findVariablePartner("keep";$round);
+	$send=$endow-$keep;
 
 The first line defines a variable “keep” and assigns to it the value of the participant’s matching partner’s “keep”-variable. The second line calculates how much the proposer kept for himself and assigns the value to a variable “send”. Now you can use both new variables to inform the responder about the proposal made to him. Change “for all roles” to “only role 2” in the text box and type in the following instructions:
 
