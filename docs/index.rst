@@ -22,7 +22,7 @@ About this documentation
 ========================
 
 This documentation is written for lecturers and experimenters who want to use classEx for conducting games
-in the classroom or in the field. In the following, we will talk about lecturers as the one running the game. All information hold true for as experimenters as well. **Participants do not need to read this documentation.**. Participants are informed by the lecturer on how to login.
+in the classroom or in the field. In the following, we will talk about lecturers as the one running the game. All information hold true for as experimenters as well. **Participants do not need to read this documentation.** Participants are informed by the lecturer on how to login.
 
 The chapter "Basics" explains the first steps for new classEx users.
 
@@ -34,7 +34,7 @@ The chapter "Develop your own games" is a manual for users who want to develop t
 
 The chapter "Elements" provides an overview of all elements which can be used to develop own games.
 
-The chapter "References" provides a list of variables and functions for advanced programmers.
+The chapter "Programming" provides a list of variables and functions for advanced programmers.
 
 Version and new features
 ========================
@@ -55,12 +55,11 @@ Below you find a list of the last updates:
 :April 8th 2015: All elements in the editing mode are directly linked to the wikipage which provides explanation of the different features.
 :November 20th 2015: classEx was updated to version 3.3.
 
-Table of content
-================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 10
    :glob:
+   :caption: User Documentation
 
    010_Basics
    020_Run_a_ready-made_game

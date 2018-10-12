@@ -1,73 +1,16 @@
-======================
-Develop your own games
-======================
-
-To develope your own games change to the editing mode. The top bar in this mode looks like this:
-
-.. image:: _static/Leiste.JPG
-    :alt:  300px
-
-It provide you with several options which are described below.
-
-	Hint: If you make any input in the editing mode and leave the input field the value is stored automatically.
-Select game
-
-.. image:: _static/Selectgame.JPG
-    :alt:  300px
-
-Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
-
-If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
-
-.. image:: _static/Alreadyplayed.JPG
-    :alt:  300px
-
-By clicking on the button game a drop down menu opens.
-
-.. image:: _static/Game.JPG
-    :alt:  300px
-
-Game settings
-	Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
-
-Copy game
-	The currently selected game is copied and can then be edited and adapted.
-
-Delete game
-	By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
-
-New game
-	Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
-	
-
-Test a game
------------
-
-Before playing a game in your lecture, you can test the game. To do so switch to the lecture mode and select your game. Selecting your game is not necessary if it is the active game in the lecture mode already. Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon.
-
-.. image:: _static/Addparticipant.PNG
-    :alt:  300p
-
-This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, which enables you to also test interaction between participants in games with several roles.
-
-Then start your game. You can perform the interaction required in the browser tabs for each participant.
-
-If something is not working or an error occurs you can use the diagnosis mode for error spotting.
-
-
-Tutorial: How to program an ultimatum game
-===============================================================
+===========================================
+Tutorial: How to develop a simple game
+===========================================
 
 To help you getting started with creating your own games this section gives step by step instructions for how to implement an Ultimatum Game.
 
 The Ultimatum Game
-------------------
+==================
 
 In an Ultimatum Game the participants play in groups of two. One of them takes the role of the proposer. He decides upon how to divide an initial endowment between him and the other participant – the responder. The responder then decides whether he accepts the proposal. If he does so, the final payoffs of the participants are according to the proposal. If the responder does not accept the proposal both participants receive nothing as final payoff.
 
 Building the game
------------------
-
+==================
 To create a new game click on "new game" in your overview screen. Type in a game name of your choice and change the availability to “private”. Thus other users cannot see “your” Ultimatum Game. Click “save”. ClassEx will automatically switch into editing mode and you can start building the game.
 
 Matching
@@ -143,9 +86,68 @@ For role 2 the text could be:
 In the lecturer field you can show the results. Delete the start button that is implemented in a new stage by default. Then add a results bubble element. Select the variable “accept” for the x-axis with 0 as minimum and 2 as maximum value. Choose a label for the x-axis, e. g. “acceptance." Select the variable “keep” for the y-axis with 0 as minimum and $endow as maximum value. Choose a label for the y-axis, e. g. “proposal (amount kept)”. Select “display if stage is activated and after” and select “by role” in the field “count”.
 
 Testing the game
-----------------
+=================
 
 To test the game, change into lecture mode. You can test the game on your own PC by clicking on Testpart.JPG in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, where each screen represents a participant. After opening enough test participant screens click "Start" in the lecturer screen. Then you can go through the game with all test participants. 
+
+======================
+Develop your own games
+======================
+
+To develope your own games change to the editing mode. The top bar in this mode looks like this:
+
+.. image:: _static/Leiste.JPG
+    :alt:  300px
+
+It provide you with several options which are described below.
+
+	Hint: If you make any input in the editing mode and leave the input field the value is stored automatically.
+Select game
+
+.. image:: _static/Selectgame.JPG
+    :alt:  300px
+
+Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
+
+If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
+
+.. image:: _static/Alreadyplayed.JPG
+    :alt:  300px
+
+By clicking on the button game a drop down menu opens.
+
+.. image:: _static/Game.JPG
+    :alt:  300px
+
+Game settings
+	Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+
+Copy game
+	The currently selected game is copied and can then be edited and adapted.
+
+Delete game
+	By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
+
+New game
+	Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
+
+
+Test a game
+============
+
+Before playing a game in your lecture, you can test the game. To do so switch to the lecture mode and select your game. Selecting your game is not necessary if it is the active game in the lecture mode already. Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon.
+
+.. image:: _static/Addparticipant.PNG
+    :alt:  300p
+
+This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, which enables you to also test interaction between participants in games with several roles.
+
+Then start your game. You can perform the interaction required in the browser tabs for each participant.
+
+If something is not working or an error occurs you can use the diagnosis mode for error spotting.
+
+
+
 
 Create a new game
 =================
@@ -168,7 +170,7 @@ Left to the tab *stage 1* you find the tab *assignment and matching*. Here, you 
     :alt:  300px
 
 Assignment at the beginning of a game
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 classEx allows you to flexibly adapt to an unknown number of participants, meaning that you choose the number of different roles, the number of treatments and the size of groups. ClassEx then assigns participants automatically. Specifically, have following available options:
 
@@ -262,7 +264,7 @@ Define your stages
 Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized.
 
 Configuration of Stages
--------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Stages are points of synchronisation in a [[Games|game]]. Generally, the input phase is one stage and the results or output phase is a different stage, as the output can only be displayed after all [[Participants|participants]] have entered their input. Each stage consists of one or more [[Elements|elements]] (e.g. input, results, small programmes) that require the input of at least one participant. In the [[editing Mode]], you can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
 
@@ -285,12 +287,12 @@ Move stages
 When you create a new stage, this stage will automatically be defined as the next stage. You can move stages by pressing *Move stage upwards* or *Move stage downwards*. The order in which stages are run is always from left to right.
 
 Add stage
-~~~~~~~~
+~~~~~~~~~
 
 You can add a new stage by clicking on *Add new stage* beside the tabs displaying the different stages or on the top right of the current stage.
 
 Delete stage
-~~~~~~~~~~
+~~~~~~~~~~~~~
 You can delete a stage by pressing *Delete stage*.
 
 Elements (display condition,…, mit Bsp…, general input)
@@ -309,7 +311,7 @@ You can chose from text elements, input elements (numerical input, likert scales
 	Hint: Input and output elements should be located in different stages in order to collect all input in the first stage. Then, the lecturer can synchronise the game and turn to the output elements in the next stage.
 
 Adding elements
----------------
+================
 
 You can add an element via clicking on *add element* and selecting the type of element you want to add. After that you have to choose where you want to place the element. If you do so the following two icons will appear for every possible location of the element.
 
@@ -319,7 +321,7 @@ You can add an element via clicking on *add element* and selecting the type of e
 Choose a location for your element by clicking on the corresponding *paste element* icon or cancel placing the icon by clicking on any *do not paste* icon. Keep in mind that the order of emlements defines how the elements are displayed on the participants' devices.
 
 Handling elements
------------------
+==================
 
 .. image:: _static/Elements.PNG
     :alt:  300px
@@ -348,7 +350,7 @@ Display Condition
 
 
 Parameters
-=========
+==========
 
 Parameters are global variables that can be adjusted in the lecture mode. You can define parameters to enable adaptation of the game for lecturers without any knowledge of how to edit games. You can then play the same game several times with different parameters.
 
