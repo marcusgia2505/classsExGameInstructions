@@ -7,6 +7,21 @@ You can organize your games in the Overview. Here, you can find all your games a
 .. image:: _static/Overview.PNG
     :alt:  300px
 
+Top bar - overview mode
+~~~~~~~~~~~~~~~~~~~~~~~
+
+You can see the top bar for the **overview mode** in the picture above. It offers folowing funcionality:
+
+new folders
+    Create new folders to organize your games
+
+new games
+    Create new games which you can then design in the editing mode
+
+repository
+    The repository which provides access to previous results from your private games or from public games conducted by you or other classEx lecturers
+
+
 Folders
 =======
 

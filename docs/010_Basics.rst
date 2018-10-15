@@ -43,13 +43,13 @@ User types
 
     - Lecturer: Registered lecturers who have received a password can login as experimenter/lecturer. As lecturer you can organize your account, start ready-made games and quizzes, adapt them to your liking or create new ones. This documentation mainly explains the possibilities and options classEx offers for lecturers.
 
-    - Administration: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#payoffs-and-administration-mode>`_.
+    - Administration: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#disbursal-of-payoffs>`_.
 
 Password
     A registered lecturer has received a password upon registration. Participants are provided with their password by the lecturer. The password can also be used for the administration user type.
 
-Essentials for lecturers
-=========================
+Navigation and modes
+=====================
 
 .. raw:: html
 
@@ -62,74 +62,23 @@ Essentials for lecturers
     You can find a short video on how to use classEx on \url{https://www.youtube.com/embed/Zm0DpUzhOGg}.
 
 
-Entering classEx as a lecturer offers three modes: overview mode, lecture mode and editing mode. After login, the screen shows the overview mode. Here you can organize your games and access all important features of classEx. In the lecture mode you can run games, in the Editing mode you can develop your own games.
+Entering classEx as a lecturer offers three modes: overview mode, lecture mode and editing mode. After login, the screen shows the overview mode. Here you can organize your games and access all important features of classEx. In the lecture mode you can run games, in the editing mode you can develop your own games.
 
 .. image:: _static/Overview.PNG
     :alt:  300px
 
-Navigation bar
---------------
 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
     
-The currently active mode is marked by a darker shade around its symbol, here the **overview mode**. The left symbol takes you to the **lecture mode**. The right symbol takes you to the **editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the logout button. You can also log out all participants currently logged into your course.
+The currently active mode is marked by a darker shade around its symbol, here the **overview mode**. The left symbol takes you to the **lecture mode**. The right symbol takes you to the **editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the logout button.
 
-Top bar
--------
+The top bar is located in the top left corner. It is different in each mode. There you can find the main function for each mode. The details are explained in the respective section (lecture mode = Run ready-made games, overview = Organize your games, editing mode = Develop your own games).
 
-The top bar is located in the top left corner. It is different in each mode.
-
-Top bar - overview mode
-~~~~~~~~~~~~~~~~~~~~~~~
-
-You can see the top bar for the **overview mode** in the picture above. It offers folowing funcionality:
-
-new folders
-    Create new folders to organize your games
-
-new games
-    Create new games which you can then design in the editing mode
-
-repository
-    The repository which provides access to previous results from your private games or from public games conducted by you or other classEx lecturers
-    
-Top bar - lecture mode
-~~~~~~~~~~~~~~~~~~~~~~
-
-The top bar of the **lecture mode** looks like this:
-
-.. image:: _static/MenuLecture.PNG
-    :alt:  150px
-    
-It offers following functionality:
-
-select games
-    Select games from all public and your private games. The selected game opens up as soon as you click on it.
-
-Login QR code
-    Click on QR code to enlarge the QR code and also provide an instruction for participants to enter without using the QR code
-
-Add test participants
-    This button will add a test participant screen in a new tab. This can be very useful to test classEx games.
-
-Diagnosis mode
-    In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier.
-
-data
-    Via the dropdown menu data you can access an overview over participants who are currently taking part in your game or who took part in the game of which the results are on display. The overview shows the number of participating participants and which decision stage they are at. You can show this overiew on the screen via **show data**. Clicking on "back to lecture mode" takes you back to the current game. You can also download the results via **download as excel file**. The excel files contain the decisions made in the game you just played or, if available, old results of the same game. You can also download excel files containing an overview of types, treatments & groups that existed in this game as well as participants’ IDs and their log-in time.
-
-previous results
-    You can access previous results via the previous results dropdown menu. Simply choose which results from previous lectures you want to display. This way you can directly compare current outcomes with previous ones. 
-
-Top bar - lecture mode
-~~~~~~~~~~~~~~~~~~~~~~
-
-See `Develope your own games <https://classex-doc.readthedocs.io/en/latest/040_Develop_your_own_games.html>`_.
 
 Terminology
 ===========
 
-This chapter clarifies the usage of some terms in this documentary. It can used to look up terminology.
+This chapter clarifies the usage of some terms in this documentary. It can used to look up terminology and can be skipped on first reading.
 
 Lecturer
     The person conducting a game is the lecturer. The lecturer starts games, starts new rounds, ends games and shows results. The lecturer controls the lecture screen that is visible for all participants (typically via a projector in the lecture hall).

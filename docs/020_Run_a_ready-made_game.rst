@@ -19,6 +19,38 @@ Data volume
 -----------
 classEx only requires a small amount of data volume. When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. If you decide to use games with additional graphical libraries (e.g. for plots on the participants' screens), this amount may vary.
 
+
+Top bar - lecture mode
+~~~~~~~~~~~~~~~~~~~~~~
+
+The top bar of the **lecture mode** looks like this:
+
+.. image:: _static/MenuLecture.PNG
+    :alt:  150px
+
+It offers following functionality:
+
+select games
+    Select games from all public and your private games. The selected game opens up as soon as you click on it.
+
+Login QR code
+    Click on QR code to enlarge the QR code and also provide an instruction for participants to enter without using the QR code
+
+Add test participants
+    This button will add a test participant screen in a new tab. This can be very useful to test classEx games.
+
+Diagnosis mode
+    In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier.
+
+data
+    Via the dropdown menu data you can access an overview over participants who are currently taking part in your game or who took part in the game of which the results are on display. The overview shows the number of participating participants and which decision stage they are at. You can show this overiew on the screen via **show data**. Clicking on "back to lecture mode" takes you back to the current game. You can also download the results via **download as excel file**. The excel files contain the decisions made in the game you just played or, if available, old results of the same game. You can also download excel files containing an overview of types, treatments & groups that existed in this game as well as participants’ IDs and their log-in time.
+
+previous results
+    You can access previous results via the previous results dropdown menu. Simply choose which results from previous lectures you want to display. This way you can directly compare current outcomes with previous ones.
+
+
+
+
 Practical hints
 ===============
 
