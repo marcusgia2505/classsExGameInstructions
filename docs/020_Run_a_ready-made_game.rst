@@ -2,26 +2,92 @@
 Run ready-made games
 =====================
 
-A short introductory tutorial on how to play a game in classEx can be found under https://youtu.be/zmAn0ZzTQPk
+In classEx, you can find a set of ready-made games which can be played directly in the lecture mode. Just start a game and open some test participants by clicking at the test participant symbol |pic_testparticipant| in the top navigation bar. Test participants open in a new tab of the browser.
+
+.. |pic_testparticipant| image:: _static/pic/addPlayer.png
+
+.. raw:: html
+
+    This video shows how to play a game.
+    <div style="text-align: center; margin-bottom: 2em;">
+    <iframe width="100%" height="350" src="https://www.youtube.com/embed/zmAn0ZzTQPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+.. raw:: latex
+
+    You can find a short video on how to play a game on \url{https://youtu.be/zmAn0ZzTQPk}.
 
 Prerequisites
-==============================================================
+=============
 
-Students devices
------------------
-Every student who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection. Browsers should be up-to-date and jaascript and cookies enabled.
+Participants' devices
+---------------------
+Every student who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection. Browsers should be up-to-date and javascript and cookies enabled.
 
 Lecturer device
 ----------------
-The lecturer conducting a session needs a device with a big screen (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all participants (e.g. via a classroom projector). The lecturer should connect via a stable internet connetion (e.g. LAN) if possible.
+The lecturer conducting a session needs a device with a big screen (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all participants (e.g. via a classroom projector). The lecturer should connect via a stable internet connection (e.g. LAN) if possible.
 
 Data volume
 -----------
 classEx only requires a small amount of data volume. When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. If you decide to use games with additional graphical libraries (e.g. for plots on the participants' screens), this amount may vary.
 
 
-Top bar - lecture mode
-~~~~~~~~~~~~~~~~~~~~~~
+Run a game
+==========
+
+Before the start
+----------------
+
+Parameters offer a possibility to adjusted games without knowledge of the editing mode. I a game includes changable parameters the *parameters* button appears in the lecture mode before you start the game.
+
+.. image:: _static/Parameters.PNG
+    :alt:  300px
+
+You can change the parameters of a game by clicking on *parameters*. For example, in a public goods game, you can change the MPCR, the endowment and the amount of rounds and restart the game with the new settings. You can restart the game by clicking on *restart game*.
+
+Start a game
+------------
+
+During a lecture, the interaction between the lecturer and the participants takes place in the lecture mode. The lecturer’s browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode. The lecturer can start this game or select a different one.
+
+The lecturer can select a new game by choosing it from the drop down list. The drop down list shows all available games. A selected game can be started by pressing:
+
+.. image:: _static/Startblue.JPG
+    :alt:  300px
+
+By pressing start, the lecturer initiates the first stage of the game. If a game consists of several stages, the start button for the next stage appears after pressing the start button for the first stage.
+
+The counter over the start button shows how many participants are currently logged in. There is no minimum number of participants required to start a game.
+
+If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of participants is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no participants are excluded from the game.
+
+During the game
+---------------
+
+During the course of a stage, a display shows how many participants are logged in and how many of them have already made their decision in the current stage.
+
+.. image:: _static/Displres.JPG
+    :alt:  300px
+
+Here, 3 participants are logged in and 1 has already made their decision.
+
+    Hint: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
+
+End the Game
+------------
+
+When the participants have made their decisions, the lecturer can end the game by clicking on „display results“.
+
+.. image:: _static/Dispay.JPG
+    :alt:  300px
+
+If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button.
+
+
+
+Further settings in the top bar
+===============================
 
 The top bar of the **lecture mode** looks like this:
 
@@ -85,7 +151,7 @@ Information for students in the course
 
 - If students are chosen randomly to receive their payoff, they should screenshot their winner's notification to be sure to receive their payoff.
 
-During game
+During the game
 -------------
 
 - If you accidentally close the browser, no problem. Just open it again. Normally you should be still logged in. Otherwise just log in again.
@@ -109,7 +175,7 @@ Password forgotten
 If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered. 
 
 Login of participants and test participants
-=====================================================
+============================================
 
 Login
 -----
@@ -166,52 +232,7 @@ Refresh Page
 
 Participants’ screens are updated automatically when their partner has made a decision or when the lecturer has started a new stage. Therefore, it is not necessary to press a refresh button to proceed. This way, participants can simply wait until the next stage appears on their mobile devices and do not have to keep refreshing their screens. 
 
-Run a game
-================================================
 
-- Change parameters
-
-Parameters offer a possibility to adjusted games without knowledge of the editing mode. I a game includes changable parameters the *parameters* button appears in the lecture mode before you start the game.
-
-.. image:: _static/Parameters.PNG
-    :alt:  300px
-
-You can change the parameters of a game by clicking on *parameters*. For example, in a public goods game, you can change the MPCR, the endowment and the amount of rounds and restart the game with the new settings. You can restart the game by clicking on *restart game*. 
-
-- Start a Game
-
-During a lecture, the interaction between the lecturer and the participants takes place in the lecture mode. The lecturer’s browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode. The lecturer can start this game or select a different one.
-
-The lecturer can select a new game by choosing it from the drop down list. The drop down list shows all available games. A selected game can be started by pressing:
-
-.. image:: _static/Startblue.JPG
-    :alt:  300px
-
-By pressing start, the lecturer initiates the first stage of the game. If a game consists of several stages, the start button for the next stage appears after pressing the start button for the first stage.
-
-The counter over the start button shows how many participants are currently logged in. There is no minimum number of participants required to start a game.
-
-If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of participants is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no participants are excluded from the game.
-
-- During the Game
-
-During the course of a stage, a display shows how many participants are logged in and how many of them have already made their decision in the current stage.
-
-.. image:: _static/Displres.JPG
-    :alt:  300px
-
-Here, 3 participants are logged in and 1 has already made their decision.
-
-    Hint: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
-
-- End the Game
-
-When the participants have made their decisions, the lecturer can end the game by clicking on „display results“.
-
-.. image:: _static/Dispay.JPG
-    :alt:  300px
-
-If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button. 
 
 participants interface
 =================
