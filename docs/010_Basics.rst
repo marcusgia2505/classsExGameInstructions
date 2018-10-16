@@ -7,8 +7,6 @@ Basics
 Requirements
 ============
 
-`forum`_
-
 classEx is an online tool which runs centralized at the servers of the University of Passau. Therefore, no installation of software or download of applications is necessary. Running games and developing games is done in a standard internet browser.
 
 Lecturers only need an up-to-date browser and an internet connection. We suggest to use Firefox. Make sure that javascript is enabled and cookies are allowed (normally this is a default setting in many browsers). **Do not use Internet Explorer for using classEx because classEx does not run with it.**
@@ -76,7 +74,7 @@ The currently active mode is marked by a darker shade around its symbol, here th
 
 The top bar is located in the top left corner. It is different in each mode. There you can find the main function for each mode. The details are explained in the respective section (lecture mode = Run ready-made games, overview = Organize your games, editing mode = Develop your own games).
 
-.. |pic_lecturemode| image:: <pic/lectureMode.png>
+.. |pic_lecturemode| image:: _static/pic/lectureMode.png
 
 
 Terminology
