@@ -98,7 +98,7 @@ By pressing start, the lecturer initiates the first stage of the game. If a game
 
 If a game consists of several treatments and / or roles the participants will be assigned into treatments / roles in the first stage. For more information on assignment of roles and treatments see `Develop`_.
 
-.. note:: If you have matching, the first stage should be opened long enough that all participants are matched.
+.. note:: If you have different roles and treatments, the first stage should be opened long enough that all participants are assigned to a role and treatment. The assignment ist done when the stage has been loaded at the participants' device. So make sure that you do not continue to the next stage too fast.
 
 During the game
 ---------------
