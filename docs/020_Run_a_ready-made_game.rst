@@ -87,16 +87,18 @@ You can change the parameters of a game by clicking on *parameters*. For example
 Start a game
 ------------
 
-The lecturer can select a new game by choosing it from the drop down list. The drop down list shows all available games. A selected game can be started by pressing:
+The lecturer can select a new game by choosing it from the drop down list in the top left corner or by selecting in the overview mode. The drop down list shows all available games. A selected game can be started by pressing:
 
 .. image:: _static/Startblue.JPG
     :alt:  300px
 
 By pressing start, the lecturer initiates the first stage of the game. If a game consists of several stages, the start button for the next stage appears after pressing the start button for the first stage.
 
+.. warning:: By starting a new game, the currently running game is stopped. There can only be one running game at a time.
 
+If a game consists of several treatments and / or roles the participants will be assigned into treatments / roles in the first stage. For more information on assignment of roles and treatments see `Develop`_.
 
-If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of participants is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no participants are excluded from the game.
+.. note:: If you have matching, the first stage should be opened long enough that all participants are matched.
 
 During the game
 ---------------
