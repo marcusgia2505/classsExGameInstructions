@@ -70,11 +70,13 @@ Entering classEx as a lecturer offers three modes: overview mode, lecture mode a
 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
     
-The currently active mode is marked by a darker shade around its symbol, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol takes you to the **editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the logout button.
+The currently active mode is marked by a darker shade around its symbol |pic_overview|, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol |pic_editmode| takes you to the **editing mode**. The **Drop down menu** provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the logout button.
 
 The top bar is located in the top left corner. It is different in each mode. There you can find the main function for each mode. The details are explained in the respective section (lecture mode = Run ready-made games, overview = Organize your games, editing mode = Develop your own games).
 
 .. |pic_lecturemode| image:: _static/pic/lectureMode.png
+.. |pic_overview| image:: _static/pic/lecture.png
+.. |pic_editmode| image:: _static/pic/editMode.png
 
 
 Terminology
