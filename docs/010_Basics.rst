@@ -22,7 +22,7 @@ For registration you have to provide your name, an email address and information
 
 Each user has an account (called course in classEx) which is linked to their institution. With the login credentials you obtain the right to use classEx for teaching, education, research and other purposes (for details please see `terms of use`_).
 
-Students do not need to register but can access classEx with the course password provided to the lecturer with the login credentials.
+participants do not need to register but can access classEx with the course password provided to the lecturer with the login credentials.
 
 Login
 =========
@@ -30,7 +30,7 @@ Login
 .. image:: _static/basics/login.PNG
     :alt:  200px
 
-The website https://classex.uni-passau.de shows the login for lecturers and students.
+The website https://classex.uni-passau.de shows the login for lecturers and participants.
 
 Institution
     Select the institution you named during your registration, typically your university.
@@ -39,7 +39,7 @@ Course
     Select your course or another course you have access to.
 
 User types
-    - Participants: Students can participate interactively in a lecture or a presentation by logging in as a participant. They do not need to register and remain anonymous. They select the university and the course from the lecturer's registration. The lecturer provides the course password. Participation after logging in is self-explanatory and does not require any previous knowledge.
+    - Participants: They can participate interactively in a lecture or a presentation by logging in as a participant. They do not need to register and remain anonymous. They select the university and the course from the lecturer's registration. The lecturer provides the course password. Participation after logging in is self-explanatory and does not require any previous knowledge.
 
     - Lecturer: Registered lecturers who have received a password can login as experimenter/lecturer. As lecturer you can organize your account, start ready-made games and quizzes, adapt them to your liking or create new ones. This documentation mainly explains the possibilities and options classEx offers for lecturers.
 

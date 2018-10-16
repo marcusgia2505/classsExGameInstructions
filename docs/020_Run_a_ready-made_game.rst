@@ -2,7 +2,7 @@
 Run ready-made games
 =====================
 
-In classEx, you can find a set of ready-made games which can be played directly in the lecture mode. Just start a game and open some test participants by clicking at the test participant symbol |pic_testparticipant| in the top navigation bar. Test participants open in a new tab of the browser.
+In classEx, you can find a set of ready-made games which can be played directly in the lecture mode. The interaction between the lecturer and the participants takes place in the lecture mode. The lecturer's browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode.  Just start a game and open some test participants by clicking at the test participant symbol |pic_testparticipant| in the top navigation bar. Test participants open in a new tab of the browser.
 
 .. |pic_testparticipant| image:: _static/pic/addPlayer.png
 
@@ -22,34 +22,70 @@ Prerequisites
 
 Participants' devices
 ---------------------
-Every student who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection. Browsers should be up-to-date and javascript and cookies enabled.
+Every participant who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection. Browsers should be up-to-date and javascript and cookies enabled. Participants can connect via mobile internet or available wifi.
 
 Lecturer device
 ----------------
 The lecturer conducting a session needs a device with a big screen (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all participants (e.g. via a classroom projector). The lecturer should connect via a stable internet connection (e.g. LAN) if possible.
 
-Data volume
------------
-classEx only requires a small amount of data volume. When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. If you decide to use games with additional graphical libraries (e.g. for plots on the participants' screens), this amount may vary.
+.. note:: Make sure you have a stable internet connection as a lecturer. The best option is with a cable. It is best not to use the same connection (e.g. wifi) as the participants in case the network slows down.
 
+.. note:: The ideal browser to use is Mozilla firefox (in a current version). Javascript has to be turned on and cookies allowed (normally default setting). **Do not use the Internet Explorer**.
 
 Run a game
 ==========
 
+Information for participants before the course
+-----------------------------------------------
+
+You may inform participants upfront e.g. via email that you plan to run an experiment in class.
+
+- participants have to bring a mobile device that has internet access, e.g. a smart phone, a tablet or laptop. (see `Participants' devices`_).
+- The browser they use should be up-to-date and javascript and cookies enabled. We suggest to use Firefox.
+- The devise has to have enough battery left (suggest to bring a charger).
+
+
+Additionally, if relevant, you can inform participants that classEx only requires a small amount of data volume (for participants). When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. If you decide to use games with additional graphical libraries (e.g. for plots on the participants' screens), this amount may be higher. This information may be especially relevant if participants have limited amounts of data volume.
+
+
+Information for participants in the course
+-------------------------------------------
+
+.. image:: _static/rungame/intro_slide.PNG
+    :alt: 300px
+
+**The only important information participants need is how to login**. The easiest way is to provide them with a powerpoint slide with the login data. You can add a QR code but notice that QR codes may not work in big lecture halls. For all login possibilities (link, QR,...) see `Login of participants and test participants`_.
+
+Before you start a game, you may inform participants also about the following:
+
+- Participants need to stay logged in until the experiment is over.
+
+- Participants should close all apps. Having other apps open might reduce the internet speed and therefore a well-functioning of classEx.
+
+- If the experiment has already started (and some decisions have already been entered), participants might not be able to join the experiment any more. This depends on the game, but is normally so after the first stage of a game has been concluded.
+
+- If participants are chosen randomly to receive their payoff, they should make screenshots of their winner's notification to be sure to receive their payoff. (see `Disbursal of payoffs`_).
+
+
+
+
 Before the start
 ----------------
 
-Parameters offer a possibility to adjusted games without knowledge of the editing mode. I a game includes changable parameters the *parameters* button appears in the lecture mode before you start the game.
+Ask all participants to login. The counter over the start button shows how many participants are currently logged in. There is no minimum number of participants required to start a game.
+
+.. note:: The best option is to let all participants login first, then start a game. Participants can also login when the game is running. Participation is always possible when the first stage of the game is running. Depending on the game, it may not be possible to participate if the game has already proceeded to later stages.
+
+Parameters offer a possibility to adapt the setting of the game. If a game has changeable parameters the *parameters* button appears in the lecture mode before you start the game.
 
 .. image:: _static/Parameters.PNG
     :alt:  300px
 
-You can change the parameters of a game by clicking on *parameters*. For example, in a public goods game, you can change the MPCR, the endowment and the amount of rounds and restart the game with the new settings. You can restart the game by clicking on *restart game*.
+You can change the parameters of a game by clicking on *parameters*. For example, in a public goods game, you can change the the endowment and restart the game with the new settings. The button *restart game* allows you to restart the current game.
+
 
 Start a game
 ------------
-
-During a lecture, the interaction between the lecturer and the participants takes place in the lecture mode. The lecturer’s browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode. The lecturer can start this game or select a different one.
 
 The lecturer can select a new game by choosing it from the drop down list. The drop down list shows all available games. A selected game can be started by pressing:
 
@@ -58,7 +94,7 @@ The lecturer can select a new game by choosing it from the drop down list. The d
 
 By pressing start, the lecturer initiates the first stage of the game. If a game consists of several stages, the start button for the next stage appears after pressing the start button for the first stage.
 
-The counter over the start button shows how many participants are currently logged in. There is no minimum number of participants required to start a game.
+
 
 If a game consists of several treatments and / or roles the participants will be placed into treatments / roles alternately. If the number of participants is not a multiple of the group size, the programme code FindPartnerDecision (see Elements) can be equipped with a random argument, so that no participants are excluded from the game.
 
@@ -74,6 +110,17 @@ Here, 3 participants are logged in and 1 has already made their decision.
 
     Hint: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
 
+
+
+- If you accidentally close the browser, no problem. Just open it again. Normally you should be still logged in. Otherwise just log in again.
+
+- In case you want to logout all participants, just press the logout all participants button in the "course data" section.
+
+- Note that there is no way back if you continue to feedback or next round/session.
+
+- If your game has several rounds / stages, make sure to stay in the first round long enough, as this is where participants are matched.
+
+
 End the Game
 ------------
 
@@ -83,6 +130,16 @@ When the participants have made their decisions, the lecturer can end the game b
     :alt:  300px
 
 If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button.
+
+
+
+After the experiment
+--------------------
+
+- You can download the excel files containing the data of the game.
+
+- If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
+
 
 
 
@@ -117,62 +174,7 @@ previous results
 
 
 
-Practical hints
-===============
 
-The following hints should give you some advice to avoid problems when using classEx especially the first time.
-
-Information upfront for students
---------------------------------
-
-You may inform students upfront via email about the following:
-
-- Students have to bring a device that has internet access to class, preferably a smart phone, but a tablet or laptop computer also work.
-- The devise has to have enough battery left (suggest to bring a charger).
-- The browser they use should be up-to-date.
-
-Before you start
------------------
-
-- Make sure you have a stable internet connection as a lecturer. The best option is with a cable.
-
-- It is best not to use the same connection (e.g. wifi) as the participants in case the network slows down.
-
-- The ideal browser to use is Mozilla firefox (in a current version). Javascript has to be turned on and cookies allowed (normally default setting). **Do not use the Internet Explorer**.
-
-Information for students in the course
----------------------------------------
-
-- Students need to stay logged in until the experiment is over.
-
-- Students need to close all the apps. Having other apps open might log students out.
-
-- If the experiment has already started (and some decisions have already been entered), students might not be able to join the experiment any more.
-
-- If students are chosen randomly to receive their payoff, they should screenshot their winner's notification to be sure to receive their payoff.
-
-During the game
--------------
-
-- If you accidentally close the browser, no problem. Just open it again. Normally you should be still logged in. Otherwise just log in again.
-
-- In case you want to logout all participants, just press the logout all participants button in the "course data" section.
-
-- Note that there is no way back if you continue to feedback or next round/session.
-
-- If your game has several rounds / stages, make sure to stay in the first round long enough, as this is where students are matched.
-
-After the experiment
---------------------
-
-- You can download the excel files containing the data of the game.
-
-- If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
-
-Password forgotten
--------------------
-
-If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered. 
 
 Login of participants and test participants
 ============================================
@@ -235,7 +237,7 @@ Participants’ screens are updated automatically when their partner has made a 
 
 
 participants interface
-=================
+======================
 
 The participants interface should be self-explanatory. The most common actions participants are asked to carry out are binary decisions and numeric decisions.
 
@@ -305,3 +307,7 @@ For the different result graphs see Result elements in Elements.
 Dealing with problems (logout, participantNr)
 ===============================================
 
+Password forgotten
+-------------------
+
+If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered.
