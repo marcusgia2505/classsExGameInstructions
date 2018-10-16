@@ -1,0 +1,2 @@
+Helligkeit 100
+Kontrast 70
