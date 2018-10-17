@@ -17,7 +17,7 @@ classEx is an online tool to run interactive experiments and surveys. It is dire
 This documentation is written for lecturers and experimenters who want to use classEx for conducting games
 in the classroom or in the field. In the following, we will talk about lecturers as the one running the game. All information hold true for as experimenters as well. **Participants do not need to read this documentation.** Participants are informed by the lecturer on how to login.
 
-The chapter "Basics" explains the first steps for new classEx users.
+The chapter `Basics`_ explains the first steps for new classEx users.
 
 In the chapter "Run ready-made games" you find a step-by-step guide how to run ready-made games in classEx.
 
