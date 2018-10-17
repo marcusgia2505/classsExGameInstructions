@@ -214,12 +214,12 @@ You can augment the automatic link by a personalised ticket. This ticket will be
 Add test participant
 ---------------------
 
-As lecturer you can run a game with fictional test participants. To add a test participant click on the button in the lecture submode menu:
+As lecturer you can run a game with fictional test participants in one browser. To add a test participant click on the button in the top bar of the lecture mode:
 
-.. image:: _static/Addparticipant.PNG
+.. image:: _static/Addplayer.PNG
     :alt:  300px
 
-For every added test pa new tab in your browser will open. The tab for a test participant replicates the fully functional interface for a real participant. This enable you to make test runs which is especially useful when you develope your own games.
+For every test participant a new tab in your browser will open. The tab for a test participant replicates the fully functional interface for a real participant. This enable you to make test sessions which is especially useful when you develope your own games. If you want to open multiple test participants just hold the 
 
 Logout
 ------
@@ -240,7 +240,7 @@ Participants’ screens are updated automatically when their partner has made a 
 
 
 
-participants interface
+Participants interface
 ======================
 
 The participants interface should be self-explanatory. The most common actions participants are asked to carry out are binary decisions and numeric decisions.

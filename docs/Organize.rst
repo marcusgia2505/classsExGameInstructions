@@ -14,9 +14,11 @@ In the top right-hand corner, you find the main navigation bar which is always d
 The currently active mode is marked by a darker shade around its symbol |pic_overview|, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol |pic_editmode| takes you to the **editing mode**. The **drop down menu** (which shows the name of the lecturer and is shaded in black in the figure above) provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button.
 
 .. |pic_lecturemode| image:: _static/pic/lectureMode.png
+   :width: 15px
 .. |pic_overview| image:: _static/pic/lecture.png
+   :width: 15px
 .. |pic_editmode| image:: _static/pic/editMode.png
-
+   :width: 15px
 
 
 Functions in the top bar

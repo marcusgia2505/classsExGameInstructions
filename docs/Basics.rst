@@ -75,9 +75,11 @@ The currently active mode is marked by a darker shade around its symbol |pic_ove
 The top bar is located in the top left corner. It is different in each mode. There you can find the main function for each mode. The details are explained in the respective section (lecture mode = Run ready-made games, overview = Organize your games, editing mode = Develop your own games).
 
 .. |pic_lecturemode| image:: _static/pic/lectureMode.png
+   :width: 15px
 .. |pic_overview| image:: _static/pic/lecture.png
+   :width: 15px
 .. |pic_editmode| image:: _static/pic/editMode.png
-
+   :width: 15px
 
 Terminology
 ===========
