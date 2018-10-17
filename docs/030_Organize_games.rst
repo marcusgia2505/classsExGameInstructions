@@ -1,14 +1,26 @@
-=================
-Organize games
-=================
+==========================
+Organize games and course
+==========================
 
-You can organize your games in the Overview. Here, you can find all your games as well as the standard games that are in your overview by default. 
+You can organize your games in the overview mode. Here, you can find all your games as well as the ready-made games that are shown in your overview by default.
 
 .. image:: _static/Overview.PNG
     :alt:  300px
 
-Top bar - overview mode
-~~~~~~~~~~~~~~~~~~~~~~~
+On the left hand side you find the folders for own games (empty at first login) and the folders for ready-made games (standard games, quiz & questionnaire,...).
+
+In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
+
+The currently active mode is marked by a darker shade around its symbol |pic_overview|, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol |pic_editmode| takes you to the **editing mode**. The **drop down menu** (which shows the name of the lecturer and is shaded in black in the figure above) provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button.
+
+.. |pic_lecturemode| image:: _static/pic/lectureMode.png
+.. |pic_overview| image:: _static/pic/lecture.png
+.. |pic_editmode| image:: _static/pic/editMode.png
+
+
+
+Functions in the top bar
+========================
 
 You can see the top bar for the **overview mode** in the picture above. It offers folowing funcionality:
 
@@ -20,6 +32,7 @@ new games
 
 repository
     The repository which provides access to previous results from your private games or from public games conducted by you or other classEx lecturers
+
 
 
 Folders
