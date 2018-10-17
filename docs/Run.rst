@@ -76,18 +76,18 @@ Ask all participants to login. The counter over the start button shows how many 
 
 .. note:: The best option is to let all participants login first, then start a game. Participants can also login when the game is running. Participation is always possible when the first stage of the game is running. Depending on the game, it may not be possible to participate if the game has already proceeded to later stages.
 
-Parameters offer a possibility to adapt the setting of the game. If a game has changeable parameters the *parameters* button appears in the lecture mode before you start the game.
+The lecturer can select a new game by choosing it from the drop down list in the top left corner or by selecting in the overview mode. The drop down list shows all available games.
 
 .. image:: _static/Parameters.PNG
     :alt:  300px
 
-You can change the parameters of a game by clicking on *parameters*. For example, in a public goods game, you can change the the endowment and restart the game with the new settings. The button *restart game* allows you to restart the current game.
+Parameters offer a possibility to adapt the setting of the game. If a game has changeable parameters the *parameters* button appears in the lecture mode before you start the game. You can change the parameters of a game by clicking on *parameters*. For example, in a public goods game, you can change the the endowment and restart the game with the new settings. The button *restart game* allows you to restart the current game.
 
 
 Start a game
 ------------
 
-The lecturer can select a new game by choosing it from the drop down list in the top left corner or by selecting in the overview mode. The drop down list shows all available games. A selected game can be started by pressing:
+A selected game can be started by pressing the blue start button.
 
 .. image:: _static/Startblue.JPG
     :alt:  300px
@@ -110,72 +110,62 @@ During the course of a stage, a display shows how many participants are logged i
 
 Here, 3 participants are logged in and 1 has already made their decision.
 
-    Hint: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the input phase and carry on if the added value of more input is fairly small.
+.. note:: If you play a game with large groups, it can happen that participants take some time until they make their decision. You should wait for a while but then terminate the stage and carry on if the added value of more input is fairly small.
+
+.. note:: Note that there is no way back if you continue to feedback or next round/session.
+
+.. note:: If you accidentally close the browser, no problem. Just open it again. Normally you should be still logged in. Otherwise just log in again.
 
 
-
-- If you accidentally close the browser, no problem. Just open it again. Normally you should be still logged in. Otherwise just log in again.
-
-- In case you want to logout all participants, just press the logout all participants button in the "course data" section.
-
-- Note that there is no way back if you continue to feedback or next round/session.
-
-- If your game has several rounds / stages, make sure to stay in the first round long enough, as this is where participants are matched.
-
-
-End the Game
+End the game
 ------------
 
-When the participants have made their decisions, the lecturer can end the game by clicking on „display results“.
+When the participants have made their decisions, the lecturer can end the game by clicking on the blue button. In many cases it shows „display results“.
 
 .. image:: _static/Dispay.JPG
     :alt:  300px
 
-If games are played for real money, the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button.
+If games are played for real money (and participants receive a payoff code), the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button.
+
+.. note:: A game does not have an end button. A game is only stopped when a new game is started. 
 
 
-
-After the experiment
+After the game
 --------------------
 
-- You can download the excel files containing the data of the game.
+Once a game is over, you can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
 
-- If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
-
-
+If you want to logout all participants after the game you can do so by clicking on the logout all participants button in the :ref:`Organize:CourseData`. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
 
 
-Further settings in the top bar
-===============================
+Settings in the top bar
+========================
 
-The top bar of the **lecture mode** looks like this:
+The top bar of the **lecture mode** provides the following functionality.
 
 .. image:: _static/MenuLecture.PNG
     :alt:  150px
 
-It offers following functionality:
 
 select games
-    Select games from all public and your private games. The selected game opens up as soon as you click on it.
+    Select games from own and ready-made games. The selected game opens up as soon as you click on it.
 
-Login QR code
-    Click on QR code to enlarge the QR code and also provide an instruction for participants to enter without using the QR code
+login QR code
+    Click on QR code to display the QR code for login. The QR code page also provides some details about other ways to login (see `Login of participants and test participants`)
 
-Add test participants
-    This button will add a test participant screen in a new tab. This can be very useful to test classEx games.
+add test participants
+    This button will open a test participant in a new tab. This can be very useful to test classEx games.
 
-Diagnosis mode
-    In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier.
+diagnosis mode
+    In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier. It is only useful if you use advanced programing.
 
 data
-    Via the dropdown menu data you can access an overview over participants who are currently taking part in your game or who took part in the game of which the results are on display. The overview shows the number of participating participants and which decision stage they are at. You can show this overiew on the screen via **show data**. Clicking on "back to lecture mode" takes you back to the current game. You can also download the results via **download as excel file**. The excel files contain the decisions made in the game you just played or, if available, old results of the same game. You can also download excel files containing an overview of types, treatments & groups that existed in this game as well as participants’ IDs and their log-in time.
+    The dropdown menu *data* offers two options. By clicking on **show data** you can access a preview over participants current decisions in real time. You can also download the results via **download as excel file**. The excel files contain the all variables recorded in the game. It contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data.
 
 previous results
-    You can access previous results via the previous results dropdown menu. Simply choose which results from previous lectures you want to display. This way you can directly compare current outcomes with previous ones.
+    You can access previous results via the previous results dropdown menu. Simply choose which results from previous session you want to display. This way you can directly compare current outcomes with previous ones, you just played or, if available, old results of the same game. When you selected a previous result you can also download all data for this result by clicking on **show data** in the data dropdown menu. The previous result section also contains results from other lecturers if the game and the recorded data are public. If you use such a public game, your data will be available to other lecturers as well.
 
-
-
-
+.. note:: If you do not want that others see your recorded data when you use a public game, you should make a copy of the game and set it to private. Then play the private version of the game.
 
 
 Login of participants and test participants
