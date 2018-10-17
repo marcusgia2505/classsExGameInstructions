@@ -21,15 +21,15 @@ The chapter :ref:`Basics:Basics` explains the first steps for new classEx users.
 
 In the chapter :ref:`Run:Run ready-made games` you find a step-by-step guide how to run ready-made games in classEx.
 
-The  chapter :ref:`Organize:Organize games` tells you how to structure your games in your account and how to find games from other users.
+The  chapter :ref:`Organize:Organize games and course` tells you how to structure your games in your account and how to find games from other users.
 
 The chapter :ref:`Tutorial:Tutorial: How to develop a simple game` shows a step-by-step introduction for how to develop an ultimatum game.
 
-The chapter "Develop your own games" is a manual for users who want to develop their own games.
+The chapter :ref:`Develop:Develop your own games` is a manual for users who want to develop their own games.
 
-The chapter "Elements" provides an overview of all elements which can be used to develop own games.
+The chapter :ref:`Elements:Elements` provides an overview of all elements which can be used to develop own games.
 
-The chapter "Programming" provides a list of variables and functions for advanced programmers.
+The chapter :ref:`Programming:Programming` provides a list of variables and functions for advanced programmers.
 
 
 .. toctree::
