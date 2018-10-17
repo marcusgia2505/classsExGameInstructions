@@ -72,3 +72,11 @@ Import games
 -----------------
 
 All games from the repository can be imported to one's own account by clicking on the *Import game* button. You can then find the game in the general folder of your own games.
+
+Personal data
+==============
+
+
+
+Course data
+============
