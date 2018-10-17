@@ -171,36 +171,47 @@ previous results
 Login of participants and test participants
 ============================================
 
-Login
------
+Login via website (default)
+----------------------------
 
 .. image:: _static/Loginnnn.JPG
     :alt:  300px
 
 In order to login, participants go to the website http://classex.uni-passau.de and choose their university and then their course or lecture. They enter the password provided by the lecturer and click on "Login".
 
-.. image:: _static/Noopenvotings.JPG
+.. image:: _static/rungame/game_not_started.png
     :alt:  300px
 
-If participants are logged in before the lecturer has started the game, participants see a waiting screen. The lecturer can edit the text on the waiting screen in the editing Mode in “own data”.
+If participants are logged in before the lecturer has started the game, participants see a waiting screen with the message displayed above. The lecturer can edit the text on the waiting screen in the :ref:`Organize:Course data`.
+
+
+.. note:: If a game has already been started, participants directly see the game and can play it. If may therefore be useful to ask all participants to login and start the game after that has happend. If a game has ended (but no new one selected), new participants get the message on login that the current game is still running and they cannot participate.
 
 Login with QR-Code
 ------------------
 
-All experiments can be accessed by participants via a QR-Code. This QR-Code is provided automatically in the Lecture Mode on top of the page. Enlarge the QR code by clicking on the symbol.
+All experiments can be accessed by participants via a QR-Code. This QR-Code is provided automatically in the lecture Mode in the top bar. Display the QR code by clicking on the symbol |pic_qr|. When clicking on the QR code symbol instructions on how to log in without using the QR code also appear on the screen.
 
 .. image:: _static/QRlogin.PNG
     :alt:  300px
 
-Lecturers can either copy the QR-Code and print it on flyers, for example, or display it on the screen. When clicking on the QR code symbol instructions how to log in without using the QR code also appear on the screen.
+Lecturers can either copy the QR-Code and print it on flyers, for example, or display it on the screen. Be aware that in big lecture halls the QR code cannot be scanned directly from the projection screen. 
 
-Personalised login with ticket
-------------------------------
+.. |pic_qr| image:: _static/pic/qr.png
 
-You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved as $tic; in the game.
+Automatic link for login
+------------------------
 
-Add/login test participant
---------------------------
+When you click on |pic_qr|, you also get some information on how to login participants direcly with a link. They just have to copy the link in their browser and are logged in into your course (without the need of selecting the course and entering a password). The link looks like https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUxxF-g
+
+Personalized link for login
+----------------------------
+
+You can augment the automatic link by a personalised ticket. This ticket will be stored as external ID in classEx and allows you to identify participants. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved by the variable $tic; in the game. It is also saved to the excel file. If the ticket is  e.g. 12345 the link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUTsdsdsFs&tic=12345 
+
+
+Add test participant
+---------------------
 
 As lecturer you can run a game with fictional test participants. To add a test participant click on the button in the lecture submode menu:
 
