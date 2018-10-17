@@ -36,13 +36,13 @@ The chapter "Programming" provides a list of variables and functions for advance
    :maxdepth: 10
    :caption: classEx documentation
 
-   010_Basics
-   020_Run_a_ready-made_game
-   030_Organize_games
-   039_Tutorial
-   040_Develop_your_own_games
-   042_elements
-   043_programming
+   Basics
+   Run
+   Organize
+   Tutorial
+   Develop
+   Elements
+   Programming
 
 
 **Version and new features**
