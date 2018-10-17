@@ -299,7 +299,3 @@ For the different result graphs see Result elements in Elements.
 Dealing with problems (logout, participantNr)
 ===============================================
 
-Password forgotten
--------------------
-
-If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered.

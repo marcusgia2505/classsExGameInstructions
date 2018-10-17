@@ -77,6 +77,11 @@ Personal data
 ==============
 
 
+Password forgotten
+-------------------
+
+If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered.
+
 
 Course data
 ============
