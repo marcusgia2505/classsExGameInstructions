@@ -19,11 +19,11 @@ in the classroom or in the field. In the following, we will talk about lecturers
 
 The chapter :ref:`Basics:Basics` explains the first steps for new classEx users.
 
-In the chapter "Run ready-made games" you find a step-by-step guide how to run ready-made games in classEx.
+In the chapter :ref:`Run:Run ready-made games` you find a step-by-step guide how to run ready-made games in classEx.
 
-The  chapter "Organize games" tells you how to structure your games in your account and how to find games from other users.
+The  chapter :ref:`Organize:Organize games` tells you how to structure your games in your account and how to find games from other users.
 
-The chapter "Tutorial: Develop a simple game" shows a step-by-step introduction for how to develop an ultimatum game.
+The chapter :ref:`Tutorial:Tutorial: How to develop a simple game` shows a step-by-step introduction for how to develop an ultimatum game.
 
 The chapter "Develop your own games" is a manual for users who want to develop their own games.
 
