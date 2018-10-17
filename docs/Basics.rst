@@ -22,7 +22,7 @@ For registration you have to provide your name, an email address and information
 
 Each user has an account (called course in classEx) which is linked to their institution. With the login credentials you obtain the right to use classEx for teaching, education, research and other purposes (for details please see `terms of use`_).
 
-participants do not need to register but can access classEx with the course password provided to the lecturer with the login credentials.
+Participants do not need to register but can access classEx with the course password provided to the lecturer with the login credentials.
 
 Login
 =========
@@ -62,7 +62,7 @@ Navigation and modes
     You can find a short video on how to use classEx on \url{https://www.youtube.com/embed/Zm0DpUzhOGg}.
 
 
-Entering classEx as a lecturer offers three modes: overview mode, lecture mode and editing mode. After login, the screen shows the overview mode. Here you can organize your games and access all important features of classEx. In the lecture mode you can run games, in the editing mode you can develop your own games.
+Entering classEx as a lecturer offers three modes: overview mode |pic_overview|, lecture mode |pic_lecturemode| and editing mode |pic_editmode|. After login, the screen shows the overview mode. Here you can organize your games and access all important features of classEx. In the lecture mode you can run games, in the editing mode you can develop your own games.
 
 .. image:: _static/Overview.PNG
     :alt:  300px
@@ -70,7 +70,7 @@ Entering classEx as a lecturer offers three modes: overview mode, lecture mode a
 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
     
-The currently active mode is marked by a darker shade around its symbol |pic_overview|, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol |pic_editmode| takes you to the **editing mode**. The **drop down menu** (which shows the name of the lecturer and is shaded in black in the figure above) provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the logout button. More information on how to change your personal data can be found at :ref:`Personal data` and :ref:`Course data`.
+The currently active mode is marked by a darker shade around its symbol |pic_overview|, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol |pic_editmode| takes you to the **editing mode**. The **drop down menu** (which shows the name of the lecturer and is shaded in black in the figure above) provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the logout button. More information on how to change your personal data can be found at :ref:`Organize:Personal data` and how to change your course data at :ref:`Organize:Course data`.
 
 The top bar is located in the top left corner. It is different in each mode. There you can find the main function for each mode. The details are explained in the respective section (lecture mode = Run ready-made games, overview = Organize your games, editing mode = Develop your own games).
 
