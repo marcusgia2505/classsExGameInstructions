@@ -248,7 +248,7 @@ Participants' screens
 
 The participants interface should be self-explanatory. The top bar contains the classEx logo and shows if participants are assigned to a specific role by displaying a (colored) icon |Role1|. The top bar may additionally show the interal participant id of the participant. 
 
-The most common actions participants are asked to carry out are discrete decisions and numeric decisions as shown in the following sample screens. Another common element is the contract element where participants can trade items with other participants. There are also other input types such as radio buttons or sliders which are explained in the section `Elements`_. 
+The most common actions participants are asked to carry out are discrete decisions and numeric decisions as shown in the following sample screens. Another common element is the contract element where participants can trade items with other participants. There are also other input types such as text elements, radio buttons or sliders which are explained in the section `Elements`_. 
 
 Discrete Decisions
 -------------------
@@ -256,32 +256,27 @@ Discrete Decisions
 .. image:: _static/Binarydecision.JPG
     :alt:  300px
 
-When a game has been started, the first decision is shown along with the role of the particpant |Role1|. By clicking on one of the options, the decision is submitted and saved.
+Discrete options can be shown to the participant. By clicking on one of the options, the decision is submitted and saved. The participant is informed that his or her message has been stored.
 
 .. |Role1| image:: _static/pic/role1.png
     :width: 15px
 
+.. note:: Participants cannot undo their decisions. You may add that participants have to confirm that they are sure to send their input.
+
 Numeric Decisions
 -------------------
 
-.. image:: _static/Workinghours.JPG
-    :alt:  300px
+.. image:: _static/rungame/numeric_input.PNG
+    :width:  500px
 
-Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. For further information see Elements.
+Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. For further information see `Elements`_.
 
-Other Decision Types
----------------------
+Contracts
+----------
 
 
 
-Simple quiz question
---------------------
 
-Two participant game
----------------
-
-Trading game
-------------
 
 Disbursal of payoffs
 ====================
