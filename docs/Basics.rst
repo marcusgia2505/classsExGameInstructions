@@ -43,7 +43,7 @@ User types
 
     - Lecturer: Registered lecturers who have received a password can login as experimenter/lecturer. As lecturer you can organize your account, start ready-made games and quizzes, adapt them to your liking or create new ones. This documentation mainly explains the possibilities and options classEx offers for lecturers.
 
-    - Administration: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions `here <https://classex-doc.readthedocs.io/en/latest/020_Run_a_ready-made_game.html#disbursal-of-payoffs>`_.
+    - Administration: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions in :ref:`Run:Disbursal of payoffs`.
 
 Password
     A registered lecturer has received a password upon registration. Participants are provided with their password by the lecturer. The password can also be used for the administration user type.

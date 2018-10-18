@@ -136,7 +136,7 @@ After the game
 
 Once a game is over, you can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
 
-If you want to logout all participants after the game you can do so by clicking on the logout all participants button in the :ref:`Organize:CourseData`. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
+If you want to logout all participants after the game you can do so by clicking on the logout all participants button in the :ref:`Organize:Course data`. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
 
 
 Settings in the top bar
