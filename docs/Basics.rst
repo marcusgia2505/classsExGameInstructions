@@ -7,7 +7,7 @@ Basics
 Requirements
 ============
 
-classEx is an online tool which runs centralized at the servers of the University of Passau. Therefore, no installation of software or download of applications is necessary. Running games and developing games is done in a standard internet browser.
+classEx is an online tool which runs centralized at a server of the University of Passau. Therefore, no installation of software or download of applications is necessary. Running games and developing games is done in a standard internet browser.
 
 Lecturers only need an up-to-date browser and an internet connection. We suggest to use Firefox. Make sure that javascript is enabled and cookies are allowed (normally this is a default setting in many browsers). **Do not use Internet Explorer for using classEx because classEx does not run with it.**
 
