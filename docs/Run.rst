@@ -248,7 +248,7 @@ Participants' screens
 
 The participants interface should be self-explanatory. The top bar contains the classEx logo and shows if participants are assigned to a specific role by displaying a (colored) icon |Role1|. The top bar may additionally show the interal participant id of the participant. 
 
-The most common actions participants are asked to carry out are discrete decisions and numeric decisions as shown in the following sample screens. Another common element is the contract element where participants can trade items with other participants. There are also other input types such as text elements, radio buttons or sliders which are explained in the section `Elements`_. 
+The most common actions participants are asked to carry out are discrete decisions and numeric decisions as shown in the following sample screens. Another common element is the contract element where participants can trade items with other participants. There are also other input types such as text elements, radio buttons or sliders which are explained in the section :ref:`Elements`. 
 
 Discrete Decisions
 -------------------
@@ -269,7 +269,7 @@ Numeric Decisions
 .. image:: _static/rungame/numeric_input.PNG
     :width:  500px
 
-Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. For further information see `Elements`_.
+Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. For further information see :ref:`Elements`.
 
 Contracts
 ----------
@@ -282,7 +282,7 @@ Participant can trade items in classEx. Therefore, they walk around in class to 
 .. image:: _static/rungame/buyer_png.png
     :width:  100%
 
-The upper row shows the different steps for the seller |Role4|, the lower row shows the different steps for the buyer |Role3|. In this case, only sellers can send offers to buyers. This can also be changed in the `Elements`_ settings. 
+The upper row shows the different steps for the seller |Role4|, the lower row shows the different steps for the buyer |Role3|. In this case, only sellers can send offers to buyers. This can also be changed in the :ref:`Elements` settings. 
 
 First, the seller askes for the ID of the buyer which is displayed on the buyer's screen. In this example, the buyer has the ID 3. The seller enters the ID of the buyer and the price into the input field on his screens and presses *SELL*. 
 
