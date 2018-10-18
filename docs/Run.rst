@@ -284,8 +284,9 @@ Participant can trade items in classEx. Therefore, they walk around in class to 
 
 The upper row shows the different steps for the seller |Role4|, the lower row shows the different steps for the buyer |Role3|. In this case, only sellers can send offers to buyers. This can also be changed in the :ref:`Elements` settings. 
 
-First, the seller askes for the ID of the buyer which is displayed on the buyer's screen. In this example, the buyer has the ID 3. The seller enters the ID of the buyer and the price into the input field on his screens and presses *SELL*. 
+Each screen consists of two fields. The item field shows all items which a participant posseses. The contract field shows all contracts and offers.
 
+First, the seller askes for the ID of the buyer which is displayed on the buyer's screen. In this example, the buyer has the ID 3. The seller enters the ID of the buyer and the price into the input field on his screens and presses *SELL*. Then an offer shows up for the buyer in the contract field. The buyer can accept or reject the offer. The seller can withdraw the offer. If the buyer accepts the offers, the item is transfered to the buyer and shows up in his or her item field. The contract is marked as accepted.
 
 .. |Role3| image:: _static/pic/role3.png
     :width: 15px
@@ -296,23 +297,30 @@ First, the seller askes for the ID of the buyer which is displayed on the buyer'
 Disbursal of payoffs
 ====================
 
-In some games participants will receive a monetary payoff. The payoff is managed by providing the participant with a payoff code. Participants should not show their payoff code to others, as others could then claim the payoff. Therefore, it is advisable for participants not to let any other participant see the screen of their mobile device during the experiment.
+In some games participants will receive a real monetary payoff. The payoff is paid out by providing the participant with a payoff code. 
+
+.. note:: Participants should not show their payoff code to others, as others could then claim the payoff. Therefore, it is advisable for participants not to let any other participant see the screen of their mobile device during the experiment.
+
+.. note:: If a participant closes the browser, normally the payoff code is lost. Therefore, participants should take note of the payoff code or make a screenshot of it. 
 
 .. image:: _static/Payoffff.JPG
     :alt:  300px
 
-The lecturer reserves the right of withholding the payoff in the event of error. The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff. The person entrusted with disbursing the payoff can log-in into the adiministration mode by selecting it in the drop down menu.
+The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff. The person entrusted with disbursing the payoff can login into classEx with the user type "adiministration" (see :ref:`Basics:Login`). The payoff can also be disbursed directly by the lecturer.
 
-.. image:: _static/Adminmode.JPG
-    :alt:  300px
-
-The administrator then sees a screen indicating the date, the payoff code and the amount of money to be paid out to the participant. Further, clicking on the red icons opens up pdf of a receipt that must be printed out and then signed by the participant. Also, the administrator must tick the box on the right indicating that the participant has picked up his or her payoff.
+If you login as user type "administratio", you can see a list indicating the date, the payoff code and the amount of money to be paid out to the participant. Further, clicking on the red icons opens up pdf of a receipt that can be printed out and can be signed by the participant. Also, the administrator can tick the box on the right indicating that the participant has picked up his or her payoff.
 
 .. image:: _static/Payout.JPG
     :alt:  300px
 
+..note:: The lecturer reserves the right of withholding the payoff in the event of error. classEx displays an automatic message which states: "In this game payoffs could be made. The lecturer is responsible for the payoff, subject to a technical check for correctness of the winning codes. Legal recourse is excluded."
+
+..note:: If a participant lost his or her payoff code, the list of payoffs also shows the internal player number of the player. If the participant logs in with the same device as he or she played the game, the player number can be retrieved by clicking on the classEx logo in the top right corner. This can be used then to verify that the persons is entitled to receive the payoff.
+
 Graphical results
 =================
+
+At the end of a game, classEx displays summary results directly on the lecturer screen. There are different result
 
 .. image:: _static/Beautymacro.JPG
     :alt:  300px
