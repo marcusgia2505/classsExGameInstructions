@@ -27,7 +27,7 @@ Every participant who wants to participate in a session needs a mobile device (e
 
 Lecturer device
 ----------------
-The lecturer conducting a session needs a device with a big screen (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all participants (e.g. via a classroom projector). The lecturer should connect via a stable internet connection (e.g. LAN) if possible.
+The lecturer conducting a session needs a device with a big screen (e.g. laptop, tablet) with a browser and internet connection. The screen of the lecturers device should be visible for all participants (e.g. via a classroom projector). 
 
 .. note:: Make sure you have a stable internet connection as a lecturer. The best option is with a cable. It is best not to use the same connection (e.g. wifi) as the participants in case the network slows down.
 
@@ -46,7 +46,7 @@ You may inform participants upfront e.g. via email that you plan to run an exper
 - The devise has to have enough battery left (suggest to bring a charger).
 
 
-Additionally, if relevant, you can inform participants that classEx only requires a small amount of data volume (for participants). When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20 KB. If you decide to use games with additional graphical libraries (e.g. for plots on the participants' screens), this amount may be higher. This information may be especially relevant if participants have limited amounts of data volume.
+Additionally, if relevant, you can inform participants that classEx only requires a small amount of data volume (for participants). When using classEx as a participant for the first time, loading all settings requires about 120 KB (this is cached and does not need to be reloaded when reentering). Each game that is played requires data volume of roughly 20-50 KB. If you decide to use games with additional graphical libraries (e.g. for plots on the participants' screens), this amount may be higher. This information may be especially relevant if participants have limited amounts of data volume.
 
 
 Information for participants in the course
@@ -136,7 +136,7 @@ After the game
 
 Once a game is over, you can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
 
-If you want to logout all participants after the game you can do so by clicking on the logout all participants button in the :ref:`Organize:Course data`. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
+If you want to logout all participants after the game you can do so by clicking on the logout all participants button in the :ref:`Organize:Course data`. 
 
 
 Settings in the top bar
@@ -152,10 +152,10 @@ select games
     Select games from own and ready-made games. The selected game opens up as soon as you click on it.
 
 login QR code
-    Click on QR code to display the QR code for login. The QR code page also provides some details about other ways to login (see `Login of participants and test participants`)
+    Click on QR code to display the QR code for login. The QR code page also provides some details about other ways to login (see `Login of participants and test participants`_)
 
 add test participants
-    This button will open a test participant in a new tab. This can be very useful to test classEx games.
+    This button will open a test participant in a new tab. This can be very useful to test classEx games. If you want to open multiple test players at a time, just hold the Crtl-button and click several times on the test player icon.
 
 diagnosis mode
     In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier. It is only useful if you use advanced programing.
@@ -178,7 +178,7 @@ Login via website (default)
 .. image:: _static/Loginnnn.JPG
     :alt:  300px
 
-In order to login, participants go to the website http://classex.uni-passau.de and choose their university and then their course or lecture. They enter the password provided by the lecturer and click on "Login".
+In order to login, participants go to the website http://classex.uni-passau.de and choose their university and then their course. They enter the password provided by the lecturer and click on "Login".
 
 .. image:: _static/rungame/game_not_started.png
     :alt:  300px
@@ -196,19 +196,22 @@ All experiments can be accessed by participants via a QR-Code. This QR-Code is p
 .. image:: _static/QRlogin.PNG
     :alt:  300px
 
-Lecturers can either copy the QR-Code and print it on flyers, for example, or display it on the screen. Be aware that in big lecture halls the QR code cannot be scanned directly from the projection screen. 
+Lecturers can either copy the QR-Code and print it on flyers, for example, or display it on the screen. 
 
 .. |pic_qr| image:: _static/pic/qr.png
+    :width: 15px
+
+.. note:: Be aware that in big lecture halls the QR code cannot be scanned directly from the projection screen. 
 
 Automatic link for login
 ------------------------
 
-When you click on |pic_qr|, you also get some information on how to login participants direcly with a link. They just have to copy the link in their browser and are logged in into your course (without the need of selecting the course and entering a password). The link looks like https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUxxF-g
+When you click on |pic_qr|, you also get some information on how to login participants direcly with a link. They just have to copy the link in their browser and are logged in into your course (without the need of selecting the course and entering a password). The link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUxxF-g (this link is just for demonstration and cannot be used.)
 
 Personalized link for login
 ----------------------------
 
-You can augment the automatic link by a personalised ticket. This ticket will be stored as external ID in classEx and allows you to identify participants. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved by the variable $tic; in the game. It is also saved to the excel file. If the ticket is  e.g. 12345 the link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUTsdsdsFs&tic=12345 
+You can augment the automatic link by a personalised ticket. This ticket will be stored as external ID in classEx and allows you to identify participants. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved by the variable $tic; in the game. It is also saved to the excel file. If the ticket is  e.g. 12345 the link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUTsdsdsFs&tic=12345 (this link is just for demonstration and cannot be used.)
 
 
 Add test participant
@@ -219,51 +222,57 @@ As lecturer you can run a game with fictional test participants in one browser. 
 .. image:: _static/Addplayer.PNG
     :alt:  300px
 
-For every test participant a new tab in your browser will open. The tab for a test participant replicates the fully functional interface for a real participant. This enable you to make test sessions which is especially useful when you develope your own games. If you want to open multiple test participants just hold the 
+For every test participant a new tab in your browser will open. The tab for a test participant replicates the fully functional interface for a real participant. This enable you to make test sessions which is especially useful when you develope your own games. If you want to open multiple test participants just hold the Crtl-Button and click on the icon multiple times. 
 
 Logout
 ------
 
-Currently, there is no visible logout button for participants.
+There is no (visible) logout button for participants. This is done in order to keep participants in the game and that they cannot logout accidently. 
 
 If you want to log out a participant (e.g. in case of a problem), click on the classEx logo on the participant's device. This displays a logout button.
 
-As a lecturer you can log out all participants that are currently logged in to your class by going into your course data and clicking on this button:
+As a lecturer you can log out all participants that are currently logged in to your course by going into your :ref:`Organize:Course data` and by clicking on the button below. This will logout all participants immediatly. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
 
 .. image:: _static/Bigredbutton.PNG
     :alt:  300px
 
-Refresh Page
-------------
+No refresh page needed
+-----------------------
 
 Participants’ screens are updated automatically when their partner has made a decision or when the lecturer has started a new stage. Therefore, it is not necessary to press a refresh button to proceed. This way, participants can simply wait until the next stage appears on their mobile devices and do not have to keep refreshing their screens. 
 
 
 
-Participants interface
-======================
+Participants' screens
+=====================
 
-The participants interface should be self-explanatory. The most common actions participants are asked to carry out are binary decisions and numeric decisions.
+The participants interface should be self-explanatory. The top bar contains the classEx logo and shows if participants are assigned to a specific role by displaying a (colored) icon |Role1|. The top bar may additionally show the interal participant id of the participant. 
 
-- Binary Decisions
+The most common actions participants are asked to carry out are discrete decisions and numeric decisions as shown in the following sample screens. Another common element is the contract element where participants can trade items with other participants. There are also other input types such as radio buttons or sliders which are explained in the section `Elements`_. 
+
+Discrete Decisions
+-------------------
 
 .. image:: _static/Binarydecision.JPG
     :alt:  300px
 
 When a game has been started, the first decision is shown along with the role of the particpant |Role1|. By clicking on one of the options, the decision is submitted and saved.
 
-.. |Role1| image:: _static/Role1.PNG
+.. |Role1| image:: _static/pic/role1.png
+    :width: 15px
 
-- Numeric Decisions
+Numeric Decisions
+-------------------
 
 .. image:: _static/Workinghours.JPG
     :alt:  300px
 
 Numeric decisions can also be made by entering a number and pressing the submit button. If the input exceeds a predefined maximum or minimum, the participant has to redo his or her input. Beside minima and maxima you can also specify the number of digits and whether entering an input is mandatory. For further information see Elements.
 
-- Other Decision Types
+Other Decision Types
+---------------------
 
-There are other input types such as radio buttons or sliders which are explained in the section Elements. 
+
 
 Simple quiz question
 --------------------
