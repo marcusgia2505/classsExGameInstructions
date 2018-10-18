@@ -274,9 +274,24 @@ Numeric decisions can also be made by entering a number and pressing the submit 
 Contracts
 ----------
 
+Participant can trade items in classEx. Therefore, they walk around in class to find a trading partner. If they found a trading partner they have to conclude a contract in the following way.
+
+.. image:: _static/rungame/seller_png.png
+    :width:  100%
+
+.. image:: _static/rungame/buyer_png.png
+    :width:  100%
+
+The upper row shows the different steps for the seller |Role4|, the lower row shows the different steps for the buyer |Role3|. In this case, only sellers can send offers to buyers. This can also be changed in the `Elements`_ settings. 
+
+First, the seller askes for the ID of the buyer which is displayed on the buyer's screen. In this example, the buyer has the ID 3. The seller enters the ID of the buyer and the price into the input field on his screens and presses *SELL*. 
 
 
+.. |Role3| image:: _static/pic/role3.png
+    :width: 15px
 
+.. |Role4| image:: _static/pic/role4.png
+    :width: 15px
 
 Disbursal of payoffs
 ====================
