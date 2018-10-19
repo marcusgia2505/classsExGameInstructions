@@ -306,16 +306,16 @@ In some games participants will receive a real monetary payoff. The payoff is pa
 .. image:: _static/Payoffff.JPG
     :alt:  300px
 
-The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff. The person entrusted with disbursing the payoff can login into classEx with the user type "adiministration" (see :ref:`Basics:Login`). The payoff can also be disbursed directly by the lecturer.
+The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff. The person entrusted with disbursing the payoff can login into classEx with the user type "administration" (see :ref:`Basics:Login`). The payoff can also be disbursed directly by the lecturer. The password for the lecturer is always valid for administration of payoffs as well.
 
-If you login as user type "administratio", you can see a list indicating the date, the payoff code and the amount of money to be paid out to the participant. Further, clicking on the red icons opens up pdf of a receipt that can be printed out and can be signed by the participant. Also, the administrator can tick the box on the right indicating that the participant has picked up his or her payoff.
+If you login as user type "administration", you can see a list indicating the date, the payoff code and the amount of money to be paid out to the participant. Further, clicking on the red icons opens a pdf with a receipt that can be printed out and can be signed by the participant. Also, the administrator can tick the box on the right indicating that the participant has picked up his or her payoff.
 
-.. image:: _static/Payout.JPG
-    :alt:  300px
+.. image:: _static/rungame/admin_mode.PNG
+    :width:  100%
 
-..note:: The lecturer reserves the right of withholding the payoff in the event of error. classEx displays an automatic message which states: "In this game payoffs could be made. The lecturer is responsible for the payoff, subject to a technical check for correctness of the winning codes. Legal recourse is excluded."
+.. note:: The lecturer reserves the right of withholding the payoff in the event of error. classEx displays an automatic message which states: "In this game payoffs could be made. The lecturer is responsible for the payoff, subject to a technical check for correctness of the winning codes. Legal recourse is excluded."
 
-..note:: If a participant lost his or her payoff code, the list of payoffs also shows the internal player number of the player. If the participant logs in with the same device as he or she played the game, the player number can be retrieved by clicking on the classEx logo in the top right corner. This can be used then to verify that the persons is entitled to receive the payoff.
+.. note:: If a participant lost his or her payoff code, the list of payoffs also shows the internal player number of the player. If the participant logs in with the same device as he or she played the game, the player number can be retrieved by clicking on the classEx logo in the top right corner. This can be used then to verify that the persons is entitled to receive the payoff.
 
 Graphical results
 =================
