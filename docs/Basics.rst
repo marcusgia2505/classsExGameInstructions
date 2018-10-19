@@ -16,7 +16,7 @@ For using classEx you only need to register in order to get login credentials.
 Registration
 ============
 
-In order to get login credentials, please fill in the registation form at https://classex.de/get-login-credentials.
+In order to get login credentials, please fill in the registration form at https://classex.de/get-login-credentials.
 
 For registration you have to provide your name, an email address and information about your institution. In addition, you have to confirm that you accept the `terms of use`_ and the data privacy policy. **Please try to provide an institutional email address so that we can verify your affiliation.** Registered users receive an email with login credentials. Login credentials are normally sent within 1-2 days. If you do not receive credentials after 2 days, please contact us at `classEx@uni-passau.de <mailto:classEx@uni-passau.de>`_.
 
@@ -95,10 +95,10 @@ Participant
 Session
     A session is a sequence of games in a lecture, meeting or presentation. participants should not shut their browser during a session.
     
-    .. note::  After the end of a session, you can use statistical tests to analyse whether there is a relationship between the different games of a session. For example, you can examine whether participants with higher mathematical abilities are more risk averse. For this purpose, participants' ID-numbers are stored in an Excel sheet.
+    .. note::  After the end of a session, you can use statistical tests to analyze whether there is a relationship between the different games of a session. For example, you can examine whether participants with higher mathematical abilities are more risk averse. For this purpose, participants' ID-numbers are stored in an Excel sheet.
 
 Game
-    Games consist of a sequence of stages. A game is typically characterised by a joint evaluation of the decisions and results at the end.
+    Games consist of a sequence of stages. A game is typically characterized by a joint evaluation of the decisions and results at the end.
     .. note:: If you want to conduct a quiz consisting of several questions with unrelated results, it is advisable to create a separate game for each question.
 
 Stage
@@ -123,7 +123,7 @@ Round and Loop
     The number of rounds a game should be played can be defined. The loop refers to the stages of a game that should be repeated in every round. The loop is defined by selecting a starting stage and ending stage and the number of rounds.
 
 Internal ID
-    ClassEx creates a unique internal ID for each subject that logs in. This ID is generated randomly and does not allow any inference about the identity of the subject. Therefore, subjects are completely anonymous in classEx by default. The internal ID serves as a mean to be able to analyse the data and compare behaviour of subjects across different games if you play several in one session.
+    ClassEx creates a unique internal ID for each subject that logs in. This ID is generated randomly and does not allow any inference about the identity of the subject. Therefore, subjects are completely anonymous in classEx by default. The internal ID serves as a mean to be able to analyze the data and compare behavior of subjects across different games if you play several in one session.
 
 External ID
     On login, participants can be asked to provide an external ID (e.g. their matriculation number). The external ID can also be provided with the link for automatic login. Please make sure that you elicit external IDs in accordance with data privacy regulations as the lecturer is responsible for this during data collection (see `terms of use`_).

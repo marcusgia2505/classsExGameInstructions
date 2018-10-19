@@ -23,7 +23,7 @@ Prerequisites
 
 Participants' devices
 ---------------------
-Every participant who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection. Browsers should be up-to-date and javascript and cookies enabled. Participants can connect via mobile internet or available wifi.
+Every participant who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection. Browsers should be up-to-date and javascript and cookies enabled. Participants can connect via mobile Internet or available wifi.
 
 Lecturer device
 ----------------
@@ -31,7 +31,7 @@ The lecturer conducting a session needs a device with a big screen (e.g. laptop,
 
 .. note:: Make sure you have a stable internet connection as a lecturer. The best option is with a cable. It is best not to use the same connection (e.g. wifi) as the participants in case the network slows down.
 
-.. note:: The ideal browser to use is Mozilla firefox (in a current version). Javascript has to be turned on and cookies allowed (normally default setting). **Do not use the Internet Explorer**.
+.. note:: The ideal browser to use is Mozilla Firefox (in a current version). Javascript has to be turned on and cookies allowed (normally default setting). **Do not use the Internet Explorer**.
 
 Run a game
 ==========
@@ -55,7 +55,7 @@ Information for participants in the course
 .. image:: _static/rungame/intro_slide.PNG
     :alt: 300px
 
-**The only important information participants need is how to login**. The easiest way is to provide them with a powerpoint slide with the login data. You can add a QR code but notice that QR codes may not work in big lecture halls. For all login possibilities (link, QR,...) see `Login of participants and test participants`_.
+**The only important information participants need is how to login**. The easiest way is to provide them with a Power point slide with the login data. You can add a QR code but notice that QR codes may not work in big lecture halls. For all login possibilities (link, QR,...) see `Login of participants and test participants`_.
 
 Before you start a game, you may inform participants also about the following:
 
@@ -65,7 +65,7 @@ Before you start a game, you may inform participants also about the following:
 
 - If the experiment has already started (and some decisions have already been entered), participants might not be able to join the experiment any more. This depends on the game, but is normally so after the first stage of a game has been concluded.
 
-- If participants are chosen randomly to receive their payoff, they should make screenshots of their winner's notification to be sure to receive their payoff. (see `Disbursal of payoffs`_).
+- If participants are chosen randomly to receive their payoff, they should make screen-shots of their winner's notification to be sure to receive their payoff. (see `Disbursal of payoffs`_).
 
 
 
@@ -161,10 +161,10 @@ diagnosis mode
     In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier. It is only useful if you use advanced programing.
 
 data
-    The dropdown menu *data* offers two options. By clicking on **show data** you can access a preview over participants current decisions in real time. You can also download the results via **download as excel file**. The excel files contain the all variables recorded in the game. It contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data.
+    The drop-down menu *data* offers two options. By clicking on **show data** you can access a preview over participants current decisions in real time. You can also download the results via **download as excel file**. The excel files contain the all variables recorded in the game. It contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data.
 
 previous results
-    You can access previous results via the previous results dropdown menu. Simply choose which results from previous session you want to display. This way you can directly compare current outcomes with previous ones, you just played or, if available, old results of the same game. When you selected a previous result you can also download all data for this result by clicking on **show data** in the data dropdown menu. The previous result section also contains results from other lecturers if the game and the recorded data are public. If you use such a public game, your data will be available to other lecturers as well.
+    You can access previous results via the previous results drop-down menu. Simply choose which results from previous session you want to display. This way you can directly compare current outcomes with previous ones, you just played or, if available, old results of the same game. When you selected a previous result you can also download all data for this result by clicking on **show data** in the data drop-down menu. The previous result section also contains results from other lecturers if the game and the recorded data are public. If you use such a public game, your data will be available to other lecturers as well.
 
 .. note:: If you do not want that others see your recorded data when you use a public game, you should make a copy of the game and set it to private. Then play the private version of the game.
 
@@ -186,7 +186,7 @@ In order to login, participants go to the website http://classex.uni-passau.de a
 If participants are logged in before the lecturer has started the game, participants see a waiting screen with the message displayed above. The lecturer can edit the text on the waiting screen in the :ref:`Organize:Course data`.
 
 
-.. note:: If a game has already been started, participants directly see the game and can play it. If may therefore be useful to ask all participants to login and start the game after that has happend. If a game has ended (but no new one selected), new participants get the message on login that the current game is still running and they cannot participate.
+.. note:: If a game has already been started, participants directly see the game and can play it. If may therefore be useful to ask all participants to login and start the game after that has happened. If a game has ended (but no new one selected), new participants get the message on login that the current game is still running and they cannot participate.
 
 Login with QR-Code
 ------------------
@@ -196,7 +196,7 @@ All experiments can be accessed by participants via a QR-Code. This QR-Code is p
 .. image:: _static/QRlogin.PNG
     :alt:  300px
 
-Lecturers can either copy the QR-Code and print it on flyers, for example, or display it on the screen. 
+Lecturers can either copy the QR-Code and print it on leaflets, for example, or display it on the screen. 
 
 .. |pic_qr| image:: _static/pic/qr.png
     :width: 15px
@@ -206,12 +206,12 @@ Lecturers can either copy the QR-Code and print it on flyers, for example, or di
 Automatic link for login
 ------------------------
 
-When you click on |pic_qr|, you also get some information on how to login participants direcly with a link. They just have to copy the link in their browser and are logged in into your course (without the need of selecting the course and entering a password). The link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUxxF-g (this link is just for demonstration and cannot be used.)
+When you click on |pic_qr|, you also get some information on how to login participants directly with a link. They just have to copy the link in their browser and are logged in into your course (without the need of selecting the course and entering a password). The link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUxxF-g (this link is just for demonstration and cannot be used.)
 
 Personalized link for login
 ----------------------------
 
-You can augment the automatic link by a personalised ticket. This ticket will be stored as external ID in classEx and allows you to identify participants. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved by the variable $tic; in the game. It is also saved to the excel file. If the ticket is  e.g. 12345 the link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUTsdsdsFs&tic=12345 (this link is just for demonstration and cannot be used.)
+You can augment the automatic link by a personalized ticket. This ticket will be stored as external ID in classEx and allows you to identify participants. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved by the variable $tic; in the game. It is also saved to the excel file. If the ticket is  e.g. 12345 the link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUTsdsdsFs&tic=12345 (this link is just for demonstration and cannot be used.)
 
 
 Add test participant
@@ -222,16 +222,16 @@ As lecturer you can run a game with fictional test participants in one browser. 
 .. image:: _static/Addplayer.PNG
     :alt:  300px
 
-For every test participant a new tab in your browser will open. The tab for a test participant replicates the fully functional interface for a real participant. This enable you to make test sessions which is especially useful when you develope your own games. If you want to open multiple test participants just hold the Crtl-Button and click on the icon multiple times. 
+For every test participant a new tab in your browser will open. The tab for a test participant replicates the fully functional interface for a real participant. This enable you to make test sessions which is especially useful when you develop your own games. If you want to open multiple test participants just hold the Crtl-Button and click on the icon multiple times. 
 
 Logout
 ------
 
-There is no (visible) logout button for participants. This is done in order to keep participants in the game and that they cannot logout accidently. 
+There is no (visible) logout button for participants. This is done in order to keep participants in the game and that they cannot logout accidentally. 
 
 If you want to log out a participant (e.g. in case of a problem), click on the classEx logo on the participant's device. This displays a logout button.
 
-As a lecturer you can log out all participants that are currently logged in to your course by going into your :ref:`Organize:Course data` and by clicking on the button below. This will logout all participants immediatly. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
+As a lecturer you can log out all participants that are currently logged in to your course by going into your :ref:`Organize:Course data` and by clicking on the button below. This will logout all participants immediately. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
 
 .. image:: _static/Bigredbutton.PNG
     :alt:  300px
@@ -246,7 +246,7 @@ Participants’ screens are updated automatically when their partner has made a 
 Participants' screens
 =====================
 
-The participants interface should be self-explanatory. The top bar contains the classEx logo and shows if participants are assigned to a specific role by displaying a (colored) icon |Role1|. The top bar may additionally show the interal participant id of the participant. 
+The participants interface should be self-explanatory. The top bar contains the classEx logo and shows if participants are assigned to a specific role by displaying a (colored) icon |Role1|. The top bar may additionally show the internal participant id of the participant. 
 
 The most common actions participants are asked to carry out are discrete decisions and numeric decisions as shown in the following sample screens. Another common element is the contract element where participants can trade items with other participants. There are also other input types such as text elements, radio buttons or sliders which are explained in the section :ref:`Elements`. 
 
@@ -284,9 +284,9 @@ Participant can trade items in classEx. Therefore, they walk around in class to 
 
 The upper row shows the different steps for the seller |Role4|, the lower row shows the different steps for the buyer |Role3|. In this case, only sellers can send offers to buyers. This can also be changed in the :ref:`Elements` settings. 
 
-Each screen consists of two fields. The item field shows all items which a participant posseses. The contract field shows all contracts and offers.
+Each screen consists of two fields. The item field shows all items which a participant possesses. The contract field shows all contracts and offers.
 
-First, the seller askes for the ID of the buyer which is displayed on the buyer's screen. In this example, the buyer has the ID 3. The seller enters the ID of the buyer and the price into the input field on his screens and presses *SELL*. Then an offer shows up for the buyer in the contract field. The buyer can accept or reject the offer. The seller can withdraw the offer. If the buyer accepts the offers, the item is transfered to the buyer and shows up in his or her item field. The contract is marked as accepted.
+First, the seller asks for the ID of the buyer which is displayed on the buyer's screen. In this example, the buyer has the ID 3. The seller enters the ID of the buyer and the price into the input field on his screens and presses *SELL*. Then an offer shows up for the buyer in the contract field. The buyer can accept or reject the offer. The seller can withdraw the offer. If the buyer accepts the offers, the item is transfered to the buyer and shows up in his or her item field. The contract is marked as accepted.
 
 .. |Role3| image:: _static/pic/role3.png
     :width: 15px
@@ -301,7 +301,7 @@ In some games participants will receive a real monetary payoff. The payoff is pa
 
 .. note:: Participants should not show their payoff code to others, as others could then claim the payoff. Therefore, it is advisable for participants not to let any other participant see the screen of their mobile device during the experiment.
 
-.. note:: If a participant closes the browser, normally the payoff code is lost. Therefore, participants should take note of the payoff code or make a screenshot of it. 
+.. note:: If a participant closes the browser, normally the payoff code is lost. Therefore, participants should take note of the payoff code or make a screen-shot of it. 
 
 .. image:: _static/Payoffff.JPG
     :alt:  300px
@@ -320,12 +320,12 @@ If you login as user type "administration", you can see a list indicating the da
 Graphical results
 =================
 
-At the end of a game, classEx displays summary results directly on the lecturer screen. There are different result
+At the end of a game, classEx displays summary results directly on the lecturer screen. There are different result elements available as 
 
 .. image:: _static/Beautymacro.JPG
     :alt:  300px
 
-Some of the displayed figures and graphs can be adapted. All figures that are labelled with Highcharts.com (see bottom right corner of the figure above) have a zoom function. You can zoom in by simply clicking and pulling the mouse over the section you want to zoom in on. The button “Reset zoom” resets the display back to the original size.
+Some of the displayed figures and graphs can be adapted. All figures that are labeled with Highcharts.com (see bottom right corner of the figure above) have a zoom function. You can zoom in by simply clicking and pulling the mouse over the section you want to zoom in on. The button “Reset zoom” resets the display back to the original size.
 
 For histograms, you can also change the settings for the bins and the maximum by clicking on the little symbol under the bottom left corner of the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bins’ size was too small (the bins are then changed for all graphs).
 
