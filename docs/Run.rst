@@ -320,21 +320,64 @@ If you login as user type "administration", you can see a list indicating the da
 Graphical results
 =================
 
-At the end of a game, classEx displays summary results directly on the lecturer screen. There are different result elements available as 
+At the end of a game, classEx displays summary results directly on the lecturer screen. There are different result elements available like histograms, bar charts, line charts and pie charts. For a full list see :ref:`Elements`. The figure shows an example of a histogram.
 
 .. image:: _static/Beautymacro.JPG
     :alt:  300px
 
-Some of the displayed figures and graphs can be adapted. All figures that are labeled with Highcharts.com (see bottom right corner of the figure above) have a zoom function. You can zoom in by simply clicking and pulling the mouse over the section you want to zoom in on. The button “Reset zoom” resets the display back to the original size.
+Some of the graphs have interactive features and can be adapted. All figures that are labeled with "Highcharts.com" (see bottom right corner of the figure above) have a zoom function. You can zoom in by simply clicking and pulling the mouse over the section you want to zoom in on. The button “Reset zoom” resets the display back to the original size.
 
-For histograms, you can also change the settings for the bins and the maximum by clicking on the little symbol under the bottom left corner of the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bins’ size was too small (the bins are then changed for all graphs).
+For histograms, you can also change the settings for the bins and the maximum by clicking on the little symbol under the bottom left corner of the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bin size was too small. The bins are then changed for all graphs.
 
-In the top right corner of the graph, you can see a symbol with three lines. Clicking on this symbol allows you to download the graph in different formats (jpeg, png, pdf, svg). You can also print the graph.
+Via the button "previous results" in the lecture submode menu you can also access and display results (and their corresponding graphs) of previous sessions.
 
-Via the button "previous results" in the lecture submode menu you can also access and display results of previous sessions.
 
-For the different result graphs see Result elements in Elements. 
+Dealing with problems 
+======================
 
-Dealing with problems (logout, participantNr)
-===============================================
+classEx runs smoothly with all standard browsers when javascript and cookies enabled. Still, in rare cases it may come to problems due to different mobile devices. If you encounter a problem, here are some strategies how to deal with them. Typical problems involve that subjects cannot load the page or are stuck in the game. 
+
+In order to get more information if a participant cannot proceed, classEx offers some little helpers which can be displayed on the participant's device. Just click on the classEx logo and some new buttons appear.
+
+.. note:: These functionality is only for assistance in case of problems and should not be told to participants beforehand. Participants may use the functionality to log themselves out.
+
+
+.. image:: _static/rungame/helper.PNG
+    :alt:  300px
+
+The new buttons are a logout button |pic_logout| and a check for the internet connection |pic_check|. The internal ID of the participant is displayed as well. 
+
+.. |pic_check| image:: _static/pic/connected.png
+    :width: 15px
+
+.. |pic_check2| image:: _static/pic/connected_aborted.png
+    :width: 15px
+
+.. |pic_logout| image:: _static/pic/logout.png
+    :width: 15px
+
+
+Internet connection is slow
+-----------------------------
+
+The most common problem which can arise is that the internet connection of the participant is too slow. If this is the case, it can happen that pages are no reloaded and the participant seems to be stuck in the game. Try another network or mobile internet.
+
+You can check if the internet connection if working with the telephone symbol. If the connection works, the symbol |pic_check| should blink every 2-3 seconds. If there is a problem, instead the following symbol is shown |pic_check2|. 
+
+Re-login of the participant
+----------------------------
+
+If a participant has problems which cannot be solved by a better internet connection or a reload of the web page, you can try a re-login. Therefore, you have to logout the participant by clicking on the logout button |pic_logout|. Then the participant should login again. 
+
+.. note:: If the game is running and you have proceeded beyond the first stage, re-login may not be possible. If a participant try to re-login then, he or she may get the message that the game is running and participation is not longer possible.
+
+Check participant ID
+----------------------
+
+Sometimes participants may claim that they clicked some button or made some input but received different feedback. In many cases, this can also be a wrong perception by participants. But it could also be due to a programming error. To check this, you can download the data after the experiment and look for the respective (internal) ID of the participant. The ID of the participant is displayed when you click on the classEx logo on the participant's device. The ID can also be used if the participant looses his or her payoff code (see `Disbursal of payoffs`_).
+
+Other problems
+---------------
+
+If the above strategies do not help, participants should try out a different browser. We always suggest to use Mozilla Firefox. If you have persistent problems with a special browser please let us know via classEx@uni-passau.de. For error retrieval, please tell us the ID of the participant and the date of your course.
 
