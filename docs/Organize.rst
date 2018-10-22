@@ -2,12 +2,12 @@
 Organize games and course
 ==========================
 
-You can organize your games in the overview mode. Here, you can find all your games as well as the ready-made games that are shown in your overview by default.
+You can organize your games in the overview mode. Here, you can find all your own games as well as the ready-made games that are shown in your overview by default.
 
 .. image:: _static/Overview.PNG
     :alt:  300px
 
-On the left hand side you find the folders for own games (empty at first login) and the folders for ready-made games (standard games, quiz & questionnaire,...).
+On the left hand side you find the folders for own games (empty at first login) and the folders for ready-made games below it (standard games, quiz & questionnaire,...).
 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
 
@@ -24,33 +24,40 @@ The currently active mode is marked by a darker shade around its symbol |pic_ove
 Functions in the top bar
 ========================
 
-You can see the top bar for the **overview mode** in the picture above. It offers folowing funcionality:
+You can see the top bar for the **overview mode** in the picture above in the left hand corner. It offers the following functionality:
 
 new folders
-    Create new folders to organize your games
+    Create new folders to organize your games.
 
 new games
-    Create new games which you can then design in the editing mode
+    Create new games which you can then design in the editing mode.
 
 repository
-    The repository which provides access to previous results from your private games or from public games conducted by you or other classEx lecturers
+    The repository which provides access to games provided by other lecturers. 
 
 
 
 Folders
 =======
 
-Games are sorted into folders, for example different chapters of lectures, which can be found on the left. You can create a new folder by clicking on *new folder* in the top bar. Folders can be renamed by typing in the box above the list of games in a folder. It is not possible to change the order of folders. 
+Games are sorted into folders, for example different chapters of lectures, which can be found on the left. You can create a new folder by clicking on *new folder* in the top bar. Folders can be renamed by typing in the box above the list of games in a folder. Folders are ordered alphabetically. It is not possible to change the order of folders. 
 
-Handle games
+.. note:: If you need a specific order, you may name the folders e.g. 01 - intro, 02 - motivation, ...
+
+Folder can only be deleted when they are empty. Then the delete symbol will appear |pic_delete|. The deletion cannot be reversed. 
+
+.. |pic_delete| image:: _static/pic/reject.png
+    :width: 15px
+
+Order games
 ============
 
-You can move games by clicking on the little icon on the *move game* icon and dragging the game to another folder or just change its poition in the current folder. You can directly enter the Lecture Mode to play a game by pressing the *play game* icon and directly enter the editing Mode to edit a game by clicking on the *edit game* icon. Games marked with the *created by someone else* icon cannot be edited but only played or viewed. The *delete game* icon deletes a game.
+You can move games by clicking on the little icon on the *move game* icon and dragging the game to another folder or just change its position in the current folder. You can directly enter the Lecture Mode to play a game by pressing the *play game* icon and directly enter the editing Mode to edit a game by clicking on the *edit game* icon. Games marked with the *created by someone else* icon cannot be edited but only played or viewed. The *delete game* icon deletes a game.
 
 Public, private and imported games
 ==================================
 
-All games are marked be either the *public game*,  *private game* or *created by someone else* icon. The *public game* icon means that you created the game but other users can see and copy this game. The *private game* icon means your game is private and cannot be seen by other users. You can change the game status between private or public by clicking on the symbol. The *created by someone else* markes the ready-made games and all games you imprted from the repository. You cannot edit them but only view and play them. If you want to make your own version of such a game you have to copy it.
+All games are marked be either the *public game*,  *private game* or *created by someone else* icon. The *public game* icon means that you created the game but other users can see and copy this game. The *private game* icon means your game is private and cannot be seen by other users. You can change the game status between private or public by clicking on the symbol. The *created by someone else* markes the ready-made games and all games you imported from the repository. You cannot edit them but only view and play them. If you want to make your own version of such a game you have to copy it.
 
 Copy games
 ==========
@@ -82,7 +89,7 @@ Personal data
 Password forgotten
 -------------------
 
-If you have forgotton your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered.
+If you have forgotten your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered.
 
 
 Course data
