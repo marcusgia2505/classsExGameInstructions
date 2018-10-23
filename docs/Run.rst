@@ -136,7 +136,7 @@ After the game
 
 Once a game is over, you can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
 
-If you want to logout all participants after the game you can do so by clicking on the logout all participants button in the :ref:`Organize:Course data`. 
+If you want to logout all participants after the game you can do so by clicking on the logout all participants button in the :ref:`Coursedata:Course data`. 
 
 
 Settings in the top bar
@@ -183,7 +183,7 @@ In order to login, participants go to the website http://classex.uni-passau.de a
 .. image:: _static/rungame/game_not_started.png
     :alt:  300px
 
-If participants are logged in before the lecturer has started the game, participants see a waiting screen with the message displayed above. The lecturer can edit the text on the waiting screen in the :ref:`Organize:Course data`.
+If participants are logged in before the lecturer has started the game, participants see a waiting screen with the message displayed above. The lecturer can edit the text on the waiting screen in the :ref:`Coursedata:Course data`.
 
 
 .. note:: If a game has already been started, participants directly see the game and can play it. If may therefore be useful to ask all participants to login and start the game after that has happened. If a game has ended (but no new one selected), new participants get the message on login that the current game is still running and they cannot participate.
@@ -231,7 +231,7 @@ There is no (visible) logout button for participants. This is done in order to k
 
 If you want to log out a participant (e.g. in case of a problem), click on the classEx logo on the participant's device. This displays a logout button.
 
-As a lecturer you can log out all participants that are currently logged in to your course by going into your :ref:`Organize:Course data` and by clicking on the button below. This will logout all participants immediately. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
+As a lecturer you can log out all participants that are currently logged in to your course by going into your :ref:`Coursedata:Course data` and by clicking on the button below. This will logout all participants immediately. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
 
 .. image:: _static/Bigredbutton.PNG
     :alt:  300px

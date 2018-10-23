@@ -39,6 +39,7 @@ The chapter :ref:`Programming:Programming` provides a list of variables and func
    Basics
    Run
    Organize
+   Coursedata
    Tutorial
    Develop
    Elements
