@@ -329,7 +329,7 @@ Some of the graphs have interactive features and can be adapted. All figures tha
 
 For histograms, you can also change the settings for the bins and the maximum by clicking on the little symbol under the bottom left corner of the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bin size was too small. The bins are then changed for all graphs.
 
-Via the button "previous results" in the lecture submode menu you can also access and display results (and their corresponding graphs) of previous sessions.
+Via the button *previous results* in the lecture menu, you can also access and display results (and their corresponding graphs) of previous sessions.
 
 
 Dealing with problems 

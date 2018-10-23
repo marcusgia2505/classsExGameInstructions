@@ -40,34 +40,70 @@ repository
 Folders
 =======
 
-Games are sorted into folders, for example different chapters of lectures, which can be found on the left. You can create a new folder by clicking on *new folder* in the top bar. Folders can be renamed by typing in the box above the list of games in a folder. Folders are ordered alphabetically. It is not possible to change the order of folders. 
+Games are sorted into folders, which can be named for example after different chapters of lectures. They can be found on the left. You can create a new folder by clicking on *new folder* in the top bar. Folders can be renamed by clicking on the title of a folder in the main screen (above the list of games). Folders are ordered alphabetically. It is not possible to change the order of folders. 
 
 .. note:: If you need a specific order, you may name the folders e.g. 01 - intro, 02 - motivation, ...
 
 Folder can only be deleted when they are empty. Then the delete symbol will appear |pic_delete|. The deletion cannot be reversed. 
 
+Each account has a standard folder which is called *general folder*. This cannot be deleted.
+
 .. |pic_delete| image:: _static/pic/reject.png
     :width: 15px
+
+
+.. |pic_handle| image:: _static/pic/drophandle.png
+    :width: 15px
+
+.. |pic_public| image:: _static/pic/public.png
+    :width: 15px
+
+.. |pic_private| image:: _static/pic/private.png
+    :width: 15px
+
+.. |pic_other| image:: _static/pic/attributes.png
+    :width: 15px
+
+.. |pic_copy| image:: _static/pic/copy.png
+    :width: 15px
+
 
 Order games
 ============
 
-You can move games by clicking on the little icon on the *move game* icon and dragging the game to another folder or just change its position in the current folder. You can directly enter the Lecture Mode to play a game by pressing the *play game* icon and directly enter the editing Mode to edit a game by clicking on the *edit game* icon. Games marked with the *created by someone else* icon cannot be edited but only played or viewed. The *delete game* icon deletes a game.
+You can move games by clicking on the little icon on the *move game* icon |pic_handle| and dragging the game into another folder (in the left bar). You can also drag the game within your folder in order to change its position in the current folder. 
+
+Play and edit games
+====================
+
+If you click on the *play game* button, the game is directly started in the lecture mode.
+
+.. note:: If you click on *play game*, the current game which is running will be stopped and the game you clicked on will be started. If you want to switch back to your currently running game instead use the buttons in the top navigation bar to go the lecture mode or click on the button *back to current game*.
+
+You can directly enter the editing mode by clicking on the *edit game* icon. The title of this button changes to *view* if you cannot edit the game. This may happen if you are not the owner of the game, but you imported the game (see below). 
+
+.. note:: You can also arrive at the lecture and editing mode by clicking on the symbols in the top navigation bar.
+
+
 
 Public, private and imported games
 ==================================
 
-All games are marked be either the *public game*,  *private game* or *created by someone else* icon. The *public game* icon means that you created the game but other users can see and copy this game. The *private game* icon means your game is private and cannot be seen by other users. You can change the game status between private or public by clicking on the symbol. The *created by someone else* markes the ready-made games and all games you imported from the repository. You cannot edit them but only view and play them. If you want to make your own version of such a game you have to copy it.
+All games are marked as *public* |pic_public|,  *private* |pic_private| or as *created by someone else* |pic_other|. The *public game* icon |pic_public| means that you created the game but other users can see and copy this game. The *private game* |pic_private| icon means your game is private and cannot be seen by other users. You can change the game status between private or public by clicking on the symbol. The *created by someone else* marks the ready-made games provided by classEx and all games you imported from the repository. You cannot edit them but only view and play them. If you want to make your own version of such a game you have to copy it.
 
-Copy games
-==========
+Copy and delete games
+========================
 
-If you want to make a copy of a game (e.g. to create your own version of a ready-made game) click on the *view* or *edit* button. This takes you the editing mode. In the top bar you can now click on the drop down menu *game* and then select *copy game*. This will create a coy of the game in your *general folder*. You can edit this copy and thus make your own version of any public game on classEx.
+If you want to make a copy of a game (e.g. to create your own version of a ready-made game), click on the copy button |pic_copy|. This will create a copy of the game in your *general folder*. You can edit this copy and thus make your own version of any game on classEx. Alternatively, you can go to the editing mode and click on the drop down menu *game* and then select *copy game*. 
+
+The *delete game* icon |pic_delete| deletes a game.
 
 Repository
 ==========
 
-The repository gives you an overview and access to the all public games created by you and other lecturers and allows you to import these games to your account. If you do not want your game to be listed in the repository you have to change its status from public to private. You can enter it by clicking on the *repository* button in the top bar of the overview.
+The repository gives lists all public games created by you and other lecturers and allows you to import these games to your account. You can enter the repository by clicking on the *repository* button in the top bar of the overview. 
+
+If you do not want your game to be listed in the repository you have to change its status from public to private. 
 
 .. image:: _static/Repository.PNG
     :alt:  300px
@@ -78,19 +114,64 @@ Search games
 The repository lists all games which were set public by their owners. The list can be searched by the different criteria on the left hand side. The switch button disables viewing a certain criterion in the list. You can also make a free text search by typing in the search box in the top right corner. Clicking on the *Game information* button shows some more information (if set by the owner) and a sample screenshot. 
 
 Import games
------------------
+-------------
 
-All games from the repository can be imported to one's own account by clicking on the *Import game* button. You can then find the game in the general folder of your own games.
+All games from the repository can be imported to one's own account by clicking on the *Import game* button. You can then find the game in the general folder.
+
+.. note:: If you import games, they are not copied to your account. classEx only sets a reference to the game of the other lecturer. Therefore, you cannot modify imported games. In order to modify an imported game you have to copy it.
 
 Personal data
 ==============
 
 
+If you click on the drop-down menu in the top right corner (which states your name), you can access your personal data.
+
+Change personal data
+---------------------
+
+There you can change your title, your name and your email address. Please make sure that you always have a valid email address. Otherwise we cannot contact you. You can also change your password for the lecturer here.
+
+Your affiliation is shown in the personal data as well. It cannot be changed. If you want to change your affiliation please email us at classEx@uni-passau.de 
+
+.. note:: Please keep your personal data up to date. For data protection, have a look at our `terms of use`_.
+
+.. _terms of use: https://classEx.de/TermsOfUse.pdf
+
+
 Password forgotten
 -------------------
 
-If you have forgotten your password, you can simply click on the little "get a new password" button underneath the login button. You only need to enter your email address with which you registered.
+If you have forgotten your lecturer password and you cannot login, classEx provides a function to get a new password. At the login screen, select your course and select "experimenter/lecturer" and click on the small text "get a new password" button underneath the login button. You only need to enter your email address with which you are registered with. Then you will get a new password via email.
 
 
 Course data
 ============
+
+If you click on the drop-down menu in the top right corner (which states your name), you can access your course data.
+
+Change course data
+-------------------
+
+Course title
+~~~~~~~~~~~~~
+
+In the course data you can change the title of your course which also appears at the login screen. Course titles can be the name of the lecturer or the title of the course. It should easily recognizable for participants in order to facilitate their login.
+
+.. note:: Please make sure that you do not use the same title as another course at your institution. 
+
+Course language
+~~~~~~~~~~~~~~~~
+
+You can also switch the language of the course in the course data. ClassEx provides support for German, English and Spanish. The latter is only available for the participants' interfaces and the lecture mode. The overview and the editing mode will still be in English in this case.
+
+.. note:: The course language may differ from the language of the game. If a adequate translation is available, classEx uses the translation. Otherwise it will look for an English version of the game. If this is not available, the game will be displayed in its original language.
+
+.. note:: If you change the language, changes only apply if you logout and login again. The same holds true for participants and test participants. Participants are not affected by these changes while a session is running.
+
+
+Logout all participants
+------------------------
+
+
+Additional settings
+--------------------
