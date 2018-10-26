@@ -39,6 +39,7 @@ The chapter :ref:`Programming:Programming` provides a list of variables and func
    Basics
    Run
    Organize
+   Coursedata
    Tutorial
    Develop
    Elements
@@ -61,5 +62,5 @@ Below you find a list of the last updates:
 :May 14th 2016: classEx was updated to version 3.4.
 :Sept 20th 2015: A login with a QR-Code is provided automatically for all experiments.
 :Sept 15th 2015: The login page was restructured. Prior to selecting the course, the respective institution has to be selected.
-:April 8th 2015: All elements in the editing mode are directly linked to the wikipage which provides explanation of the different features.
+:April 8th 2015: All elements in the editing mode are directly linked to the documentation which provides explanation of the different features.
 :Nov 20th 2015: classEx was updated to version 3.3.
