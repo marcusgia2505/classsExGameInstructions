@@ -41,6 +41,11 @@ In the course data you can change the title of your course which also appears at
 
 .. note:: Please make sure that you do not use the same title as another course at your institution. 
 
+Participants password
+~~~~~~~~~~~~~~~~
+
+If you want to change the password the participants need to log into your game - for example to pick a password that is easy to remember - you can also do this in the course data. This also works in case the lecturer has forgotten the password he or she picked or has received with the login credentials.
+
 Course language
 ~~~~~~~~~~~~~~~~
 
