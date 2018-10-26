@@ -17,7 +17,7 @@ Registration
 ============
 Participants do not need to register but can access classEx with the course password provided to the lecturer with the login credentials.
 
-In order to get login credentials, please fill in the registration form at https://classex.de/_blank get-login-credentials.
+In order to get login credentials, please fill in the registration form at https://classex.de/ get-login-credentials.
 
 For registration you have to provide your name, an email address and information about your institution. In addition, you have to confirm that you accept the `terms of use`_ and the data privacy policy. **Please try to provide an institutional email address so that we can verify your affiliation.** Registered users receive an email with login credentials. Login credentials are normally sent within 1-2 days. If you do not receive credentials after 2 days, please contact us at `classEx@uni-passau.de <mailto:classEx@uni-passau.de>`_.
 
