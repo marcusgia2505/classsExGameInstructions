@@ -291,18 +291,18 @@ Identification of subjects in the system
 
 By default, subjects are completely anonymous in classEx. Should it be required, you also have several possibilities to identify subjects in the system.
 
-Ticket: You can provide participants with a personalised ticket to log-in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved as $tic; in the game.
+Ticket: You can provide participants with a personalised ticket to log in to classEx. This way you can ensure that participants only take part on one device and also track the actions of specific participants. You simply need to add &tic= to the URL. The ticket is saved to the participant data and can be retrieved as $tic; in the game.
 
 Ask for data during the game: At a certain stage, or after the end of the game, you can ask participants to enter their personal data or an ID you provide them with.
 
-During login: You can change the settings so that participants are asked for certain data before they log-in. For this, go to "course data" and click on additional settings. You can then enter what you would like participants to enter before logging in.
+During login: You can change the settings so that participants are asked for certain data before they log in. For this, go to "course data" and click on additional settings. You can then enter what you would like participants to enter before logging in.
 
 Here is an example:
 
 .. image:: _static/Data1.PNG
     :alt:  300px
     
-And this is what it looks like for participants before login:
+And this is what it looks like for participants before logging in:
 
 .. image:: _static/Data2.PNG
     :alt:  300px
