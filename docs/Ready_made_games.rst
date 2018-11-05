@@ -388,16 +388,3 @@ Often, markets are characterised by the fact that sellers and buyers can make pu
 
 A double auction is marked by an environment in which buyers and sellers can make public offers. Hence, a buyer can offer to buy a product for a certain price and this offer is then displayed in a list to all participants. Sellers can either accept the offer or also make an offer which is displayed in the list.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
