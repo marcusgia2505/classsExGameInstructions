@@ -136,7 +136,7 @@ After the game
 
 Once a game is over, you can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
 
-If you want to logout all participants after the game you can do so by clicking on the logout all participants button in the :ref:`Coursedata:Course data`. 
+If you want to log out all participants after the game you can do so by clicking on the log out all participants button in the :ref:`Coursedata:Course data`. 
 
 ..note::  Logging out all participants does not work correctly when trying it with your self-made test participants. If you want to test it you can use different mobile devices and therefore simulate real participants.
 
