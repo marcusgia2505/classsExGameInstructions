@@ -84,25 +84,26 @@ The top bar is located in the top left corner. It is different in each mode. The
 Terminology
 ===========
 
-This chapter clarifies the usage of some terms in this documentary. It can used to look up terminology and can be skipped on first reading.
+This chapter clarifies the usage of some terms in this documentary. It can be used to look up terminology and can be skipped on first reading.
 
 Lecturer
-    The person conducting a game is the lecturer. The lecturer starts games, starts new rounds, ends games and shows results. The lecturer controls the lecture screen that is visible for all participants (typically via a projector in the lecture hall).
+    The person conducting a game is the lecturer. The lecturer starts games, starts new rounds, ends games and shows results. The lecturer controls the lecture screen that is visible to all participants (typically via a projector in the lecture hall).
 
 Participant
     Participants participate in games. All a participant needs for participation is a mobile device with internet access. No download is required. Sometimes participants are also called players.
 
 Session
-    A session is a sequence of games in a lecture, meeting or presentation. participants should not shut their browser during a session.
+    A session is a sequence of games in a lecture, meeting or presentation. Participants should not shut their browser during a session.
     
     .. note::  After the end of a session, you can use statistical tests to analyze whether there is a relationship between the different games of a session. For example, you can examine whether participants with higher mathematical abilities are more risk averse. For this purpose, participants' ID-numbers are stored in an Excel sheet.
 
 Game
     Games consist of a sequence of stages. A game is typically characterized by a joint evaluation of the decisions and results at the end.
+
     .. note:: If you want to conduct a quiz consisting of several questions with unrelated results, it is advisable to create a separate game for each question.
 
 Stage
-    Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Stages can be configured with several options. You can find more information here.
+    Games consist of several stages. There are at least 2 stages: one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Stages can be configured with several options. You can find more information here.
 
 Element
     Elements are the modules of each stage. A stage has two areas in which you can add modules: participant and lecturer. You can chose from text elements, input elements (numerical input, likert scales, …), program code elements and output elements (histograms, bar charts, …). These can be combined and arranged as you like.
@@ -114,7 +115,7 @@ Role
     Many games require different roles of participants, e.g. producers and consumers. Stages and elements of a game can be customized according to the role of a participant.
 
 Group
-    Participating participants of a game can be sorted into groups, e.g. according to their role, internal ID, randomly or a combination of these.
+    Active participants of a game can be sorted into groups, e.g. according to their role, internal ID, randomly or a combination of these.
 
 Assignment and Matching
     Assignment and matching refers to the procedure of how participants are assigned into treatments, roles and groups at the start of a game. Further, you can choose how you want to rematch participants at the beginning of each round if you play more then one round.
@@ -133,7 +134,7 @@ External ID
 
 
 Subject ID
-    Subject IDs are used only within a game. Each participant gets an ID from 1 to the total number of participants. The fist participants gets the Subject ID 1, the second participant the Subject ID 2, and so forth.
+    Subject IDs are used only within a game. Each participant gets an ID from 1 to the total number of participants. The first participants gets the Subject ID 1, the second participant the Subject ID 2, and so forth.
 
 
 Global and subjects variables
