@@ -11,7 +11,7 @@ If you click on the drop-down menu in the top right corner (which states your na
 Change personal data
 ---------------------
 
-There you can change your title, your name and your email address. Please make sure that you always have a valid email address. Otherwise we cannot contact you. You can also change your password for the lecturer here.
+There you can change your title, your name and your email address. Please make sure that you always have a valid email address. Otherwise we cannot contact you. You can also change your password here.
 
 Your affiliation is shown in the personal data as well. It cannot be changed. If you want to change your affiliation please email us at classEx@uni-passau.de 
 
@@ -37,7 +37,7 @@ Change course data
 Course title
 ~~~~~~~~~~~~~
 
-In the course data you can change the title of your course which also appears at the login screen. Course titles can be the name of the lecturer or the title of the course. It should easily recognizable for participants in order to facilitate their login.
+In the course data you can change the title of your course which also appears at the login screen. Course titles can be the name of the lecturer or the title of the course. It should be easily recognizable for participants in order to facilitate their login.
 
 .. note:: Please make sure that you do not use the same title as another course at your institution. 
 
@@ -53,12 +53,22 @@ You can also switch the language of the course in the course data. ClassEx provi
 
 .. note:: The course language may differ from the language of the game. If a adequate translation is available, classEx uses the translation. Otherwise it will look for an English version of the game. If this is not available, the game will be displayed in its original language.
 
-.. note:: If you change the language, changes only apply if you logout and login again. The same holds true for participants and test participants. Participants are not affected by these changes while a session is running.
+.. note:: If you change the language, changes only apply if you log out and log in again. The same holds true for participants and test participants. Participants are not affected by these changes while a session is running.
 
 
-Logout all participants
+Log out all participants
 ------------------------
+You can log out all participants by pressing the following button.
+
+.. image:: _static/Bigredbutton.PNG
+    :alt:  300px
+
+
+.. note::  This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
 
 
 Additional settings
 --------------------
+By clicking on "additional settings" you can change two default settings for the participants log in. 
+In the first field you can customize the message participants see, when they are logged in but the game has not started yet. If you leave the field empty the following will be displayed to participants: "You are logged in. The game has not started yet. Please wait."
+In the second field you can...(to be continued).

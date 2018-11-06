@@ -11,7 +11,7 @@ On the left hand side you find the folders for own games (empty at first login) 
 
 In the top right-hand corner, you find the main navigation bar which is always displayed in every mode. This allows you to switch from one mode to another and access your personal data.
 
-The currently active mode is marked by a darker shade around its symbol |pic_overview|, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol |pic_editmode| takes you to the **editing mode**. The **drop down menu** (which shows the name of the lecturer and is shaded in black in the figure above) provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the logout button.
+The currently active mode is marked by a darker shade around its symbol |pic_overview|, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol |pic_editmode| takes you to the **editing mode**. The **drop down menu** (which shows the name of the lecturer and is shaded in black in the figure above) provides access to your personal data and your course data as well as the terms of use, the documentation, some general info on classEx and the log out button.
 
 .. |pic_lecturemode| image:: _static/pic/lectureMode.png
    :width: 15px
