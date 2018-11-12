@@ -13,10 +13,10 @@ Building the game
 ==================
 To create a new game click on "new game" in the top bar in the overview mode. Type in a game name of your choice and change the availability to “private”. Thus other users cannot see “your” Ultimatum Game. Click “save”. ClassEx will automatically switch into editing mode and you can start building the game.
 
-Matching
+Assignment & Matching
 ~~~~~~~~
 
-Go to the tab “matching”. Select “role” in the drop-down menu “matching” and select “2” in the drop-down menu “roles”. This means the participants in this game are selected into groups of two with every group consisting of one participant of each role.
+Go to the tab “assignment & matching”. Select “role & group” in the drop-down menu “assignment” and select “2” in the drop-down menu “number of roles”. This means the participants in this game are selected into groups of two with every group consisting of one participant of each role. Leaving "partner" as the matching mode means the groups stay together over several rounds of the game (in this case we have just one).
 
 Stage 1: Proposer’s decision
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
