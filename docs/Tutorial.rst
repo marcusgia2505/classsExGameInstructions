@@ -45,7 +45,7 @@ To make sure the proposer fully understands his decision the value left for the 
 
 To calculate the updated amount for the respondent every time the proposer changes the value he wants to keep, you need to insert a third input field in your input element. This time the “Type of input field” is “calculation field”. Again change the field “for all roles” to “only role 1”. Type “send=endow-keep;” into the program field.
 
-For clarification you should add a more general explanation of the stage for the proposers that is displayed above the input element. Click on “add new element” in the participants field and select “text box”. Click on paste between the “program code (subject)” and the input element. Again change the field “for all roles” to “only role 1”. Then insert the instructions, e. g. “You decide how to divide $endow; € between you and participant 2 . Participant 2 decides, if he accepts or rejects. If he rejects, both of you get nothing.”
+For clarification you should add a more general explanation of the stage for the proposers that is displayed above the input element. Click on “add new element” in the participants field and select “text box”. Click on paste between the “program code (subject)” and the input element. Again change the field “for all roles” to “only role 1”. Then insert the instructions, e. g. “You decide how to divide $endow; € between you and participant 2 . Participant 2 decides, if he accepts or rejects. If he rejects, both of you get nothing. If participant 2 accepts payoffs will be according to your proposal.”
 
 .. Note::  What have we done by now? 	We are done with assignment & matching and the first stage. So after logging in participants are assigned to groups and roles. The instructions get displayed to both the proposer and the responder. We have a start button and everything prepared for the proposer to participate in the game. In the next two steps we will model the decision of the responder, displaying the results and ending the game.
 
@@ -75,7 +75,7 @@ Stage 3: Results
 
 When the responders have accepted or rejected the proposals you can display the results in a third stage. Add a new stage and name it e. g. “Results”. “Late arrival” again is “Not possible”. The two fields next to the “late arrival” field define how often and where to jump after finishing this stage. You can define the number of rounds you want to play. Choose “back to stage 1” and e. g. “2x” (for playing two rounds).
 
-For both participants the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use a program code (subjects) field again. You need one for “only role 1” and one for “only role 2”. The program for role 1 is:
+For both participants the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use a program code (subjects) field again in the participant field. Insert them above the default text box. You need one for “only role 1” and one for “only role 2”. The program for role 1 is:
 	
 	| $accepted=$findVariablePartner(“accepted);
 	| $payoff=$keep*$accepted;
@@ -94,7 +94,9 @@ The program for role 2 is:
 	| $text=”You have accepted the proposal.”
 	| }
 
-Then insert two text boxes in the participants field. Again one for role 1 and one for role 2. In these text boxes you inform the participants about their final payoff. For role 1 the text could be:
+Then!!!
+!!!
+ insert two text boxes in the participants field. Again one for role 1 and one for role 2. In these text boxes you inform the participants about their final payoff. For role 1 the text could be:
 
 	You have proposed to split $endow; as follows: $keep; € for you and $send; € for participant 2. $text; Your payoff is $payoff; €.
 
@@ -107,4 +109,6 @@ In the lecturer field you can show the results. Delete the start button that is 
 Testing the game
 =================
 
-To test the game, change into lecture mode. You can test the game on your own PC by clicking on Testpart.JPG in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, where each screen represents a participant. After opening enough test participant screens click "Start" in the lecturer screen. Then you can go through the game with all test participants.
+To test the game, change into lecture mode. You can test the game on your own PC by clicking on "new test participant" in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your participants will see it when actually playing the game. You can open as many screens as you want, where each screen represents a participant. After opening enough test participant screens click "Start" in the lecturer screen. Then you can go through the game with all test participants.
+
+Congratulations! You just finished designing your first own game!
