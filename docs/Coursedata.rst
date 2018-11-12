@@ -73,6 +73,6 @@ By clicking on "additional settings" you can change two default settings for the
 In the first field you can customize the message participants see, when they are logged in but the game has not started yet. If you leave the field empty the following will be displayed to participants: "You are logged in. The game has not started yet. Please wait."
 In the second field you can enter an ID. This will give you the possibility to track participants as they login. If you enter a word in the ID field like "Name", any participant logging into your game will be displayed the words "please enter Name" followed by a field to enter his answer. It is also possible to create two or more such fields by entering more words in the field in coursedate and seperate them with a "," like: Name, Studentnumber
 
-.. note :: You can use this for example to make students enter their studentnumber in order to rate their games and give credits or bonus credits to them for how they performed. 
+.. note :: You can use this for example to make students enter their studentnumber in order to rate their games and give credits or bonus credits to them for how they performed in the games during the term. 
 
 You can display the results in the data section while or after you played a game. You find the data section in your top bar while you are in the game in the lecture mode. If you download the data as an excel file you fill find the column "external ID" with the answers the participants gave when logging in.
