@@ -101,8 +101,9 @@ from sphinx.highlighting import lexers
 from pygments.lexers.web import PhpLexer
 
 # enable highlighting for PHP code not between <?php ... ?> by default
-lexers['php'] = PhpLexer(startinline=True)
-lexers['php-annotations'] = PhpLexer(startinline=True)
+lexers["php"] = PhpLexer(startinline=True, linenos=1)
+lexers["php-annotations"] = PhpLexer(startinline=True, linenos=1)
+primary_domain = "php"
 
 
 # -- Options for HTML output ----------------------------------------------
