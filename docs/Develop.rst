@@ -74,7 +74,7 @@ Once you are done click on *save* to create the game. classEx automatically take
 Assignment and Matching
 =======================
 
-Left to the tab *stage 1* you find the tab *assignment and matching*. Here, you can specify whether you want to assign participants to treatments, groups, roles or a combination of all (complex assigment). 
+Left to the tab *stage 1* you find the tab *assignment and matching*. Here, you can specify whether you want to assign participants to treatments, groups, roles or a combination of all (complex assignment). 
 
 .. image:: _static/Matching.PNG
     :alt:  300px

@@ -46,6 +46,9 @@ Participants password
 
 If you want to change the password the participants need to log into your game - for example to pick a password that is easy to remember - you can also do this in the course data. This also works in case the lecturer has forgotten the password he or she picked or has received with the login credentials.
 
+.. note:: The password is only changed once you logout and login again. Please do not use an empty password as you can not use test participants with an empty password.
+
+
 Course language
 ~~~~~~~~~~~~~~~~
 
