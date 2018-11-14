@@ -57,7 +57,7 @@ In the second stage the responders are informed about the proposals and they dec
 
 Also the second stage is already provided by default. Type in a name for stage 2 (e. g. "UltimatumResponder"). “Late arrival” should be “not possible” in this stage, because partners are already matched and newcomers cannot be integrated once the first stage has been played. The first thing we do is to inform the responder about the proposal. To do so you need a "program code (subjects)" field (-> add new element -> program code (subjects)). Change “for all roles” to “only role 2”. Type in the following code:
 
-.. code-block:: php
+.. code:: php
 
 	$keep = $findVariablePartner("keep";$round);
 	$send=$endow-$keep;
