@@ -45,7 +45,7 @@ User types
     - Administration: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions in :ref:`Run:Disbursal of payoffs`.
 
 Password
-    A registered lecturer has received a password upon registration. This password can also be used for the administration user type. Participants are provided with their password by the lecturer (under :ref:` Run:participants password`[!!!der funktioniert noch nicht...!!!] you see how to change it and what to do if the participants password is lost). 
+    A registered lecturer has received a password upon registration. This password can also be used for the administration user type. Participants are provided with their password by the lecturer (under :ref:`Run:Participants password` you see how to change it and what to do if the participants password is lost). 
 
     
 A short overview
