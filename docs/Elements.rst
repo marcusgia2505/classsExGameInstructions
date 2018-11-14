@@ -69,9 +69,9 @@ Elements for participants
 Input element
 ~~~~~~~~~~~~~
 
-In this element you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on “add new input field”. The input fields are displayed one after each other.
+In this element you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on “add new input field". The input fields are displayed one after each other.
 
-The following settings are available for every input field. You can determine the type of input field and define a name. The name can then be used in programmes and will give out the value of the variable. For example, if your variable is called “e”, you can access it by writing “$e;”. For more details see program. Furthermore, you can delete an input field by clicking on http://classex.uni-passau.de/classex3/pic/reject.png. You cannot delete the first input field (#1).
+The following settings are available for every input field. You can determine the type of input field and define a name. The name can then be used in programmes and will give out the value of the variable. For example, if your variable is called “e", you can access it by writing “$e;". For more details see program. Furthermore, you can delete an input field by clicking on http://classex.uni-passau.de/classex3/pic/reject.png. You cannot delete the first input field (#1).
 
 	**Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.**
 
@@ -159,7 +159,7 @@ If a game is played with real payoffs, this element displays the payoff code to 
 .. image:: _static/Winner.PNG
     :alt:  300p
 
-A winning notification is necessary for games with monetary payoff. The participants who are randomly drawn receive a winning notification as well as a code to cash in their earnings. You can adapt the message that is displayed in the winning notification. The amount of earnings can be determined in the field “Payoff(variable) in €”. Besides a fix amount, you can also enter a variable that is calculated beforehand. If, for example, the variable “$payoff;” is calculated in a programme during the game, you can enter this variable in the earnings field.
+A winning notification is necessary for games with monetary payoff. The participants who are randomly drawn receive a winning notification as well as a code to cash in their earnings. You can adapt the message that is displayed in the winning notification. The amount of earnings can be determined in the field “Payoff(variable) in €". Besides a fix amount, you can also enter a variable that is calculated beforehand. If, for example, the variable “$payoff;" is calculated in a programme during the game, you can enter this variable in the earnings field.
 
 	Hint: The winning notification can only be displayed if you also define a [[Winners'_Draw|winner's draw]] on the lecturer side. Otherwise no winner can be determined.
 
@@ -441,7 +441,7 @@ Whenever you can select variables in a field you only need to insert the variabl
 
 The program code does not distingiush between binary 0 and numeric 0. Some result elements, however, cannot display binary 0. Make sure to convert binary 0 in numeric 0 in the program code (e.g. "if($accept == 0) {$accept = 0;}") in case you want to display it in a result element.
 
-Under the header “count”, you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). Further, you can determine for some result elements whether you want the button “show results” to be displayed or not. Not displaying the button can be useful, if you want to display several diagrams underneath each other. You do, however, need at least one button per stage. You can use a normal start button element as well.
+Under the header “count", you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). Further, you can determine for some result elements whether you want the button “show results" to be displayed or not. Not displaying the button can be useful, if you want to display several diagrams underneath each other. You do, however, need at least one button per stage. You can use a normal start button element as well.
 
 Results Single / Multiple Choice Questions
 ------------------------------------------
@@ -489,7 +489,7 @@ Max
 	Maximum of the histogram 
 
 Bin
-	How the values shall be pooled into “bins”. For example, if you define the bin width: 10, the data will be pooled in brackets of ten.
+	How the values shall be pooled into “bins". For example, if you define the bin width: 10, the data will be pooled in brackets of ten.
 
 X-Line
 	Vertical Line is drawn at this x-value (e.g. to specify a correct or true value)

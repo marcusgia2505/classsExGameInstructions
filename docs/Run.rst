@@ -126,7 +126,7 @@ When the participants have made their decisions, the lecturer can end the game b
 .. image:: _static/Dispay.JPG
     :alt:  300px
 
-If games are played for real money (and participants receive a payoff code), the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only” below the actual button.
+If games are played for real money (and participants receive a payoff code), the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only" below the actual button.
 
 .. note:: A game does not have an end button. A game is only stopped when a new game is started. 
 
@@ -134,7 +134,7 @@ If games are played for real money (and participants receive a payoff code), the
 After the game
 --------------------
 
-Once a game is over, you can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results”.
+Once a game is over, you can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results".
 
 If you want to log out all participants after the game you can do so by clicking on the log out all participants button in the :ref:`Coursedata:Course data`. 
 
@@ -326,7 +326,7 @@ At the end of a game, classEx displays summary results directly on the lecturer 
 .. image:: _static/Beautymacro.JPG
     :alt:  300px
 
-Some of the graphs have interactive features and can be adapted. All figures that are labeled with "Highcharts.com" (see bottom right corner of the figure above) have a zoom function. You can zoom in by simply clicking and pulling the mouse over the section you want to zoom in on. The button “Reset zoom” resets the display back to the original size.
+Some of the graphs have interactive features and can be adapted. All figures that are labeled with "Highcharts.com" (see bottom right corner of the figure above) have a zoom function. You can zoom in by simply clicking and pulling the mouse over the section you want to zoom in on. The button “Reset zoom" resets the display back to the original size.
 
 For histograms, you can also change the settings for the bins and the maximum by clicking on the little symbol under the bottom left corner of the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bin size was too small. The bins are then changed for all graphs.
 

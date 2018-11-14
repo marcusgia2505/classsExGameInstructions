@@ -129,25 +129,27 @@ Random matching with constant roles means randomly matching the subjects into ne
 
 3. Insert the following code in the globals program:
 
-	| $rolesarray = $getRoles();
-	| # Shuffle rolesarray
-	| $keys = array_keys($rolesarray);
-	| shuffle($keys);
-	| foreach($keys as $key) { #Note that $key are the values!!!
-	| $new[$key] = $rolesarray[$key];
-	| }
-	| $rolesarray = $new; #$rolesarray is now shuffled but with the initial key-value pairs
-	| # Create new groups
-	| $numberofroles = max($rolesarray);
-	| for ($i = 1; $i <= $numberofroles; $i++) {
-  	| $count[$i] = 1; #Initializing group count per role array
-	| }
-	| foreach ($rolesarray as $key => $values){ #Looks at every subject in new (shuffled) order
-  	| for ($i = 1; $i <= $numberofroles; $i++) { #Tries every role
-    	| if ($values == $i) { #If role fits
-    	| ${"group_$key"} = $count[$i]; #Group assignment to group count
-    	| $count[$i] = $count[$i]+1; #Increase group count for the role
-	| }}}
+.. code:: php
+
+	$rolesarray = $getRoles();
+	# Shuffle rolesarray
+	$keys = array_keys($rolesarray);
+	shuffle($keys);
+	foreach($keys as $key) { #Note that $key are the values!!!
+	$new[$key] = $rolesarray[$key];
+	}
+	$rolesarray = $new; #$rolesarray is now shuffled but with the initial key-value pairs
+	# Create new groups
+	$numberofroles = max($rolesarray);
+	for ($i = 1; $i <= $numberofroles; $i++) {
+  	$count[$i] = 1; #Initializing group count per role array
+	}
+	foreach ($rolesarray as $key => $values){ #Looks at every subject in new (shuffled) order
+  	for ($i = 1; $i <= $numberofroles; $i++) { #Tries every role
+    	if ($values == $i) { #If role fits
+    	${"group_$key"} = $count[$i]; #Group assignment to group count
+    	$count[$i] = $count[$i]+1; #Increase group count for the role
+	}}}
 
 4. Insert the following code in the subjects program:
 
