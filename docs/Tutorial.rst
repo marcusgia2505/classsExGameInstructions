@@ -59,7 +59,7 @@ Also the second stage is already provided by default. Type in a name for stage 2
 
 .. code:: php
 
-	$keep = $findVariablePartner("keep";$round);
+	$keep = $findVariablePartner("keep", $round);
 	$send=$endow-$keep;
 
 The first line defines a variable “keep” and assigns to it the value of the participant’s matching partner’s “keep”-variable. The second line calculates how much the proposer kept for himself and assigns the value to a variable “send”. Now you can use both new variables to inform the responder about the proposal made to him. Therefor we need to create a new text box in the participants field below the program code field (-> add new element -> text box -> paste element). Change “for all roles” to “only role 2” in the text box and type in the following instructions:
@@ -77,22 +77,24 @@ When the responders have accepted or rejected the proposals you can display the 
 
 For both participants the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use a program code (subjects) field again in the participant field. Insert them above the default text box. You need one for “only role 1” and one for “only role 2”. The program for role 1 is:
 	
-	| $accepted=$findVariablePartner(“accepted);
-	| $payoff=$keep*$accepted;
-	| if($accepted==0) {
-	| $text=”participant 2 has rejected your proposal.”
-	| } else {
-	| $text=”participant 2 has accepted your proposal.”
-	| }
+	 $accepted=$findVariablePartner(“accepted);
+	 $payoff=$keep*$accepted;
+	 if($accepted==0) {
+	 $text=”participant 2 has rejected your proposal.”
+	 } else {
+	 $text=”participant 2 has accepted your proposal.”
+	 }
 
 The program for role 2 is:
 
-	| $payoff=$send*$accepted;
-	| if($accepted==0) {
-	| $text=”You have rejected the proposal.”
-	| } else {
-	| $text=”You have accepted the proposal.”
-	| }
+.. code:: php
+
+	 $payoff=$send*$accepted;
+	 if($accepted==0) {
+	 $text="You have rejected the proposal.";
+	 } else {
+	 $text=”You have accepted the proposal.”
+	 }
 
 Then!!!
 !!!
