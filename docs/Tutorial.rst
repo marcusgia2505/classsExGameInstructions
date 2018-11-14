@@ -64,7 +64,9 @@ Also the second stage is already provided by default. Type in a name for stage 2
 
 The first line defines a variable "keep" and assigns to it the value of the participant’s matching partner’s "keep"-variable. The second line calculates how much the proposer kept for himself and assigns the value to a variable "send". Now you can use both new variables to inform the responder about the proposal made to him. Therefor we need to create a new text box in the participants field below the program code field (-> add new element -> text box -> paste element). Change "for all roles" to "only role 2" in the text box and type in the following instructions:
 
-	"Participant 1 has decided to split $endow; as follows: $keep; for participant 1 and $send; for you. You can accept the proposal or reject it. If you reject it, both get nothing."
+.. code:: html
+
+	Participant 1 has decided to split $endow; as follows: $keep; for participant 1 and $send; for you. You can accept the proposal or reject it. If you reject it, both get nothing.
 
 Now you need an input element via which the responder can accept or reject the proposal. Insert an input element beneath the text box and insert a "new input field" within the input element. As the responder can only decide between "Accept" and "Reject" we change the type of input field to "Buttons (Single Choice)". Set the variable name to e. g. "accepted" and define the Input field as visible for "only role 2". Write a text into the text box that should appear above the "accept" and "reject" button (e. g. "Your decision"). To insert these buttons type "2" into the text field next to "add new possible answer" and click on the little plus left of it. Insert "Accept" and "Reject" into the new text fields. The values assigned to the decision buttons are very important. Choose the value "1" for the accept button and the value "0" for the reject button.
 
