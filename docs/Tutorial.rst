@@ -14,7 +14,7 @@ Building the game
 To create a new game click on "new game" in the top bar in the overview mode. Type in a game name of your choice and change the availability to "private". Thus other users cannot see "your" Ultimatum Game. Click "save". ClassEx will automatically switch into editing mode and you can start building the game.
 
 Assignment & Matching
-~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 Go to the tab "assignment & matching". Select "role & group" in the drop-down menu "assignment" and select "2" in the drop-down menu "number of roles". This means the participants in this game are selected into groups of two with every group consisting of one participant of each role. Leaving "partner" as the matching mode means the groups stay together over several rounds of the game (in this case we have just one).
 
@@ -108,6 +108,6 @@ In the lecturer field you can show the results. Delete the start button that is 
 Testing the game
 =================
 
-To test the game, change into lecture mode. You can test the game on your own PC by clicking on "new test participant" in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your participants will see it when actually playing the game. You can open as many screens as you want, where each screen represents a participant. After opening enough test participant screens click "Start" in the lecturer screen. Then you can go through the game with all test participants.
-
 Congratulations! You just finished designing your first own game!
+
+To test the game, change into lecture mode. You can test the game on your own PC by clicking on "new test participant" in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your participants will see it when actually playing the game. You can open as many screens as you want, where each screen represents a participant. After opening enough test participant screens click "Start" in the lecturer screen. Then you can go through the game with all test participants.
