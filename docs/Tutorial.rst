@@ -73,9 +73,9 @@ The second stage should start for a responder automatically as soon as "his" pro
 Stage 3: Results
 ~~~~~~~~~~~~~~~~~
 
-When the responders have accepted or rejected the proposals you can display the results in a third stage. Add a new stage and name it e. g. "Results". "Late arrival" again is "Not possible". The two fields next to the "late arrival" field define how often and where to jump after finishing this stage. You can define the number of rounds you want to play. Choose "back to stage 1" and e. g. "2x" (for repeating the the stages two times).
+When the responders have accepted or rejected the proposals you can display the results in a third stage. Add a new stage and name it e. g. "Results". "Late arrival" again is "Not possible". The two fields next to the "late arrival" field define how often stages get repeated and where to jump after finishing this stage. Using this you can define the number of rounds you want to play. Choose "back to stage 1" and e. g. "2x" (for repeating the the stages two times).
 
-For both participants the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use a program code (subjects) field again in the participant field. Insert them above the default text box. You need one for "only role 1" and one for "only role 2". The program for role 1 is:
+For both participants the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use two program code (subjects) fields in the participant field. Insert them above the default text box. You need one for "only role 1" and one for "only role 2". The program for role 1 is:
 
 .. code:: php	
 	 $accepted=$findVariablePartner("accepted");
@@ -112,4 +112,4 @@ Testing the game
 
 Congratulations! You just finished designing your first own game!
 
-To test the game, change into lecture mode. You can test the game on your own PC by clicking on "new test participant" in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your participants will see it when actually playing the game. You can open as many screens as you want, where each screen represents a participant. After opening enough test participant screens click "Start" in the lecturer screen. Then you can go through the game with all test participants.
+To test the game, change into lecture mode. If you already started another game, your self-designed game won't open automatically. In this case you can just "close" the running game by clicking on "select game" in the top bar and picking your "own" game. You can test the game on your own PC without other devices by clicking on "new test participant" in the top bar of the lecture mode. This opens a participant screen in a new tab. You will see the game just as your participants will see it when actually playing the game. You can open as many screens as you want, where each screen represents a participant. After opening enough test participant screens click "Start" in the lecturer screen. Then you can go through the game with all test participants.
