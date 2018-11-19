@@ -16,12 +16,12 @@ To create a new game click on "new game" in the top bar in the overview mode. Ty
 Assignment & Matching
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Go to the tab "assignment & matching". Select "role & group" in the drop-down menu "assignment" and select "2" in the drop-down menu "number of roles". This means the participants in this game are selected into groups of two with every group consisting of one participant of each role. Leaving "partner" as the matching mode means the groups stay together over several rounds of the game (in this case we have just one).
+Go to the tab "assignment & matching". Select "role & group" in the drop-down menu "assignment" and select "2" in the drop-down menu "number of roles". This means the participants in this game are selected into groups of two with every group consisting of one participant of each role. Leaving "partner" as the matching mode means the groups stay together over several rounds of the game.
 
 Stage 1: Proposer’s decision
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Go on to the tab "stage 1". In this first stage of the game the instructions for all participants should be on the lecturer’s screen (all participants can see it) and the proposers should decide how much they want to transfer to the responder. The stage should be started by the lecturer pressing a start button. In the first stage we don't have to think about the responder as this will be designed in stage 2. 
+Go on to the tab "stage 1". In this first stage of the game the instructions for all participants should be on the lecturer’s screen (all participants can see it) and the proposers should decide how much they want to transfer to the responder. The stage should be started by the lecturer pressing a start button. In the first stage we don't have to think about the responder whose decisions will be designed in stage 2. 
 
 First type in a name for the stage, e. g. "UltimatumProposer". "Late arrival" should be "possible". That means, participants can still log in after the stage has been started by the lecturer. 
 
@@ -31,7 +31,7 @@ The start button is already implemented by default in the first stage in the lec
 
 .. note::  If you want to move an element, you can do this by clicking on the scissors symbol in the element field you want to move. Doing this you cut out the element. You can insert it again in the spot you like by clicking on "paste element".
 
-Insert the game instructions that should be visible for all participants into this text box. An exemple for those instructions could be: "You play with another participant here in the lecture hall. One player in each group gets 10€ at the start of the game. This person is called "the proposer" and decides how to divide those 10€ between you. Then the other person, called "the responder", can decide to accept or reject the offer. If the responder accepts the offer, both will get this payoff. If the responder rejects, both player get nothing."
+Insert the game instructions that should be visible for all participants into this text box. An exemple for those instructions could be: "You play with another participant here in the lecture hall. One player in each group gets 10 € at the start of the game. This person is called "the proposer" and decides how to divide those 10 € between you. Then the other person, called "the responder", can decide to accept or reject the offer. If the responder accepts the offer, both will get this payoff. If the responder rejects, both player get nothing."
 
 .. note :: If you want to have further options for text-editing you can press on the small notepad-icon on the left side of each text field. You can leave it again by pressing "x" in the top lefthand corner of the box.
 
