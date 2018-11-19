@@ -37,7 +37,7 @@ Insert the game instructions that should be visible for all participants into th
 
 Now we start editing the participant’s field on the left side. An input element with one input field and some places to insert text is implemented by default. Change the "Type of input field" to "Numeric input field". Every participant in the role of a proposer will be able to decide upon the amount he wants to keep for himself by entering it into this field. The field "variable names" next to the "Type of input field" defines the variable name. This is the internal name of the variable and will not be visible for the participant. Type in e. g. "keep". Only the proposers should have an input field in this stage while the responder has to wait for the offer. Therefore change the field "for all roles" to "only role 1". In the text field you can insert a description of the input value that is visible for the participant. Type in e. g. "For me:". Below the text field you can edit some more settings of the input field. The "Minimum" should be "0" because the responder cannot keep a negative amount. The "Maximum" should equal the initial endowment because the proposer cannot keep more than this for himself. 
 
-.. Note :: At this point it would be useful to add fields calculating the amount of money a proposer sends to the responder. This fields could dynamicly display these information to the proposer. When the proposer would enter a "5" in his "send"-field classEx could display "The amount you send to the responder is '5'". Although this calculation is easy for any participant, it ensures they are always aware of the game mechanism and do not make a calculation mistake. You will learn e.g. how to insert such calculation fields in the chapters on creating own games following this tutorial.
+.. Note :: At this point it could be helpful to add fields calculating the amount of money a proposer sends to the responder. This fields could dynamicly display these information to the proposer. When the proposer would enter a "5" in his "send"-field classEx could display "The amount you send to the responder is '5'". Although this calculation is easy for any participant, it ensures they are always aware of the game mechanism and do not make a calculation mistake. You will learn e.g. how to insert such calculation fields in the chapters on creating own games following this tutorial.
 
 The initial endowment could be a parameter you maybe will want to change in the future. You should only need to change one value to do so. Therefore you should define the initial endowment as a general parameter of the game. To do so you need to add a "program code (subjects)" element (participants field -> add new element -> program code (subjects)). Click on the little paste-symbol above the input field to insert the program field. In the program field you now can define the initial endowment as a variable. Type in "$endow = 10;" for an initial endowment of 10. Now you can use this variable to define the upper threshold of the amount the proposer can keep (if you deviate from "10" remember to also adopt your instructions in the lecturer text box). Type "$endow;" in to the "Maximum" field. Type in "0" into "decimal place" to not allow for decimal numbers and define the "unit" e. g. as "€".
 
@@ -56,13 +56,13 @@ Also the second stage is already provided by default. Type in a name for stage 2
 .. code:: php
 
 	$keep = $findVariablePartner("keep", $round);
-	$send=$endow-$keep;
+	$receive=$endow-$keep;
 
-The first line defines a variable "keep" and assigns to it the value of the participant’s matching partner’s "keep"-variable. The second line calculates how much the proposer kept for himself and assigns the value to a variable "send". Now you can use both new variables to inform the responder about the proposal made to him. Therefor we need to create a new text box in the participants field below the program code field (-> add new element -> text box -> paste element). Change "for all roles" to "only role 2" in the text box and type in the following instructions:
+The first line defines a variable "keep" and assigns to it the value of the participant’s matching partner’s "keep"-variable. The second line calculates how much the receiver gets and assigns the value to a variable "receive". Now you can use both new variables to inform the responder about the proposal made to him. Therefor we need to create a new text box in the participants field below the program code field (-> add new element -> text box -> paste element). Change "for all roles" to "only role 2" in the text box and type in the following instructions:
 
 .. code:: html
 
-	Participant 1 has decided to split $endow; as follows: $keep; for participant 1 and $send; for you. You can accept the proposal or reject it. If you reject it, both get nothing.
+	Participant 1 has decided to split $endow; as follows: $keep; for participant 1 and $receive; for you. You can accept the proposal or reject it. If you reject it, both get nothing.
 
 Now you need an input element via which the responder can accept or reject the proposal. Insert an input element beneath the text box and insert a "new input field" within the input element. As the responder can only decide between "Accept" and "Reject" we change the type of input field to "Buttons (Single Choice)". Set the variable name to e. g. "accepted" and define the Input field as visible for "only role 2". Write a text into the text box that should appear above the "accept" and "reject" button (e. g. "Your decision"). To insert these buttons type "2" into the text field next to "add new possible answer" and click on the little plus left of it. Insert "Accept" and "Reject" into the new text fields. The values assigned to the decision buttons are very important. Choose the value "1" for the accept button and the value "0" for the reject button.
 
@@ -71,40 +71,39 @@ The second stage should start for a responder automatically as soon as "his" pro
 Stage 3: Results
 ~~~~~~~~~~~~~~~~~
 
-When the responders have accepted or rejected the proposals you can display the results in a third stage. Add a new stage and name it e. g. "Results". "Late arrival" again is "Not possible". The two fields next to the "late arrival" field define how often and where to jump after finishing this stage. You can define the number of rounds you want to play. Choose "back to stage 1" and e. g. "2x" (for playing two rounds).
+When the responders have accepted or rejected the proposals you can display the results in a third stage. Add a new stage and name it e. g. "Results". "Late arrival" again is "Not possible". The two fields next to the "late arrival" field define how often and where to jump after finishing this stage. You can define the number of rounds you want to play. Choose "back to stage 1" and e. g. "2x" (for repeating the the stages two times).
 
 For both participants the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use a program code (subjects) field again in the participant field. Insert them above the default text box. You need one for "only role 1" and one for "only role 2". The program for role 1 is:
-	
-	 $accepted=$findVariablePartner("accepted);
+
+.. code:: php	
+	 $accepted=$findVariablePartner("accepted");
 	 $payoff=$keep*$accepted;
 	 if($accepted==0) {
-	 $text="participant 2 has rejected your proposal."
+	 $text="Participant 2 has rejected your proposal.";
 	 } else {
-	 $text="participant 2 has accepted your proposal."
+	 $text="Participant 2 has accepted your proposal.";
 	 }
 
 The program for role 2 is:
 
 .. code:: php
 
-	 $payoff=$send*$accepted;
+	 $payoff=$receive*$accepted;
 	 if($accepted==0) {
 	 $text="You have rejected the proposal.";
 	 } else {
-	 $text="You have accepted the proposal."
+	 $text="You have accepted the proposal.";
 	 }
 
-Then!!!
-!!!
- insert two text boxes in the participants field. Again one for role 1 and one for role 2. In these text boxes you inform the participants about their final payoff. For role 1 the text could be:
+Afterwards insert two text boxes in the participants field. Again one for role 1 and one for role 2. In these text boxes you inform the participants about their final payoff. For role 1 the text could be:
 
-	You have proposed to split $endow; as follows: $keep; € for you and $send; € for participant 2. $text; Your payoff is $payoff; €.
+	You proposed to keep $keep; € from the initial endowment $endow; €. $text; Your payoff is $payoff; €.
 
 For role 2 the text could be:
 
-	participant 1 has proposed to split $endow; as follows: $keep; € for him and $send; € for you. $text; Your payoff is $payoff; €.
+	Participant 1 has proposed to split $endow; as follows: $keep; € for him and $receive; € for you. $text; Your payoff is $payoff; €.
 
-In the lecturer field you can show the results. Delete the start button that is implemented in a new stage by default. Then add a results bubble element. Select the variable "accept" for the x-axis with 0 as minimum and 2 as maximum value. Choose a label for the x-axis, e. g. "acceptance." Select the variable "keep" for the y-axis with 0 as minimum and $endow as maximum value. Choose a label for the y-axis, e. g. "proposal (amount kept)". Select "display if stage is activated and after" and select "by role" in the field "count".
+In the lecturer field you can show the results. Delete the start button that is implemented in a new stage by default. Then add a results matrix element. Change "decision role 1" from "stage 2 # 1" to "stage 1 # 1". Change "count" to "by role" and "display results" to "by round".
 
 Testing the game
 =================
