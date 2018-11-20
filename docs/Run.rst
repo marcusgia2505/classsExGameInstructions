@@ -2,28 +2,28 @@
 Run ready-made games
 =====================
 
-In classEx, you can find a set of ready-made games which can be played directly in the lecture mode. The interaction between the lecturer and the participants takes place in the lecture mode. The lecturer's browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode.  Just start a game and open some test participants by clicking at the test participant symbol |pic_testparticipant| in the top navigation bar. Test participants open in a new tab of the browser.
+In the overview mode in classEx, you can find a set of ready-made games which can be played directly in the lecture mode. The interaction between the lecturer and the participants takes place in the lecture mode. The lecturer's browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode.  Just start a game by pressing "play" and open some test participants by clicking at the test participant symbol |pic_testparticipant| in the top navigation bar. Test participants open in a new tab of the browser.
 
 .. |pic_testparticipant| image:: _static/pic/addPlayer.png
                             :width: 15px
 
 .. raw:: html
 
-    This video shows how to play a game.
+    How to do this step by step is shown in the following video.
     <div style="text-align: center; margin-bottom: 2em;">
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/zmAn0ZzTQPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
 .. raw:: latex
 
-    You can find a short video on how to play a game on \url{https://youtu.be/zmAn0ZzTQPk}.
+    You can find a short video on how to play a ready-made game on \url{https://youtu.be/zmAn0ZzTQPk}.
 
-Prerequisites
+What you need
 =============
 
 Participants' devices
 ---------------------
-Every participant who wants to participate in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection. Browsers should be up-to-date and javascript and cookies enabled. Participants can connect via mobile Internet or available wifi.
+Every participant who wants to take part in a session needs a mobile device (e.g. mobile phone or tablet) with a browser and internet connection. Browsers should be up-to-date and javascript and cookies enabled. Participants can connect via mobile Internet or available wifi.
 
 Lecturer device
 ----------------
@@ -41,7 +41,7 @@ Information for participants before the course
 
 You may inform participants upfront e.g. via email that you plan to run an experiment in class.
 
-- participants have to bring a mobile device that has internet access, e.g. a smart phone, a tablet or laptop. (see `Participants' devices`_).
+- participants have to bring a mobile device that has internet access, e.g. a smart phone, a tablet or laptop (see `Participants' devices`_).
 - The browser they use should be up-to-date and javascript and cookies enabled. We suggest to use Firefox.
 - The devise has to have enough battery left (suggest to bring a charger).
 
@@ -55,7 +55,7 @@ Information for participants in the course
 .. image:: _static/rungame/intro_slide.PNG
     :alt: 300px
 
-**The only important information participants need is how to login**. The easiest way is to provide them with a Power point slide with the login data. You can add a QR code but notice that QR codes may not work in big lecture halls. For all login possibilities (link, QR,...) see `Login of participants and test participants`_.
+**The only important information participants need is how to login**. The easiest way is to provide them with a PowerPoint slide with the login data. You can add a QR code but notice that QR codes may not work in big lecture halls. For all login possibilities (link, QR,...) see `Login of participants and test participants`_.
 
 Before you start a game, you may inform participants also about the following:
 
@@ -63,10 +63,9 @@ Before you start a game, you may inform participants also about the following:
 
 - Participants should close all apps. Having other apps open might reduce the internet speed and therefore a well-functioning of classEx.
 
-- If the experiment has already started (and some decisions have already been entered), participants might not be able to join the experiment any more. This depends on the game, but is normally so after the first stage of a game has been concluded.
+- If the experiment has already started (and some decisions have already been entered), participants might not be able to join the experiment any more. This depends on the game, but usually joining is no longer possible after the first stage of a game has been concluded.
 
 - If participants are chosen randomly to receive their payoff, they should make screen-shots of their winner's notification to be sure to receive their payoff. (see `Disbursal of payoffs`_).
-
 
 
 
