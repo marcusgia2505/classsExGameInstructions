@@ -97,11 +97,11 @@ A selected game can be started by pressing the blue start button.
 
 By pressing start, the lecturer initiates the first stage of the game. If a game consists of several stages, the start button for the next stage appears after pressing the start button for the first stage.
 
-.. warning:: By starting a new game, the currently running game is stopped. There can only be one running game at a time.
+.. warning :: By starting a new game, the currently running game is stopped. There can only be one running game at a time.
 
-If a game consists of several treatments and / or roles the participants will be assigned into treatments / roles in the first stage. For more information on assignment of roles and treatments see `Develop`_.
+If a game consists of several treatments and / or roles the participants will be assigned into treatments / roles in the first stage. For more information on assignment of roles and treatments see :ref:`Assignment and Matching`. 
 
-.. note:: If you have different roles and treatments, the first stage should be opened long enough that all participants are assigned to a role and treatment. The assignment ist done when the stage has been loaded at the participants' device. So make sure that you do not continue to the next stage too fast.
+.. note:: If you have different roles and treatments, the first stage should be opened long enough that all participants are assigned to a role and treatment. The assignment is done when the stage has been loaded at the participants' device. So make sure that you do not continue to the next stage too fast.
 
 During the game
 ---------------
@@ -123,12 +123,12 @@ Here, 3 participants are logged in and 1 has already made their decision.
 End the game
 ------------
 
-When the participants have made their decisions, the lecturer can end the game by clicking on the blue button. In many cases it shows „display results“.
+When the participants have made their decisions, the lecturer can end the game by clicking on the blue button. In many cases it shows „display results“. If games are played for real money (and participants receive a payoff code), the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". 
 
 .. image:: _static/Dispay.JPG
     :alt:  300px
 
-If games are played for real money (and participants receive a payoff code), the lecturer does not only have the normal „display results“ button but also the enhanced button "Display results and payoff". If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only" below the actual button.
+If you should not want to pay out any money, for example in a practice round, you have the possibility of clicking on “display results only" below the actual button.
 
 .. note:: A game does not have an end button. A game is only stopped when a new game is started. 
 
@@ -136,7 +136,7 @@ If games are played for real money (and participants receive a payoff code), the
 After the game
 --------------------
 
-Once a game is over, you can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results".
+You can download all recorded data by selecting "download as excel file" from the "data" menu in the top bar. If you want to go back to compare the current results with old ones or ones in different courses, click on “previous results" in the top bar.
 
 If you want to log out all participants after the game you can do so by clicking on the log out all participants button in the :ref:`Coursedata:Course data`. 
 
@@ -151,23 +151,23 @@ The top bar of the **lecture mode** provides the following functionality.
     :alt:  150px
 
 
-select games
+Select games
     Select games from own and ready-made games. The selected game opens up as soon as you click on it.
 
-login QR code
-    Click on QR code to display the QR code for login. The QR code page also provides some details about other ways to login (see `Login of participants and test participants`_)
+Login QR code
+    Click on QR code to display the QR code for login. The QR code page also provides a link for logging in and some details about other ways to login (see `Login of participants and test participants`_)
 
-add test participants
+Add test participants
     This button will open a test participant in a new tab. This can be very useful to test classEx games. If you want to open multiple test players at a time, just hold the Crtl-button and click several times on the test player icon.
 
-diagnosis mode
-    In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier. It is only useful if you use advanced programing.
+Diagnosis mode
+    In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier. It is only useful if you use advanced programming.
 
-data
-    The drop-down menu *data* offers two options. By clicking on **show data** you can access a preview over participants current decisions in real time. You can also download the results via **download as excel file**. The excel files contain the all variables recorded in the game. It contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data.
+Data
+    The drop-down menu *data* offers two options. By clicking on **show data** you can access a preview over participants current decisions in real time. You can also download the results via **download as excel file**. The excel files contain all variables recorded in the game. It contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data.
 
-previous results
-    You can access previous results via the previous results drop-down menu. Simply choose which results from previous session you want to display. This way you can directly compare current outcomes with previous ones, you just played or, if available, old results of the same game. When you selected a previous result you can also download all data for this result by clicking on **show data** in the data drop-down menu. The previous result section also contains results from other lecturers if the game and the recorded data are public. If you use such a public game, your data will be available to other lecturers as well.
+Previous results
+    You can access previous results via the **previous results** drop-down menu. Simply choose which results from previous session you want to display. This way you can directly compare current outcomes with previous ones, you just played or, if available, old results of the same game. When you selected a previous result you can also download all data for this result by clicking on **show data** in the data drop-down menu. The previous result section also contains results from other lecturers if the game and the recorded data are public. If you play such a public game in your class, your data will be available to other lecturers as well.
 
 .. note:: If you do not want that others see your recorded data when you use a public game, you should make a copy of the game and set it to private. Then play the private version of the game.
 
@@ -186,15 +186,15 @@ In order to login, participants go to the website http://classex.uni-passau.de a
 .. image:: _static/rungame/game_not_started.png
     :alt:  300px
 
-If participants are logged in before the lecturer has started the game, participants see a waiting screen with the message displayed above. The lecturer can edit the text on the waiting screen in the :ref:`Coursedata:Course data`.
+If participants are logged in before the lecturer has started the game, participants see a waiting screen with the message displayed above. The lecturer can edit the text on the waiting screen and the course password in the :ref:`Coursedata:Course data`.
 
 
-.. note:: If a game has already been started, participants directly see the game and can play it. If may therefore be useful to ask all participants to login and start the game after that has happened. If a game has ended (but no new one selected), new participants get the message on login that the current game is still running and they cannot participate.
+.. note:: If a game has already been started, participants directly see the game and can play it. It may therefore be useful to ask all participants to login and start the game after that has happened. If a game has ended (but no new one selected), new participants get the message on login that the current game is still running and they cannot participate.
 
 Login with QR-Code
 ------------------
 
-All experiments can be accessed by participants via a QR-Code. This QR-Code is provided automatically in the lecture Mode in the top bar. Display the QR code by clicking on the symbol |pic_qr|. When clicking on the QR code symbol instructions on how to log in without using the QR code also appear on the screen.
+All experiments can be accessed by participants via a QR-Code. This QR-Code is provided automatically in the lecture mode in the top bar. Display the QR code by clicking on the symbol |pic_qr|. When clicking on the QR code symbol instructions on how to log in without using the QR code also appear on the screen.
 
 .. image:: _static/QRlogin.PNG
     :alt:  300px
@@ -209,7 +209,7 @@ Lecturers can either copy the QR-Code and print it on leaflets, for example, or 
 Automatic link for login
 ------------------------
 
-When you click on |pic_qr|, you also get some information on how to login participants directly with a link. They just have to copy the link in their browser and are logged in into your course (without the need of selecting the course and entering a password). The link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUxxF-g (this link is just for demonstration and cannot be used.)
+When you click on |pic_qr|, you also get some information on how to log in participants directly with a link. They just have to copy the link in their browser and are logged in into your course (without the need of selecting the course and entering a password). The link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUxxF-g (this link is just for demonstration and cannot be used.)
 
 Personalized link for login
 ----------------------------
@@ -234,7 +234,7 @@ There is no (visible) logout button for participants. This is done in order to k
 
 If you want to log out a participant (e.g. in case of a problem), click on the classEx logo on the participant's device. This displays a logout button.
 
-As a lecturer you can log out all participants that are currently logged in to your course by going into your :ref:`Coursedata:Course data` and by clicking on the button below. This will logout all participants immediately. This may be necessary if you run to lectures in a row and do not want to have the participants from the first lecture in the second one.
+As a lecturer you can log out all participants that are currently logged in to your course by going into your :ref:`Coursedata:Course data` and by clicking on the button below. This will logout all participants immediately. This may be necessary if you run two lectures in a row and do not want to have the participants from the first lecture in the second one.
 
 .. image:: _static/Bigredbutton.PNG
     :alt:  300px
