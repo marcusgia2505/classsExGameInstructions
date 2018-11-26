@@ -65,18 +65,21 @@ Before you start a game, you may inform participants also about the following:
 
 - If the experiment has already started (and some decisions have already been entered), participants might not be able to join the experiment any more. This depends on the game, but usually joining is no longer possible after the first stage of a game has been concluded.
 
-- If participants are chosen randomly to receive their payoff, they should make screen-shots of their winner's notification to be sure to receive their payoff. (see `Disbursal of payoffs`_).
+- If participants are chosen randomly to receive their payoff, they should make screen-shots of their winner's notification to be sure to receive their payoff (see `Disbursal of payoffs`_).
 
 
 
-Before the start
+Before starting your game
 ----------------
 
-Ask all participants to login. The counter over the start button shows how many participants are currently logged in. There is no minimum number of participants required to start a game.
+The lecturer can select a new game by choosing it from the drop down list in the top left corner of the lecturer mode or by selecting one in the overview mode. Via both ways all ready-made games are accessible.
 
-.. note:: The best option is to let all participants login first, then start a game. Participants can also login when the game is running. Participation is always possible when the first stage of the game is running. Depending on the game, it may not be possible to participate if the game has already proceeded to later stages.
+Ask all participants to login. The counter over the start button of the game shows how many participants are currently logged in. 
 
-The lecturer can select a new game by choosing it from the drop down list in the top left corner or by selecting in the overview mode. The drop down list shows all available games.
+.. note :: There is no minimum number of participants required to start a game, but note that not all games actually work with e.g. only one participant. In such cases you can start a game, but your single participant won't be able to enter a decision if his decision depends on another persons action.
+
+.. note :: The best option is to let all participants login first, then start a game. Participants can also login when the game is running. Participation is always possible when the first stage of the game is running. Depending on the game, it may not be possible to participate if the game has already proceeded to later stages.
+
 
 .. image:: _static/Parameters.PNG
     :alt:  300px
