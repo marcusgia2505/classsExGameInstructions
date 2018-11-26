@@ -249,7 +249,7 @@ Participants’ screens are updated automatically when their partner has made a 
 Participants' screens
 =====================
 
-The participants interface should be self-explanatory. The top bar contains the classEx logo and shows if participants are assigned to a specific role by displaying a (colored) icon |Role1|. The top bar may additionally show the internal participant id of the participant. 
+The participants interface should be self-explanatory. The top bar contains the classEx logo and shows if participants are assigned to a specific role by displaying a (colored) icon |Role1|. The top bar may additionally show the internal participant ID of the participant. 
 
 The most common actions participants are asked to carry out are discrete decisions and numeric decisions as shown in the following sample screens. Another common element is the contract element where participants can trade items with other participants. There are also other input types such as text elements, radio buttons or sliders which are explained in the section :ref:`Elements`. 
 
@@ -287,7 +287,7 @@ Participant can trade items in classEx. Therefore, they walk around in class to 
 
 The upper row shows the different steps for the seller |Role4|, the lower row shows the different steps for the buyer |Role3|. In this case, only sellers can send offers to buyers. This can also be changed in the :ref:`Elements` settings. 
 
-Each screen consists of two fields. The item field shows all items which a participant possesses. The contract field shows all contracts and offers.
+Each screen consists of two fields. The item field shows all items a participant possesses. The contract field shows all contracts and offers.
 
 First, the seller asks for the ID of the buyer which is displayed on the buyer's screen. In this example, the buyer has the ID 3. The seller enters the ID of the buyer and the price into the input field on his screens and presses *SELL*. Then an offer shows up for the buyer in the contract field. The buyer can accept or reject the offer. The seller can withdraw the offer. If the buyer accepts the offers, the item is transfered to the buyer and shows up in his or her item field. The contract is marked as accepted.
 
@@ -300,7 +300,7 @@ First, the seller asks for the ID of the buyer which is displayed on the buyer's
 Disbursal of payoffs
 ====================
 
-In some games participants will receive a real monetary payoff. The payoff is paid out by providing the participant with a payoff code. 
+In some games participants will receive a real monetary payoff. In such cases payoff codes will be displayed to one or more participants being selected by classEx. 
 
 .. note:: Participants should not show their payoff code to others, as others could then claim the payoff. Therefore, it is advisable for participants not to let any other participant see the screen of their mobile device during the experiment.
 
@@ -311,7 +311,7 @@ In some games participants will receive a real monetary payoff. The payoff is pa
 
 The participant can present the payoff code to the administrative staff after the end of the lecture in order to claim his or her payoff. The person entrusted with disbursing the payoff can login into classEx with the user type "administration" (see :ref:`Basics:Login`). The payoff can also be disbursed directly by the lecturer. The password for the lecturer is always valid for administration of payoffs as well.
 
-If you login as user type "administration", you can see a list indicating the date, the payoff code and the amount of money to be paid out to the participant. Further, clicking on the red icons opens a pdf with a receipt that can be printed out and can be signed by the participant. Also, the administrator can tick the box on the right indicating that the participant has picked up his or her payoff.
+If you login as user type *administration*, you can see a list indicating the date, the payoff code and the amount of money to be paid out to the participant. Further, clicking on the red icons opens a pdf with a receipt that can be printed out and can be signed by the participant. Also, the administrator can tick the box on the right indicating that the participant has picked up his or her payoff.
 
 .. image:: _static/rungame/admin_mode.PNG
     :width:  100%
@@ -330,7 +330,7 @@ At the end of a game, classEx displays summary results directly on the lecturer 
 
 Some of the graphs have interactive features and can be adapted. All figures that are labeled with "Highcharts.com" (see bottom right corner of the figure above) have a zoom function. You can zoom in by simply clicking and pulling the mouse over the section you want to zoom in on. The button “Reset zoom" resets the display back to the original size.
 
-For histograms, you can also change the settings for the bins and the maximum by clicking on the little symbol under the bottom left corner of the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bin size was too small. The bins are then changed for all graphs.
+For histograms, you can also change the settings for the bins and the maximum by clicking on the little arrow symbol under the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bin size was too small. The bins are then changed for all graphs.
 
 Via the button *previous results* in the lecture menu, you can also access and display results (and their corresponding graphs) of previous sessions.
 
@@ -372,7 +372,7 @@ Re-login of the participant
 
 If a participant has problems which cannot be solved by a better internet connection or a reload of the web page, you can try a re-login. Therefore, you have to logout the participant by clicking on the logout button |pic_logout|. Then the participant should login again. 
 
-.. note:: If the game is running and you have proceeded beyond the first stage, re-login may not be possible. If a participant try to re-login then, he or she may get the message that the game is running and participation is not longer possible.
+.. note:: If the game is running and you have proceeded beyond the first stage, re-login may not be possible. If a participant try to re-login then, he or she may get the message that the game is running and participation is no longer possible.
 
 Check participant ID
 ----------------------
