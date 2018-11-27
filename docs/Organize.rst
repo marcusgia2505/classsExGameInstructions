@@ -26,11 +26,11 @@ Functions in the top bar
 
 You can see the top bar for the **overview mode** in the picture above in the left hand corner. It offers the following functionality:
 
-new folders
+new folder
     Create new folders to organize your games.
 
-new games
-    Create new games which you can then design in the editing mode.
+new game
+    Create new games which you can design in the editing mode.
 
 repository
     The repository which provides access to games provided by other lecturers. 
@@ -40,11 +40,11 @@ repository
 Folders
 =======
 
-Games are sorted into folders, which can be named for example after different chapters of lectures. They can be found on the left. You can create a new folder by clicking on *new folder* in the top bar. Folders can be renamed by clicking on the title of a folder in the main screen (above the list of games). Folders are ordered alphabetically. It is not possible to change the order of folders. 
+Games are sorted into folders, which can be named for example after different chapters of lectures. They can be found on the left. You can create a new folder by clicking on *new folder* in the top bar. Folders can be renamed by clicking on the title of a folder in the main screen (above the list of games). This is not possible for the general folder that is provided by default. Folders are ordered alphabetically. It is not possible to change the order of folders. 
 
 .. note:: If you need a specific order, you may name the folders e.g. 01 - intro, 02 - motivation, ...
 
-Folder can only be deleted when they are empty. Then the delete symbol will appear |pic_delete|. The deletion cannot be reversed. 
+Folders can only be deleted when they are empty. Then the delete symbol |pic_delete| will appear. The deletion cannot be reversed. 
 
 Each account has a standard folder which is called *general folder*. This cannot be deleted.
 
@@ -71,18 +71,18 @@ Each account has a standard folder which is called *general folder*. This cannot
 Order games
 ============
 
-You can move games by clicking on the little icon on the *move game* icon |pic_handle| and dragging the game into another folder (in the left bar). You can also drag the game within your folder in order to change its position in the current folder. 
+You can move games by clicking on the *move game* icon |pic_handle| and dragging the game into another folder (in the left bar). You can also drag the game within your folder in order to change its position. 
 
 Play and edit games
 ====================
 
 If you click on the *play game* button, the game is directly started in the lecture mode.
 
-.. note:: If you click on *play game*, the current game which is running will be stopped and the game you clicked on will be started. If you want to switch back to your currently running game instead use the buttons in the top navigation bar to go the lecture mode or click on the button *back to current game*.
+.. note:: If you click on *play game*, the current game which is running will be stopped and the game you clicked on will be started. If you want to switch back to your currently running game instead use the buttons in the top navigation bar to go the lecture mode or click on the button *back to current game* below the navigation bar.
 
 You can directly enter the editing mode by clicking on the *edit game* icon. The title of this button changes to *view* if you cannot edit the game. This may happen if you are not the owner of the game, but you imported the game (see below). 
 
-.. note:: You can also arrive at the lecture and editing mode by clicking on the symbols in the top navigation bar.
+.. note:: You can also switch to the lecture and editing mode by clicking on the symbols in the top navigation bar.
 
 
 
@@ -96,12 +96,12 @@ Copy and delete games
 
 If you want to make a copy of a game (e.g. to create your own version of a ready-made game), click on the copy button |pic_copy|. This will create a copy of the game in your *general folder*. You can edit this copy and thus make your own version of any game on classEx. Alternatively, you can go to the editing mode and click on the drop down menu *game* and then select *copy game*. 
 
-The *delete game* icon |pic_delete| deletes a game.
+The *delete game* icon |pic_delete| deletes a game. This can't be reversed.
 
 Repository
 ==========
 
-The repository gives lists all public games created by you and other lecturers and allows you to import these games to your account. You can enter the repository by clicking on the *repository* button in the top bar of the overview. 
+The repository lists all public games created by you and other lecturers and allows you to import these games to your account. You can enter the repository by clicking on the *repository* button in the top bar of the overview. 
 
 If you do not want your game to be listed in the repository you have to change its status from public to private. 
 
@@ -111,7 +111,7 @@ If you do not want your game to be listed in the repository you have to change i
 Search games
 ------------
 
-The repository lists all games which were set public by their owners. The list can be searched by the different criteria on the left hand side. The switch button disables viewing a certain criterion in the list. You can also make a free text search by typing in the search box in the top right corner. Clicking on the *Game information* button shows some more information (if set by the owner) and a sample screenshot. 
+The repository lists all games which were set public by their owners. The list can be searched by the different criteria on the left hand side. The switch button disables viewing a certain criterion in the list. You can also make a free text search by typing in the search box in the top right corner. Clicking on the *Game information* button shows some more information and a sample screenshot (if provided by the owner). 
 
 Import games
 -------------
