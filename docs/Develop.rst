@@ -4,42 +4,86 @@
 Develop your own games
 ======================
 
-To develope your own games change to the editing mode. The top bar in this mode looks like this:
+To develope your own games change to the editing mode. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
+
+	.. note:: In the editing mode, changes are stored automatically. If you change your an element of your game and click next to the element, the element is stored.
+
+	.. note:: If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, copy the game and then adapt it.
+
+Top bar in the editing mode
+============================
+
+The top bar in the editing mode looks like this:
 
 .. image:: _static/Leiste.JPG
     :alt:  300px
 
 It provide you with several options which are described below.
 
-	Hint: If you make any input in the editing mode and leave the input field the value is stored automatically.
 Select game
+~~~~~~~~~~~~
 
 .. image:: _static/Selectgame.JPG
     :alt:  300px
 
-Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
+Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game in the editing mode.
 
-If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, replicate the game and then adapt it.
 
-.. image:: _static/Alreadyplayed.JPG
-    :alt:  300px
+Game
+~~~~~
 
-By clicking on the button game a drop down menu opens.
+By clicking on *game*, a dropdown menu will open, which shows up to four possible options. The number of options can be reduced if you do not own the game. Then, e.g. you cannot delete the game.
 
 .. image:: _static/Game.JPG
     :alt:  300px
 
 Game settings
-	Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+--------------
+Clicking on game settings, a new screen appears. On this screen you can change different settings of the game. You can also access this screen from the overview by clicking on the |pic_setting| symbol next to the name of a game. Changes to any field are again saved automatically. 
+
+.. image:: _static/game_settings.PNG
+
+Name of the game
+	First of all, you can specify the name of the game. If your game is available in different languages, you have to provide a translation of the title as well. 
+
+
+Creation date
+	The created field shows the creation date of the game, which is not editable. 
+
+Language
+	For each game, you can specify a primary language and optionally a second language. If you add a second language all text fields will be shown twice for both languages.
+
+	.. note:: If a text field misses the multilanguage feature, you can input the text in both languages separated with $$. E.g. Please decide now$$Bitte entscheide jetzt. 
+
+	.. note:: classEx always chooses automatically which language to use based on the account language. If the game is available in the account language it uses this language. Then it tries to find an English version. Otherwise it displays the available language.
+
+Availability
+
+	You can specify whether you would like it to be public or not. By default, all games are public. 
+
+Information on the game
+
+You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+
+	.. |pic_setting| image:: _static/pic/setting.png
+                            :width: 15px
 
 Copy game
-	The currently selected game is copied and can then be edited and adapted.
+----------
+The currently selected game is copied and can then be edited and adapted.
 
 Delete game
-	By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
+------------
+By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
 
 New game
-	Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
+---------
+Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
+
+Parameters
+~~~~~~~~~~~
+
+If you click on paramters, you can edit the parameters of a game. Parameters are variables that can be changed by other users.
 
 
 Test a game
@@ -70,6 +114,46 @@ To create a new game you can either click on *new game* in you Overview or go to
 classEx takes you to the settings page of the created game were you have to select a name. You can also define an alternative name which is displayed instead of the name wherever the game is listed. You have to select a language and can define a second language that is used if the account language is set to this language. Also you have to choose whether the game should be public or private.
 Further you can insert information on the game in the left column. You can select keywords, add comments and credentials. The credentials are typically used for references to published literature relevant for your game. The credentials will be displayed next to the name of you game. 
 Once you are done click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
+
+
+Define stages
+==============
+
+Stages are points of synchronisation in a game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Generally, the input phase is one stage and the results or output phase is a different stage, as the output can only be displayed after all participants have entered their input. Each stage consists of one or more elements. Stages are ordered in tabs in a horizontal way in classEx. The first tab is not a stage before shows the options for assignment of roles and groups. 
+
+.. image:: _static/Stage.PNG
+    :alt:  300px
+
+    In the [[editing Mode]], you can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
+
+
+Rounds
+~~~~~~
+
+If you want to run one or more stages more than once, you can define rounds and determine how often you would like to return to a certain stage. If you determine the return value as 0 or if the stage has been run for the predetermined number of times, classEx will redirect you to the next stage right underneath. You can also determine which stage you want to return to if you play several rounds.
+
+Late arrival
+~~~~~~~~~~~~
+
+You can specify whether participants can arrive late, i.e. if they only just logged in. You can choose for this to be possible, not possible, or only possible in the first round.
+
+Move stages
+~~~~~~~~~~~
+
+When you create a new stage, this stage will automatically be defined as the next stage. You can move stages by pressing *Move stage upwards* or *Move stage downwards*. The order in which stages are run is always from left to right.
+
+Add stage
+~~~~~~~~~
+
+You can add a new stage by clicking on *Add new stage* beside the tabs displaying the different stages or on the top right of the current stage.
+
+Delete stage
+~~~~~~~~~~~~~
+You can delete a stage by pressing *Delete stage*.
+
+
+
+
 
 Assignment and Matching
 =======================
@@ -169,43 +253,6 @@ Up to 13 roles are available (and an additional gray role 0 for no role assignme
     :alt:  300px
 
 This roles are standardized items and are shown in the header of the participant's page.
-
-Define your stages
-==================
-
-Games consist of several stages. There are at least 2 stages, one for the decision input and one for the result output. Stages are ordered sequentially and are meant to be synchronization points in the game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized.
-
-Configuration of Stages
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Stages are points of synchronisation in a [[Games|game]]. Generally, the input phase is one stage and the results or output phase is a different stage, as the output can only be displayed after all [[Participants|participants]] have entered their input. Each stage consists of one or more [[Elements|elements]] (e.g. input, results, small programmes) that require the input of at least one participant. In the [[editing Mode]], you can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
-
-.. image:: _static/Stage.PNG
-    :alt:  300px
-
-Rounds
-~~~~~~
-
-If you want to run one or more stages more than once, you can define rounds and determine how often you would like to return to a certain stage. If you determine the return value as 0 or if the stage has been run for the predetermined number of times, classEx will redirect you to the next stage right underneath. You can also determine which stage you want to return to if you play several rounds.
-
-Late arrival
-~~~~~~~~~~~~
-
-You can specify whether participants can arrive late, i.e. if they only just logged in. You can choose for this to be possible, not possible, or only possible in the first round.
-
-Move stages
-~~~~~~~~~~~
-
-When you create a new stage, this stage will automatically be defined as the next stage. You can move stages by pressing *Move stage upwards* or *Move stage downwards*. The order in which stages are run is always from left to right.
-
-Add stage
-~~~~~~~~~
-
-You can add a new stage by clicking on *Add new stage* beside the tabs displaying the different stages or on the top right of the current stage.
-
-Delete stage
-~~~~~~~~~~~~~
-You can delete a stage by pressing *Delete stage*.
 
 Elements (display condition,…, mit Bsp…, general input)
 ===========================================================
