@@ -4,14 +4,11 @@
 Develop your own games
 ======================
 
-To develope your own games change to the editing mode. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use box system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
+To develope your own games change to the editing mode. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
 
 	.. note:: In the editing mode, changes are stored automatically. If you change your an element of your game and click next to the element, the element is stored.
 
 	.. note:: If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, copy the game and then adapt it.
-
-.. image:: _static/Alreadyplayed.JPG
-    :alt:  300px
 
 Top bar in the editing mode
 ============================
@@ -29,19 +26,23 @@ Select game
 .. image:: _static/Selectgame.JPG
     :alt:  300px
 
-Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game.
+Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game in the editing mode.
 
 
 Game
 ~~~~~
 
-By clicking on *game*, a dropdown menu will open.
+By clicking on *game*, a dropdown menu will open, which shows up to four possible options. The number of options can be reduced if you do not own the game. Then, e.g. you cannot delete the game.
 
 .. image:: _static/Game.JPG
     :alt:  300px
 
 Game settings
-	Clicking on game settings lets you change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+	Clicking on game settings, a new screen appears. On this screen you can change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+
+
+	.. |pic_setting| image:: _static/pic/setting.png
+                            :width: 15px
 
 Copy game
 	The currently selected game is copied and can then be edited and adapted.
