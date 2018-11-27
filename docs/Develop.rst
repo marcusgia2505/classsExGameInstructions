@@ -38,20 +38,47 @@ By clicking on *game*, a dropdown menu will open, which shows up to four possibl
     :alt:  300px
 
 Game settings
-	Clicking on game settings, a new screen appears. On this screen you can change the name of the game and lets you specify whether you would like it to be public or not. By default, all games are public. This function is also available in the Overview on the Starting Screen. Also, you can provide additional information on your game. You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+--------------
+Clicking on game settings, a new screen appears. On this screen you can change different settings of the game. You can also access this screen from the overview by clicking on the |pic_setting| symbol next to the name of a game. Changes to any field are again saved automatically. 
 
+.. image:: _static/game_settings.PNG
+
+Name of the game
+	First of all, you can specify the name of the game. If your game is available in different languages, you have to provide a translation of the title as well. 
+
+
+Creation date
+	The created field shows the creation date of the game, which is not editable. 
+
+Language
+	For each game, you can specify a primary language and optionally a second language. If you add a second language all text fields will be shown twice for both languages.
+
+	.. note:: If a text field misses the multilanguage feature, you can input the text in both languages separated with $$. E.g. Please decide now$$Bitte entscheide jetzt. 
+
+	.. note:: classEx always chooses automatically which language to use based on the account language. If the game is available in the account language it uses this language. Then it tries to find an English version. Otherwise it displays the available language.
+
+Availability
+
+	You can specify whether you would like it to be public or not. By default, all games are public. 
+
+Information on the game
+
+You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
 
 	.. |pic_setting| image:: _static/pic/setting.png
                             :width: 15px
 
 Copy game
-	The currently selected game is copied and can then be edited and adapted.
+----------
+The currently selected game is copied and can then be edited and adapted.
 
 Delete game
-	By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
+------------
+By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
 
 New game
-	Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
+---------
+Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
 
 Parameters
 ~~~~~~~~~~~
