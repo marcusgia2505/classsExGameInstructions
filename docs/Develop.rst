@@ -4,7 +4,7 @@
 Develop your own games
 ======================
 
-To develope your own games change to the editing mode. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
+To develop your own games change to the editing mode. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
 
 	.. note:: In the editing mode, changes are stored automatically. If you change your an element of your game and click next to the element, the element is stored.
 
@@ -18,7 +18,7 @@ The top bar in the editing mode looks like this:
 .. image:: _static/Leiste.JPG
     :alt:  300px
 
-It provide you with several options which are described below.
+It provides you with several options which are described below.
 
 Select game
 ~~~~~~~~~~~~
@@ -32,7 +32,7 @@ Click on the button in the left corner to open the drop down list of your existi
 Game
 ~~~~~
 
-By clicking on *game*, a dropdown menu will open, which shows up to four possible options. The number of options can be reduced if you do not own the game. Then, e.g. you cannot delete the game.
+By clicking on *game*, a dropdown menu will open, which shows up to four possible options. The number of options is reduced if you do not own the game. Then, e.g. you cannot delete the game.
 
 .. image:: _static/Game.JPG
     :alt:  300px
@@ -53,20 +53,46 @@ Creation date
 Language
 	For each game, you can specify a primary language and optionally a second language. If you add a second language all text fields will be shown twice for both languages.
 
-	.. note:: If a text field misses the multilanguage feature, you can input the text in both languages separated with $$. E.g. Please decide now$$Bitte entscheide jetzt. 
+	.. note:: If a text field misses the multi-language feature, you can input the text in both languages separated with $$. E.g. Please decide now$$Bitte entscheide jetzt. 
 
 	.. note:: classEx always chooses automatically which language to use based on the account language. If the game is available in the account language it uses this language. Then it tries to find an English version. Otherwise it displays the available language.
 
 Availability
+	You can specify whether you would like a game and its results to be public or not. By default, all games (and their results) are public. You can set a game (and its results) to private or you can set only the results to private and the game to public. In the latter case, other experimenters can still copy your game, but they do not see previous results by you. If you decide to set games or results to public they become subject to a creative commons license as described in the `terms of use`_. You can change the setting of public and private also in the overview by clicking on |pic_private| or |pic_public| next to the name of the game. The option to set only the game public, but results private is not available there.
 
-	You can specify whether you would like it to be public or not. By default, all games are public. 
+	If you set your game public, it can be found in the :ref:`Organize:Repository`  and others can play and copy the game. If you set your game private, it is not listed in the repository anymore, but previous made copies of your game will remain with their owners and are not revoked.
+
+
+.. _terms of use: https://classEx.de/TermsOfUse.pdf
+
 
 Information on the game
+------------------------
 
-You can classify your game and provide information on the content and additional comments. This information can be accessed by other users and provides them with more details on your game.
+Here you can classify your game and provide meta-information on the content. This information can be accessed by other users and provides them with more details on your game. Please provide this information in English.
+
+.. note:: classEx promotes the idea of sharing games. Therefore, it is important to provide meta-information on games so that they can be found easily. Another advantage is that you can transfer your meta-information directly to the data-repository :ref:`Run:x-econ`.
+
+
+Keywords
+	You can provide a set of keywords to better describe your game. Many standard keywords on typical games are offered when typing in some characters.
+
+
+Comments
+	In the comments section, you can provide a brief description of your game. Comments are shown in the repository.
+
+Credentials
+	This field can be used to state a reference or source of your game. This will be shown in the respository and displayed in the lecture mode below the title of the game.
+
+
+
 
 	.. |pic_setting| image:: _static/pic/setting.png
                             :width: 15px
+	.. |pic_public| image:: _static/pic/public.png
+							:width: 15px
+	.. |pic_private| image:: _static/pic/private.png
+							:width: 15px
 
 Copy game
 ----------

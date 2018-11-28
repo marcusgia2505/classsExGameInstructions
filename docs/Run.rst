@@ -154,16 +154,23 @@ select games
 login QR code
     Click on QR code to display the QR code for login. The QR code page also provides some details about other ways to login (see `Login of participants and test participants`_)
 
-add test participants
+test participant
     This button will open a test participant in a new tab. This can be very useful to test classEx games. If you want to open multiple test players at a time, just hold the Crtl-button and click several times on the test player icon.
 
 diagnosis mode
     In the diagnosis mode you can see all variables for the lecturer and the participants, which makes detecting programming errors much easier. It is only useful if you use advanced programing.
 
 data
-    The drop-down menu *data* offers two options. By clicking on **show data** you can access a preview over participants current decisions in real time. You can also download the results via **download as excel file**. The excel files contain the all variables recorded in the game. It contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data.
+    The drop-down menu *data* offers two options. By clicking on **show data** you can access a preview over participants current decisions in real time. You can also download the results via **download as excel file**. More information on the excel file can be found under :ref:`Run:Excelfile`
 
-previous results
+
+export to x-econ
+    classEx offers the possibility to directly export data to the data-repository `xecon`_ for long term storage and publication. More information on the excel file can be found under :ref:`Run:x-econ`.
+
+
+    .. _xecon: https://x-econ.org
+
+  previous results
     You can access previous results via the previous results drop-down menu. Simply choose which results from previous session you want to display. This way you can directly compare current outcomes with previous ones, you just played or, if available, old results of the same game. When you selected a previous result you can also download all data for this result by clicking on **show data** in the data drop-down menu. The previous result section also contains results from other lecturers if the game and the recorded data are public. If you use such a public game, your data will be available to other lecturers as well.
 
 .. note:: If you do not want that others see your recorded data when you use a public game, you should make a copy of the game and set it to private. Then play the private version of the game.
@@ -330,6 +337,19 @@ Some of the graphs have interactive features and can be adapted. All figures tha
 For histograms, you can also change the settings for the bins and the maximum by clicking on the little symbol under the bottom left corner of the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bin size was too small. The bins are then changed for all graphs.
 
 Via the button *previous results* in the lecture menu, you can also access and display results (and their corresponding graphs) of previous sessions.
+
+Data
+=====
+
+Excelfile
+~~~~~~~~~~
+
+The excel files contain the all variables recorded in the game. It contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data. It can also be accessed after a new game has started. In order to get previous data, just select the respective session from the previous results menu. When the game is open, you can download results again via *download as excel*. 
+
+x-econ
+~~~~~~~
+
+The data repository `xecon`_ provides long term secure data storage. It is provided by gesis - Leibniz Institute for Social Sciences in Cologne. It allows to store and publish experimental data sets. Data sets can be directly exported to x-econ (including meta information) and can obtain a DOI to make them citable. The export is automatized so that you only have to select which session to export. classEx creates a ZIP file which is automatically transferred to xecon. You only need an account with xecon. All available meta-information, like number of players, groups, rounds,... are extracted automatically and put to xecon where they can be adjusted.
 
 
 Dealing with problems 
