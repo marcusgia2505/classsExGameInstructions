@@ -120,7 +120,7 @@ By clicking on *delete game*, the currently selected game is deleted. For your s
 
 New game
 ---------
-This creates a new game. A standard new game is always a single-choice question with four possible answers. Before you can edit the game, classEx takes you to the :ref:`Develop:Game setting`_ of the created game were you have to provide a title.  You have to select a language and to choose whether the game should be public or private. Once you are done, click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
+This creates a new game. A standard new game is always a single-choice question with four possible answers. Before you can edit the game, classEx takes you to the :ref:`Develop:Game setting`_ of the created game were you have to provide a title. You have to select a language and to choose whether the game should be public or private. Once you are done, click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
 
 
 Parameter
@@ -150,18 +150,17 @@ If something is not working, go back to the editing mode and check your settings
    :width: 15px
 
 
-
-
-
 Define stages
 ==============
 
-Stages are points of synchronisation in a game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Generally, the input phase is one stage and the results or output phase is a different stage, as the output can only be displayed after all participants have entered their input. Each stage consists of one or more elements. Stages are ordered in tabs in a horizontal way in classEx. The first tab is not a stage before shows the options for assignment of roles and groups. 
+Stages are points of synchronization in a game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Generally, the input phase is one stage and the results phase is a different stage, as the output can only be displayed after all participants have entered their input. Each stage consists of one or more elements. Stages are ordered in tabs in a horizontal way in classEx. The first tab is not a stage before shows the options for :ref:`Develop:Assignment and Matching` of roles, treatments and groups. 
 
 .. image:: _static/Stage.PNG
     :alt:  300px
 
-    In the [[editing Mode]], you can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
+
+
+You can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box.
 
 
 Rounds
