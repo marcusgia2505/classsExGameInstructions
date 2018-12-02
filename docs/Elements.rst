@@ -1,14 +1,14 @@
 .. _Elements:
 
-=====================
+=========
 Elements
-=====================
+=========
 
 Elements for lecturers and participants
 =======================================
 
 
-Text Box
+Text box
 ~~~~~~~~~
 
 

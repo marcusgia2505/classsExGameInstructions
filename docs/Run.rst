@@ -195,6 +195,8 @@ If participants are logged in before the lecturer has started the game, particip
 
 .. note:: If a game has already been started, participants directly see the game and can play it. If may therefore be useful to ask all participants to login and start the game after that has happened. If a game has ended (but no new one selected), new participants get the message on login that the current game is still running and they cannot participate.
 
+.. note:: If you want to identify participants, you can also add some additional fields to the login field. This can be done in :ref:`Coursedata:Additional setting`.
+
 Login with QR-Code
 ------------------
 
