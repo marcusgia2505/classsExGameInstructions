@@ -183,7 +183,7 @@ Login via website (default)
 ----------------------------
 
 .. image:: _static/basics/login.PNG
-    :alt:  300px
+
 
 In order to login, participants go to the website http://classex.uni-passau.de and choose their university and then their course. They enter the password provided by the lecturer and click on "Login".
 

@@ -4,11 +4,14 @@
 Develop your own games
 ======================
 
-To develop your own games change to the editing mode. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
+To develop your own games change to the editing |pic_editmode|. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
 
-	.. note:: In the editing mode, changes are stored automatically. If you change your an element of your game and click next to the element, the element is stored.
+	.. note:: In the editing mode, changes are stored automatically. If you change your an element of your game and click next to the element, the element is stored. Most of the elements blink green when they are stored. 
 
 	.. note:: If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, copy the game and then adapt it.
+
+.. |pic_editmode| image:: _static/pic/editMode.png
+   :width: 15px
 
 Top bar in the editing mode
 ============================
@@ -26,7 +29,7 @@ Select game
 .. image:: _static/Selectgame.JPG
     :alt:  300px
 
-Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game in the editing mode.
+Click on the button in the left corner to open the drop down list of your existing games. Clicking on a game will open the selected game in the editing mode. If you open the editing mode, the currently running game is preselected.
 
 
 Game
@@ -46,6 +49,10 @@ Clicking on game settings, a new screen appears. On this screen you can change d
 Name of the game
 	First of all, you can specify the name of the game. If your game is available in different languages, you have to provide a translation of the title as well. 
 
+Alternative title
+	You can also define an alternative title which is displayed instead of the name wherever the game is listed in your own account. Other users will see the original name of the game and not the alternative title.
+
+	..note:: This features is useful if you imported a game, which has the same name as one of your games. Then you can use the alternative title to distinguish from your game, because you cannot change the original name of the game which belongs to another user.
 
 Creation date
 	The created field shows the creation date of the game, which is not editable. 
@@ -62,8 +69,14 @@ Availability
 
 	If you set your game public, it can be found in the :ref:`Organize:Repository`  and others can play and copy the game. If you set your game private, it is not listed in the repository anymore, but previous made copies of your game will remain with their owners and are not revoked.
 
+Additional libraries
+	If you click on *additonal libraries* new settings appear. You can select to load different libraries for the participants. Libraries are packages for special usages. They come with an increased necessity to load data from the server (for each participants). Therefore, you should them only turn on if you need them. For lecturers, they are loaded automatically.  The three available libraries are `plotly`_ or `highcharts`_ for drawing graphs on the participant screen. The library `phaser`_ can be used for creating game-like interactions. For more information visit the respective website of the library by clicking on the library's name.
+
 
 .. _terms of use: https://classEx.de/TermsOfUse.pdf
+.. _plotly: https://plot.ly
+.. _highcharts: https://www.highcharts.com
+.. _phaser: https://phaser.io
 
 
 Information on the game
@@ -71,19 +84,17 @@ Information on the game
 
 Here you can classify your game and provide meta-information on the content. This information can be accessed by other users and provides them with more details on your game. Please provide this information in English.
 
-.. note:: classEx promotes the idea of sharing games. Therefore, it is important to provide meta-information on games so that they can be found easily. Another advantage is that you can transfer your meta-information directly to the data-repository :ref:`Run:x-econ`.
+.. note:: classEx promotes the idea of sharing games. Therefore, it is important to provide meta-information on games so that they can be found easily. Another advantage is that you can transfer your meta-information directly to the data-repository :ref:`Run:Data`.
 
 
 Keywords
-	You can provide a set of keywords to better describe your game. Many standard keywords on typical games are offered when typing in some characters.
-
+	You can provide a set of keywords to better describe your game. Many standard keywords on typical games are offered automatically when typing in some characters. Keywords are shown in the repository.
 
 Comments
-	In the comments section, you can provide a brief description of your game. Comments are shown in the repository.
+	In the comments section, you can provide a brief description of your game. Comments are shown in the repository and if others import your games to their account, it is shown in their overview.
 
 Credentials
-	This field can be used to state a reference or source of your game. This will be shown in the respository and displayed in the lecture mode below the title of the game.
-
+	This field can be used to state a reference or source of your game. This will be shown in the repository and displayed in the lecture mode below the title of the game.
 
 
 
@@ -96,50 +107,50 @@ Credentials
 
 Copy game
 ----------
-The currently selected game is copied and can then be edited and adapted.
+If you click on *copy game*, the currently selected game is copied and can then be edited and adapted. 
+
+
+.. note:: The difference between copying and importing is that with the latter classEx only sets a reference to the original game. Therefore, it cannot be modified, but only used. A copied game, instead, is a complete copy of the original game and can be changed.
 
 Delete game
 ------------
-By pressing "delete game", the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
+By clicking on *delete game*, the currently selected game is deleted. For your safety, you will be asked if you really want to delete the game. It is not possible to delete the game if it has already been started in the lecture mode. You then need to start a different game in the lecture mode before being able to delete the selected one. You cannot undo the deletion of a game.
+
+.. note:: If it happens that you accidentally delete a game, please email to classEx@uni-passau.de as soon as possible. Internally, we completely remove deleted games only each month so that recovery is possible.
 
 New game
 ---------
-Creates a new game. A standard new game is always a single-choice question with four possible answers. Find an example of such a single-choice question here.
+This creates a new game. A standard new game is always a single-choice question with four possible answers. Before you can edit the game, classEx takes you to the :ref:`Develop:Game setting`_ of the created game were you have to provide a title.  You have to select a language and to choose whether the game should be public or private. Once you are done, click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
 
-Parameters
-~~~~~~~~~~~
 
-If you click on paramters, you can edit the parameters of a game. Parameters are variables that can be changed by other users.
+Parameter
+~~~~~~~~~~
+If you click on parameters, you can edit the parameters of a game. Parameters are global variables that can be changed right before starting a game. They allow other lecturers to run your game without changing the implementation of the game. More information can be found under :ref:`Develop:Parameters`.
 
 
 Test a game
 ============
 
-Before playing a game in your lecture, you can test the game. To do so switch to the lecture mode and select your game. Selecting your game is not necessary if it is the active game in the lecture mode already. Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon.
+Before actually using a game in your lecture or while you develop, you can always test a game. To do so switch to the lecture mode and select your game, if it is not selected yet. 
 
-.. image:: _static/Addparticipant.PNG
-    :alt:  300p
+Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon |pic_testparticipant|. This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many test participants as you want, which enables you to also test interaction between participants.
 
-This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many screens as you want, which enables you to also test interaction between participants in games with several roles.
+.. note:: You can open multiply test participants by holing the Ctrl-Key and clicking multiple times on the test participant icon |pic_testparticipant|. 
 
-Then start your game. You can perform the interaction required in the browser tabs for each participant.
+Then start your game. You can perform the interaction required in the browser tabs for each participant and can see how your game is running. 
 
-If something is not working or an error occurs you can use the diagnosis mode for error spotting.
+.. note:: Test participants are not reload-safe. This means that if you reload the page, in some cases the content of the page may change. Real participants cannot do this.
+
+If something is not working, go back to the editing mode and check your settings there. If you used variables and programs, you can use the :ref:`Programming:Diagnosis tool` for error spotting. The diagnosis mode shows all available variables and helps to debug them.
+
+
+.. note:: All major browsers also provide their own development tools which can be very helpful for error spotting. They provide a console which gives feedback on potential errors. In this console, you can also observe the background task performed by classEx and if they are running correctly. Finally it allows you to see javascript errors. In Firefox, the development tools are started by hitting F12.
+
+.. |pic_testparticipant| image:: _static/pic/addPlayer.png
+   :width: 15px
 
 
 
-
-Create a new game
-=================
-
-To create a new game you can either click on *new game* in you Overview or go to editing mode and select *game - new game*.
-
-.. image:: _static/Settings.PNG
-    :alt:  300px
-
-classEx takes you to the settings page of the created game were you have to select a name. You can also define an alternative name which is displayed instead of the name wherever the game is listed. You have to select a language and can define a second language that is used if the account language is set to this language. Also you have to choose whether the game should be public or private.
-Further you can insert information on the game in the left column. You can select keywords, add comments and credentials. The credentials are typically used for references to published literature relevant for your game. The credentials will be displayed next to the name of you game. 
-Once you are done click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
 
 
 Define stages

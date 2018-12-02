@@ -183,7 +183,7 @@ Small errors can cause the programs not to run. Therefore, error detection is an
 
 With severe errors the lecture mode can not be started. In order to find the error go through the code and look for errors. Check if the function names are correctly spelled.
 
-Diagnosis mode
+Diagnosis tool
 --------------
 
 The diagnosis mode is very useful for trouble shooting and testing your game. You can access the diagnosis mode by clicking on the stetoscope icon in the top bar of the lecture mode.
