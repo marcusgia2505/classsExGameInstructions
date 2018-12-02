@@ -12,41 +12,47 @@ Text box
 ~~~~~~~~~
 
 
-
 .. image:: _static/Textbox.JPG
     :alt:  300px
 
 The text box is the simplest element. The entered text will be displayed to the participants.
-The text box is equipped with a text editor which allows you to insert tables, symbols etc. If you double-click into the text element, you see the text as it will be displayed to participants.
+The text box is equipped with a WYSIWG editor which allows you to insert tables, symbols etc. If you double-click into the text element, The WYSIWG editor opens. You can switch back to the normal text box by clicking on the **<>** symbol. 
 
-- Special Characters
+If you are not in the WYSIWG editor, you can use standard HTML to design your texts. You can do e.g. the following:
+
+.. code:: html
+
+This is a text box with a <b>bold text</b> and a <span style="font-size: x-small;">small</span> text. You can also show pictures <img src="https://yourownserver.de/adress_of_picture.png" stlye="with: 20px"> or add tables <table><tr><td>Tab 1</td><td>10</td></tr></table>.
+
+Special Characters
+-------------------
 
 =========== ============== ===============
-Special     Characters     Function Example
+Special     Name 		   Function Example
 =========== ============== ===============
-$$          Multilanguage  Support If you want to provide German and English support, you can write both texts in the same textbox and seperate them by "$$". E.g. "Das ist Deutsch$$This is English" displays the German text if the selected language is German and English if it is English.
-role1.png   Symbol Role 1  Red participant symbol |role1| is displayed.
-role2.png   Symbol Role 2  Green participant symbol |role2| is displayed.
-$variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see element [[Program Code|Program]]), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
+role1.png   Symbol Role 1  Red participant symbol |pic_role1| is displayed. 
+role2.png   Symbol Role 2  Green participant symbol |pic_role2| is displayed.
+$variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see :ref:`Programming`), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
 =========== ============== ===============
 
-.. |role1| image:: Role1.JPG
-.. |role2| image:: Role1.JPG
+Make sure that role1.png, role2.png,... are followed by a space. Otherwise the figure will not be replaced.
 
-- Configuration for Participants
+.. |pic_role1| image:: _static/pic/role1.PNG
+	:width: 15px
+.. |pic_role2| image:: _static/pic/role2.PNG
+	:width: 15px
 
-For participants you can chose to display the text box only for certain roles, treatments or groups (if defined). You can simply choose who the box shall be displayed for in the drop down menu above the text.
 
-Further, you can determine where the text shall be aligned (left, center or right).
+Conditional text
+-----------------
 
-- Conditional text
+So far we have only tackled how to read the PHP variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a bool variable that tells whether a participant is buyer or seller. We can achieve this task by a program element where you define:
 
-So far we have only tackled how to read the php variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a bool variable that tells whether a participant is buyer or seller. We can achieve this task by the use of javascript code embedded in our text element:
+.. code:: php
 
-| Endowment: $endowment;. <span id="isbuyer"></span>
-| <script>$("#isbuyer").text("$isBuyer;" === "1" ? "You are Buyer" : "You are Seller")</script>
+if ($isBuyer) $buyerText="You are buyer"; else $buyerText="You are seller";
 
-since ClassEx supports JQuery, it is very easy. We create a span (an html tag to which we can easily add text) and than using the javascript syntax we add text to this tag with the id "isbuyer". We could also have used another id. Its only important that this id is unique in resulting html document. The Jquery text function gets the text we want to add as an argument. In this example we used the ternary Operator since it produces shorter code, but we could also have used a if else statement or more elaborate conditions. 
+Then you can output $buyerText; in the text box.
 
 Element Reference
 ~~~~~~~~~~~~~~~~~
@@ -54,14 +60,18 @@ Element Reference
 .. image:: _static/Refer.JPG
     :alt:  300p
 
-In order to avoid redundancies, you can copy elements and add them in a different place in the game. For this, you need a reference, i.e. the element that shall be copied. If the original element is altered, the copy is adapted automatically. The reference is created by entering the stage number and the element number you are referring to. If you require the same text in to stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically.
+In order to avoid redundancies, you can reference elements and add them in a different place in the game (instead of copying them directly) For this, you can use the reference element. If the original element is altered, the reference is adapted automatically. The reference is created by entering the stage number and the element number you are referring to. 
 
-Please notice that the display condition is not references but taken from the element which calls the reference.
+.. note:: If you require the same text in two stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically.
+
+.. note:: Please notice that the display condition is not taken from the referenced element but  from the reference itself.
+
+.. warning:: If you change the order of referenced elements, the reference does not automatically adapt, but has to be changed manually.
 
 Program code
 ~~~~~~~~~~~~
 
-Program snippets can be implemented to calculate results for each subjects. For further information see Program code.
+Program snippets can be implemented to calculate results for each subjects. For further information see :ref:`Programming`.
 
 Elements for participants
 ==========================
@@ -69,9 +79,13 @@ Elements for participants
 Input element
 ~~~~~~~~~~~~~
 
-In this element you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on “add new input field". The input fields are displayed one after each other.
+In this element, you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on *add new input field*. The input fields are displayed one after each other.
 
-The following settings are available for every input field. You can determine the type of input field and define a name. The name can then be used in programmes and will give out the value of the variable. For example, if your variable is called “e", you can access it by writing “$e;". For more details see program. Furthermore, you can delete an input field by clicking on http://classex.uni-passau.de/classex3/pic/reject.png. You cannot delete the first input field (#1).
+The following settings are available for every input field. You can determine the type of input field and define a variable name. The variable name can then be used in programs. For example, if your variable is called $e, you can access it by writing "$e;" in a text box or use $e in a program element. Furthermore, you can delete an input field by clicking on |pic_delete|. You cannot delete the first input field (#1).
+
+.. |pic_delete| image:: _static/pic/reject.PNG
+				:width: 15px
+
 
 	**Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.**
 
