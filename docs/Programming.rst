@@ -9,6 +9,8 @@ Programs are a very useful to design dynamic games. Programs are elements of sta
 
 You can define for which roles, groups or treatments (if defined) the code shall apply to by choosing the corresponding option from the drop down menu above the code. Or you define a display condition which determines if the program is executed.
 
+.. note:: It is always good to comment the code if you try to understand it later. Add comments with /* comment */ to your program code.
+
 Programming language and editor
 ================================
 

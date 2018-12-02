@@ -176,7 +176,7 @@ You can choose to give the stages names instead if numbers in order to identify 
 Rounds
 ~~~~~~
 
-.. image:: _static/rounds.png
+.. image:: _static/rounds.PNG
 	:height: 300px
 
 If you want to run one or more stages more than once, you can define loops with a certain number of rounds. You can determine how often you would like to return to a certain stage. E.g. if you want to repeat stage 1 and 2 three times, you have to specify in stage 2 that you want to return two times (2x) back to stage 1. With this, stages 1 and 2 are repeated three times as shown by the arrow above the tabs as you go through both stages a first time and then two times back to stage 1.
@@ -228,7 +228,7 @@ The right side shows the elements for the lecturer. Elements added here are disp
 
 Some elements are the same for participants and lecturers (as e.g text boxes), but most elements are different. Typical elements for participants are input elements, program codes, text boxes and winning notifications. Typical elements for lectures are start buttons, program codes, text boxes and many different result elements. 
 
-.. note:: A full list of all elements can be found in the secion :ref:`Elements:Elements`.
+.. note:: A full list of all elements can be found in the section :ref:`Elements:Elements`.
 
 .. note:: Elements are always displayed and executed from top to bottom.
 
@@ -259,7 +259,9 @@ Display condition
 	If showing the element should be conditional (e.g. not for every role or dependent on other variables), you can specify the display condition for an element in the code line that appears when you click on *show display condition*. The code will be evaluated as being true or false. Display conditions are defined in PHP. It should only contain comparison and should *not* end with a semicolon.
 
 	.. code:: php
+
 	$round>2 || ($role==1 & $treatment==2)
+	
 
 	You can combine different combinations with the and-operator & and the or-operator ||. The example only displays the element if the round is higher than 2 (so from round 3 on) or if the role is 1 and the treatment is 2 (independent of the round).
 
@@ -395,6 +397,8 @@ Parameters
 ==========
 
 Parameters are global variables that can be adjusted in the lecture mode directly before starting the experimenters. You can define parameters to enable adaptation of the game for lecturers without any knowledge of how to edit games. You can then play the same game several times with different parameters. This feature is very useful if you want to introduce some flexibility in the game.
+
+.. note:: Parameters are initialized at the start of the game. They are read-only. They are the same for all participants.
 
 You can define parameters by clicking on the *parameter* button in the top bar of the editing mode. Here you can see all defined parameters for the active game, edit them and add new ones. After adding a parameter, you can use it as global variable in the whole game. 
 
