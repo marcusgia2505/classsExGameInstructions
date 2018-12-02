@@ -86,46 +86,46 @@ The following settings are available for every input field. You can determine th
 .. |pic_delete| image:: _static/pic/reject.PNG
 				:width: 15px
 
+.. warning:: Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.
 
-	**Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.**
+Input elements always provide a submit button automatically. In the following, the different types of input fields are described in more detail.
 
-In the following, the different sorts of input fields are described in more detail.
-
-Numeric Input Fields
+Numeric input field
 --------------------
-
-Numbers can be inserted into this input field. 
 
 .. image:: _static/NumericInput1.JPG
     :alt:  300px
 
-The name of the input field is used as the label and is displayed on the left hand side of the input field when it is displayed to participants. In the [[editing Mode]], you can specify the minimum and the maximum and the number of decimal places allowed. If entries are different from these specifications, participants will see an error notification and will be requested to correct their entry.
+The name of the input field is used as the label and is displayed on the left hand side of the input field when it is displayed to participants. You can specify the minimum and the maximum and the number of decimal places allowed. If entries are different from these specifications, participants will see an error notification and will be requested to correct their entry.
+
+In addition, a unit (e.g. %, €, mm, …) can be specified that will be displayed on the right of the input field (here "years"). You can also set a default value that is displayed to participants at the start. Further, you can determine whether input is compulsory. In this case, participants cannot proceed without entering a value. *Output only* can be used, if an input field shall only display output. 
 
 .. image:: _static/NumericInput2.JPG
     :alt:  300px
 
-In addition, a unit (e.g. %, €, mm, …) can be specified that will be displayed on the right of the input field (here "years"). You can also set a default value that is displayed to participants at the start. Further, you can determine whether input is compulsory which is not the case for voluntary information for example.
 
-"Output only" can be used, if an input field shall only display output. This can be necessary for calculations. For example, if participants are required to allocate different parts of income to different purposes, an "Output only" field can be used to display how much income is still left after filling in the input fields.
+.. note:: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
 
-	Hint: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
-
-Text Input
+Text input
 ----------
 
 .. image:: _static/TextInput.JPG
     :alt:  300px
 
-Text input fields enable you to let participants enter a text. You can specify the minimum and maximum amount of characters if required.
+Text input fields enable you to let participants enter a text. You can specify the minimum and maximum amount of characters and a default text. The number of rows determines the size of the text input field.
 
-- Editing Buttons and Selection Lists (single choice)
+Buttons, simple list and drop list (single choice)
+----------------------------------------------------
 
-.. image:: _static/ButtonsAndSelection1.JPG
-    :alt:  300px
+.. image:: _static/develop/buttons.PNG
+   :height: 500px
 
-This type of input is used for discrete decisions. Besides the text that is shown above the buttons, you can specify the different answer options. Participants make a decision by choosing one of the options. The order of options can be altered by clickingon the arrow [[File:up.JPG]]. The correct answer can be specified and you can also delete or add options. You can also select if the options should be displayed in order or randomly (different for each participant).
+This type of input is used for discrete decisions. Besides the text that is shown above the buttons, you can specify the different answer options. Participants make a decision by choosing one of the options. The order of options can be altered by clicking on the arrow. You can also delete or add options. You can also select if the options should be displayed as stated or randomly (different for each participant). You can set the input as required. You can mark the correct answer by clicking on the symbol |pic_correct|. In this case, if you use the single/multiple choice result element for the lecturer, the correct answer is marked there.
 
-You can implement single choice questions using buttons, simple lists or drop lists. This is what they look like in the participants' display.
+.. |pic_correct| image:: _static/pic/correct.PNG 
+	:width: 15px
+
+You can implement single choice questions using buttons, simple lists or drop lists. This is what they look like in the participants' display. The settings are the same for these options.
 
 .. image:: _static/ButtonsAndSelection2.JPG
     :alt:  300px
@@ -136,34 +136,57 @@ You can implement single choice questions using buttons, simple lists or drop li
 .. image:: _static/ButtonsAndSelection4.JPG
     :alt:  300px
 
-Choosing one of the options when using buttons submits the data, therefore, this type of input can only be used once in a stage. Multiple input fields (e.g. a single choice question and a numeric input field) should not be inserted as this leads to input errors. For simple lists and drop lists the choice needs to be submitted by pressing the submit button.
+Checkboxes (multiple choice)
+------------------------------
 
-Choosing multiple options is possible by using [[Check Boxes]]. Checkboxes work in exactly the same way as single choice options. Only the form of display is slightly different, as these are displayed as a list from which participants can pick several options. This way, multiple inputs can occur in one stage.
+Choosing multiple options is possible by using checkboxes. Checkboxes work in exactly the same way as single choice options. Only the form of display is slightly different, as these are displayed as a list from which participants can pick several options. This way, multiple inputs can occur in one stage. Additionally to the single choice, you can specify the minimum and maximum number of choices and the number of answers per row.
 
-Radiolines and Sliders
-----------------------
+Radioline
+---------
 
-Radiolines, like Likert scales, offer stepwise input. For this, you need to specify the minimum and maximum as well as the number of steps (e.g. Min1, Max 7 and Steps 6 would lead to integers and Steps 12 would lead to steps of the size 0.5). Furthermore, you need to enter a description for the left and right hand side.
+ADD PICTURES 
 
-Sliders are a similar concept. In this form of input, the participant moves a slider along a bar of predetermined positions.
+Radiolines, like Likert scales, offer stepwise input. For this, you need to specify the minimum and maximum. Furthermore, you need to enter a description for the left and right hand side.
+
+
+Slider
+------
+
+Sliders are a similar concept. In this form of input, the participant moves a slider along a bar of predetermined positions. For sliders you have to determine the number of steps. 
 
 Defaults can be set for radiolines and sliders. If no default is set, the radioline is empty and the slider is positioned in the middle of the bar.
 
-Checkboxes
-----------
+Hidden field
+-------------
 
-Check boxes allow for choosing multiple answers. Options can be set just as described for selection lists ([[Buttons and Selection Lists (single choice)|single choice]]). Further, the minimum and maximum number of answers must be specified. It is possible to set a default. You can also select if the options should be displayed in order or randomly (different for each participant).
+Next button
+------------
 
-Other Input Fields
+
+
+Other input fields
 ------------------
 
-Average over all input fields
-	This option saves the average over all input fields which is not displayed to the user. The average is created automatically by calculating the mean over several numeric inpu fields (e.g. radiolines, numeric input fields, sliders).
+There are other input fields available (urn, infotext, mean of all input fields). This are outdated and should only be used with care.
 
-Filled in input
-~~~~~~~~~~~~~~~
+The contract input field is also oudated. Please use the `Contract`_ element instead.
 
-This element allows you to display the filled in input field of the last stage.
+Additional settings
+-------------------
+
+button label
+
+confirmation message
+
+hide decision after sending
+
+directly to next stage
+
+show button later
+
+
+
+
 
 Winner's Notification
 ~~~~~~~~~~~~~~~~~~~~~
@@ -209,7 +232,8 @@ With this element, you can enable participants to form contracts. By adjusting t
 
 Contracts can be used to trade a commodity between subjects in real time. Subjects move around in the classroom and talk to each other. When they agreed on a price they enter it into the input mask together with the signature of the counterparty (see seller screen). The counterparty has to accept the trade (or reject it, see buyer screen).
 
-- Settings
+Settings
+--------
 
 sell offers/buy offers
 	If you turn this on, you allow for sell or buy offers made by the respective subject.
@@ -232,7 +256,8 @@ maximum quantity
 products
 	at the moment only one typoe of product can be traded. You can specify a name (or a small image) and the initial amount of the good (e.g. the seller has 1 unit, the buyer 0 units).
 
-- Output
+Output
+------
 
 The contracts made can be shown at the lecturer's screen with the contract table. In addition, there are special functions in globals and subjects programs to retrieve contracts. All contracts are also stored in the standard excel file which can be retrieved in the data menu. 
 
@@ -268,8 +293,8 @@ At the lecturer screen
 From the stored data
 	In the downloaded data you find stored images in the subjects table. They can are base64 decoded and can be encoded with free online tools. Just take away "data:image/jpeg;base64," from the string, so that it starts e.g. with "/9j/....".
 
-Javascript
-~~~~~~~~~~
+Javascript program
+~~~~~~~~~~~~~~~~~~~
 
 - Reading php variables
 
@@ -298,8 +323,13 @@ This finds the html element with the id of the div containing the variable conte
 
 This can be achieved via hidden input fields that are triggered via JQuery calls
 
+Filled in form (outdated)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Elements for Lecturers
+This element allows you to display the filled in input element of the previous stage.
+
+
+Elements for lecturers
 ======================
 
 Start Button and Automatic Start
