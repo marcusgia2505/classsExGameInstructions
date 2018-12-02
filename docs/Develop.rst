@@ -261,7 +261,7 @@ Display condition
 	.. code:: php
 
 	$round>2 || ($role==1 & $treatment==2)
-	
+
 
 	You can combine different combinations with the and-operator & and the or-operator ||. The example only displays the element if the round is higher than 2 (so from round 3 on) or if the role is 1 and the treatment is 2 (independent of the round).
 
@@ -407,7 +407,7 @@ In the editing mode, parameters and their values are shown in the top right corn
 
 Here is an example with a numeric parameter and a select list.
 
-.. image:: _static/param.png
+.. image:: _static/param.PNG
 
 For numeric parameters, you have to define a variable name (here $endowment) and a default value. The default value is used, if the lecturer does not change the parameter. On the right hand side, you can define how the parameters are displayed to the lecturer (when they set the parameters in the lecture mode). The should not be bothered with variable names, therefore provide a useful name. If the game is implemented in two languages, you can provide two different names. Additionally, you have to provide a minimum and maximum. You can also provide a unit (e.g. €, meters,...). 
 
