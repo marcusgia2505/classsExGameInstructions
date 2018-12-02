@@ -120,7 +120,7 @@ By clicking on *delete game*, the currently selected game is deleted. For your s
 
 New game
 ---------
-This creates a new game. A standard new game is always a single-choice question with four possible answers. Before you can edit the game, classEx takes you to the :ref:`Develop:Game setting`_ of the created game were you have to provide a title. You have to select a language and to choose whether the game should be public or private. Once you are done, click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
+This creates a new game. A standard new game is always a single-choice question with four possible answers. Before you can edit the game, classEx takes you to the :ref:`Develop:Game settings` of the created game were you have to provide a title. You have to select a language and to choose whether the game should be public or private. Once you are done, click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
 
 
 Parameter
@@ -330,7 +330,7 @@ complex assignment
 .. note:: The so-called between-subject design examines how a controlled variation of the game influences the behavior of different participants. This can be implemented using treatments. The groups in one treatment only interact with participants in their own treatment and never with participants of the other treatment. The game can be adapted for every treatment, for example by providing different information, altered probabilities of random events or diverse strategic interactions.
 
 Matching
---------
+~~~~~~~~
 
 At the beginning of a game, the assigned participants are always matched randomly to roles, treatments and groups. If your game consists of several rounds, you can specify how you want them to be rematched. You can choose from the following options:
 

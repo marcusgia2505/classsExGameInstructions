@@ -12,6 +12,10 @@ classEx documentation
 
 Welcome to the documentation of classEx. In this documentation you can find all information on how to use classEx. General information on classEx can be found at https://classEx.de.
 
+.. note:: You can also download a `pdf version`_ of the documentation. Please note that we change the documentation from time to time. So you might check from time if your PDF is still up-to-date. For this just compare the release version.
+
+.. _pdf version: https://readthedocs.org/projects/classex-doc/downloads/pdf/latest/
+
 classEx is an online tool to run interactive experiments and surveys. It is directed both towards usage in classroom and lectures as well as for running in experiments with a group of people located in one place (cinema, public viewing event,...). Participants log in with their mobile device (smartphone or notebook) and can participate interactively in the lecture. They only need a standard browser and an internet connection. Results are shown instantly on the presentation screen of the lecturer with intuitive graphs. Quizzes and spontaneous tests can be integrated into lectures or presentations of all academic disciplines. classEx can be used in political science to simulate polls or elections, psychologists can test the effect of roles and scenarios and economists can assess the strategic interaction in markets and the whole of behavioral economics.
 
 This documentation is written for lecturers and experimenters who want to use classEx for conducting games
