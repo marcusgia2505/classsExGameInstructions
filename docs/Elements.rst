@@ -1,52 +1,58 @@
 .. _Elements:
 
-=====================
+=========
 Elements
-=====================
+=========
 
 Elements for lecturers and participants
 =======================================
 
 
-Text Box
+Text box
 ~~~~~~~~~
-
 
 
 .. image:: _static/Textbox.JPG
     :alt:  300px
 
 The text box is the simplest element. The entered text will be displayed to the participants.
-The text box is equipped with a text editor which allows you to insert tables, symbols etc. If you double-click into the text element, you see the text as it will be displayed to participants.
+The text box is equipped with a WYSIWG editor which allows you to insert tables, symbols etc. If you double-click into the text element, The WYSIWG editor opens. You can switch back to the normal text box by clicking on the **<>** symbol. 
 
-- Special Characters
+If you are not in the WYSIWG editor, you can use standard HTML to design your texts. You can do e.g. the following:
+
+.. code:: html
+
+This is a text box with a <b>bold text</b> and a <span style="font-size: x-small;">small</span> text. You can also show pictures <img src="https://yourownserver.de/adress_of_picture.png" stlye="with: 20px"> or add tables <table><tr><td>Tab 1</td><td>10</td></tr></table>.
+
+Special Characters
+-------------------
 
 =========== ============== ===============
-Special     Characters     Function Example
+Special     Name 		   Function Example
 =========== ============== ===============
-$$          Multilanguage  Support If you want to provide German and English support, you can write both texts in the same textbox and seperate them by "$$". E.g. "Das ist Deutsch$$This is English" displays the German text if the selected language is German and English if it is English.
-role1.png   Symbol Role 1  Red participant symbol |role1| is displayed.
-role2.png   Symbol Role 2  Green participant symbol |role2| is displayed.
-$variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see element [[Program Code|Program]]), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
+role1.png   Symbol Role 1  Red participant symbol |pic_role1| is displayed. 
+role2.png   Symbol Role 2  Green participant symbol |pic_role2| is displayed.
+$variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see :ref:`Programming`), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
 =========== ============== ===============
 
-.. |role1| image:: Role1.JPG
-.. |role2| image:: Role1.JPG
+Make sure that role1.png, role2.png,... are followed by a space. Otherwise the figure will not be replaced.
 
-- Configuration for Participants
+.. |pic_role1| image:: _static/pic/role1.PNG
+	:width: 15px
+.. |pic_role2| image:: _static/pic/role2.PNG
+	:width: 15px
 
-For participants you can chose to display the text box only for certain roles, treatments or groups (if defined). You can simply choose who the box shall be displayed for in the drop down menu above the text.
 
-Further, you can determine where the text shall be aligned (left, center or right).
+Conditional text
+-----------------
 
-- Conditional text
+So far we have only tackled how to read the PHP variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a bool variable that tells whether a participant is buyer or seller. We can achieve this task by a program element where you define:
 
-So far we have only tackled how to read the php variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a bool variable that tells whether a participant is buyer or seller. We can achieve this task by the use of javascript code embedded in our text element:
+.. code:: php
 
-| Endowment: $endowment;. <span id="isbuyer"></span>
-| <script>$("#isbuyer").text("$isBuyer;" === "1" ? "You are Buyer" : "You are Seller")</script>
+if ($isBuyer) $buyerText="You are buyer"; else $buyerText="You are seller";
 
-since ClassEx supports JQuery, it is very easy. We create a span (an html tag to which we can easily add text) and than using the javascript syntax we add text to this tag with the id "isbuyer". We could also have used another id. Its only important that this id is unique in resulting html document. The Jquery text function gets the text we want to add as an argument. In this example we used the ternary Operator since it produces shorter code, but we could also have used a if else statement or more elaborate conditions. 
+Then you can output $buyerText; in the text box.
 
 Element Reference
 ~~~~~~~~~~~~~~~~~
@@ -54,14 +60,18 @@ Element Reference
 .. image:: _static/Refer.JPG
     :alt:  300p
 
-In order to avoid redundancies, you can copy elements and add them in a different place in the game. For this, you need a reference, i.e. the element that shall be copied. If the original element is altered, the copy is adapted automatically. The reference is created by entering the stage number and the element number you are referring to. If you require the same text in to stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically.
+In order to avoid redundancies, you can reference elements and add them in a different place in the game (instead of copying them directly) For this, you can use the reference element. If the original element is altered, the reference is adapted automatically. The reference is created by entering the stage number and the element number you are referring to. 
 
-Please notice that the display condition is not references but taken from the element which calls the reference.
+.. note:: If you require the same text in two stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically.
+
+.. note:: Please notice that the display condition is not taken from the referenced element but  from the reference itself.
+
+.. warning:: If you change the order of referenced elements, the reference does not automatically adapt, but has to be changed manually.
 
 Program code
 ~~~~~~~~~~~~
 
-Program snippets can be implemented to calculate results for each subjects. For further information see Program code.
+Program snippets can be implemented to calculate results for each subjects. For further information see :ref:`Programming`.
 
 Elements for participants
 ==========================
@@ -69,49 +79,53 @@ Elements for participants
 Input element
 ~~~~~~~~~~~~~
 
-In this element you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on “add new input field". The input fields are displayed one after each other.
+In this element, you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on *add new input field*. The input fields are displayed one after each other.
 
-The following settings are available for every input field. You can determine the type of input field and define a name. The name can then be used in programmes and will give out the value of the variable. For example, if your variable is called “e", you can access it by writing “$e;". For more details see program. Furthermore, you can delete an input field by clicking on http://classex.uni-passau.de/classex3/pic/reject.png. You cannot delete the first input field (#1).
+The following settings are available for every input field. You can determine the type of input field and define a variable name. The variable name can then be used in programs. For example, if your variable is called $e, you can access it by writing "$e;" in a text box or use $e in a program element. Furthermore, you can delete an input field by clicking on |pic_delete|. You cannot delete the first input field (#1).
 
-	**Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.**
+.. |pic_delete| image:: _static/pic/reject.PNG
+				:width: 15px
 
-In the following, the different sorts of input fields are described in more detail.
+.. warning:: Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.
 
-Numeric Input Fields
+Input elements always provide a submit button automatically. In the following, the different types of input fields are described in more detail.
+
+Numeric input field
 --------------------
-
-Numbers can be inserted into this input field. 
 
 .. image:: _static/NumericInput1.JPG
     :alt:  300px
 
-The name of the input field is used as the label and is displayed on the left hand side of the input field when it is displayed to participants. In the [[editing Mode]], you can specify the minimum and the maximum and the number of decimal places allowed. If entries are different from these specifications, participants will see an error notification and will be requested to correct their entry.
+The name of the input field is used as the label and is displayed on the left hand side of the input field when it is displayed to participants. You can specify the minimum and the maximum and the number of decimal places allowed. If entries are different from these specifications, participants will see an error notification and will be requested to correct their entry.
+
+In addition, a unit (e.g. %, €, mm, …) can be specified that will be displayed on the right of the input field (here "years"). You can also set a default value that is displayed to participants at the start. Further, you can determine whether input is compulsory. In this case, participants cannot proceed without entering a value. *Output only* can be used, if an input field shall only display output. 
 
 .. image:: _static/NumericInput2.JPG
     :alt:  300px
 
-In addition, a unit (e.g. %, €, mm, …) can be specified that will be displayed on the right of the input field (here "years"). You can also set a default value that is displayed to participants at the start. Further, you can determine whether input is compulsory which is not the case for voluntary information for example.
 
-"Output only" can be used, if an input field shall only display output. This can be necessary for calculations. For example, if participants are required to allocate different parts of income to different purposes, an "Output only" field can be used to display how much income is still left after filling in the input fields.
+.. note:: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
 
-	Hint: The numeric input automatically corrects minor inconsistencies of participants. classEx checks whether participants adhere to the minimum and maximum values, rounds numbers according to the predetermined decimal places and automatically adapts the decimal separator by adding zeroes. classEx also automatically changes the input to numeric on mobile devices and shows the correct keyboard.
-
-Text Input
+Text input
 ----------
 
 .. image:: _static/TextInput.JPG
     :alt:  300px
 
-Text input fields enable you to let participants enter a text. You can specify the minimum and maximum amount of characters if required.
+Text input fields enable you to let participants enter a text. You can specify the minimum and maximum amount of characters and a default text. The number of rows determines the size of the text input field.
 
-- Editing Buttons and Selection Lists (single choice)
+Buttons, simple list and drop list (single choice)
+----------------------------------------------------
 
-.. image:: _static/ButtonsAndSelection1.JPG
-    :alt:  300px
+.. image:: _static/develop/buttons.PNG
+   :height: 500px
 
-This type of input is used for discrete decisions. Besides the text that is shown above the buttons, you can specify the different answer options. Participants make a decision by choosing one of the options. The order of options can be altered by clickingon the arrow [[File:up.JPG]]. The correct answer can be specified and you can also delete or add options. You can also select if the options should be displayed in order or randomly (different for each participant).
+This type of input is used for discrete decisions. Besides the text that is shown above the buttons, you can specify the different answer options. Participants make a decision by choosing one of the options. The order of options can be altered by clicking on the arrow. You can also delete or add options. You can also select if the options should be displayed as stated or randomly (different for each participant). You can set the input as required. You can mark the correct answer by clicking on the symbol |pic_correct|. In this case, if you use the single/multiple choice result element for the lecturer, the correct answer is marked there.
 
-You can implement single choice questions using buttons, simple lists or drop lists. This is what they look like in the participants' display.
+.. |pic_correct| image:: _static/pic/correct.PNG 
+	:width: 15px
+
+You can implement single choice questions using buttons, simple lists or drop lists. This is what they look like in the participants' display. The settings are the same for these options.
 
 .. image:: _static/ButtonsAndSelection2.JPG
     :alt:  300px
@@ -122,34 +136,57 @@ You can implement single choice questions using buttons, simple lists or drop li
 .. image:: _static/ButtonsAndSelection4.JPG
     :alt:  300px
 
-Choosing one of the options when using buttons submits the data, therefore, this type of input can only be used once in a stage. Multiple input fields (e.g. a single choice question and a numeric input field) should not be inserted as this leads to input errors. For simple lists and drop lists the choice needs to be submitted by pressing the submit button.
+Checkboxes (multiple choice)
+------------------------------
 
-Choosing multiple options is possible by using [[Check Boxes]]. Checkboxes work in exactly the same way as single choice options. Only the form of display is slightly different, as these are displayed as a list from which participants can pick several options. This way, multiple inputs can occur in one stage.
+Choosing multiple options is possible by using checkboxes. Checkboxes work in exactly the same way as single choice options. Only the form of display is slightly different, as these are displayed as a list from which participants can pick several options. This way, multiple inputs can occur in one stage. Additionally to the single choice, you can specify the minimum and maximum number of choices and the number of answers per row.
 
-Radiolines and Sliders
-----------------------
+Radioline
+---------
 
-Radiolines, like Likert scales, offer stepwise input. For this, you need to specify the minimum and maximum as well as the number of steps (e.g. Min1, Max 7 and Steps 6 would lead to integers and Steps 12 would lead to steps of the size 0.5). Furthermore, you need to enter a description for the left and right hand side.
+ADD PICTURES 
 
-Sliders are a similar concept. In this form of input, the participant moves a slider along a bar of predetermined positions.
+Radiolines, like Likert scales, offer stepwise input. For this, you need to specify the minimum and maximum. Furthermore, you need to enter a description for the left and right hand side.
+
+
+Slider
+------
+
+Sliders are a similar concept. In this form of input, the participant moves a slider along a bar of predetermined positions. For sliders you have to determine the number of steps. 
 
 Defaults can be set for radiolines and sliders. If no default is set, the radioline is empty and the slider is positioned in the middle of the bar.
 
-Checkboxes
-----------
+Hidden field
+-------------
 
-Check boxes allow for choosing multiple answers. Options can be set just as described for selection lists ([[Buttons and Selection Lists (single choice)|single choice]]). Further, the minimum and maximum number of answers must be specified. It is possible to set a default. You can also select if the options should be displayed in order or randomly (different for each participant).
+Next button
+------------
 
-Other Input Fields
+
+
+Other input fields
 ------------------
 
-Average over all input fields
-	This option saves the average over all input fields which is not displayed to the user. The average is created automatically by calculating the mean over several numeric inpu fields (e.g. radiolines, numeric input fields, sliders).
+There are other input fields available (urn, infotext, mean of all input fields). This are outdated and should only be used with care.
 
-Filled in input
-~~~~~~~~~~~~~~~
+The contract input field is also oudated. Please use the `Contract`_ element instead.
 
-This element allows you to display the filled in input field of the last stage.
+Additional settings
+-------------------
+
+button label
+
+confirmation message
+
+hide decision after sending
+
+directly to next stage
+
+show button later
+
+
+
+
 
 Winner's Notification
 ~~~~~~~~~~~~~~~~~~~~~
@@ -195,7 +232,8 @@ With this element, you can enable participants to form contracts. By adjusting t
 
 Contracts can be used to trade a commodity between subjects in real time. Subjects move around in the classroom and talk to each other. When they agreed on a price they enter it into the input mask together with the signature of the counterparty (see seller screen). The counterparty has to accept the trade (or reject it, see buyer screen).
 
-- Settings
+Settings
+--------
 
 sell offers/buy offers
 	If you turn this on, you allow for sell or buy offers made by the respective subject.
@@ -218,7 +256,8 @@ maximum quantity
 products
 	at the moment only one typoe of product can be traded. You can specify a name (or a small image) and the initial amount of the good (e.g. the seller has 1 unit, the buyer 0 units).
 
-- Output
+Output
+------
 
 The contracts made can be shown at the lecturer's screen with the contract table. In addition, there are special functions in globals and subjects programs to retrieve contracts. All contracts are also stored in the standard excel file which can be retrieved in the data menu. 
 
@@ -254,8 +293,8 @@ At the lecturer screen
 From the stored data
 	In the downloaded data you find stored images in the subjects table. They can are base64 decoded and can be encoded with free online tools. Just take away "data:image/jpeg;base64," from the string, so that it starts e.g. with "/9j/....".
 
-Javascript
-~~~~~~~~~~
+Javascript program
+~~~~~~~~~~~~~~~~~~~
 
 - Reading php variables
 
@@ -284,8 +323,13 @@ This finds the html element with the id of the div containing the variable conte
 
 This can be achieved via hidden input fields that are triggered via JQuery calls
 
+Filled in form (outdated)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Elements for Lecturers
+This element allows you to display the filled in input element of the previous stage.
+
+
+Elements for lecturers
 ======================
 
 Start Button and Automatic Start

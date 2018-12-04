@@ -9,6 +9,8 @@ Programs are a very useful to design dynamic games. Programs are elements of sta
 
 You can define for which roles, groups or treatments (if defined) the code shall apply to by choosing the corresponding option from the drop down menu above the code. Or you define a display condition which determines if the program is executed.
 
+.. note:: It is always good to comment the code if you try to understand it later. Add comments with /* comment */ to your program code.
+
 Programming language and editor
 ================================
 
@@ -183,7 +185,7 @@ Small errors can cause the programs not to run. Therefore, error detection is an
 
 With severe errors the lecture mode can not be started. In order to find the error go through the code and look for errors. Check if the function names are correctly spelled.
 
-Diagnosis mode
+Diagnosis tool
 --------------
 
 The diagnosis mode is very useful for trouble shooting and testing your game. You can access the diagnosis mode by clicking on the stetoscope icon in the top bar of the lecture mode.
