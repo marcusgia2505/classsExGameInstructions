@@ -59,17 +59,17 @@ Creation date
 Language
 	For each game, you can specify a primary language and optionally a second language. If you add a second language all text fields will be shown twice for both languages.
 
-	.. note:: If a text field misses the multi-language feature, you can input the text in both languages separated with $$. E.g. Please decide now$$Bitte entscheide jetzt. 
+	.. note:: If a text field misses the multi-language feature, you can input the text in both languages separated with $$. One exemple would be: Please decide now$$Bitte entscheide jetzt. 
 
 	.. note:: classEx always chooses automatically which language to use based on the account language. If the game is available in the account language it uses this language. Then it tries to find an English version. Otherwise it displays the available language.
 
 Availability
-	You can specify whether you would like a game and its results to be public or not. By default, all games (and their results) are public. You can set a game (and its results) to private or you can set only the results to private and the game to public. In the latter case, other experimenters can still copy your game, but they do not see previous results by you. If you decide to set games or results to public they become subject to a creative commons license as described in the `terms of use`_. You can change the setting of public and private also in the overview by clicking on |pic_private| or |pic_public| next to the name of the game. The option to set only the game public, but results private is not available there.
+	You can specify whether you would like a game and its results to be public or not. By default, all games (and their results) are public. You can set a game (and its results) to private or you can set only the results to private and the game to public. In the latter case, other experimenters can still copy your game, but they do not see previous results by you. If you decide to set games or results to public they become subject to a creative commons license as described in the `terms of use`_. You can change the setting of public and private also in the overview by clicking on |pic_private| for private or |pic_public| for public next to the name of the game. The option to set only the game public, but results private is not available there.
 
 	If you set your game public, it can be found in the :ref:`Organize:Repository`  and others can play and copy the game. If you set your game private, it is not listed in the repository anymore, but previous made copies of your game will remain with their owners and are not revoked.
 
 Additional libraries
-	If you click on *additonal libraries* new settings appear. You can select to load different libraries for the participants. Libraries are packages for special usages. They come with an increased necessity to load data from the server (for each participants). Therefore, you should them only turn on if you need them. For lecturers, they are loaded automatically.  The three available libraries are `plotly`_ or `highcharts`_ for drawing graphs on the participant screen. The library `phaser`_ can be used for creating game-like interactions. For more information visit the respective website of the library by clicking on the library's name.
+	If you click on *additonal libraries* new settings appear. You can select to load different libraries for the participants. Libraries are packages for special usages. They come with an increased necessity to load data from the server (for each participants). Therefore, you should only turn them on if you need them. For lecturers, they are loaded automatically.  The three available libraries are `plotly`_ or `highcharts`_ for drawing graphs on the participant screen. The library `phaser`_ can be used for creating game-like interactions. For more information visit the respective website of the library by clicking on the library's name.
 
 
 .. _terms of use: https://classEx.de/TermsOfUse.pdf
