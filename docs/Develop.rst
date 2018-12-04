@@ -6,7 +6,7 @@ Develop your own games
 
 To develop your own games change to the editing |pic_editmode|. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
 
-	.. note:: In the editing mode, changes are stored automatically. If you change your an element of your game and click next to the element, the element is stored. Most of the elements blink green when they are stored. 
+	.. note:: In the editing mode, changes are stored automatically. If you change an element of your game and click next to the element, the element is stored. Most of the elements blink green when they are stored. 
 
 	.. note:: If a game has already been played by at least 10 participants, it cannot be adapted any more. The same applies if the game was created by another person. You can, however, copy the game and then adapt it.
 
@@ -51,8 +51,7 @@ Name of the game
 
 Alternative title
 	You can also define an alternative title which is displayed instead of the name wherever the game is listed in your own account. Other users will see the original name of the game and not the alternative title.
-
-	..note:: This features is useful if you imported a game, which has the same name as one of your games. Then you can use the alternative title to distinguish from your game, because you cannot change the original name of the game which belongs to another user.
+	.. note:: This features is useful if you imported a game, which has the same name as one of your games. Then you can use the alternative title to distinguish from your game, because you cannot change the original name of the game which belongs to another user.
 
 Creation date
 	The created field shows the creation date of the game, which is not editable. 
