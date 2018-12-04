@@ -313,10 +313,10 @@ no assignment
 	Participants all are assigned to role 0, treatment 0 and group 0.
 
 treatments
-	This allows you to assign participants to treatments. A division into treatments will distribute participants evenly over treatments. You can select any number of treatments between 1 and 10. Treatments will be distributed according to arrival in the experiment (e.g. with two treatments the first will be treatment 1, the second treatment 2, the third again treatment 1,...). If you have defined groups as well, members of a group will always be assigned to the same treatment.
+	This allows you to assign participants to treatments. A division into treatments will distribute participants evenly over treatments. You can select any number of treatments between 1 and 10. Treatments will be distributed according to arrival in the experiment (e.g. with two treatments the first player will be treatment 1, the second treatment 2, the third again treatment 1,...). If you have defined groups as well, members of a group will always be assigned to the same treatment.
 
 role and group
-	This allows you to assign participants to a number of different roles in the game. Participants will be allocated to role 1, role 2, role 3... alternately. Participants will also be assigned to a group which contains one participant which each role. E.g. if you have defined 3 roles, a group will consists of role 1, role 2 and role 3. If you want to have groups with asymmetric combination of roles please use complex assignment.
+	This allows you to assign participants to a number of different roles in the game. Participants will be allocated to role 1, role 2, role 3... alternately. Participants will also be assigned to a group which contains one participant with each role. E.g. if you have defined 3 roles, a group will consists of role 1, role 2 and role 3. If you want to have groups with asymmetric combination of roles please use complex assignment.
 
 group
 	Allows you to assign participants to groups (all participants will have the same role 0). Groups are filled one after each other. You are free to select any group size. The number of groups is determined automatically by classEx. 
@@ -350,7 +350,7 @@ Random matching with constant roles means randomly matching the subjects into ne
 
 1. The assignment selected must be "role and group". The matching method selected should be "partner".
 
-2. You need to add a globals program and a subjects program in the first repeated stage of your experiment.
+2. You need to add a globals program in the lecturer field in the first repeated stage of your experiment and a subjects program in the participants field.
 
 3. Insert the following code in the globals program:
 
@@ -389,13 +389,13 @@ Random matching with constant roles means randomly matching the subjects into ne
 Further settings
 ----------------
 
-On the page assignment and matching you can further choose if the role should be displayed in the header of the participants page and if the internal ID of the participant should be displayed there as well.
+On the page *assignment and matching* you can further choose if the role should be displayed in the header of the participants page and if the internal ID of the participant should be displayed there as well.
 
 
 Parameters
 ==========
 
-Parameters are global variables that can be adjusted in the lecture mode directly before starting the experimenters. You can define parameters to enable adaptation of the game for lecturers without any knowledge of how to edit games. You can then play the same game several times with different parameters. This feature is very useful if you want to introduce some flexibility in the game.
+Parameters are global variables that can be adjusted in the lecture mode directly before starting an experiment. You can define parameters to enable adaptation of the game for lecturers without any knowledge of how to edit games. You can then play the same game several times with different parameters. This feature is very useful if you want to introduce some flexibility in the game.
 
 .. note:: Parameters are initialized at the start of the game. They are read-only. They are the same for all participants.
 
