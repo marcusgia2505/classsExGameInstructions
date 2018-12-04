@@ -225,7 +225,7 @@ The left side shows the elements for the participant. Elements added here are di
 
 The right side shows the elements for the lecturer. Elements added here are displayed on the lecturer's screen in the lecture mode. Program code (so called globals programs) added here is run once for all participants.
 
-Some elements are the same for participants and lecturers (as e.g text boxes), but most elements are different. Typical elements for participants are input elements, program codes, text boxes and winning notifications. Typical elements for lectures are start buttons, program codes, text boxes and many different result elements. 
+Some elements are the same for participants and lecturers (as e.g text boxes), but most elements are different. Typical elements for participants are input elements, program codes, text boxes and winning notifications. Typical elements for lectureres are start buttons, program codes, text boxes and many different result elements. 
 
 .. note:: A full list of all elements can be found in the section :ref:`Elements:Elements`.
 
@@ -234,7 +234,7 @@ Some elements are the same for participants and lecturers (as e.g text boxes), b
 Adding elements
 ~~~~~~~~~~~~~~~~
 
-You can add an element via clicking on *add element* and selecting the type of element you want to add. Note that there are different elements for lecturers and participants. After that you have to choose where you want to place the element. The paste symbol |pic_paste| will appear for every possible location of the element. Choose a location for your element by clicking on the corresponding *paste element* icon |pic_paste2| or cancel placing the icon by clicking on any *do not paste* icon |pic_paste1|. If there are no elements defined yet (for the participant or the lecturer), the element is automatically added to the first place.
+You can add an element via clicking on *add element* and selecting the type of element you want to add. Note that there are different elements for lecturers and participants. After that you have to choose where you want to place the element. The paste symbol |pic_paste| will appear for every possible location of the element. Choose a location for your element by clicking on the corresponding *paste element* icon |pic_paste1| or cancel placing the icon by clicking on any *do not paste* icon |pic_paste2|. If there are no elements defined yet (for the participant or the lecturer), the element is automatically added to the first place.
 
 
 Handling elements
