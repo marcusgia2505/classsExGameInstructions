@@ -119,7 +119,7 @@ By clicking on *delete game*, the currently selected game is deleted. For your s
 
 New game
 ---------
-This creates a new game. A standard new game is always a single-choice question with four possible answers. Before you can edit the game, classEx takes you to the :ref:`Develop:Game settings` of the created game were you have to provide a title. You have to select a language and to choose whether the game should be public or private. Once you are done, click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
+Clicking on *new game* creates a new game. A standard new game is always a single-choice question with four possible answers. Before you can edit the game, classEx takes you to the :ref:`Develop:Game settings` of the created game were you have to provide a title. You have to select a language and to choose whether the game should be public or private. Once you are done, click on *save* to create the game. classEx automatically takes you to editing mode where you can proceed designing the game.
 
 
 Parameter
@@ -134,9 +134,9 @@ Before actually using a game in your lecture or while you develop, you can alway
 
 Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon |pic_testparticipant|. This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many test participants as you want, which enables you to also test interaction between participants.
 
-.. note:: You can open multiply test participants by holing the Ctrl-Key and clicking multiple times on the test participant icon |pic_testparticipant|. 
+.. note:: You can open multiple test participants by holing the Ctrl-Key and clicking multiple times on the test participant icon |pic_testparticipant|. 
 
-Then start your game. You can perform the interaction required in the browser tabs for each participant and can see how your game is running. 
+Then start your game. You can perform the interaction required in the browser tabs for each participant and you can see how your game is running. 
 
 .. note:: Test participants are not reload-safe. This means that if you reload the page, in some cases the content of the page may change. Real participants cannot do this.
 
@@ -158,7 +158,7 @@ If something is not working, go back to the editing mode and check your settings
 Define Stages
 =============
 
-Stages are points of synchronization in a game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Generally, the input phase is one stage and the results phase is a different stage, as the output can only be displayed after all participants have entered their input. Stages are ordered in tabs in a horizontal way in classEx. The first tab is not a stage before shows the options for :ref:`Develop:Assignment and Matching` of roles, treatments and groups. 
+Stages are points of synchronization in a game. Synchronization means that for the next stage to begin, all elements of the previous stage must have been finalized. Generally, the input phase is one stage and the results phase is a different stage, as the output can only be displayed after all participants have entered their input. Stages are ordered in tabs in a horizontal way in classEx. The first tab is not a stage - it shows the options for :ref:`Develop:Assignment and Matching` of roles, treatments and groups. 
 
 .. image:: _static/Stage.PNG
     :alt:  300px
@@ -167,7 +167,7 @@ Stages are points of synchronization in a game. Synchronization means that for t
 Name of a stage
 ~~~~~~~~~~~~~~~~
 
-You can choose to give the stages names instead if numbers in order to identify them more easily. To give them a name, simply enter it in the box. The name is then display below the stage number in the tab.
+You can choose to give the stages names instead of numbers in order to identify them more easily. To give them a name, simply enter it in the box. The name is then display below the stage number in the tab.
 
 .. note:: classEx stores stages internally with a unique ID (which has between 4-6 digits) and neither with the name of the stage nor the number of the stage within the game (stage 1, stage 2,...). If you want to get the unique ID just hover over the stage tab and the unique ID will be displayed. This may be useful if you want to compare e.g. results from the excel sheet (see :ref:`Run:Data`.
 
@@ -190,14 +190,14 @@ Late arrival
 
 You can specify whether participants can arrive late, i.e. if they login in after the game has already started. You can choose for this to be possible, not possible, or only possible in the first round of a game.
 
-.. note:: If you allow for late arrival in later stages, participants miss the first stages. Make sure that in this case, participants miss nothing which is necessary for later stages (e.g. declaration of variables,...). Assignment and matching is done in the first stage, so you should only later arrival if assignment and matching is not necessary.
+.. note:: If you allow for late arrival in later stages, participants miss the first stages. Make sure that in this case, participants miss nothing which is necessary for later stages (e.g. declaration of variables,...). Assignment and matching is done in the first stage, so you should only allow later arrival if assignment and matching is not necessary.
 
-.. note:: Matching is done on-the-fly. This means if a subject arrives late it (only in the first stage) it will be matched according to your settings.
+.. note:: Matching is done on-the-fly. This means if a subject arrives late (only in the first stage) it will be matched according to your settings.
 
 Move stages
 ~~~~~~~~~~~
 
-When you create a new stage, this stage will automatically be defined as the next stage. You can move stages by pressing *Move stage upwards* (left) or *Move stage downwards* (right). The order in which stages are run is always from left to right.
+When you create a new stage, this stage will automatically be defined as the next stage. You can move stages by pressing *Move stage backward* (left) or *Move stage forward* (right). The order in which stages are run is always from left to right.
 
 Add stage
 ~~~~~~~~~
@@ -207,7 +207,7 @@ You can add a new stage by clicking on *Add new stage* beside the tabs displayin
 Copy stage
 ~~~~~~~~~~~
 
-You can copy a stage including all elements and settings of this stage. If you click on copy, the paste symbol |pic_paste| will appear. The left icon |pic_paste2| also to undo the copying. The right icon |pic_paste1| pastes the stage after the current stage. You can copy stages also across different games. Just copy the stage, open the new game and paste it there.
+You can copy a stage including all elements and settings of this stage. If you click on copy, the paste symbol |pic_paste| will appear. The left icon |pic_paste2| can undo the copying. The right icon |pic_paste1| pastes the stage after the current stage. You can copy stages also across different games. Just copy the stage, open the new game and paste it there.
 
 Delete stage
 ~~~~~~~~~~~~~
