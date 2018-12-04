@@ -240,7 +240,7 @@ You can add an element via clicking on *add element* and selecting the type of e
 Handling elements
 ~~~~~~~~~~~~~~~~~~
 
-All elements share some common elements which are described here. The details for every element are described in the secion :ref:`Elements:Elements`.
+All elements share some common characteristic which are described here. The details for every element are described in the secion :ref:`Elements:Elements`.
 
 .. image:: _static/Elements.PNG
     :alt:  300px
@@ -274,7 +274,7 @@ Delete element
 	You can delete the element by pressing *delete element*. You have to confirm a deletion. After that a deletion cannot be reversed.
 
 Groups, treatments and roles boxes
-	If you have defined groups, treatments or roles, a box appears where you can also choose whether the element shall be displayed for all groups, treatments or roles or for special groups, treatments or roles only.
+	If you have defined groups, treatments or roles (more information about this in the next chapter), a box appears where you can also choose whether the element shall be displayed for all groups, treatments or roles or for special groups, treatments or roles only.
 
 .. note:: Restricting the display and execution of elements for certain groups, treatments or roles can be both done with the boxes and with the display condition. With the boxes, you can limit the display on to one group, role or treatment. With the display condition you can combine different conditions or allow for multiple group, roles or treatments.
 
@@ -284,13 +284,13 @@ Assignment and Matching
 
 Left to the tab *stage 1* you find the tab *assignment and matching*. Here, you can specify whether you want to assign participants to treatments, groups, roles or a combination of all (complex assignment). 
 
-Normally, the total number of participants is not known prior to the start of the experiment. This requires matching-on-the-fly. After they are logged in, subjects wait in a virtual lobby. Once the experimenter starts the experiment, the assignment of roles and treatments and the matching into groups takes place. 
-
-.. note:: The number of participants may not match the composition of groups of players that an lecturer seeks to assemble. For example, a mismatch would occur with an uneven number of participants in a game in which players must be matched into pairs of two. classEx offers different methods to deal with this. Either, decisions of other participants can be duplicated and matched to excess participants as a clone, or random decisions can be used. The experimenter can specify in the :ref:`Programming:Functions to retrieve variables` which method shall be employed. This makes sure that participants always get feedback, which can be important in order to avoid disappointing participants. As a further option, participants with no partner can be excluded from the game. Certainly, cloned or random observations may have to be deleted prior to using data for research. 
-
-
 .. image:: _static/Matching.PNG
     :alt:  300px
+
+Normally, the total number of participants is not known prior to the start of the experiment. This requires matching-on-the-fly. After they are logged in, subjects wait in a virtual lobby. Once the experimenter starts the experiment, the assignment of roles and treatments and the matching into groups takes place. 
+
+.. note:: The number of participants may not match the composition of groups of players that a lecturer seeks to assemble. For example, a mismatch would occur with an uneven number of participants in a game in which players must be matched into pairs of two. classEx offers different methods to deal with this. Either, decisions of other participants can be duplicated and matched to excess participants as a clone, or random decisions can be used. The experimenter can specify in the :ref:`Programming:Functions to retrieve variables` which method shall be employed. This makes sure that participants always get feedback, which can be important in order to avoid disappointing participants. As a further option, participants with no partner can be excluded from the game. Certainly, cloned or random observations may have to be deleted prior to using data for research. 
+
 
 Available roles
 ~~~~~~~~~~~~~~~~
@@ -300,14 +300,14 @@ Up to 13 role symbols (and therefore roles) are available (and an additional gra
 .. image:: _static/Allroles.PNG
     :alt:  300px
 
-This roles are standardized items and are shown in the header of the participant's page. If you want to display the role figure in a text box just add role1.png to the text (for role 1). This will be replace with the respective figure. **Make sure that role1.png is followed by a space, otherwise the replacement will not work.**
+These roles are standardized items and are shown in the header of the participant's page. If you want to display the role figure in a text box just add role1.png to the text (for role 1). This will be replace with the respective figure. **Make sure that role1.png is followed by a space, otherwise the replacement will not work.**
 
 
 Assignment at the beginning of a game
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-classEx allows you to flexibly adapt to an unknown number of participants, meaning that you choose the number of different roles, the number of treatments and the size of groups. ClassEx then assigns participants automatically. classEx allows lecturers to either set the size of a group (for example two for a trust game or four for a public goods game), in which case the number of groups is automatically determined at the start of the experiment. Alternatively an experimenter specifies the number of groups (for example if each plays a different treatment), in which case their size is determined automatically. Specifically, you have the following available options:
+classEx allows you to flexibly adapt to an unknown number of participants, meaning that you choose the number of different roles, the number of treatments and the size of groups. classEx then assigns participants automatically. classEx allows lecturers to either set the size of a group (for example two for a trust game or four for a public goods game), in which case the number of groups is automatically determined at the start of the experiment. Alternatively an experimenter specifies the number of groups (for example if each plays a different treatment), in which case their size is determined automatically. Specifically, you have the following available options:
 
 no assignment
 	Participants all are assigned to role 0, treatment 0 and group 0.
