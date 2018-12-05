@@ -326,6 +326,7 @@ If you login as user type "administration", you can see a list indicating the da
 
 .. note:: If a participant lost his or her payoff code, the list of payoffs also shows the internal player number of the player. If the participant logs in with the same device as he or she played the game, the player number can be retrieved by clicking on the classEx logo in the top right corner. This can be used then to verify that the persons is entitled to receive the payoff.
 
+
 Graphical results
 =================
 
@@ -339,22 +340,6 @@ Some of the graphs have interactive features and can be adapted. All figures tha
 For histograms, you can also change the settings for the bins and the maximum by clicking on the little symbol under the bottom left corner of the chart. You simply change the values in the fields and then click beside the bins display. This can be useful if the default bin size was too small. The bins are then changed for all graphs.
 
 Via the button *previous results* in the lecture menu, you can also access and display results (and their corresponding graphs) of previous sessions.
-
-
-Data
-====
-
-Excelfile
-~~~~~~~~~
-
-The excel files contain all variables recorded in the game. A file contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data. It can also be accessed after a new game has started. In order to get previous data, just select the respective session from the previous results menu. When the game is open, you can download results again via *download as excel*. 
-
-xecon
-~~~~~~
-
-The data repository `xecon`_ provides long term secure data storage. It is provided by gesis - Leibniz Institute for Social Sciences in Cologne. It allows to store and publish experimental data sets. Data sets can be directly exported to x-econ (including meta information) and can obtain a DOI to make them citable. The export is automatized so that you only have to select which session to export. classEx creates a ZIP file which is automatically transferred to xecon. You only need an account with xecon. All available meta-information, like number of players, groups, rounds,... are extracted automatically and put to xecon where they can be adjusted.
-
-
 
 Dealing with problems 
 ======================
@@ -404,4 +389,3 @@ Other problems
 ---------------
 
 If the above strategies do not help, participants should try out a different browser. We always suggest to use Mozilla Firefox. If you have persistent problems with a special browser please let us know via classEx@uni-passau.de. For error retrieval, please tell us the ID of the participant and the date of your course.
-
