@@ -408,9 +408,9 @@ Here is an example with a numeric parameter and a select list.
 
 .. image:: _static/param.PNG
 
-For numeric parameters, you have to define a variable name (here $endowment) and a default value. The default value is used, if the lecturer does not change the parameter. On the right hand side, you can define how the parameters are displayed to the lecturer (when they set the parameters in the lecture mode). The should not be bothered with variable names, therefore provide a useful name. If the game is implemented in two languages, you can provide two different names. Additionally, you have to provide a minimum and maximum. You can also provide a unit (e.g. €, meters,...). 
+For *numeric parameters*, you have to define a variable name (here $endowment) and a default value. The default value is used, if the lecturer does not change the parameter. On the right hand side, you can define how the parameters are displayed to the lecturer (when they set the parameters in the lecture mode). They should not be bothered with variable names, therefore providing an easy name is useful. If the game is implemented in two languages, you can provide two different names. Additionally, you have to provide a minimum and maximum. You can also provide a unit (e.g. €, meters,...). 
 
-For select lists, you have to define variable name and default as well. Also a name is required. Fir the options you can specify a label and a respective value.
+For *select lists*, you have to define a variable name and default value as well. Also a name is required. For *options* you can specify a label and a respective value.
 
 .. image:: _static/develop/parameters2.PNG
 	:height: 200px
@@ -423,12 +423,12 @@ In the lecture mode, the lecturer can then set the endowment and choose from dif
 Languages 
 =========
 
-If you defined a second language in the game settings, all text field show up twice so that you can enter the text in the two different languages, here German and English.
+If you defined a second language in the game settings, all text fields show up twice so that you can enter the text in the two different languages, here German and English.
 
 .. image:: _static/Language.PNG
     :alt:  300p
 
-To display only one language in the editing mode, you can click on the flag symbols next to the game name. Then all field with the respective language are hidden. Note that this does not mean that the language is deactived, but only that you can hide some fields when implementing the game.
+To display only one language in the editing mode, you can click on the flag symbols next to the game name. Then all fields with the respective language are hidden. Note that this does not mean that the language is deactived when the game is played, but only that you can hide some fields while implementing the game.
 
 .. image:: _static/Languageonoff.PNG
     :alt:  300p
