@@ -15,14 +15,15 @@ Text box
 .. image:: _static/Textbox.JPG
     :alt:  300px
 
-The text box is the simplest element. The entered text will be displayed to the participants.
-The text box is equipped with a WYSIWG editor which allows you to insert tables, symbols etc. If you double-click into the text element, The WYSIWG editor opens. You can switch back to the normal text box by clicking on the **<>** symbol. 
+The text box is the simplest element. The entered text will be displayed to the participants or a the lecturer screen depending where you place the element. The text box is equipped with a WYSIWG editor which allows you to insert tables, symbols etc. If you double-click into the text element, The WYSIWG editor opens. You can switch back to the normal text box by clicking on the **<>** symbol. 
 
 If you are not in the WYSIWG editor, you can use standard HTML to design your texts. You can do e.g. the following:
 
 .. code:: html
 
-This is a text box with a <b>bold text</b> and a <span style="font-size: x-small;">small</span> text. You can also show pictures <img src="https://yourownserver.de/adress_of_picture.png" stlye="with: 20px"> or add tables <table><tr><td>Tab 1</td><td>10</td></tr></table>.
+	This is a text box with a <b>bold text</b> and a <span style="font-size: x-small;">small</span> text. 
+	You can also show pictures <img src="https://yourownserver.de/adress_of_picture.png" stlye="with: 20px"> 
+	or add tables <table><tr><td>Tab 1</td><td>10</td></tr></table>.
 
 Special Characters
 -------------------
@@ -32,7 +33,7 @@ Special     Name 		   Function Example
 =========== ============== ===============
 role1.png   Symbol Role 1  Red participant symbol |pic_role1| is displayed. 
 role2.png   Symbol Role 2  Green participant symbol |pic_role2| is displayed.
-$variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see :ref:`Programming`), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined
+$variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see :ref:`Programming`), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined.
 =========== ============== ===============
 
 Make sure that role1.png, role2.png,... are followed by a space. Otherwise the figure will not be replaced.
@@ -50,7 +51,7 @@ So far we have only tackled how to read the PHP variables and display them in he
 
 .. code:: php
 
-if ($isBuyer) $buyerText="You are buyer"; else $buyerText="You are seller";
+	if ($isBuyer) $buyerText="You are buyer"; else $buyerText="You are seller";
 
 Then you can output $buyerText; in the text box.
 
@@ -60,7 +61,7 @@ Element Reference
 .. image:: _static/Refer.JPG
     :alt:  300p
 
-In order to avoid redundancies, you can reference elements and add them in a different place in the game (instead of copying them directly) For this, you can use the reference element. If the original element is altered, the reference is adapted automatically. The reference is created by entering the stage number and the element number you are referring to. 
+In order to avoid redundancies, you can reference elements and add them in a different place in the game (instead of copying them directly). For this, you can use the reference element. If the original element is altered, the reference is adapted automatically. The reference is created by selecting the stage number and the element number you are referring to. 
 
 .. note:: If you require the same text in two stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically.
 
@@ -73,6 +74,9 @@ Program code
 
 Program snippets can be implemented to calculate results for each subjects. For further information see :ref:`Programming`.
 
+.. image:: _static/program.png
+
+
 Elements for participants
 ==========================
 
@@ -81,7 +85,7 @@ Input element
 
 In this element, you can insert several input fields. These are numbered #1, #2, …. You can add input fields by clicking on *add new input field*. The input fields are displayed one after each other.
 
-The following settings are available for every input field. You can determine the type of input field and define a variable name. The variable name can then be used in programs. For example, if your variable is called $e, you can access it by writing "$e;" in a text box or use $e in a program element. Furthermore, you can delete an input field by clicking on |pic_delete|. You cannot delete the first input field (#1).
+The following settings are available for every input field. You can determine the type of input field and define a variable name. The variable name can then be used in programs. For example, if your variable is called $e, you can access it by writing "$e;" in a text box or use $e in a program element. Furthermore, you can delete an input field by clicking on |pic_delete|.
 
 .. |pic_delete| image:: _static/pic/reject.PNG
 				:width: 15px
@@ -222,13 +226,12 @@ With this element, you can enable participants to form contracts. By adjusting t
 
 **Please note that you need to set seperate contract elements for buyers and sellers.**
 
-- Functionality
+.. image:: _static/rungame/seller_png.png
+    :width:  100%
 
-.. image:: _static/Seller.PNG
-    :alt:  300p
+.. image:: _static/rungame/buyer_png.png
+    :width:  100%
 
-.. image:: _static/Buyer.PNG
-    :alt:  300p
 
 Contracts can be used to trade a commodity between subjects in real time. Subjects move around in the classroom and talk to each other. When they agreed on a price they enter it into the input mask together with the signature of the counterparty (see seller screen). The counterparty has to accept the trade (or reject it, see buyer screen).
 

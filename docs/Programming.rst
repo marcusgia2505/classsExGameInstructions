@@ -152,6 +152,15 @@ Arguments with default value (optional)
 .. note:: If you want to change some of the default values in arguments at the end of the function, you also have to specify the arguments before the argument you want to change. You can see this in the last code example where want to leave :php:`$partnerRole` on its default value and only change :php:`$no_decision`.
 
 
+Internally used variable names
+===============================
+
+Some variable names are internally used in classEx and **should not be used as own variable names**. These are the following variables:
+
+.. code:: php
+
+	$newMatchedPartner, $newMatchedGroup, $currentStage, $lastStage, 
+	$sendprog, $history, $simpleID, $signRound, $idCourse, $player  
 
 
 Variables for participants (subjects)
@@ -161,7 +170,7 @@ Pre-Defined Variables
 ~~~~~~~~~~~~~~~~~~~~~~
 
 =================  =====
-variable name  	   value
+name  			   value
 =================  =====
 :php:`$lang`       Current language (0: German, 1: English, 2: Spanish)
 :php:`$round`      Current round
