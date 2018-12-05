@@ -202,7 +202,7 @@ The following functions can be used to retrieve subjects variables.
 
 ----
 
-:php:`$findGroupAverage("varname", $round = $currentRound, $includingOwn = false);`
+:php:`$findGroupAverage("varname", $round = $currentRound, $includingOwn = false)`
 
 	**Function** retrieves the average of a variable for the own group. 
 
@@ -217,7 +217,7 @@ The following functions can be used to retrieve subjects variables.
 
 ----
 
-:php:`$findGroupSum("varname", $round = $currentRound, $includingOwn = false);`
+:php:`$findGroupSum("varname", $round = $currentRound, $includingOwn = false)`
 
 	**Function** retrieves the sum of a variable for the own group. 
 
@@ -232,7 +232,7 @@ The following functions can be used to retrieve subjects variables.
 
 ----
 
-:php:`$findGroupFreq("varname", $round = $currentRound, $includingOwn = false);`
+:php:`$findGroupFreq("varname", $round = $currentRound, $includingOwn = false)`
 
 	**Function** retrieves the frequency of each value of a variable for the own group. 
 
@@ -247,7 +247,7 @@ The following functions can be used to retrieve subjects variables.
 
 ----
 
-:php:`$findSold($round = $currentRound);`
+:php:`$findSold($round = $currentRound)`
 
 	**Function** retrieves the number of items sold (in a contract element)
 
@@ -259,7 +259,7 @@ The following functions can be used to retrieve subjects variables.
 	
 ----
 
-:php:`$findBought($round = $currentRound);`
+:php:`$findBought($round = $currentRound)`
 
 	**Function** retrieves the number of items bought (in a contract element). The logic is exactly the same as in :php:`$findSold(...);`
 
@@ -287,9 +287,6 @@ Here you can find some coding examples:
 		$revenues += $price;
 		$amountSold++;
 	}
-
-
-
 
 
 Function to save variables
@@ -330,66 +327,149 @@ Variables for lecturers (globals)
 Pre-defined variables
 ~~~~~~~~~~~~~~~~~~~~~~
 
-============== ============
-Variable       Name Value
-============== ============
-$lang          Actual Language (0: German, 1: English, 2: Spanish)
-$currentRound  Current Round
-============== ============
+==================== ============
+name                 value
+==================== ============
+:php:`$lang`          Actual Language (0: German, 1: English, 2: Spanish)
+:php:`$currentRound`  Current Round
+:php:`$maxWin`		  Maximal amount for real payoff, default is 100.
+==================== ============
+
+All parameters are also available as pre-defined globals variables. All globals variables (including the ones calculated in globals programs) are stored automatically.
 
 Functions
 ~~~~~~~~~~
 
-The following functions can be used to retrieve global variables. Here is some additional information on the structure. If you want to access the name of a variable, you put the name in quotation marks. If you want to access the value of a varible, you add a $ infront of the variable name. The elements of the functions mean the following:
+The following functions can be used to retrieve globals variables. 
 
-varname
-	here, you need to enter the name of the variable you want to retrieve, for example 'price'
+:php:`$getValues("varname", $round = $currentRound)`
 
-round = currentRound
-	this means that the default is set to the current round. If you want to access the variable of a different round, you must enter the round in the function
+	**Function** retrieves the values for all participants.
 
-======================================================== ====================================================================================================================================== ====================
-Function name                                            Calculates                                                                                                                             Returns
-======================================================== ====================================================================================================================================== ====================
-$getAverage('varname',round=currentRound);               Average of a variable                                                                                                                  Average as number, 0 otherwise
-$getAveragePerRole('varname',round=currentRound);        Average of a variable per role                                                                                                         Array with role number as index
-$getAveragePerTreatment('varname',round=currentRound);   Average of a variable per treatment                                                                                                    Array with treatment number as index
-$getAveragePerGroup('varname',round=currentRound);       Average of a variable per group                                                                                                        Array with groupnumber as index
-$getVarSum('varname',round=currentRound);                Sum of a variable (also available getVarSumPerGroup, getVarSumTreatment, getVarSumPerRole)                                             Sum as number, 0 otherwise
-$getMin('varname',round=currentRound);                   Minimum of a variable (also available getMinPerGroup, getMinPerTreatment, getMinPerRole)                                               Minimum as number, 0 otherwise
-$getMax('varname',round=currentRound);                   Maximum of a variable (also available getMaxPerGroup, getMaxPerTreatment, getMaxPerRole)                                               Maximum as number, 0 otherwise
+	**Returns** an array with the internal participant ID as index and the respective values or :php:`null` if no values available.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved.
+
+----
+
+:php:`$getAverage("varname", $round = $currentRound)`
+
+	**Function** retrieves the average of a variable over all participants.
+
+	**Returns** the average value or :php:`null` if no values available.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+
+----
+
+:php:`$getAveragePerRole("varname", $round = $currentRound)`
+
+	**Function** retrieves the average of a variable over all participants grouped by their role.
+
+	**Returns** an array with role ID as index and the average value for each role. If not available, it return :php:`null`.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+
+----
+
+:php:`$getAveragePerTreatment("varname", $round = $currentRound)`
+	
+	**Function** retrieves the average of a variable over all participants grouped by treatment. The logic is the same as for :php:`$getAveragePerRole(...)`. It returns an array with the treatment ID as index and the average value for each treatment.
+
+----
+
+:php:`$getAveragePerGroup("varname", $round = $currentRound)`
+
+	**Function** retrieves the average of a variable over all participants grouped by group. The logic is the same as for :php:`$getAveragePerRole(...)`. It returns an array with the group ID as index and the average value for each treatment.
+
+----
+
+:php:`$getVarSum("varname", $round = $currentRound)`
+
+	**Function** retrieves the sum of a variable over all participants.
+
+	**Returns** the sum or :php:`null` if no values available.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+
+	**Also available** as :php:`$getVarSumPerGroup(...)`, :php:`$getVarSumPerTreatment(...)` or :php:`$getVarSumPerRole(...)` following the same logic as described above for :php:`$getAveragePerRole(...)`.
+
+----
+
+:php:`$getMin("varname", $round = $currentRound)`
+
+	**Function** retrieves the minimum of a variable over all participants.
+
+	**Returns** the minimum or :php:`null` if no values available.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+
+	**Also available** as :php:`$getMinPerGroup(...)`, :php:`$getMinPerTreatment(...)` or :php:`$getMinPerRole(...)` following the same logic as described above for :php:`$getAveragePerRole(...)`.
+
+----
+
+:php:`$getMax("varname", $round = $currentRound)`
+
+	**Function** retrieves the maximum of a variable over all participants.
+
+	**Returns** the maximum or :php:`null` if no values available.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+
+	**Also available** as :php:`$getMaxPerGroup(...)`, :php:`$getMaxPerTreatment(...)` or :php:`$getMaxPerRole(...)` following the same logic as described above for :php:`$getAveragePerRole(...)`.
+
+
+
 $getFreq('varname',round=currentRound, multiple=false);  Frequency of a variable value (if multiple is set to true, answers from multiple choice questions are decomposed into single answers)  Array with the variable value as index
-$getValues('varname',round=currentRound);                Single values for each participant                                                                                                          Array with the participant number as index and the corresponding value
+
 $getRoles();                                             Role for each participant                                                                                                                   Array with the participant number as index and the corresponding role
+
 $getTreatments();                                        Treatment for each participant                                                                                                              Array with the participant number as index and the corresponding treatment
+
 $getNumRoles();                                          Number of roles                                                                                                                        Array with role as index and the number of participants who have this role
+
 $getNumPlayer();                                         Number of participants                                                                                                                      Number
+
 $getSubjectIDs();                                        Get Corresponding Subject IDs to participant IDs                                                                                            Array with participant ID as index and subject ID as value
+
 $getNumDecisions('varname',round=currentRound);          Number of decisions made                                                                                                               Number
+
 $getNumDecisionsPerGroup('varname',round=currentRound);  Number of decisions made                                                                                                               Array with Group Number as an index
-======================================================== ====================================================================================================================================== ====================
 
-Here are examples of all mentioned funtions:
 
-.. image:: _static/Code3.PNG
-    :alt:  300p
 
-Debugging
-~~~~~~~~~
 
-Small errors can cause the programs not to run. Therefore, error detection is an important issue. First, have a look in the editor which provides a basic syntax checking. Errors are marked by red crosses. If the program is running but not performing in the expected way, you may use the diagnosis mode to find the error.
+Diagnosis tool
+==============
+
+Small errors can cause the programs not to run. Therefore, error detection is an important issue. First, have a look in the editor which provides a basic syntax checking. Errors are marked by red crosses. If the program is running but not performing in the expected way, you may use the diagnosis tool to find the error.
 
 With severe errors the lecture mode can not be started. In order to find the error go through the code and look for errors. Check if the function names are correctly spelled.
 
-Diagnosis tool
---------------
-
-The diagnosis mode is very useful for trouble shooting and testing your game. You can access the diagnosis mode by clicking on the stetoscope icon in the top bar of the lecture mode.
+The diagnosis tool is very useful for trouble shooting and testing your game. You can access the diagnosis tool by clicking on the stetoscope icon in the top bar of the lecture mode.
 
 .. image:: _static/Diagnosissteto.PNG
     :alt:  300p
 
-Clicking on the symbol opens up a space beside the usual display on the lecturer's screen, which shows you all variables and their current values.
+Clicking on the symbol opens up a window beside the usual display on the lecturer's screen, which shows you all variables and their current values.
 
 .. image:: _static/Diagnosis.PNG
     :alt:  300p
