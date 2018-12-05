@@ -338,7 +338,7 @@ Payoff(variable) in €
 
 You can adapt the message that is displayed in the winning notification. Clicking on the little info circles above the boxes will show you what will be displayed if you leave the boxes blank.
 
-.. important:: The winning notification can only be displayed if you also define a (only works together with `Winners' draw`_) on the lecturer side. Otherwise no winner can be determined. Winners are always drawn with a lecturer element.
+.. important:: The winning notification can only be displayed if you also define a (only works together with `Winner's draw`_) on the lecturer side. Otherwise no winner can be determined. Winners are always drawn with a lecturer element.
 
 
 Contract
@@ -462,10 +462,14 @@ Start Button
 
 The start button can be configured according to the needs. 
 
-* Name: You can name the button (e.g. Start Trade).
-* Feature: Instead of starting the current stage, you can also use the start button to jump to different stages. 
-* Confirmation message: you can set if a pop-up should appear after clicking to confirm the action. 
-* Count: You can set the counter which appears after the start button is clicked. It can count decisions (also by role, treatment or group if set). 
+button label
+	You can name the button (e.g. Start Trade).
+feature
+	Instead of starting the current stage, you can also use the start button to jump to different stages. 
+confirmation message
+	You can set if a pop-up should appear after clicking to confirm the action. 
+count
+	You can set the counter which appears after the start button is clicked. It can count decisions (also by role, treatment or group if set). 
 
 Automatic Start
 ---------------
@@ -475,21 +479,18 @@ Automatic Start
 
 The automatic start button allows you to start stages when subjects finished the previous stage.
 
-The mode can be set to:
+mode
+	The mode can be set to:
 
-start if possible
-	if a subjects finishes the previous stage, it is forwarded to the next stage.
+	- start if possible: If a subjects finishes the previous stage, it is forwarded to the next stage.
+	- wait for all: Subjects are only forwarded if everyone in the group is done with the previous stage.
+	- no forwarding: Subjects are not forwarded (This feature is only used if subjects forward them self by clicking on a button. This can be set in additional settings of the input element).
 
-wait for all
-	subjects are only forwared if everyone in the group is done with the previous stage.
-
-no forwarding
-	subjects are not forwarded (This feature is only used if subjects forward themself by clicking on a button. This can be set in additional settings of the input element).
-
-Count
+count
 	You can set the counter which appears after the start button of the previous stage is clicked. It can count decisions (also by role, treatment or group if set).
-Counter
-	Setting this additionally allows you to deactivate the counter completly.
+
+counter
+	Setting this additionally allows you to deactivate the counter completely.
 
 
 
@@ -499,13 +500,13 @@ Winner's Draw
 .. image:: _static/Draw.JPG
     :alt:  300p
 
-This element should be implemented in the last stage and draws a winner from among all participants. The earnings should be calculated individually on the participant side (see [[Winner's_Notification|winning notification]] for participants). You can determine whether single participants or coupled participants shall be drawn. Drawing coupled participants only makes sense if you have defined roles. You can also decide how many winners you want to draw.
+This element should be implemented in the last stage and draws a winner from among all participants. The earnings should be calculated individually on the participant side (see `Winner's notification`_ for participants). You can determine whether single participants or coupled participants shall be drawn. Drawing coupled participants only makes sense if you have defined roles. You can also decide how many winners you want to draw.
 
- Important: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. $maxWin=1000;).
+.. important:: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. :php:`$maxWin=1000;`).
 
-	Hint: For games with two roles it is advisable to draw coupled participants as winners because the possibility that only one of the two participants could be drawn might overshadow considerations of fairness or reciprocity. Experience has shown that earnings of less than 5€ are usually not cashed in. Therefore, games should be calibrated in a way that ensures that earnings are at least 10€.
+.. note:: For games with two roles it is advisable to draw coupled participants as winners because the possibility that only one of the two participants could be drawn might overshadow considerations of fairness or reciprocity. Experience has shown that earnings of less than 5€ are usually not cashed in. Therefore, games should be calibrated in a way that ensures that earnings are at least 10€.
 
-**Important: Winners are only drawn from participants who made a decision to avoid inactive participants to be drawn. Therefore it does not make any sense to put the winners' draw in the first stage.**
+.. important:: Winners are only drawn from participants who made a decision to avoid inactive participants to be drawn. Therefore it does not make any sense to put the winners' draw in the first stage.**
 
 You should draw winners only once in a game as the payoffs codes do not distinguish between rounds.
 
@@ -515,11 +516,8 @@ Lecturer Discrete Choice
 .. image:: _static/Randomdraw.PNG
     :alt:  300p
 
-- Usage
-
 With this element the lecturer/experimenter can make decisions for all participants during the game, e.g. tossing a coin in front of the class and entering the value in classEx so that payoffs can be calculated based on the coin toss.
 
-- Settings
 
 name
 	This name will be displayed on the screen to identify the input button.
@@ -561,23 +559,21 @@ With this element, all contracts that were entered into by participants as well 
 .. image:: _static/Ctable1.PNG
     :alt:  300p
 
-- Functionality
-
 In the contract table you have several tabs where you can jump between. You can see them in the pictures on the right hand side.
 
-Contracts
+contracts
 	lists all contracts made.
 
-Averages
+on average
 	yields overview statistics for each round (mean, median, min, max, std dev)
 
-Chart
+chart
 	show contracts made over time. In case of different quantities it also shows a bubble chart for the combination of quantities and prices.
 
-Predicition
+predicition
 	shows a predicition (if set). To create a prediction the variables $demand and $supply have to be filled in a global program. $supply and $demand should be arrays which contain prices as index and the resulting quantity as a value.
 
-- Settings
+You can make the following settings.
 
 value array
 	gives the name of a (pre-filled) array which contains the role of the participant as index and the respective buyer or seller value as value. This is shown in the table as buyer/seller value.
@@ -596,11 +592,9 @@ Result Element
 
 For displaying the results of a game various types of charts are available. Note that you can only display saved subject variables.
 
-Whenever you can select variables in a field you only need to insert the variable name (e.g. "payoff"). Ordinary input fields require the usual php notation (e.g. "$payoff;").
+Whenever you can select variables in a field you only need to insert the variable name (e.g. "payoff"). All other input fields require the usual notation (e.g. "$payoff;").
 
-The program code does not distingiush between binary 0 and numeric 0. Some result elements, however, cannot display binary 0. Make sure to convert binary 0 in numeric 0 in the program code (e.g. "if($accept == 0) {$accept = 0;}") in case you want to display it in a result element.
-
-Under the header “count", you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). Further, you can determine for some result elements whether you want the button “show results" to be displayed or not. Not displaying the button can be useful, if you want to display several diagrams underneath each other. You do, however, need at least one button per stage. You can use a normal start button element as well.
+Under the setting *count*, you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). 
 
 Results Single / Multiple Choice Questions
 ------------------------------------------
@@ -613,13 +607,13 @@ The results are displayed with percentage bars.
 .. image:: _static/Singlechoice.PNG
     :alt:  300p
 
-The following options can be changed:
+The following settings can be changed:
 
-Count
+count
 	Participants are counted all together (or per treatment / role).
-Show element
+show element
 	Always display element or only if stage is activated.
-Input
+input
 	The variable which should be displayed (here: stage #1 input field #1). 
 
 The element automatically detects if the input is multiple choice or single choice. Hovering over the bars gives the absolute frequency of participants who opted for that option. The element should only be used with input fields with predefined options (otherwise you should use the counter result element).
@@ -627,7 +621,7 @@ The element automatically detects if the input is multiple choice or single choi
 Results Histogram
 ------------------
 
-.. image:: _static/Numericindic.PNG
+.. image:: _static/Numberindic.PNG
     :alt:  300p
 
 .. image:: _static/Hist.PNG
@@ -657,7 +651,7 @@ Count
 	Participants are counted all together or per treatment / role. This can be changed in drop down menu at the bottom.
 
 
-	Hint: All values that are larger than the displayed maximum value are automatically pooled into the last bin.</div>
+.. note:: All values that are larger than the displayed maximum value are automatically pooled into the last bin.
 
 Results Line Chart
 -------------------
@@ -718,7 +712,7 @@ The counter enables you to display the relative frequency with which a specific 
 
 Hovering over the bars gives the absolute frequency of participants who opted for that option. 
 
-Using a multiple choice input field will result in the listing of combined answers. E.g. You can select A, B, C (multiple choice). Then the counter elemnet will display who many percent chose A, A&B, A&C,... If you want to have the items analysed seperately (only A, B, C) you should use the Results Single / Multiple Choice Questions (see above). 
+Using a multiple choice input field will result in the listing of combined answers. E.g. You can select A, B, C (multiple choice). Then the counter element will display who many percent chose A, A&B, A&C,... If you want to have the items analyzed separately (only A, B, C) you should use the Results Single / Multiple Choice Questions (see above). 
 
 Results Game Matrix
 --------------------
@@ -733,10 +727,10 @@ If a game is played with two different roles, the results can be displayed as a 
 
 If you have several rounds, the matrix calculates the results overall rounds. If you want to show temporal structures (e.g. learning), please use the time line diagram.
 
-	Hint: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a program).
+.. note:: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a program).
 
 Other result elements
 ----------------------
 
-Other result elements include likert scales and pie charts.
+Other result elements include Likert scales and pie charts. They will be documented soon.
 
