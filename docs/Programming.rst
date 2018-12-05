@@ -337,6 +337,8 @@ name                 value
 
 All parameters are also available as pre-defined globals variables. All globals variables (including the ones calculated in globals programs) are stored automatically.
 
+The globals variable :php:`$maxWin` is used for limiting the maximum which is paid out via :ref:`Elements:Winner's Draw`.
+
 Functions
 ~~~~~~~~~~
 
@@ -352,6 +354,20 @@ The following functions can be used to retrieve globals variables.
 
 	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
 	-  :php:`$round` the round from which the variable should be retrieved.
+
+----
+
+:php:`$getFreq("varname", $round = $currentRound, $multiple = false)`
+
+	**Function** retrieves the frequencies of values over all participants.
+
+	**Returns** an array with the value as index and the frequency. If not available, it returns an empty array.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+	-  :php:`$multiple` If multiple is set to true, answers from multiple choice questions are decomposed into single answers.
 
 ----
 
@@ -436,19 +452,52 @@ The following functions can be used to retrieve globals variables.
 
 	**Also available** as :php:`$getMaxPerGroup(...)`, :php:`$getMaxPerTreatment(...)` or :php:`$getMaxPerRole(...)` following the same logic as described above for :php:`$getAveragePerRole(...)`.
 
+----
+
+:php:`$getRoles()`
+
+	**Function** retrieves the specific role for each participant
+
+	**Returns** an array with the internal participant ID as index and the respective role. If no roles are available, an empty array is returned.
+	
+----
 
 
-$getFreq('varname',round=currentRound, multiple=false);  Frequency of a variable value (if multiple is set to true, answers from multiple choice questions are decomposed into single answers)  Array with the variable value as index
+:php:`$getTreatments()`
 
-$getRoles();                                             Role for each participant                                                                                                                   Array with the participant number as index and the corresponding role
+	**Function** retrieves the treatment for each participant
 
-$getTreatments();                                        Treatment for each participant                                                                                                              Array with the participant number as index and the corresponding treatment
+	**Returns** an array with the internal participant ID as index and the respective treatment. If no treatments are available, an empty array is returned.
+	
+----
 
-$getNumRoles();                                          Number of roles                                                                                                                        Array with role as index and the number of participants who have this role
+:php:`$getNumRoles()`
 
-$getNumPlayer();                                         Number of participants                                                                                                                      Number
+	**Function** retrieves the total number of roles
 
-$getSubjectIDs();                                        Get Corresponding Subject IDs to participant IDs                                                                                            Array with participant ID as index and subject ID as value
+	**Returns** an array with the role ID as index and the number of participants with this role. If no roles are available, an empty array is returned.
+	
+----
+
+:php:`$getNumPlayer()`
+
+	**Function** retrieves the total number of participants
+
+	**Returns** the number of participants.
+	
+----
+
+:php:`$getSubjectIDs()`
+
+	**Function** retrieves corresponding subject IDs to participant IDs
+
+	**Returns** an array with the internal participant ID as index and the respective subjectID. With no participants it returns an empty array.
+	
+----
+
+$getAveragePriceContract($round = $currentRound)
+
+
 
 $getNumDecisions('varname',round=currentRound);          Number of decisions made                                                                                                               Number
 
