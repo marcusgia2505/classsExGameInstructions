@@ -340,6 +340,7 @@ For histograms, you can also change the settings for the bins and the maximum by
 
 Via the button *previous results* in the lecture menu, you can also access and display results (and their corresponding graphs) of previous sessions.
 
+
 Data
 ====
 
@@ -348,11 +349,11 @@ Excelfile
 
 The excel files contain all variables recorded in the game. A file contains an overview of participants, decisions, contracts (if made), payoffs (if made) and assignment to roles, treatments & groups. The excel file can be downloaded at any time during the game and always shows all currently recorded data. It can also be accessed after a new game has started. In order to get previous data, just select the respective session from the previous results menu. When the game is open, you can download results again via *download as excel*. 
 
-
-x-econ
-~~~~~~~
+xecon
+~~~~~~
 
 The data repository `xecon`_ provides long term secure data storage. It is provided by gesis - Leibniz Institute for Social Sciences in Cologne. It allows to store and publish experimental data sets. Data sets can be directly exported to x-econ (including meta information) and can obtain a DOI to make them citable. The export is automatized so that you only have to select which session to export. classEx creates a ZIP file which is automatically transferred to xecon. You only need an account with xecon. All available meta-information, like number of players, groups, rounds,... are extracted automatically and put to xecon where they can be adjusted.
+
 
 
 Dealing with problems 
