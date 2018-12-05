@@ -43,8 +43,8 @@ Variables are defined by starting with :php:`$`. It does not matter whether the 
 
 .. warning:: Do not use single quotes within double quotes as this may produce errors (e.g. $text="don't"), instead of ' you should use the HTML code &apos; (e.g. $text="don&apos;t") in texts.
 
-Scope of variables
-==================
+Type and scope of variables
+===========================
 
 There are two different scopes: globals and subjects variables. 
 
@@ -65,6 +65,7 @@ Subjects variables are
 
 .. note:: Subjects variables are only available to a specific participant. This means if you want to use the decision of one participant in another's screen, you have to use the functions below to retrieve the decision (e.g. from the partner or group member). You can also retrieve decisions as a globals variable (which then are available to all participants) and retrieve the globals variable for a specific participant.
 
+In addition to globals and subjects variables, there is a third table where data a stored in classEx - contracts. Contracts are always concluded between a buyer and a seller and a contract contains a price and a quantity. Some of the functions below help to retrieve contract data. 
 
 Execution, Synchronization and Lifetime 
 ========================================
@@ -337,7 +338,7 @@ name                 value
 
 All parameters are also available as pre-defined globals variables. All globals variables (including the ones calculated in globals programs) are stored automatically.
 
-The globals variable :php:`$maxWin` is used for limiting the maximum which is paid out via :ref:`Elements:Winner's Draw`.
+The globals variable :php:`$maxWin` is used for limiting the maximum which is paid out via :ref:`Elements:Winner's draw`.
 
 Functions
 ~~~~~~~~~~
@@ -495,14 +496,58 @@ The following functions can be used to retrieve globals variables.
 	
 ----
 
-$getAveragePriceContract($round = $currentRound)
 
+:php:`$getNumDecisions("varname", $round = $currentRound)`
 
+	**Function** retrieves the number of decisions made.
 
-$getNumDecisions('varname',round=currentRound);          Number of decisions made                                                                                                               Number
+	**Returns** the number of decisions made or :php:`null` if no values available.
 
-$getNumDecisionsPerGroup('varname',round=currentRound);  Number of decisions made                                                                                                               Array with Group Number as an index
+	**Arguments** are:
 
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+
+	**Also available** as :php:`$getNumDecisionsPerGroup(...)` following the same logic as described above for :php:`$getAveragePerRole(...)`. Not available perTreatment or perRole.
+
+----
+
+:php:`$setWinner($winnerID)`
+
+	**Function** adds participants to the payoff table.
+
+	**Returns** true if successful, false if not.
+
+	**Argument** is:
+
+	- :php:`$winnerID` the internal participant ID of the winner (mandatory)
+
+	The amount is set directly by the participant in the :ref:`Elements:Winner's_notification`.
+
+----
+
+:php:`$getAvgPriceContract($round = $currentRound)`
+
+	**Function** retrieves the average price of all contracts made.
+
+	**Returns** the maximum or :php:`null` if no values available.
+
+	**Argument** is:
+
+	-  :php:`$round` the round from which the variable should be retrieved. 
+
+----
+
+:php:`$getNumContracts($round = $currentRound, $perSeller = true)`
+
+	**Function** retrieves the number of contracts per seller or buyer.
+
+	**Returns** an array with the internal participant ID as index and the number of contracts. With no data, an empty array is returned.
+
+	**Arguments** are:
+
+	-  :php:`$round` the round from which the variable should be retrieved. 
+	-  :php:`$perSeller` If this is true, contracts are counted for sellers. If it is false, contracts are counted for buyers.
 
 
 
