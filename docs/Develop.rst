@@ -4,7 +4,9 @@
 Develop your own games
 ======================
 
-To develop your own games change to the editing |pic_editmode|. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
+In the following three chapters of this documentation you will learn how to design and implement your own games. The chapter "Develop your own games" will start with the basic functions of the edeting mode and explains some patterns every game in classEx follows - like the way participants are assigned and matched when the game starts. The chapter "Elements" explains all different elements you can use to build up your own game. To avoid that experimenters have to learn a lot of programming, classEx games are designed modular. Thus every element is like a brick you need to construct your game. The last chapter "Programming" shows how to create more powerful, dynamic games by combining already existing elements with some PHP programming.
+
+To develop your own games in classEx change to the editing |pic_editmode|. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
 
 	.. note:: In the editing mode, changes are stored automatically. If you change an element of your game and click next to the element, the element is stored. Most of the elements blink green when they are stored. 
 
@@ -313,10 +315,10 @@ no assignment
 	Participants all are assigned to role 0, treatment 0 and group 0.
 
 treatments
-	This allows you to assign participants to treatments. A division into treatments will distribute participants evenly over treatments. You can select any number of treatments between 1 and 10. Treatments will be distributed according to arrival in the experiment (e.g. with two treatments the first will be treatment 1, the second treatment 2, the third again treatment 1,...). If you have defined groups as well, members of a group will always be assigned to the same treatment.
+	This allows you to assign participants to treatments. A division into treatments will distribute participants evenly over treatments. You can select any number of treatments between 1 and 10. Treatments will be distributed according to arrival in the experiment (e.g. with two treatments the first player will be treatment 1, the second treatment 2, the third again treatment 1,...). If you have defined groups as well, members of a group will always be assigned to the same treatment.
 
 role and group
-	This allows you to assign participants to a number of different roles in the game. Participants will be allocated to role 1, role 2, role 3... alternately. Participants will also be assigned to a group which contains one participant which each role. E.g. if you have defined 3 roles, a group will consists of role 1, role 2 and role 3. If you want to have groups with asymmetric combination of roles please use complex assignment.
+	This allows you to assign participants to a number of different roles in the game. Participants will be allocated to role 1, role 2, role 3... alternately. Participants will also be assigned to a group which contains one participant with each role. E.g. if you have defined 3 roles, a group will consists of role 1, role 2 and role 3. If you want to have groups with asymmetric combination of roles please use complex assignment.
 
 group
 	Allows you to assign participants to groups (all participants will have the same role 0). Groups are filled one after each other. You are free to select any group size. The number of groups is determined automatically by classEx. 
@@ -350,7 +352,7 @@ Random matching with constant roles means randomly matching the subjects into ne
 
 1. The assignment selected must be "role and group". The matching method selected should be "partner".
 
-2. You need to add a globals program and a subjects program in the first repeated stage of your experiment.
+2. You need to add a globals program in the lecturer field in the first repeated stage of your experiment and a subjects program in the participants field.
 
 3. Insert the following code in the globals program:
 
@@ -389,13 +391,13 @@ Random matching with constant roles means randomly matching the subjects into ne
 Further settings
 ----------------
 
-On the page assignment and matching you can further choose if the role should be displayed in the header of the participants page and if the internal ID of the participant should be displayed there as well.
+On the page *assignment and matching* you can further choose if the role should be displayed in the header of the participants page and if the internal ID of the participant should be displayed there as well.
 
 
 Parameters
 ==========
 
-Parameters are global variables that can be adjusted in the lecture mode directly before starting the experimenters. You can define parameters to enable adaptation of the game for lecturers without any knowledge of how to edit games. You can then play the same game several times with different parameters. This feature is very useful if you want to introduce some flexibility in the game.
+Parameters are global variables that can be adjusted in the lecture mode directly before starting an experiment. You can define parameters to enable adaptation of the game for lecturers without any knowledge of how to edit games. You can then play the same game several times with different parameters. This feature is very useful if you want to introduce some flexibility in the game.
 
 .. note:: Parameters are initialized at the start of the game. They are read-only. They are the same for all participants.
 
@@ -408,9 +410,9 @@ Here is an example with a numeric parameter and a select list.
 
 .. image:: _static/param.PNG
 
-For numeric parameters, you have to define a variable name (here $endowment) and a default value. The default value is used, if the lecturer does not change the parameter. On the right hand side, you can define how the parameters are displayed to the lecturer (when they set the parameters in the lecture mode). The should not be bothered with variable names, therefore provide a useful name. If the game is implemented in two languages, you can provide two different names. Additionally, you have to provide a minimum and maximum. You can also provide a unit (e.g. €, meters,...). 
+For *numeric parameters*, you have to define a variable name (here $endowment) and a default value. The default value is used, if the lecturer does not change the parameter. On the right hand side, you can define how the parameters are displayed to the lecturer (when they set the parameters in the lecture mode). They should not be bothered with variable names, therefore providing an easy name is useful. If the game is implemented in two languages, you can provide two different names. Additionally, you have to provide a minimum and maximum. You can also provide a unit (e.g. €, meters,...). 
 
-For select lists, you have to define variable name and default as well. Also a name is required. Fir the options you can specify a label and a respective value.
+For *select lists*, you have to define a variable name and default value as well. Also a name is required. For *options* you can specify a label and a respective value.
 
 .. image:: _static/develop/parameters2.PNG
 	:height: 200px
@@ -423,12 +425,12 @@ In the lecture mode, the lecturer can then set the endowment and choose from dif
 Languages 
 =========
 
-If you defined a second language in the game settings, all text field show up twice so that you can enter the text in the two different languages, here German and English.
+If you defined a second language in the game settings, all text fields show up twice so that you can enter the text in the two different languages, here German and English.
 
 .. image:: _static/Language.PNG
     :alt:  300p
 
-To display only one language in the editing mode, you can click on the flag symbols next to the game name. Then all field with the respective language are hidden. Note that this does not mean that the language is deactived, but only that you can hide some fields when implementing the game.
+To display only one language in the editing mode, you can click on the flag symbols next to the game name. Then all fields with the respective language are hidden. Note that this does not mean that the language is deactived when the game is played, but only that you can hide some fields while implementing the game.
 
 .. image:: _static/Languageonoff.PNG
     :alt:  300p
