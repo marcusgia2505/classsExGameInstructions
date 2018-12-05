@@ -4,7 +4,9 @@
 Develop your own games
 ======================
 
-To develop your own games change to the editing |pic_editmode|. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
+In the following three chapters of this documentation you will learn how to design and implement your own games. The chapter "Develop your own games" will start with the basic functions of the edeting mode and explains some patterns every game in classEx follows - like the way participants are assigned and matched when the game starts. The chapter "Elements" explains all different elements you can use to build up your own game. To avoid that experimenters have to learn a lot of programming, classEx games are designed modular. Thus every element is like a brick you need to construct your game. The last chapter "Programming" shows how to create more powerful, dynamic games by combining already existing elements with some PHP programming.
+
+To develop your own games in classEx change to the editing |pic_editmode|. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
 
 	.. note:: In the editing mode, changes are stored automatically. If you change an element of your game and click next to the element, the element is stored. Most of the elements blink green when they are stored. 
 
