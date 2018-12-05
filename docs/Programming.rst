@@ -98,11 +98,11 @@ Another exception is that you can repeat globals programs every 2 seconds. This 
 Lifetime
 ~~~~~~~~~
 
-Variables and their values can be used after their declaration during the whole game. They can be read and overwritten at any point after their declaration. 
+Variables and their values can be used after their declaration during the whole game. They can be read (and also overwritten) at any point after their declaration. After the last stage of the game, all subjects variables (which are not decision input or were stored) are deleted. Globals variables are automatically stored.
 
 Subjects values can only be changed by subjects programs and globals values only by globals programs.
 
-If you e.g. set :php:`$a=1;`in stage 1 (as a globals variable), you can use this value in all stage after stage 1 as well. Keep in mind that for subjects variables this only holds true for the participant's own variables.
+If you e.g. set :php:`$a=1;` in stage 1 (as a globals variable), you can use this value in all stage after stage 1 as well. Keep in mind that for subjects variables this only holds true for the participant's own variables.
 
 
 Description of functions in the documentation
@@ -124,12 +124,12 @@ Arguments
 	A function has arguments which are the values the function is called with. In this case, the function has four arguments. The first argument is mandatory, the other three arguments are optional. Arguments can be strings, numbers or variables.
 
 Arguments without default value (mandatory)
-	Arguments which are not marked with a "="-sign and a default value are *mandatory*. This means you have to specify them in order to make the function work. In the example, you have to specify the variable name "varname". The quotes indicate that you have to specify it as a string. 
+	Arguments which are **not** marked with a :php:`=` sign and a default value are *mandatory*. This means you have to specify them in order to make the function work. In the example, you have to specify the variable name :php:`"varname"`. The quotes indicate that you have to specify it as a string. 
 
 	.. note:: Note that variables names in functions are specified without the $ sign.
 
 Arguments with default value (optional)
-	All the other arguments in the function have default values which means that they are optional. You can specify the function with only one parameter as well. As default the values after the "="-sign are taken. In the example, the variable $currentRound (which is available as pre-defined global variable) is taken as default for the round. If you want to use a different round, you have to overwrite the default value. The same holds true for the other arguments. $partnerRole and $no_decision are set to *null* as a default, where *null* means no value.
+	All the other arguments in the function have default values which means that they are optional. You can specify the function with only one parameter as well. As default the values after the :php:`=` sign are taken. In the example, the variable :php:`$currentRound` (which is available as pre-defined global variable) is taken as default for the round. If you want to use a different round, you have to overwrite the default value. The same holds true for the other arguments. :php:`$partnerRole` and :php:`$no_decision` are set to :php:`null` as a default, where :php:`null` means no value.
 
 	Here are some examples:
 
@@ -148,7 +148,7 @@ Arguments with default value (optional)
 	$findVariablePartner("varname", $round, null, 0);
 
 
-.. note:: If you want to change some of the default values in arguments at the end of the function, you also have to specify the arguments before the argument you want to change. You can see this in the last code example where want to leave $partnerRole on its default value and only change $no_decision.
+.. note:: If you want to change some of the default values in arguments at the end of the function, you also have to specify the arguments before the argument you want to change. You can see this in the last code example where want to leave :php:`$partnerRole` on its default value and only change :php:`$no_decision`.
 
 
 
@@ -159,89 +159,170 @@ Variables for participants (subjects)
 Pre-Defined Variables
 ~~~~~~~~~~~~~~~~~~~~~~
 
-============== =========
-Variable Name  Value
-============== =========
-$lang          Actual language (0: German, 1: English, 2: Spanish)
-$round         Current round
-$id            participant ID (unique in all games, decisions are stored with the participant ID)
-$subject       Subject ID (unique in game, starts from 1,...)
-$role          Role ID (if set)
-$treatment     Treatment ID (if set)
-$group         Group ID (if set)
-$signID        Private signature (for contracts)
-$tic           External ID (if set at login or provided with URL)
-============== =========
+=================  =====
+variable name  	   value
+=================  =====
+:php:`$lang`       Current language (0: German, 1: English, 2: Spanish)
+:php:`$round`      Current round
+:php:`$id`         Participant ID (unique in all games, decisions are stored with the participant ID)
+:php:`$subject`    Subject ID (unique in game, starts from 1,...)
+:php:`$role`       Role ID (if set)
+:php:`$treatment`  Treatment ID (if set)
+:php:`$group`      Group ID (if set)
+:php:`$signID`     Private signature (for contract elements)
+:php:`$tic`        External ID (if set at login or provided with URL)
+=================  =====
 
-The variables $group, $role and $treatment can be overwritten in a subjects program.
+The variables :php:`$group`, :php:`$role` and :php:`$treatment` can be overwritten in a subjects program.
 
-.. note:: Pre-defined variables are not saved automatically in the subjects table. Therefore, they can only be retrieved with e.g. $findVariablePartner(...), $getValues(...) or other functions if they are saved before.
+.. note:: Pre-defined variables are not saved automatically in the subjects table. Therefore, they can only be retrieved with e.g. :php:`$findVariablePartner(...)`, :php:`$getValues(...)` or other functions if they are saved before.
 
 Functions to retrieve variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following functions can be used to retrieve variables. If you want to access the name of a variable, you put the name in quotation marks. If you want to access the value of a variable, you add a $ in front of the variable name. 
+The following functions can be used to retrieve subjects variables. 
 
 
-=========================================================================================== ================================================= ==============
-Function name                                                                               Calculates                                        Returns
-=========================================================================================== ================================================= ==============
-$findVariablePartner('varname', round=currentRound, $partnerRole=null, $no_decision=null);  Returns the decision of the partner               Variable value
-$findGroupAverage('varname',round=currentRound,includingOwn=false);                         Average of a variable per group                   Array with group number as index
-$findGroupSum('varname',round=currentRound,includingOwn=false);                             Sum of a variable                                 Sum as number, 0 otherwise
-$findGroupFreq('varname',round=currentRound,includingOwn=false);                            Frequency of specific decisions by group members  Array with frequency of each decision
-$findSold(round = currentRound)                                                             For a contract table: finds sell                  Array with number of unit (1,2,...) and corresponding price
-$findBought(round = currentRound)                                                           For a contract table: finds buy                   Array with number of unit (1,2,...) and corresponding price
-=========================================================================================== ================================================= ==============
+:php:`$findVariablePartner("varname", $round = $currentRound, $partnerRole = null, $no_decision = null);`
 
-Here are examples of all mentioned funtions:
+	**Function** retrieves the variable from another participant in the same group. The function makes sure that participants always get feedback, which can be important in order to avoid disappointing participants. Certainly, cloned or random observations may have to be deleted prior to using data for research. 
 
-.. image:: _static/Code1.PNG
-    :alt:  300p
+	**Returns** variable of the other participants. In case the other has not made a decision, it tries to clone a decision from a different participant which has the respective role but is in a different group. If :php:`$no_decision` is specified, the function returns the value of  :php:`$no_decision` if no value is available. In this case, the function does not look for a cloned decision.
+
+	.. note:: The function may retrieve a value if the other participant submitted an empty form. In this case the value is an empty string :php:`""` or :php:`null`.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+	-  :php:`$partnerRole` the role of the partner can be specified. E.g. in a group of 3 participants (role 1, role 2 and role 3), it is necessary to specify from which partner to take the variable from. 
+	-  :php:`$no_decision` can be used to provide random values in case no decision was made. 
+
+	**Examples** are provided in the section `Description of functions in the documentation`_.
+
+----
+
+:php:`$findGroupAverage("varname", $round = $currentRound, $includingOwn = false);`
+
+	**Function** retrieves the average of a variable for the own group. 
+
+	**Returns** the average value, or 0 otherwise.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+	-  :php:`$includingOwn` specifies if the own value should be included or not.
+	
+
+----
+
+:php:`$findGroupSum("varname", $round = $currentRound, $includingOwn = false);`
+
+	**Function** retrieves the sum of a variable for the own group. 
+
+	**Returns** the sum, or 0 otherwise.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+	-  :php:`$includingOwn` specifies if the own value should be included or not.
+	
+
+----
+
+:php:`$findGroupFreq("varname", $round = $currentRound, $includingOwn = false);`
+
+	**Function** retrieves the frequency of each value of a variable for the own group. 
+
+	**Returns** an array with the value as index and the frequency as value. E.g. :php:`$returnedValue = array(1=>12, 2=>13)` would indicate that the value 1 was chosen 12 times, and the value 2 was chosen 13 times. If no decisions were made, an empty array is returned.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+	-  :php:`$includingOwn` specifies if the own value should be included or not.
+	
+
+----
+
+:php:`$findSold($round = $currentRound);`
+
+	**Function** retrieves the number of items sold (in a contract element)
+
+	**Returns** an array with the unit number as index and the corresponding price as value, or an empty array otherwise. E.g. :php:`$returnedValue = array(1=>12, 2=>13)` would indicate that the first unit was sold for 12, and the second unit was sold for 13. If no decisions were made, an empty array is returned.
+
+	**Arguments** are:
+
+	-  :php:`$round` the round from which the variable should be retrieved. 
+	
+----
+
+:php:`$findBought($round = $currentRound);`
+
+	**Function** retrieves the number of items bought (in a contract element). The logic is exactly the same as in :php:`$findSold(...);`
+
+----
+
+Here you can find some coding examples:
+
+.. code:: php
+
+	/* get group average of variable test, from previous round, including own */
+	$groupAvg = $findGroupAverage("test", $round - 1, true);
+
+	/* get sum of variable test2, from current round, not including own */
+	$groupSum = $findGroupSum("test2");
+
+	/* get frequency of value 1 in variable choice */
+	$groupFreq = $findGroupFreq("choice");
+	echo $groupFreq[1];
+
+	/* get all items sold in the previous round and calculate total revenues and amount sold */
+	$sells = $findSold($round-1);
+	$revenues = 0;
+	$amountSold = 0;
+	foreach ($sell as $unit => $price) {
+		$revenues += $price;
+		$amountSold++;
+	}
 
 
-
-The elements of the functions mean the following:
-
-varname
-	here, you need to enter the name of the variable you want to retrieve, for example 'price'
-
-round = currentRound
-	this means that the default is set to the current round. If you want to access the variable of a different round, you must enter the round in the function. If you want to set the round to the current round (you need to do this if you add another parameter behind the round), you simply write $round in the expression.
-
-includingOwn = false
-	for averages, sums and frequencies, you can decide whether you want to include the own value or not. The default is set to *false* which means that values are calculated over all other subjects, excluding the own value. If you want to include the own value, you need to enter *true* in the function
-
-$partnerRole = null
-	if you only have two participants in a group, the other participant is automatically the partner. However, you can specify which partner is meant if you have more than two participants in one group. To specify a participant, just write the role number in the expression.
-
-$no_decision = null
-	this means that the default is set that if the partner has not made a decision and you try to access it, the function gives you null.
-
-
-	IMPORTANT NOTICE: If you want to add an element that, for example, is placed at the third position in the function, you have to specify the elements before that, too. Otherwise, the element is used at the wrong position for the wrong expression.
 
 
 
 Function to save variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To save calculated variables you must use the following function:
+To save any variables you can use the following function:
 
-**$save('varname', value);**
+:php:`$save("varname", $value);`
 
-The elements of the function mean the following:
+	**Function** stores a value in the subjects table.
 
-varname
-	enter the name as which you want to save the calculated variable
+	**Returns** true if the storage was successful, false in case of an error.
 
-value
-	enter the value which should be saved for it. Here, you can insert a variable such as $price; or a calculation such as 10-$price
+	**Arguments** are:
 
-Here is an example:
+	-  :php:`"varname"` the variable name (mandatory).
+	-  :php:`$value` the value to be stored. The value can also be a variable itself.
+	
 
-.. image:: _static/Code2.PNG
-    :alt:  300p
+Here you can find some coding examples:
+
+.. code:: php
+
+	/* store the value 1 as variable "shown" */
+	$save("shown", 1);
+
+	/* store the value 7 as variable "test" */
+	$a = 7;
+	$save("test", $a);
+
+.. note:: Note that decision inputs are stored automatically with no need for :php:`$save(...)`. All other variables used in the subjects program are not stored automatically.
+
+.. note:: Keep in mind that you should only retrieve variables at least one stage after saving them. See `Synchronization`_.
 
 Variables for lecturers (globals)
 =================================
