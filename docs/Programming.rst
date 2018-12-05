@@ -579,3 +579,35 @@ Clicking on the symbol opens up a window beside the usual display on the lecture
 
 The different tabs allow you to access the globals or the variables for each participant. This makes it much programming and error finding much easier than having to jump back and forth between the lecture mode and the editing mode.
 
+Javascript
+==========
+
+.. warning:: This section has not been updated yet.
+
+
+- Reading php variables
+
+To read php variables one currently neads a two step approach:
+	* write php variable in the text field
+	* parse textfield content in javascript using jquery
+	* [optional] hide textfield
+
+Assume we have a php variable <code>$foo</code> that containing an array we want to use as an javascript array.
+
+- Textfield content:
+
+	| <pre><div id="php_var_foo" hidden>$foo;</div></pre>
+	| The id does not need to have this format, but it must be unique and match the variable used in the Javascript field
+
+- Javascript-field content:
+
+	| var foo = JSON.parse($('#php_var_foo').html());
+	| $('#php_var_foo').parent().hide(); // optional
+
+This finds the html element with the id of the div containing the variable content. It's inner html (the content) is taken and than parsed. Now the variable foo in javascript contains the content of the php variable foo.
+
+[Optional] Hide the parent of the div containing the variable.
+
+- Writing php variables
+
+This can be achieved via hidden input fields that are triggered via JQuery calls

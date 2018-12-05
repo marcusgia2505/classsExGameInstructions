@@ -4,7 +4,7 @@
 Develop your own games
 ======================
 
-In the following three chapters of this documentation you will learn how to design and implement your own games. The chapter "Develop your own games" will start with the basic functions of the edeting mode and explains some patterns every game in classEx follows - like the way participants are assigned and matched when the game starts. The chapter "Elements" explains all different elements you can use to build up your own game. To avoid that experimenters have to learn a lot of programming, classEx games are designed modular. Thus every element is like a brick you need to construct your game. The last chapter "Programming" shows how to create more powerful, dynamic games by combining already existing elements with some PHP programming.
+In the following three chapters of this documentation you will learn how to design and implement your own games. The chapter "Develop your own games" will start with the basic functions of the editing mode and explains some patterns every game in classEx follows - like the way participants are assigned and matched when the game starts. The chapter "Elements" explains all different elements you can use to build up your own game. To avoid that experimenters have to learn a lot of programming, classEx games are designed modular. Thus every element is like a brick you need to construct your game. The last chapter "Programming" shows how to create more powerful, dynamic games by combining already existing elements with some PHP programming.
 
 To develop your own games in classEx change to the editing |pic_editmode|. In the editing mode, you can create games according to your own needs. Games can be clicked together with an easy-to-use modular backend system. You divide your game in stages and you can add different elements (input, output, calculation,...) for your games.
 
@@ -261,7 +261,7 @@ Display condition
 
 	.. code:: php
 
-	$round>2 || ($role==1 & $treatment==2)
+		$round>2 || ($role==1 & $treatment==2)
 
 
 	You can combine different combinations with the and-operator & and the or-operator ||. The example only displays the element if the round is higher than 2 (so from round 3 on) or if the role is 1 and the treatment is 2 (independent of the round).
