@@ -297,7 +297,7 @@ The contract input field is also outdated. Please use the `Contract`_ element in
 Additional settings
 -------------------
 
-.. image:: _static/elements/additionalsettings.png
+.. image:: _static/elements/additional_input.png
     	:width: 49%
 
 
@@ -309,7 +309,7 @@ button label
 confirmation message
 	If you enter a text here, participants are asked for confirmation before submitting. E.g. you can enter "Are you sure?" which is then displayed together with an OK button to participants.
 
-hide decision after sending
+hide decision after submitting
 	After submitting, participants see a confirmation message and their input. If you switch this setting on, the input is not displayed anymore after submitting.
 
 directly to next stage
@@ -328,8 +328,8 @@ Winner's Notification
 
 If a game is played with real payoffs, this element displays the payoff code to participants.  
 
-.. image:: _static/Winner.PNG
-    :alt:  300p
+.. image:: _static/elements/notfication.png
+    :height: 300px
 
 A winning notification is necessary for games with monetary payoff. The participants who are randomly drawn receive a winning notification as well as a code to cash in their earnings. 
 
@@ -354,8 +354,8 @@ With this element, you can enable participants to conclude contracts. By adjusti
 The contracts made can be shown at the lecturer's screen with the `Contract table`_. In addition, there are special functions in globals and subjects programs to retrieve contracts (see :ref:`Programming`). All contracts are also stored in the standard excel file which can be retrieved in the data menu. 
 
 
-.. image:: _static/Contractparticipant.JPG
-    :alt:  300p
+.. image:: _static/elements/buyer_setting.png
+    :width: 70%
 
 Contracts can be set up by adding contract elements **both for buyers and sellers**. 
 
@@ -366,8 +366,13 @@ sell offers/buy offers
 set quantities
 	allows to set quantities (otherwise quantity is always 1). With quantities, prices are set as price/unit.
 
-no signature
-	allows to disable the signature. The signature is needed for sell and buy offers to be send to a specific person. E.g. if the buyer can make buy offers, she needs the signature of the seller to send the offer to.
+hide ID
+	allows to disable the ID. The ID is needed for sell and buy offers to be send to a specific person. E.g. if the buyer can make buy offers, she needs the ID of the seller to send the offer to.
+
+	.. note:: Contract elements use the subject ID as ID.
+
+public
+	If you activate this, offers are made to all other subjects who can accept them. This feature is still in a beta version. So test it with care.
 
 max # contracts
 	Maximum number of (accepted) contracts limits how many contracts can be made by a subject.
@@ -381,14 +386,44 @@ maximum quantity
 products
 	You can specify a name (or a small image) and the initial amount of the good (e.g. the seller has 1 unit, the buyer 0 units).
 
-Payoff Matrix Game
+By clicking on additional settings, further advanced settings can be adjusted.
+
+.. image:: _static/elements/buyer_additionalsettings.png
+    :width: 70%
+
+retractable
+	This determines if an offer can be withdrawn or not. The default is that offers can be withdrawn.
+	
+concurrent offers
+	In case of public offers, this determines if more offers can be made at the same time. Note that this is only checked for the respective contract element. If you provide more contract elements to the same persons the check is only made for each contract element.
+
+message
+	You can provide a static message (e.g. about the buyer type) with the contract.
+
+proprietary trading
+	This allows to sell to or buy from yourself.
+
+label price
+	The label price can be changed, e.g. to wage. The label is shown in the price field if the field is empty.
+
+label quantity
+	The label quantity can be changed, e.g. to hours. The label is shown in the quantity field if the field is empty.
+
+label /unit
+	The label /unit can be changed, e.g. to /hour. The label is shown at the price input field.
+
+permit
+	If you enter a text or a number here, contracts can only be concluded if you enter the number.
+
+
+Payoff matrix game
 ~~~~~~~~~~~~~~~~~~
 
 
 
 .. image:: _static/elements/matrix1.png
     :width:  49%
-.. image:: _static/elements/matrix2.png
+.. image:: _static/elements/matrixresult.png
     :width:  49%
 
 
@@ -406,7 +441,7 @@ Camera
 ~~~~~~
 
 .. image:: _static/Camera1.PNG
-    :width: 100%
+    :width: 49%
 .. image:: _static/Camera2.PNG
     :width: 49%
 
@@ -447,20 +482,22 @@ This element allows you to display the filled in input element of the previous s
 Elements for lecturers
 ======================
 
-Start Button and Automatic Start
+Start button and automatic start
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The start button is used to initiate a stage. Each stage '''requires a start button''' apart from stages that has a result element. Result elements have their own buttons. 
+The start button is used to initiate a stage. 
 
-There are two options. A start button which has to be clicked by the experimenter or a automatic start.
+.. important:: Each stage requires a start button or an automatic start. If stages have result elements, this is not true as result elements automatically provide a button to start the stage (if not other button is defined).
 
-Start Button
+There are two options. A start button which has to be clicked by the experimenter or an automatic start.
+
+Start button
 ------------
 
-.. image:: _static/Startbutton.PNG
-    :alt:  300p
+.. image:: _static/elements/start.png
+    :height: 150px
 
-The start button can be configured according to the needs. 
+The start button can be configured according to the own needs. 
 
 button label
 	You can name the button (e.g. Start Trade).
@@ -468,16 +505,20 @@ feature
 	Instead of starting the current stage, you can also use the start button to jump to different stages. 
 confirmation message
 	You can set if a pop-up should appear after clicking to confirm the action. 
+round
+	You can set if the current round number should be displayed or not.
 count
 	You can set the counter which appears after the start button is clicked. It can count decisions (also by role, treatment or group if set). 
 
-Automatic Start
+Automatic start
 ---------------
 
-.. image:: _static/Automaticstart.PNG
-    :alt:  300p
+.. image:: _static/elements/automatic.png
+   :height: 150px
 
-The automatic start button allows you to start stages when subjects finished the previous stage.
+The automatic start button allows you to start stages when subjects finished the previous stage. With this feature, they can moved through the game autonomously. 
+
+.. important:: With an automatic start, classEx runs a script which is executed every 5 seconds to push finished participants forward. This only works if the lecture mode is open. If the lecture mode is not open, participants are not forwarded.
 
 mode
 	The mode can be set to:
@@ -485,36 +526,42 @@ mode
 	- start if possible: If a subjects finishes the previous stage, it is forwarded to the next stage.
 	- wait for all: Subjects are only forwarded if everyone in the group is done with the previous stage.
 	- no forwarding: Subjects are not forwarded (This feature is only used if subjects forward them self by clicking on a button. This can be set in additional settings of the input element).
-
+counter
+	Setting this additionally allows you to deactivate the counter completely.
+round
+	You can set if the current round number should be displayed or not.
 count
 	You can set the counter which appears after the start button of the previous stage is clicked. It can count decisions (also by role, treatment or group if set).
 
-counter
-	Setting this additionally allows you to deactivate the counter completely.
 
 
-
-Winner's Draw
+Winner's draw
 ~~~~~~~~~~~~~
 
-.. image:: _static/Draw.JPG
-    :alt:  300p
+.. image:: _static/elements/winnersdraw.png
+    :width: 70%
 
-This element should be implemented in the last stage and draws a winner from among all participants. The earnings should be calculated individually on the participant side (see `Winner's notification`_ for participants). You can determine whether single participants or coupled participants shall be drawn. Drawing coupled participants only makes sense if you have defined roles. You can also decide how many winners you want to draw.
+This element should be implemented in the last stage and draws a winner among all participants. The earnings have to be calculated individually on the participant side (see `Winner's notification`_ for participants). You should draw winners only once in a game as the payoffs codes do not distinguish between rounds.
+
+
+method
+	You can determine whether single participants or coupled participants shall be drawn. Drawing coupled participants only makes sense if you have defined roles. For games with two roles it is advisable to draw coupled participants as winners because the possibility that only one of the two participants could be drawn might overshadow considerations of fairness or reciprocity. 
+
+number
+	You can also decide how many participants or groups you want to draw.
 
 .. important:: Payoffs per game are restricted to 100€ per default. If you need higher payoffs, you have to overwrite the variable $maxWin in a global program (e.g. :php:`$maxWin=1000;`).
 
-.. note:: For games with two roles it is advisable to draw coupled participants as winners because the possibility that only one of the two participants could be drawn might overshadow considerations of fairness or reciprocity. Experience has shown that earnings of less than 5€ are usually not cashed in. Therefore, games should be calibrated in a way that ensures that earnings are at least 10€.
+.. note:: Experience has shown that earnings of less than 5€ are usually not cashed in. Therefore, games should be calibrated in a way that ensures that earnings are at least 10€.
 
-.. important:: Winners are only drawn from participants who made a decision to avoid inactive participants to be drawn. Therefore it does not make any sense to put the winners' draw in the first stage.**
+.. important:: Winners are only drawn from participants who made a decision to avoid inactive participants to be drawn. Therefore it does not make any sense to put the winners' draw in the first stage.
 
-You should draw winners only once in a game as the payoffs codes do not distinguish between rounds.
 
-Lecturer Discrete Choice
+Lecturer discrete choice
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: _static/Randomdraw.PNG
-    :alt:  300p
+    :width: 70%
 
 With this element the lecturer/experimenter can make decisions for all participants during the game, e.g. tossing a coin in front of the class and entering the value in classEx so that payoffs can be calculated based on the coin toss.
 
@@ -538,48 +585,46 @@ update
 	If you switch on the update, the element will check every two second if new participants arrived (only necessary when you switched on "for each participant").
 
 Contract table
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 
-.. image:: _static/Contracttable.JPG
-    :alt:  300p
 
-With this element, all contracts that were entered into by participants as well as a chart and the average are displayed on the lecturer's screen.
+With this element, all contracts that were concluded by participants as well as a chart and the average are displayed on the lecturer's screen. In the contract table, you have several tabs where you can switch between. You can see them in the figures below. 
 
+The first tabs list the contracts for each round separately. If set, you can also display seller costs and buyer values along the with the contract.
 
 .. image:: _static/Ctable4.PNG
     :alt:  300p
 
+The tab *on average* provides summary statistics for each round (mean, median, min, max, std dev).
+
 .. image:: _static/Ctable2.PNG
     :alt:  300p
+
+The tab *chart*	shows contracts made over time. In case of different quantities, it also shows a bubble chart for the combination of quantities and prices.
 
 .. image:: _static/Ctable3.PNG
     :alt:  300p
 
+The tab *prediction* shows a predicition (if set). To create a prediction the variables :php:`$demand` and :php:`$supply` have to be filled in a global program. :php:`$supply` and :php:`$demand` should be arrays which contain prices as index and the resulting quantity as a value.
+
 .. image:: _static/Ctable1.PNG
     :alt:  300p
 
-In the contract table you have several tabs where you can jump between. You can see them in the pictures on the right hand side.
+The following settings can be adapted:
 
-contracts
-	lists all contracts made.
+.. image:: _static/elements/contracttable.png
+    :width: 70%
 
-on average
-	yields overview statistics for each round (mean, median, min, max, std dev)
-
-chart
-	show contracts made over time. In case of different quantities it also shows a bubble chart for the combination of quantities and prices.
-
-predicition
-	shows a predicition (if set). To create a prediction the variables $demand and $supply have to be filled in a global program. $supply and $demand should be arrays which contain prices as index and the resulting quantity as a value.
-
-You can make the following settings.
 
 value array
 	gives the name of a (pre-filled) array which contains the role of the participant as index and the respective buyer or seller value as value. This is shown in the table as buyer/seller value.
 
-label
-	all labels in the table can be changed according to needs (seller/buyer/seller value/buyer value/price).
+label seller/buyer/price
+	all labels in the table can be changed according to needs 
+
+label seller value/buyer value
+	If these are left empty, the columns seller value or buyer value are not displayed. If a text is provided, columns are labeled with the text and classEx read the value array to provide seller/buyer values.
 
 profit variables
 	can be left empty.
@@ -587,38 +632,42 @@ profit variables
 show quantities
 	additionally shows quantities in the contract table and a bubble chart with quantities and prices.
 
-Result Element
+Result element
 ~~~~~~~~~~~~~~~
 
-For displaying the results of a game various types of charts are available. Note that you can only display saved subject variables.
+For displaying the results of a game various types of charts are available. Note that you can only display saved subject variables. Decisions for input fields are saved automatically.
 
 Whenever you can select variables in a field you only need to insert the variable name (e.g. "payoff"). All other input fields require the usual notation (e.g. "$payoff;").
 
 Under the setting *count*, you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). 
 
-Results Single / Multiple Choice Questions
+Results single / multiple choice questions
 ------------------------------------------
-
-.. image:: _static/Smc.JPG
-    :alt:  300p
-
-The results are displayed with percentage bars.
 
 .. image:: _static/Singlechoice.PNG
     :alt:  300p
 
+The results are displayed with percentage bars. The element automatically detects if the input is multiple choice or single choice. Hovering over the bars gives the absolute frequency of participants who opted for that option. The element should only be used with input fields with predefined options (otherwise you should use the counter result element).
+
+.. image:: _static/elements/singlechoice.png
+    :width: 70%
+
 The following settings can be changed:
 
-count
-	Participants are counted all together (or per treatment / role).
+variable
+	Provide the name of the subjects variable.
+
 show element
 	Always display element or only if stage is activated.
-input
-	The variable which should be displayed (here: stage #1 input field #1). 
 
-The element automatically detects if the input is multiple choice or single choice. Hovering over the bars gives the absolute frequency of participants who opted for that option. The element should only be used with input fields with predefined options (otherwise you should use the counter result element).
+round
+	Select if only the current round or all rounds should be displayed.
 
-Results Histogram
+count
+	Participants are counted all together (or per treatment / role / group).
+
+
+Results histogram
 ------------------
 
 .. image:: _static/Numberindic.PNG
@@ -629,26 +678,26 @@ Results Histogram
 
 The following options can be changed:
 
-Variable
+variable
 	Choose which variable you want to display
 
-Show element
+show element
 	Element is always displayed or only if stage is activated.
 
-Min
+min
 	Minimum of the histogram (Default 0)
 
-Max
+max
 	Maximum of the histogram 
 
-Bin
-	How the values shall be pooled into “bins". For example, if you define the bin width: 10, the data will be pooled in brackets of ten.
+bin
+	How the values shall be pooled into *bins*. For example, if you define the bin 10, the data will be pooled in brackets of ten.
 
-X-Line
+x-line
 	Vertical Line is drawn at this x-value (e.g. to specify a correct or true value)
 
-Count
-	Participants are counted all together or per treatment / role. This can be changed in drop down menu at the bottom.
+count
+	Participants are counted all together or per treatment / role / group.
 
 
 .. note:: All values that are larger than the displayed maximum value are automatically pooled into the last bin.
@@ -656,81 +705,131 @@ Count
 Results Line Chart
 -------------------
 
-.. image:: _static/Result_linechart.PNG
-    :alt:  300p
-
 .. image:: _static/Commons.PNG
     :alt:  300p
 
+A line chart enables the display of the results of several rounds. The line chart automatically calculates the average of the input variable over all subjects. If the input variable is a discrete choice variable, the result is displayed in percent of choices.
 
-A line chart enables the display of the results of several rounds. The following options can be changed:
 
-Count
-Participants are counted all together (or per treatment / role).
+.. image:: _static/elements/linechart.png
+    :width: 70%
 
-Button
-	A button to start the result stage is displayed (or not).
-Input
-	The variable which should be displayed (here: stage #496 input field #1 (variable name "beitrag")). 
-Max x-Axis
-	Maximum of x-Axis
-Max y-Axis
-	Maximum of y-Axis
-Label x-Axis
-	Label of x-Axis
-Label y-Axis
-	Label of y-Axis
+The following settings are available:
 
-If no maximum is determined, the programme will automatically use the maximum of the input field. You can label both axes.
+variable
+	The variable which should be displayed. 
+minimum/maximum/label x-axis
+	Minimum, maximum and label of x-axis
+minimum/maximum/label y-axis
+	Minimum, maximum and label of y-axis
+show element
+	Always display element or only if stage is activated.
+input with array (globals)
+	If you provide the name of a globals variable here, the variable setting is overwritten and data are taken directly from the globals array. The array should have the x-value as index and the respective y-value. 
+count
+	Participants are counted all together (or per treatment / role / group).
 
-The line chart automatically calculates the average of the input variable over all subjects, per group or per treatment.
-If the input variable is a binary variable the result is diaplayed in percent.
 
-Results Bubble
+
+
+Results bubble
 ---------------
 
-.. image:: _static/Bubble.JPG
+.. image:: _static/elements/bubble.png
+    :width: 70%
+
+.. image:: _static/elements/bubble2.png
     :alt:  300p
 
-.. image:: _static/Bubble2.JPG
-    :alt:  300p
+The bubble chart displays the linkage between to continous decisions, e.g. amount sent and amount returned. 
 
-Displays a bubble chart, which can be useful for trust games, for example.
+variable x-axis
+	The variable which should be displayed on the x-axis. 
+minimum/maximum/label x-axis
+	Minimum, maximum and label of x-axis
+minimum/maximum/label y-axis
+	Minimum, maximum and label of y-axis
+show element
+	Always display element or only if stage is activated.
+input with array (globals)
+	If you provide the name of a globals variable here, the variable setting is overwritten and data are taken directly from the globals array. The array should have the x-value as index and the respective y-value. 
+count
+	Participants are counted all together (or per treatment / role / group).
 
-You can define the variables to be displayed on the x-axis and the y-axis as well as a minimum and a label for each axis.
+
+
  
-Results Counter
+Results counter
 ----------------
 
-.. image:: _static/Counter.JPG
-    :alt:  300p
-
 .. image:: _static/Bc.PNG
-    :alt:  300p
+    :width: 70%
 
-The counter enables you to display the relative frequency with which a specific answer was chosen. If participants are required to choose a pair of answers, like in the faces beauty contest for example, you can also display how often a specific pair of answers was chosen.
+The counter enables you to display the relative frequency with which a specific answer was chosen. Hovering over the bars gives the absolute frequency of participants who opted for that option. The counter can be useful if the set of answers is open (e.g. text input). It lists all variable inputs according to their frequency.
 
-Hovering over the bars gives the absolute frequency of participants who opted for that option. 
+.. note:: Using a multiple choice input field will result in the listing of combined answers. E.g. You can select A, B, C (multiple choice). Then the counter element will display who many percent chose A, A&B, A&C,... If you want to have the items analyzed separately (only A, B, C) you should use `Results single / multiple choice questions`_. 
 
-Using a multiple choice input field will result in the listing of combined answers. E.g. You can select A, B, C (multiple choice). Then the counter element will display who many percent chose A, A&B, A&C,... If you want to have the items analyzed separately (only A, B, C) you should use the Results Single / Multiple Choice Questions (see above). 
 
-Results Game Matrix
+.. image:: _static/elements/counter.png
+    :width: 70%
+
+variable
+	The variable which should be displayed. 
+maximal number
+	This limits the maximal number of answers to be displayed. E.g. if this is set to 10, only the 10 most frequent answers are shown.
+show element
+	Always display element or only if stage is activated.
+count
+	Participants are counted all together (or per treatment / role / group).
+
+Results game matrix
 --------------------
 
-.. image:: _static/Qqq.JPG
-    :alt:  300p
+.. image:: _static/elements/matrix2.png    
+	:alt:  300p
 
-.. image:: _static/Qq.JPG
-    :alt:  300p
+The matrix displays the linkage between to discrete decisions. If a game e.g. is played with two different participants, the results can be displayed as a matrix. Or if a participant makes two different decisions the linkage between the two can be shown.
 
-If a game is played with two different roles, the results can be displayed as a matrix. The settings are the same as for the participant screen. If you have defined treatments, you can decide whether the results shall be displayed per treatment or altogether.
+.. image:: _static/elements/matrix.png
+    :width: 70%
 
-If you have several rounds, the matrix calculates the results overall rounds. If you want to show temporal structures (e.g. learning), please use the time line diagram.
 
-.. note:: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element "payoff for 2 roles" or through a program).
+decision role 1
+	The decision for the row participant.
+decision role 2
+	The decision for the column participant.
+results matrix
+	Here you can specify the payoffs for each combination. The first value is the row participants, the second value the column participant.
+show roles
+	This settings determines if the role figure is displayed next to the payoffs in the matrix table.
+show element
+	Always display element or only if stage is activated.
+display results
+	Here you can choose if results should be pooled over all rounds or displayed separately for each round.
+count
+	Participants are counted all together (or per treatment / role / group).
 
-Other result elements
-----------------------
 
-Other result elements include Likert scales and pie charts. They will be documented soon.
+.. note:: The displayed matrix only determines the image on the lecturer’s screen and not the payoff for participants. The payoff is calculated individually for the participants (either through the element `Payoff matrix game`_ or through a subjects program).
 
+Results supply and demand
+--------------------------
+
+.. image:: _static/elements/supplydemand.png
+
+.. image:: _static/elements/supplydemand2.png
+	:width: 70%
+Results pie chart
+------------------
+
+.. image:: _static/elements/pie.png
+	:width: 70%
+.. image:: _static/elements/pie2.png
+	
+
+Results Likert scale
+---------------------
+
+.. image:: _static/elements/likert.png
+.. image:: _static/elements/likertsetting.png
+	:width: 70%
