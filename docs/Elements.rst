@@ -149,7 +149,7 @@ required
 	This determines whether input is mandatory. In this case, participants cannot proceed without entering a value. 
 
 output only
-	This means that the field is read-only. Still, the value of the field is stored as normal variable. 
+	This means that the field is read-only. Still, the value of the field is stored as normal variable. It can e.g. be used to provide :ref:`Programming:Live feedback on input` with javascript.
 
 
 Buttons, simple list and drop list (single choice)

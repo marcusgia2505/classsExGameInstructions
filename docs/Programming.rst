@@ -573,7 +573,7 @@ Small errors can cause the programs not to run. Therefore, error detection is an
 
 With severe errors the lecture mode can not be started. In order to find the error go through the code and look for errors. Check if the function names are correctly spelled.
 
-The diagnosis tool is very useful for trouble shooting and testing your game. You can access the diagnosis tool by clicking on the stetoscope icon in the top bar of the lecture mode.
+The diagnosis tool is very useful for trouble shooting and testing your game. You can access the diagnosis tool by clicking on the stethoscope icon in the top bar of the lecture mode.
 
 .. image:: _static/Diagnosissteto.PNG
     :alt:  300p
@@ -602,6 +602,47 @@ Input fields have the identifier "fieldX", where X is the number of the input fi
 Buttons have the identifier "buttonX" where X is the number of the stage. The number of the stage can be found by hovering over the tabs in the editing mode. This allows you to add click events to the standard button, e.g. :java:`$("#button1234").click(...)`. 
 
 You can also define your own parts in the text boxes which can be manipulated with javascript. E.g. define :html2:`<span id="text1">This is my text</span>` in the text box. Then you can change this text in a javascript program with :java:`$("#text1").html("This is my new text.");`. 
+
+Live feedback on input
+~~~~~~~~~~~~~~~~~~~~~~
+
+Javascript allows e.g. for live feedback when subjects enter numbers. Let's take an ultimatum game where a participant can split 10 Euros between him- or herself and another participant. The participant enters the amount to send to the other in the input field #1. With javascript you can display, the amount he or she keeps in real time. Each time the participant changes his input, he or she get live feedback on the amount he or she keeps. 
+
+Just add a text box with the following code. 
+
+.. code:: html
+
+	The amount you keep is <span id="keep">--</span>.
+
+Then add a little javascript program which is executed when you change the input field.
+
+.. code:: javascript
+
+	$("#field1").keyup(function() {
+		/* javascript takes the input as string which has to be parsed to Integer or Float to 
+			make calculations with */
+  		let send = parseInt($(this).val());
+  		let keep = 10 - send;
+  		$("#keep").html(keep);
+	});
+
+
+
+Alternatively, you can also add another input field which is marked with *output only*. E.g. you added such an input field as input field #2. Then you do not have to add the text box, but only the javascript program with: 
+
+.. code:: javascript
+
+	$("#field1").keyup(function() {
+		/* javascript takes the input as string which has to be parsed to Integer or Float to 
+			make calculations with */
+  		let send = parseInt($(this).val());
+  		let keep = 10 - send;
+  		$("#field2").val(keep);
+	});
+
+Note that for input fields you have to use :java:`$("#field2").val(keep)` instead of :java:`$("#keep").html(keep)` for changing HTML.
+
+If you want to add live feedback for sliders, radiolines or buttons you have to use :java:`$("#field1").change(...)` instead of :java:`$("#field1").keyup(...)` for fields where you type the input. 
 
 Reading PHP variables
 ~~~~~~~~~~~~~~~~~~~~~
