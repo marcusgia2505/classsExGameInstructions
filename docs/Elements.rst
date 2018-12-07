@@ -41,8 +41,10 @@ Special     Name 		   Function Example
 =========== ============== ===============
 role1.png   Symbol Role 1  Red participant symbol |pic_role1| is displayed. 
 role2.png   Symbol Role 2  Green participant symbol |pic_role2| is displayed.
-$variable;  Variables      Beside normal text, you can also insert variables into the text box. If you have defined variables (see :ref:`Programming`), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined.
+$variable;  Variables      Beside normal text, you can also insert variables into the text box. 
 =========== ============== ===============
+
+If you have defined variables (see :ref:`Programming:Programming`), you can have these displayed by inserting the character "$", the variable name followed by ";". Make sure not to forget the ";" at the end! Variables and normal text can be combined.
 
 Make sure that role1.png, role2.png,... are followed by a space. Otherwise the figure will not be replaced.
 
@@ -80,7 +82,7 @@ In order to avoid redundancies, you can reference elements and add them in a dif
 Program code
 ~~~~~~~~~~~~
 
-Program snippets can be implemented to calculate results for each subjects. For further information see :ref:`Programming`.
+Program snippets can be implemented to calculate results for each subjects. For further information see :ref:`Programming:Programming`.
 
 .. image:: _static/program.png
 .. role:: php(code)
@@ -105,7 +107,7 @@ variable name
 
 Furthermore, you can delete an input field by clicking on |pic_delete| or provide a display condition by clicking on |pic_display|. Display conditions are defined in the same way as for elements (see :ref:`Develop:Handling elements`).
 
-.. |pic_delete| image:: _static/pic/reject.PNG
+.. |pic_delete| image:: _static/pic/reject.png
 				:width: 15px
 
 .. |pic_display| image:: _static/pic/show.png
@@ -156,7 +158,7 @@ Buttons, simple list and drop list (single choice)
 .. image:: _static/develop/buttons.PNG
    :height: 500px
 
-This type of input is used for discrete decisions. You can implement single choice questions using buttons (left panel of figure below), simple lists (middle panel) or drop lists (right panel). This is what they look like in the participants' display. The settings are the same for these options.
+This type of input is used for discrete decisions. You can implement single choice questions using buttons (first figure below), simple lists (second figure) or drop lists (third figure). This is what they look like in the participants' display. The settings are the same for these options.
 
 .. image:: _static/ButtonsAndSelection3.JPG
     :width: 30%
@@ -205,7 +207,7 @@ minimum and maximum number of choices and
 number of answers per row
 	This states how many options are displayed in each row (here 2).
 
-.. important:: multiple choice inputs are stored separated with :php:`_`, e.g. :php:`2_3` if options with value 2 and 3 were selected. If you specify a default, please specify them accordingly. 
+.. important:: multiple choice inputs are stored separated with :php:`_`, e.g. :php:`2_3` if options with value 2 and 3 were selected. If you specify a default, please specify it accordingly. 
 
 
 Radioline
@@ -247,7 +249,7 @@ number of steps
 	The number of steps determines to how many position the slider can be moved. In the example, 20 steps between 0 and 10 mean that each step increase by 0.5. 
 
 default
-	The default value is pre-marked at the start. If no default is set, the slider is positioned in the middle of the bar.
+	The default value is pre-marked at the start. If no default is set, the slider is positioned in the middle of the slider.
 
 required
 	This determines whether input is mandatory. In this case, participants cannot proceed making a choice.
@@ -269,7 +271,7 @@ minimum and maximum number of characters
 	This limits the amount of characters which can be written by participants. 
 
 default
-	The default value is written in the text box.
+	The default value is written in the text input field.
 
 number of rows 
 	This determines the height of the text input field.
@@ -381,7 +383,7 @@ currency/min price/max price/decimal place
 	Currency of the prices and minimum, maximum and decimal places can be specified here.
 
 maximum quantity
-	Maximum quanity a subject is allowed to possess limits how many items can be bought.
+	Maximum quantity a subject is allowed to possess limits how many items can be bought.
 
 products
 	You can specify a name (or a small image) and the initial amount of the good (e.g. the seller has 1 unit, the buyer 0 units).
@@ -461,7 +463,7 @@ Retrieving Pictures
 Pictures can be retrieved in the following ways:
 
 At the participant' screen
-	You can use the normal variable notation ($image;) to display pictures in textboxes.
+	You can use the normal variable notation ($image;) to display pictures in text boxes.
 
 At the lecturer screen
 	You can use :php:`$getValues(...)` to retrieve the pictures of all participants and display them (see :ref:`Programming:Functions`).
@@ -573,7 +575,7 @@ variable name
 	The value will be saved under this name as a global variable and can be retrieved by that name.
 
 for each participant
-	If you switch this on, you can set the value for each participant separatly. The value will be stored as a global variable in an array with the participant ID as index.
+	If you switch this on, you can set the value for each participant separately. The value will be stored as a global variable in an array with the participant ID as index.
 
 default
 	You can set a default.
@@ -741,7 +743,7 @@ Results bubble
 .. image:: _static/elements/bubble2.png
     :alt:  300p
 
-The bubble chart displays the linkage between to continous decisions, e.g. amount sent and amount returned. 
+The bubble chart displays the linkage between to continuous decisions, e.g. amount sent and amount returned. 
 
 variable x-axis
 	The variable which should be displayed on the x-axis. 
