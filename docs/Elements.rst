@@ -158,7 +158,7 @@ Buttons, simple list and drop list (single choice)
 .. image:: _static/develop/buttons.PNG
    :height: 500px
 
-This type of input is used for discrete decisions. You can implement single choice questions using buttons (first figure below), simple lists (second figure) or drop lists (third figure). This is what they look like in the participants' display. The settings are the same for these options.
+This type of input is used for discrete decisions. You can implement single choice questions using buttons (first figure below), simple lists (second figure) or drop lists (third figure). This is what they look like in the participants' display. The settings are the same for these input fields.
 
 .. image:: _static/ButtonsAndSelection3.JPG
     :width: 30%
@@ -300,7 +300,7 @@ Additional settings
 -------------------
 
 .. image:: _static/elements/additional_input.png
-    	:width: 49%
+    	:width: 100%
 
 
 At the bottom of each input element you can find additional settings which open by clicking on *additional settings*.
@@ -315,7 +315,7 @@ hide decision after submitting
 	After submitting, participants see a confirmation message and their input. If you switch this setting on, the input is not displayed anymore after submitting.
 
 directly to next stage
-	Normally participants are moved to the next stage by the experimenter (see `Start Button and Automatic Start`_). If participants play individually and this settings is switched on, they move autonomously to the next stage. In this case, you have to select *no forwarding* if you use an automatic start.
+	Normally participants are moved to the next stage by the experimenter (see `Start button and automatic Start`_). If participants play individually and this settings is switched on, they move autonomously to the next stage. In this case, you have to select *no forwarding* if you use an automatic start.
 
 
 show button later
@@ -328,17 +328,28 @@ show button later
 Winner's Notification
 ~~~~~~~~~~~~~~~~~~~~~
 
-If a game is played with real payoffs, this element displays the payoff code to participants.  
+.. image:: _static/elements/notification.png
+	:width: 50%
+
+If a game is played with real payoffs, this element displays the payoff code to participants and the respective payoff. The payoff can be a number or also a text (e.g. two tickets for the theater). The element automatically provides a legal disclaimer. The payoff notice can be changed.  
 
 .. image:: _static/elements/notfication.png
     :height: 300px
 
 A winning notification is necessary for games with monetary payoff. The participants who are randomly drawn receive a winning notification as well as a code to cash in their earnings. 
 
-Payoff(variable) in €
+payoff(variable) in €
 	The amount of earnings can be determined by this setting. You can enter a fixed amount or you can enter a variable that is calculated beforehand. If, for example, the variable :php:`$payoff` is calculated in a program during the game, you can enter :php:`$payoff;` in the earnings field.
 
-You can adapt the message that is displayed in the winning notification. Clicking on the little info circles above the boxes will show you what will be displayed if you leave the boxes blank.
+text if drawn
+	The default text is: You were randomly drawn and get your payoff. Please remember the payoff code and the amount and go the lecturer's office.
+
+text if not drawn
+	The default text is: You were not randomly drawn to be paid out.
+
+text if drawn and payoff = 0
+	The default text is: You were randomly drawn, but your payoff is X. It is therefore not paid out.
+
 
 .. important:: The winning notification can only be displayed if you also define a (only works together with `Winner's draw`_) on the lecturer side. Otherwise no winner can be determined. Winners are always drawn with a lecturer element.
 
@@ -353,7 +364,7 @@ Contract
 
 With this element, you can enable participants to conclude contracts. By adjusting the settings, you can customize the contract to your needs. Contracts can be used to trade a commodity between subjects in real time. Subjects move around in the classroom and talk to each other. When they agreed on a price, they enter it into the input mask together with the signature of the counterpart (see seller screen). The counterpart has to accept the trade (or reject it, see buyer screen).
 
-The contracts made can be shown at the lecturer's screen with the `Contract table`_. In addition, there are special functions in globals and subjects programs to retrieve contracts (see :ref:`Programming`). All contracts are also stored in the standard excel file which can be retrieved in the data menu. 
+The contracts made can be shown at the lecturer's screen with the `Contract table`_. In addition, there are special functions in globals and subjects programs to retrieve contracts (see :ref:`Programming:Programming`). All contracts are also stored in the standard excel file which can be retrieved in the data menu (see :ref:`Run:Data`). 
 
 
 .. image:: _static/elements/buyer_setting.png
@@ -371,7 +382,7 @@ set quantities
 hide ID
 	allows to disable the ID. The ID is needed for sell and buy offers to be send to a specific person. E.g. if the buyer can make buy offers, she needs the ID of the seller to send the offer to.
 
-	.. note:: Contract elements use the subject ID as ID.
+	.. note:: Contract elements use the subject ID as ID for trading (because it is very short). But contracts are stored with the internal participant ID.
 
 public
 	If you activate this, offers are made to all other subjects who can accept them. This feature is still in a beta version. So test it with care.
@@ -445,7 +456,7 @@ Camera
 .. image:: _static/Camera1.PNG
     :width: 49%
 .. image:: _static/Camera2.PNG
-    :width: 49%
+    :width: 30%
 
 With this element, you can enable participants take a picture of themselves.
 
@@ -491,15 +502,25 @@ The start button is used to initiate a stage.
 
 .. important:: Each stage requires a start button or an automatic start. If stages have result elements, this is not true as result elements automatically provide a button to start the stage (if not other button is defined).
 
-There are two options. A start button which has to be clicked by the experimenter or an automatic start.
+There are two alternatives. A start button which has to be clicked by the experimenter or an automatic start.
 
 Start button
 ------------
 
-.. image:: _static/elements/start.png
-    :height: 150px
+.. image:: _static/elements/startbutton.png
+    :width: 70%
+
+The start buttons allows to start stages of a game. It is marked in blue and clearly visible to ease guidance for the lecturer. Before the start of the first stage it additionally states the number of logged in participants (here: 1). 
+
+.. image:: _static/elements/startbutton2.png
+    :width: 70%
+
+After pressing the start button, the stage is started, the button disappears and a counter is shown which counts the number of participants in that stage. In the example it means that there are no red participants (0/0) and one green participant who finished the stage (1/1). Counting be done over all, by role, group or treatment.
 
 The start button can be configured according to the own needs. 
+
+.. image:: _static/elements/start.png
+    :height: 150px
 
 button label
 	You can name the button (e.g. Start Trade).
@@ -562,11 +583,12 @@ number
 Lecturer discrete choice
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: _static/Randomdraw.PNG
-    :width: 70%
+.. image:: _static/elements/lecturerdiscrete.png
 
 With this element the lecturer/experimenter can make decisions for all participants during the game, e.g. tossing a coin in front of the class and entering the value in classEx so that payoffs can be calculated based on the coin toss.
 
+.. image:: _static/Randomdraw.PNG
+    :width: 70%
 
 name
 	This name will be displayed on the screen to identify the input button.
@@ -594,6 +616,8 @@ Contract table
 With this element, all contracts that were concluded by participants as well as a chart and the average are displayed on the lecturer's screen. In the contract table, you have several tabs where you can switch between. You can see them in the figures below. 
 
 The first tabs list the contracts for each round separately. If set, you can also display seller costs and buyer values along the with the contract.
+
+.. note:: The combination of session and round is a special feature in some games (apple market, fish market, ...). Normally, classEx only knows rounds.
 
 .. image:: _static/Ctable4.PNG
     :alt:  300p
@@ -637,19 +661,21 @@ show quantities
 Result element
 ~~~~~~~~~~~~~~~
 
-For displaying the results of a game various types of charts are available. Note that you can only display saved subject variables. Decisions for input fields are saved automatically.
+For displaying the results of a game various types of charts are available. 
 
-Whenever you can select variables in a field you only need to insert the variable name (e.g. "payoff"). All other input fields require the usual notation (e.g. "$payoff;").
+.. important:: Note that you can only display saved subject variables. Decisions for input fields are saved automatically so that they can be displayed as well.
+
+Whenever you can select variables in a field you only need to insert the variable name (e.g. "payoff"). If you want to use variables in other settings (e.g. the maximum) you have to use the standard notation (e.g. "$payoff;"), which gives the value of the variable.
 
 Under the setting *count*, you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). 
 
 Results single / multiple choice questions
 ------------------------------------------
 
-.. image:: _static/Singlechoice.PNG
+.. image:: _static/elements/mc.png
     :alt:  300p
 
-The results are displayed with percentage bars. The element automatically detects if the input is multiple choice or single choice. Hovering over the bars gives the absolute frequency of participants who opted for that option. The element should only be used with input fields with predefined options (otherwise you should use the counter result element).
+The results are displayed with percentage bars. The element automatically detects if the input is multiple choice or single choice. Hovering over the bars gives the absolute frequency of participants who opted for that option. The element should only be used with input fields with predefined options (otherwise you should use the `Results counter`_).
 
 .. image:: _static/elements/singlechoice.png
     :width: 70%
@@ -672,13 +698,15 @@ count
 Results histogram
 ------------------
 
-.. image:: _static/Numberindic.PNG
+.. image:: _static/elements/histogram_screen.png
     :alt:  300p
+
+The histogram draws the distribution of a variable. The black line marks the mean. Decisions are clustered into so called bins (here bins of 5). The graph allows for zooming and for adjusting the bin size and the maximum.
 
 .. image:: _static/Hist.PNG
     :alt:  300p
 
-The following options can be changed:
+The following settings can be changed:
 
 variable
 	Choose which variable you want to display
@@ -696,7 +724,7 @@ bin
 	How the values shall be pooled into *bins*. For example, if you define the bin 10, the data will be pooled in brackets of ten.
 
 x-line
-	Vertical Line is drawn at this x-value (e.g. to specify a correct or true value)
+	An additional red vertical Line is drawn at this x-value (e.g. to specify a correct or true value)
 
 count
 	Participants are counted all together or per treatment / role / group.
@@ -707,10 +735,10 @@ count
 Results Line Chart
 -------------------
 
-.. image:: _static/Commons.PNG
+.. image:: _static/elements/linechart_pgg.png
     :alt:  300p
 
-A line chart enables the display of the results of several rounds. The line chart automatically calculates the average of the input variable over all subjects. If the input variable is a discrete choice variable, the result is displayed in percent of choices.
+A line chart enables the display of the results of several rounds. The line chart automatically calculates the average of the input variable over all subjects. If the input variable is a discrete choice variable, the result is displayed in percent of choices. In the example, you can see a public goods game with three groups. The graph allows for zooming.
 
 
 .. image:: _static/elements/linechart.png
@@ -737,13 +765,15 @@ count
 Results bubble
 ---------------
 
-.. image:: _static/elements/bubble.png
-    :width: 70%
+
 
 .. image:: _static/elements/bubble2.png
     :alt:  300p
 
-The bubble chart displays the linkage between to continuous decisions, e.g. amount sent and amount returned. 
+The bubble chart displays the linkage between to continuous decisions, e.g. amount sent and amount returned. The size of the bubble shows how often the number was chosen. The number in the bubble shows x-value / y-value. If you display by role, group or treatment, bubbles in different colors are displayed. Hovering over the bubble, shows the total number of observations. The graph allows for zooming.
+
+.. image:: _static/elements/bubble.png
+    :width: 70%
 
 variable x-axis
 	The variable which should be displayed on the x-axis. 
@@ -819,19 +849,47 @@ Results supply and demand
 
 .. image:: _static/elements/supplydemand.png
 
+This element displays a supply and demand graph. It uses array which are calculated in a globals program to display supply and demand. The graph allows for zooming.
+
 .. image:: _static/elements/supplydemand2.png
 	:width: 70%
+
+supply
+	This is the name of the globals variable which contains the supply data. The index of the array is the price and the value of the array is the number of suppliers which are willing to supply at this price. E.g. if you have 2 sellers with seller cost 20 and 4 seller with seller cost 40, the supply array should be :php:`$supply = array(20=>2, 40=>4);`. Note that the number of sellers is not cumulated across prices. This is automatically done by classEx. If you provide a two dimensional array you can plot more than one supply line, e.g. :php:`$supply = array(1=>array(20=>2, 40=>4), 2=>array(10=>3, 20=>1));` draws to supply lines.
+
+demand
+	This is the name of the globals variable which contains the demand data. The index of the array is the price and the value of the array is the number of demander which are willing to buy at this price. The logic follows the description for supply.
+
+label x-axis / y-axis
+	Labels can be provided for both axes.
+
 Results pie chart
 ------------------
 
-.. image:: _static/elements/pie.png
-	:width: 70%
-.. image:: _static/elements/pie2.png
+.. image:: _static/elements/pienew.png
 	
+The pie chart shows the distribution of discrete choices as a pie chart. Slices of the pie can be highlighted by clicking on them. The graph allows for zooming.
+
+.. image:: _static/elements/pienew2.png
+	:width: 50%
+
+variable
+	The name of the variable
+show element
+	Always display element or only if stage is activated.
+
+.. note:: If you provide a numeric input as variable, classEx plots all numeric inputs from the stage in the pie chart. This only makes sense if you ask for percentages (which add up to 100%). For an example see the game Ricardian equivalence in the macroeconomics folder.
+
 
 Results Likert scale
 ---------------------
 
 .. image:: _static/elements/likert.png
+
+This graphs allows to show data from Likert scales if the input was provided with a `Radioline`_ or `Slider`_ ´. It shows the distribution and provides the mean. The graph allows for zooming. The graph allows for showing multiple variables in one graph.
+
 .. image:: _static/elements/likertsetting.png
 	:width: 70%
+
+first variable / last variable
+	Here you can select the variable(s) to be displayed. If you select e.g. variable #1 to #3 from a stage, the graph shows all three variables #1, #2, #3. If you want to show only one variable, just select the same variable for first and last variable.
