@@ -5,6 +5,12 @@ Programming
 .. role:: php(code)
    :language: php
 
+.. role:: java(code)
+   :language: javascript
+
+.. role:: html2(code)
+   :language: html
+
 Programs are a very useful to design dynamic games. Programs are elements of stages and therefore created like any other element (see :ref:`Develop:Define Elements`).
 
 .. image:: _static/program.png
@@ -582,32 +588,53 @@ The different tabs allow you to access the globals or the variables for each par
 Javascript
 ==========
 
-.. warning:: This section has not been updated yet.
+Programming in classEx is normally done in PHP. For some applications it may be useful to also use some javascript. Javascript runs on the client side (i.e. on the participant's browser) and also for interactive change of content (with no need to reload the page).
 
+For this reason, you can also add some javascript code by adding a Javascript element. An additional option is to put javascript code directly in the text box encapsulated by :php:`<script></script>`. You can also use jQuery which is loaded automatically for each page.
 
-- Reading php variables
+Manipulation of HTML elements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To read php variables one currently neads a two step approach:
-	* write php variable in the text field
-	* parse textfield content in javascript using jquery
-	* [optional] hide textfield
+All elements in classEx have their own identifiers so that they can be used for javascript interaction. 
 
-Assume we have a php variable <code>$foo</code> that containing an array we want to use as an javascript array.
+Input fields have the identifier "fieldX", where X is the number of the input field (#1, #2,...). An example would be :html2:`<input type="hidden" id="field1" name="bid1" value="">`. If you want to do some javascript interaction, you can manipulate the value of the input field e.g. with :java:`$("#field1").val(1);`. Then the value is set to 1. 
 
-- Textfield content:
+Buttons have the identifier "buttonX" where X is the number of the stage. The number of the stage can be found by hovering over the tabs in the editing mode. This allows you to add click events to the standard button, e.g. :java:`$("#button1234").click(...)`. 
 
-	| <pre><div id="php_var_foo" hidden>$foo;</div></pre>
-	| The id does not need to have this format, but it must be unique and match the variable used in the Javascript field
+You can also define your own parts in the text boxes which can be manipulated with javascript. E.g. define :html2:`<span id="text1">This is my text</span>` in the text box. Then you can change this text in a javascript program with :java:`$("#text1").html("This is my new text.");`. 
 
-- Javascript-field content:
+Reading PHP variables
+~~~~~~~~~~~~~~~~~~~~~
 
-	| var foo = JSON.parse($('#php_var_foo').html());
-	| $('#php_var_foo').parent().hide(); // optional
+As all variables are only stored in PHP, you need to get the values for the javascript programs by hand. 
 
-This finds the html element with the id of the div containing the variable content. It's inner html (the content) is taken and than parsed. Now the variable foo in javascript contains the content of the php variable foo.
+To read PHP variables one currently needs a two step approach:
+	* write PHP variable in a (hidden) text field
+	* parse text field content in javascript 
 
-[Optional] Hide the parent of the div containing the variable.
+Assume we have a PHP variable :php:`$foo` that contains a value we want to use in javascript.
 
-- Writing php variables
+Then you should add a text box with:
 
-This can be achieved via hidden input fields that are triggered via JQuery calls
+.. code:: html
+	
+	<span id="php_var_foo" style="display: none;">$foo;</span>
+
+The id does not need to have this format, but it must be unique.
+
+In javascript you can retrieve the variable with:
+
+.. code:: javascript
+
+	let foo = JSON.parse($('#php_var_foo').html());
+	
+This command finds the HTML element with the id of the span containing the variable content. It's inner HTML (the content) is taken. Now the variable :java:`foo` in javascript contains the content of the PHP variable :php:`$foo`.
+
+Writing PHP variables
+~~~~~~~~~~~~~~~~~~~~~
+
+This can be achieved via hidden input fields that are filled with javascript. Just add a :ref:`Elements:Hidden input field` in your input element.
+
+Input fields have the identifier "fieldX", where X is the number of the input field (#1, #2,...). An example would be :html2:`<input type="hidden" id="field1" name="bid1" value="">`. If you want toa save a javascript value, you write the value into the input field e.g. with :java:`$("#field1").val(1);`. Then the value is set to 1 and it is stored automatically when the participants submits the input element. 
+
+.. note:: At the moment PHP and javascript are not integrated so that variables have to be transferred manually from PHP to javascript and vice versa. In one of the next versions of classEx this should automatized.
