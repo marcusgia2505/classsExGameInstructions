@@ -21,7 +21,7 @@ The currently active mode is marked by a darker shade around its symbol |pic_ove
    :width: 15px
 
 
-Functions in the top bar
+Settings in the top bar
 ========================
 
 You can see the top bar for the **overview mode** in the picture above in the left hand corner. It offers the following functionality:

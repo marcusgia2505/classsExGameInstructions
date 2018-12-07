@@ -537,7 +537,7 @@ Automatic start
 ---------------
 
 .. image:: _static/elements/automatic.png
-   :height: 150px
+   :width: 50%
 
 The automatic start button allows you to start stages when subjects finished the previous stage. With this feature, they can moved through the game autonomously. 
 

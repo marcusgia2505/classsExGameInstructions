@@ -96,7 +96,7 @@ By pressing start, the lecturer initiates the first stage of the game. If a game
 
 .. warning:: By starting a new game, the currently running game is stopped. There can only be one running game at a time.
 
-If a game consists of several treatments and / or roles the participants will be assigned into treatments / roles in the first stage. For more information on assignment of roles and treatments see `Develop`_.
+If a game consists of several treatments and / or roles the participants will be assigned into treatments / roles in the first stage. For more information on assignment of roles and treatments see :ref:`Develop:Develop your own games`.
 
 .. note:: If you have different roles and treatments, the first stage should be opened long enough that all participants are assigned to a role and treatment. The assignment is done when the stage has been loaded at the participants' device. So make sure that you do not continue to the next stage too fast.
 
@@ -137,7 +137,7 @@ Once a game is over, you can download all recorded data by selecting "download a
 
 If you want to log out all participants after the game you can do so by clicking on the log out all participants button in the :ref:`Coursedata:Course data`. 
 
-..note::  Logging out all participants does not work correctly when trying it with your self-made test participants. If you want to test it you can use different mobile devices and therefore simulate real participants.
+.. note::  Logging out all participants does not work correctly when trying it with your self-made test participants. If you want to test it you can use different mobile devices and therefore simulate real participants.
 
 Settings in the top bar
 ========================
@@ -165,7 +165,7 @@ data
 
 
 export to x-econ
-    classEx offers the possibility to directly export data to the data-repository `xecon`_ for long term storage and publication. More information on the excel file can be found under :ref:`Run:x-econ`.
+    classEx offers the possibility to directly export data to the data-repository `xecon`_ for long term storage and publication. More information on the excel file can be found under :ref:`Run:xecon`.
 
 
     .. _xecon: https://x-econ.org

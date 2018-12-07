@@ -15,7 +15,7 @@ To develop your own games in classEx change to the editing |pic_editmode|. In th
 .. |pic_editmode| image:: _static/pic/editMode.png
    :width: 15px
 
-Top bar in the editing mode
+Settings in the top bar
 ============================
 
 The top bar in the editing mode looks like this:

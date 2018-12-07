@@ -17,7 +17,8 @@ Registration
 ============
 Participants do not need to register but can access classEx with the course password provided to the lecturer with the login credentials.
 
-In order to get login credentials, please fill in the registration form at https://classex.de/  get-login-credentials.
+In order to get login credentials, please fill in the registration form at 
+https://classex.de/get-login-credentials.
 
 For registration you have to provide your name, an email address and information about your institution. In addition, you have to confirm that you accept the `terms of use`_ and the data privacy policy. **Please try to provide an institutional email address so that we can verify your affiliation.** Registered users receive an email with login credentials. Login credentials are normally sent within 1-2 days. If you do not receive credentials after 2 days, please contact us at `classEx@uni-passau.de <mailto:classEx@uni-passau.de>`_.
 
@@ -45,7 +46,7 @@ User types
     - Administration: Individuals entrusted with the payoff can enter the administration mode in order to disburse the monetary payoff. This task can be delegated to a trustworthy person by the lecturer. You can find further instructions in :ref:`Run:Disbursal of payoffs`.
 
 Password
-    A registered lecturer has received a password upon registration. This password can also be used for the administration user type. Participants are provided with their password by the lecturer (under :ref:`Run:Participants password` you see how to change it and what to do if the participants password is lost). 
+    A registered lecturer has received a password upon registration. This password can also be used for the administration user type. Participants are provided with their password by the lecturer (under :ref:`Coursedata:Participants password` you see how to change it and what to do if the participants password is lost). 
 
     
 A short overview
@@ -72,9 +73,9 @@ In the top right-hand corner you find the main navigation bar which is always di
     
 The currently active mode is marked by a darker shade around its symbol |pic_overview|, here the **overview mode**. The left symbol |pic_lecturemode| takes you to the **lecture mode**. The right symbol |pic_editmode| takes you to the **editing mode**. The **drop down menu** (which shows the name of the lecturer and is shaded in black in the figure above) provides access to your personal data and your course data as well as the `terms of use`_, the documentation, some general info on classEx and the log out button. More information on how to change your personal data can be found at :ref:`Coursedata:Personal data` and how to change your course data at :ref:`Coursedata:Course data`.
 
-The different functionalities of copying, deleting,... are explained at :ref:`Develop:Game`.
+The different functionalities of copying, deleting,... are explained in the section :ref:`Develop:Game`.
 
-The top bar is located in the top left corner. It is different in each mode. There you can find the main function for each mode. The details are explained in the respective section (lecture mode = Run ready-made games, overview = Organize your games, editing mode = Tutorial & Develop your own games).
+The top bar is located in the top left corner. It is different in each mode. There you can find the main function for each mode. The details are explained in the respective section (lecture mode = Run ready-made games :ref:`Run:Settings in the top bar`, overview = Organize your games :ref:`Organize:Settings in the top bar`, editing mode = Develop your own games :ref:`Develop:Settings in the top bar`).
 
 .. |pic_lecturemode| image:: _static/pic/lectureMode.png
    :width: 15px
