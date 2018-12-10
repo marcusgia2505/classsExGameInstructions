@@ -158,7 +158,7 @@ Buttons, simple list and drop list (single choice)
 .. image:: _static/develop/buttons.PNG
    :height: 500px
 
-This type of input is used for discrete decisions. You can implement single choice questions using buttons (first figure below), simple lists (second figure) or drop lists (third figure). This is what they look like in the participants' display. The settings are the same for these input fields.
+Those three types of input fields are used for discrete decisions. You can implement single choice questions using buttons (first figure below), simple lists (second figure) or drop lists (third figure). This is what they look like in the participants' display. The settings are the same for these input fields.
 
 .. image:: _static/ButtonsAndSelection3.JPG
     :width: 30%
@@ -199,7 +199,7 @@ Checkboxes (multiple choice)
 .. image:: _static/elements/multiple2.png
     	:width: 49%
 
-Choosing multiple options is possible by using checkboxes. Checkboxes work in exactly the same way as single choice options. Only the form of display is slightly different, as these are displayed as a list from which participants can pick several options. This way, multiple inputs can occur in one stage. Additionally to the single choice, you can specify the following settings:
+Choosing multiple options is possible by using checkboxes. Checkboxes work in exactly the same way as single choice options shown above. Only the form of display is slightly different, as these are displayed as a list from which participants can pick several options. This way, multiple inputs can occur in one stage. Additionally to the single choice, you can specify the following settings:
 
 minimum and maximum number of choices and 
 	This restricts how many options can be picked by the participant.
@@ -207,7 +207,7 @@ minimum and maximum number of choices and
 number of answers per row
 	This states how many options are displayed in each row (here 2).
 
-.. important:: multiple choice inputs are stored separated with :php:`_`, e.g. :php:`2_3` if options with value 2 and 3 were selected. If you specify a default, please specify it accordingly. 
+.. important:: Multiple choice inputs are stored separated with :php:`_`, e.g. :php:`2_3` if options with value 2 and 3 were selected. If you specify a default, please specify it accordingly. 
 
 
 Radioline
@@ -227,7 +227,7 @@ default
 	The default value is pre-marked at the start.
 
 required
-	This determines whether input is mandatory. In this case, participants cannot proceed making a choice.
+	This determines whether input is mandatory. In this case, participants cannot proceed before making a choice.
 
 label left and right of the slider
 	You can add a label on the left and the right of the slider. Note that the values stated next to the labels are not used in the radioline.
@@ -240,7 +240,7 @@ Slider
 .. image:: _static/elements/slider2.png
     	:width: 49%
 
-Sliders are a similar concept. In this form of input, the participant moves a slider along a bar of predetermined positions. 
+Sliders are a similar concept to radiolines. In this form of input, the participant moves a slider along a bar of predetermined positions. 
 
 minimum and maximum
 	The minimum and maximum determine the range of the slider.
@@ -249,10 +249,7 @@ number of steps
 	The number of steps determines to how many position the slider can be moved. In the example, 20 steps between 0 and 10 mean that each step increase by 0.5. 
 
 default
-	The default value is pre-marked at the start. If no default is set, the slider is positioned in the middle of the slider.
-
-required
-	This determines whether input is mandatory. In this case, participants cannot proceed making a choice.
+	The default value is pre-marked at the start. If no default is set, the slider is positioned in the middle of the range.
 
 label left and right of the slider
 	You can add a label on the left and the right of the slider. Note that the values stated next to the labels are not used in the radioline.
@@ -265,10 +262,10 @@ Text input
 .. image:: _static/elements/text2.png
     	:width: 49%
 
-Text input fields allow participants enter to a text. If a maximum is specified, it shows the number of remaining characters. 
+Text input fields allow participants to enter a text. If a maximum is specified, it shows the number of remaining characters. 
 
 minimum and maximum number of characters
-	This limits the amount of characters which can be written by participants. 
+	This limits the amount of characters which can be written by participants.
 
 default
 	The default value is written in the text input field.
@@ -292,7 +289,7 @@ The next button allows to add an additional button. Note that classEx normally p
 Other input fields
 ------------------
 
-There are other input fields available (urn, infotext, mean of all input fields). This are outdated and should only be used with care.
+There are other input fields available (urn, infotext, mean of all input fields). Those are outdated and should only be used with care.
 
 The contract input field is also outdated. Please use the `Contract`_ element instead.
 
@@ -306,7 +303,7 @@ Additional settings
 At the bottom of each input element you can find additional settings which open by clicking on *additional settings*.
 
 button label
-	Here you can specify the label of the button. The default is "Submit".
+	Here you can specify the label of the button. The default is "Submit". This button label is only used, if there is an own button for submitting your decision. E.g. in *Buttons (single choice)* buttons are labeled with the possible answers the editor inserted.
 
 confirmation message
 	If you enter a text here, participants are asked for confirmation before submitting. E.g. you can enter "Are you sure?" which is then displayed together with an OK button to participants.
@@ -315,7 +312,7 @@ hide decision after submitting
 	After submitting, participants see a confirmation message and their input. If you switch this setting on, the input is not displayed anymore after submitting.
 
 directly to next stage
-	Normally participants are moved to the next stage by the experimenter (see `Start button and automatic Start`_). If participants play individually and this settings is switched on, they move autonomously to the next stage. In this case, you have to select *no forwarding* if you use an automatic start.
+	Normally participants are moved to the next stage by the experimenter (see `Start button and automatic start`_). If participants play individually and this settings is switched on, they move autonomously to the next stage. In this case, you have to select *no forwarding* if you use an automatic start.
 
 
 show button later
