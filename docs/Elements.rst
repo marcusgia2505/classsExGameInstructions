@@ -184,9 +184,9 @@ options
 
 	Options come with a displayed text and with a value. The value is stored in the data and as variable.
 
-	You can mark the correct answer by clicking on the symbol |pic_correct|. In this case, if you use the single/multiple choice result element for the lecturer, the correct answer is marked there.
+	You can mark the correct answer by clicking on the symbol |pic_check.png|. In this case, if you use the single/multiple choice result element for the lecturer, the correct answer is marked there.
 
-.. |pic_correct| image:: _static/pic/correct.PNG 
+.. |pic_check.png| image:: _static/elements/check.png.PNG 
 	:width: 15px
 
 
