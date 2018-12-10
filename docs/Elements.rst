@@ -57,13 +57,13 @@ Make sure that role1.png, role2.png,... are followed by a space. Otherwise the f
 Conditional text
 -----------------
 
-So far we have only tackled how to read the PHP variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a bool variable that tells whether a participant is buyer or seller. We can achieve this task by a program element where you define:
+So far we have only tackled how to read the PHP variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a variable that tells whether a participant is buyer or seller. We can achieve this task by a program element where you define:
 
 .. code:: php
 
 	if ($isBuyer) $buyerText="You are buyer"; else $buyerText="You are seller";
 
-Then you can output $buyerText; in the text box.
+Then you can enter and output $buyerText; in the text box.
 
 Element Reference
 ~~~~~~~~~~~~~~~~~
@@ -71,9 +71,9 @@ Element Reference
 .. image:: _static/elements/reference.png
     :alt:  300p
 
-In order to avoid redundancies, you can reference elements and add them in a different place in the game (instead of copying them directly). For this, you can use the reference element. If the original element is altered, the reference is adapted automatically. The reference is created by selecting the stage number and the element number you are referring to. 
+In order to avoid redundancies, you can reference elements and add them in a different place in the game (instead of copying them directly). This place has to be after or in the same stage as the original element is. For this, you can use the reference element. If the original element is altered, the reference is adapted automatically. The reference is created by selecting the stage number and the element number you are referring to. 
 
-.. note:: If you require the same text in two stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically.
+.. note:: If you require the same text in two stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically. Also a reference objects in a participant field can just link to another participant opject (the same principle holds for the lecturer fields).
 
 .. note:: Please notice that the display condition is not taken from the referenced element but  from the reference itself.
 
@@ -99,8 +99,8 @@ In this element, you can insert several input fields. These are numbered #1, #2,
 
 The following settings are available for every input field: 
 
-type of input 
-	The type of input specifies why input should be taken by the input field, like numeric input, discrete choice, sliders, ...
+type of input field
+	The type of input specifies how input should be taken by the input field, like numeric input, discrete choice, sliders, ...
 
 variable name 
 	The variable name is the identifier of the decision input. The variable is automatically stored in the subjects table. The variable name can then be used in programs. For example, if your variable is called $e, you can access it by writing "$e;" in a text box or use :php:`$e` in a program element. 
@@ -115,7 +115,7 @@ Furthermore, you can delete an input field by clicking on |pic_delete| or provid
 
 .. warning:: Please notice that only one input element is allowed per stage. For several inputs add additional input fields to the first input element.
 
-.. note:: In all fields, you can also use variables instead of numbers or text. This can e.g. be useful if you want to set a maximum depending on a variable :php:`$x`. Just enter $x; in the maximum field. This holds true for other fields as well.
+.. note:: In all input fields, you can also use variables instead of numbers or text. This can e.g. be useful if you want to set a maximum depending on a variable :php:`$x`. Just enter $x; in the maximum field. This holds true for other fields as well.
 
 Numeric input field
 --------------------
@@ -136,7 +136,7 @@ minimum
 maximum
 	The maximum specifies the maximal value. If the participant enters a value above the maximum a warning is displayed and he or she cannot proceed. (see figure)
 
-digits
+decimal place
 	The number of decimal places. classEx automatically rounds accordingly.
 
 unit
@@ -174,7 +174,7 @@ default
 	The default value is pre-marked at the start. For buttons it is highlighted with a color. For drop lists it is preselected.
 
 required
-	This determines whether input is mandatory. In this case, participants cannot proceed making a choice.
+	This determines whether input is mandatory. In this case, participants cannot proceed before making a choice.
 
 order of options
 	The order of options can be set to *as stated* or to *random*. In the latter case, the random order is determined separately for each participant.
