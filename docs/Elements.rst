@@ -348,7 +348,7 @@ text if drawn and payoff = 0
 	The default text is: You were randomly drawn, but your payoff is X. It is therefore not paid out.
 
 
-.. important:: The winning notification can only be displayed if you also define a (only works together with `Winner's draw`_) on the lecturer side. Otherwise no winner can be determined. Winners are always drawn with a lecturer element.
+.. important:: The winning notification can only be displayed if you also define a `Winner's draw`_ on the lecturer side. Otherwise no winner can be determined. Winners are always drawn with a lecturer element.
 
 
 Contract
