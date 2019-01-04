@@ -703,7 +703,7 @@ Results histogram
 
 The histogram draws the distribution of a variable. The black line marks the mean. Decisions are clustered into so called bins (here bins of 5). The graph allows for zooming and for adjusting the bin size and the maximum.
 
-.. image:: _static/histogram_screen_new.PNG
+.. image:: _static/elements/histogram_screen_new.PNG
     :alt:  300p
 
 The following settings can be changed:
@@ -712,19 +712,25 @@ variable
 	Choose which variable you want to display.
 
 show element
-	Element is always displayed or only if stage is activated.
+	Element is always displayed, only if stage is activated or if it is activated and after.
 
 min
-	Minimum of the histogram (Default 0)
+	Minimum of the histogram (Default 0).
 
 max
-	Maximum of the histogram 
+	Maximum of the histogram.
 
-bin
+size of bins
 	How the values shall be pooled into *bins*. For example, if you define the bin 10, the data will be pooled in brackets of ten.
 
-x-line
-	An additional red vertical Line is drawn at this x-value (e.g. to specify a correct or true value)
+label x-axis
+	The label you choose for the x-axis is displayed below the x-axis.
+
+vertical line
+	An additional red vertical line is drawn at the selected x-value (e.g. to specify a correct or true value).
+
+round
+    Select if only the current round or all rounds should be displayed.
 
 count
 	Participants are counted all together or per treatment / role / group.
@@ -775,16 +781,15 @@ The bubble chart displays the linkage between to continuous decisions, e.g. amou
 .. image:: _static/elements/bubble.png
     :width: 70%
 
-variable x-axis
-	The variable which should be displayed on the x-axis. 
+variable x-axis and y-axis
+	The variable which should be displayed on the x-axis and y-axis. 
 minimum/maximum/label x-axis
 	Minimum, maximum and label of x-axis
 minimum/maximum/label y-axis
 	Minimum, maximum and label of y-axis
 show element
-	Always display element or only if stage is activated.
-input with array (globals)
-	If you provide the name of a globals variable here, the variable setting is overwritten and data are taken directly from the globals array. The array should have the x-value as index and the respective y-value. 
+	Always display element, only if stage is activated or only if it's activated and after.
+
 count
 	Participants are counted all together (or per treatment / role / group).
 
@@ -799,7 +804,7 @@ Results counter
 
 The counter enables you to display the relative frequency with which a specific answer was chosen. Hovering over the bars gives the absolute frequency of participants who opted for that option. The counter can be useful if the set of answers is open (e.g. text input). It lists all variable inputs according to their frequency.
 
-.. note:: Using a multiple choice input field will result in the listing of combined answers. E.g. You can select A, B, C (multiple choice). Then the counter element will display who many percent chose A, A&B, A&C,... If you want to have the items analyzed separately (only A, B, C) you should use `Results single / multiple choice questions`_. 
+.. note:: Using a multiple choice input field will result in the listing of combined answers. E.g. You can select A, B, C (multiple choice). Then the counter element will display how many percent chose A, A&B, A&C,... If you want to have the items analyzed separately (only A, B, C) you should use `Results single / multiple choice questions`_. 
 
 
 .. image:: _static/elements/counter.png
@@ -810,9 +815,7 @@ variable
 maximal number
 	This limits the maximal number of answers to be displayed. E.g. if this is set to 10, only the 10 most frequent answers are shown.
 show element
-	Always display element or only if stage is activated.
-count
-	Participants are counted all together (or per treatment / role / group).
+	Always display element, only if stage is activated or only if it's activated and after.
 
 Results game matrix
 --------------------
@@ -855,13 +858,15 @@ This element displays a supply and demand graph. It uses array which are calcula
 	:width: 70%
 
 supply
-	This is the name of the globals variable which contains the supply data. The index of the array is the price and the value of the array is the number of suppliers which are willing to supply at this price. E.g. if you have 2 sellers with seller cost 20 and 4 seller with seller cost 40, the supply array should be :php:`$supply = array(20=>2, 40=>4);`. Note that the number of sellers is not cumulated across prices. This is automatically done by classEx. If you provide a two dimensional array you can plot more than one supply line, e.g. :php:`$supply = array(1=>array(20=>2, 40=>4), 2=>array(10=>3, 20=>1));` draws to supply lines.
+	This is the name of the globals variable which contains the supply data. The index of the array is the price and the value of the array is the number of suppliers which are willing to supply at this price. E.g. if you have 2 sellers with seller cost 20 and 4 sellers with seller cost 40, the supply array should be :php:`$supply = array(20=>2, 40=>4);`. Note that the number of sellers is not cumulated across prices. This is automatically done by classEx. If you provide a two dimensional array, you can plot more than one supply line, e.g. :php:`$supply = array(1=>array(20=>2, 40=>4), 2=>array(10=>3, 20=>1));` draws to supply lines.
 
 demand
 	This is the name of the globals variable which contains the demand data. The index of the array is the price and the value of the array is the number of demander which are willing to buy at this price. The logic follows the description for supply.
 
 label x-axis / y-axis
 	Labels can be provided for both axes.
+count
+	Participants are counted all together (or per treatment / role / group).
 
 Results pie chart
 ------------------
@@ -878,6 +883,9 @@ variable
 show element
 	Always display element or only if stage is activated.
 
+count
+	Participants are counted all together (or per treatment / role / group).
+
 .. note:: If you provide a numeric input as variable, classEx plots all numeric inputs from the stage in the pie chart. This only makes sense if you ask for percentages (which add up to 100%). For an example see the game Ricardian equivalence in the macroeconomics folder.
 
 
@@ -886,10 +894,13 @@ Results Likert scale
 
 .. image:: _static/elements/likert.png
 
-This graphs allows to show data from Likert scales if the input was provided with a `Radioline`_ or `Slider`_ ´. It shows the distribution and provides the mean. The graph allows for zooming. The graph allows for showing multiple variables in one graph.
+This graphs allows to show data from Likert scales if the input was provided with a `Radioline`_ or `Slider`_. It shows the distribution and provides the mean. The graph allows for zooming. The graph allows for showing multiple variables in one graph.
 
 .. image:: _static/elements/likertsetting.png
 	:width: 70%
 
 first variable / last variable
 	Here you can select the variable(s) to be displayed. If you select e.g. variable #1 to #3 from a stage, the graph shows all three variables #1, #2, #3. If you want to show only one variable, just select the same variable for first and last variable.
+
+count
+	Participants are counted all together (or per treatment / role / group).
