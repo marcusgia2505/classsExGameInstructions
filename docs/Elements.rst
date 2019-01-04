@@ -354,12 +354,15 @@ text if drawn and payoff = 0
 Contract
 ~~~~~~~~
 
+With this element, you can enable participants to conclude contracts. By adjusting the settings, you can customize the contract to your needs. Contracts can be used to trade a commodity between subjects in real time. Subjects move around in the classroom and talk to each other. When they agreed on a price, they enter it into the input mask together with the signature of the counterpart (see seller screen). The counterpart has to accept the trade (or reject it, see buyer screen).
+
+**The screen for the seller**
 .. image:: _static/rungame/seller_png.png
     :width:  100%
+
+**The screen for the buyer**
 .. image:: _static/rungame/buyer_png.png
     :width:  100%
-
-With this element, you can enable participants to conclude contracts. By adjusting the settings, you can customize the contract to your needs. Contracts can be used to trade a commodity between subjects in real time. Subjects move around in the classroom and talk to each other. When they agreed on a price, they enter it into the input mask together with the signature of the counterpart (see seller screen). The counterpart has to accept the trade (or reject it, see buyer screen).
 
 The contracts made can be shown at the lecturer's screen with the `Contract table`_. In addition, there are special functions in globals and subjects programs to retrieve contracts (see :ref:`Programming:Programming`). All contracts are also stored in the standard excel file which can be retrieved in the data menu (see :ref:`Run:Data`). 
 
@@ -374,7 +377,7 @@ sell offers/buy offers
 	If you turn this on, you allow for sell or buy offers made by the respective subject.
 
 set quantities
-	allows to set quantities (otherwise quantity is always 1). With quantities, prices are set as price/unit.
+	Allows to set quantities (otherwise quantity is always 1). With quantities, prices are set as price/unit.
 
 hide ID
 	allows to disable the ID. The ID is needed for sell and buy offers to be send to a specific person. E.g. if the buyer can make buy offers, she needs the ID of the seller to send the offer to.
@@ -391,7 +394,7 @@ currency/min price/max price/decimal place
 	Currency of the prices and minimum, maximum and decimal places can be specified here.
 
 maximum quantity
-	Maximum quantity a subject is allowed to possess limits how many items can be bought.
+	Maximum quantity a subject is allowed to possess. Limits how many items can be bought.
 
 products
 	You can specify a name (or a small image) and the initial amount of the good (e.g. the seller has 1 unit, the buyer 0 units).
@@ -477,7 +480,7 @@ At the lecturer screen
 	You can use :php:`$getValues(...)` to retrieve the pictures of all participants and display them (see :ref:`Programming:Functions`).
 
 From the stored data
-	In the downloaded data you find stored images in the subjects table. They can are base64 decoded and can be encoded with free online tools. Just take away "data:image/jpeg;base64," from the string, so that it starts e.g. with "/9j/....".
+	In the downloaded data you find stored images in the subjects table. They are base64 decoded and can be encoded with free online tools. Just take away "data:image/jpeg;base64," from the string, so that it starts e.g. with "/9j/....".
 
 Javascript program
 ~~~~~~~~~~~~~~~~~~~
@@ -512,7 +515,7 @@ The start buttons allows to start stages of a game. It is marked in blue and cle
 .. image:: _static/elements/startbutton2.png
     :width: 70%
 
-After pressing the start button, the stage is started, the button disappears and a counter is shown which counts the number of participants in that stage. In the example it means that there are no red participants (0/0) and one green participant who finished the stage (1/1). Counting be done over all, by role, group or treatment.
+After pressing the start button, the stage is started, the button disappears and a counter is shown which counts the number of participants in that stage. In the example it means that there are no red participants (0/0) and one green participant who finished the stage (1/1). Counting can done over all, by role, group or treatment.
 
 The start button can be configured according to the own needs. 
 
@@ -536,7 +539,7 @@ Automatic start
 .. image:: _static/elements/automatic.png
    :width: 50%
 
-The automatic start button allows you to start stages when subjects finished the previous stage. With this feature, they can moved through the game autonomously. 
+The automatic start button allows you to start stages when subjects finished the previous stage. With this feature, they can move through the game autonomously. 
 
 .. important:: With an automatic start, classEx runs a script which is executed every 5 seconds to push finished participants forward. This only works if the lecture mode is open. If the lecture mode is not open, participants are not forwarded.
 
@@ -561,7 +564,7 @@ Winner's draw
 .. image:: _static/elements/winnersdraw.png
     :width: 70%
 
-This element should be implemented in the last stage and draws a winner among all participants. The earnings have to be calculated individually on the participant side (see `Winner's notification`_ for participants). You should draw winners only once in a game as the payoffs codes do not distinguish between rounds.
+This element should be implemented in the last stage and draws a winner among all participants. The earnings have to be calculated individually on the participant side (see `Winner's notification`_ for participants). You should draw winners only once in a game as the payoff codes do not distinguish between rounds.
 
 
 method
@@ -612,7 +615,7 @@ Contract table
 
 With this element, all contracts that were concluded by participants as well as a chart and the average are displayed on the lecturer's screen. In the contract table, you have several tabs where you can switch between. You can see them in the figures below. 
 
-The first tabs list the contracts for each round separately. If set, you can also display seller costs and buyer values along the with the contract.
+The first tab lists the contracts for each round separately. If set, you can also display seller costs and buyer values along with the contract.
 
 .. note:: The combination of session and round is a special feature in some games (apple market, fish market, ...). Normally, classEx only knows rounds.
 
@@ -641,19 +644,19 @@ The following settings can be adapted:
 
 
 value array
-	gives the name of a (pre-filled) array which contains the role of the participant as index and the respective buyer or seller value as value. This is shown in the table as buyer/seller value.
+	Gives the name of a (pre-filled) array which contains the role of the participant as index and the respective buyer or seller value as value. This is shown in the table as buyer/seller value.
 
 label seller/buyer/price
-	all labels in the table can be changed according to needs 
+	All labels in the table can be changed according to needs.
 
 label seller value/buyer value
-	If these are left empty, the columns seller value or buyer value are not displayed. If a text is provided, columns are labeled with the text and classEx read the value array to provide seller/buyer values.
+	If these are left empty, the columns seller value or buyer value are not displayed. If a text is provided, columns are labeled with the text and classEx reads the value array to provide seller/buyer values.
 
 profit variables
-	can be left empty.
+	Can be left empty.
 
 show quantities
-	additionally shows quantities in the contract table and a bubble chart with quantities and prices.
+	Additionally shows quantities in the contract table and a bubble chart with quantities and prices.
 
 Result element
 ~~~~~~~~~~~~~~~
