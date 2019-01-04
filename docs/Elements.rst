@@ -667,7 +667,7 @@ For displaying the results of a game various types of charts are available.
 
 Whenever you can select variables in a field you only need to insert the variable name (e.g. "payoff"). If you want to use variables in other settings (e.g. the maximum) you have to use the standard notation (e.g. "$payoff;"), which gives the value of the variable.
 
-Under the setting *count*, you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). 
+For most result elements you can change the setting for *count*. By this you can determine whether results shall be displayed separately for groups, treatments or roles (if defined). 
 
 Results single / multiple choice questions
 ------------------------------------------
@@ -703,13 +703,13 @@ Results histogram
 
 The histogram draws the distribution of a variable. The black line marks the mean. Decisions are clustered into so called bins (here bins of 5). The graph allows for zooming and for adjusting the bin size and the maximum.
 
-.. image:: _static/Hist.PNG
+.. image:: _static/histogram_screen_new.PNG
     :alt:  300p
 
 The following settings can be changed:
 
 variable
-	Choose which variable you want to display
+	Choose which variable you want to display.
 
 show element
 	Element is always displayed or only if stage is activated.
