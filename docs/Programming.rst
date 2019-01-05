@@ -587,7 +587,7 @@ Clicking on the symbol opens up a window beside the usual display on the lecture
 .. image:: _static/Diagnosis.PNG
     :alt:  300p
 
-The different tabs allow you to access the globals or the variables for each participant. This makes it much programming and error finding much easier than having to jump back and forth between the lecture mode and the editing mode.
+The different tabs allow you to access the globals or the variables for each participant. This makes programming and error finding much easier than having to jump back and forth between the lecture mode and the editing mode.
 
 Javascript
 ==========
@@ -610,7 +610,7 @@ You can also define your own parts in the text boxes which can be manipulated wi
 Live feedback on input
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Javascript allows e.g. for live feedback when subjects enter numbers. Let's take an ultimatum game where a participant can split 10 Euros between him- or herself and another participant. The participant enters the amount to send to the other in the input field #1. With javascript you can display, the amount he or she keeps in real time. Each time the participant changes his input, he or she get live feedback on the amount he or she keeps. 
+Javascript allows e.g. for live feedback when subjects enter numbers. Let's take an ultimatum game where a participant can split 10 Euros between him- or herself and another participant. The participant enters the amount to send to the other in the input field #1. With javascript you can display, the amount he or she keeps in real time. Each time the participant changes his input, he or she gets live feedback on the amount he or she keeps. 
 
 Just add a text box with the following code. 
 
@@ -678,8 +678,8 @@ This command finds the HTML element with the id of the span containing the varia
 Writing PHP variables
 ~~~~~~~~~~~~~~~~~~~~~
 
-This can be achieved via hidden input fields that are filled with javascript. Just add a :ref:`Elements:Hidden input field` in your input element.
+This can be achieved via hidden input fields that are filled with javascript. Just add a :ref:`Elements:Hidden field` in your input element.
 
-Input fields have the identifier "fieldX", where X is the number of the input field (#1, #2,...). An example would be :html2:`<input type="hidden" id="field1" name="bid1" value="">`. If you want toa save a javascript value, you write the value into the input field e.g. with :java:`$("#field1").val(1);`. Then the value is set to 1 and it is stored automatically when the participants submits the input element. 
+Input fields have the identifier "fieldX", where X is the number of the input field (#1, #2,...). An example would be :html2:`<input type="hidden" id="field1" name="bid1" value="">`. If you want too save a javascript value, you write the value into the input field e.g. with :java:`$("#field1").val(1);`. Then the value is set to 1 and it is stored automatically when the participants submit the input element. 
 
-.. note:: At the moment PHP and javascript are not integrated so that variables have to be transferred manually from PHP to javascript and vice versa. In one of the next versions of classEx this should automatized.
+.. note:: At the moment PHP and javascript are not integrated so that variables have to be transferred manually from PHP to javascript and vice versa. In one of the next versions of classEx this should be automatized.
