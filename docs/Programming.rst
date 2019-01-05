@@ -136,7 +136,7 @@ Arguments without default value (mandatory)
 	.. note:: Note that variables names in functions are specified without the $ sign.
 
 Arguments with default value (optional)
-	All the other arguments in the function have default values which means that they are optional. You can specify the function with only one parameter as well. As default the values after the :php:`=` sign are taken. In the example, the variable :php:`$currentRound` (which is available as pre-defined global variable) is taken as default for the round. If you want to use a different round, you have to overwrite the default value. The same holds true for the other arguments. :php:`$partnerRole` and :php:`$no_decision` are set to :php:`null` as a default, where :php:`null` means no value.
+	All the other arguments in the function have default values which means that they are optional. You can specify the function with only one parameter as well. The values after the :php:`=` sign are taken as default. In the example, the variable :php:`$currentRound` (which is available as pre-defined global variable) is taken as default for the round. If you want to use a different round, you have to overwrite the default value. The same holds true for the other arguments. :php:`$partnerRole` and :php:`$no_decision` are set to :php:`null` as a default, where :php:`null` means no value.
 
 	Here are some examples:
 
@@ -155,7 +155,7 @@ Arguments with default value (optional)
 	$findVariablePartner("varname", $round, null, 0);
 
 
-.. note:: If you want to change some of the default values in arguments at the end of the function, you also have to specify the arguments before the argument you want to change. You can see this in the last code example where want to leave :php:`$partnerRole` on its default value and only change :php:`$no_decision`.
+.. note:: If you want to change some of the default values in arguments at the end of the function, you also have to specify the arguments before the argument you want to change. You can see this in the last code example where we want to leave :php:`$partnerRole` on its default value and only change :php:`$no_decision`.
 
 
 Internally used variable names
