@@ -228,7 +228,7 @@ The following functions can be used to retrieve subjects variables.
 
 	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
 	-  :php:`$round` the round from which the variable should be retrieved. 
-	-  :php:`$includingOwn` specifies if the own value should be included or not.
+	-  :php:`$includingOwn` specifies if the own value should be included or not. :php:`$includingOwn = true` means the own value will be included.
 	
 
 ----
@@ -362,7 +362,7 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getValues("varname", $round = $currentRound)`
 
-	**Function** retrieves the values for all participants.
+	**Function** retrieves the values of one variable for all participants.
 
 	**Returns** an array with the internal participant ID as index and the respective values or :php:`null` if no values available.
 
@@ -375,7 +375,7 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getFreq("varname", $round = $currentRound, $multiple = false)`
 
-	**Function** retrieves the frequencies of values over all participants.
+	**Function** retrieves the frequencies of values over all participants for one variable.
 
 	**Returns** an array with the value as index and the frequency. If not available, it returns an empty array.
 
@@ -389,7 +389,7 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getAverage("varname", $round = $currentRound)`
 
-	**Function** retrieves the average of a variable over all participants.
+	**Function** retrieves the average value of a variable over all participants.
 
 	**Returns** the average value or :php:`null` if no values available.
 
@@ -404,7 +404,7 @@ The following functions can be used to retrieve globals variables.
 
 	**Function** retrieves the average of a variable over all participants grouped by their role.
 
-	**Returns** an array with role ID as index and the average value for each role. If not available, it return :php:`null`.
+	**Returns** an array with role ID as index and the average value for each role. If not available, it returns :php:`null`.
 
 	**Arguments** are:
 
@@ -415,19 +415,23 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getAveragePerTreatment("varname", $round = $currentRound)`
 	
-	**Function** retrieves the average of a variable over all participants grouped by treatment. The logic is the same as for :php:`$getAveragePerRole(...)`. It returns an array with the treatment ID as index and the average value for each treatment.
+	**Function** retrieves the average of a variable over all participants grouped by treatment. The logic is the same as for :php:`$getAveragePerRole(...)`. 
+
+	**Returns** an array with the treatment ID as index and the average value for each treatment.
 
 ----
 
 :php:`$getAveragePerGroup("varname", $round = $currentRound)`
 
-	**Function** retrieves the average of a variable over all participants grouped by group. The logic is the same as for :php:`$getAveragePerRole(...)`. It returns an array with the group ID as index and the average value for each treatment.
+	**Function** retrieves the average of a variable over all participants grouped by group. The logic is the same as for :php:`$getAveragePerRole(...)`. 
+
+	**Returns** an array with the group ID as index and the average value for each treatment.
 
 ----
 
 :php:`$getVarSum("varname", $round = $currentRound)`
 
-	**Function** retrieves the sum of a variable over all participants.
+	**Function** retrieves the sum of values of a variable over all participants.
 
 	**Returns** the sum or :php:`null` if no values available.
 
@@ -472,7 +476,7 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getRoles()`
 
-	**Function** retrieves the specific role for each participant
+	**Function** retrieves the specific role for each participant.
 
 	**Returns** an array with the internal participant ID as index and the respective role. If no roles are available, an empty array is returned.
 	
@@ -481,7 +485,7 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getTreatments()`
 
-	**Function** retrieves the treatment for each participant
+	**Function** retrieves the treatment for each participant.
 
 	**Returns** an array with the internal participant ID as index and the respective treatment. If no treatments are available, an empty array is returned.
 	
@@ -489,7 +493,7 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getNumRoles()`
 
-	**Function** retrieves the total number of roles
+	**Function** retrieves the total number of roles.
 
 	**Returns** an array with the role ID as index and the number of participants with this role. If no roles are available, an empty array is returned.
 	
@@ -497,7 +501,7 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getNumPlayer()`
 
-	**Function** retrieves the total number of participants
+	**Function** retrieves the total number of participants.
 
 	**Returns** the number of participants.
 	
@@ -505,7 +509,7 @@ The following functions can be used to retrieve globals variables.
 
 :php:`$getSubjectIDs()`
 
-	**Function** retrieves corresponding subject IDs to participant IDs
+	**Function** retrieves corresponding subject IDs to participant IDs.
 
 	**Returns** an array with the internal participant ID as index and the respective subjectID. With no participants it returns an empty array.
 	
@@ -523,7 +527,7 @@ The following functions can be used to retrieve globals variables.
 	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
 	-  :php:`$round` the round from which the variable should be retrieved. 
 
-	**Also available** as :php:`$getNumDecisionsPerGroup(...)` following the same logic as described above for :php:`$getAveragePerRole(...)`. Not available perTreatment or perRole.
+	**Also available** as :php:`$getNumDecisionsPerGroup(...)` following the same logic as described above for :php:`$getAveragePerRole(...)`. Not available per treatment or per role.
 
 ----
 
@@ -535,9 +539,9 @@ The following functions can be used to retrieve globals variables.
 
 	**Argument** is:
 
-	- :php:`$winnerID` the internal participant ID of the winner (mandatory)
+	- :php:`$winnerID` the internal participant ID of the winner (mandatory).
 
-	The amount is set directly by the participant in the :ref:`Elements:Winner's_notification`.
+	The amount is set directly by the participant in the :ref:`Elements:Winner's notification`.
 
 ----
 
