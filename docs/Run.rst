@@ -6,8 +6,8 @@ In the overview mode in classEx, you can find a set of ready-made games which ca
 If you want to run a ready-made game in front of a class for the first time, the classEx documentation also provides a detailed cheat sheet in `word`_ or `pdf`_ format.
 
 
-.. _word:
-.. _pdf:
+.. _word: cheat_sheet_word.docx
+.. _pdf: cheat_sheet_pdf.pdf
 
 
 .. |pic_testparticipant| image:: _static/pic/addPlayer.png
