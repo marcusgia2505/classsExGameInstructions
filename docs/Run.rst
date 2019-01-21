@@ -3,11 +3,6 @@ Run ready-made games
 =====================
 
 In the overview mode in classEx, you can find a set of ready-made games which can be played directly in the lecture mode. The interaction between the lecturer and the participants takes place in the lecture mode. The lecturer's browser is usually projected to a wall. Games are started and terminated in the lecture mode and the results are also displayed in this mode.  Just start a game by pressing "play" and open some test participants by clicking at the test participant symbol |pic_testparticipant| in the top navigation bar. Test participants open in a new tab of the browser.
-If you want to run a ready-made game in front of a class for the first time, the classEx documentation also provides a detailed cheat sheet in `word`_ or `pdf`_ format.
-
-
-.. _word: cheat_sheet_word.docx
-.. _pdf: cheat_sheet_pdf.pdf
 
 
 .. |pic_testparticipant| image:: _static/pic/addPlayer.png
