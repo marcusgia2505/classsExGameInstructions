@@ -191,7 +191,7 @@ name  			   value
 
 The variables :php:`$group`, :php:`$role` and :php:`$treatment` can be overwritten in a subjects program.
 
-.. note:: Pre-defined variables are not saved automatically in the subjects table. Therefore, they can only be retrieved with e.g. :php:`$findVariablePartner(...)`, :php:`$getValues(...)` or other functions if they are saved before.
+.. note:: Pre-defined variables are not saved automatically in the subjects table. Therefore, they can only be retrieved with e.g. :php:`$findVariablePartner(...)`, :php:`$getValues(...)` or other functions if they are saved before. This is explained in :ref:`Function to save variables`.
 
 Functions to retrieve variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -308,7 +308,7 @@ Here you can find some coding examples:
 Function to save variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To save any variables you can use the following function:
+If you want to retrieve variables, those variables have to be stored before. For decision inputs this happens automatically. If you want to retrieve variables used in the subjects program, you have to save them before by using the following function:
 
 :php:`$save("varname", $value);`
 
@@ -332,8 +332,6 @@ Here you can find some coding examples:
 	/* store the value 7 as variable "test" */
 	$a = 7;
 	$save("test", $a);
-
-.. note:: Note that decision inputs are stored automatically with no need for :php:`$save(...)`. All other variables used in the subjects program are not stored automatically.
 
 .. note:: Keep in mind that you should only retrieve variables at least one stage after saving them. See `Synchronization`_.
 
