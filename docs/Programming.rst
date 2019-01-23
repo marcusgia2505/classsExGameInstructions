@@ -308,7 +308,7 @@ Here you can find some coding examples:
 Function to save variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to retrieve variables, those variables have to be stored before. For decision inputs this happens automatically. If you want to retrieve variables used in the subjects program, you have to save them before by using the following function:
+If you want to retrieve variables, those variables have to be stored before. For decision inputs this happens automatically. If you want to retrieve variables defined or used in the subjects program, you have to save them before by using the following function:
 
 :php:`$save("varname", $value);`
 
