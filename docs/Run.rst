@@ -11,6 +11,7 @@ In the overview mode in classEx, you can find a set of ready-made games which ca
 .. raw:: html
 
     How to do this step by step is shown in the following video.
+
     <div style="text-align: center; margin-bottom: 2em;">
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/zmAn0ZzTQPk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
@@ -18,6 +19,10 @@ In the overview mode in classEx, you can find a set of ready-made games which ca
 .. raw:: latex
 
     You can find a short video on how to play a ready-made game on \url{https://youtu.be/zmAn0ZzTQPk}.
+
+If you are already familiar with running a ready-made game and want to prepare for your first classEx experiment in your lecture you can also download the classEx `cheat sheet`_. It gives a step-by-step guide what to prepare for and do in class.
+
+.. _cheat sheet: https://classex.de/easystart.pdf
 
 What you need
 =============
