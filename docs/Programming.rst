@@ -281,7 +281,7 @@ The following functions can be used to retrieve subjects variables.
 
 ----
 
-:php:`$findOldVariable('varname', $round = $currentRound)`
+:php:`$findOldVariable('varname', $idRound = null)`
 
 	**Function** Find old variables from previous rounds, Variable or 0 if not found.
 
