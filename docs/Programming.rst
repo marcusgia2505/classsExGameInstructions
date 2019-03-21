@@ -281,6 +281,12 @@ The following functions can be used to retrieve subjects variables.
 
 ----
 
+:php:`$findOldVariable($varname, $idRound = null)`
+
+	**Function** Find old variables from previous rounds, Variable or 0 if not found.
+
+----
+
 Here you can find some coding examples:
 
 .. code:: php
