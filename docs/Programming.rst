@@ -85,7 +85,7 @@ The overall order is the following:
 
 - First, parameters are set as globals variables (see also :ref:`Develop:Parameters`).
 - Second, globals programs are executed (in the order stated for the lecturer screen).
-- Third, subjects programs are executed (in the order stated at the participant screen).
+- Third, subjects programs are executed (in the order stated at the participant screen). Subject programs are executed before other elements are displayed.
 
 Subjects programs offer the option to delay them after the decision has been made. This is provided by the setting *execute only after input*. This means that the subjects program is not executed on the loading of the respective screen, but only after a participant submitted his or her decision. 
 

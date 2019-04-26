@@ -75,7 +75,7 @@ In order to avoid redundancies, you can reference elements and add them in a dif
 
 .. note:: If you require the same text in two stages, for example, an element reference is a far more elegant version than a simple copy because any changes to the original element are adopted automatically. Also a reference objects in a participant field can just link to another participant opject (the same principle holds for the lecturer fields).
 
-.. note:: Please notice that the display condition is not taken from the referenced element but  from the reference itself.
+.. note:: Please notice that the display condition is not taken from the referenced element but from the reference itself.
 
 .. warning:: If you change the order of referenced elements, the reference does not automatically adapt, but has to be changed manually.
 
@@ -87,6 +87,9 @@ Program snippets can be implemented to calculate results for each subjects. For 
 .. image:: _static/program.png
 .. role:: php(code)
    :language: php
+
+
+.. note:: Program elements for the participant are always executed before all other elements.
 
 
 Elements for participants
