@@ -503,9 +503,10 @@ Start button and automatic start
 
 The start button is used to initiate a stage. 
 
-.. important:: Each stage requires a start button or an automatic start. If stages have result elements, this is not true as result elements automatically provide a button to start the stage (if not other button is defined).
+.. important:: Each stage requires a start button or an automatic start. If stages have result elements, this is not true as result elements automatically provide a button to start the stage (if no other button is defined).
 
 There are two alternatives. A start button which has to be clicked by the experimenter or an automatic start.
+
 
 Start button
 ------------
