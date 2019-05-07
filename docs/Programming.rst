@@ -394,6 +394,19 @@ The following functions can be used to retrieve globals variables.
 
 ----
 
+:php:`$getTimes('varname', $round = $currentRound)`
+
+	**Function** retrieves the time participants need for a decision concerning a certain variable in seconds.
+
+	**Returns** an array with the internal participant ID as index and the respective decision time in seconds or :php:`null` if no values available.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved.
+
+----
+
 :php:`$getFreq('varname', $round = $currentRound, $multiple = false)`
 
 	**Function** retrieves the frequencies of values over all participants for one variable.
