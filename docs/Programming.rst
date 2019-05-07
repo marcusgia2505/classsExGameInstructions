@@ -265,7 +265,7 @@ The following functions can be used to retrieve subjects variables.
 
 :php:`$findSold($round = $currentRound)`
 
-	**Function** retrieves the number of items sold (in a contract element)
+	**Function** retrieves the number of items sold (in a contract element).
 
 	**Returns** an array with the unit number as index and the corresponding price as value, or an empty array otherwise. E.g. :php:`$returnedValue = array(1=>12, 2=>13)` would indicate that the first unit was sold for 12, and the second unit was sold for 13. If no decisions were made, an empty array is returned.
 
@@ -280,6 +280,23 @@ The following functions can be used to retrieve subjects variables.
 	**Function** retrieves the number of items bought (in a contract element). The logic is exactly the same as in :php:`$findSold(...);`
 
 ----
+
+
+:php:`$findSoldTo($round = $currentRound)`
+
+	**Function** finds the IDs of the trading partners who bought something in a round.
+
+	**Returns** an array with the unit numbers of the bought goods as index and the	IDs of the trading partners that bought the items.
+
+	-  :php:`$round` the round from which the variable should be retrieved.
+
+----
+
+
+:php:`$findBoughtFrom($round = $currentRound)`
+
+	**Function** finds the IDs of the trading partners who sold something in a round. The logic is exactly the same as in :php:`$findSoldTo(...);`
+
 
 :php:`$findOldVariable('varname', $idRound = null)`
 
