@@ -560,7 +560,7 @@ round
 count
 	You can set the counter which appears after the start button of the previous stage is clicked. It can count decisions (also by role, treatment or group if set).
 
-classEx executes the start element always at the beginning of a new stage. If you e.g. want to forward all members of a group from stage 2 to stage 3 as soon as all of them made their decision, you have to implement an automatic start button set to "wait for all" at the beginning of stage 3.
+..note:: classEx executes the start element always at the beginning of a new stage. If you e.g. want to forward all members of a group from stage 2 to stage 3 as soon as all of them made their decision, you have to implement an automatic start button set to "wait for all" at the beginning of stage 3.
 
 
 Winner's draw
