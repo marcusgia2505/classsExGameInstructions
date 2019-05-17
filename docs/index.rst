@@ -35,6 +35,10 @@ The chapter :ref:`Elements:Elements` provides an overview of all elements which 
 
 The chapter :ref:`Programming:Programming` provides a list of variables and functions for advanced programmers.
 
+classEx can be used free of charge for academic and non-academic purposes. Read more in the `terms of use`_. It is provided free of any warranty. classEx is constantly being improved. Users are being added and are delivering results to existing experiments. Further experiments are being designed and made available. Likewise, the functionality is continuously being revised and updated. If you have any questions, support issues or want to report bugs, please mail to classEx@uni-passau.de or visit our `forum`_.
+
+.. _terms of use: https://classEx.de/TermsOfUse.pdf
+.. _forum: https://groups.google.com/forum/#!forum/classex
 
 .. toctree::
    :maxdepth: 10
