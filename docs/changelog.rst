@@ -1,11 +1,11 @@
 Changelog
 ==========
-..Release 3.6.2
+.. Release 3.6.2
 ..-------------
 
-..Major features
-..^^^^^^^^^^^^^^
-..- Libraries are no longer loaded on every stage, but only once when the game is loaded. This significantly improves Performance ..of ClassEx games in which third party libraries are used (such as highcharts or plotly).
+.. Major features
+.. ^^^^^^^^^^^^^^
+.. - Libraries are no longer loaded on every stage, but only once when the game is loaded. This significantly improves Performance of ClassEx games in which third party libraries are used (such as highcharts or plotly).
 
 
 Release 3.6.1
@@ -15,9 +15,10 @@ Major features
 - Forwarding of players has been rewritten. The forwarding of players no longer relayes on the Lecturer page being active and open on the Experimenter side
 
 
-New Documentation
+New Documentation |time_newdoc|
 -----------------
-*June 12th 2018*
+.. |time_newdoc| raw:: html
+  <sup style="color=gray">*June 12th 2018*</sup>
 
 
 Release 3.5
@@ -52,7 +53,7 @@ Release 3.3.2
 
 - QR-Code is provided automatically for all experiments.
 - The login page was restructured.
-Prior to selecting the course, the respective institution has to be selected.
+  Prior to selecting the course, the respective institution has to be selected.
 
 
 Release 3.3.1
