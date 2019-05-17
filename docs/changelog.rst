@@ -20,15 +20,20 @@ New Documentation
 .. raw:: html
    
    <sup style="color:gray">June 12th 2018</sup>
-
+test
 
 Release 3.5
 -----------
+.. raw:: html   
+   <sup style="color:gray">June 12th 2018</sup>
+   
 *May 9th 2018*
 
 
 Release 3.4.5
 -------------
+.. raw:: html   
+   <sup style="color:gray">June 12th 2018</sup>
 *Jan 18th 2018*
 
 Major Features:
@@ -40,8 +45,9 @@ Major Features:
 
 Release 3.4.3
 -------------
-*Feb 20th 2017*
-
+.. math::
+  ^{Feb 20th 2017}
+dd
 
 Release 3.4
 -----------
