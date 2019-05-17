@@ -20,22 +20,20 @@ New Documentation
 .. raw:: html
    
    <sup style="color:gray">June 12th 2018</sup>
-test
+
 
 Release 3.5
 -----------
 .. raw:: html   
-   <sup style="color:gray">June 12th 2018</sup>
-   
-*May 9th 2018*
+
+   <sup style="color:gray">May 9th 2018</sup>
 
 
 Release 3.4.5
 -------------
 .. raw:: html   
-   <sup style="color:gray">June 12th 2018</sup>
-*Jan 18th 2018*
 
+   <sup style="color:gray">Jan 18th 2018</sup>
 Major Features:
 ^^^^^^^^^^^^^^^
 - camera input
@@ -45,19 +43,23 @@ Major Features:
 
 Release 3.4.3
 -------------
-.. math::
-  ^{Feb 20th 2017}
-dd
+.. raw:: html   
+
+   <sup style="color:gray">Feb 20th 2017</sup>
+   
 
 Release 3.4
 -----------
-*May 14th 2016*
+.. raw:: html   
+
+   <sup style="color:gray">May 14th 2016</sup>
 
 
 Release 3.3.2
 -------------
-*Sept 20th 2015*
+.. raw:: html   
 
+   <sup style="color:gray">Sept 20th 2015</sup>
 - QR-Code is provided automatically for all experiments.
 - The login page was restructured.
   Prior to selecting the course, the respective institution has to be selected.
@@ -65,13 +67,14 @@ Release 3.3.2
 
 Release 3.3.1
 -------------
-*April 8th 2015*
+.. raw:: html   
 
+   <sup style="color:gray">April 8th 2015</sup>
 - All elements in the editing mode are directly linked to the documentation which provides explanation of the different features.
 
 
 Release 3.3
 -----------
-*Nov 20th 2015*
+.. raw:: html   
 
-
+   <sup style="color:gray">Nov 20th 2015</sup>
