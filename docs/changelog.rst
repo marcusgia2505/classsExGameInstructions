@@ -1,7 +1,7 @@
 Changelog
 ==========
 .. Release 3.6.2
-..-------------
+.. -------------
 
 .. Major features
 .. ^^^^^^^^^^^^^^
@@ -15,10 +15,11 @@ Major features
 - Forwarding of players has been rewritten. The forwarding of players no longer relayes on the Lecturer page being active and open on the Experimenter side
 
 
-New Documentation |time_newdoc|
+New Documentation
 -----------------
-.. |time_newdoc| raw:: html
-  <sup style="color=gray">*June 12th 2018*</sup>
+.. raw:: html
+   
+   <sup style="color:gray">June 12th 2018</sup>
 
 
 Release 3.5
