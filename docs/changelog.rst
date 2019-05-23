@@ -1,15 +1,18 @@
 Changelog
 ==========
-.. Release 3.6.2
+.. Release 3.6.1
 .. -------------
-
+.. 
 .. Major features
 .. ^^^^^^^^^^^^^^
 .. - Libraries are no longer loaded on every stage, but only once when the game is loaded. This significantly improves Performance of ClassEx games in which third party libraries are used (such as highcharts or plotly).
+.. Bugfix:
+.. ^^^^^^^
+.. - Empty course passwords (login for participant) are now possible again
 
 
-Release 3.6.1
--------------
+Release 3.6
+-----------
 Major features
 ^^^^^^^^^^^^^^
 - Forwarding of players has been rewritten. The forwarding of players no longer relayes on the Lecturer page being active and open on the Experimenter side
