@@ -18,8 +18,8 @@ Major features
 - Forwarding of players has been rewritten. The forwarding of players no longer relayes on the Lecturer page being active and open on the Experimenter side
 
 
-New Documentation
------------------
+Launch of new Documentation
+---------------------------
 .. raw:: html
    
    <sup style="color:gray">June 12th 2018</sup>
