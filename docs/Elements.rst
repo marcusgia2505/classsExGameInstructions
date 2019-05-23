@@ -545,8 +545,6 @@ Automatic start
 
 The automatic start button allows you to start stages when subjects finished the previous stage. With this feature, they can move through the game autonomously. 
 
-.. important:: With an automatic start, classEx runs a script which is executed every 5 seconds to push finished participants forward. This only works if the lecture mode is open. If the lecture mode is not open, participants are not forwarded.
-
 mode
 	The mode can be set to:
 
@@ -561,6 +559,8 @@ count
 	You can set the counter which appears after the start button of the previous stage is clicked. It can count decisions (also by role, treatment or group if set).
 
 ..note:: classEx executes the start element always at the beginning of a new stage. If you e.g. want to forward all members of a group from stage 2 to stage 3 as soon as all of them made their decision, you have to implement an automatic start button set to "wait for all" at the beginning of stage 3.
+
+..note:: If you use an automatic start on a page, you can not use globals programs as participants move autonomously through the game and the globals program is only called once.
 
 
 Winner's draw
