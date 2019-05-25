@@ -5,15 +5,15 @@ Changelog
 .. 
 .. Major features
 .. ^^^^^^^^^^^^^^
-.. - Libraries are no longer loaded on every stage, but only once when the game is loaded. This significantly improves Performance of ClassEx games in which third party libraries are used (such as highcharts or plotly).
-.. - Encoding changed to UTF-8 to support all kind of languages (Greek, Swedish,...)
-.. - Validation check for html input of divs to prevent wrong showing of pages
-.. - new functionality: multiple sending of input fields allowed (additional settings of input element)
-.. - $getTimes() function for lecturers to retrieve times of participants
+.. - improvement: Libraries are no longer loaded on every stage, but only once when the game is loaded. This significantly improves Performance of ClassEx games in which third party libraries are used (such as highcharts or plotly).
+.. - improvement: Database encoding changed to UTF-8 in order to support all kind of languages (Greek, Swedish,...)
+.. - improvement: Validation check for html input of divs to prevent broken participant pages
+.. - new: Multiple sending of input fields allowed (additional settings of input element)
+.. - new: ``$getTimes()`` function for lecturers to retrieve times of participants
 .. Bugfix:
 .. ^^^^^^^
-.. - Empty course passwords (login for participant) are now possible again
-.. - findGroupSum did not work as expected, is fixed.
+.. - fix: Empty course passwords (login for participant) are now possible again
+.. - fix: ``$findGroupSum()`` did not work as expected
 
 
 Release 3.6
