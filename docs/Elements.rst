@@ -560,7 +560,7 @@ count
 
 ..note:: classEx executes the start element always at the beginning of a new stage. If you e.g. want to forward all members of a group from stage 2 to stage 3 as soon as all of them made their decision, you have to implement an automatic start button set to "wait for all" at the beginning of stage 3.
 
-..note:: If you use an automatic start on a page, you can not use globals programs as participants move autonomously through the game and the globals program is only called once.
+..note:: If you use an automatic start in a stage, you can not use globals programs in this stage as participants move autonomously through the game and the globals program is only called once.
 
 
 Winner's draw
