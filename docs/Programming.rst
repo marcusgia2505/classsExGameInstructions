@@ -477,6 +477,19 @@ The following functions can be used to retrieve globals variables.
 
 ----
 
+:php:`$getValuesPerGroup('varname', $round = $currentRound)`
+
+	**Function** retrieves the values of a variable for all participants arranged by groups.
+
+	**Returns** a multidimensional array with group ID as index and another array with the participants ID as index and the retrieved value as key. If not available, it returns :php:`null`.
+
+	**Arguments** are:
+
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`$round` the round from which the variable should be retrieved. 
+
+----
+
 :php:`$getVarSum('varname', $round = $currentRound)`
 
 	**Function** retrieves the sum of values of a variable over all participants.
