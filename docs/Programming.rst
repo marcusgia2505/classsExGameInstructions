@@ -333,7 +333,7 @@ Function to save variables
 
 If you want to retrieve variables, those variables have to be stored before. For decision inputs this happens automatically. If you want to retrieve variables defined or used in the subjects program, you have to save them before by using the following function:
 
-:php:`$save('varname', $value);`
+:php:`$save('varname', $value, $round = $currentRound);`
 
 	**Function** stores a value in the subjects table.
 
@@ -343,6 +343,7 @@ If you want to retrieve variables, those variables have to be stored before. For
 
 	-  :php:`'varname'` the variable name (mandatory).
 	-  :php:`$value` the value to be stored. The value can also be a variable itself.
+	-  :php:`$round` the values are saved for a certain round. If you e.g. calculate a result in round 6 according to inputs made in round 5, you can enter $round = $currentRound-1 in order to save the result in the round it belongs to.
 	
 
 Here you can find some coding examples:
@@ -352,9 +353,9 @@ Here you can find some coding examples:
 	/* store the value 1 as variable "shown" */
 	$save("shown", 1);
 
-	/* store the value 7 as variable "test" */
+	/* store the value 7 as variable "test" in the previous round */
 	$a = 7;
-	$save("test", $a);
+	$save("test", $a, $round=$currentRound-1);
 
 .. note:: Keep in mind that you should only retrieve variables at least one stage after saving them. See `Synchronization`_.
 
