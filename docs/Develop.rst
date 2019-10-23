@@ -369,6 +369,10 @@ Random matching with constant roles means randomly matching the subjects into ne
 	$new[$internalplayerid] = $rolesarray[$internalplayerid];
 	}
 	$rolesarray = $new; #$rolesarray is now shuffled but with the initial key-value pairs
+	unset($keys);
+	unset($internalplayerid);
+	unset($numbers);
+	unset($new);
 	# Create new groups
 	$numberofroles = max($rolesarray);
 	for ($i = 1; $i <= $numberofroles; $i++) {
