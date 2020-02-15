@@ -231,9 +231,14 @@ default
 
 required
 	This determines whether input is mandatory. In this case, participants cannot proceed before making a choice.
+	
+label options
+	You can show all labels, which are then shown with rotated text below the radioline. Or you can show only right and left label. If you choose this option intermediate labels are ignored.
 
-label left and right of the slider
-	You can add a label on the left and the right of the slider. Note that the values stated next to the labels are not used in the radioline.
+Label of the radioline values
+	You can add a labels to each value of the radioline. Make sure that you specify the correct value. 
+	
+.. important:: The labels are only shown if you specify the correct value. E.g. if the radioline goes from 0 to 10 and you want a label at the very left, it has to have the value 0. If you choose the option to show only min/max labels, intermediate labels are ignored.
 
 Slider
 ------
@@ -255,7 +260,9 @@ default
 	The default value is pre-marked at the start. If no default is set, the slider is positioned in the middle of the range.
 
 label left and right of the slider
-	You can add a label on the left and the right of the slider. Note that the values stated next to the labels are not used in the radioline.
+	You can add a label on the left and the right of the slider. 
+	
+
 
 Text input
 ----------
