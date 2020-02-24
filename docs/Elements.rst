@@ -366,7 +366,7 @@ Winner's Notification
 .. image:: _static/elements/notification.png
 	:width: 50%
 
-If a game is played with real payoffs, this element displays the payoff code to participants and the respective payoff. The payoff can be a number or also a text (e.g. two tickets for the theater). The element automatically provides a legal disclaimer. The payoff notice can be changed.  
+If a game is played with real payoffs, this element displays the payoff code to participants and the respective payoff. The payoff can be a number or also a text (e.g. two tickets for the theater). The element automatically provides a legal disclaimer. The payoff notice can be changed. Also the currency of the payoff can be changed under `course data`_.
 
 .. image:: _static/elements/notfication.png
     :height: 300px
