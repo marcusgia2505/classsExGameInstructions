@@ -7,6 +7,13 @@ Getting started with classEx
 What you need
 ============
 
+
+asdfasa
+asdf
+asdf
+asdfasdfdcd
+asf
+
 classEx is an online tool which runs centralized at the servers of the University of Passau. Therefore, no installation of software and no download of applications is necessary. Running games and developing games is done in a standard internet browser.
 
 Lecturers and participants only need a mobile device with an internet connection and an up-to-date browser. We suggest to use Firefox. Make sure that javascript is enabled and cookies are allowed (normally this is a default setting in many browsers). **Do not use Internet Explorer for using classEx because classEx does not run with it.**
@@ -20,7 +27,7 @@ Participants do not need to register but can access classEx with the course pass
 In order to get login credentials, please fill in the registration form at 
 https://classex.de/get-login-credentials.
 
-For registration you have to provide your name, an email address and information about your institution. In addition, you have to confirm that you accept the `terms of use`_ and the data privacy policy. **Please try to provide an institutional email address so that we can verify your affiliation.** Registered users receive an email with login credentials. Login credentials are normally sent within 1-2 days. If you do not receive credentials after 2 days, please contact us at `classEx@uni-passau.de <mailto:classEx@uni-passau.de>`_.
+For registration you have to provide your name, an email address and information about your institution. In addition, you have to confirm that you accept the `terms of use`_ and the data privacy policy. **Please try to provide an institutional email address so that we can verify your affiliation.** Registered users receive an email with login credentials. Login credentials are normally sent within 1-2 days. If you do not receive credentials after 2 days, please contact us at `classEx@uni-passau.de <mailto:classEx@uni-passau.de>`_. 
 
 Each user has an account (called course in classEx) which is linked to their institution. With the login credentials you obtain the right to use classEx for teaching, education, research and other purposes (for details please see `terms of use`_).
 
