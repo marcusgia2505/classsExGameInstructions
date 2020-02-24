@@ -86,7 +86,7 @@ An exemple:
 	  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
 
 
-.. image:: _static/latex1.png
+.. image:: _static/latex1.PNG
 
 
 
