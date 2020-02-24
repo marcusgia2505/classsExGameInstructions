@@ -72,26 +72,6 @@ Display formulas like in Latex
 
 Although classEx does not directly support Latex, it is possible to display formulas to participants in a more elegant way in a text box with Mathjax. Just use the NON WYSIWG editor for a text box, insert the following code and start typing in latex notation.
 
-
-
-.. code:: html
-
-	This is a text box with a <b>bold text</b> and a <span style="font-size: x-small;">small</span> text.
-	
-	You can also show pictures <img src="https://classex.uni-passau.de/bin/pic/logo.svg" style="width: 20px">
-	or add tables <br><br>
-
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-
-	<table class="table table-hover"><tbody>
-		<tr><td>Tab 1</td><td>10</td></tr>
-		<tr><td>Tab 2</td><td>11</td></tr>
-	</tbody></table>.
-
-
-
 .. code:: html
 
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
