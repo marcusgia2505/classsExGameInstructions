@@ -57,13 +57,38 @@ Make sure that role1.png, role2.png,... are followed by a space. Otherwise the f
 Conditional text
 -----------------
 
-So far we have only tackled how to read the PHP variables and display them in he text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a variable that tells whether a participant is buyer or seller. We can achieve this task by a program element where you define:
+So far we have only tackled how to read the PHP variables and display them in the text field (e.g. $variable;), but sometimes we would like to display conditional text. For example we might have a variable that tells whether a participant is buyer or seller. We can achieve this task by a program element where you define:
 
 .. code:: php
 
 	if ($isBuyer) $buyerText="You are buyer"; else $buyerText="You are seller";
 
 Then you can enter and output $buyerText; in the text box.
+
+
+Display formulas like in Latex
+-----------------
+
+Although classEx does not directly support Latex, it is possible to display formulas to participants in a more elegant way in a text box with Mathjax. Just use the NON WYSIWG editor for a text box, insert the following code and start typing in latex notation.
+
+..code:: html
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+An exemple: 
+
+..code:: html
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+	When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+	  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+
+
+.. image:: _static/latex1.png
+
+
 
 Element Reference
 ~~~~~~~~~~~~~~~~~
