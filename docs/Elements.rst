@@ -71,14 +71,14 @@ Display formulas like in Latex
 
 Although classEx does not directly support Latex, it is possible to display formulas to participants in a more elegant way in a text box with Mathjax. Just use the NON WYSIWG editor for a text box, insert the following code and start typing in latex notation.
 
-..code:: html
+.. code:: html
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
 An exemple: 
 
-..code:: html
+.. code:: html
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
