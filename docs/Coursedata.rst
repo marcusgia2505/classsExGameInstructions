@@ -59,6 +59,12 @@ You can also switch the language of the course in the course data. ClassEx provi
 .. note:: If you change the language, changes only apply if you log out and log in again. The same holds true for participants and test participants. Participants are not affected by these changes while a session is running.
 
 
+Currency
+~~~~~~~~~
+
+The currency can be switched in the course data interface too. Available currencies are Euro, Dollar, Pound, Yen or no currency.
+
+
 Log out all participants
 ------------------------
 You can log out all participants by pressing the following button.
