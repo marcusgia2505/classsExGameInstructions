@@ -92,6 +92,8 @@ An exemple:
 .. image:: _static/latex1.PNG
 
 
+..note:: In the current version of classEx displaying formulas in an experiment with Mathjax only works before classEx reloads the first time, so before going to the second stage or making an input. 
+
 
 Element Reference
 ~~~~~~~~~~~~~~~~~
