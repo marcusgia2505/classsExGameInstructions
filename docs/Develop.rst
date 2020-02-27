@@ -136,7 +136,7 @@ Before actually using a game in your lecture or while you develop, you can alway
 
 Next, open as many test participant as you need for testing your game by clicking on the *add test participant* icon |pic_testparticipant|. This opens a participant screen in a new tab. You will see the game just as your subjects will see it when actually playing the game. You can open as many test participants as you want, which enables you to also test interaction between participants.
 
-.. note:: You can open multiple test participants by holing the Ctrl-Key and clicking multiple times on the test participant icon |pic_testparticipant|. 
+.. note:: You can open multiple test participants by holding the Ctrl-Key and clicking multiple times on the test participant icon |pic_testparticipant|. 
 
 Then start your game. You can perform the interaction required in the browser tabs for each participant and you can see how your game is running. 
 
