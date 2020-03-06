@@ -70,10 +70,29 @@ Then you can enter and output $buyerText; in the text box.
 Display formulas
 -----------------
 
-Although classEx does not directly support Latex, it is possible to display formulas to participants in a more elegant way in a text box with MathML. 
+Although classEx does not directly support Latex, it is possible to display formulas to participants in a more elegant way in a text box with MathML. It is best to use the NON WYSIWG editor in the text box. Switching to the WYSIWG version already translates your HTML code into the formula.
+
+An exemple - the following HTML code leads to the following formula:
+
+.. code:: HTML
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+    	<mi>a</mi>
+    	<msup>
+    		<mi>x</mi>
+    		<mn>2</mn>
+    	</msup>
+    	<mo>+</mo>
+    	<mi>b</mi>
+    	<mi>x</mi>
+    	<mo>+</mo>
+    	<mi>c</mi>
+    </math>
+
 
 .. image:: _static/elements/MathML_exemple.PNG
-    :width: 49%
+    :width: 30%
+
+You can find an overview with different tutorials here: https://www.w3.org/Math/#learn
 
 In case your browser does not directly support MathML, here is a tutorial on how to work with it anyway: https://developer.mozilla.org/en-US/docs/Web/MathML/Authoring
 
