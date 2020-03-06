@@ -67,32 +67,17 @@ So far we have only tackled how to read the PHP variables and display them in th
 Then you can enter and output $buyerText; in the text box.
 
 
-Display formulas like in Latex
+Display formulas
 -----------------
 
-Although classEx does not directly support Latex, it is possible to display formulas to participants in a more elegant way in a text box with Mathjax. Just use the NON WYSIWG editor for a text box, insert the following code and start typing in latex notation.
+Although classEx does not directly support Latex, it is possible to display formulas to participants in a more elegant way in a text box with MathML. 
 
-.. code:: html
+.. image:: _static/elements/MathML_exemple.PNG
+    :width: 49%
 
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-
-An exemple: 
-
-.. code:: html
-
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-	When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-	  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+In case your browser does not directly support MathML, here is a tutorial on how to work with it anyway: https://developer.mozilla.org/en-US/docs/Web/MathML/Authoring
 
 
-.. image:: _static/latex1.PNG
-
-
-..note:: In the current version of classEx displaying formulas in an experiment with Mathjax only works before classEx reloads the first time, so before going to the second stage or making an input.
 
 
 Element Reference
