@@ -92,6 +92,15 @@ An exemple - the following HTML code leads to the following formula:
 .. image:: _static/elements/MathML_exemple.PNG
     :width: 30%
 
+It is also possible to display symbols and indices like in this exemple:
+
+.. code:: HTML
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<msub><mi>&pi;</mi><mn>i</mn></msub>
+    </math>
+
+.. image:: _static/elements/MathML2.PNG
+
 You can find an overview with different tutorials here: https://www.w3.org/Math/#learn
 
 In case your browser does not directly support MathML, here is a tutorial on how to work with it anyway: https://developer.mozilla.org/en-US/docs/Web/MathML/Authoring
