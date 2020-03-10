@@ -95,8 +95,8 @@ An exemple - the following HTML code leads to the following formula:
 It is also possible to display symbols and indices like in this exemple:
 
 .. code:: HTML
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<msub><mi>&pi;</mi><mn>i</mn></msub>
+	<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<msub><mi>&pi;</mi><mn>i</mn></msub>
     </math>
 
 .. image:: _static/elements/MathML2.PNG
