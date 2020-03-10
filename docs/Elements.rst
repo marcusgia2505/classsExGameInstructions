@@ -75,18 +75,18 @@ Although classEx does not directly support Latex, it is possible to display form
 An exemple - the following HTML code leads to the following formula:
 
 .. code:: HTML
-	<math xmlns="http://www.w3.org/1998/Math/MathML">
-    	<mi>a</mi>
-    	<msup>
-    		<mi>x</mi>
-    		<mn>2</mn>
-    	</msup>
-    	<mo>+</mo>
-    	<mi>b</mi>
-    	<mi>x</mi>
-    	<mo>+</mo>
-    	<mi>c</mi>
-    </math>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mi>a</mi>
+	<msup>
+		<mi>x</mi>
+		<mn>2</mn>
+	</msup>
+	<mo>+</mo>
+	<mi>b</mi>
+	<mi>x</mi>
+	<mo>+</mo>
+	<mi>c</mi>
+</math>
 
 
 .. image:: _static/elements/MathML_exemple.PNG
@@ -95,9 +95,9 @@ An exemple - the following HTML code leads to the following formula:
 It is also possible to display symbols and indices like in this exemple:
 
 .. code:: HTML
-	<math xmlns="http://www.w3.org/1998/Math/MathML">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
 	<msub><mi>&pi;</mi><mn>i</mn></msub>
-    </math>
+</math>
 
 Which appears like this in classEx:
 
