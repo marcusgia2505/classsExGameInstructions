@@ -223,6 +223,8 @@ Automatic link for login
 
 When you click on |pic_qr|, you also get some information on how to login participants directly with a link. They just have to copy the link in their browser and are logged in into your course (without the need of selecting the course and entering a password). The link looks like this: https://classex.uni-passau.de/bin/?automatic=L3ZY2rNO2gz14YkeGUxxF-g (this link is just for demonstration and cannot be used.)
 
+If participants have played classEx in another course (or you play games in two different courses in a row), they may still be logged in in the old course and the automatic login would not work. To make them switch the courses, just add "&logout" to the link so that they are logged out from the current course they are in and are automatically logged in into your course.
+
 Personalized link for login
 ----------------------------
 
