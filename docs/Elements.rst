@@ -588,6 +588,8 @@ confirmation message
 	You can set if a pop-up should appear after clicking to confirm the action. 
 round
 	You can set if the current round number should be displayed or not.
+stage name
+	You can set if the stage name should be displayed or not.
 count
 	You can set the counter which appears after the start button is clicked. It can count decisions (also by role, treatment or group if set). 
 
@@ -611,7 +613,6 @@ round
 	You can set if the current round number should be displayed or not.
 count
 	You can set the counter which appears after the start button of the previous stage is clicked. It can count decisions (also by role, treatment or group if set).
-
 stage name
 	You can set if the stage name should be displayed or not.
 	
