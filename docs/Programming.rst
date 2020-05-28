@@ -187,6 +187,7 @@ name  			   value
 :php:`$group`      Group ID (if set)
 :php:`$signID`     Private signature (for contract elements)
 :php:`$tic`        External ID (if set at login or provided with URL)
+:php:`$blockForward`        if set to true, automatic forwarding is blocked.
 =================  =====
 
 The variables :php:`$group`, :php:`$role` and :php:`$treatment` can be overwritten in a subjects program.
