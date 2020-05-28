@@ -175,20 +175,20 @@ Variables for participants (subjects)
 Pre-Defined Variables
 ~~~~~~~~~~~~~~~~~~~~~~
 
-=================  =====
-name  			   value
-=================  =====
-:php:`$lang`       Current language (0: German, 1: English, 2: Spanish)
-:php:`$round`      Current round
-:php:`$id`         Participant ID (unique in all games, decisions are stored with the participant ID)
-:php:`$subject`    Subject ID (unique in game, starts from 1,...)
-:php:`$role`       Role ID (if set)
-:php:`$treatment`  Treatment ID (if set)
-:php:`$group`      Group ID (if set)
-:php:`$signID`     Private signature (for contract elements)
-:php:`$tic`        External ID (if set at login or provided with URL)
-:php:`$blockForward`        if set to true, automatic forwarding is blocked.
-=================  =====
+====================  	=====
+name  			value
+====================  	=====
+:php:`$lang`       	Current language (0: German, 1: English, 2: Spanish)
+:php:`$round`      	Current round
+:php:`$id`         	Participant ID (unique in all games, decisions are stored with the participant ID)
+:php:`$subject`    	Subject ID (unique in game, starts from 1,...)
+:php:`$role`       	Role ID (if set)
+:php:`$treatment`  	Treatment ID (if set)
+:php:`$group`      	Group ID (if set)
+:php:`$signID`     	Private signature (for contract elements)
+:php:`$tic`        	External ID (if set at login or provided with URL)
+:php:`$blockForward`    if set to true, automatic forwarding is blocked.
+====================  	=====
 
 The variables :php:`$group`, :php:`$role` and :php:`$treatment` can be overwritten in a subjects program.
 
