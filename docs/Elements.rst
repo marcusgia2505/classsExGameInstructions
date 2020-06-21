@@ -375,7 +375,14 @@ directly to next stage
 show button later
 	The appearance of the buttons can be delayed, e.g. if you want participants not to click too fast.
 
-
+allow resending the input
+	The input is not blocked after sending, but inputs can be resubmitted as long as the stage is active.
+	
+space between input fields (px)
+	This allows to add a certain space in pixels between input fields.
+	
+highlight button
+	The send button can be highlighted in blue color.
 
 
 
