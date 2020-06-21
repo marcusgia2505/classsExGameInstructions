@@ -224,7 +224,7 @@ default
 	The default value is pre-marked at the start. For buttons it is highlighted with a color. For drop lists it is preselected.
 
 required
-	This determines whether input is mandatory. In this case, participants cannot proceed before making a choice.
+	This determines whether input is mandatory. In this case, participants cannot proceed before making a choice. For button 	 input you can set that only the correct answer allows to proceed.
 
 order of options
 	The order of options can be set to *as stated* or to *random*. In the latter case, the random order is determined separately for each participant.
