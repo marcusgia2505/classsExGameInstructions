@@ -398,6 +398,11 @@ Further settings
 
 On the page *assignment and matching* you can further choose if the role should be displayed in the header of the participants page and if the internal ID of the participant should be displayed there as well.
 
+Additional CSS for participants
+===============================
+
+If you want to add additional CSS for participants, you can do so by clicking on additional CSS for participants in the top right corner. By clicking on the program box, a CSS editor opens and you can add custom CSS. The CSS is loaded for every page of the participant.
+
 
 Parameters
 ==========
