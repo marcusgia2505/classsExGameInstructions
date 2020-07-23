@@ -28,7 +28,7 @@ If you are already familiar with running a ready-made game and want to prepare f
 Easy mode
 ----------
 
-In order to facilitate your start you can use the easy mode. It reduces the options available in classEx. You are only allowed to play games there and cannot edit them or create new ones. The easy mode is switched on by default in accounts for classEx@school. In a standard account you can switch it on in the course settings in your profile.
+In order to facilitate your start you can use the easy mode. It reduces the options available in classEx. You are only allowed to play games there and cannot edit them or create new ones. The easy mode is switched on by default in accounts for classEx@school. In a standard account you can switch it on in the course settings in your profile. The easy mode gets active after relogging.
 
 
 
