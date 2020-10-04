@@ -391,8 +391,10 @@ The following functions can be used to retrieve globals variables.
 
 	**Arguments** are:
 
-	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs.
+	-  :php:`varname` the variable name (mandatory). The function can retrieve subjects variables which were saved before or which were decision inputs. 
 	-  :php:`$round` the round from which the variable should be retrieved.
+	
+.. note:: The function can only retrieve subjects variables which were saved before or which were decision inputs. Predefined variables (like role, group and treatment) can not be retrieved with this function. For these functions use :php:`getRoles()`, :php:`getTreatments()`,... (see below).
 
 ----
 
@@ -558,6 +560,13 @@ The following functions can be used to retrieve globals variables.
 	
 ----
 
+:php:`$getGroups()`
+
+	**Function** retrieves the specific group for each participant.
+
+	**Returns** an array with the internal participant ID as index and the respective group. If no groups are available, an empty array is returned.
+	
+----
 
 :php:`$getTreatments()`
 
