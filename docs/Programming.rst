@@ -624,7 +624,7 @@ The following functions can be used to retrieve globals variables.
 
 	**Argument** is:
 
-	- :php:`$winnerID` the internal participant ID of the winner (mandatory).
+	- :php:`$winnerID` the internal participant ID of the winner (mandatory). You can also assign multiple winners with one function call. Then, :php:`$winnerID` should be an array with the internal participant IDs as values. E.g. :php:`$winnerID=[$id1, $id2];`.
 
 	The amount is set directly by the participant in the :ref:`Elements:Winner's notification`.
 
