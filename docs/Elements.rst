@@ -590,7 +590,7 @@ The start button can be configured according to the own needs.
 button label
 	You can name the button (e.g. Start Trade).
 feature
-	Instead of starting the current stage, you can also use the start button to jump to different stages. 
+	Instead of starting the current stage, you can also use the start button to jump to different stages. In case you jump to the stage where payoffs are distributed this will surpress the distribution. This can be prevented by following the explanation for the setWinner-function in `Functions`_.
 confirmation message
 	You can set if a pop-up should appear after clicking to confirm the action. 
 round
