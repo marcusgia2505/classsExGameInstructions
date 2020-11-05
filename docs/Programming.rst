@@ -364,10 +364,6 @@ Here you can find some coding examples:
 Function to change group ID
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-
-
-
 It is possible to change the group ID of a subject. This enables you to create your own matching algorithms and assign new groups to your subjects. Roles and treatments however cannot be changed this way.
 
 :php:`$resetGroupNr($value);`
@@ -378,7 +374,7 @@ It is possible to change the group ID of a subject. This enables you to create y
 
 	**Arguments** are:
 
-	-  :php:`$value` the new group ID for the subjects. The value can also be a variable itself or an array. Usually the most convenient way is to create a matching algorithm in a globals program code returning an array (e.g. called $any_array_name) with participants IDs as keys and the new group IDs as values. The code for the reset-function could then be $resetGroupNr($any_array_name[$id]);
+	-  :php:`$value` the new group ID for the subjects. The value can also be a variable itself or an array. Usually the most convenient way is to create a matching algorithm in a globals program code returning an array (e.g. called $any_array_name) with participants IDs as keys and the new group IDs as values. The code for the reset-function could then be :php:`$resetGroupNr($any_array_name[$id]);`
 
 
 Variables for lecturers (globals)
@@ -645,10 +641,11 @@ The following functions can be used to retrieve globals variables.
 
 	**Argument** is:
 
-	- :php:`$winnerID` the internal participant ID of the winner (mandatory). You can also assign multiple winners with one function call. Then, :php:`$winnerID` should be an array with the internal participant IDs as values. E.g. :php:`$winnerID=[$id1, $id2];`.
+	- :php:`$winnerID` the internal participant ID of the winner (mandatory). You can also assign multiple winners with one function call. Then, :php:`$winnerID` should be an array with the internal participant IDs as values. E.g. :php:`$setWinner([$winnerpot[0], $winnerpot[1], $winnerpot[2]]); `.	
 
 	The amount is set directly by the participant in the :ref:`Elements:Winner's notification`.
 
+.. note:: If the winner is drawn by an own program code this code has to be placed before the start button of the stage.
 ----
 
 :php:`$getAvgPriceContract($round = $currentRound)`
