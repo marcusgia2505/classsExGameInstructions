@@ -633,7 +633,7 @@ The following functions can be used to retrieve globals variables.
 
 ----
 
-:php:`$setWinner($winnerID)`
+:php:`$setWinner($winnerID, $winnerAlwaysAssigned = false)`
 
 	**Function** adds participants to the payoff table.
 
@@ -641,7 +641,8 @@ The following functions can be used to retrieve globals variables.
 
 	**Argument** is:
 
-	- :php:`$winnerID` the internal participant ID of the winner (mandatory). You can also assign multiple winners with one function call. Then, :php:`$winnerID` should be an array with the internal participant IDs as values. E.g. :php:`$setWinner([$winnerpot[0], $winnerpot[1], $winnerpot[2]]); `.	
+	- :php:`$winnerID` the internal participant ID of the winner (mandatory). You can also assign multiple winners with one function call. Then, :php:`$winnerID` should be an array with the internal participant IDs as values. E.g. :php:`$setWinner([$winnerpot[0], $winnerpot[1], $winnerpot[2]]);`.
+	- :php:`$winnerAlwaysAssigned` can be set to "true" in order to force classEx to make a payoff in this stage. It will make a payoff also if the lecturer enters the stage by clicking on "do not pay out payoffs" or by jumping there with the help of a start button that skipped several rounds. 	
 
 	The amount is set directly by the participant in the :ref:`Elements:Winner's notification`.
 
