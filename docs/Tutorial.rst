@@ -75,9 +75,12 @@ Stage 3: Results
 
 When the responders have accepted or rejected the proposals you can display the results in a third stage. Add a new stage and name it e. g. "Results". "Late arrival" again is "Not possible". The two fields next to the "late arrival" field define how often stages get repeated and where to jump after finishing this stage. Using this you can define the number of rounds you want to play. Choose "back to stage 1" and e. g. "2x" (for repeating the the stages two times).
 
-For both participants the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use two program code (subjects) fields in the participant field. Insert them above the default text box. You need one for "only role 1" and one for "only role 2". The program for role 1 is:
+For both participants the payoff depends on whether the responder accepted the proposal or not. You have to distinguish these two cases. To do so you use two program code (subjects) fields in the participant field. Insert them above the default text box. You need one for "only role 1" and one for "only role 2". 
 
-.. code:: php	
+The program for role 1 is:
+
+.. code:: php
+
 	 $accepted=$findVariablePartner("accepted");
 	 $payoff=$keep*$accepted;
 	 if($accepted==0) {
